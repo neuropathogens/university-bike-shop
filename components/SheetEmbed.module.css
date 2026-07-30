@@ -1,0 +1,15 @@
+.section {
+  padding: 2rem 1rem;
+  border-top: 1px solid var(--foreground);
+}
+
+.iframe {
+  width: 100%;
+  height: 600px;
+  border: 1px solid var(--foreground);
+}
+
+.fallback {
+  text-align: center;
+  padding: 2rem 0;
+}
