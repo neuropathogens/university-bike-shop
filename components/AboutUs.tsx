@@ -11,7 +11,7 @@ const TEAM = [
   { name: "David Fridshtand", role: "Web" },
   { name: "Ethan Zhang", role: "Web" },
   { name: "Albert Xu", role: "Web" },
-  { name: "Gavin Lin", role: "" },
+  { name: "Gavin Lin", role: "Outreach" },
   { name: "Lachlan Taylor", role: "Intern" },
   { name: "Orlando Jimenez", role: "Intern" },
 ];
