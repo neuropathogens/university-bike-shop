@@ -1,3 +1,5 @@
-export default function BikeFits() {
-  return <section id="bike-fits"></section>;
+import BikeFits from "@/components/BikeFits";
+
+export default function BikeFitsPage() {
+  return <BikeFits />;
 }
