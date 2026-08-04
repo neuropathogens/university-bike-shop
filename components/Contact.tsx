@@ -5,6 +5,15 @@ export default function Contact() {
     <footer id="contact" className={styles.contact}>
       <p>universitybikeshop@gmail.com</p>
       <p>(650) 812-9305</p>
+      <p>
+        <a
+          href="https://www.instagram.com/universitybikes"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          @universitybikes
+        </a>
+      </p>
     </footer>
   );
 }
