@@ -1,3 +1,5 @@
-export default function Sponsorships() {
-  return <section id="sponsorships"></section>;
+import Sponsorships from "@/components/Sponsorships";
+
+export default function SponsorshipsPage() {
+  return <Sponsorships />;
 }
