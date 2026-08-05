@@ -38,6 +38,7 @@ export default function AboutUs() {
           </li>
         ))}
       </ul>
+      <h2>Media</h2>
     </section>
   );
 }
