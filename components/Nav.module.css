@@ -4,3 +4,7 @@
   padding: 1rem;
   border-bottom: 1px solid var(--foreground);
 }
+
+.right {
+  margin-left: auto;
+}
