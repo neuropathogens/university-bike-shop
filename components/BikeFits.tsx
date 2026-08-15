@@ -22,7 +22,7 @@ export default function BikeFits() {
         recommend changes on seat post height, saddle angle, saddle
         position, stem length, and stem angle.
       </p>
-      <p>Please reserve a time by texting 650-812-9305.</p>
+      <p>Please reserve a time by texting (650) 812-9305.</p>
       <p>We are open Saturday 10-3 and Sundays 10-3 for bike fits.</p>
     </section>
   );
