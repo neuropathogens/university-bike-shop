@@ -11,7 +11,7 @@ export default function SellYourBike() {
         same quality to you.
       </p>
       <p>
-        Please message (650)-812-9305 or email universitybikeshop@gmail.com
+        Please message (650) 812-9305 or email universitybikeshop@gmail.com
         with photos, specs, and details of your bike if you are interested.
       </p>
     </section>
