@@ -14,6 +14,11 @@ const TEAM = [
   { name: "Gavin Lin", role: "Outreach" },
   { name: "Lachlan Taylor", role: "Intern" },
   { name: "Orlando Jimenez", role: "Intern" },
+  { name: "Talon Zhang", role: "Wechat Sales Rep"},
+  { name: "Brandon Zhang", role: "Mechanic"},
+  { name: "Jonathan Chen", role: "Graphic Designer"},
+  { name: "Christopher Lin", role: "Video Editor"}
+
 ];
 
 export default function AboutUs() {
@@ -24,7 +29,7 @@ export default function AboutUs() {
         discounted rate.
       </p>
       <p>
-        Now, it has evolved to a team of over 10+ local high schoolers
+        Now, it has evolved to a team of over 15+ local high schoolers
         working together to sell bikes, and to also give back to the
         community through our outreach programs, while still maintaining
         the low prices.
