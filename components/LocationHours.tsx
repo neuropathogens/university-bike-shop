@@ -11,7 +11,7 @@ export default function LocationHours() {
       <p>
         We are appointment only, but if you are a member of any of our
         sponsored clubs, our workshop is available from 10-3pm on Saturdays
-        and Sundays. However, please text us (650) 812-9305 to give us notice
+        and Sundays. However, please text us (650) 656-6807 to give us notice
         at least 48 hours beforehand.
       </p>
     </section>

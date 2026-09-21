@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { IBM_Plex_Mono } from "next/font/google";
 import Nav from "@/components/Nav";
+import SalesNotice from "@/components/SalesNotice";
 import Contact from "@/components/Contact";
 import "./globals.css";
 
@@ -23,6 +24,7 @@ export default function RootLayout({
     <html lang="en" className={ibmPlexMono.variable}>
       <body>
         <Nav />
+        <SalesNotice />
         {children}
         <Contact />
       </body>
