@@ -3,6 +3,7 @@ import styles from "./BikeFits.module.css";
 export default function BikeFits() {
   return (
     <section id="bike-fits" className={styles.section}>
+      <h1>Bike Fits in Palo Alto</h1>
       <p>
         University Bikes has our own in house, computer powered fitting
         program.
