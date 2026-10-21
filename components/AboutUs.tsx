@@ -41,6 +41,7 @@ const TEAM = [
 export default function AboutUs() {
   return (
     <section id="about-us" className={styles.section}>
+      <h1>About University Bike Shop</h1>
       <p>
         University Bike Shop started as a side project to provide bikes at a
         discounted rate.
