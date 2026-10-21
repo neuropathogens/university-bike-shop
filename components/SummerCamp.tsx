@@ -3,6 +3,7 @@ import styles from "./SummerCamp.module.css";
 export default function SummerCamp() {
   return (
     <section id="summer-camp" className={styles.section}>
+      <h1>Summer Camp</h1>
       <h2 className={styles.caption}>This Year&apos;s Summer Camp</h2>
       <img
         src="/summer-camp-group.jpg"

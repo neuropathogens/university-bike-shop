@@ -3,6 +3,7 @@ import styles from "./Sponsorships.module.css";
 export default function Sponsorships() {
   return (
     <section id="sponsorships" className={styles.section}>
+      <h1>Sponsorships</h1>
       <p>We currently sponsor the following:</p>
       <ul>
         <li>Paly Cycling Club</li>
