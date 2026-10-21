@@ -3,6 +3,7 @@ import styles from "./SellYourBike.module.css";
 export default function SellYourBike() {
   return (
     <section id="sell-your-bike" className={styles.section}>
+      <h1>Sell Your Bike</h1>
       <p>
         We can help you consign your road, gravel, or triathlon bike at a
         commission rate of 10%. We will inspect, clean, and tune-up your
