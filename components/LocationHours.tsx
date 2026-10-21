@@ -3,8 +3,9 @@ import styles from "./LocationHours.module.css";
 export default function LocationHours() {
   return (
     <section id="location-hours" className={styles.section}>
+      <h1>Location &amp; Hours</h1>
       <p>
-        We are located in Crescent Park, Our address can be obtained through
+        We are located in Crescent Park, Palo Alto, CA. Our address can be obtained through
         emailing us. This way, we can have added security (which also helps
         us keep costs low).
       </p>
