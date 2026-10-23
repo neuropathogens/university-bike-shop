@@ -40,14 +40,6 @@ const localBusinessJsonLd = {
     addressRegion: "CA",
     addressCountry: "US",
   },
-  openingHoursSpecification: [
-    {
-      "@type": "OpeningHoursSpecification",
-      dayOfWeek: ["Saturday", "Sunday"],
-      opens: "10:00",
-      closes: "15:00",
-    },
-  ],
   sameAs: ["https://www.instagram.com/universitybikes"],
   description:
     "Student-run bike shop in Palo Alto, CA selling used road, gravel, triathlon, and mountain bikes, with repairs, tune-ups, and bike fits by appointment.",
