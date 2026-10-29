@@ -1,5 +1,16 @@
 import styles from "./AboutUs.module.css";
 
+const SENIOR_SPOTLIGHTS = [
+  { n: 1, id: "Dew-vMHj4F7" },
+  { n: 2, id: "De0uf7Tmw2j" },
+  { n: 3, id: "De2oJ59kr2H" },
+  { n: 4, id: "De6AqAbG6aT" },
+  { n: 5, id: "De8k3HCG7T8" },
+  { n: 6, id: "De-73Dlm5yo" },
+  { n: 7, id: "DfBnaGZG50x" },
+  { n: 8, id: "DfD5yBQGweD" },
+];
+
 const TEAM = [
   { name: "Paul Wang", role: "Manager" },
   { name: "Kai Russel", role: "Lead Mechanic" },
@@ -68,6 +79,17 @@ export default function AboutUs() {
         ))}
       </ul>
       <h2>Media</h2>
+      <h3>Senior Spotlight</h3>
+      {SENIOR_SPOTLIGHTS.map(({ n, id }) => (
+        <iframe
+          key={id}
+          src={`https://www.instagram.com/p/${id}/embed/captioned/`}
+          title={`Senior Spotlight ${n}/11 on Instagram`}
+          style={{ width: "100%", height: 900, border: 0 }}
+          loading="lazy"
+          allowFullScreen
+        />
+      ))}
     </section>
   );
 }
