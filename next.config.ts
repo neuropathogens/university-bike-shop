@@ -12,6 +12,10 @@ const nextConfig: NextConfig = {
         source: "/secret/claude-audit",
         destination: "/secret/claude-audit/index.html",
       },
+      {
+        source: "/secret/directory",
+        destination: "/secret/directory/index.html",
+      },
     ];
   },
   async headers() {
