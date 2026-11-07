@@ -8,6 +8,10 @@ const nextConfig: NextConfig = {
         source: "/secret/climbing/holds",
         destination: "/secret/climbing/holds/index.html",
       },
+      {
+        source: "/secret/claude-audit",
+        destination: "/secret/claude-audit/index.html",
+      },
     ];
   },
   async headers() {
