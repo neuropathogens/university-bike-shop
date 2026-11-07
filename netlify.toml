@@ -11,6 +11,11 @@
   to = "/secret/cycling/3d-parts/index.html"
   status = 200
 
+[[redirects]]
+  from = "/secret/changelog"
+  to = "/secret/changelog/index.html"
+  status = 200
+
 [[headers]]
   for = "/secret/*"
   [headers.values]
