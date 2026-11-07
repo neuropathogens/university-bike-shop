@@ -4,3 +4,14 @@
 
 [[plugins]]
   package = "@netlify/plugin-nextjs"
+
+# Unlisted static page in public/secret/ — served at a clean URL, kept out of search engines.
+[[redirects]]
+  from = "/secret/cycling/3d-parts"
+  to = "/secret/cycling/3d-parts/index.html"
+  status = 200
+
+[[headers]]
+  for = "/secret/*"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow, noarchive"
