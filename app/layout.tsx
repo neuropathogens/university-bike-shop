@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { IBM_Plex_Mono } from "next/font/google";
 import Nav from "@/components/Nav";
 import SalesNotice from "@/components/SalesNotice";
@@ -25,6 +25,10 @@ export const metadata: Metadata = {
     siteName: "University Bike Shop",
     url: "https://universitybikeshop.com",
   },
+};
+
+export const viewport: Viewport = {
+  themeColor: "#000000",
 };
 
 const localBusinessJsonLd = {
