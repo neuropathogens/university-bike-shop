@@ -9,6 +9,10 @@ const nextConfig: NextConfig = {
         destination: "/secret/climbing/holds/index.html",
       },
       {
+        source: "/secret/climbing/holds/stl",
+        destination: "/secret/climbing/holds/stl/index.html",
+      },
+      {
         source: "/secret/climbing/gauge",
         destination: "/secret/climbing/gauge/index.html",
       },
