@@ -16,6 +16,12 @@
   to = "/secret/changelog/index.html"
   status = 200
 
+# Browser game (single self-contained file, built from github.com/neuropathogens/ubs-shooter).
+[[redirects]]
+  from = "/shooter"
+  to = "/shooter/index.html"
+  status = 200
+
 [[headers]]
   for = "/secret/*"
   [headers.values]
