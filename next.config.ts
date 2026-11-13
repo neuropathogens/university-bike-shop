@@ -1,35 +1,12 @@
 import type { NextConfig } from "next";
 
+// The site is fully static: `next build` writes plain files to out/, which
+// Cloudflare Pages serves. Response headers live in public/_headers (static
+// exports cannot set them here). Pages serves public/**/index.html at its
+// folder URL on its own, so the unlisted pages under public/secret/ need no
+// rewrites.
 const nextConfig: NextConfig = {
-  // Unlisted static pages under public/secret/ (served at a clean URL, kept out of search engines).
-  async rewrites() {
-    return [
-      {
-        source: "/secret/climbing/holds",
-        destination: "/secret/climbing/holds/index.html",
-      },
-      {
-        source: "/secret/climbing/gauge",
-        destination: "/secret/climbing/gauge/index.html",
-      },
-      {
-        source: "/secret/claude-audit",
-        destination: "/secret/claude-audit/index.html",
-      },
-      {
-        source: "/secret/directory",
-        destination: "/secret/directory/index.html",
-      },
-    ];
-  },
-  async headers() {
-    return [
-      {
-        source: "/secret/:path*",
-        headers: [{ key: "X-Robots-Tag", value: "noindex, nofollow, noarchive" }],
-      },
-    ];
-  },
+  output: "export",
 };
 
 export default nextConfig;
