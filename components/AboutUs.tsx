@@ -9,6 +9,10 @@ const SENIOR_SPOTLIGHTS = [
   { n: 6, id: "De-73Dlm5yo" },
   { n: 7, id: "DfBnaGZG50x" },
   { n: 8, id: "DfD5yBQGweD" },
+  { n: 9, id: "DfFUz_6m81I" },
+  { n: 10, id: "DfOn0utmyQX" },
+  { n: 11, id: "DfRCkZYG93W" },
+  { n: 12, id: "DfTkS-qmzPi" },
 ];
 
 const TEAM = [
