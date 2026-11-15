@@ -1,14 +1,20 @@
 import type { Metadata, Viewport } from "next";
-import { IBM_Plex_Mono } from "next/font/google";
+import localFont from "next/font/local";
 import Nav from "@/components/Nav";
 import SalesNotice from "@/components/SalesNotice";
 import Contact from "@/components/Contact";
 import "./globals.css";
 
-const ibmPlexMono = IBM_Plex_Mono({
-  variable: "--font-ibm-plex-mono",
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
+// Latin Modern (the LaTeX / Computer Modern look), self-hosted.
+const latinModern = localFont({
+  variable: "--font-latin-modern",
+  display: "swap",
+  src: [
+    { path: "./fonts/LM-regular.woff2", weight: "400", style: "normal" },
+    { path: "./fonts/LM-italic.woff2", weight: "400", style: "italic" },
+    { path: "./fonts/LM-bold.woff2", weight: "700", style: "normal" },
+    { path: "./fonts/LM-bold-italic.woff2", weight: "700", style: "italic" },
+  ],
 });
 
 export const metadata: Metadata = {
@@ -55,7 +61,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={ibmPlexMono.variable}>
+    <html lang="en" className={latinModern.variable}>
       <body>
         <script
           type="application/ld+json"
