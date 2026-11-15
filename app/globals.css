@@ -19,7 +19,7 @@ body {
   flex-direction: column;
   color: var(--foreground);
   background: var(--background);
-  font-family: var(--font-ibm-plex-mono), monospace;
+  font-family: var(--font-latin-modern), "Latin Modern Roman", "Computer Modern Serif", "CMU Serif", Georgia, serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
