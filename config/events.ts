@@ -6,7 +6,10 @@
 //      `when` is what visitors see ("August 2026", "June 15-19, 2026", ...).
 //   3. Photo paths start with "/" and are relative to public/.
 //   4. Optional: `instagram` is a post URL (https://www.instagram.com/p/<code>/)
-//      embedded below the event.
+//      embedded below the event. If the embed is cut off or has blank space
+//      at the bottom, set `instagramSize`: `media` is the post's photo/video
+//      height ÷ width (default 4/3 for portrait) and `extra` is the pixels of
+//      header + caption below it (default 310; raise it for long captions).
 
 export type EventPhoto = {
   src: string;
@@ -23,9 +26,21 @@ export type ShopEvent = {
   photos?: EventPhoto[];
   link?: { href: string; label: string };
   instagram?: string;
+  instagramSize?: { media?: number; extra?: number };
 };
 
 export const events: ShopEvent[] = [
+  {
+    title: "Partnership with Giant/Liv Guangzhou",
+    date: "2026-07-07",
+    when: "July 2026",
+    location: "Guangzhou, China",
+    role: "Partnership",
+    description:
+      "We partnered with a Giant/Liv bike store in Guangzhou, China. Through it we can order new Giant, Liv, and Look bikes without the usual US retail markup, and get high-end Shimano groupsets for 20% off.",
+    instagram: "https://www.instagram.com/p/DafnyugFY-N/",
+    instagramSize: { media: 0.5625, extra: 540 },
+  },
   {
     title: "3D-Printable Mountain Bike Launch",
     date: "2026-10-29",

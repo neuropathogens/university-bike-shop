@@ -57,11 +57,12 @@
   gap: 0.5rem;
 }
 
-/* Instagram's captioned embed: 4:3 photo plus ~290px of header/caption. */
+/* Instagram's captioned embed: media (height/width ratio) plus header/caption.
+   Set per post via --ig-media and --ig-extra (see config/events.ts). */
 .instagram iframe {
   display: block;
   width: 100%;
-  height: calc(100cqw * 4 / 3 + 310px);
+  height: calc(100cqw * var(--ig-media, 1.3333) + var(--ig-extra, 310px));
   border: 1px solid var(--foreground);
   background: #fff;
 }

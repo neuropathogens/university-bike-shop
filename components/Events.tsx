@@ -44,7 +44,13 @@ export default function Events() {
                   {event.link.label}
                 </Link>
               )}
-              {event.instagram && <InstagramEmbed url={event.instagram} />}
+              {event.instagram && (
+                <InstagramEmbed
+                  url={event.instagram}
+                  media={event.instagramSize?.media}
+                  extra={event.instagramSize?.extra}
+                />
+              )}
             </li>
           ))}
         </ol>
