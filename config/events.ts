@@ -5,6 +5,8 @@
 //   2. Add an entry below. `date` is YYYY-MM-DD and only used for sorting;
 //      `when` is what visitors see ("August 2026", "June 15-19, 2026", ...).
 //   3. Photo paths start with "/" and are relative to public/.
+//   4. Optional: `instagram` is a post URL (https://www.instagram.com/p/<code>/)
+//      embedded below the event.
 
 export type EventPhoto = {
   src: string;
@@ -20,6 +22,7 @@ export type ShopEvent = {
   description: string;
   photos?: EventPhoto[];
   link?: { href: string; label: string };
+  instagram?: string;
 };
 
 export const events: ShopEvent[] = [
@@ -46,6 +49,7 @@ export const events: ShopEvent[] = [
     location: "Palo Alto High School",
     role: "Volunteer mechanics",
     description:
-      "We volunteered as mechanics at Paly's back-to-school bike repair event, getting students' bikes safe and ready for the commute to school.",
+      "We volunteered with the Silicon Valley Bike Exchange at Paly's back-to-school bike repair event, giving Palo Alto High School students free tune-ups so their bikes were safe and ready for the commute to school.",
+    instagram: "https://www.instagram.com/p/Db8xjcpGFNM/",
   },
 ];

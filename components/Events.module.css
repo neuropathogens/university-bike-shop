@@ -48,6 +48,28 @@
   text-decoration: underline;
 }
 
+.instagram {
+  container-type: inline-size;
+  width: 100%;
+  max-width: 540px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* Instagram's captioned embed: 4:3 photo plus ~290px of header/caption. */
+.instagram iframe {
+  display: block;
+  width: 100%;
+  height: calc(100cqw * 4 / 3 + 310px);
+  border: 1px solid var(--foreground);
+  background: #fff;
+}
+
+.instagram a {
+  text-decoration: underline;
+}
+
 @media (max-width: 40rem) {
   .gallery {
     grid-template-columns: 1fr;

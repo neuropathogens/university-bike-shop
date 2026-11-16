@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { events } from "@/config/events";
+import InstagramEmbed from "./InstagramEmbed";
 import styles from "./Events.module.css";
 
 export default function Events() {
@@ -43,6 +44,7 @@ export default function Events() {
                   {event.link.label}
                 </Link>
               )}
+              {event.instagram && <InstagramEmbed url={event.instagram} />}
             </li>
           ))}
         </ol>
