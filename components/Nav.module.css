@@ -22,7 +22,7 @@
   text-decoration: underline;
 }
 
-@media (max-width: 64rem) {
+@media (max-width: 72rem) {
   .bar {
     display: flex;
     align-items: center;

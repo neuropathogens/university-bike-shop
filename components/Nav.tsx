@@ -13,6 +13,7 @@ const links = [
   { href: "/bike-fits", label: "Bike Fits" },
   { href: "/summer-camp", label: "Summer Camp" },
   { href: "/events", label: "Events" },
+  { href: "/projects", label: "Projects" },
   { href: "/sponsorships", label: "Sponsorships" },
   { href: "/about-us", label: "About Us" },
   { href: "/location-hours", label: "Location & Hours", right: true },
