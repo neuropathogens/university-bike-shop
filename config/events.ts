@@ -28,17 +28,16 @@ export type ShopEvent = {
 export const events: ShopEvent[] = [
   {
     title: "University Bike Shop Summer Camp",
-    date: "2026-07-01",
-    when: "Summer 2026",
+    date: "2026-08-12",
+    when: "August 2026",
     location: "Palo Alto, CA",
     role: "Organizer",
     description:
-      "A 5-day bike camp we ran with our own curriculum. Campers learned hands-on bike maintenance and repair: adjusting derailleurs, truing and cleaning wheels, and washing and tuning their own bikes.",
+      "A completely free five-day bike camp we designed and ran ourselves. 22 kids signed up for 15 spots. Campers learned hands-on repair from our student mechanics, cleaning drivetrains, adjusting derailleurs, and tuning bikes, and every camper went home with a free bike, thanks to community bike donations.",
     photos: [
-      { src: "/summer-camp-group.jpg", alt: "Summer camp campers with their bikes" },
-      { src: "/summer-camp-wheel.jpg", alt: "Camper adjusting a rear derailleur" },
-      { src: "/summer-camp-tent.jpg", alt: "Campers gathered under a canopy" },
-      { src: "/summer-camp-spray.jpg", alt: "Camper using a pressure washer on a bike" },
+      { src: "/camp-photos/camp-01.jpg", alt: "Camper degreasing a chain, seen through the spokes of a Schwinn" },
+      { src: "/camp-photos/camp-08.jpg", alt: "Camper with two mentors and the bike they went home with" },
+      { src: "/camp-photos/camp-02.jpg", alt: "Camper adjusting a derailleur cable while a mentor watches" },
     ],
     link: { href: "/summer-camp", label: "More summer camp photos" },
   },
