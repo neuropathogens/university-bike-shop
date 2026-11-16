@@ -27,6 +27,16 @@ export type ShopEvent = {
 
 export const events: ShopEvent[] = [
   {
+    title: "3D-Printable Mountain Bike Launch",
+    date: "2026-10-29",
+    when: "October 2026",
+    location: "Online",
+    role: "Launch & promotion",
+    description:
+      "We teamed up with designer Kai Russel to launch his 3D-printable mountain bike: 29 printable parts, including a working suspension fork, linkage, and shock. We produced the launch reels and released the STL file for $4.99.",
+    instagram: "https://www.instagram.com/p/DfFw0xSSEdE/",
+  },
+  {
     title: "University Bike Shop Summer Camp",
     date: "2026-08-12",
     when: "August 2026",

@@ -10,8 +10,8 @@ export default function Events() {
     <section id="events" className={styles.section}>
       <h1>Events</h1>
       <p className={styles.intro}>
-        Camps, repair days, and community events University Bike Shop has run
-        or volunteered at.
+        Camps, repair days, launches, and community events University Bike Shop
+        has run or been part of.
       </p>
 
       {sorted.length === 0 ? (
