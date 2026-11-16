@@ -1,0 +1,3 @@
+# The old unlisted directory moved to /directory.
+/secret/directory  /directory/  301
+/secret/directory/ /directory/  301
