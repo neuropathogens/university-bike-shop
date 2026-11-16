@@ -23,6 +23,7 @@ University Bike Shop (universitybikeshop.com) is a bike business run by local hi
 - [Bike Fits](https://universitybikeshop.com/bike-fits)
 - [Sell Your Bike](https://universitybikeshop.com/sell-your-bike)
 - [Summer Camp](https://universitybikeshop.com/summer-camp)
+- [Events](https://universitybikeshop.com/events)
 - [Sponsorships](https://universitybikeshop.com/sponsorships)
 - [About Us](https://universitybikeshop.com/about-us)
 - [Location & Hours](https://universitybikeshop.com/location-hours)

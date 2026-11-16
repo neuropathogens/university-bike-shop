@@ -10,6 +10,7 @@ export default function Nav() {
       <Link href="/service">Service</Link>
       <Link href="/bike-fits">Bike Fits</Link>
       <Link href="/summer-camp">Summer Camp</Link>
+      <Link href="/events">Events</Link>
       <Link href="/sponsorships">Sponsorships</Link>
       <Link href="/about-us">About Us</Link>
       <Link href="/location-hours" className={styles.right}>

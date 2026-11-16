@@ -12,6 +12,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/service",
     "/bike-fits",
     "/summer-camp",
+    "/events",
     "/sponsorships",
     "/about-us",
     "/location-hours",
