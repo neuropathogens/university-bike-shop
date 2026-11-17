@@ -1,3 +1,9 @@
 # Unlisted static pages: keep them out of search engines.
 /secret/*
   X-Robots-Tag: noindex, nofollow, noarchive
+
+# The site directory lists the unlisted pages, so it stays out of search engines too.
+/directory
+  X-Robots-Tag: noindex, nofollow, noarchive
+/directory/*
+  X-Robots-Tag: noindex, nofollow, noarchive
