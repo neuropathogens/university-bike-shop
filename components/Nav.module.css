@@ -1,10 +1,70 @@
 .nav {
+  border-bottom: 1px solid var(--foreground);
+}
+
+/* Brand + Menu button: only shown on narrow screens. */
+.bar {
+  display: none;
+}
+
+.links {
+  list-style: none;
   display: flex;
   gap: 1.5rem;
   padding: 1rem;
-  border-bottom: 1px solid var(--foreground);
 }
 
 .right {
   margin-left: auto;
+}
+
+.links a[aria-current="page"] {
+  text-decoration: underline;
+}
+
+@media (max-width: 72rem) {
+  .bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0.75rem 1rem;
+  }
+
+  .brand {
+    font-weight: bold;
+  }
+
+  .toggle {
+    font: inherit;
+    color: inherit;
+    background: var(--background);
+    border: 1px solid var(--foreground);
+    padding: 0.4rem 0.9rem;
+    cursor: pointer;
+  }
+
+  .links {
+    display: none;
+    flex-direction: column;
+    gap: 0;
+    padding: 0 1rem 0.5rem;
+  }
+
+  .links.open {
+    display: flex;
+  }
+
+  .links li {
+    border-top: 1px solid var(--foreground);
+  }
+
+  .links a {
+    display: block;
+    padding: 0.75rem 0;
+  }
+
+  .right {
+    margin-left: 0;
+  }
 }

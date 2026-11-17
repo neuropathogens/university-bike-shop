@@ -1,0 +1,85 @@
+.section {
+  max-width: 50rem;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.intro {
+  max-width: 40rem;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 1.5rem 0;
+  border-top: 1px solid var(--foreground);
+  line-height: 1.5;
+}
+
+.tagline {
+  font-size: 1.15rem;
+  margin-top: -0.5rem;
+}
+
+.meta {
+  font-style: italic;
+}
+
+.highlights {
+  padding-left: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.gallery[data-count="3"] {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.gallery img {
+  display: block;
+  width: 100%;
+  border: 1px solid var(--foreground);
+  background: #fff;
+}
+
+/* Technical drawings: same box size, whole drawing visible. */
+.gallery img[src$=".svg"] {
+  aspect-ratio: 1;
+  object-fit: contain;
+  padding: 0.5rem;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.links a {
+  text-decoration: underline;
+}
+
+@media (max-width: 40rem) {
+  .gallery,
+  .gallery[data-count="3"] {
+    grid-template-columns: 1fr;
+  }
+}

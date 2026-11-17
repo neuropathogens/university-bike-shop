@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import SummerCamp from "@/components/SummerCamp";
 
 export const metadata: Metadata = {
-  title: "Summer Bike Camp in Palo Alto",
+  title: "Free Summer Bike Camp in Palo Alto",
   description:
-    "Photos and highlights from this year's University Bike Shop summer camp in Palo Alto, where campers learn bike maintenance and repair hands-on.",
+    "University Bike Shop's free five-day summer bike camp in Palo Alto: 15 campers learned hands-on bike repair from student mechanics, and every camper went home with a free donated bike.",
   alternates: { canonical: "/summer-camp" },
 };
 
