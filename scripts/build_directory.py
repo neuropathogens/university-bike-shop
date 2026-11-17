@@ -90,6 +90,14 @@ TREE = page("/", "Home", "The shop, what it sells, and how to book an appointmen
                 folder("/study/ap/ap-chemistry/unit-5/", files=files("study/ap/ap-chemistry/unit-5", "PDFs"),
                        desc="Unit 5, Kinetics", anchor="/study/#ap-chemistry"),
             ], desc="AP Chemistry", anchor="/study/#ap-chemistry"),
+            folder("/study/ap/ap-english-literature/", [
+                page("/study/ap/ap-english-literature/xyz-essay/", "The XYZ Essay",
+                     "AP English Literature essay guide: thesis, quote units, scoring guide, Gatsby planning kit.", "unlisted"),
+            ], desc="AP English Literature", anchor="/study/#ap-english-literature"),
+            folder("/study/ap/ap-statistics/", [
+                folder("/study/ap/ap-statistics/unit-6/", files=files("study/ap/ap-statistics/unit-6", "PDFs"),
+                       desc="Unit 6, Sampling Distributions", anchor="/study/#ap-statistics"),
+            ], desc="AP Statistics", anchor="/study/#ap-statistics"),
         ], desc="AP", anchor="/study/#ap"),
     ]),
 
