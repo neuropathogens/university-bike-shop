@@ -1,0 +1,461 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light">
+<meta name="robots" content="noindex, nofollow">
+<script>try{document.documentElement.setAttribute("data-theme",localStorage.getItem("apah.theme")==="dark"?"dark":"light")}catch(e){document.documentElement.setAttribute("data-theme","light")}</script>
+<title>Unit 5 Practice Test</title>
+<meta name="description" content="AP Art History Unit 5 (Ancient Mediterranean, works 12–47): 34 multiple-choice questions with explanations and two essay prompts.">
+<link rel="icon" href="/favicon.ico" sizes="48x48" type="image/x-icon">
+<link rel="icon" href="/icon.svg" sizes="any" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-icon.png" sizes="180x180">
+<link rel="preload" href="../../fonts/LM-regular.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:"Latin Modern";font-style:normal;font-weight:400;font-display:swap;src:url("../../fonts/LM-regular.woff2") format("woff2")}
+@font-face{font-family:"Latin Modern";font-style:italic;font-weight:400;font-display:swap;src:url("../../fonts/LM-italic.woff2") format("woff2")}
+@font-face{font-family:"Latin Modern";font-style:normal;font-weight:600 700;font-display:swap;src:url("../../fonts/LM-bold.woff2") format("woff2")}
+@font-face{font-family:"Latin Modern";font-style:italic;font-weight:600 700;font-display:swap;src:url("../../fonts/LM-bold-italic.woff2") format("woff2")}
+@font-face{font-family:"Latin Modern Mono";font-style:normal;font-weight:400 500;font-display:swap;src:url("../../fonts/LM-mono.woff2") format("woff2")}
+@font-face{font-family:"Latin Modern Mono";font-style:normal;font-weight:600 700;font-display:swap;src:url("../../fonts/LM-mono-bold.woff2") format("woff2")}
+
+:root{--bg:#fff;--fg:#000;--muted:#4a4a4a;--line:#c9c9c9;--plate:#f5f5f3;--link:#00008b;--ok:#1d5e20;--bad:#9b1c1c;
+  --serif:"Latin Modern","Computer Modern Serif","CMU Serif",Georgia,serif;--mono:"Latin Modern Mono","SFMono-Regular",Menlo,Consolas,monospace;
+  --gutter:clamp(16px,4vw,40px);color-scheme:light}
+:root[data-theme=dark]{--bg:#111110;--fg:#ecebe6;--muted:#a3a29c;--line:#34342f;--plate:#1b1b19;--link:#9db4ff;--ok:#8fd394;--bad:#ff9b9b;color-scheme:dark}
+*{box-sizing:border-box}
+html{background:var(--bg);scroll-padding-top:16px}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--serif);font-size:17px;line-height:1.5;font-kerning:normal;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+button,input,textarea{font:inherit;color:inherit}
+button{cursor:pointer}
+button:disabled{cursor:default}
+a{color:var(--link);text-underline-offset:3px;text-decoration-thickness:.5px}
+:focus-visible{outline:2px solid var(--link);outline-offset:2px}
+[hidden]{display:none!important}
+.sc{font-variant:small-caps;text-transform:lowercase;letter-spacing:.04em}
+.muted{color:var(--muted)}
+
+.runhead{display:flex;flex-wrap:wrap;justify-content:space-between;gap:4px 16px;max-width:1480px;margin:0 auto;padding:14px var(--gutter) 6px;font-size:14px;font-style:italic;color:var(--muted)}
+.runhead a{text-decoration:none}
+.runhead a:hover{text-decoration:underline}
+.runhead-actions{display:flex;flex-wrap:wrap;gap:4px 18px}
+.theme-btn{background:none;border:0;padding:0;font:inherit;font-style:italic;color:var(--link)}
+.theme-btn:hover{text-decoration:underline}
+.rule{max-width:1480px;margin:0 auto;padding-inline:var(--gutter)}
+.rule hr{margin:0;border:0;border-top:.5px solid var(--fg)}
+
+.wrap{max-width:860px;margin:0 auto;padding:0 var(--gutter) 80px}
+.title{text-align:center;padding:34px 0 22px}
+.title h1{margin:0;font-size:clamp(32px,6vw,46px);line-height:1.1;font-weight:700}
+.title .sub{margin:8px 0 0;font-size:18px;font-variant:small-caps;letter-spacing:.03em}
+.title .meta{margin:4px 0 0;font-style:italic;color:var(--muted)}
+
+.tabs{display:flex;justify-content:center;gap:0;margin:0 0 26px;border-bottom:.5px solid var(--fg)}
+.tab{background:none;border:0;border-bottom:2.5px solid transparent;padding:8px 18px;margin-bottom:-1px;font-size:17px;color:var(--muted)}
+.tab[aria-selected=true]{color:var(--fg);border-bottom-color:var(--fg);font-weight:700}
+.tab:hover{color:var(--fg)}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:40px;padding:0 16px;border:1px solid var(--fg);background:var(--bg);font-family:var(--mono);font-size:14.5px;white-space:nowrap}
+.btn:hover:not(:disabled){background:var(--plate)}
+.btn:disabled{opacity:.35}
+.btn--solid{background:var(--fg);color:var(--bg)}
+.btn--solid:hover:not(:disabled){background:var(--fg);opacity:.85}
+.btn--lg{min-height:48px;font-size:15.5px;padding:0 22px}
+.kbd{display:inline-grid;place-items:center;min-width:22px;height:22px;padding:0 4px;border:1px solid currentColor;font-family:var(--mono);font-size:12px;opacity:.8}
+
+/* setup */
+.setup{border-bottom:1.5px solid var(--fg);padding:4px 0 22px;display:grid;gap:18px}
+.setup h2,.results h2,.essay h2{margin:0;font-size:20px}
+.choice-row{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.choice{display:flex;flex-direction:column;align-items:flex-start;gap:2px;padding:12px 14px;border:1px solid var(--fg);background:var(--bg);text-align:left}
+.choice b{font-size:17px}
+.choice span{font-size:14.5px;font-style:italic;color:var(--muted)}
+.choice[aria-pressed=true]{background:var(--fg);color:var(--bg)}
+.choice[aria-pressed=true] span{color:var(--bg);opacity:.8}
+.checks{display:flex;flex-wrap:wrap;gap:8px 22px}
+.checks label{display:inline-flex;align-items:center;gap:8px;cursor:pointer}
+.checks input{width:17px;height:17px;margin:0;accent-color:var(--fg)}
+.setup-actions{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.note{margin:0;font-size:15px;color:var(--muted);font-style:italic}
+
+/* run */
+.bar{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:4px 16px;font-size:15px;color:var(--muted)}
+.track{height:3px;background:var(--line);margin:8px 0 14px}
+.track span{display:block;height:100%;background:var(--fg);transition:width .2s ease}
+.nav{display:grid;grid-template-columns:repeat(auto-fill,minmax(34px,1fr));gap:5px;margin:0 0 22px}
+.nav button{height:32px;padding:0;border:1px solid var(--line);background:var(--bg);font-family:var(--serif);font-size:14px;font-variant-numeric:tabular-nums}
+.nav button:hover{border-color:var(--fg)}
+.nav .is-answered{background:var(--plate);border-color:var(--fg)}
+.nav .is-right{background:var(--fg);color:var(--bg);border-color:var(--fg)}
+.nav .is-wrong{border:1.5px dashed var(--bad);color:var(--bad)}
+.nav .is-current{outline:2px solid var(--fg);outline-offset:1px}
+.q{border-top:1.5px solid var(--fg);padding-top:16px}
+.q-eyebrow{margin:0 0 6px;font-size:14px;color:var(--muted)}
+.figs{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;padding:14px;background:var(--plate);margin:0 0 16px}
+.figs button{flex:0 1 auto;min-width:0;padding:0;border:0;background:none;cursor:zoom-in}
+.figs img{margin:0 auto}
+.figs img{display:block;max-width:100%;max-height:44vh;width:auto;height:auto;object-fit:contain}
+.figs .zoom-hint{flex-basis:100%;text-align:center;font-size:13px;color:var(--muted);font-style:italic;margin:-4px 0 -6px}
+.q-prompt{margin:0 0 14px;font-size:21px;line-height:1.35;font-weight:700}
+.opts{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.opt{display:flex;align-items:center;gap:12px;width:100%;min-height:52px;padding:10px 14px;border:1px solid var(--fg);background:var(--bg);text-align:left;font-size:16.5px;line-height:1.35}
+.opt:hover:not(:disabled){background:var(--plate)}
+.opt .kbd{flex:none}
+.opt .mark{margin-left:auto;font-family:var(--mono);font-size:14px;white-space:nowrap}
+.opt.is-picked{border-width:2px;padding:9px 13px;background:var(--plate)}
+.opt.is-right{background:var(--fg);color:var(--bg);border-color:var(--fg)}
+.opt.is-wrong{border:1.5px dashed var(--bad);color:var(--bad);text-decoration:line-through;text-decoration-thickness:1px}
+.opt.is-wrong .mark,.opt.is-wrong .kbd{text-decoration:none}
+.opt.is-dim{opacity:.5}
+.fb{margin:14px 0 0;padding:12px 16px;border:.5px solid var(--fg);border-left:3px solid var(--ok)}
+.fb.is-wrong{border-left-color:var(--bad)}
+.fb p{margin:0}
+.fb .verdict{font-weight:700;margin-bottom:4px}
+.fb .links{margin-top:6px;font-size:15px}
+.step{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:10px;margin-top:20px}
+.step-right{display:flex;flex-wrap:wrap;gap:8px}
+.confirm{margin-top:14px;padding:12px 16px;border:1px solid var(--fg);display:flex;flex-wrap:wrap;align-items:center;gap:10px}
+.confirm p{margin:0;flex:1 1 220px}
+.keys{margin:18px 0 0;font-size:13.5px;color:var(--muted);text-align:center}
+.restart-line{margin:10px 0 0;font-size:14.5px;text-align:center}
+
+/* results */
+.results{padding-top:4px}
+.score{text-align:center;padding:10px 0 18px}
+.score-big{margin:0;font-size:clamp(48px,10vw,72px);font-weight:700;line-height:1;font-variant-numeric:tabular-nums}
+.score p{margin:6px 0 0}
+.res-actions{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin:0 0 22px}
+.res-filter{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:6px;border-bottom:1.5px solid var(--fg);padding-bottom:6px}
+.res-list{list-style:none;margin:0;padding:0}
+.res-list li{border-bottom:.5px solid var(--line)}
+.res-list li:last-child{border-bottom:1.5px solid var(--fg)}
+.res-list details{padding:10px 0}
+.res-list summary{display:grid;grid-template-columns:34px 22px minmax(0,1fr);gap:8px;cursor:pointer;list-style:none}
+.res-list summary::-webkit-details-marker{display:none}
+.res-n{font-weight:700;font-variant-numeric:tabular-nums}
+.res-ok{color:var(--ok);font-weight:700}
+.res-bad{color:var(--bad);font-weight:700}
+.res-body{padding:8px 0 4px 64px;font-size:15.5px}
+.res-body p{margin:0 0 4px}
+
+/* essays */
+.essay{border-top:1.5px solid var(--fg);padding:18px 0 26px}
+.essay h2 small{font-weight:400;font-style:italic;color:var(--muted);font-size:15px;margin-left:6px}
+.essay ol{margin:10px 0 14px;padding-left:22px}
+.essay li{margin:3px 0}
+.essay textarea{width:100%;min-height:220px;padding:12px 14px;border:1px solid var(--fg);border-radius:0;background:var(--bg);font-family:var(--serif);font-size:16.5px;line-height:1.55;resize:vertical}
+.essay-meta{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px;align-items:center;margin-top:8px;font-size:14px;color:var(--muted)}
+.keypts{margin-top:14px;padding:12px 18px;border:.5px solid var(--fg)}
+.keypts h3{margin:0 0 6px;font-size:16px}
+.keypts ul{margin:0;padding-left:20px}
+.keypts li{margin:6px 0;text-align:justify;hyphens:auto;-webkit-hyphens:auto}
+.foot{margin-top:40px;padding-top:12px;border-top:.5px solid var(--line);font-size:14px;color:var(--muted)}
+
+/* lightbox */
+.lb{position:fixed;inset:0;z-index:50;background:rgba(0,0,0,.88);display:flex;flex-direction:column;align-items:center;justify-content:center;padding:16px;cursor:zoom-out}
+.lb img{max-width:100%;max-height:calc(100vh - 80px);width:auto;height:auto;min-height:min(60vh,500px);object-fit:contain;background:#fff}
+.lb p{color:#eee;font-size:14px;margin:10px 0 0}
+
+@media (max-width:640px){
+  .runhead-title{display:none}
+  .runhead-actions{width:100%;justify-content:space-between}
+  .title{padding:22px 0 16px}
+  .choice-row{grid-template-columns:1fr}
+  .q-prompt{font-size:19px}
+  .figs{padding:10px}
+  .figs img{max-height:36vh}
+  .res-body{padding-left:0}
+  .keys{display:none}
+  .keypts li{text-align:left}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+@media print{.runhead,.rule,.tabs,.nav,.step,.keys,.restart-line,.res-actions{display:none!important}}
+</style>
+</head>
+<body>
+<div class="runhead"><span class="runhead-title">AP Art History &middot; Unit 5 practice test</span><span class="runhead-actions"><a href="../../">&larr;&nbsp;APAH 250</a><button type="button" class="theme-btn" id="theme-btn">Dark mode</button></span></div>
+<div class="rule"><hr></div>
+
+<main class="wrap">
+  <header class="title">
+    <h1>Unit 5 Practice Test</h1>
+    <p class="sub">Ancient Mediterranean &middot; works 12&ndash;47</p>
+    <p class="meta">34 multiple-choice questions &middot; 2 essays</p>
+  </header>
+
+  <div class="tabs" role="tablist">
+    <button type="button" class="tab" role="tab" id="tab-mc" aria-controls="mc" aria-selected="true">Multiple choice</button>
+    <button type="button" class="tab" role="tab" id="tab-essays" aria-controls="essays" aria-selected="false">Essays</button>
+  </div>
+
+  <section id="mc" role="tabpanel" aria-labelledby="tab-mc"></section>
+  <section id="essays" role="tabpanel" aria-labelledby="tab-essays" hidden></section>
+
+  <p class="foot">Questions adapted from a class Unit 5 exam. Explanations and essay key points were written for this page; work numbers refer to the College Board <i>AP Art History Course and Exam Description</i>. Your answers and drafts are saved only in this browser.</p>
+</main>
+
+<script id="data" type="application/json">{"mc": [{"n": 1, "works": [47], "prompt": "The style of the Ludovisi Battle Sarcophagus is", "options": ["late Imperial Roman", "Republican Roman", "Classical Roman", "Classical Greek"], "answer": 0, "why": "Made c. 250 C.E. during the third-century crisis: a crowded, chaotic pile of bodies with no ground line or open space and deep drill work. That anxious density is typical of late Imperial Roman relief.", "images": []}, {"n": 2, "works": [33], "prompt": "The Niobides Krater depicts", "options": ["black-and-white depictions of gods", "everyday Greek life", "Achilles and Ajax playing a dice game", "the brutal murder of several people"], "answer": 3, "why": "Apollo and Artemis shoot down Niobe's children as punishment for her boast. It is red-figure, not black-and-white; Achilles and Ajax playing dice is Exekias's black-figure amphora.", "images": []}, {"n": 3, "works": [16, 13], "prompt": "Which of the following statements is true of both the Standard of Ur from the Royal Tombs at Ur and the Palette of King Narmer?", "options": ["They celebrate military victory.", "They depict an enemy's military banner.", "They portray dynastic succession.", "They designate the king as a sun god."], "answer": 0, "why": "The Standard's war side and Narmer's smiting scene both glorify a ruler's victory, using registers and hierarchical scale.", "images": []}, {"n": 4, "works": [19], "prompt": "Which of the following does the Code of Hammurabi NOT contain?", "options": ["the god Shamash", "the god Re", "standardized laws", "King Hammurabi"], "answer": 1, "why": "Hammurabi stands before Shamash, the Babylonian sun god and god of justice, above 282 written laws. Re is an Egyptian god.", "images": []}, {"n": 5, "works": [42], "prompt": "The Head of a Roman Patrician differed from previous convention in that it", "options": ["did not reflect naturalistic human anatomy.", "celebrated aging.", "was idealized.", "celebrated youth."], "answer": 1, "why": "Republican verism: wrinkles, sagging skin and a toothless mouth signal wisdom, experience and service, in contrast to idealized Greek youth.", "images": []}, {"n": 6, "works": [46], "prompt": "Advances in the use of what building material made this building possible?", "options": ["concrete", "stucco", "marble", "travertine"], "answer": 0, "why": "The Pantheon's 142-foot dome is unreinforced Roman concrete, with lighter aggregate such as pumice toward the top.", "images": [{"src": "q06-1.jpg", "w": 216, "h": 322}]}, {"n": 7, "works": [22], "prompt": "This work of art was made during which period?", "options": ["Old Kingdom, 4th Dynasty", "17th Dynasty", "Predynastic Egypt", "Amarna period"], "answer": 3, "why": "Akhenaton, Nefertiti and their daughters: elongated heads and soft bellies, an intimate family scene, and the Aten's rays ending in hands mark the Amarna style (New Kingdom, 18th Dynasty).", "images": [{"src": "q07-1.jpg", "w": 432, "h": 317}]}, {"n": 8, "works": [43], "prompt": "What is the function of this piece?", "options": ["decoration", "entertainment", "education", "propaganda"], "answer": 3, "why": "Augustus of Prima Porta presents the emperor as an ideal general (adlocutio pose, Doryphoros proportions). The cuirass shows the Parthians returning Roman standards, and Cupid on a dolphin points to descent from Venus.", "images": [{"src": "q08-1.jpg", "w": 288, "h": 459}]}, {"n": 9, "works": [27, 28], "prompt": "This sculpture was different from female sculptures of the same date in that it", "options": ["is young", "was unpainted", "is nude", "is disproportionate to the human body"], "answer": 2, "why": "Archaic kouroi like the Anavysos Kouros are nude; korai like the Peplos Kore are clothed. Both types were youthful and originally painted.", "images": [{"src": "q09-1.jpg", "w": 144, "h": 441}]}, {"n": 10, "works": [22], "prompt": "Depicted here are", "options": ["gods in the afterlife", "a king with his family", "noble women caring for their children", "common people"], "answer": 1, "why": "Akhenaton and Nefertiti play with three of their daughters beneath the Aten, a house-altar image of the royal family.", "images": [{"src": "q10-1.jpg", "w": 432, "h": 317}]}, {"n": 11, "works": [34], "prompt": "The sculpture by Polykleitos that canonized ideal proportions was", "options": ["Minerva", "Niobides", "Doryphoros", "Ludovisi"], "answer": 2, "why": "The Doryphoros (Spear Bearer) demonstrated Polykleitos's Canon: mathematical ratios and contrapposto.", "images": []}, {"n": 12, "works": [32, 23], "prompt": "The Tomb of the Triclinium and Tutankhamun's tomb are similar in that", "options": ["there was an amazing amount of gold found", "they emphasize provisions for the afterlife", "men and women are shown as equals in the artwork", "there is no written record of the interment procedures"], "answer": 1, "why": "Both prepare the dead for the afterlife: the Etruscan tomb with painted banquet, music and dance; Tutankhamun's with coffins, grave goods and spells. Only Tutankhamun's was full of gold.", "images": []}, {"n": 13, "works": [20], "prompt": "Which of the following aspects of ancient Egyptian beliefs is reflected in the program of relief carvings and hieroglyphics that cover the interior and exterior surfaces of the temple complex?", "options": ["Ordinary humans could reign as gods in the afterlife.", "The pharaoh possessed divinely granted power to maintain order on earth.", "The temple priests were the sole intercessors between gods and humans.", "Egyptian gods were in constant conflict with foreign deities."], "answer": 1, "why": "At the Temple of Amun-Re, Karnak, the reliefs show pharaohs making offerings to the gods and smiting enemies: the king upholds ma'at (cosmic order) by divine mandate.", "images": [{"src": "q13-1.jpg", "w": 288, "h": 174}]}, {"n": 14, "works": [37], "prompt": "This work is a personification of", "options": ["victory", "liberty", "democracy", "love"], "answer": 0, "why": "The Winged Victory of Samothrace is Nike, goddess of victory, landing on a ship's prow to commemorate a naval win.", "images": [{"src": "q14-1.jpg", "w": 216, "h": 386}]}, {"n": 15, "works": [35], "prompt": "This sculpture is typical of which period?", "options": ["Hellenistic", "Geometric", "Archaic", "High Classical"], "answer": 3, "why": "Nike Adjusting Her Sandal, from the parapet of the Temple of Athena Nike on the Acropolis (c. 410 B.C.E.). Its clinging 'wet' drapery belongs to the Classical style of the Acropolis program.", "images": [{"src": "q15-1.jpg", "w": 288, "h": 472}]}, {"n": 16, "works": [39], "prompt": "This is the plan of the House of the Vettii. Walls in this house are decorated with", "options": ["seascapes", "illusionistic murals", "low-relief sculptures", "bright geometric patterns"], "answer": 1, "why": "Fourth Style Pompeian wall painting: architectural illusions framing mythological panels, around an atrium and a peristyle garden.", "images": [{"src": "q16-1.jpg", "w": 432, "h": 494}]}, {"n": 17, "works": [45], "prompt": "What important architectural innovation, copied repeatedly up until modern times, is seen here?", "options": ["basilica", "column", "colonnade", "clerestory"], "answer": 0, "why": "The Basilica Ulpia in the Forum of Trajan: a long hall with a central nave, side aisles and apses. Early Christian churches adopted this basilica plan.", "images": [{"src": "q17-1.jpg", "w": 432, "h": 324}]}, {"n": 18, "works": [29], "prompt": "In the Sarcophagus of the Spouses, the spouses appear to be", "options": ["standing at attention", "having sex", "playing a game", "eating"], "answer": 3, "why": "The couple reclines together on a banqueting couch, gesturing as if holding food, drink or perfume. Etruscan women joined banquets alongside men.", "images": []}, {"n": 19, "works": [46], "prompt": "The coffered ceiling was designed to", "options": ["represent the different territories of the empire", "dampen the echo in the chamber", "lighten the weight of the masonry", "represent different deities"], "answer": 2, "why": "The Pantheon's recessed coffers remove mass from the dome, reducing its weight while adding visual rhythm.", "images": [{"src": "q19-1.jpg", "w": 216, "h": 322}]}, {"n": 20, "works": [31], "prompt": "Etruscan temples", "options": ["were made of mud brick", "did not have sculptures", "were very similar to Greek temples", "are popular tourist destinations"], "answer": 0, "why": "The Temple of Minerva had mud-brick walls and wooden columns on a stone podium, with terracotta sculpture such as Apollo of Veii on the roof. It differs from Greek temples: a single front staircase, deep porch and high podium.", "images": []}, {"n": 21, "works": [12], "prompt": "What culture created this temple?", "options": ["Sumerian", "Greek", "Susian", "Egyptian"], "answer": 0, "why": "The White Temple and its ziggurat at Uruk, a Sumerian mud-brick platform raising the temple toward the sky god Anu.", "images": [{"src": "q21-1.jpg", "w": 432, "h": 185}, {"src": "q21-2.jpg", "w": 432, "h": 174}]}, {"n": 22, "works": [25], "fixed": true, "letters": true, "prompt": "The lamassu from the citadel of Sargon II", "options": ["appears to be walking when viewed from the side", "appears to be standing when viewed from the front", "is a votive figure", "a and b above", "all of the above"], "answer": 3, "why": "It has five legs: standing firm from the front, striding from the side. Lamassu are protective guardian figures at the gates, not votive figures.", "images": []}, {"n": 23, "works": [20], "prompt": "A pharaoh progressing through the temple complex was intended to encounter", "options": ["narrow, serpentine walkways that mimicked the flow of the Nile River, terminating at a sacred pool", "spaces that were increasingly dark and mysterious, leading to the inner sanctum housing the cult statue", "a series of open courtyards and halls illuminated with clerestory windows that led to the pharaoh's throne room", "spaces arranged at oblique angles, which culminated in a majestic, light-filled foyer"], "answer": 1, "why": "Along Karnak's axis: pylon, open court, then the dim, columned hypostyle hall, then ever smaller, darker rooms leading to the sanctuary of Amun-Re's statue.", "images": [{"src": "q23-1.jpg", "w": 288, "h": 174}]}, {"n": 24, "works": [24], "prompt": "In the Last Judgment of Hu-Nefer, if the deceased did not pass the judgment, he would", "options": ["live endlessly as a spirit trapped on earth", "go to hell", "be born as a lower life form", "be devoured by a monster"], "answer": 3, "why": "Anubis weighs Hu-Nefer's heart against the feather of Ma'at. A heavy heart is eaten by Ammit, part crocodile, lion and hippopotamus.", "images": []}, {"n": 25, "works": [30], "prompt": "The relief sculptures on the Audience Hall of Darius and Xerxes show evidence of all of the following EXCEPT", "options": ["a fierce, war-prone society", "a strong centralized government", "an empire that tolerated traditions of diverse cultures", "egalitarian treatment of women"], "answer": 3, "why": "The Persepolis reliefs show guards and tribute bearers from many subject peoples, each in their own dress, approaching the king. Women do not appear.", "images": []}, {"n": 26, "works": [38], "prompt": "What are these figures doing?", "options": ["Greek gods are battling giants.", "Female goddesses are fighting male gods.", "We don't know, but it's some sort of battle.", "Athenians are fighting Persians."], "answer": 0, "why": "The Great Altar of Zeus and Athena at Pergamon shows the gigantomachy, an allegory of Pergamon's victory over the Gauls, in dramatic Hellenistic high relief.", "images": [{"src": "q26-1.jpg", "w": 576, "h": 335}]}, {"n": 27, "works": [36], "prompt": "The inscription on the Grave Stele of Hegeso contains what names?", "options": ["the name of the deceased and the name of her father", "the name of the deceased and the name of her mother", "only the name of the deceased", "the name of the deceased and the names of both parents"], "answer": 0, "why": "It reads 'Hegeso, daughter of Proxenos': a woman identified through her father.", "images": []}, {"n": 28, "works": [13], "prompt": "This work depicts what important event?", "options": ["the unification of Upper and Lower Egypt", "the ascension of a king", "the assassination of a king", "the defeat of the Sumerians by the Egyptians"], "answer": 0, "why": "On the Palette of King Narmer, Narmer wears the white crown of Upper Egypt on one side and the red crown of Lower Egypt on the other, and the intertwined serpopard necks symbolize union.", "images": [{"src": "q28-1.jpg", "w": 216, "h": 329}, {"src": "q28-2.jpg", "w": 216, "h": 314}]}, {"n": 29, "works": [17, 44], "fixed": true, "prompt": "Which of the following statements is true of both the Great Pyramids and the Colosseum (Flavian Amphitheater)?", "options": ["They are massive structures.", "They were constructed primarily of stone.", "It took many generations to construct them.", "All of the above"], "answer": 0, "why": "Only their size is shared. The Colosseum is mainly concrete with a travertine facing and was finished in about ten years (70–80 C.E.); neither took many generations.", "images": []}, {"n": 30, "works": [28], "prompt": "This sculpture", "options": ["honors a deceased person.", "could either honor a deceased person or represent Artemis.", "represents Artemis.", "represents the spouse of a king."], "answer": 1, "why": "The Peplos Kore may be a votive or funerary maiden, but drill holes for lost attributes have led scholars to suggest she was a goddess such as Artemis.", "images": [{"src": "q30-1.jpg", "w": 144, "h": 433}]}, {"n": 31, "works": [13], "prompt": "All of the following are present in this work EXCEPT", "options": ["composite perspective", "symbolism", "hieratic scale", "linear perspective"], "answer": 3, "why": "The Narmer Palette uses composite view, hieratic scale and symbols (Horus as falcon, papyrus for Lower Egypt). Linear perspective is a Renaissance invention.", "images": [{"src": "q31-1.jpg", "w": 216, "h": 329}, {"src": "q31-2.jpg", "w": 216, "h": 314}]}, {"n": 32, "works": [], "prompt": "Which of the following art traditions lasted the longest?", "options": ["Egyptian", "classical Greek", "Amarna", "classical Roman"], "answer": 0, "why": "Egyptian conventions held for nearly 3,000 years. The Amarna style lasted only about two decades under Akhenaton.", "images": []}, {"n": 33, "works": [35], "prompt": "What was the original function of this piece?", "options": ["It was a church.", "It was a temple for a goddess.", "It was the capital building of a country.", "It was a marketplace."], "answer": 1, "why": "The Parthenon was built for Athena Parthenos and also served as a treasury. It became a church and then a mosque only later.", "images": [{"src": "q33-1.jpg", "w": 576, "h": 278}]}, {"n": 34, "works": [], "prompt": "This sculpture is from what period?", "options": ["High Classical", "Imperial Rome", "Hellenistic", "Early Classical"], "answer": 2, "why": "Laocoön and His Sons: twisting bodies, anguished faces and extreme pathos are Hellenistic hallmarks. It is not one of the 250 required works.", "images": [{"src": "q34-1.jpg", "w": 288, "h": 263}]}], "essays": [{"n": 35, "works": [17], "points": 10, "prompt": ["Fully identify this work (name, creator, date and medium).", "How does it reflect the worldview (religion) of its culture of origin? Explain what the worldview is and how it is reflected in the piece. Include visual and contextual evidence.", "Analyze how the local geography influenced this worldview."], "key": ["<b>Identification:<\/b> Great Pyramids (Menkaura, Khafre, Khufu) and Great Sphinx, Giza, Egypt; Old Kingdom, Fourth Dynasty, c. 2550–2490 B.C.E.; cut limestone, originally cased in polished white limestone; built by royal workforces for the pharaohs.", "<b>Worldview:<\/b> the pharaoh was a divine king whose <i>ka<\/i> needed an eternal home; the afterlife was eternal life in another realm, not rebirth on earth.", "<b>Visual evidence:<\/b> enormous scale and permanent stone signal eternity and royal power; the pyramid form may evoke the <i>benben<\/i> and the rays of the sun god Re; causeways, valley and mortuary temples served the royal cult; the Sphinx (lion body, pharaoh's head) guards the complex.", "<b>Geography:<\/b> the Nile's predictable annual flood and the daily sunrise and sunset suggested an ordered, eternal cycle (<i>ma'at<\/i>); tombs sit on the west bank, where the sun sets; the desert edge preserved burials; local limestone quarries and the river made the stone available and transportable.", "<b>Watch out:<\/b> 'eternal life in the afterlife' is not the same as 'rebirth'. Egyptians did not expect to be born again on earth."], "images": [{"src": "q35-1.jpg", "w": 432, "h": 315}]}, {"n": 36, "works": [21, 26], "points": 20, "prompt": ["On the left is the plan of the Mortuary Temple of Hatshepsut. On the right is the plan of the Athenian Agora.", "Fully identify both, listing the creator, the media used and the date created.", "How did the function of each influence its design?", "How were the functions similar? How were they different?"], "key": ["<b>Hatshepsut:<\/b> Mortuary Temple of Hatshepsut, Deir el-Bahri, near Luxor; New Kingdom, 18th Dynasty, c. 1473–1458 B.C.E.; sandstone, partly cut into the cliff, with painted relief; architect traditionally Senenmut.", "<b>Agora:<\/b> Athenian Agora, Athens; 600 B.C.E.–150 C.E.; stone (limestone and marble) buildings such as stoas, the bouleuterion and the tholos, with no single architect, built up over centuries.", "<b>Temple design follows function:<\/b> funerary cult of Hatshepsut and worship of Amun-Re. A strict axial, symmetrical plan of three terraces joined by ramps and fronted by colonnades leads to a sanctuary cut into the sacred cliff. It ends a festival procession route from Karnak, and its reliefs (divine birth, Punt expedition) legitimize a female pharaoh.", "<b>Agora design follows function:<\/b> the civic, commercial, judicial and political heart of democratic Athens. An open public square crossed by the Panathenaic Way, ringed by stoas that gave shade for business and debate. The irregular plan grew as new civic needs arose.", "<b>Similar:<\/b> both are public, monumental settings for the values of their society, with processional routes and religious elements (the Agora had altars and temples, such as the Temple of Hephaistos above it).", "<b>Different:<\/b> the temple is sacred and funerary, glorifying one ruler with a single, planned, hierarchical design; the Agora is mainly secular and collective, serving citizens, and grew asymmetrically over time."], "images": [{"src": "q36-1.jpg", "w": 288, "h": 523}, {"src": "q36-2.jpg", "w": 288, "h": 357}]}]}</script>
+<script>
+(function(){
+"use strict";
+var DATA = JSON.parse(document.getElementById("data").textContent);
+var MC = DATA.mc, ES = DATA.essays, BY = {};
+MC.forEach(function(q){ BY[q.n] = q; });
+var KEY = "apah.test5.v1", EKEY = "apah.test5.essays.v1";
+var LET = "abcde";
+
+function load(k, d){ try{ var v = localStorage.getItem(k); return v ? JSON.parse(v) : d; }catch(e){ return d; } }
+function save(k, v){ try{ localStorage.setItem(k, JSON.stringify(v)); }catch(e){} }
+function esc(s){ return String(s).replace(/[&<>"]/g, function(c){ return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]; }); }
+function shuffle(a){ a = a.slice(); for (var i = a.length - 1; i > 0; i--){ var j = Math.floor(Math.random() * (i + 1)); var t = a[i]; a[i] = a[j]; a[j] = t; } return a; }
+function range(n){ var a = []; for (var i = 0; i < n; i++) a.push(i); return a; }
+
+var S = load(KEY, null);
+if (!S || !S.phase) S = { phase: "setup", mode: "practice", shuffleQ: false, shuffleC: false, order: [], copt: {}, ans: {}, pos: 0 };
+var confirmFinish = false;
+
+var mcEl = document.getElementById("mc");
+
+function start(nums){
+  var list = nums || MC.map(function(q){ return q.n; });
+  S.order = S.shuffleQ ? shuffle(list) : list.slice();
+  S.copt = {};
+  S.order.forEach(function(n){
+    var q = BY[n], idx = range(q.options.length);
+    S.copt[n] = (S.shuffleC && !q.fixed) ? shuffle(idx) : idx;
+  });
+  S.ans = {}; S.pos = 0; S.phase = "run"; confirmFinish = false;
+  save(KEY, S); render(); focusTop();
+}
+function focusTop(){ var t = document.querySelector(".tabs"); if (t && t.getBoundingClientRect().top < 0) t.scrollIntoView(); }
+
+function stats(){
+  var right = 0, done = 0;
+  S.order.forEach(function(n){ if (n in S.ans){ done++; if (S.ans[n] === BY[n].answer) right++; } });
+  return { right: right, done: done, total: S.order.length };
+}
+function workLinks(q){
+  if (!q.works || !q.works.length) return "";
+  return '<p class="links">See ' + q.works.map(function(w){ return '<a href="../../#w' + w + '">work ' + w + " in APAH 250</a>"; }).join(" &middot; ") + "</p>";
+}
+function figs(q){
+  if (!q.images.length) return "";
+  return '<div class="figs">' + q.images.map(function(im, i){
+    var cap = q.images.length > 1 ? ' style="max-width:calc((100% - ' + (12 * (q.images.length - 1)) + 'px) / ' + q.images.length + ')"' : "";
+    return '<button type="button"' + cap + ' data-zoom="' + esc(im.src) + '" aria-label="Enlarge image ' + (i + 1) + '"><img src="img/' + esc(im.src) + '" width="' + im.w + '" height="' + im.h + '" alt="Image for question ' + q.n + '" style="width:' + Math.round(im.w * 1.35) + 'px"></button>';
+  }).join("") + '<span class="zoom-hint">Click an image to enlarge</span></div>';
+}
+
+function renderSetup(){
+  var saved = load(KEY, null), hasRun = saved && saved.phase === "run" && saved.order && saved.order.length;
+  mcEl.innerHTML =
+    '<div class="setup">' +
+      '<h2>How do you want to take it?</h2>' +
+      '<div class="choice-row">' +
+        '<button type="button" class="choice" data-mode="practice" aria-pressed="' + (S.mode === "practice") + '"><b>Practice</b><span>See the answer and why after each question</span></button>' +
+        '<button type="button" class="choice" data-mode="exam" aria-pressed="' + (S.mode === "exam") + '"><b>Exam</b><span>Answer everything, then see your score</span></button>' +
+      '</div>' +
+      '<div class="checks">' +
+        '<label><input type="checkbox" id="opt-sq"' + (S.shuffleQ ? " checked" : "") + '> Shuffle questions</label>' +
+        '<label><input type="checkbox" id="opt-sc"' + (S.shuffleC ? " checked" : "") + '> Shuffle answer choices</label>' +
+      '</div>' +
+      '<div class="setup-actions"><button type="button" class="btn btn--solid btn--lg" id="go">Start test</button></div>' +
+      '<p class="note">Keyboard: 1&ndash;5 to answer, &larr; &rarr; to move, Enter for next.</p>' +
+    '</div>';
+  mcEl.querySelectorAll(".choice").forEach(function(b){ b.onclick = function(){ S.mode = b.dataset.mode; render(); }; });
+  document.getElementById("opt-sq").onchange = function(e){ S.shuffleQ = e.target.checked; };
+  document.getElementById("opt-sc").onchange = function(e){ S.shuffleC = e.target.checked; };
+  document.getElementById("go").onclick = function(){ start(); };
+}
+
+function renderRun(){
+  var n = S.order[S.pos], q = BY[n], st = stats(), practice = S.mode === "practice";
+  var picked = (n in S.ans) ? S.ans[n] : null, locked = practice && picked !== null;
+  var nav = S.order.map(function(m, i){
+    var c = [];
+    if (m in S.ans){ if (practice) c.push(S.ans[m] === BY[m].answer ? "is-right" : "is-wrong"); else c.push("is-answered"); }
+    if (i === S.pos) c.push("is-current");
+    return '<button type="button" class="' + c.join(" ") + '" data-go="' + i + '" aria-label="Question ' + (i + 1) + '"' + (i === S.pos ? ' aria-current="step"' : "") + ">" + (i + 1) + "</button>";
+  }).join("");
+  var opts = S.copt[n].map(function(oi, k){
+    var cls = ["opt"], mark = "";
+    if (locked){
+      if (oi === q.answer){ cls.push("is-right"); mark = oi === picked ? "&check; your answer" : "&check; correct"; }
+      else if (oi === picked){ cls.push("is-wrong"); mark = "&cross; your answer"; }
+      else cls.push("is-dim");
+    } else if (oi === picked) cls.push("is-picked");
+    var label = (q.letters ? LET[k] + ") " : "") + esc(q.options[oi]);
+    return '<li><button type="button" class="' + cls.join(" ") + '" data-opt="' + oi + '"' + (locked ? " disabled" : "") + '><span class="kbd">' + (k + 1) + "</span><span>" + label + '</span><span class="mark">' + mark + "</span></button></li>";
+  }).join("");
+  var fb = "";
+  if (locked){
+    var ok = picked === q.answer;
+    fb = '<div class="fb' + (ok ? "" : " is-wrong") + '" role="status"><p class="verdict">' + (ok ? "Correct." : "Not quite. The answer is &ldquo;" + esc(q.options[q.answer]) + "&rdquo;.") + "</p><p>" + esc(q.why) + "</p>" + workLinks(q) + "</div>";
+  }
+  var last = S.pos === S.order.length - 1, allDone = st.done === st.total;
+  var nextBtn = last
+    ? '<button type="button" class="btn btn--solid" id="finish">' + (practice ? "See results" : "Finish test") + "</button>"
+    : '<button type="button" class="btn btn--solid" id="next">Next &rarr;</button>';
+  var finishEarly = (!last && !practice) ? '<button type="button" class="btn" id="finish">Finish test</button>' : (!last && practice && allDone ? '<button type="button" class="btn" id="finish">See results</button>' : "");
+  var conf = "";
+  if (confirmFinish){
+    var left = st.total - st.done;
+    conf = '<div class="confirm"><p>' + left + " question" + (left === 1 ? " is" : "s are") + " unanswered and will be marked wrong. Finish anyway?</p>" +
+      '<button type="button" class="btn" id="conf-no">Keep going</button><button type="button" class="btn btn--solid" id="conf-yes">Finish</button></div>';
+  }
+  mcEl.innerHTML =
+    '<div class="bar"><span>Question ' + (S.pos + 1) + " of " + st.total + " &middot; " + (practice ? "Practice" : "Exam") + " mode</span><span>" +
+      (practice ? st.right + " correct of " + st.done + " answered" : st.done + " of " + st.total + " answered") + "</span></div>" +
+    '<div class="track"><span style="width:' + (st.done / st.total * 100) + '%"></span></div>' +
+    '<nav class="nav" aria-label="Questions">' + nav + "</nav>" +
+    '<article class="q">' +
+      '<p class="q-eyebrow sc">Question ' + q.n + " on the original exam</p>" +
+      figs(q) +
+      '<h2 class="q-prompt">' + esc(q.prompt) + "</h2>" +
+      '<ol class="opts">' + opts + "</ol>" + fb +
+      '<div class="step"><button type="button" class="btn" id="prev"' + (S.pos === 0 ? " disabled" : "") + '>&larr; Back</button><span class="step-right">' + finishEarly + nextBtn + "</span></div>" +
+      conf +
+    "</article>" +
+    '<p class="keys"><span class="kbd">1</span>&ndash;<span class="kbd">' + q.options.length + '</span> answer &nbsp; <span class="kbd">&larr;</span> <span class="kbd">&rarr;</span> move &nbsp; <span class="kbd">Enter</span> next</p>' +
+    '<p class="restart-line"><a href="#" id="restart">Start over</a> <span class="muted">&middot; progress is saved in this browser</span></p>';
+
+  mcEl.querySelectorAll("[data-go]").forEach(function(b){ b.onclick = function(){ go(+b.dataset.go); }; });
+  mcEl.querySelectorAll("[data-opt]").forEach(function(b){ b.onclick = function(){ pick(+b.dataset.opt); }; });
+  bind("prev", function(){ go(S.pos - 1); });
+  bind("next", function(){ go(S.pos + 1); });
+  bind("finish", finish);
+  bind("conf-no", function(){ confirmFinish = false; render(); });
+  bind("conf-yes", function(){ confirmFinish = false; showResults(); });
+  bind("restart", function(e){ e.preventDefault(); S.phase = "setup"; save(KEY, S); render(); });
+  bindZoom(mcEl);
+}
+function bind(id, fn){ var el = document.getElementById(id); if (el) el.onclick = fn; }
+
+function pick(oi){
+  var n = S.order[S.pos];
+  if (S.mode === "practice" && (n in S.ans)) return;
+  S.ans[n] = oi; save(KEY, S); render();
+  if (S.mode === "practice"){ var fb = mcEl.querySelector(".fb"); if (fb && fb.getBoundingClientRect().bottom > innerHeight) fb.scrollIntoView({ block: "nearest" }); }
+}
+function go(i){
+  if (i < 0 || i >= S.order.length) return;
+  S.pos = i; confirmFinish = false; save(KEY, S); render();
+  var q = mcEl.querySelector(".q"); if (q && q.getBoundingClientRect().top < 0) q.scrollIntoView();
+}
+function finish(){
+  var st = stats();
+  if (st.done < st.total && !confirmFinish){ confirmFinish = true; render(); var c = mcEl.querySelector(".confirm"); if (c) c.scrollIntoView({ block: "nearest" }); return; }
+  showResults();
+}
+function showResults(){ S.phase = "results"; save(KEY, S); render(); focusTop(); }
+
+var resFilter = "all";
+function renderResults(){
+  var st = stats(), pct = Math.round(st.right / st.total * 100);
+  var missed = S.order.filter(function(n){ return S.ans[n] !== BY[n].answer; });
+  var rows = S.order.map(function(n, i){
+    var q = BY[n], a = S.ans[n], ok = a === q.answer;
+    if (resFilter === "missed" && ok) return "";
+    return '<li><details><summary><span class="res-n">' + (i + 1) + '.</span><span class="' + (ok ? "res-ok" : "res-bad") + '" aria-label="' + (ok ? "correct" : "wrong") + '">' + (ok ? "&check;" : "&cross;") + "</span><span>" + esc(q.prompt) + "</span></summary>" +
+      '<div class="res-body"><p><span class="sc">Your answer:</span> ' + (a === undefined ? "<i>skipped</i>" : esc(q.options[a])) + "</p>" +
+      (ok ? "" : '<p><span class="sc">Correct:</span> ' + esc(q.options[q.answer]) + "</p>") +
+      "<p>" + esc(q.why) + "</p>" + workLinks(q) + "</div></details></li>";
+  }).join("");
+  mcEl.innerHTML =
+    '<div class="results">' +
+      '<div class="score"><p class="score-big">' + st.right + " / " + st.total + "</p><p>" + pct + "% correct" + (st.total < MC.length ? " &middot; retry of missed questions" : "") + "</p></div>" +
+      '<div class="res-actions">' +
+        (missed.length ? '<button type="button" class="btn btn--solid" id="retry">Retry the ' + missed.length + " missed</button>" : "") +
+        '<button type="button" class="btn" id="again">Take the full test again</button>' +
+        '<button type="button" class="btn" id="to-essays">Go to essays</button>' +
+      "</div>" +
+      '<div class="res-filter"><h2>Review</h2><span><label><input type="checkbox" id="only-missed"' + (resFilter === "missed" ? " checked" : "") + "> Show missed only</label></span></div>" +
+      '<ul class="res-list">' + (rows || '<li><p class="note" style="padding:12px 0">Nothing missed.</p></li>') + "</ul>" +
+    "</div>";
+  bind("retry", function(){ start(missed); });
+  bind("again", function(){ S.phase = "setup"; save(KEY, S); render(); });
+  bind("to-essays", function(){ setTab("essays"); });
+  document.getElementById("only-missed").onchange = function(e){ resFilter = e.target.checked ? "missed" : "all"; render(); };
+}
+
+function render(){
+  if (S.phase === "run" && S.order.length) renderRun();
+  else if (S.phase === "results" && S.order.length) renderResults();
+  else { S.phase = "setup"; renderSetup(); }
+}
+
+/* essays */
+var esEl = document.getElementById("essays"), drafts = load(EKEY, {});
+function words(t){ var m = t.trim().match(/\S+/g); return m ? m.length : 0; }
+function renderEssays(){
+  esEl.innerHTML = ES.map(function(e, i){
+    var d = drafts[e.n] || "";
+    return '<article class="essay"><h2>Essay ' + (i + 1) + "<small>" + e.points + " points on the original exam</small></h2>" +
+      figs(e) +
+      "<ol>" + e.prompt.map(function(p){ return "<li>" + esc(p) + "</li>"; }).join("") + "</ol>" +
+      '<label class="sc" for="es-' + e.n + '">Your answer</label>' +
+      '<textarea id="es-' + e.n + '" data-es="' + e.n + '" spellcheck="true">' + esc(d) + "</textarea>" +
+      '<div class="essay-meta"><span id="wc-' + e.n + '">' + words(d) + " words &middot; saved in this browser</span>" +
+      '<button type="button" class="btn" data-key="' + e.n + '" aria-expanded="false">Show key points</button></div>' +
+      '<div class="keypts" id="key-' + e.n + '" hidden><h3>What a strong answer covers</h3><ul>' + e.key.map(function(k){ return "<li>" + k + "</li>"; }).join("") + "</ul>" + workLinks(e) + "</div>" +
+      "</article>";
+  }).join("");
+  esEl.querySelectorAll("textarea").forEach(function(t){
+    t.oninput = function(){ drafts[t.dataset.es] = t.value; save(EKEY, drafts); document.getElementById("wc-" + t.dataset.es).innerHTML = words(t.value) + " words &middot; saved in this browser"; };
+  });
+  esEl.querySelectorAll("[data-key]").forEach(function(b){
+    b.onclick = function(){ var k = document.getElementById("key-" + b.dataset.key), open = k.hidden; k.hidden = !open; b.setAttribute("aria-expanded", String(open)); b.textContent = open ? "Hide key points" : "Show key points"; };
+  });
+  bindZoom(esEl);
+}
+
+/* tabs */
+function setTab(t){
+  var mc = t === "mc";
+  document.getElementById("tab-mc").setAttribute("aria-selected", String(mc));
+  document.getElementById("tab-essays").setAttribute("aria-selected", String(!mc));
+  mcEl.hidden = !mc; esEl.hidden = mc;
+  try{ history.replaceState(null, "", mc ? location.pathname : "#essays"); }catch(e){}
+  focusTop();
+}
+document.getElementById("tab-mc").onclick = function(){ setTab("mc"); };
+document.getElementById("tab-essays").onclick = function(){ setTab("essays"); };
+
+/* lightbox */
+var lb = null;
+function bindZoom(root){ root.querySelectorAll("[data-zoom]").forEach(function(b){ b.onclick = function(){ openLb(b.dataset.zoom); }; }); }
+function openLb(src){
+  closeLb();
+  lb = document.createElement("div"); lb.className = "lb"; lb.setAttribute("role", "dialog"); lb.setAttribute("aria-label", "Enlarged image");
+  lb.innerHTML = '<img src="img/' + esc(src) + '" alt=""><p>Click anywhere or press Esc to close</p>';
+  lb.onclick = closeLb; document.body.appendChild(lb);
+}
+function closeLb(){ if (lb){ lb.remove(); lb = null; } }
+
+/* keyboard */
+document.addEventListener("keydown", function(e){
+  if (e.key === "Escape"){ closeLb(); return; }
+  if (lb || e.metaKey || e.ctrlKey || e.altKey) return;
+  var tag = (e.target.tagName || "").toLowerCase();
+  if (tag === "textarea" || tag === "input") return;
+  if (mcEl.hidden || S.phase !== "run") return;
+  var n = S.order[S.pos], q = BY[n];
+  if (/^[1-9]$/.test(e.key)){ var k = +e.key - 1; if (k < q.options.length){ e.preventDefault(); pick(S.copt[n][k]); } }
+  else if (e.key === "ArrowRight"){ e.preventDefault(); go(S.pos + 1); }
+  else if (e.key === "ArrowLeft"){ e.preventDefault(); go(S.pos - 1); }
+  else if (e.key === "Enter" && tag !== "button" && tag !== "a"){ e.preventDefault(); if (S.pos < S.order.length - 1) go(S.pos + 1); else finish(); }
+});
+
+/* theme */
+var root = document.documentElement, tb = document.getElementById("theme-btn");
+function syncTheme(){ var dark = root.getAttribute("data-theme") === "dark"; tb.textContent = dark ? "Light mode" : "Dark mode"; tb.setAttribute("aria-pressed", String(dark)); }
+tb.onclick = function(){ var dark = root.getAttribute("data-theme") !== "dark"; root.setAttribute("data-theme", dark ? "dark" : "light"); try{ localStorage.setItem("apah.theme", dark ? "dark" : "light"); }catch(e){} syncTheme(); };
+syncTheme();
+
+render(); renderEssays();
+if (location.hash === "#essays") setTab("essays");
+})();
+</script>
+</body>
+</html>
