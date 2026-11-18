@@ -90,22 +90,33 @@ TREE = page("/", "Home", "The shop, what it sells, and how to book an appointmen
         folder("/study/ap/", [
             page("/study/ap/ap-art-history/", "APAH 250",
                  "All 250 AP Art History works: browse, flashcards and quizzes.", "unlisted",
-                 files=files("study/ap/ap-art-history", "photo cutouts"),
+                 files=files("study/ap/ap-art-history", "PDFs", anchor="/study/#ap-art-history"),
                  note="Each work has a deep link, #w1 to #w250 (e.g. #w12)."),
             folder("/study/ap/ap-chemistry/", [
                 folder("/study/ap/ap-chemistry/unit-5/", files=files("study/ap/ap-chemistry/unit-5", "PDFs"),
                        desc="Unit 5, Kinetics", anchor="/study/#ap-chemistry"),
             ], desc="AP Chemistry", anchor="/study/#ap-chemistry"),
+            folder("/study/ap/ap-economics/", [
+                folder("/study/ap/ap-economics/macro/", files=files("study/ap/ap-economics/macro", "PDFs"),
+                       desc="AP Macroeconomics, Units 1–6", anchor="/study/#ap-macroeconomics"),
+                folder("/study/ap/ap-economics/micro/", files=files("study/ap/ap-economics/micro", "PDFs"),
+                       desc="AP Microeconomics, Units 1–6", anchor="/study/#ap-microeconomics"),
+            ], files=files("study/ap/ap-economics", "LaTeX source"), desc="AP Economics", anchor="/study/#ap-macroeconomics"),
             folder("/study/ap/ap-english-literature/", [
                 page("/study/ap/ap-english-literature/xyz-essay/", "The XYZ Essay",
                      "AP English Literature essay guide: thesis, quote units, scoring guide, Gatsby planning kit.", "unlisted"),
             ], desc="AP English Literature", anchor="/study/#ap-english-literature"),
+            folder("/study/ap/ap-psychology/", files=files("study/ap/ap-psychology", "PDFs"),
+                   desc="AP Psychology, Part 0 and Units 1–5", anchor="/study/#ap-psychology"),
             folder("/study/ap/ap-statistics/", [
                 folder("/study/ap/ap-statistics/unit-6/", files=files("study/ap/ap-statistics/unit-6", "PDFs"),
                        desc="Unit 6, Sampling Distributions", anchor="/study/#ap-statistics"),
             ], desc="AP Statistics", anchor="/study/#ap-statistics"),
         ], desc="AP", anchor="/study/#ap"),
     ]),
+
+    page("/poker/", "Live Hold’em Tables", "Two papers for beginners at live no-limit hold’em: decision tables and mental-game tables.", "unlisted",
+         files=files("poker", "PDFs")),
 
     folder("/secret/", [
         page("/secret/changelog/", "Site Changelog", "Everything that has changed on the site since June 2026, newest first.", "noindex"),
