@@ -30,7 +30,7 @@ HIDDEN = {
     "/study/ap/ap-art-history/tests/5/",
 }
 
-DOWNLOAD_EXT = (".pdf", ".zip", ".stl", ".stl.gz", ".step", ".3mf")
+DOWNLOAD_EXT = (".pdf", ".zip", ".tar.gz", ".stl", ".stl.gz", ".step", ".3mf")
 
 
 def page(path, title, desc, vis, children=(), files=None, note=None):
@@ -75,6 +75,12 @@ TREE = page("/", "Home", "The shop, what it sells, and how to book an appointmen
             folder("/study/act/reading/", files=files("study/act/reading", "PDFs"), anchor="/study/#act-reading"),
             folder("/study/act/science/", files=files("study/act/science", "PDFs"), anchor="/study/#act-science"),
         ], desc="ACT", anchor="/study/#act"),
+        folder("/study/sat/", [
+            folder("/study/sat/conventions/", files=files("study/sat/conventions", "PDFs"),
+                   desc="Standard English Conventions", anchor="/study/#sat-conventions"),
+            folder("/study/sat/vocabulary/", files=files("study/sat/vocabulary", "PDFs"),
+                   desc="Vocabulary", anchor="/study/#sat-vocabulary"),
+        ], desc="SAT", anchor="/study/#sat"),
         folder("/study/math/", [
             folder("/study/math/linear-algebra/", files=files("study/math/linear-algebra", "PDFs"), anchor="/study/#linear-algebra"),
             folder("/study/math/multivariable-calculus/", files=files("study/math/multivariable-calculus", "PDFs"), anchor="/study/#multivariable-calculus"),
