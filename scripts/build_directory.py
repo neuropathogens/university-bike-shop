@@ -129,6 +129,22 @@ TREE = page("/", "Home", "The shop, what it sells, and how to book an appointmen
                        anchor="/secret/cycling/3d-parts/#files"),
             ]),
         ]),
+        folder("/secret/projects/", [
+            page("/secret/projects/wbi/", "WBI Projects", "Twelve Wang Brothers Investments real-estate tools, moved here from their Netlify sites.", "noindex", [
+                page("/secret/projects/wbi/wbi1/", "Research Drive Deal Analyzer", "3043–3075 Research Drive, Richmond, CA: deal analyzer.", "noindex"),
+                page("/secret/projects/wbi/wbi2/", "Parkway Business Center Operations", "Operations dashboard for Parkway Business Center.", "noindex"),
+                page("/secret/projects/wbi/wbi3/", "Evans Manor Strategy", "Evans Manor investment strategy and outlook.", "noindex"),
+                page("/secret/projects/wbi/wbi4/", "Evans Manor Calculator", "Investment calculator for Evans Manor, 2316 Haste Street, Berkeley.", "noindex"),
+                page("/secret/projects/wbi/wbi5/", "Evans Manor Monte Carlo", "Monte Carlo simulation for Evans Manor.", "noindex"),
+                page("/secret/projects/wbi/wbi6/", "WBI6 Investment Simulator", "Deterministic model and Monte Carlo risk engine.", "noindex"),
+                page("/secret/projects/wbi/wbi7/", "WBI7 In-House ARGUS", "Lease-level institutional DCF, with pitch, roadmap, sample deck, docs and tests.", "noindex"),
+                page("/secret/projects/wbi/wbi8/", "Reno-to-Return Bridge", "Value-add underwriting.", "noindex"),
+                page("/secret/projects/wbi/wbi10/", "Sub Bid Leveler", "Subcontractor bid leveling.", "noindex"),
+                page("/secret/projects/wbi/dorminvestmentcalculator/", "Dorm Investment Calculator", "Multi-unit residential underwriting.", "noindex"),
+                page("/secret/projects/wbi/montecarloinvestment/", "Dorm Investment Monte Carlo", "Multi-unit residential risk simulation.", "noindex"),
+                page("/secret/projects/wbi/calwbi/", "calwbi", "Forwards to a Google Form.", "redirect"),
+            ]),
+        ]),
         page("/secret/directory/", "Old site directory", "Redirects here.", "redirect"),
     ]),
 
