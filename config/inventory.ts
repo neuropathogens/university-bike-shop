@@ -23,7 +23,8 @@ export type NewBike = {
   type?: string;
   msrp?: string;
   price?: string;
-  // Path under public/; 960x540 product shot cropped from the promo poster.
+  // Path under public/; 480x270 product shot cropped from the promo poster.
+  // Cached for 30 days (public/_headers), so give a changed photo a new name.
   photo?: string;
 };
 

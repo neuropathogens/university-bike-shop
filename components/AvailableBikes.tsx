@@ -50,9 +50,9 @@ export default function AvailableBikes() {
                         <img
                           src={bike.photo}
                           alt={bike.name}
-                          width={960}
-                          height={540}
-                          loading="lazy"
+                          width={480}
+                          height={270}
+                          decoding="async"
                           className={styles.photo}
                         />
                       )}
