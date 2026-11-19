@@ -38,35 +38,54 @@ export default function AvailableBikes() {
                 <h3>{section.title}</h3>
                 <ul className={styles.bikes}>
                   {section.bikes.map((bike) => (
-                    <li key={bike.name} className={styles.bike}>
-                      <div className={styles.headline}>
-                        <BikeName text={bike.name} />
-                        <span className={styles.price}>
-                          {bike.price ? (
-                            <>
-                              {bike.msrp && (
-                                <>
-                                  <s className={styles.msrp} title="MSRP">
-                                    {bike.msrp}
-                                  </s>{" "}
-                                </>
-                              )}
-                              {bike.price}
-                            </>
-                          ) : (
-                            "DM for price"
-                          )}
-                        </span>
+                    <li
+                      key={bike.name}
+                      className={
+                        bike.photo
+                          ? `${styles.bike} ${styles.withPhoto}`
+                          : styles.bike
+                      }
+                    >
+                      {bike.photo && (
+                        <img
+                          src={bike.photo}
+                          alt={bike.name}
+                          width={960}
+                          height={540}
+                          loading="lazy"
+                          className={styles.photo}
+                        />
+                      )}
+                      <div className={styles.details}>
+                        <div className={styles.headline}>
+                          <BikeName text={bike.name} />
+                          <span className={styles.price}>
+                            {bike.price ? (
+                              <>
+                                {bike.msrp && (
+                                  <>
+                                    <s className={styles.msrp} title="MSRP">
+                                      {bike.msrp}
+                                    </s>{" "}
+                                  </>
+                                )}
+                                {bike.price}
+                              </>
+                            ) : (
+                              "DM for price"
+                            )}
+                          </span>
+                        </div>
+                        <p className={styles.specs}>
+                          {[
+                            "2027",
+                            bike.type,
+                            !bike.msrp && "US MSRP not posted yet",
+                          ]
+                            .filter(Boolean)
+                            .join(" · ")}
+                        </p>
                       </div>
-                      <p className={styles.specs}>
-                        {[
-                          "2027",
-                          bike.type,
-                          !bike.msrp && "US MSRP not posted yet",
-                        ]
-                          .filter(Boolean)
-                          .join(" · ")}
-                      </p>
                     </li>
                   ))}
                 </ul>
@@ -82,7 +101,9 @@ export default function AvailableBikes() {
                   >
                     <div className={styles.headline}>
                       <BikeName
-                        text={[bike.brand, bike.model].filter(Boolean).join(" ")}
+                        text={[bike.brand, bike.model]
+                          .filter(Boolean)
+                          .join(" ")}
                       />
                       <span className={styles.price}>{bike.price}</span>
                     </div>
