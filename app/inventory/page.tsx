@@ -4,7 +4,7 @@ import AvailableBikes from "@/components/AvailableBikes";
 export const metadata: Metadata = {
   title: "Used Bikes for Sale in Palo Alto",
   description:
-    "Current inventory of used road, gravel, triathlon/TT, and mountain bikes at University Bike Shop in Palo Alto. Cervelo, Specialized, Scott, Giant, Cannondale, and BMC, inspected and tuned, from $299.",
+    "Current inventory of used road, gravel, triathlon/TT, mountain, and commuter bikes at University Bike Shop in Palo Alto. Cervelo, Specialized, Scott, Giant, Cannondale, BMC, and Blue, inspected and tuned; commuters from $75. New 2027 Giant road, gravel, mountain, and e-bikes at 15% off MSRP.",
   alternates: { canonical: "/inventory" },
 };
 
