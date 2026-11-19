@@ -58,6 +58,26 @@
   border-top: 1px solid color-mix(in srgb, var(--foreground) 20%, transparent);
 }
 
+.withPhoto {
+  display: grid;
+  grid-template-columns: 12rem minmax(0, 1fr);
+  column-gap: 1.25rem;
+  align-items: center;
+}
+
+.photo {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  min-width: 0;
+}
+
 .headline {
   display: flex;
   justify-content: space-between;
@@ -81,6 +101,18 @@
 .note {
   font-size: 0.9rem;
   font-style: italic;
+}
+
+@media (max-width: 40rem) {
+  .withPhoto {
+    grid-template-columns: 8rem minmax(0, 1fr);
+    column-gap: 0.75rem;
+  }
+
+  .withPhoto .headline {
+    flex-direction: column;
+    gap: 0;
+  }
 }
 
 .footnote {
