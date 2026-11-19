@@ -16,10 +16,25 @@ export type Bike = {
   note?: string;
 };
 
+// New bikes ordered through Giant (2027 line). `price` is ours (15% off
+// MSRP); leave both out when the US MSRP isn't posted yet.
+export type NewBike = {
+  name: string;
+  type?: string;
+  msrp?: string;
+  price?: string;
+};
+
+export type NewBikeSection = {
+  title: string;
+  bikes: NewBike[];
+};
+
 export type InventoryGroup = {
   title: string;
   note?: string;
   bikes: Bike[];
+  newBikes?: NewBikeSection[];
 };
 
 export const inventoryGroups: InventoryGroup[] = [
@@ -32,6 +47,52 @@ export const inventoryGroups: InventoryGroup[] = [
     title: "New Giant Bikes",
     note: "15% off retail pricing, 1 month turnaround direct from China.",
     bikes: [],
+    newBikes: [
+      {
+        title: "Road",
+        bikes: [
+          { name: "Giant TCR Advanced Pro Dura-Ace", type: "Race", msrp: "$8,300", price: "$7,055" },
+          { name: "Giant TCR Advanced Pro 0-AXS", type: "Race", msrp: "$7,000", price: "$5,950" },
+          { name: "Giant Propel Advanced Pro-DA", type: "Aero race", msrp: "$8,000", price: "$6,800" },
+          { name: "Giant Propel Advanced Pro 0-AXS", type: "Aero race", msrp: "$7,800", price: "$6,630" },
+          { name: "Giant Propel Advanced 1", type: "Aero race", msrp: "$5,300", price: "$4,505" },
+          { name: "Giant Propel Advanced 2", type: "Aero race", msrp: "$3,500", price: "$2,975" },
+          { name: "Giant Propel Advanced Pro Frameset", type: "Aero race, frameset", msrp: "$3,200", price: "$2,720" },
+          { name: "Giant Defy Advanced Pro 0-AXS", type: "Endurance", msrp: "$7,700", price: "$6,545" },
+          { name: "Giant Defy Advanced 2", type: "Endurance", msrp: "$3,300", price: "$2,805" },
+          { name: "Giant Defy Advanced 4", type: "Endurance", msrp: "$2,300", price: "$1,955" },
+        ],
+      },
+      {
+        title: "Gravel",
+        bikes: [
+          { name: "Giant Revolt Advanced SL 0" },
+          { name: "Giant Revolt Advanced SL 1" },
+          { name: "Giant Revolt Advanced SL 2" },
+          { name: "Giant Revolt Advanced SL Frameset", type: "Frameset" },
+        ],
+      },
+      {
+        title: "Mountain",
+        bikes: [
+          { name: "Giant Anthem Advanced SL 2", type: "Cross-country", msrp: "$5,600", price: "$4,760" },
+          { name: "Giant Anthem Advanced Pro", type: "Cross-country", msrp: "$4,000", price: "$3,400" },
+          { name: "Giant Stance 0", type: "Trail", msrp: "$2,900", price: "$2,465" },
+        ],
+      },
+      {
+        title: "E-Bike",
+        bikes: [
+          { name: "Giant Trance Advanced E+ 0", type: "Electric mountain", msrp: "$10,000", price: "$8,500" },
+          { name: "Giant Trance Advanced E+ 1", type: "Electric mountain", msrp: "$8,000", price: "$6,800" },
+          { name: "Giant Trance Advanced E+ SE", type: "Electric mountain", msrp: "$6,500", price: "$5,525" },
+          { name: "Giant Stance E+ 0", type: "Electric mountain", msrp: "$5,500", price: "$4,675" },
+          { name: "Giant Stance E+ 1", type: "Electric mountain", msrp: "$4,500", price: "$3,825" },
+          { name: "Giant Talon E+ 2 EX", type: "Electric mountain", msrp: "$3,300", price: "$2,805" },
+          { name: "Giant Talon E+ 2", type: "Electric mountain", msrp: "$2,950", price: "$2,507.50" },
+        ],
+      },
+    ],
   },
   {
     title: "Road",

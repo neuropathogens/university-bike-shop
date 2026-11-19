@@ -25,6 +25,22 @@
   font-size: 1.15rem;
 }
 
+.subgroup {
+  padding-top: 0.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.subgroup h3 {
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: normal;
+}
+
+.msrp {
+  color: color-mix(in srgb, var(--foreground) 50%, transparent);
+}
+
 .bikes {
   list-style: none;
   display: flex;
@@ -47,6 +63,10 @@
   justify-content: space-between;
   align-items: baseline;
   gap: 1rem;
+}
+
+.word {
+  white-space: nowrap;
 }
 
 .price {
