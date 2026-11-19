@@ -7,3 +7,8 @@
   X-Robots-Tag: noindex, nofollow, noarchive
 /directory/*
   X-Robots-Tag: noindex, nofollow, noarchive
+
+# Inventory bike photos rarely change: let browsers keep them for 30 days
+# instead of re-checking each one. Use a new file name when replacing a photo.
+/bikes/*
+  Cache-Control: public, max-age=2592000
