@@ -14,6 +14,7 @@ const links = [
   { href: "/summer-camp", label: "Summer Camp" },
   { href: "/events", label: "Events" },
   { href: "/projects", label: "Projects" },
+  { href: "/reviews", label: "Reviews" },
   { href: "/sponsorships", label: "Sponsorships" },
   { href: "/about-us", label: "About Us" },
   { href: "/location-hours", label: "Location & Hours", right: true },
