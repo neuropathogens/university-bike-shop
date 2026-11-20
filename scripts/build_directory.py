@@ -29,6 +29,7 @@ OUT = PUBLIC / "directory" / "index.html"
 HIDDEN = {
     "/study/ap/ap-art-history/tests/5/",
     "/study/ap/ap-statistics/tests/6b/",
+    "/study/ap/ap-statistics/tests/6c/",
 }
 
 DOWNLOAD_EXT = (".pdf", ".zip", ".tar.gz", ".stl", ".stl.gz", ".step", ".3mf")
