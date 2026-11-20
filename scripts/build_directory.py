@@ -28,6 +28,7 @@ OUT = PUBLIC / "directory" / "index.html"
 # Pages that exist but are deliberately left off the directory (direct link only).
 HIDDEN = {
     "/study/ap/ap-art-history/tests/5/",
+    "/study/ap/ap-statistics/tests/6b/",
 }
 
 DOWNLOAD_EXT = (".pdf", ".zip", ".tar.gz", ".stl", ".stl.gz", ".step", ".3mf")
