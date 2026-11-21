@@ -1,0 +1,497 @@
+=== 4|Building: Mid-Frequency Words I|Lessons 2.1–2.15; the academic workhorse words the SAT uses most in science and social-science texts.
+
+@ C
+To ______ the movement of goods between the two ports, the government built a rail line and cut customs fees in half.
+* facilitate
+- prohibit
+- derive
+- undergo
+> Building a rail line and cutting fees make trade easier: "facilitate."
+
+@ C
+The archive's collection is far from ______; the earliest letters were lost in a 1906 fire, and several decades are missing entirely.
+* exhaustive
+- partial
+- preliminary
+- arbitrary
+> Lost letters and missing decades mean that the collection is incomplete. "Far from" requires the opposite of incomplete, which is "exhaustive." "Partial" would describe the collection as it actually is.
+
+@ C
+Several smaller parties formed a ______ in order to win a majority in parliament, since none of them could govern alone.
+* coalition
+- statute
+- hierarchy
+- paradigm
+> Groups joining forces to win a majority form an alliance: "coalition."
+
+@ C
+The researchers' conclusions were ______, based on direct measurements of soil chemistry rather than on computer models or assumptions.
+* empirical
+- subjective
+- hypothetical
+- intangible
+> Based on direct measurement or observation means "empirical." "Hypothetical" is the opposite.
+
+@ C
+Because the river's flow is ______, heavy during spring melt and nearly dry by August, farmers along its banks store water in large tanks.
+* intermittent
+- perpetual
+- homogeneous
+- finite
+> A flow that is heavy at one time of year and nearly dry at another stops and starts: "intermittent." "Perpetual" contradicts "nearly dry."
+
+@ C
+The historian was ______ of the diary's authenticity, noting that its paper was manufactured decades after the events it describes.
+* skeptical
+- reputable
+- exemplary
+- prone
+> Paper made after the events described gives a reason to doubt the diary: "skeptical of."
+
+@ C
+The new microscope's resolution allowed biologists to ______ structures inside the cell that had previously been invisible.
+* discern
+- disclaim
+- surpass
+- contradict
+> Making formerly invisible structures visible lets biologists perceive or detect them: "discern."
+
+@ C
+The artist's style is ______, combining Japanese woodblock techniques, Mexican muralism, and the bold colors of 1960s pop art.
+* eclectic
+- pristine
+- ironic
+- perennial
+> Drawing on several diverse sources is the definition of "eclectic."
+
+@ C
+Smartphones have become so ______ that it is now difficult to find a city street where no one is looking at one.
+* ubiquitous
+- fugitive
+- terrestrial
+- fraudulent
+> Found everywhere, so that no street lacks one: "ubiquitous."
+
+@ C
+The coach's decision to rest her best players proved ______: the team lost the game, and with it the chance to host the playoffs.
+* consequential
+- humane
+- latent
+- exemplary
+> The decision had major results, a loss and a missed home playoff: "consequential."
+
+@ M
+Investors were encouraged by the prospect of lower interest rates later in the year.
+? As used in the text, what does the word "prospect" most nearly mean?
+* likelihood
+- search
+- customer
+- view
+> Investors are encouraged by the possibility of a future event. "Prospect" means likelihood here, not a scenic view or a mining search.
+
+@ M
+The board refused to sanction the expansion until an independent study confirmed that it would not harm the wetland.
+? As used in the text, what does the word "sanction" most nearly mean?
+* approve
+- penalize
+- delay
+- fund
+> "Sanction" can mean both "penalize" and "approve." Here the board withholds permission until a study is done, so it means approve.
+
+@ M
+The court ruled that the evidence did not warrant a new trial.
+? As used in the text, what does the word "warrant" most nearly mean?
+* justify
+- guarantee
+- authorize an arrest
+- delay
+> Evidence that does not warrant a new trial does not justify one. This is the verb sense of the word.
+
+@ M
+Several critics have observed that the novelist's later books appreciate the humor in ordinary life more fully than her early, darker work.
+? As used in the text, what does the word "appreciate" most nearly mean?
+* recognize
+- increase in value
+- thank
+- enjoy a meal
+> The books recognize, or fully perceive, the humor. "Increase in value" is the financial sense and does not fit.
+
+@ T
+The senator's ______ remarks about the new law, which called it "a gift to those who need it least," angered its supporters.
+* sardonic
+- cordial
+- tentative
+- reverent
+> Calling a law "a gift to those who need it least" mocks it bitterly. "Sardonic" captures that biting, ironic tone.
+
+@ T
+Unlike her ______ predecessor, who rarely left his office, the new principal visits classrooms daily and eats lunch with students.
+* aloof
+- gregarious
+- prudent
+- avid
+> The contrast with a principal who visits classrooms and eats with students requires a distant predecessor: "aloof."
+
+@ T
+The author's description of the factory is ______: she lists the machines, the shift schedules, and the wages without expressing any opinion about them.
+* neutral
+- nostalgic
+- ironic
+- frantic
+> Listing facts without opinion is a neutral, objective tone.
+
+@ X
+Venus is often called Earth's twin because the two planets are similar in size. ______, conditions on Venus are drastically different: its surface temperature exceeds 460°C.
+* Nevertheless,
+- Furthermore,
+- Hence,
+- Likewise,
+> Despite the similarity in size, the conditions differ, so a contrast transition is needed.
+
+@ X
+The ancient Romans used volcanic ash in their concrete. ______, many Roman harbors have survived two thousand years of seawater.
+* Consequently,
+- Nonetheless,
+- In contrast,
+- Similarly,
+> The ash is presented as the reason the harbors survived, so a result transition fits.
+
+@ X
+Sea otters eat large numbers of sea urchins. Urchins, in turn, eat kelp. ______, where otters thrive, kelp forests tend to flourish.
+* Thus,
+- However,
+- For instance,
+- Meanwhile,
+> The final sentence follows logically from the chain (otters eat urchins, which eat kelp). "Thus" signals the conclusion.
+
+=== 5|Building: Mid-Frequency Words II|Lessons 2.16–2.30; precision between close synonyms.
+
+@ C
+The new manager tried to ______ tensions within the team by holding private meetings with each employee who had complained.
+* alleviate
+- perpetuate
+- incite
+- galvanize
+> Private meetings with complainers are meant to reduce tension: "alleviate." "Perpetuate" and "incite" would increase it.
+
+@ C
+Each spring, the river rises and ______ the low-lying farmland, leaving behind a layer of nutrient-rich silt.
+* inundates
+- erodes
+- depletes
+- subsides
+> Rising water that covers farmland floods it: "inundates." "Subsides" means to fall, and erosion would remove soil rather than leave silt behind.
+
+@ C
+The two accounts of the battle ______ sharply after the first day: one claims a decisive victory, while the other describes an orderly retreat.
+* diverge
+- coincide
+- converge
+- reiterate
+> Accounts that describe different outcomes move apart: "diverge." "Converge" and "coincide" mean the opposite.
+
+@ C
+Although the vaccine's side effects were ______, appearing in fewer than one in a million patients, regulators required a warning label.
+* sporadic
+- detrimental
+- rampant
+- endemic
+> Fewer than one in a million means rare and irregular: "sporadic." "Rampant" means the opposite.
+
+@ C
+The engineer's ______ design used a single moving part where earlier models needed twelve.
+* ingenious
+- cumbersome
+- tedious
+- craven
+> Cleverly reducing twelve parts to one is inventive: "ingenious." "Cumbersome" is the opposite.
+
+@ C
+Critics argued that the statue's restoration had ______ the original, since bright modern paints replaced colors that had softened over centuries.
+* distorted
+- rectified
+- commemorated
+- emulated
+> Replacing aged colors with bright modern ones changes the work for the worse: "distorted." "Rectified" would mean corrected.
+
+@ C
+The colony's population began to ______ after the harsh winter, falling from 300 settlers to fewer than 90.
+* dwindle
+- burgeon
+- proliferate
+- coalesce
+> Falling from 300 to under 90 means shrinking gradually: "dwindle." "Burgeon" and "proliferate" mean to grow.
+
+@ C
+The professor's lectures were known for their ______: in fifty minutes she could explain a theory that textbooks spent a whole chapter on.
+* succinctness
+- verbosity
+- incoherence
+- dissonance
+> Explaining in fifty minutes what textbooks take a chapter to cover shows brevity and clarity: "succinctness."
+
+@ C
+Because the drug's long-term effects were still unknown, the agency imposed a ______ on new prescriptions until further studies were finished.
+* moratorium
+- precedent
+- hiatus
+- stipulation
+> A temporary ban on prescriptions is a "moratorium." "Hiatus" is a pause but is not imposed as a ban on an activity.
+
+@ C
+The biologist's first trip to the reef was ______: she discovered a new species of shrimp by accident while searching for something else.
+* serendipitous
+- arduous
+- painstaking
+- futile
+> A valuable discovery made by accident is "serendipitous." "Futile" would mean the trip accomplished nothing.
+
+@ M
+After the strike, the union and the company tried to repair the rift that had opened between workers and management.
+? As used in the text, what does the word "rift" most nearly mean?
+* break in relations
+- crack in rock
+- financial loss
+- shift in schedule
+> Something that opens between people and needs repair is a break in their relationship. The geological sense does not fit.
+
+@ M
+The scientist was careful not to impart her own expectations to the volunteers, who were told nothing about the study's purpose.
+? As used in the text, what does the word "impart" most nearly mean?
+* communicate
+- divide
+- conceal
+- reward
+> She avoided passing on, or communicating, her expectations to the volunteers.
+
+@ M
+The candidate's speech was widely praised, but her opponents dismissed it as mere rhetoric.
+? As used in the text, what does the word "rhetoric" most nearly mean?
+* persuasive language lacking substance
+- formal logic
+- the study of grammar
+- a sincere promise
+> "Mere rhetoric" is dismissive: impressive-sounding words without real content.
+
+@ M
+The heavy rains will not abate until the storm system moves east on Thursday.
+? As used in the text, what does the word "abate" most nearly mean?
+* lessen
+- begin
+- spread
+- intensify
+> Rains that continue until the storm moves away will then let up. "Abate" means lessen.
+
+@ T
+The reviewer dismissed the novel's plot as ______, pointing out that its long-lost twins, secret inheritance, and last-minute wedding had appeared in countless earlier books.
+* hackneyed
+- provocative
+- cryptic
+- whimsical
+> Plot devices seen in countless earlier books are overused: "hackneyed."
+
+@ T
+In her letter, the explorer adopts a ______ tone toward the dangers ahead, joking that the crocodiles "look more bored than hungry."
+* blithe
+- ominous
+- despondent
+- reverent
+> Joking lightly about danger is carefree and unconcerned: "blithe." "Ominous" would stress the threat.
+
+@ T
+Although the critic admired the actor, her review was ______: she praised his voice but described his final scene as "unconvincing."
+* equivocal
+- effusive
+- caustic
+- unanimous
+> Mixed praise and criticism leave her overall verdict uncertain: "equivocal." "Effusive" is all praise and "caustic" all criticism.
+
+@ X
+The plan was expensive and would take a decade to complete. ______, the city council approved it unanimously, citing the long-term savings.
+* Even so,
+- As a result,
+- Similarly,
+- In other words,
+> Approval despite the cost and delay is a concession; "Even so" signals it.
+
+@ X
+Scientists once believed that the appendix had no function. ______, recent research suggests that it stores beneficial gut bacteria.
+* However,
+- Therefore,
+- Likewise,
+- For example,
+> The recent research contradicts the earlier belief, so a contrast fits.
+
+@ X
+The ceramicist's early bowls were plain and unglazed. ______, her later works feature bright, layered glazes in dozens of colors.
+* By contrast,
+- Accordingly,
+- In addition,
+- That is,
+> Plain early work set against bright later work is a direct contrast.
+
+=== 6|Building: Mid-Frequency Words III|Lessons 2.31–2.45; the upper-mid list, where the SAT tests tone and fine distinctions.
+
+@ C
+The judge ______ the defendant after new DNA evidence proved that he had been in another city on the night of the crime.
+* exonerated
+- castigated
+- incriminated
+- reprimanded
+> Proof that he was elsewhere clears him of blame: "exonerated." "Incriminated" is the opposite.
+
+@ C
+Her rise in the company was ______: within three years of joining as an intern, she was running its largest division.
+* prodigious
+- quiescent
+- interminable
+- cursory
+> Rising from intern to division head in three years is remarkable and impressive: "prodigious."
+
+@ C
+The negotiators reached a ______ after twelve hours, with neither side willing to make the first concession.
+* stalemate
+- rejoinder
+- forbearance
+- unanimity
+> Neither side willing to move means a deadlock: "stalemate." "Unanimity" would mean full agreement.
+
+@ C
+The architect's ______ attention to detail meant that even the door handles were custom-designed to match the building's curves.
+* fastidious
+- perfunctory
+- desultory
+- cursory
+> Custom-designing even the door handles shows extreme care: "fastidious." The other three all mean careless or hasty.
+
+@ C
+Unlike the ______ silver of earlier coins, which bent easily, the new alloy was hard enough to resist wear for decades.
+* malleable
+- brittle
+- impermeable
+- porous
+> Metal that bent easily is soft and shapeable: "malleable." "Brittle" metal breaks rather than bends.
+
+@ C
+The documentary avoids ______ its subject: although it celebrates the inventor's brilliance, it also shows his cruelty to his employees.
+* lionizing
+- criticizing
+- documenting
+- mentioning
+> Including his cruelty alongside his brilliance keeps the film from glorifying him uncritically, so "lionizing" fits. It plainly does criticize, document, and mention him.
+
+@ C
+The once-crowded fishing village now seems almost ______, its streets empty and its boats left to rot on the beach.
+* desolate
+- verdant
+- congenial
+- luxuriant
+> Empty streets and rotting boats describe a bleak, abandoned place: "desolate."
+
+@ C
+The witness's account was ______: it sounded convincing at first, but every detail fell apart under questioning.
+* specious
+- indubitable
+- cogent
+- veracious
+> Plausible at first but false underneath is the exact meaning of "specious."
+
+@ C
+Biologists were surprised to find that the ______ seed, buried in a desert cave for two thousand years, still sprouted when planted.
+* dormant
+- incipient
+- luminous
+- restive
+> A seed that is inactive for centuries but still able to grow is "dormant."
+
+@ C
+The politician's ______ answers frustrated reporters: asked about the budget, he spoke for ten minutes without stating a single figure.
+* evasive
+- trenchant
+- forthright
+- laconic
+> Talking at length without answering the question avoids directness: "evasive." "Forthright" is the opposite, and "laconic" means brief.
+
+@ M
+The mayor tried to placate angry residents by promising to repave the street before winter.
+? As used in the text, what does the word "placate" most nearly mean?
+* calm
+- deceive
+- organize
+- ignore
+> A promise offered to angry residents is meant to soothe or calm them.
+
+@ M
+Years of drought had parched the valley, turning green pastures into cracked brown earth.
+? As used in the text, what does the word "parched" most nearly mean?
+* dried out
+- flooded
+- divided
+- abandoned
+> Drought turning pastures to cracked earth means that they were dried out.
+
+@ M
+The essayist's prose is so mellifluous that readers often fail to notice how radical her arguments are.
+? As used in the text, what does the word "mellifluous" most nearly mean?
+* smoothly pleasing
+- difficult
+- angry
+- repetitive
+> Prose pleasant enough to distract readers from radical content flows sweetly: "mellifluous."
+
+@ M
+Though he was gruff in public, colleagues knew the professor as a beneficent mentor who quietly paid students' conference fees.
+? As used in the text, what does the word "beneficent" most nearly mean?
+* generous and kind
+- stern
+- famous
+- wealthy
+> Quietly paying students' fees is an act of kindness. "Beneficent" means doing good, in contrast to "gruff."
+
+@ T
+The memo's ______ tone, with lines such as "This will be done by Friday. No exceptions.", left employees feeling that their input was unwelcome.
+* peremptory
+- conciliatory
+- jocular
+- diffident
+> Commands that allow no discussion are "peremptory." "Conciliatory" and "diffident" are the opposite.
+
+@ T
+The biographer's ______ portrait of the scientist omits every failure and quarrel, presenting him as a flawless genius.
+* hagiographic
+- balanced
+- caustic
+- ambivalent
+> A portrait that omits all faults to show a flawless hero is "hagiographic," meaning saint-like. "Balanced" contradicts "omits every failure."
+
+@ T
+The comedian's ______ wit, delivered with a perfectly straight face, made audiences laugh a beat after each line.
+* droll
+- strident
+- morose
+- vitriolic
+> Dry, quietly amusing humor delivered deadpan is "droll."
+
+@ X
+The Library of Alexandria was one of the ancient world's great centers of learning. ______, no reliable record of its full collection survives.
+* Unfortunately,
+- Consequently,
+- Similarly,
+- Specifically,
+> The lack of records is a regrettable contrast with the library's importance.
+
+@ X
+Most bird species build nests from twigs and grass. The edible-nest swiftlet, ______, constructs its nest entirely from its own hardened saliva.
+* however,
+- therefore,
+- for example,
+- moreover,
+> The swiftlet is an exception to the general pattern, so a contrast is needed.
+
+@ X
+Lichens are not single organisms but partnerships between a fungus and an alga. ______, the fungus provides structure, while the alga produces food through photosynthesis.
+* Specifically,
+- Nonetheless,
+- In contrast,
+- Similarly,
+> The sentence explains in detail how the partnership works, so "Specifically" fits.

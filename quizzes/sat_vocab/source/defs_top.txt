@@ -1,0 +1,464 @@
+## 1.1
+allege|v.|to claim something is true without yet proving it|claim, assert
+ally|n./v.|a partner who supports a shared cause; to join forces with|partner, confederate
+convince|v.|to bring someone to believe something through argument or evidence|persuade, satisfy
+critic|n.|one who judges merit, or who finds fault|reviewer, detractor
+dependent|adj.|relying on something else; determined or conditioned by it|reliant, contingent
+diverse|adj.|made up of distinctly different kinds|varied, heterogeneous
+eliminate|v.|to remove completely; to rule out|eradicate, exclude
+extract|v./n.|to draw or pull out; a concentrated portion taken from a source|withdraw, excerpt
+foster|v./adj.|to encourage the growth of; (of a family) giving care without blood ties|nurture, promote
+founder|n./v.|one who establishes something; (v.) to fail, sink, or collapse|originator; collapse
+fundamental|adj.|forming a necessary base; basic and essential|elemental, core
+harmful|adj.|causing damage or injury|damaging, detrimental
+innovation|n.|a new method, idea, or product; the act of introducing one|novelty, breakthrough
+innovative|adj.|introducing new ideas; original and creative|inventive, groundbreaking
+insightful|adj.|showing deep, accurate understanding|perceptive, astute
+moderate|adj./v.|avoiding extremes; to make less intense or to preside over a discussion|temperate; temper
+negotiate|v.|to reach agreement through discussion; to make one's way through or around|bargain; navigate
+occasional|adj.|happening now and then, not regularly|sporadic, intermittent
+opt|v.|to make a choice|choose, elect
+pioneer|n./v.|one of the first to explore or develop something; to be first to do it|trailblazer, innovator
+predict|v.|to say in advance what will happen|forecast, foresee
+qualification|n.|a skill that suits one for a role; also a limiting condition or reservation|credential; caveat
+remedy|n./v.|a cure or solution; to set right|cure, rectify
+retain|v.|to keep possession of; to keep in place or in memory|keep, preserve
+sensitive|adj.|quick to perceive or react; requiring tact; easily affected|responsive, delicate
+spare|adj./v.|extra or in reserve; lean and plain; (v.) to refrain from harming or using|surplus, austere
+subsequent|adj.|coming after in time or order|following, later
+superior|adj./n.|higher in quality or rank; a person of higher rank|better, supervisor
+suspect|v./n./adj.|to believe likely without proof; a person thought guilty; doubtful|surmise; questionable
+sustain|v.|to keep going over time; to undergo (an injury); to support|maintain, endure
+## 1.2
+acknowledge|v.|to admit the existence or truth of; to recognize|concede, recognize
+advocate|n./v.|a supporter of a cause; to argue in favor of|proponent, champion
+deny|v.|to state that something is untrue; to refuse to give|refute, withhold
+discipline|n./v.|training in self-control; a field of study; to punish or train|field; regimen
+impose|v.|to force something unwelcome on others|inflict, levy
+integrity|n.|firm moral honesty; also wholeness or structural soundness|probity; soundness
+obligation|n.|a duty one is bound to fulfill|duty, responsibility
+threaten|v.|to state an intent to harm; to put at risk|menace, endanger
+abandon|v./n.|to leave behind or give up entirely; (n.) lack of restraint|forsake; recklessness
+accidental|adj.|happening by chance, not by design|unintended, fortuitous
+aggressive|adj.|ready to attack or confront; forceful and assertive|hostile, forceful
+anticipate|v.|to expect and prepare for in advance|foresee, expect
+compromise|n./v.|a settlement by mutual concession; to weaken or expose to danger|concession; jeopardize
+consensus|n.|general agreement among a group|accord, unanimity
+conventional|adj.|following accepted customs; ordinary|traditional, orthodox
+credible|adj.|believable; deserving trust|plausible, reliable
+deficit|n.|a shortfall, especially of money; a lack|shortage, deficiency
+embrace|v.|to hug; to accept eagerly; to include|adopt, welcome
+exploit|v./n.|to use selfishly or unfairly; to make full use of; (n.) a bold feat|abuse; feat
+inevitable|adj.|certain to happen; unavoidable|inescapable, certain
+instrumental|adj.|serving as a key means of bringing something about|pivotal, helpful
+legitimate|adj.|lawful; reasonable and justifiable|valid, lawful
+neglect|v./n.|to fail to care for or attend to|ignore, disregard
+novelty|n.|the quality of being new; a new or unusual thing|newness, innovation
+phenomenon|n.|an observable fact or event, often remarkable|occurrence, marvel
+prominent|adj.|important and well known; standing out|eminent, conspicuous
+rebel|n./v.|one who resists authority; to resist or revolt|insurgent, defy
+stimulate|v.|to rouse to activity or growth|spur, provoke
+tribute|n.|an act or gift showing respect or admiration|homage, testament
+vulnerable|adj.|open to attack or harm|exposed, susceptible
+## 1.3
+absorb|v.|to soak up; to take in fully; to engross|assimilate, engross
+authentic|adj.|genuine; of undisputed origin|real, bona fide
+collaborative|adj.|produced by people working together|cooperative, joint
+compliant|adj.|willing to obey; meeting rules or standards|obedient, conforming
+defer|v.|to postpone; to yield to another's judgment|delay; submit
+derivative|adj./n.|based on earlier work, unoriginal; something derived from another|imitative; offshoot
+disturb|v.|to interrupt or unsettle; to move out of place|disrupt, perturb
+insist|v.|to demand forcefully; to maintain firmly|demand, assert
+logical|adj.|following sound reasoning; sensible|rational, coherent
+opponent|n.|one who competes against or opposes|adversary, rival
+reinforce|v.|to strengthen with added support|bolster, buttress
+resist|v.|to withstand or refuse to accept|oppose, withstand
+revolutionary|adj.|causing radical change; relating to political revolt|radical, groundbreaking
+robust|adj.|strong and healthy; vigorous; able to withstand stress|sturdy, hardy
+tension|n.|mental or emotional strain; tightness; a strained relation|strain, friction
+toxic|adj.|poisonous; harmful to others|poisonous, noxious
+transparent|adj.|see-through; easily understood; open and honest|clear, candid
+acronym|n.|a word formed from initial letters (e.g., NASA)|abbreviation
+aesthetic|adj./n.|concerned with beauty or taste; a set of artistic principles|artistic; style
+coherent|adj.|logically connected and consistent|lucid, consistent
+concise|adj.|expressing much in few words|succinct, terse
+condemn|v.|to express strong disapproval; to sentence|denounce, censure
+conditional|adj.|depending on a certain condition|contingent, provisional
+diminish|v.|to make or become smaller or less|lessen, dwindle
+diplomatic|adj.|tactful; relating to international relations|tactful, politic
+fabrication|n.|an invented falsehood; the act of manufacturing|lie; manufacture
+incidental|adj.|occurring as a minor, secondary part of something|peripheral, minor
+predictable|adj.|able to be foreseen; unsurprising|foreseeable, expected
+repeal|v./n.|to officially cancel a law|revoke, rescind
+stark|adj.|severe and bare; sharply clear; complete|bleak, absolute
+## 1.4
+ambition|n.|a strong desire to achieve; a goal|aspiration, drive
+amuse|v.|to entertain or make laugh|entertain, divert
+autobiography|n.|an account of one's life written by oneself|memoir
+candid|adj.|frank and honest; unposed|forthright, open
+cerebral|adj.|intellectual rather than emotional; relating to the brain|intellectual, analytical
+conceal|v.|to hide or keep secret|hide, disguise
+concord|n.|agreement or harmony|harmony, accord
+contend|v.|to argue or claim; to compete or struggle|assert; compete
+controversy|n.|prolonged public disagreement|dispute, debate
+definitive|adj.|final and authoritative; the most reliable|conclusive, authoritative
+dispense|v.|to distribute; (dispense with) to do without|distribute; forgo
+elaborate|adj./v.|detailed and complicated; to add detail|intricate; expand
+hostile|adj.|unfriendly; opposed; of an enemy|antagonistic, adverse
+inadequate|adj.|not enough; not capable|insufficient, deficient
+intuitive|adj.|known by instinct rather than reasoning; easy to use|instinctive, innate
+obscure|adj./v.|not well known; unclear; (v.) to hide or make unclear|unknown; cloud
+persistent|adj.|continuing firmly despite difficulty; lasting|tenacious, enduring
+precursor|n.|something that comes before and leads to another|forerunner, predecessor
+predator|n.|an animal or person that preys on others|hunter
+prevail|v.|to win out; to be widespread|triumph; predominate
+prospectus|n.|a document describing a venture to attract investors or members|brochure, plan
+redundant|adj.|unnecessary because repetitive; superfluous|superfluous, repetitive
+refuge|n.|a place or condition of safety|shelter, sanctuary
+subtle|adj.|delicate and hard to notice; finely perceptive|understated, nuanced
+suppress|v.|to put an end to by force; to hold back|quash, stifle
+surrender|v./n.|to give up; to yield to an opponent|yield, capitulate
+suspicious|adj.|distrustful; causing distrust|wary, questionable
+systematic|adj.|done methodically according to a plan|methodical, orderly
+thrive|v.|to grow vigorously; to flourish|flourish, prosper
+widespread|adj.|found over a large area or among many|prevalent, extensive
+## 1.5
+applaud|v.|to clap in approval; to praise|praise, commend
+articulate|adj./v.|able to speak clearly; to express clearly|eloquent; express
+conformity|n.|behavior matching accepted standards|compliance, conventionality
+contempt|n.|the feeling that something is worthless or beneath consideration|scorn, disdain
+contiguous|adj.|sharing a border; touching|adjacent, adjoining
+cooperate|v.|to work together toward a goal|collaborate
+dazzle|v.|to overwhelm with brightness or impressiveness|amaze, blind
+defy|v.|to openly resist; to challenge|disobey, resist
+deliberate|adj./v.|intentional; slow and careful; to think over carefully|intentional; ponder
+discriminate|v.|to distinguish between; to treat unjustly by group|distinguish; prejudge
+hypothetical|adj.|based on supposition rather than fact|theoretical, supposed
+intricate|adj.|having many complex, detailed parts|complex, elaborate
+jade|v./n.|to make tired or dulled by excess; a green gemstone|weary, sate
+mediate|v.|to help opposing sides reach agreement|arbitrate, negotiate
+mitigate|v.|to make less severe|alleviate, lessen
+mute|adj./v.|silent; to muffle or soften|silent; dampen
+mysterious|adj.|hard to explain or understand|enigmatic, puzzling
+orthodox|adj.|conforming to established beliefs|traditional, conventional
+oversight|n.|an unintentional failure to notice; also supervision|lapse; supervision
+pertinent|adj.|relevant to the matter at hand|relevant, germane
+prestige|n.|widespread respect from achievement or rank|status, renown
+prosperity|n.|the state of thriving, especially financially|wealth, success
+rigid|adj.|stiff and unbending; strict and inflexible|stiff, strict
+simplicity|n.|the quality of being plain or easy to understand|plainness, ease
+sovereign|adj./n.|having supreme independent authority; a monarch|autonomous; ruler
+spontaneous|adj.|happening without planning or external cause|impulsive, unplanned
+stimulus|n.|something that provokes a response|incentive, trigger
+undermine|v.|to weaken gradually or secretly|subvert, erode
+versatile|adj.|able to adapt to many uses or roles|adaptable, flexible
+## 1.6
+ascertain|v.|to find out for certain|determine, establish
+autonomy|n.|self-government; independence|independence, self-rule
+benign|adj.|kindly; harmless (of a tumor, not cancerous)|gentle, harmless
+catastrophe|n.|a sudden disaster|disaster, calamity
+denounce|v.|to publicly condemn|condemn, censure
+diligence|n.|careful and persistent effort|industry, assiduity
+disguise|v./n.|to change appearance to conceal identity|camouflage, mask
+disregard|v./n.|to ignore; lack of attention|ignore, neglect
+enigma|n.|a puzzling person or thing|mystery, riddle
+enlighten|v.|to give understanding or insight to|inform, illuminate
+experimentation|n.|the process of testing ideas through trials|testing, trial
+foresee|v.|to know or expect beforehand|anticipate, predict
+ignorant|adj.|lacking knowledge or awareness|uninformed, unaware
+imaginative|adj.|creative; inventive|creative, inventive
+indictment|n.|a formal accusation; strong evidence that something is bad|charge; condemnation
+indispensable|adj.|absolutely necessary|essential, vital
+infamous|adj.|well known for something bad|notorious
+instantaneous|adj.|happening immediately|immediate, instant
+intuition|n.|understanding without conscious reasoning|instinct, hunch
+irrelevant|adj.|not connected to the matter|immaterial, extraneous
+myriad|adj./n.|countless; a very great number|innumerable, multitude
+mystical|adj.|spiritual beyond ordinary understanding|spiritual, transcendent
+negligible|adj.|so small as to be unimportant|trivial, insignificant
+noteworthy|adj.|worth attention; remarkable|notable, remarkable
+optimistic|adj.|hopeful about the future|hopeful, sanguine
+partisan|adj./n.|biased toward one side; a committed supporter|biased; adherent
+prevalent|adj.|widespread; common|common, pervasive
+questionable|adj.|open to doubt; of dubious honesty|dubious, doubtful
+reconcile|v.|to restore friendly relations; to make consistent|reunite; harmonize
+repetitive|adj.|repeating in a tedious way|monotonous, redundant
+## 1.7
+adept|adj.|highly skilled|skilled, proficient
+ambiguous|adj.|open to more than one interpretation|equivocal, unclear
+astound|v.|to shock with amazement|astonish, stun
+bolster|v.|to support or strengthen|reinforce, buttress
+cosmopolitan|adj.|familiar with many cultures; worldly|worldly, sophisticated
+diffuse|adj./v.|spread out, not concentrated; wordy; to spread widely|scattered; disperse
+eloquent|adj.|fluent and persuasive in speech|articulate, expressive
+erroneous|adj.|mistaken; incorrect|wrong, inaccurate
+flourish|v./n.|to thrive; a showy gesture|thrive; embellishment
+heterogeneous|adj.|made of unlike parts|diverse, mixed
+imitation|n.|a copy; the act of copying|copy, mimicry
+indifference|n.|lack of interest or concern|apathy, unconcern
+indulge|v.|to allow oneself or another a pleasure; to yield to|pamper, gratify
+inferior|adj.|lower in quality or rank|lesser, subordinate
+lavish|adj./v.|rich and generous; to give generously|luxurious; heap
+liberate|v.|to set free|free, emancipate
+lucid|adj.|clear and easy to understand; mentally clear|clear, coherent
+maverick|n.|an independent-minded nonconformist|individualist, rebel
+palliative|adj./n.|relieving symptoms without curing|soothing, alleviating
+placid|adj.|calm and peaceful|serene, tranquil
+pragmatic|adj.|practical rather than theoretical|practical, realistic
+preclude|v.|to prevent from happening; to rule out|prevent, exclude
+rearrange|v.|to put in a different order|reorder, reorganize
+retraction|n.|a withdrawal of a statement; pulling back|withdrawal, disavowal
+retroactive|adj.|taking effect from a past date|backdated
+salvage|v./n.|to rescue from loss|rescue, recover
+speculate|v.|to form theories without firm evidence; to invest riskily|conjecture, theorize
+tenacious|adj.|holding firmly; persistent|persistent, dogged
+tenet|n.|a principle or belief held as true|principle, doctrine
+uneven|adj.|not level or regular; inconsistent in quality|irregular, inconsistent
+## 1.8
+advantageous|adj.|giving an advantage; beneficial|favorable, beneficial
+archipelago|n.|a group of islands|island chain
+benevolent|adj.|kind and generous|charitable, kindly
+bereavement|n.|the loss of a loved one through death|loss, mourning
+conclusive|adj.|settling a question decisively|decisive, definitive
+condone|v.|to accept or overlook wrongdoing|excuse, tolerate
+connoisseur|n.|an expert judge in matters of taste|expert, aficionado
+cordial|adj.|warm and friendly|amiable, gracious
+dubious|adj.|doubtful; of questionable value or honesty|doubtful, suspect
+elusive|adj.|hard to find, catch, or understand|evasive, slippery
+embarrassment|n.|self-conscious discomfort; a cause of shame|mortification, shame
+embellish|v.|to decorate; to add fictional details to|adorn, exaggerate
+entrench|v.|to establish firmly so it is hard to change|establish, root
+eradicate|v.|to destroy completely|eliminate, abolish
+esoteric|adj.|understood only by a small group of specialists|arcane, obscure
+exacerbate|v.|to make worse|aggravate, worsen
+extremity|n.|the farthest point; a hand or foot; extreme hardship|limit; dire need
+humility|n.|a modest view of one's own importance|modesty, humbleness
+meticulous|adj.|extremely careful about details|painstaking, scrupulous
+mundane|adj.|ordinary and dull; worldly, not spiritual|ordinary, everyday
+orderly|adj.|neatly arranged; well behaved|neat, methodical
+ornate|adj.|elaborately decorated|elaborate, florid
+plight|n.|a dangerous or difficult situation|predicament, dilemma
+propensity|n.|a natural tendency|inclination, tendency
+receptive|adj.|willing to consider new ideas|open, amenable
+sarcasm|n.|mocking irony meant to wound or amuse|irony, derision
+scrutinize|v.|to examine closely|inspect, examine
+seclude|v.|to keep away from others|isolate, sequester
+sensational|adj.|causing great excitement; lurid to provoke interest|thrilling; lurid
+substantiate|v.|to provide evidence to support|verify, corroborate
+## 1.9
+alienate|v.|to make hostile or isolated|estrange, isolate
+arrogant|adj.|having an exaggerated sense of importance|haughty, conceited
+astute|adj.|shrewdly perceptive|shrewd, perceptive
+brevity|n.|shortness of time or expression|conciseness, briefness
+conscientious|adj.|careful and diligent out of duty|diligent, scrupulous
+divulge|v.|to reveal private information|disclose, reveal
+empathy|n.|the ability to share another's feelings|compassion, understanding
+encumbrance|n.|a burden or impediment|burden, hindrance
+erratic|adj.|unpredictable; irregular|unpredictable, inconsistent
+extravagant|adj.|excessive in spending or display|lavish, excessive
+futile|adj.|incapable of succeeding; useless|pointless, vain
+hesitant|adj.|tentative; slow to act because unsure|reluctant, tentative
+impulsive|adj.|acting without forethought|rash, spontaneous
+infrequent|adj.|not happening often|rare, occasional
+mediocre|adj.|of only average or poor quality|ordinary, second-rate
+misconception|n.|a mistaken belief|fallacy, misunderstanding
+mishap|n.|an unlucky accident|accident, misfortune
+morbid|adj.|preoccupied with death or gloom; diseased|macabre, gruesome
+prolific|adj.|producing much|productive, fruitful
+prosper|v.|to succeed or thrive|flourish, thrive
+refute|v.|to prove false|disprove, rebut
+revitalize|v.|to give new life or energy to|rejuvenate, revive
+rouse|v.|to awaken; to stir up|awaken, provoke
+stature|n.|height; status gained from achievement|standing, prestige
+steadfast|adj.|firmly loyal; unwavering|resolute, constant
+tact|n.|skill in handling sensitive situations|diplomacy, discretion
+totalitarian|adj.|relating to a centralized government demanding total obedience|authoritarian, autocratic
+unorthodox|adj.|contrary to accepted norms|unconventional, heterodox
+venerable|adj.|respected because of age, wisdom, or character|revered, esteemed
+vigilant|adj.|watchful for danger|alert, watchful
+## 1.10
+amass|v.|to gather a large amount over time|accumulate, collect
+amiable|adj.|friendly and pleasant|genial, affable
+belie|v.|to give a false impression of; to show to be false|disguise; contradict
+capricious|adj.|given to sudden, unaccountable changes|fickle, mercurial
+censure|v./n.|to express formal disapproval|condemn, reprimand
+commendable|adj.|deserving praise|praiseworthy, laudable
+conservationist|n.|one who works to protect the environment|environmentalist
+consign|v.|to hand over; to relegate to an unpleasant place|entrust; relegate
+convoluted|adj.|extremely complex and hard to follow|tangled, intricate
+curative|adj.|able to heal|healing, therapeutic
+debacle|n.|a sudden, humiliating failure|fiasco, disaster
+decry|v.|to publicly denounce|condemn, deplore
+disintegrate|v.|to break into pieces|crumble, decompose
+disparage|v.|to speak of as having little worth|belittle, denigrate
+divisive|adj.|causing disagreement or hostility|polarizing, alienating
+enthrall|v.|to captivate; to hold spellbound|captivate, fascinate
+expeditious|adj.|quick and efficient|prompt, speedy
+exuberant|adj.|full of lively energy; abundant|ebullient, lavish
+idiosyncratic|adj.|peculiar to an individual|quirky, distinctive
+indulgent|adj.|permissive; inclined to grant wishes|lenient, permissive
+inept|adj.|lacking skill; clumsy|incompetent, unskilled
+instigate|v.|to bring about or provoke|initiate, incite
+irreverent|adj.|showing a lack of respect for serious things|disrespectful, flippant
+momentous|adj.|of great importance|historic, significant
+onerous|adj.|burdensome; involving heavy effort|burdensome, taxing
+penchant|n.|a strong liking or inclination|fondness, proclivity
+raze|v.|to completely destroy, especially a building|demolish, level
+resolute|adj.|purposeful and determined|determined, steadfast
+unequivocal|adj.|leaving no doubt|unambiguous, clear
+vicarious|adj.|experienced through another person|indirect, secondhand
+## 1.11
+absurdity|n.|the quality of being ridiculous or illogical|ridiculousness, folly
+arcane|adj.|understood by few; mysterious|esoteric, obscure
+callous|adj.|insensitive and cruel|heartless, unfeeling
+complacent|adj.|uncritically satisfied with oneself|smug, self-satisfied
+consecrate|v.|to declare sacred; to devote to a purpose|sanctify, dedicate
+defunct|adj.|no longer existing or functioning|extinct, obsolete
+discernment|n.|the ability to judge well|judgment, insight
+disdain|n./v.|scorn for what seems unworthy|contempt, scorn
+disgruntle|v.|to make discontented|displease, irk
+elitist|adj./n.|favoring a select, superior group|snobbish, exclusive
+eulogy|n.|a speech praising someone, especially one who has died|tribute, encomium
+finesse|n./v.|refined skill; to handle with subtlety|delicacy, deftness
+gratuitous|adj.|unnecessary and unjustified; free|unwarranted; free
+indeterminate|adj.|not exactly known or established|uncertain, vague
+inflexible|adj.|unwilling to change; stiff|rigid, unyielding
+intelligible|adj.|able to be understood|comprehensible, clear
+judicious|adj.|showing good judgment|wise, prudent
+plasticity|n.|the capacity to be molded or to adapt|malleability, flexibility
+prohibitive|adj.|forbidding; so high as to prevent purchase or use|exorbitant, restrictive
+quell|v.|to suppress; to calm|suppress, allay
+recessive|adj.|(of a gene) expressed only when paired; tending to recede|latent
+reminiscence|n.|a recollection of past experience|memory, recollection
+rigidity|n.|stiffness; strictness|inflexibility, stiffness
+somber|adj.|dark, gloomy, or serious|grave, solemn
+succulent|adj./n.|juicy and tender; a fleshy water-storing plant|juicy, luscious
+supplant|v.|to replace, often by force or scheming|supersede, displace
+tangential|adj.|only slightly relevant; diverging|peripheral, digressive
+usurp|v.|to seize power wrongfully|seize, commandeer
+vex|v.|to annoy or puzzle|irritate, perplex
+vindicate|v.|to clear of blame; to show to be right|exonerate, justify
+## 1.12
+ambivalence|n.|having mixed or contradictory feelings|uncertainty, indecision
+anachronism|n.|something out of its proper time period|throwback, archaism
+conjoin|v.|to join together|unite, combine
+counterproductive|adj.|having the opposite of the intended effect|self-defeating
+dearth|n.|a scarcity or lack|scarcity, paucity
+debilitate|v.|to weaken severely|enfeeble, sap
+demonstrative|adj.|openly showing feelings; serving to demonstrate|expressive, effusive
+deride|v.|to mock with contempt|ridicule, scorn
+dilettante|n.|an amateur who dabbles without serious commitment|dabbler, amateur
+disingenuous|adj.|insincere; pretending ignorance|deceitful, insincere
+egotistical|adj.|excessively self-centered|conceited, vain
+fragility|n.|the quality of being easily broken|frailty, delicacy
+gullible|adj.|easily deceived|credulous, naive
+haughty|adj.|arrogantly superior|arrogant, supercilious
+illusory|adj.|based on illusion; not real|deceptive, imaginary
+impassioned|adj.|filled with intense feeling|fervent, ardent
+inaudible|adj.|unable to be heard|silent, faint
+innocuous|adj.|harmless; inoffensive|harmless, benign
+insolent|adj.|boldly rude and disrespectful|impudent, impertinent
+pernicious|adj.|harmful in a gradual or subtle way|insidious, destructive
+precipitous|adj.|dangerously steep; done hastily|sheer; abrupt
+squander|v.|to waste carelessly|waste, fritter
+sullen|adj.|bad-tempered and gloomily silent|sulky, morose
+tenacity|n.|persistent determination|persistence, perseverance
+tenuous|adj.|very weak or slight; thin|flimsy, slight
+terse|adj.|brief to the point of curtness|curt, succinct
+tyrannical|adj.|cruelly and unfairly controlling|despotic, oppressive
+unassuming|adj.|modest; not pretentious|modest, humble
+undaunted|adj.|not discouraged by difficulty|undeterred, fearless
+vindication|n.|the act of clearing of blame or proving right|exoneration, justification
+## 1.13
+accost|v.|to approach and address aggressively|confront, waylay
+adroit|adj.|skillful and clever|deft, dexterous
+apologetic|adj.|expressing regret|contrite, remorseful
+ascetic|adj./n.|practicing severe self-denial|austere, abstemious
+belittle|v.|to make seem unimportant|disparage, diminish
+circumspect|adj.|cautious and unwilling to take risks|wary, prudent
+cloy|v.|to become sickening through excess sweetness or richness|sate, surfeit
+conciliatory|adj.|intended to placate or make peace|appeasing, placatory
+contemptuous|adj.|showing scorn|scornful, disdainful
+diminutive|adj.|very small|tiny, minuscule
+disputation|n.|formal debate or argument|debate, argument
+docile|adj.|easily managed; submissive|compliant, meek
+flagrant|adj.|shockingly obvious (of wrongdoing)|blatant, egregious
+implausible|adj.|not seeming reasonable or probable|unlikely, far-fetched
+impugn|v.|to challenge as false or dishonest|question, dispute
+inconsequential|adj.|unimportant|trivial, insignificant
+inscrutable|adj.|impossible to understand or interpret|enigmatic, unreadable
+juxtapose|v.|to place side by side for contrast|contrast, compare
+laconic|adj.|using very few words|terse, succinct
+machination|n.|a scheming plot|scheme, intrigue
+mercurial|adj.|subject to sudden mood changes|volatile, capricious
+obstinate|adj.|stubbornly refusing to change|stubborn, intransigent
+obtuse|adj.|slow to understand; (of an angle) greater than 90 degrees|dull, dense
+presumptive|adj.|presumed in the absence of further information|assumed, probable
+rancor|n.|bitter, long-lasting resentment|bitterness, animosity
+scintillate|v.|to sparkle; to be brilliantly lively|sparkle, glitter
+solicitous|adj.|showing anxious concern for another|attentive, caring
+strident|adj.|loud and harsh; aggressively forceful|shrill, vociferous
+stymie|v.|to prevent progress|thwart, hinder
+transitory|adj.|lasting only briefly|fleeting, ephemeral
+## 1.14
+alacrity|n.|brisk and cheerful readiness|eagerness, promptness
+bombastic|adj.|high-sounding but with little meaning|pompous, grandiloquent
+cathartic|adj.|providing emotional release|purifying, releasing
+conflagration|n.|a large destructive fire; a violent conflict|blaze, inferno
+convivial|adj.|friendly and lively|sociable, genial
+demagogue|n.|a leader who exploits popular prejudice|rabble-rouser, agitator
+dispassionate|adj.|not influenced by emotion; impartial|impartial, objective
+empathetic|adj.|showing empathy|understanding, compassionate
+erudition|n.|deep scholarly knowledge|learning, scholarship
+flippant|adj.|not showing proper seriousness|glib, frivolous
+hedonistic|adj.|devoted to pleasure|self-indulgent, sybaritic
+impetuous|adj.|acting quickly without thought|rash, impulsive
+impressionable|adj.|easily influenced|susceptible, malleable
+insolence|n.|rude and disrespectful behavior|impudence, impertinence
+interloper|n.|one who intrudes where not wanted|intruder, meddler
+levity|n.|humor or lack of seriousness|frivolity, lightheartedness
+magnanimous|adj.|generous and forgiving|big-hearted, charitable
+modicum|n.|a small quantity|bit, iota
+nebulous|adj.|vague or ill-defined; cloudy|hazy, unclear
+obsequious|adj.|excessively eager to please|servile, fawning
+obtrusive|adj.|noticeable in an unwelcome way|intrusive, conspicuous
+ostentatious|adj.|showy to impress others|flashy, pretentious
+outmoded|adj.|out of date|obsolete, antiquated
+penitent|adj./n.|feeling regret for wrongdoing|remorseful, contrite
+pliant|adj.|flexible; easily influenced|supple, compliant
+potentate|n.|a powerful ruler|monarch, sovereign
+prosaic|adj.|dull and unimaginative; matter-of-fact|mundane, pedestrian
+reticent|adj.|not revealing one's thoughts readily|reserved, taciturn
+trenchant|adj.|sharply perceptive and forceful|incisive, keen
+vapid|adj.|lacking liveliness or substance|insipid, dull
+## 1.15
+abasement|n.|humiliation; a lowering in status|degradation, humiliation
+abstruse|adj.|difficult to understand|recondite, esoteric
+baneful|adj.|harmful or destructive|pernicious, deadly
+bombast|n.|pompous, inflated language|grandiloquence, pomposity
+cantankerous|adj.|bad-tempered and argumentative|irascible, cranky
+chicanery|n.|trickery to achieve a purpose|deception, subterfuge
+decorous|adj.|in keeping with good taste and propriety|proper, seemly
+duplicitous|adj.|deceitful; two-faced|deceitful, double-dealing
+effrontery|n.|shameless boldness|audacity, gall
+effusive|adj.|expressing feelings in an unrestrained way|gushing, demonstrative
+flamboyance|n.|showy, confident style|ostentation, flair
+indigence|n.|extreme poverty|penury, destitution
+ineffable|adj.|too great to be expressed in words|indescribable, inexpressible
+intemperate|adj.|lacking self-control; excessive|immoderate, unrestrained
+lackadaisical|adj.|lacking enthusiasm and effort|careless, lethargic
+loquacious|adj.|very talkative|garrulous, voluble
+lugubrious|adj.|mournful, often exaggeratedly so|doleful, gloomy
+melodious|adj.|pleasant-sounding; tuneful|harmonious, dulcet
+mollify|v.|to soothe anger; to soften|placate, appease
+nonchalance|n.|casual calmness; lack of concern|composure, indifference
+ossify|v.|to turn to bone; to become rigid and unchanging|harden, stagnate
+perspicacious|adj.|having keen insight|astute, discerning
+phlegmatic|adj.|calm and unemotional|stolid, imperturbable
+predilection|n.|a preference or liking|penchant, partiality
+profundity|n.|deep insight; great depth|depth, wisdom
+reclusive|adj.|avoiding the company of others|solitary, withdrawn
+redolent|adj.|fragrant; strongly suggestive of|aromatic; evocative
+sagacious|adj.|wise and shrewd|wise, judicious
+supercilious|adj.|behaving as if superior to others|haughty, condescending
+whimsicality|n.|playful or fanciful quality|quirkiness, capriciousness

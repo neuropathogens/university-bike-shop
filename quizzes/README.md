@@ -44,3 +44,8 @@ Every wrong choice must have a note in `ex.others`; the builder refuses a quiz o
 - `sat_conventions` — SAT Standard English Conventions Practice Sets 1–10. Items come from the series' own
   source (`source/`, from `sat-conventions-latex-source.tar.gz`); `arrange()` reproduces each PDF's item
   order and answer letters exactly. Explanations: `ex_setNN.py`.
+- `sat_vocab` — SAT Vocabulary: Part 0 diagnostic, Practice Sets 1–10, and the definition self-checks of
+  Parts 1–3. Items come from the series' own source (`source/`, from `sat-vocab-source.zip`); the copied
+  `assign_positions`/`defcheck` reproduce each PDF's choices and letters exactly. Practice-set explanations:
+  `ex_setNN.py`; self-check explanations are generated from the lexicon (each wrong choice is named as
+  another word's definition).

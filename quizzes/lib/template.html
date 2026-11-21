@@ -436,9 +436,11 @@ function compositeHtml(){
   return '<div class="composite" role="status">' + lines.map(function(l){ return "<p>" + l + "</p>"; }).join("") + "</div>";
 }
 function targetHtml(st){
-  var T = META.target;
-  if (!T || st.total !== MC.length) return "";
-  return '<p class="target">' + T.label + ": " + T.mc + " / " + MC.length + " &middot; " + (st.right >= T.mc ? "met" : (T.mc - st.right) + " short") + "</p>";
+  var T = META.target, B = META.bands, h = "";
+  if (st.total !== MC.length) return "";
+  if (T) h += '<p class="target">' + T.label + ": " + T.mc + " / " + MC.length + " &middot; " + (st.right >= T.mc ? "met" : (T.mc - st.right) + " short") + "</p>";
+  if (B) for (var i = 0; i < B.length; i++){ if (st.right >= B[i][0]){ h += '<p class="target">' + B[i][1] + "</p>"; break; } }
+  return h;
 }
 
 var resFilter = "all";

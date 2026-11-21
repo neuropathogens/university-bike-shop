@@ -114,7 +114,7 @@ def walk(o, fn):
 
 def page_data(z):
     meta_keys = ("key", "ask", "setupNote", "topicPrefix", "topicCol", "guideCol", "byTopic", "topicNote", "guide",
-                 "guideName", "target", "composite", "frIntro")
+                 "guideName", "target", "bands", "composite", "frIntro")
     data = {
         "meta": {k: z[k] for k in meta_keys if k in z},
         "topics": {t: {"name": v[0], "page": v[1]} for t, v in z.get("topics", {}).items()},
