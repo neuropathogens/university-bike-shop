@@ -10,7 +10,9 @@ python3 -I quizzes/build.py --all                # every family
 ```
 
 `build.py` validates each quiz before writing it, pre-renders `$..$` / `$$..$$` with KaTeX, and updates
-`manifest.json` (source PDF -> quiz URL), which drives the Quiz links on `/study`.
+`manifest.json` (source PDF -> quiz URL), which drives the Quiz links on `/study`. After building, run
+`python3 -I quizzes/link_study.py` (adds the Quiz links to `public/study/index.html`; idempotent) and
+`python3 -I scripts/build_directory.py` (the site directory page).
 
 ## Layout
 
@@ -29,13 +31,20 @@ python3 -I quizzes/build.py --all                # every family
 | `title`, `desc`, `runhead`, `h1`, `sub`, `metaline`, `foot`, `setupNote` | page text (HTML) |
 | `back` | `(href, label)` for the header link back to `/study` |
 | `ask` | optional question shown under every prompt (e.g. the SAT Conventions stem) |
-| `topics` | `{key: (name, guide_page)}`; `topicPrefix`, `topicCol`, `guideCol`, `byTopic`, `topicNote` label them |
+| `topics` | `{key: (name, guide_page[, url])}` (a url overrides `guide#page=N`); `topicPrefix`, `topicCol`, `guideCol`, `byTopic`, `topicNote` label them |
 | `guide`, `guideName` | PDF the topic links open at `#page=N` |
 | `sections` | `{n: name}` shown in each question's eyebrow |
 | `stims` | `{id: {title, html}}` shared passages/data, referenced by `q["stim"]` |
 | `target` | optional `{label, mc}` score target shown on the results |
-| `composite`, `frIntro`, `fr` | optional free response and composite score (see `lib/template.html`) |
-| `mc` | list of `{n, prompt, options, answer (index), ex: {idea, steps, others: {index: note}}, sec?, topic?, stim?, fig?, table?, fixed?}` |
+| `flag` | optional `{below, text}`: topics scored under `below` percent get `text` in the tally |
+| `composite`, `frIntro`, `fr`, `frWord` | optional free response and composite score (see `lib/template.html`); `frWord` replaces "Question" in FR headings. With `mc` empty the page shows only the free response, with a running points total |
+| `manifest` | `False` keeps the quiz out of `manifest.json` (when several quizzes share one PDF) |
+| `mc` | list of `{n, prompt, options, answer (index), ex: {idea, steps, others: {index: note}}, sec?, topic?, tag?, stim?, fig?, table?, fixed?, labels?, after?}` |
+
+Item extras: `tag` is the key's rule name shown with the explanation; `labels` gives display names for image
+choices (they are not quoted); `after` is HTML (a figure or photo) revealed with the explanation. A stim's
+`cls: "free"` lets a long passage run at full height; markers with `data-q`/`data-qs` in a passage are
+highlighted while the questions they belong to are shown.
 
 Every wrong choice must have a note in `ex.others`; the builder refuses a quiz otherwise.
 
@@ -62,3 +71,23 @@ Every wrong choice must have a note in `ex.others`; the builder refuses a quiz o
   original one-off builder: `q_6x.py` (transcribed set), `ex_6x.py` (explanations), `checks_6x.py` (numeric
   asserts). E/P/I free response and the 50/50 composite score with each set's bands. `fkey` keeps the
   original localStorage keys.
+- `act_math` — ACT Math Guides 0–7 and the practice test, transcribed from the PDFs (`gNN.py`: DOC + QS with
+  in-depth explanations; computed answers asserted). Topics are the guides' rules, linked to their pages; the
+  practice test tallies by guide and flags guides under 70%.
+- `act_english` — ACT English Parts 1–4 from the series' source (`source/`). Each passage is one shared stim;
+  the item's boxed number and underline are highlighted. Choices are numbered 1–4 in source order (NO CHANGE
+  first); the PDFs' alternating A–D/F–J letters are checked against the key.
+  Explanations: `ex_<part>.py`.
+- `act_reading` — ACT Reading Volumes 1–2 (drills, practice section) from the LaTeX source; cited line numbers
+  become boxed markers (`source/lines.json`), highlighted with their question. Figure 1 is an SVG chart.
+- `act_science` — ACT Science Parts 1–6 from the LaTeX source; siunitx written out, tables as HTML, pgfplots
+  figures as 3x PDFKit crops (`tests/fig/`), graph choices as labelled images. Explanations: `ex_partN.py`.
+- `apah_vocab` — APAH Vocabulary, 754 items in 8 category quizzes (`vocab-1`..`8`), extracted from the PDF
+  (`extract.py` -> `source/vocab.json`); explanations come from the glossary entries. Masking typos in the PDF's
+  prompts are repaired without revealing the answer.
+- `apah_works` — APAH 250 every-work practice, 500 items in 10 content-area quizzes (`works-1`..`10`), extracted
+  from the PDF; the work's photo is shown after answering. Wrong-choice notes: `notes_<k>.py`.
+- `college_math` — Differential Equations I–III, Linear Algebra, Multivariable Calculus and Real Analysis I–III
+  (`/study/math/<subject>/tests/<slug>/`), transcribed from the PDFs: one module per volume (`de1.py` … `ra3.py`)
+  with `Q()` items and `FRQ()` free-response items. Real Analysis II and III are proof problem sets (free
+  response only, scored 5/10/15 with a proof rubric; III shows each section's "Tool -> use" box).
