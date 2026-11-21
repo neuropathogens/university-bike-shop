@@ -1,7 +1,7 @@
 """Real Analysis Vol. II (Problem Sets 1-8): 48 proof problems (5/10/15 points), all free response with the PDF's full solutions."""
 import math
 
-from college_math.quiz import FRQ
+from college_math.quiz import FRQ, proof_rubric
 
 DOC = dict(
     slug="problem-sets", pdf="real-analysis-2-problem-sets.pdf", title="Problem Sets 1&ndash;8",
@@ -26,16 +26,9 @@ S = {5: "&#9733;", 10: "&#9733;&#9733;", 15: "&#9733;&#9733;&#9733;"}
 COMPUTE = {"2.2", "6.2", "7.3", "7.5", "8.2", "8.3", "8.5"}  # items with a definite answer; the rest are proofs
 
 
-def rubric(pts):
-    half = pts // 2
-    return (f"<p><b>{pts}</b>: a complete proof that makes every step above, names each theorem, and checks its hypotheses. "
-            f"<b>About {half}</b>: the right key idea with a gap (a missing case, an unchecked hypothesis, or an $\\varepsilon$ with no explicit $N$ or $\\delta$). "
-            "<b>0</b>: the key idea is missing or the argument is circular. For computations, the final answer must also match.</p>")
-
-
 def P(n, pts, prompt, answer, steps):
     return FRQ(n, n.split(".")[0], S[pts], prompt, answer, steps, pts=pts,
-               lead="Answer" if n in COMPUTE else "Key idea", rubric=rubric(pts),
+               lead="Answer" if n in COMPUTE else "Key idea", rubric=proof_rubric(pts),
                ask="Your work and answers." if n in COMPUTE else "Your proof.")
 
 

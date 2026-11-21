@@ -37,6 +37,13 @@ def FRQ(n, sec, rule, prompt, answer, steps, pts=1, lead="Answer", rubric=None, 
                 guide=[str(sec)])
 
 
+def proof_rubric(pts):
+    """Self-marking scale for a proof worth pts points (the Real Analysis problem sets)."""
+    return (f"<p><b>{pts}</b>: a complete proof that makes every step above, names each theorem, and checks its hypotheses. "
+            f"<b>About {pts // 2}</b>: the right key idea with a gap (a missing case, an unchecked hypothesis, or an $\\varepsilon$ with no explicit $N$ or $\\delta$). "
+            "<b>0</b>: the key idea is missing or the argument is circular. For computations, the final answer must also match.</p>")
+
+
 def quiz(mod):
     m = importlib.import_module(f"college_math.{mod}")
     D, qs, frs = m.DOC, m.QS, getattr(m, "FRS", [])
