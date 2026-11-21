@@ -27,13 +27,13 @@ def Q(n, sec, rule, prompt, options, answer, idea, steps, others, fig=None, tabl
     return d
 
 
-def FRQ(n, sec, rule, prompt, answer, steps, pts=1):
+def FRQ(n, sec, rule, prompt, answer, steps, pts=1, lead="Answer", rubric=None, ask="Your solution and final answer."):
     """A free-response item (marked "fr" in the PDF): problem, model answer from the key, and the worked steps."""
-    sol = f"<p><b>Answer.</b> {answer}</p><ol>" + "".join(f"<li>{s}</li>" for s in steps) + "</ol>"
-    rubric = (f"<p>{pts} point{'s' if pts > 1 else ''} if your final answer matches and your work shows the decisive steps above; "
-              "0 if the method or the answer is wrong.</p>")
+    sol = f"<p><b>{lead}.</b> {answer}</p><ol>" + "".join(f"<li>{s}</li>" for s in steps) + "</ol>"
+    rubric = rubric or (f"<p>{pts} point{'s' if pts > 1 else ''} if your final answer matches and your work shows the decisive steps above; "
+                        "0 if the method or the answer is wrong.</p>")
     return dict(n=n, mode="points", head=f"{rule} &middot; {pts} point{'s' if pts > 1 else ''}", stem=prompt,
-                parts=[dict(label="a", max=pts, prompt="Your solution and final answer.", solution=sol, rubric=rubric)],
+                parts=[dict(label="a", max=pts, prompt=ask, solution=sol, rubric=rubric)],
                 guide=[str(sec)])
 
 
@@ -61,8 +61,10 @@ def quiz(mod):
         foot=(f'From <a href="{pdf}"><i>{subject}: {D["title"]}</i></a> (PDF). Answers and rule tags are the document&rsquo;s own key; '
               "the explanations expand on it with the rule, a worked solution, and why each wrong choice fails. "
               "Section links open the page of the guide that states the rules. Your answers are saved only in this browser."),
-        **({"fr": frs, "frIntro": "Free-response items: work each one on paper, then open the model solution and mark yourself.",
-            "composite": {"mcWeight": len(qs), "frWeight": sum(p["max"] for f in frs for p in f["parts"]), "bands": []}} if frs else {}),
+        **({"frWord": D["frWord"]} if D.get("frWord") else {}),
+        **({"fr": frs, "frIntro": D.get("frIntro", "Free-response items: work each one on paper, then open the model solution and mark yourself."),
+            **({"composite": {"mcWeight": len(qs), "frWeight": sum(p["max"] for f in frs for p in f["parts"]), "bands": []}} if qs else {})}
+           if frs else {}),
     )
 
 
