@@ -218,6 +218,12 @@ u.ul{text-decoration-thickness:1px;text-underline-offset:3px}
 .qn{display:inline-block;min-width:1.4em;padding:0 .2em;margin:0 .15em;border:.5px solid var(--fg);font:600 11.5px/1.4 system-ui,-apple-system,sans-serif;text-align:center;vertical-align:.12em;font-variant-numeric:tabular-nums}
 .stim .qn[data-cur]{background:var(--fg);color:var(--bg)}
 .stim u[data-cur]{background:var(--hl);box-shadow:0 0 0 2px var(--hl)}
+.stim .ln{display:inline-block;min-width:1.3em;padding:0 .25em;margin-right:.25em;border:.5px solid var(--line);color:var(--muted);font:500 11px/1.4 system-ui,-apple-system,sans-serif;text-align:center;vertical-align:.12em;font-variant-numeric:tabular-nums}
+.stim .ln[data-cur]{background:var(--hl);color:var(--fg);border-color:var(--fg)}
+.stim-intro{font-style:italic;color:var(--muted);font-size:15px}
+.stim-sub{margin-top:12px!important}
+.stim-note{font-size:15px;color:var(--muted)}
+.fig .figcap{margin:0 0 6px;font-size:15px}
 .fig{margin:0 0 14px;text-align:center}
 .fig img{max-width:100%;height:auto;background:#fff}
 :root[data-theme=dark] .fig img{filter:invert(.92) hue-rotate(180deg)}
@@ -316,7 +322,8 @@ function explain(q, picked){
 function table(q){ return q.table ? '<div class="bt-wrap">' + q.table + "</div>" : ""; }
 function stim(q){
   var s = q.stim && STIM[q.stim]; if (!s) return "";
-  var html = s.html.split(' data-q="' + q.n + '"').join(' data-q="' + q.n + '" data-cur');
+  var html = s.html.split(' data-q="' + q.n + '"').join(' data-q="' + q.n + '" data-cur')
+    .replace(/data-qs="([^"]*)"/g, function(m, l){ return (" " + l + " ").indexOf(" " + q.n + " ") >= 0 ? m + " data-cur" : m; });
   return '<div class="stim">' + (s.title ? '<p class="stim-h sc">' + s.title + "</p>" : "") + html + "</div>";
 }
 function scrollStim(root){
