@@ -1,0 +1,66 @@
+=== 0|Diagnostic|Eight items, one per trap type in Section 5.
+
+@ C
+The new trail map is ______; first-time hikers can follow it without a guide, and every junction is clearly labeled.
+* intelligible
+- intricate
+- obscure
+- elaborate
+> Restatement clue: "can follow it without a guide." "Intricate" and "elaborate" are related-but-imprecise traps, since a detailed map could still be confusing.
+
+@ C
+Although the senator's speech was ______, filled with sweeping promises, it contained almost no specific proposals.
+* grandiose
+- terse
+- pragmatic
+- tentative
+> "Although" sets sweeping promises against a lack of specifics. "Terse" and "tentative" reverse the direction; "pragmatic" has the wrong charge.
+
+@ M
+The museum will not countenance any photography in the manuscript room.
+? As used in the text, what does the word "countenance" most nearly mean?
+* permit
+- face
+- notice
+- display
+> Secondary-meaning trap: the familiar sense "face" does not fit. As a verb, "countenance" means to tolerate or permit.
+
+@ C
+The fossil is so well preserved that researchers could ______ the animal's last meal from the contents of its stomach.
+* deduce
+- devour
+- disclose
+- deride
+> Researchers work out the meal from evidence, so "deduce" fits. "Devour" is a sound-alike trap from the "meal" context.
+
+@ T
+Reviewers who expected a dry history were surprised by the book's ______ tone; its author jokes about kings and footnotes alike.
+* irreverent
+- solemn
+- reverent
+- vindictive
+> Joking about kings shows a lack of reverence. "Solemn" and "reverent" have the wrong charge; "vindictive" is negative in the wrong way.
+
+@ C
+The committee's decision to ______ the rule was not a rejection of its goals; members simply wanted time to study its costs.
+* suspend
+- abolish
+- denounce
+- repudiate
+> "Not a rejection," plus "wanted time," points to a temporary halt. The other three are too strong: they are permanent or hostile.
+
+@ X
+Most comets orbit the Sun in long ellipses. ______, Halley's Comet returns roughly every 76 years.
+* For example,
+- However,
+- Instead,
+- In conclusion,
+> Halley's Comet illustrates the general claim about comet orbits.
+
+@ C
+The scientist's claim was ______ the data: her own table showed the opposite trend.
+* at odds with
+- in line with
+- borne out by
+- consistent with
+> In this phrase trap, the opposite trend means a contradiction, so the answer is "at odds with." The other three phrases all mean agreement.

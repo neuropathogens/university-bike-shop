@@ -1,0 +1,664 @@
+abase|v.|to lower in dignity
+abash|v.|to embarrass
+abdicate|v.|to give up a throne or responsibility
+abduct|v.|to kidnap
+aberration|n.|a departure from the norm
+abhor|v.|to hate
+abhorrence|n.|loathing
+abjure|v.|to renounce formally
+abnegation|n.|self-denial
+abode|n.|a home
+abortive|adj.|failed
+abrasion|n.|a scrape; wearing away
+abreast|adv.|side by side; up to date
+abridgment|n.|a shortened version
+abrogate|v.|to abolish formally
+absolutist|n./adj.|one who believes in absolute principles or rule
+abstinence|n.|refraining from indulgence
+abut|v.|to border on
+abysmal|adj.|extremely bad
+abyss|n.|a deep chasm
+academe|n.|the academic world
+academician|n.|a member of an academy; a scholar
+accede|v.|to agree; to assume office
+accentuate|v.|to emphasize
+acclamation|n.|loud approval
+acerbic|adj.|sharp and harsh in tone
+acerbity|n.|harshness
+acetic|adj.|relating to vinegar
+acolyte|n.|an assistant or follower
+acquiesce|v.|to accept reluctantly without protest
+acrid|adj.|bitter and pungent
+actuate|v.|to cause to act
+acuity|n.|sharpness of perception
+adage|n.|a proverb
+adamant|adj.|unyielding
+addle|v.|to confuse
+adherent|n.|a supporter
+admirable|adj.|deserving respect
+adoration|n.|deep love
+adorn|v.|to decorate
+adumbrate|v.|to outline faintly; to foreshadow
+adventurous|adj.|willing to take risks
+aerate|v.|to introduce air into
+aerie|n.|a high nest
+aesthete|n.|one devoted to beauty and art
+affectation|n.|artificial behavior meant to impress
+afflict|v.|to cause suffering
+affliction|n.|a cause of suffering
+affront|n./v.|an insult
+aggrandize|v.|to enlarge in power or status
+aghast|adj.|horrified
+agitate|v.|to stir up; to disturb
+agitation|n.|anxiety; public campaigning
+agnostic|n./adj.|one who holds that God's existence cannot be known
+agony|n.|extreme suffering
+agrarian|adj.|relating to farming
+ailment|n.|an illness
+ajar|adj.|slightly open
+alcove|n.|a recess in a wall
+alight|v./adj.|to land or get off; on fire
+alimony|n.|support payments after divorce
+allay|v.|to calm (fears)
+allusive|adj.|containing indirect references
+amalgam|n.|a mixture
+amalgamation|n.|a merger
+amble|v.|to walk leisurely
+amicable|adj.|friendly
+amiss|adj.|wrong; faulty
+amity|n.|friendship
+amnesia|n.|loss of memory
+amoral|adj.|lacking moral sense
+amorous|adj.|showing romantic desire
+amorphous|adj.|shapeless
+amulet|n.|a protective charm
+anachronistic|adj.|out of its time
+anathema|n.|something detested
+anguish|n.|severe distress
+animus|n.|hostility; motivation
+annexation|n.|the act of taking over territory
+annihilate|v.|to destroy completely
+annul|v.|to declare invalid
+anoint|v.|to rub with oil in a ceremony; to choose
+anonymity|n.|being unnamed or unknown
+antagonistic|adj.|hostile
+antagonize|v.|to provoke hostility
+antedate|v.|to come before in time
+antediluvian|adj.|extremely old-fashioned
+antic|n.|a playful or silly act
+antipodes|n.|places diametrically opposite on the globe
+antisocial|adj.|avoiding society; harmful to society
+apartheid|n.|a policy of racial segregation
+apathetic|adj.|uninterested
+aphasia|n.|loss of the ability to use language
+aphorism|n.|a concise statement of truth
+apiary|n.|a place where bees are kept
+apogee|n.|the highest point
+apotheosis|n.|the perfect example; elevation to divine status
+appall|v.|to horrify
+apparition|n.|a ghost
+apportionment|n.|distribution in shares
+apprehend|v.|to arrest; to understand
+apprehensive|adj.|anxious
+approachable|adj.|friendly and easy to talk to
+apropos|prep./adj.|with reference to; appropriate
+aptitude|n.|natural ability
+arbitrate|v.|to settle a dispute as a neutral judge
+arboreal|adj.|living in trees
+archetype|n.|a perfect or typical example
+ardent|adj.|passionate
+ardor|n.|passion
+argumentative|adj.|inclined to argue
+armistice|n.|a truce
+arousal|n.|excitement or stimulation
+arraign|v.|to call before a court to answer charges
+arrears|n.|unpaid overdue debts
+arrogate|v.|to claim without right
+arroyo|n.|a dry creek bed
+artifice|n.|clever trickery
+ascent|n.|a climb; a rise
+asceticism|n.|strict self-denial
+ascribe|v.|to attribute
+aseptic|adj.|free from germs
+ashen|adj.|pale as ash
+asinine|adj.|extremely foolish
+askance|adv.|with suspicion
+askew|adj.|crooked
+aspersion|n.|a damaging remark
+assail|v.|to attack
+assent|n./v.|agreement
+assertive|adj.|confident and forceful
+assimilate|v.|to absorb; to integrate
+astonishment|n.|great surprise
+astral|adj.|relating to stars
+asunder|adv.|apart
+atavism|n.|reappearance of an ancestral trait
+atone|v.|to make amends
+atrocity|n.|an extremely cruel act
+attentive|adj.|paying close attention
+atypical|adj.|not typical
+augury|n.|an omen
+aural|adj.|relating to hearing
+aureole|n.|a halo
+auspice|n.|(under the auspices of) with the support of; an omen
+austerity|n.|severe simplicity; strict economy
+autocrat|n.|a ruler with absolute power
+autocratic|adj.|domineering
+aviary|n.|a large bird enclosure
+avocation|n.|a hobby
+avow|v.|to declare openly
+avuncular|adj.|kind like an uncle
+awry|adv.|off course; askew
+axiomatic|adj.|self-evident
+azure|adj.|sky blue
+backfire|v.|to have the opposite effect
+backlash|n.|a strong negative reaction
+backwater|n.|an isolated, stagnant place
+baffle|v.|to puzzle
+baleful|adj.|menacing
+balmy|adj.|pleasantly warm
+bandy|v.|to toss back and forth (words)
+bane|n.|a cause of ruin
+bankrupt|adj.|unable to pay debts; lacking (morally bankrupt)
+banter|n.|playful teasing
+barrage|n.|a heavy bombardment; an overwhelming quantity
+barren|adj.|unable to produce; bleak
+barter|v.|to trade goods without money
+bask|v.|to lie in warmth; to enjoy
+bauble|n.|a showy trinket
+bawdy|adj.|humorously indecent
+bedizen|v.|to dress gaudily
+bedlam|n.|chaos
+beeline|n.|a direct route
+befall|v.|to happen to
+befuddle|v.|to confuse
+beget|v.|to produce; to cause
+beguile|v.|to charm; to deceive
+beholder|n.|an observer
+belabor|v.|to discuss excessively
+belated|adj.|late
+beleaguer|v.|to beset with difficulties
+believable|adj.|credible
+bellicose|adj.|warlike
+belligerence|n.|aggressive hostility
+belligerent|adj.|hostile
+bemoan|v.|to lament
+bemuse|v.|to puzzle
+benefactor|n.|a donor
+bequeath|v.|to leave in a will
+bequest|n.|an inheritance
+berate|v.|to scold harshly
+bereaved|adj.|having lost a loved one
+berserk|adj.|out of control with anger
+beseech|v.|to beg
+beset|v.|to trouble persistently
+besiege|v.|to surround; to overwhelm
+bespeak|v.|to suggest; to be evidence of
+betoken|v.|to indicate
+betroth|v.|to engage to marry
+bevy|n.|a large group
+bewilder|v.|to confuse
+bicker|v.|to argue pettily
+bifurcate|v.|to divide into two
+bigot|n.|an intolerant person
+bigotry|n.|intolerance
+bilious|adj.|bad-tempered; sickly
+bilk|v.|to cheat
+bivouac|n.|a temporary camp
+blanch|v.|to turn pale
+blandish|v.|to coax with flattery
+blase|adj.|unimpressed from overfamiliarity
+blatant|adj.|obvious and unashamed
+bleak|adj.|grim
+blight|n./v.|a plant disease; something that spoils
+bludgeon|v./n.|to beat; a club
+blunder|n./v.|a careless mistake
+blurt|v.|to say suddenly
+bluster|v./n.|to talk loudly and aggressively
+bode|v.|to be an omen of
+boisterous|adj.|noisy and energetic
+bonanza|n.|a source of great wealth
+boomerang|v./n.|to backfire on the originator
+botch|v.|to ruin through clumsiness
+bough|n.|a tree branch
+bravado|n.|showy boldness
+brawl|n.|a rough fight
+brawn|n.|muscular strength
+brazen|adj.|shamelessly bold
+brisk|adj.|quick and active
+broach|v.|to raise a subject
+bromide|n.|a trite remark
+brunt|n.|the worst part of an impact
+bucolic|adj.|rural
+buffoon|n.|a clown
+bugle|n.|a brass horn
+bullion|n.|gold or silver in bulk
+bulwark|n.|a defensive wall; a safeguard
+bungler|n.|a clumsy worker
+buoyancy|n.|ability to float; cheerfulness
+bureaucracy|n.|a system of administration with rigid rules
+burlesque|n.|a mocking parody
+burly|adj.|large and strong
+buxom|adj.|plump and healthy
+bygone|adj.|past
+byproduct|n.|a secondary result
+bystander|n.|an onlooker
+byzantine|adj.|excessively complicated
+cabal|n.|a secret group of plotters
+cacophonous|adj.|harsh-sounding
+cacophony|n.|harsh noise
+cadaver|n.|a corpse
+cadence|n.|rhythm
+calamitous|adj.|disastrous
+calculable|adj.|able to be calculated
+callow|adj.|immature
+calumny|n.|slander
+cannibal|n.|one who eats its own kind
+canny|adj.|shrewd
+cantata|n.|a choral composition
+canter|v./n.|a moderate gallop
+canto|n.|a division of a long poem
+canvass|v.|to seek votes or opinions
+capacious|adj.|roomy
+capitulate|v.|to surrender
+caprice|n.|a whim
+capsize|v.|to overturn
+captious|adj.|fault-finding
+carcass|n.|a dead body
+cardiologist|n.|a heart doctor
+careen|v.|to sway; to rush headlong
+caress|v./n.|to touch gently
+carnage|n.|slaughter
+carnal|adj.|of the body
+carnivore|n.|a meat-eater
+cask|n.|a barrel
+caste|n.|a hereditary social class
+catapult|v./n.|to hurl; a launching device
+catcall|n.|a jeering shout
+categorical|adj.|unconditional; absolute
+catharsis|n.|emotional release
+caulk|v.|to seal cracks
+cavil|v.|to raise petty objections
+celibate|adj.|abstaining from marriage or sex
+certitude|n.|certainty
+cession|n.|the giving up of territory
+chafe|v.|to rub; to be irritated
+chagrin|n.|annoyed embarrassment
+chalice|n.|a goblet
+chameleon|n.|a lizard that changes color; a changeable person
+chaperon|n.|a supervisor of young people
+charisma|n.|compelling charm
+charismatic|adj.|charming and inspiring
+chasm|n.|a deep gap
+chaste|adj.|pure
+chasten|v.|to humble by correction
+cheapen|v.|to lower in value
+chide|v.|to scold mildly
+chimerical|adj.|imaginary; fanciful
+chisel|v./n.|to carve; a cutting tool
+chivalrous|adj.|courteous and gallant
+choleric|adj.|irritable
+chortle|v.|to chuckle gleefully
+churl|n.|a rude person
+circuitous|adj.|roundabout
+circumlocution|n.|wordy evasion
+circumstantial|adj.|based on indirect evidence
+circumvent|v.|to get around
+cistern|n.|a water tank
+citadel|n.|a fortress
+clamber|v.|to climb awkwardly
+clammy|adj.|damp and sticky
+clamor|n./v.|loud noise; to demand loudly
+clangor|n.|loud ringing
+clapper|n.|the striker of a bell
+cleft|n./adj.|a split
+clientele|n.|customers
+clime|n.|a climate or region
+clout|n.|influence; a blow
+clumsy|adj.|awkward
+coax|v.|to persuade gently
+coddle|v.|to pamper
+codicil|n.|an addition to a will
+codify|v.|to arrange into a system of rules
+coerce|v.|to force
+coercive|adj.|using force
+cognate|adj.|related in origin
+cognizance|n.|awareness
+cohere|v.|to stick together; to be consistent
+cohesion|n.|unity
+coincidental|adj.|happening by chance
+collate|v.|to gather and arrange
+colloquial|adj.|informal
+collusion|n.|secret cooperation for deceit
+combatant|n.|a fighter
+combative|adj.|eager to fight
+combustible|adj.|flammable
+commandeer|v.|to seize for use
+commendation|n.|praise
+commonplace|adj./n.|ordinary
+communicable|adj.|able to be transmitted
+compatriot|n.|a fellow citizen
+complaisance|n.|willingness to please
+complicit|adj.|involved in wrongdoing
+compulsion|n.|an irresistible urge; force
+compunction|n.|guilt
+comradeship|n.|companionship
+concave|adj.|curved inward
+concealment|n.|hiding
+conceit|n.|vanity; an elaborate metaphor
+conceivable|adj.|imaginable
+concomitant|adj.|accompanying
+concordant|adj.|in agreement
+condemnatory|adj.|expressing condemnation
+condescension|n.|patronizing attitude
+conducive|adj.|favorable to
+confiscate|v.|to seize officially
+conflate|v.|to combine (ideas), often mistakenly
+confluence|n.|a meeting point
+conformism|n.|adherence to norms
+conformist|n.|one who conforms
+congest|v.|to clog
+congregate|v.|to gather
+congruent|adj.|in agreement; identical in form
+congruity|n.|harmony
+conifer|n.|a cone-bearing tree
+conjure|v.|to summon; to call to mind
+connive|v.|to secretly allow or plot wrongdoing
+conscript|v./n.|to draft into service
+conservatism|n.|preference for tradition
+consonance|n.|agreement; harmony
+consort|n./v.|a spouse; to associate with
+conspirator|n.|a plotter
+conspire|v.|to plot together
+consternation|n.|dismay
+consumerism|n.|preoccupation with buying goods
+consummate|adj./v.|perfect; to complete
+contagious|adj.|spreading
+contemptible|adj.|deserving contempt
+contravene|v.|to violate
+contrive|v.|to devise cleverly
+convalesce|v.|to recover from illness
+convoke|v.|to call together
+copious|adj.|abundant
+cordon|n./v.|a protective line
+corollary|n.|a natural consequence
+corpulence|n.|fatness
+corpulent|adj.|fat
+corrugate|v.|to fold into ridges
+coterie|n.|a small exclusive group
+coterminous|adj.|having the same boundaries or extent
+countenance|n./v.|a face; to tolerate
+counterbalance|v./n.|to offset
+counterfeit|adj./v.|fake; to forge
+counterfeiter|n.|a forger
+counterpoint|n.|a contrasting element
+courteous|adj.|polite
+covet|v.|to desire enviously
+cowardice|n.|lack of courage
+cower|v.|to crouch in fear
+coy|adj.|shy; evasive
+cozen|v.|to cheat
+crafty|adj.|cunning
+credence|n.|belief
+credo|n.|a creed
+credulous|adj.|gullible
+crevice|n.|a narrow crack
+cringe|v.|to shrink in fear or embarrassment
+crony|n.|a close friend, often favored unfairly
+crossbreed|v./n.|to hybridize
+crossfire|n.|gunfire from several directions; argument between sides
+crux|n.|the decisive point
+cubicle|n.|a small partitioned space
+culvert|n.|a drain under a road
+cunning|adj./n.|clever deceit
+cupidity|n.|greed
+cursive|adj.|joined handwriting
+cynicism|n.|distrust of motives
+dabble|v.|to take a casual interest
+dainty|adj.|delicate
+dais|n.|a raised platform
+dalliance|n.|a casual involvement
+dampen|v.|to moisten; to reduce
+dank|adj.|damp and cold
+dapper|adj.|neat and stylish
+dapple|v.|to mark with spots
+daredevil|n.|a reckless person
+daub|v.|to smear
+deadpan|adj.|expressionless
+deafen|v.|to make deaf; to overwhelm with noise
+debatable|adj.|open to dispute
+debauch|v.|to corrupt
+debunk|v.|to expose as false
+decadent|adj.|self-indulgent; declining
+deceit|n.|deception
+decelerate|v.|to slow down
+deceptive|adj.|misleading
+decimate|v.|to kill a large part of
+decimation|n.|heavy destruction
+decoy|n.|a lure
+deferential|adj.|respectful
+defile|v.|to make impure
+deflate|v.|to let air out; to reduce confidence
+deflect|v.|to turn aside
+defray|v.|to pay costs
+deft|adj.|skillful
+defuse|v.|to calm; to disarm
+dehumanize|v.|to deprive of human qualities
+dehydrate|v.|to remove water from
+deify|v.|to worship as a god
+deject|v.|to depress
+delectable|adj.|delicious
+delicacy|n.|fineness; a choice food; tact
+delimit|v.|to fix boundaries
+delude|v.|to deceive
+deluge|n./v.|a flood
+delve|v.|to research deeply
+demurral|n.|an objection
+denizen|n.|an inhabitant
+denude|v.|to strip bare
+denunciation|n.|public condemnation
+depersonalize|v.|to make impersonal
+depose|v.|to remove from power; to testify
+deprave|v.|to corrupt
+depreciate|v.|to lose value; to belittle
+derail|v.|to obstruct; to run off the rails
+derogate|v.|to disparage; to detract
+derogatory|adj.|disrespectful
+descry|v.|to catch sight of
+desecration|n.|violation of something sacred
+desist|v.|to stop
+desolate|adj.|empty and bleak
+despicable|adj.|contemptible
+despise|v.|to hate
+despoil|v.|to plunder
+despot|n.|a tyrant
+destitute|adj.|very poor
+detachment|n.|objectivity; a unit of troops
+detest|v.|to hate
+detractor|n.|a critic
+detriment|n.|harm
+devoid|adj.|entirely lacking
+devotee|n.|an enthusiast
+devour|v.|to eat greedily
+devout|adj.|deeply religious; sincere
+dexterous|adj.|skillful with hands
+dialectical|adj.|relating to logical argument
+diaphanous|adj.|sheer and delicate
+diatribe|n.|a bitter verbal attack
+dictum|n.|an authoritative statement
+diffident|adj.|shy
+digestible|adj.|easily digested or understood
+dignitary|n.|a person of high rank
+dilapidated|adj.|in ruins
+dilate|v.|to widen
+dilatory|adj.|slow; delaying
+dinghy|n.|a small boat
+dingy|adj.|dirty and drab
+dint|n.|(by dint of) by means of
+diorama|n.|a 3-D model scene
+disaffect|v.|to alienate
+disagreeable|adj.|unpleasant
+disarm|v.|to remove weapons; to win over
+disarray|n.|disorder
+disavow|v.|to deny
+disband|v.|to break up a group
+discomfit|v.|to embarrass
+discontent|n.|dissatisfaction
+discontinuity|n.|a break in continuity
+discontinuous|adj.|interrupted
+discourteous|adj.|rude
+discursive|adj.|rambling
+disenfranchise|v.|to deprive of a right, esp. to vote
+dishearten|v.|to discourage
+disillusion|v./n.|to disappoint by revealing reality
+disjunction|n.|a separation; a lack of correspondence
+dislodge|v.|to remove from position
+dismal|adj.|gloomy
+dismay|n./v.|distress
+dismissive|adj.|showing disregard
+displease|v.|to annoy
+disprove|v.|to prove false
+disquiet|n./v.|anxiety
+disrepute|n.|bad reputation
+dissatisfy|v.|to fail to satisfy
+dissension|n.|disagreement
+distillation|n.|purification; essence
+distraught|adj.|very upset
+distrust|n./v.|lack of trust
+dither|v.|to be indecisive
+diurnal|adj.|active in the daytime
+divergence|n.|a separation; a difference
+doctrinaire|adj.|rigidly applying a theory
+doff|v.|to remove (a hat)
+dogged|adj.|persistent
+dogmatist|n.|one who asserts opinions as fact
+dole|v./n.|to distribute; welfare payment
+dolt|n.|a stupid person
+domesticate|v.|to tame
+dormer|n.|a window projecting from a roof
+dossier|n.|a file of documents
+dote|v.|to be excessively fond
+douse|v.|to drench; to extinguish
+dovetail|v.|to fit together neatly
+dowager|n.|a dignified elderly woman
+dowdy|adj.|unfashionable
+downplay|v.|to minimize
+downright|adj./adv.|utter; completely
+downtrodden|adj.|oppressed
+drab|adj.|dull
+dramatize|v.|to exaggerate; to adapt as drama
+dreary|adj.|dull and depressing
+drench|v.|to soak
+drivel|n.|nonsense
+droll|adj.|wryly amusing
+drone|v./n.|to hum monotonously; an idler; an unmanned aircraft
+dulcet|adj.|sweet-sounding
+dumbfound|v.|to astonish
+duress|n.|threats or pressure
+dysfunctional|adj.|not working properly
+earthy|adj.|down-to-earth; crude
+eccentric|adj.|unconventional
+eccentricity|n.|oddness
+edict|n.|an official order
+edify|v.|to instruct morally
+eerie|adj.|strange and frightening
+efface|v.|to erase
+efficacious|adj.|effective
+effigy|n.|a model of a person
+effulgent|adj.|shining brightly
+effusion|n.|an outpouring
+egalitarian|adj.|believing in equality
+egocentric|adj.|self-centered
+egoism|n.|self-interest as a motive
+egotist|n.|a self-centered person
+egress|n.|an exit
+elation|n.|great happiness
+electrify|v.|to thrill; to supply electricity
+elixir|n.|a magical potion
+elliptical|adj.|oval; cryptically brief
+elongate|v.|to lengthen
+elude|v.|to evade
+emaciate|v.|to make very thin
+embargo|n.|a ban on trade
+embellishment|n.|decoration; exaggeration
+embezzle|v.|to steal entrusted funds
+embitter|v.|to make bitter
+embroil|v.|to involve in conflict
+emend|v.|to correct a text
+emigrate|v.|to leave one's country
+enamor|v.|to fill with love
+enclave|n.|an enclosed territory
+encroach|v.|to intrude gradually
+encroachment|n.|an intrusion
+enfranchise|v.|to give the vote
+engross|v.|to absorb fully
+engulf|v.|to swallow up
+enigmatic|adj.|mysterious
+enmesh|v.|to entangle
+ennui|n.|boredom
+enormity|n.|great wickedness; immense size
+enrage|v.|to anger
+entangle|v.|to twist together; to involve
+entice|v.|to lure
+entomology|n.|the study of insects
+entourage|n.|a group of attendants
+entreat|v.|to plead
+envelop|v.|to surround
+epicure|n.|a lover of fine food
+epigram|n.|a witty saying
+epitaph|n.|a tomb inscription
+epithet|n.|a descriptive name; a slur
+epitome|n.|a perfect example
+epitomize|v.|to be a perfect example of
+equable|adj.|calm; even
+equinox|n.|when day and night are equal
+equivocation|n.|deliberate ambiguity
+errant|adj.|straying; wandering
+erupt|v.|to burst out
+escalation|n.|an increase in intensity
+estimable|adj.|worthy of respect
+ethos|n.|characteristic spirit
+eulogize|v.|to praise highly
+euphony|n.|pleasing sound
+euphoric|adj.|intensely happy
+evade|v.|to escape; to avoid
+evanescent|adj.|vanishing quickly
+evaporate|v.|to turn to vapor; to disappear
+evasive|adj.|avoiding directness
+evenhanded|adj.|fair
+eventuality|n.|a possible occurrence
+evict|v.|to expel
+evince|v.|to reveal
+ewe|n.|a female sheep
+exasperate|v.|to irritate intensely
+excavate|v.|to dig out
+excoriate|v.|to criticize severely
+excruciating|adj.|intensely painful
+execrable|adj.|very bad
+exemplar|n.|a model
+exhibitionist|n.|one who seeks attention
+exhilaration|n.|thrill
+exhort|v.|to urge strongly
+exhume|v.|to dig up
+exigent|adj.|urgent; demanding
+existential|adj.|relating to existence
+exorbitant|adj.|excessively high
+exorcise|v.|to drive out evil spirits
+expanse|n.|a wide area
+expatriate|n./v.|one living abroad
+expendable|adj.|dispensable
+expiate|v.|to atone for
+expropriation|n.|seizure of property
+expunge|v.|to erase
+extant|adj.|still existing
+exterminate|v.|to destroy completely
+extinct|adj.|no longer existing
+extinguish|v.|to put out
+extirpate|v.|to root out
+extort|v.|to obtain by force or threats
+extrapolate|v.|to infer beyond known data
+extravagance|n.|excess
+extrovert|n.|an outgoing person
+extrude|v.|to force out
+exude|v.|to ooze; to display strongly
+exult|v.|to rejoice

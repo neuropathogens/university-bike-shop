@@ -1,0 +1,8 @@
+{
+  "name": "study-quizzes",
+  "private": true,
+  "description": "Builds the interactive quiz pages under public/study (see README.md). Only KaTeX is needed, to pre-render math.",
+  "dependencies": {
+    "katex": "0.16.22"
+  }
+}

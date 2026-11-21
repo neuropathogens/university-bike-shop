@@ -1,0 +1,618 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light">
+<script>try{document.documentElement.setAttribute("data-theme",localStorage.getItem("apah.theme")==="dark"?"dark":"light")}catch(e){document.documentElement.setAttribute("data-theme","light")}</script>
+<title>AP Psychology Unit 2 Question Set</title>
+<meta name="description" content="AP Psychology Unit 2: Cognition question set: 25 exam-style multiple-choice questions with in-depth explanations, plus a 7-point article analysis question with a scoring guide.">
+<link rel="icon" href="/favicon.ico" sizes="48x48" type="image/x-icon">
+<link rel="icon" href="/icon.svg" sizes="any" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-icon.png" sizes="180x180">
+<link rel="preload" href="/study/ap/ap-art-history/fonts/LM-regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/study/katex/katex.min.css">
+<style>
+@font-face{font-family:"Latin Modern";font-style:normal;font-weight:400;font-display:swap;src:url("/study/ap/ap-art-history/fonts/LM-regular.woff2") format("woff2")}
+@font-face{font-family:"Latin Modern";font-style:italic;font-weight:400;font-display:swap;src:url("/study/ap/ap-art-history/fonts/LM-italic.woff2") format("woff2")}
+@font-face{font-family:"Latin Modern";font-style:normal;font-weight:600 700;font-display:swap;src:url("/study/ap/ap-art-history/fonts/LM-bold.woff2") format("woff2")}
+@font-face{font-family:"Latin Modern";font-style:italic;font-weight:600 700;font-display:swap;src:url("/study/ap/ap-art-history/fonts/LM-bold-italic.woff2") format("woff2")}
+@font-face{font-family:"Latin Modern Mono";font-style:normal;font-weight:400 500;font-display:swap;src:url("/study/ap/ap-art-history/fonts/LM-mono.woff2") format("woff2")}
+@font-face{font-family:"Latin Modern Mono";font-style:normal;font-weight:600 700;font-display:swap;src:url("/study/ap/ap-art-history/fonts/LM-mono-bold.woff2") format("woff2")}
+
+:root{--bg:#fff;--fg:#000;--muted:#4a4a4a;--line:#c9c9c9;--plate:#f5f5f3;--link:#00008b;--ok:#1d5e20;--bad:#9b1c1c;
+  --serif:"Latin Modern","Computer Modern Serif","CMU Serif",Georgia,serif;--mono:"Latin Modern Mono","SFMono-Regular",Menlo,Consolas,monospace;
+  --gutter:clamp(16px,4vw,40px);color-scheme:light}
+:root[data-theme=dark]{--bg:#111110;--fg:#ecebe6;--muted:#a3a29c;--line:#34342f;--plate:#1b1b19;--link:#9db4ff;--ok:#8fd394;--bad:#ff9b9b;color-scheme:dark}
+*{box-sizing:border-box}
+html{background:var(--bg);scroll-padding-top:16px}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--serif);font-size:17px;line-height:1.5;font-kerning:normal;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+button,input,textarea{font:inherit;color:inherit}
+button{cursor:pointer}
+button:disabled{cursor:default}
+a{color:var(--link);text-underline-offset:3px;text-decoration-thickness:.5px}
+:focus-visible{outline:2px solid var(--link);outline-offset:2px}
+[hidden]{display:none!important}
+.sc{font-variant:small-caps;text-transform:lowercase;letter-spacing:.04em}
+.muted{color:var(--muted)}
+.katex{font-size:1.04em;text-rendering:auto}
+.katex-display{margin:.7em 0;overflow-x:auto;overflow-y:hidden;padding:2px 0}
+
+.runhead{display:flex;flex-wrap:wrap;justify-content:space-between;gap:4px 16px;max-width:1480px;margin:0 auto;padding:14px var(--gutter) 6px;font-size:14px;font-style:italic;color:var(--muted)}
+.runhead a{text-decoration:none}
+.runhead a:hover{text-decoration:underline}
+.runhead-actions{display:flex;flex-wrap:wrap;gap:4px 18px}
+.theme-btn{background:none;border:0;padding:0;font:inherit;font-style:italic;color:var(--link)}
+.theme-btn:hover{text-decoration:underline}
+.rule{max-width:1480px;margin:0 auto;padding-inline:var(--gutter)}
+.rule hr{margin:0;border:0;border-top:.5px solid var(--fg)}
+
+.wrap{max-width:860px;margin:0 auto;padding:0 var(--gutter) 80px}
+.title{text-align:center;padding:34px 0 22px}
+.title h1{margin:0;text-wrap:balance;font-size:clamp(32px,6vw,46px);line-height:1.1;font-weight:700}
+.title .sub{margin:8px 0 0;font-size:18px;font-variant:small-caps;letter-spacing:.03em}
+.title .meta{margin:4px 0 0;font-style:italic;color:var(--muted)}
+
+.tabs{display:flex;justify-content:center;gap:0;margin:0 0 26px;border-bottom:.5px solid var(--fg)}
+.tab{background:none;border:0;border-bottom:2.5px solid transparent;padding:8px 18px;margin-bottom:-1px;font-size:17px;color:var(--muted)}
+.tab[aria-selected=true]{color:var(--fg);border-bottom-color:var(--fg);font-weight:700}
+.tab:hover{color:var(--fg)}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:40px;padding:0 16px;border:1px solid var(--fg);background:var(--bg);font-family:var(--mono);font-size:14.5px;white-space:nowrap}
+.btn:hover:not(:disabled){background:var(--plate)}
+.btn:disabled{opacity:.35}
+.btn--solid{background:var(--fg);color:var(--bg)}
+.btn--solid:hover:not(:disabled){background:var(--fg);opacity:.85}
+.btn--lg{min-height:48px;font-size:15.5px;padding:0 22px}
+.kbd{display:inline-grid;place-items:center;min-width:22px;height:22px;padding:0 4px;border:1px solid currentColor;font-family:var(--mono);font-size:12px;opacity:.8}
+
+/* booktabs tables */
+.bt{border-collapse:collapse;margin:0 auto;font-variant-numeric:tabular-nums}
+.bt th,.bt td{padding:4px 12px;text-align:center;font-weight:400}
+.bt th[scope=row],.bt thead th:first-child{text-align:left}
+.bt thead tr{border-top:1px solid var(--fg);border-bottom:.5px solid var(--fg)}
+.bt tbody tr:last-child{border-bottom:1px solid var(--fg)}
+.bt-wrap{overflow-x:auto;margin:0 0 16px}
+
+/* setup */
+.setup{border-bottom:1.5px solid var(--fg);padding:4px 0 22px;display:grid;gap:18px}
+.setup h2,.results h2,.fr h2{margin:0;font-size:20px}
+.choice-row{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.choice{display:flex;flex-direction:column;align-items:flex-start;gap:2px;padding:12px 14px;border:1px solid var(--fg);background:var(--bg);text-align:left}
+.choice b{font-size:17px}
+.choice span{font-size:14.5px;font-style:italic;color:var(--muted)}
+.choice[aria-pressed=true]{background:var(--fg);color:var(--bg)}
+.choice[aria-pressed=true] span{color:var(--bg);opacity:.8}
+.checks{display:flex;flex-wrap:wrap;gap:8px 22px}
+.checks label{display:inline-flex;align-items:center;gap:8px;cursor:pointer}
+.checks input{width:17px;height:17px;margin:0;accent-color:var(--fg)}
+.setup-actions{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.note{margin:0;font-size:15px;color:var(--muted);font-style:italic}
+
+/* run */
+.bar{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:4px 16px;font-size:15px;color:var(--muted)}
+.track{height:3px;background:var(--line);margin:8px 0 14px}
+.track span{display:block;height:100%;background:var(--fg);transition:width .2s ease}
+.nav{display:grid;grid-template-columns:repeat(auto-fill,minmax(34px,1fr));gap:5px;margin:0 0 22px}
+.nav button{height:32px;padding:0;border:1px solid var(--line);background:var(--bg);font-family:var(--serif);font-size:14px;font-variant-numeric:tabular-nums}
+.nav button:hover{border-color:var(--fg)}
+.nav .is-answered{background:var(--plate);border-color:var(--fg)}
+.nav .is-right{background:var(--fg);color:var(--bg);border-color:var(--fg)}
+.nav .is-wrong{border:1.5px dashed var(--bad);color:var(--bad)}
+.nav .is-current{outline:2px solid var(--fg);outline-offset:1px}
+.q{border-top:1.5px solid var(--fg);padding-top:16px}
+.q-eyebrow{margin:0 0 6px;font-size:14px;color:var(--muted)}
+.q-prompt{margin:0 0 14px;font-size:20px;line-height:1.45;font-weight:400}
+.opts{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.opt{display:flex;align-items:center;gap:12px;width:100%;min-height:52px;padding:10px 14px;border:1px solid var(--fg);background:var(--bg);text-align:left;font-size:16.5px;line-height:1.4}
+.opt:hover:not(:disabled){background:var(--plate)}
+.opt .kbd{flex:none}
+.opt .mark{margin-left:auto;padding-left:6px;font-family:var(--mono);font-size:14px;white-space:nowrap}
+.opt.is-picked{border-width:2px;padding:9px 13px;background:var(--plate)}
+.opt.is-right{background:var(--fg);color:var(--bg);border-color:var(--fg)}
+.opt.is-wrong{border:1.5px dashed var(--bad);color:var(--bad);text-decoration:line-through;text-decoration-thickness:1px}
+.opt.is-wrong .mark,.opt.is-wrong .kbd{text-decoration:none}
+.opt.is-dim{opacity:.5}
+.fb{margin:14px 0 0;padding:12px 16px;border:.5px solid var(--fg);border-left:3px solid var(--ok)}
+.fb.is-wrong{border-left-color:var(--bad)}
+.fb p{margin:0}
+.fb .verdict{font-weight:700;margin-bottom:4px}
+.why p{margin:0 0 6px}
+.steps{margin:2px 0 8px;padding-left:22px}
+.steps li{margin:4px 0;padding-left:2px}
+.why .why-h{margin:10px 0 2px;font-size:14.5px;color:var(--muted)}
+.others{margin:0 0 4px;padding-left:20px}
+.others li{margin:5px 0}
+.others .tag{margin-left:6px;font-family:var(--mono);font-size:12.5px;color:var(--bad);white-space:nowrap}
+.links{margin-top:6px;font-size:15px}
+.step{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:10px;margin-top:20px}
+.step-right{display:flex;flex-wrap:wrap;gap:8px}
+.confirm{margin-top:14px;padding:12px 16px;border:1px solid var(--fg);display:flex;flex-wrap:wrap;align-items:center;gap:10px}
+.confirm p{margin:0;flex:1 1 220px}
+.keys{margin:18px 0 0;font-size:13.5px;color:var(--muted);text-align:center}
+.restart-line{margin:10px 0 0;font-size:14.5px;text-align:center}
+
+/* results */
+.results{padding-top:4px}
+.score{text-align:center;padding:10px 0 18px}
+.score-big{margin:0;font-size:clamp(48px,10vw,72px);font-weight:700;line-height:1;font-variant-numeric:tabular-nums}
+.score p{margin:6px 0 0}
+.res-actions{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin:0 0 22px}
+.res-filter{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:6px;border-bottom:1.5px solid var(--fg);padding-bottom:6px}
+.res-list{list-style:none;margin:0;padding:0}
+.res-list>li{border-bottom:.5px solid var(--line)}
+.res-list>li:last-child{border-bottom:1.5px solid var(--fg)}
+.res-list details{padding:10px 0}
+.res-list summary{display:grid;grid-template-columns:34px 22px minmax(0,1fr);gap:8px;cursor:pointer;list-style:none}
+.res-list summary::-webkit-details-marker{display:none}
+.res-n{font-weight:700;font-variant-numeric:tabular-nums}
+.res-ok{color:var(--ok);font-weight:700}
+.res-bad{color:var(--bad);font-weight:700}
+.res-body{padding:8px 0 4px 64px;font-size:15.5px}
+.res-body p{margin:0 0 4px}
+.res-body .bt-wrap{margin:4px 0 8px}
+.topics{margin:0 0 26px}
+.topics h2{margin:0 0 8px}
+.topics .bt{margin:0;width:100%}
+.topics .bt td:last-child,.topics .bt th:last-child{text-align:left}
+.topics .flag{color:var(--bad);font-style:italic}
+.composite{margin:0 0 26px;padding:12px 16px;border:.5px solid var(--fg);border-left:3px solid var(--fg)}
+.composite p{margin:0}
+.composite p+p{margin-top:4px}
+
+/* free response */
+.fr-intro{margin:0 0 6px;font-style:italic;color:var(--muted)}
+.fr{border-top:1.5px solid var(--fg);padding:18px 0 26px}
+.fr h2 small{font-weight:400;font-style:italic;color:var(--muted);font-size:15px;margin-left:6px}
+.fr-stem{margin:10px 0 6px;text-align:justify;hyphens:auto;-webkit-hyphens:auto}
+.part{margin:18px 0 0}
+.part-prompt{margin:0 0 8px}
+.part-prompt b{margin-right:4px}
+.part textarea{width:100%;min-height:150px;padding:12px 14px;border:1px solid var(--fg);border-radius:0;background:var(--bg);font-family:var(--serif);font-size:16.5px;line-height:1.55;resize:vertical}
+.part-meta{margin-top:4px;font-size:14px;color:var(--muted)}
+.sol{margin-top:12px;padding:12px 18px;border:.5px solid var(--fg)}
+.sol h3{margin:0 0 4px;font-size:15px}
+.sol p{margin:0 0 10px}
+.sol .crit{display:grid;grid-template-columns:28px minmax(0,1fr);gap:2px 8px;margin:0 0 10px;font-size:15.5px}
+.sol .crit dt{font-weight:700}
+.sol .crit dd{margin:0}
+.mark-row{display:flex;flex-wrap:wrap;align-items:center;gap:8px;font-size:15px}
+.seg{display:inline-flex}
+.seg button{min-width:44px;min-height:36px;padding:0 10px;border:1px solid var(--fg);background:var(--bg);font-family:var(--mono);font-size:14px}
+.seg button+button{border-left:0}
+.seg button[aria-pressed=true]{background:var(--fg);color:var(--bg)}
+.fr-actions{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:10px;margin-top:16px}
+.fr-score{font-size:16px}
+.fr-score b{font-variant-numeric:tabular-nums}
+.scale{margin-top:14px}
+.scale summary{cursor:pointer;font-size:15px;color:var(--muted);font-style:italic}
+.scale .bt{margin:8px 0 0}
+.scale .bt td:last-child,.scale .bt th:last-child{text-align:left}
+.foot{margin-top:40px;padding-top:12px;border-top:.5px solid var(--line);font-size:14px;color:var(--muted)}
+
+@media (max-width:640px){
+  .runhead-title{display:none}
+  .runhead-actions{width:100%;justify-content:space-between}
+  .title{padding:22px 0 16px}
+  .choice-row{grid-template-columns:1fr}
+  .q-prompt{font-size:18.5px}
+  .res-body{padding-left:0}
+  .keys{display:none}
+  .fr-stem{text-align:left}
+  .bt th,.bt td{padding:4px 7px}
+  .sol{padding:10px 12px}
+  .katex-display>.katex{font-size:.94em}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+@media print{.runhead,.rule,.tabs,.nav,.step,.keys,.restart-line,.res-actions{display:none!important}}
+/* generic quiz additions */
+.q-prompt p{margin:0}
+.q-prompt p+p{margin-top:8px}
+.q-ask{margin:10px 0 0!important;font-size:16px;font-style:italic;color:var(--muted)}
+.blank{display:inline-block;width:3.4em;height:1em;margin:0 .12em;border-bottom:1.5px solid currentColor;vertical-align:-.12em}
+.stim{margin:0 0 16px;padding:12px 16px;border:.5px solid var(--fg);background:var(--plate);font-size:16.5px;line-height:1.55;max-height:60vh;overflow:auto}
+.stim-h{margin:0 0 6px!important;font-size:14px;color:var(--muted)}
+.stim p{margin:0 0 8px}
+.stim p:last-child{margin-bottom:0}
+.fig{margin:0 0 14px;text-align:center}
+.fig img{max-width:100%;height:auto;background:#fff}
+:root[data-theme=dark] .fig img{filter:invert(.92) hue-rotate(180deg)}
+.fig figcaption{font-size:14px;color:var(--muted);font-style:italic}
+.target{margin:4px 0 0;font-style:italic}
+.res-sum{display:block}
+.opt>span:nth-child(2){flex:1 1 auto;min-width:0;overflow-wrap:anywhere;-webkit-hyphens:auto;hyphens:auto}
+@media (max-width:640px){.opt .mark{white-space:normal;text-align:right;max-width:6.2em;line-height:1.25}}
+.sol>div{margin:0 0 10px}
+.crit-pts{margin:0 0 10px;font-size:15.5px}
+.crit-pts p{margin:0 0 4px}
+.crit-pts ul{margin:0 0 4px;padding-left:20px}
+</style>
+</head>
+<body>
+<div class="runhead"><span class="runhead-title">AP Psychology &middot; Unit 2: Cognition &middot; Question Set</span><span class="runhead-actions"><a href="/study/#ap-psychology">&larr;&nbsp;Study Library</a><a href="/study/ap/ap-psychology/ap-psych-02-cognition-questions.pdf">PDF version</a><button type="button" class="theme-btn" id="theme-btn">Dark mode</button></span></div>
+<div class="rule"><hr></div>
+
+<main class="wrap">
+  <header class="title">
+    <h1>Unit 2 <span style="white-space:nowrap">Question Set</span></h1>
+    <p class="sub">Cognition</p>
+    <p class="meta">25 multiple-choice (about 30 min) &middot; 1 article analysis question (25 min)</p>
+  </header>
+  <div class="tabs" role="tablist">
+    <button type="button" class="tab" role="tab" id="tab-mc" aria-controls="mc" aria-selected="true">Multiple choice</button>
+    <button type="button" class="tab" role="tab" id="tab-fr" aria-controls="fr" aria-selected="false">Free response</button>
+  </div>
+
+  <section id="mc" role="tabpanel" aria-labelledby="tab-mc"></section>
+  <section id="fr" role="tabpanel" aria-labelledby="tab-fr" hidden></section>
+
+  <p class="foot">From <a href="/study/ap/ap-psychology/ap-psych-02-cognition-questions.pdf"><i>Unit 2: Cognition: Question Set</i></a> (PDF). Answers and rule tags are the document&rsquo;s own key; the explanations expand on it with the concept, how it applies to the scenario, and why each wrong choice is wrong. Topic links open the matching section of <a href="/study/ap/ap-psychology/ap-psych-02-cognition-guide.pdf">the guide</a>. Your answers are saved only in this browser.</p>
+</main>
+
+<script id="data" type="application/json">{"meta":{"key":"study.ap-psych.unit-2.v1","setupNote":"Allow about 30 minutes for the multiple choice, about 72 seconds per question. Data-display items show the study above the question.","topicPrefix":"","topicCol":"Topic","guideCol":"Guide section","byTopic":"By topic","topicNote":"Two or more misses on one topic: reread that section of the guide.","guide":"/study/ap/ap-psychology/ap-psych-02-cognition-guide.pdf","guideName":"the <i>Unit 2 guide<\/i>","target":{"label":"Target","mc":21},"frIntro":"Allow 25 minutes. Write each part, then open the scoring guide and give yourself the points your answer earns. Cite sources by author and year."},"topics":{"2.1":{"name":"Perception","page":1},"2.2":{"name":"Thinking, problem-solving, and decisions","page":2},"2.3":{"name":"How memory is organized","page":4},"2.4":{"name":"Encoding","page":4},"2.5":{"name":"Storage","page":5},"2.6":{"name":"Retrieval","page":6},"2.7":{"name":"Forgetting and distortion","page":6},"2.8":{"name":"Intelligence and achievement","page":7}},"sections":{"1":"Perception","2":"Thinking and decisions","3":"Memory: structure and encoding","4":"Retrieval and forgetting","5":"Intelligence","6":"Article Analysis Question"},"stims":{"s1":{"title":"Study","html":"<p><b>Study C.<\/b> Researchers presented 40 nouns to 90 participants, randomly assigned to one of three conditions. Group 1 judged whether each word was in uppercase. Group 2 judged whether it rhymed with a target word. Group 3 judged whether it fit a sentence (“The <u><\/u> was on the table”). In a surprise recall test, mean words recalled were 6, 11, and 19.<\/p>"}},"mc":[{"n":1,"prompt":"Told that an ambiguous sketch shows “a young woman,” most participants see a young woman; told it shows “an old woman,” most see an old woman. This shows","options":["bottom-up processing","change blindness","perceptual set","retinal disparity"],"answer":2,"sec":"1","topic":"2.1","tag":"2.1 Perceptual set","ex":{"idea":"A perceptual set is a mental predisposition, created by expectations, labels, or context, to perceive something in a particular way.","steps":["The sketch is the same in both conditions; only the label differs.","The label creates an expectation that decides what people see: perceptual set (top-down processing)."],"others":{"0":"builds perception from the raw features of the stimulus; here the label, not the features, drives what is seen.","1":"is failing to notice changes in a scene; nothing changes here.","3":"is a binocular depth cue, unrelated to interpreting an ambiguous figure."}}},{"n":2,"prompt":"Twelve dots arranged in three tight clusters of four are seen as “three groups.” Which Gestalt principle is at work?","options":["Proximity","Closure","Similarity","Figure–ground"],"answer":0,"sec":"1","topic":"2.1","tag":"2.1 Gestalt","ex":{"idea":"The Gestalt principle of proximity: we group objects that are near each other.","steps":["The dots are identical, but they sit in three tight clusters.","Grouping by nearness = proximity."],"others":{"1":"is filling gaps to see a complete figure.","2":"is grouping objects that look alike; all the dots look the same, so similarity cannot explain three groups.","3":"Figure–ground is separating an object from its background, not grouping several objects."}}},{"n":3,"prompt":"A patient who has lost sight in one eye will have the most difficulty using which depth cue?","options":["Interposition","Texture gradient","Linear perspective","Retinal disparity"],"answer":3,"sec":"1","topic":"2.1","tag":"2.1 Depth cues","ex":{"idea":"Retinal disparity is a binocular depth cue: the brain compares the slightly different images from the two eyes. It needs both eyes.","steps":["With sight in only one eye, there is no second image to compare.","The other choices are monocular cues, available to one eye."],"others":{"0":"(one object blocking another) is monocular, so one eye is enough.","1":"(texture becoming finer with distance) is monocular.","2":"(parallel lines converging in the distance) is monocular."}}},{"n":4,"prompt":"A stranger asking for directions is swapped for a different person while a door passes between them; most people do not notice. This is","options":["inattentional blindness","change blindness","the cocktail party effect","perceptual constancy"],"answer":1,"sec":"1","topic":"2.1","tag":"2.1 Attention","ex":{"idea":"Change blindness is failing to notice a change in a scene, especially after a brief interruption.","steps":["The person giving directions is swapped while a door blocks the view.","Most people miss the change: change blindness."],"others":{"0":"is failing to see a visible object because attention is elsewhere (the gorilla study), not missing a change.","2":"is noticing your name in a noisy room despite focusing elsewhere.","3":"is seeing objects as unchanging in size, shape, or color despite changing input."}}},{"n":5,"prompt":"Told that a man is shy and loves poetry, people judge him more likely to be a classics professor than a truck driver, even though truck drivers vastly outnumber classics professors. This is the","options":["representativeness heuristic","availability heuristic","sunk-cost fallacy","framing effect"],"answer":0,"sec":"2","topic":"2.2","tag":"2.2 Representativeness","ex":{"idea":"The representativeness heuristic is judging likelihood by how well something matches a stereotype or prototype, often ignoring base rates.","steps":["“Shy and loves poetry” fits the stereotype of a classics professor.","People ignore the base rate: truck drivers vastly outnumber classics professors."],"others":{"1":"judges likelihood by how easily examples come to mind, not by resemblance to a stereotype.","2":"is continuing an effort because of what you have already invested.","3":"is a choice changing with how the same information is worded."}}},{"n":6,"prompt":"Shoppers prefer beef labeled “80% lean” to beef labeled “20% fat.” This demonstrates","options":["priming","mental set","framing","confirmation bias"],"answer":2,"sec":"2","topic":"2.2","tag":"2.2 Framing","ex":{"idea":"Framing is the way information is presented, which can change decisions even when the facts are identical.","steps":["80% lean and 20% fat describe the same beef.","The positive wording wins: framing."],"others":{"0":"is earlier exposure to a stimulus unconsciously activating related ideas.","1":"is sticking to a problem-solving approach that worked before.","3":"is seeking information that supports what you already believe."}}},{"n":7,"prompt":"After a coin lands heads five times, Nia bets heavily on tails because “it’s due.” Nia is showing","options":["belief in an algorithm","the gambler’s fallacy","functional fixedness","divergent thinking"],"answer":1,"sec":"2","topic":"2.2","tag":"2.2 Gambler’s fallacy","ex":{"idea":"The gambler's fallacy is the belief that independent random events “balance out,” so a run of one outcome makes the other more likely.","steps":["Each coin flip is independent; tails is still a 50% chance.","Nia thinks tails is “due”: gambler's fallacy."],"others":{"0":"an algorithm is a step-by-step procedure that guarantees a solution; Nia has none.","2":"is seeing an object only in its usual function.","3":"is generating many possible solutions, a creative skill."}}},{"n":8,"prompt":"A student who believes a supplement improves focus reads only reviews that praise it and skips critical studies. This is","options":["priming","the availability heuristic","mental set","confirmation bias"],"answer":3,"sec":"2","topic":"2.2","tag":"2.2 Confirmation bias","ex":{"idea":"Confirmation bias is the tendency to seek out and favor information that supports what you already believe.","steps":["The student already believes in the supplement.","He reads only praise and skips critical studies: confirmation bias."],"others":{"0":"is unconscious activation of associations by earlier exposure.","1":"is judging likelihood by how easily examples come to mind.","2":"is getting stuck on a familiar way of solving problems."}}},{"n":9,"prompt":"Trying every possible combination on a three-digit lock until it opens is","options":["an algorithm, which guarantees a solution but may be slow","a heuristic, which is fast but error-prone","an example of mental set","an example of insight"],"answer":0,"sec":"2","topic":"2.2","tag":"2.2 Algorithms","ex":{"idea":"An algorithm is a step-by-step procedure that guarantees a solution, though it can be slow. A heuristic is a mental shortcut: faster but error-prone.","steps":["Trying every combination will eventually open the lock.","Guaranteed but slow: an algorithm."],"others":{"1":"is a shortcut that does not guarantee success; trying every combination is the opposite of a shortcut.","2":"is sticking to an old approach; nothing suggests a habitual strategy is getting in the way.","3":"is a sudden flash of understanding, not systematic trial."}}},{"n":10,"prompt":"Study C’s results best support the","options":["multi-store model’s claim that sensory memory is brief","levels-of-processing view that deeper, meaning-based encoding improves recall","serial position effect","spacing effect"],"answer":1,"sec":"3","topic":"2.4","tag":"2.4 Levels of processing","stim":"s1","ex":{"idea":"The levels-of-processing view holds that the deeper (more meaningful) the encoding, the better the recall.","steps":["Group 1 judged appearance (shallow, structural): 6 words.","Group 2 judged sound (phonemic): 11 words. Group 3 judged meaning (semantic): 19 words. Recall rose with depth."],"others":{"0":"Study C did not measure sensory memory or its duration.","2":"is better recall of the first and last items in a list; Study C compared encoding tasks, not positions.","3":"is better retention from spread-out study sessions; Study C did not vary timing."}}},{"n":11,"prompt":"In Study C, Group 2 used which type of encoding?","options":["Semantic","Structural","Visual imagery","Phonemic"],"answer":3,"sec":"3","topic":"2.4","tag":"2.4 Encoding","stim":"s1","ex":{"idea":"Phonemic encoding processes the sound of words: an intermediate depth between structural (appearance) and semantic (meaning).","steps":["Group 2 judged whether each word rhymed with a target word.","Rhyme depends on sound: phonemic encoding."],"others":{"0":"encoding is about meaning, which Group 3 used (fitting a sentence).","1":"encoding is about appearance, which Group 1 used (uppercase or not).","2":"would mean forming mental pictures, which none of the tasks required."}}},{"n":12,"prompt":"Study C can support a causal conclusion because","options":["it used a surprise test","the sample was large","participants were randomly assigned to encoding conditions","the words were all nouns"],"answer":2,"sec":"3","topic":"2.4","tag":"2.4 Methods","stim":"s1","ex":{"idea":"A causal conclusion requires an experiment: a manipulated IV and random assignment, so the groups differ only in the IV.","steps":["The encoding task (IV) was manipulated, and the 90 participants were randomly assigned to the three conditions.","So differences in recall can be credited to the encoding task."],"others":{"0":"the surprise test prevents deliberate memorizing, but it is not what permits a causal claim.","1":"sample size does not make a study causal.","3":"keeps the materials consistent but does not establish causation."}}},{"n":13,"prompt":"Mentally rotating a map to plan a route mainly uses which component of working memory?","options":["Visuospatial sketchpad","Phonological loop","Echoic memory","Long-term potentiation"],"answer":0,"sec":"3","topic":"2.3","tag":"2.3 Working memory","ex":{"idea":"In Baddeley's working-memory model, the visuospatial sketchpad holds and manipulates visual and spatial information; the phonological loop holds sounds and words.","steps":["Mentally rotating a map is a visual-spatial task.","That uses the visuospatial sketchpad."],"others":{"1":"handles verbal and auditory information, such as rehearsing a phone number.","2":"is the brief sensory memory for sounds, not a working-memory component.","3":"is the strengthening of synapses that underlies learning, not a working-memory component."}}},{"n":14,"prompt":"Remembering 1-4-9-2-1-7-7-6 as “1492” and “1776” is an example of","options":["the method of loci","maintenance rehearsal","chunking","priming"],"answer":2,"sec":"3","topic":"2.4","tag":"2.4 Chunking","ex":{"idea":"Chunking is grouping items into meaningful units, which expands how much short-term memory can hold.","steps":["Eight separate digits become two familiar years, 1492 and 1776.","Two meaningful chunks: chunking."],"others":{"0":"is a mnemonic that places items along a familiar route.","1":"is repeating information to keep it in mind, with no regrouping.","3":"is unconscious activation of associations by earlier exposure."}}},{"n":15,"prompt":"For a fraction of a second after a lightning flash, you can still “see” the scene. This is","options":["echoic memory","iconic memory","working memory","prospective memory"],"answer":1,"sec":"3","topic":"2.5","tag":"2.5 Sensory memory","ex":{"idea":"Iconic memory is the visual form of sensory memory: a photographic trace lasting a fraction of a second.","steps":["You still “see” the scene for an instant after the flash.","A brief visual trace: iconic memory."],"others":{"0":"is auditory sensory memory, lasting a few seconds.","2":"is active processing of information over seconds, not a lingering image.","3":"is remembering to do something in the future."}}},{"n":16,"prompt":"A neuroscientist finds that repeatedly stimulating a pathway in the hippocampus makes its synapses respond more strongly for weeks. This is","options":["reuptake","the refractory period","consolidation failure","long-term potentiation"],"answer":3,"sec":"3","topic":"2.3","tag":"2.3 LTP","ex":{"idea":"Long-term potentiation (LTP) is the lasting strengthening of synapses after repeated stimulation, thought to be a neural basis of learning and memory.","steps":["Repeated stimulation of a hippocampal pathway.","Synapses respond more strongly for weeks: LTP."],"others":{"0":"is reabsorption of a neurotransmitter by the sending neuron.","1":"is the brief recovery after a neuron fires.","2":"would be a failure to store memories; here the synapses are strengthened."}}},{"n":17,"prompt":"Students usually score higher on multiple-choice than on fill-in-the-blank questions covering the same material because","options":["recognition requires matching cues, which is easier than recall","recall uses implicit memory","multiple-choice items are encoded semantically","recognition relies on sensory memory"],"answer":0,"sec":"4","topic":"2.6","tag":"2.6 Recognition","ex":{"idea":"Recognition (identifying previously learned information, as in multiple choice) is easier than recall (retrieving it with no cues, as in fill-in-the-blank).","steps":["Multiple choice presents the answer; you only have to recognize it.","Fill-in-the-blank requires recall, which is harder."],"others":{"1":"recall of course facts uses explicit memory.","2":"the question format at test time does not change how the material was encoded.","3":"recognizing learned material draws on long-term memory, not sensory memory."}}},{"n":18,"prompt":"Students who studied after drinking coffee recall more when tested after coffee than when tested without it. This is","options":["context-dependent memory","mood-congruent memory","state-dependent memory","the testing effect"],"answer":2,"sec":"4","topic":"2.6","tag":"2.6 State-dependent","ex":{"idea":"State-dependent memory: recall is better when your internal state (drugs, alertness, mood) at retrieval matches your state at encoding.","steps":["They studied after coffee and recalled more when tested after coffee.","Matching internal (caffeinated) state: state-dependent memory."],"others":{"0":"involves matching the external environment (the room), not an internal state.","1":"is recalling memories that match your current mood; coffee is a physiological state, not a mood.","3":"is better retention from practicing retrieval, not matching states."}}},{"n":19,"prompt":"After a semester of Spanish, Kai struggles to recall the French vocabulary he learned the year before. This is","options":["proactive interference","retroactive interference","source amnesia","encoding failure"],"answer":1,"sec":"4","topic":"2.7","tag":"2.7 Interference","ex":{"idea":"Interference: proactive interference is old learning disrupting new learning; retroactive interference is new learning disrupting recall of old learning.","steps":["Spanish is the new learning; French is the old.","New Spanish disrupts recall of old French: retroactive."],"others":{"0":"would be old French making it harder to learn the new Spanish.","2":"is misremembering where information came from.","3":"is never storing the information; Kai did learn French."}}},{"n":20,"prompt":"According to Ebbinghaus’s forgetting curve, most forgetting of new, meaningless material occurs","options":["at a steady rate over weeks","only after several months","only if the material was encoded deeply","soon after learning, then levels off"],"answer":3,"sec":"4","topic":"2.7","tag":"2.7 Forgetting curve","ex":{"idea":"Ebbinghaus's forgetting curve: memory for new, meaningless material drops sharply right after learning, then levels off.","steps":["Ebbinghaus memorized nonsense syllables and tested himself at intervals.","Most loss happened within the first hour or so, then leveled off."],"others":{"0":"the curve is steep early, not a steady decline.","1":"most forgetting happens quickly, not months later.","2":"deep encoding reduces forgetting; Ebbinghaus's meaningless syllables were shallow."}}},{"n":21,"prompt":"Rina confidently tells a friend a fact she “read in a textbook” that she actually heard in a movie. This is","options":["source amnesia","retrograde amnesia","repression","the tip-of-the-tongue effect"],"answer":0,"sec":"4","topic":"2.7","tag":"2.7 Source amnesia","ex":{"idea":"Source amnesia (source misattribution) is remembering information but forgetting or misidentifying where you learned it.","steps":["Rina remembers the fact correctly.","She thinks it came from a textbook, but it came from a movie: wrong source."],"others":{"1":"is losing memories formed before an injury.","2":"is the Freudian idea of pushing painful memories out of awareness.","3":"is temporarily failing to retrieve a word you know."}}},{"n":22,"prompt":"A college admissions test is valued because its scores correlate with students’ first-year GPA. This reflects the test’s","options":["reliability","standardization","predictive validity","split-half consistency"],"answer":2,"sec":"5","topic":"2.8","tag":"2.8 Validity","ex":{"idea":"Predictive validity is how well a test forecasts the future behavior or outcome it is meant to predict.","steps":["The admissions test is meant to predict college success.","Scores correlate with first-year GPA: predictive validity."],"others":{"0":"is consistency of scores, not accuracy in predicting outcomes.","1":"is giving and scoring a test uniformly against a norm group.","3":"is a form of reliability (agreement between two halves of the test)."}}},{"n":23,"prompt":"The AP Psychology exam is best described as","options":["an aptitude test, because it predicts college success","an achievement test, because it measures learned content","a measure of fluid intelligence","a projective test"],"answer":1,"sec":"5","topic":"2.8","tag":"2.8 Achievement vs. aptitude","ex":{"idea":"Achievement tests measure what you have already learned; aptitude tests predict your capacity to learn in the future.","steps":["The AP Psychology exam covers a course's content.","It measures learned material: an achievement test."],"others":{"0":"aims to predict future learning; the AP exam assesses content already studied.","2":"fluid intelligence is reasoning with novel problems; the exam tests learned knowledge.","3":"uses ambiguous stimuli (such as inkblots) to reveal personality."}}},{"n":24,"prompt":"On the Wechsler scales, an IQ of 130 places a person about","options":["at the 50th percentile","1 SD above the mean","in the bottom 2%","2 SDs above the mean, higher than about 97–98% of people"],"answer":3,"sec":"5","topic":"2.8","tag":"2.8 Normal curve","ex":{"idea":"Wechsler deviation IQs have a mean of 100 and an SD of 15. On a normal curve, about 2.3% of people score above +2 SD.","steps":["130 = 100 + 2 × 15: two SDs above the mean.","That is higher than about 97–98% of people."],"others":{"0":"is an IQ of 100.","1":"is an IQ of 115.","2":"describes an IQ of about 70, 2 SDs below the mean."}}},{"n":25,"prompt":"Average raw IQ-test performance rose about 3 points per decade during the 20th century. This Flynn effect most strongly suggests that","options":["environmental factors such as nutrition and schooling influence test performance","intelligence is entirely genetic","IQ tests have no reliability","fluid intelligence declines with age"],"answer":0,"sec":"5","topic":"2.8","tag":"2.8 Flynn effect","ex":{"idea":"The Flynn effect is the rise in average IQ-test performance across generations. Genes cannot change that fast, so the gains point to the environment.","steps":["About 3 points per decade is far too fast for genetic change.","Better nutrition, schooling, and familiarity with tests are likely causes."],"others":{"1":"rapid generational change argues against purely genetic causes.","2":"the effect concerns average scores rising, not inconsistent measurement.","3":"is about individual aging, not generational gains."}}}],"fr":[{"n":1,"mode":"points","kind":"Article Analysis Question","mins":25,"head":"Article Analysis Question &middot; 7 points &middot; 25 minutes","guide":[],"stem":"<p><b>Source (summarized; fictional, for practice).<\/b> Haddad, R., &amp; Kim, J. (2023). Post-event questioning and eyewitness accuracy. <i>Journal of Memory and Law<\/i>, 9, 44–61.<\/p><p><b>Participants.<\/b> 150 adult volunteers (ages 18–64) recruited online in Canada. All gave informed consent; because the study involved mild deception about its purpose, participants were fully debriefed at the end.<\/p><p><b>Method.<\/b> All participants watched the same 90-second video of a store theft. They were then randomly assigned to read one of two written summaries. The <i>misleading<\/i> summary stated that the thief wore a red cap (in the video, the cap was blue). The <i>neutral<\/i> summary mentioned “a cap” with no color. Thirty minutes later, all participants answered a 12-item memory test; accuracy was the number of the 12 details reported correctly. Confidence was rated on a 1–7 scale.<\/p><p><b>Results.<\/b> 47% of the misleading group reported a red cap, compared with 6% of the neutral group. Mean accuracy was 7.8 (misleading) vs. 9.4 (neutral), <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>p<\/mi><mo>&lt;<\/mo><mn>.01<\/mn><\/mrow><annotation encoding=\"application/x-tex\">p &lt; .01<\/annotation><\/semantics><\/math><\/span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7335em;vertical-align:-0.1944em;\"><\/span><span class=\"mord mathnormal\">p<\/span><span class=\"mspace\" style=\"margin-right:0.2778em;\"><\/span><span class=\"mrel\">&lt;<\/span><span class=\"mspace\" style=\"margin-right:0.2778em;\"><\/span><\/span><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em;\"><\/span><span class=\"mord\">.01<\/span><\/span><\/span><\/span>. Confidence did not differ between groups (<span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>M<\/mi><mo>=<\/mo><mn>5.6<\/mn><\/mrow><annotation encoding=\"application/x-tex\">M = 5.6<\/annotation><\/semantics><\/math><\/span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"><\/span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">M<\/span><span class=\"mspace\" style=\"margin-right:0.2778em;\"><\/span><span class=\"mrel\">=<\/span><span class=\"mspace\" style=\"margin-right:0.2778em;\"><\/span><\/span><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em;\"><\/span><span class=\"mord\">5.6<\/span><\/span><\/span><\/span> vs. <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>5.5<\/mn><\/mrow><annotation encoding=\"application/x-tex\">5.5<\/annotation><\/semantics><\/math><\/span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em;\"><\/span><span class=\"mord\">5.5<\/span><\/span><\/span><\/span>).<\/p>","parts":[{"label":"A","max":1,"prompt":"Identify the research method used in the study.","solution":"<p><b>Earns the point:<\/b> “Experiment.”<\/p>","rubric":"<p><b>Does not earn the point:<\/b> “Case study”; “survey.”<\/p><p>Worth 1 point. Give yourself full credit only if your answer does what the model does.<\/p>"},{"label":"B","max":1,"prompt":"State the operational definition of eyewitness accuracy.","solution":"<p><b>Earns the point:<\/b> The number of the 12 details on the memory test reported correctly, 30 minutes after the video.<\/p>","rubric":"<p><b>Does not earn the point:<\/b> “How well they remembered the video.”<\/p><p>Worth 1 point. Give yourself full credit only if your answer does what the model does.<\/p>"},{"label":"C","max":1,"prompt":"Describe what the confidence results indicate.","solution":"<p><b>Earns the point:<\/b> Participants given misleading information were just as confident (about 5.6 of 7) as the neutral group, even though they were less accurate: confidence did not track accuracy.<\/p>","rubric":"<p><b>Does not earn the point:<\/b> “The misleading group was more confident”; restating the numbers with no meaning.<\/p><p>Worth 1 point. Give yourself full credit only if your answer does what the model does.<\/p>"},{"label":"D","max":1,"prompt":"Identify at least one ethical guideline applied by the researchers.","solution":"<p><b>Earns the point:<\/b> Informed consent <i>or<\/i> debriefing after deception, linked to the study.<\/p>","rubric":"<p><b>Does not earn the point:<\/b> “They were ethical”; naming confidentiality, which the source does not mention.<\/p><p>Worth 1 point. Give yourself full credit only if your answer does what the model does.<\/p>"},{"label":"E","max":1,"prompt":"Explain the extent to which the findings may or may not be generalizable, using specific information from the study.","solution":"<p><b>Earns the point:<\/b> Limited: online Canadian volunteers watching a 90-second video in a low-stakes setting may differ from real eyewitnesses under stress. <i>Or<\/i> broader: a wide adult age range (18–64) and random assignment support generalizing to adults in similar settings.<\/p>","rubric":"<p><b>Does not earn the point:<\/b> “Small sample” with no specifics.<\/p><p>Worth 1 point. Give yourself full credit only if your answer does what the model does.<\/p>"},{"label":"F","max":2,"prompt":"Explain how at least one finding supports or refutes the claim that “memories are reconstructed rather than replayed exactly as they were stored.”","solution":"<p><b>Earns the point:<\/b> 1 pt: supports the claim, citing a result (47% vs. 6% reported a red cap; accuracy 7.8 vs. 9.4). 1 pt: explains with a concept, e.g., the <i>misinformation effect<\/i>/<i>constructive memory<\/i>: information encountered after the event was blended into the memory at retrieval, so the memory was rebuilt rather than replayed.<\/p>","rubric":"<p><b>Does not earn the point:<\/b> Defining the misinformation effect without linking it to the cap result.<\/p><p>Worth 2 points. Give yourself full credit only if your answer does what the model does.<\/p>"}]}]}</script>
+<script>
+(function(){
+"use strict";
+var DATA = JSON.parse(document.getElementById("data").textContent);
+var META = DATA.meta, MC = DATA.mc, FR = DATA.fr || [], TOP = DATA.topics || {}, SEC = DATA.sections || {}, STIM = DATA.stims || {}, BY = {};
+MC.forEach(function(q){ BY[q.n] = q; });
+var KEY = META.key, FKEY = META.key + ".fr", HAS_FR = FR.length > 0;
+
+function load(k, d){ try{ var v = localStorage.getItem(k); return v ? JSON.parse(v) : d; }catch(e){ return d; } }
+function save(k, v){ try{ localStorage.setItem(k, JSON.stringify(v)); }catch(e){} }
+function esc(s){ return String(s).replace(/[&<>"]/g, function(c){ return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]; }); }
+function shuffle(a){ a = a.slice(); for (var i = a.length - 1; i > 0; i--){ var j = Math.floor(Math.random() * (i + 1)); var t = a[i]; a[i] = a[j]; a[j] = t; } return a; }
+function range(n){ var a = []; for (var i = 0; i < n; i++) a.push(i); return a; }
+
+var S = load(KEY, null);
+if (!S || !S.phase || !S.order || S.order.some(function(n){ return !BY[n]; })) S = { phase: "setup", mode: "practice", shuffleQ: false, shuffleC: false, order: [], copt: {}, ans: {}, pos: 0, full: null };
+var confirmFinish = false;
+var mcEl = document.getElementById("mc");
+
+function start(nums){
+  var list = nums || MC.map(function(q){ return q.n; });
+  S.order = S.shuffleQ ? shuffle(list) : list.slice();
+  S.copt = {};
+  S.order.forEach(function(n){
+    var q = BY[n], idx = range(q.options.length);
+    S.copt[n] = (S.shuffleC && !q.fixed) ? shuffle(idx) : idx;
+  });
+  S.ans = {}; S.pos = 0; S.phase = "run"; confirmFinish = false;
+  save(KEY, S); render(); focusTop();
+}
+function focusTop(){ var t = document.querySelector(".tabs") || document.querySelector(".title"); if (t && t.getBoundingClientRect().top < 0) t.scrollIntoView(); }
+
+function stats(){
+  var right = 0, done = 0;
+  S.order.forEach(function(n){ if (n in S.ans){ done++; if (S.ans[n] === BY[n].answer) right++; } });
+  return { right: right, done: done, total: S.order.length };
+}
+function topicShort(t){ return (META.topicPrefix || "") + t; }
+function topicLabel(t){ return topicShort(t) + ", " + TOP[t].name; }
+function guideLink(t, short){
+  var g = TOP[t], txt = short ? g.name : topicLabel(t);
+  return (META.guide && g.page) ? '<a href="' + META.guide + "#page=" + g.page + '">' + txt + "</a>" : txt;
+}
+function topicLinks(ts){
+  ts = ts.filter(function(t){ return TOP[t]; });
+  if (!ts.length || !META.guide) return "";
+  return '<p class="links">Review ' + ts.map(function(t){ return guideLink(t); }).join(" &middot; ") + " in " + META.guideName + "</p>";
+}
+function explain(q, picked){
+  var e = q.ex, h = '<div class="why"><p>' + e.idea + "</p>";
+  if (e.steps.length) h += '<ol class="steps">' + e.steps.map(function(s){ return "<li>" + s + "</li>"; }).join("") + "</ol>";
+  var rest = range(q.options.length).filter(function(i){ return i !== q.answer; });
+  if (typeof picked === "number" && picked !== q.answer) rest = [picked].concat(rest.filter(function(i){ return i !== picked; }));
+  h += '<p class="why-h sc">Why not the others</p><ul class="others">' + rest.map(function(i){
+    return "<li>&ldquo;" + q.options[i] + "&rdquo;" + (i === picked ? '<span class="tag">your answer</span>' : "") + " &mdash; " + e.others[i] + "</li>";
+  }).join("") + "</ul></div>";
+  return h;
+}
+function table(q){ return q.table ? '<div class="bt-wrap">' + q.table + "</div>" : ""; }
+function stim(q){ var s = q.stim && STIM[q.stim]; return s ? '<div class="stim">' + (s.title ? '<p class="stim-h sc">' + s.title + "</p>" : "") + s.html + "</div>" : ""; }
+function promptHtml(q){
+  return stim(q) + (q.fig || "") + '<div class="q-prompt"><p>' + q.prompt + "</p>" + (q.ask || META.ask ? '<p class="q-ask">' + (q.ask || META.ask) + "</p>" : "") + "</div>" + table(q);
+}
+
+function renderSetup(){
+  mcEl.innerHTML =
+    '<div class="setup">' +
+      '<h2>How do you want to take it?</h2>' +
+      '<div class="choice-row">' +
+        '<button type="button" class="choice" data-mode="practice" aria-pressed="' + (S.mode === "practice") + '"><b>Practice</b><span>See the answer and why after each question</span></button>' +
+        '<button type="button" class="choice" data-mode="exam" aria-pressed="' + (S.mode === "exam") + '"><b>Exam</b><span>Answer everything, then see your score</span></button>' +
+      '</div>' +
+      '<div class="checks">' +
+        '<label><input type="checkbox" id="opt-sq"' + (S.shuffleQ ? " checked" : "") + '> Shuffle questions</label>' +
+        '<label><input type="checkbox" id="opt-sc"' + (S.shuffleC ? " checked" : "") + '> Shuffle answer choices</label>' +
+      '</div>' +
+      '<div class="setup-actions"><button type="button" class="btn btn--solid btn--lg" id="go">Start' + (HAS_FR ? " multiple choice" : "") + '</button></div>' +
+      '<p class="note">' + META.setupNote + " Keyboard: 1&ndash;" + Math.max.apply(null, MC.map(function(q){ return q.options.length; })) + " to answer, &larr; &rarr; to move, Enter for next.</p>" +
+    '</div>';
+  mcEl.querySelectorAll(".choice").forEach(function(b){ b.onclick = function(){ S.mode = b.dataset.mode; render(); }; });
+  document.getElementById("opt-sq").onchange = function(e){ S.shuffleQ = e.target.checked; };
+  document.getElementById("opt-sc").onchange = function(e){ S.shuffleC = e.target.checked; };
+  document.getElementById("go").onclick = function(){ start(); };
+}
+
+function renderRun(){
+  var n = S.order[S.pos], q = BY[n], st = stats(), practice = S.mode === "practice";
+  var picked = (n in S.ans) ? S.ans[n] : null, locked = practice && picked !== null;
+  var nav = S.order.map(function(m, i){
+    var c = [];
+    if (m in S.ans){ if (practice) c.push(S.ans[m] === BY[m].answer ? "is-right" : "is-wrong"); else c.push("is-answered"); }
+    if (i === S.pos) c.push("is-current");
+    return '<button type="button" class="' + c.join(" ") + '" data-go="' + i + '" aria-label="Question ' + (i + 1) + '"' + (i === S.pos ? ' aria-current="step"' : "") + ">" + (i + 1) + "</button>";
+  }).join("");
+  var opts = S.copt[n].map(function(oi, k){
+    var cls = ["opt"], mark = "";
+    if (locked){
+      if (oi === q.answer){ cls.push("is-right"); mark = oi === picked ? "&check; your answer" : "&check; correct"; }
+      else if (oi === picked){ cls.push("is-wrong"); mark = "&cross; your answer"; }
+      else cls.push("is-dim");
+    } else if (oi === picked) cls.push("is-picked");
+    return '<li><button type="button" class="' + cls.join(" ") + '" data-opt="' + oi + '"' + (locked ? " disabled" : "") + '><span class="kbd">' + (k + 1) + "</span><span>" + q.options[oi] + '</span><span class="mark">' + mark + "</span></button></li>";
+  }).join("");
+  var fb = "";
+  if (locked){
+    var ok = picked === q.answer, ans = q.options[q.answer];
+    fb = '<div class="fb' + (ok ? "" : " is-wrong") + '"><p class="verdict" role="status">' + (ok ? "Correct." : "Not quite. The answer is &ldquo;" + ans + "&rdquo;" + (/[.?!]$/.test(ans) ? "" : ".")) + "</p>" + explain(q, picked) + topicLinks([q.topic]) + "</div>";
+  }
+  var last = S.pos === S.order.length - 1, allDone = st.done === st.total;
+  var nextBtn = last
+    ? '<button type="button" class="btn btn--solid" id="finish">' + (practice ? "See results" : "Finish test") + "</button>"
+    : '<button type="button" class="btn btn--solid" id="next">Next &rarr;</button>';
+  var finishEarly = (!last && !practice) ? '<button type="button" class="btn" id="finish">Finish test</button>' : (!last && practice && allDone ? '<button type="button" class="btn" id="finish">See results</button>' : "");
+  var conf = "";
+  if (confirmFinish){
+    var left = st.total - st.done;
+    conf = '<div class="confirm"><p>' + left + " question" + (left === 1 ? " is" : "s are") + " unanswered and will be marked wrong. Finish anyway?</p>" +
+      '<button type="button" class="btn" id="conf-no">Keep going</button><button type="button" class="btn btn--solid" id="conf-yes">Finish</button></div>';
+  }
+  var eyebrow = "Question " + q.n + (SEC[q.sec] ? " &middot; " + SEC[q.sec] : "") + (q.tag ? " &middot; " + q.tag : (q.topic ? " &middot; " + topicShort(q.topic) : ""));
+  mcEl.innerHTML =
+    '<div class="bar"><span>Question ' + (S.pos + 1) + " of " + st.total + " &middot; " + (practice ? "Practice" : "Exam") + " mode</span><span>" +
+      (practice ? st.right + " correct of " + st.done + " answered" : st.done + " of " + st.total + " answered") + "</span></div>" +
+    '<div class="track"><span style="width:' + (st.done / st.total * 100) + '%"></span></div>' +
+    '<nav class="nav" aria-label="Questions">' + nav + "</nav>" +
+    '<article class="q">' +
+      '<p class="q-eyebrow sc">' + eyebrow + "</p>" +
+      promptHtml(q) +
+      '<ol class="opts">' + opts + "</ol>" + fb +
+      '<div class="step"><button type="button" class="btn" id="prev"' + (S.pos === 0 ? " disabled" : "") + '>&larr; Back</button><span class="step-right">' + finishEarly + nextBtn + "</span></div>" +
+      conf +
+    "</article>" +
+    '<p class="keys"><span class="kbd">1</span>&ndash;<span class="kbd">' + q.options.length + '</span> answer &nbsp; <span class="kbd">&larr;</span> <span class="kbd">&rarr;</span> move &nbsp; <span class="kbd">Enter</span> next</p>' +
+    '<p class="restart-line"><a href="#" id="restart">Start over</a> <span class="muted">&middot; progress is saved in this browser</span></p>';
+
+  mcEl.querySelectorAll("[data-go]").forEach(function(b){ b.onclick = function(){ go(+b.dataset.go); }; });
+  mcEl.querySelectorAll("[data-opt]").forEach(function(b){ b.onclick = function(){ pick(+b.dataset.opt); }; });
+  bind("prev", function(){ go(S.pos - 1); });
+  bind("next", function(){ go(S.pos + 1); });
+  bind("finish", finish);
+  bind("conf-no", function(){ confirmFinish = false; render(); });
+  bind("conf-yes", function(){ confirmFinish = false; showResults(); });
+  bind("restart", function(e){ e.preventDefault(); S.phase = "setup"; save(KEY, S); render(); });
+}
+function bind(id, fn){ var el = document.getElementById(id); if (el) el.onclick = fn; }
+
+function pick(oi){
+  var n = S.order[S.pos];
+  if (S.mode === "practice" && (n in S.ans)) return;
+  S.ans[n] = oi; save(KEY, S); render();
+  if (S.mode === "practice"){ var fb = mcEl.querySelector(".fb"); if (fb && fb.getBoundingClientRect().bottom > innerHeight) fb.scrollIntoView({ block: "nearest" }); }
+}
+function go(i){
+  if (i < 0 || i >= S.order.length) return;
+  S.pos = i; confirmFinish = false; save(KEY, S); render();
+  var q = mcEl.querySelector(".q"); if (q && q.getBoundingClientRect().top < 0) q.scrollIntoView();
+}
+function finish(){
+  var st = stats();
+  if (st.done < st.total && !confirmFinish){ confirmFinish = true; render(); var c = mcEl.querySelector(".confirm"); if (c) c.scrollIntoView({ block: "nearest" }); return; }
+  showResults();
+}
+function showResults(){
+  S.phase = "results";
+  if (S.order.length === MC.length) S.full = stats().right;
+  save(KEY, S); render(); if (HAS_FR) renderFR(); focusTop();
+}
+
+/* composite score (only when the document defines one) */
+function frTotal(){
+  var t = 0;
+  for (var i = 0; i < FR.length; i++){ var s = frScore(FR[i]); if (s === null) return null; t += s; }
+  return t;
+}
+function frMax(){ return FR.reduce(function(a, f){ return a + frItemMax(f); }, 0); }
+function compositeHtml(){
+  var C = META.composite;
+  if (!C || !HAS_FR) return "";
+  var mc = (typeof S.full === "number") ? S.full : null, fr = frTotal(), fm = frMax(), mm = MC.length;
+  if (mc === null && fr === null) return "";
+  var lines = [];
+  if (mc === null) lines.push("Free response: <b>" + fr + " / " + fm + "</b>. Take the full multiple-choice part to get your composite score.");
+  else if (fr === null) lines.push("Multiple choice: <b>" + mc + " / " + mm + "</b>. Write and mark every free-response question to get your composite score.");
+  else {
+    var c = Math.round(C.mcWeight * mc / mm + C.frWeight * fr / fm), band = "";
+    for (var i = 0; i < C.bands.length; i++){ if (c >= C.bands[i][0]){ band = C.bands[i][1]; break; } }
+    lines.push("Composite score: <b>" + c + " / " + (C.mcWeight + C.frWeight) + "</b> &nbsp;<span class=\"muted\">= " + C.mcWeight + " &times; " + mc + "/" + mm + " + " + C.frWeight + " &times; " + fr + "/" + fm + "</span>");
+    if (band) lines.push(band);
+  }
+  return '<div class="composite" role="status">' + lines.map(function(l){ return "<p>" + l + "</p>"; }).join("") + "</div>";
+}
+function targetHtml(st){
+  var T = META.target, B = META.bands, h = "";
+  if (st.total !== MC.length) return "";
+  if (T) h += '<p class="target">' + T.label + ": " + T.mc + " / " + MC.length + " &middot; " + (st.right >= T.mc ? "met" : (T.mc - st.right) + " short") + "</p>";
+  if (B) for (var i = 0; i < B.length; i++){ if (st.right >= B[i][0]){ h += '<p class="target">' + B[i][1] + "</p>"; break; } }
+  return h;
+}
+
+var resFilter = "all";
+function renderResults(){
+  var st = stats(), pct = Math.round(st.right / st.total * 100), fullRun = st.total === MC.length;
+  var missed = S.order.filter(function(n){ return S.ans[n] !== BY[n].answer; });
+  var rows = S.order.map(function(n, i){
+    var q = BY[n], a = S.ans[n], ok = a === q.answer;
+    if (resFilter === "missed" && ok) return "";
+    return '<li><details><summary><span class="res-n">' + (i + 1) + '.</span><span class="' + (ok ? "res-ok" : "res-bad") + '" aria-label="' + (ok ? "correct" : "wrong") + '">' + (ok ? "&check;" : "&cross;") + '</span><span class="res-sum">' + q.prompt + "</span></summary>" +
+      '<div class="res-body">' + stim(q) + (q.fig || "") + table(q) + '<p><span class="sc">Your answer:</span> ' + (a === undefined ? "<i>skipped</i>" : q.options[a]) + "</p>" +
+      (ok ? "" : '<p><span class="sc">Correct:</span> ' + q.options[q.answer] + "</p>") +
+      explain(q, a) + topicLinks([q.topic]) + "</div></details></li>";
+  }).join("");
+  var tally = {};
+  S.order.forEach(function(n){ var t = BY[n].topic; if (!t) return; tally[t] = tally[t] || { right: 0, total: 0 }; tally[t].total++; if (S.ans[n] === BY[n].answer) tally[t].right++; });
+  var trows = Object.keys(TOP).filter(function(t){ return tally[t]; }).map(function(t){
+    var x = tally[t], miss = x.total - x.right;
+    return "<tr><th scope=\"row\">" + topicShort(t) + "</th><td>" + x.right + " / " + x.total + "</td><td>" + guideLink(t, true) +
+      (miss >= 2 ? ' <span class="flag">&middot; reread this section</span>' : "") + "</td></tr>";
+  }).join("");
+  mcEl.innerHTML =
+    '<div class="results">' +
+      '<div class="score"><p class="score-big">' + st.right + " / " + st.total + "</p><p>" + pct + "% correct" + (fullRun ? "" : " &middot; retry of missed questions") + "</p>" + targetHtml(st) + "</div>" +
+      '<div class="res-actions">' +
+        (missed.length ? '<button type="button" class="btn btn--solid" id="retry">Retry the ' + missed.length + " missed</button>" : "") +
+        '<button type="button" class="btn" id="again">Take the full test again</button>' +
+        (HAS_FR ? '<button type="button" class="btn" id="to-fr">Go to free response</button>' : "") +
+      "</div>" +
+      compositeHtml() +
+      (trows ? '<div class="topics"><h2>' + (META.byTopic || "By topic") + '</h2><table class="bt"><thead><tr><th scope="col">' + (META.topicCol || "Topic") + '</th><th scope="col">Correct</th><th scope="col">' + (META.guideCol || "Guide section") + "</th></tr></thead><tbody>" + trows + "</tbody></table>" +
+        (META.topicNote ? '<p class="note" style="margin-top:6px">' + META.topicNote + "</p>" : "") + "</div>" : "") +
+      '<div class="res-filter"><h2>Review</h2><span><label><input type="checkbox" id="only-missed"' + (resFilter === "missed" ? " checked" : "") + "> Show missed only</label></span></div>" +
+      '<ul class="res-list">' + (rows || '<li><p class="note" style="padding:12px 0">Nothing missed.</p></li>') + "</ul>" +
+    "</div>";
+  bind("retry", function(){ start(missed); });
+  bind("again", function(){ S.phase = "setup"; save(KEY, S); render(); });
+  bind("to-fr", function(){ setTab("fr"); });
+  document.getElementById("only-missed").onchange = function(e){ resFilter = e.target.checked ? "missed" : "all"; render(); };
+}
+
+function render(){
+  if (S.phase === "run" && S.order.length) renderRun();
+  else if (S.phase === "results" && S.order.length) renderResults();
+  else { S.phase = "setup"; renderSetup(); }
+}
+
+/* free response: "epi" parts (E/P/I -> 0-4 per question) or "points" parts (0..max each) */
+var frEl = document.getElementById("fr"), F = load(FKEY, null);
+if (!F || typeof F !== "object") F = {};
+F.drafts = F.drafts || {}; F.marks = F.marks || {}; F.open = F.open || {};
+var LABELS = { 4: "Complete", 3: "Substantial", 2: "Developing", 1: "Minimal", 0: "" };
+function frItemMax(f){ return f.mode === "points" ? f.parts.reduce(function(a, p){ return a + p.max; }, 0) : 4; }
+function frScore(f){
+  if (f.mode === "points"){
+    var t = 0;
+    for (var j = 0; j < f.parts.length; j++){ var v = F.marks[f.n + f.parts[j].label]; if (v === undefined || v === "") return null; t += +v; }
+    return t;
+  }
+  var e = 0, p = 0;
+  for (var i = 0; i < f.parts.length; i++){
+    var m = F.marks[f.n + f.parts[i].label];
+    if (!m) return null;
+    if (m === "E") e++; else if (m === "P") p++;
+  }
+  if (e === 3) return 4;
+  if (e === 2 && p === 1) return 3;
+  if ((e === 2 && p === 0) || (e === 1 && p >= 1) || p === 3) return 2;
+  if ((e === 1 && p === 0) || (e === 0 && p === 2)) return 1;
+  return 0;
+}
+function words(t){ var m = t.trim().match(/\S+/g); return m ? m.length : 0; }
+var SCALE = '<details class="scale"><summary>How part scores convert to 0&ndash;4</summary><table class="bt"><thead><tr><th scope="col">Score</th><th scope="col">Label</th><th scope="col">Part scores (three parts, each E, P, or I)</th></tr></thead><tbody>' +
+  "<tr><td>4</td><td>Complete</td><td>three parts E</td></tr>" +
+  "<tr><td>3</td><td>Substantial</td><td>two parts E and one part P</td></tr>" +
+  "<tr><td>2</td><td>Developing</td><td>two E and no P; or one E and one or two P; or three P</td></tr>" +
+  "<tr><td>1</td><td>Minimal</td><td>one E and no P; or no E and two P</td></tr>" +
+  "<tr><td>0</td><td></td><td>anything less</td></tr></tbody></table></details>";
+function frScoreHtml(f){
+  var s = frScore(f), mx = frItemMax(f);
+  if (s === null) return '<span class="muted">Mark every part to score this question.</span>';
+  return "Score: <b>" + s + " / " + mx + "</b>" + (f.mode !== "points" && LABELS[s] ? " &middot; " + LABELS[s] : "");
+}
+function markButtons(f, p, id, m){
+  var vals = f.mode === "points" ? range(p.max + 1).map(String) : ["E", "P", "I"];
+  return vals.map(function(x){ return '<button type="button" data-mark="' + id + '" data-f="' + f.n + '" data-v="' + x + '" aria-pressed="' + (m === x) + '">' + x + "</button>"; }).join("");
+}
+function renderFR(){
+  if (!HAS_FR) return;
+  frEl.innerHTML = '<p class="fr-intro">' + META.frIntro + "</p>" +
+    FR.map(function(f){
+      var open = !!F.open[f.n];
+      var parts = f.parts.map(function(p){
+        var id = f.n + p.label, d = F.drafts[id] || "", m = (F.marks[id] === undefined ? "" : String(F.marks[id]));
+        var crit = f.mode === "points"
+          ? '<div class="crit-pts">' + p.rubric + "</div>"
+          : '<dl class="crit"><dt>E</dt><dd>if the response ' + p.e + "</dd><dt>P</dt><dd>if " + p.p + "</dd></dl>";
+        return '<div class="part"><p class="part-prompt"><b>(' + p.label + ")</b>" + p.prompt + "</p>" +
+          '<label class="sc" for="fr-' + id + '">Your answer to (' + p.label + ")</label>" +
+          '<textarea id="fr-' + id + '" data-fr="' + id + '" spellcheck="true">' + esc(d) + "</textarea>" +
+          '<p class="part-meta" id="wc-' + id + '">' + words(d) + " words &middot; saved in this browser</p>" +
+          '<div class="sol"' + (open ? "" : " hidden") + ' data-sol="' + f.n + '"><h3>Model solution (' + p.label + ")</h3><div>" + p.solution + "</div>" + crit +
+            '<div class="mark-row"><span>Your mark for (' + p.label + ")" + (f.mode === "points" ? ", out of " + p.max : "") + ':</span><span class="seg" role="group" aria-label="Mark for part ' + p.label + '">' + markButtons(f, p, id, m) + "</span></div></div></div>";
+      }).join("");
+      return '<article class="fr"><h2>Question ' + f.n + "<small>" + f.head + "</small></h2>" +
+        (f.stim ? stim(f) : "") + '<div class="fr-stem">' + f.stem + "</div>" + parts +
+        '<div class="fr-actions"><span class="fr-score" id="score-' + f.n + '">' + (open ? frScoreHtml(f) : "") + "</span>" +
+          '<button type="button" class="btn" data-open="' + f.n + '" aria-expanded="' + open + '">' + (open ? "Hide model solution" : "Show model solution and scoring") + "</button></div>" +
+        (open ? (f.mode === "points" ? "" : SCALE) + topicLinks(f.guide || []) : "") +
+        "</article>";
+    }).join("") + '<div id="fr-composite">' + compositeHtml() + "</div>";
+  frEl.querySelectorAll("textarea").forEach(function(t){
+    t.oninput = function(){ F.drafts[t.dataset.fr] = t.value; save(FKEY, F); document.getElementById("wc-" + t.dataset.fr).innerHTML = words(t.value) + " words &middot; saved in this browser"; };
+  });
+  frEl.querySelectorAll("[data-open]").forEach(function(b){
+    b.onclick = function(){ var n = b.dataset.open; F.open[n] = !F.open[n]; save(FKEY, F); renderFR(); var a = document.getElementById("score-" + n); if (a) a.closest(".fr").querySelector(".part").scrollIntoView({ block: "nearest" }); };
+  });
+  frEl.querySelectorAll("[data-mark]").forEach(function(b){
+    b.onclick = function(){
+      var id = b.dataset.mark; F.marks[id] = F.marks[id] === b.dataset.v ? "" : b.dataset.v; save(FKEY, F);
+      b.parentNode.querySelectorAll("button").forEach(function(x){ x.setAttribute("aria-pressed", String(F.marks[id] === x.dataset.v)); });
+      var f = FR.filter(function(x){ return String(x.n) === b.dataset.f; })[0];
+      document.getElementById("score-" + f.n).innerHTML = frScoreHtml(f);
+      document.getElementById("fr-composite").innerHTML = compositeHtml();
+      if (S.phase === "results") render();
+    };
+  });
+}
+
+/* tabs (only when there is a free-response part) */
+function setTab(t){
+  if (!HAS_FR) return;
+  var mc = t === "mc";
+  document.getElementById("tab-mc").setAttribute("aria-selected", String(mc));
+  document.getElementById("tab-fr").setAttribute("aria-selected", String(!mc));
+  mcEl.hidden = !mc; frEl.hidden = mc;
+  try{ history.replaceState(null, "", mc ? location.pathname : "#free-response"); }catch(e){}
+  focusTop();
+}
+if (HAS_FR){
+  document.getElementById("tab-mc").onclick = function(){ setTab("mc"); };
+  document.getElementById("tab-fr").onclick = function(){ setTab("fr"); };
+}
+
+/* keyboard */
+document.addEventListener("keydown", function(e){
+  if (e.metaKey || e.ctrlKey || e.altKey) return;
+  var tag = (e.target.tagName || "").toLowerCase();
+  if (tag === "textarea" || tag === "input") return;
+  if (mcEl.hidden || S.phase !== "run") return;
+  var n = S.order[S.pos], q = BY[n];
+  if (/^[1-9]$/.test(e.key)){ var k = +e.key - 1; if (k < q.options.length){ e.preventDefault(); pick(S.copt[n][k]); } }
+  else if (e.key === "ArrowRight"){ e.preventDefault(); go(S.pos + 1); }
+  else if (e.key === "ArrowLeft"){ e.preventDefault(); go(S.pos - 1); }
+  else if (e.key === "Enter" && tag !== "button" && tag !== "a"){ e.preventDefault(); if (S.pos < S.order.length - 1) go(S.pos + 1); else finish(); }
+});
+
+/* theme */
+var root = document.documentElement, tb = document.getElementById("theme-btn");
+function syncTheme(){ var dark = root.getAttribute("data-theme") === "dark"; tb.textContent = dark ? "Light mode" : "Dark mode"; tb.setAttribute("aria-pressed", String(dark)); }
+tb.onclick = function(){ var dark = root.getAttribute("data-theme") !== "dark"; root.setAttribute("data-theme", dark ? "dark" : "light"); try{ localStorage.setItem("apah.theme", dark ? "dark" : "light"); }catch(e){} syncTheme(); };
+syncTheme();
+
+render(); renderFR();
+if (HAS_FR && location.hash === "#free-response") setTab("fr");
+})();
+</script>
+</body>
+</html>
