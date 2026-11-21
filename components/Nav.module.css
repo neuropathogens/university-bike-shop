@@ -10,8 +10,9 @@
 .links {
   list-style: none;
   display: flex;
-  gap: 1.5rem;
-  padding: 1rem;
+  align-items: center;
+  gap: 2.25rem;
+  padding: 1rem 1.25rem;
 }
 
 .right {
@@ -22,7 +23,82 @@
   text-decoration: underline;
 }
 
-@media (max-width: 72rem) {
+/* Desktop dropdowns (Community, About). */
+.group {
+  position: relative;
+}
+
+.groupButton {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.3rem;
+}
+
+.groupButton.active {
+  text-decoration: underline;
+}
+
+.caret {
+  font-size: 0.75em;
+}
+
+/* Only the narrow-screen menu shows group names as plain headings. */
+.groupLabel {
+  display: none;
+}
+
+.submenu {
+  display: none;
+  list-style: none;
+  position: absolute;
+  top: 100%;
+  left: -1rem;
+  z-index: 10;
+  min-width: 11rem;
+  margin-top: 0.6rem;
+  padding: 0.25rem 0;
+  background: var(--background);
+  border: 1px solid var(--foreground);
+}
+
+/* Bridges the gap under the button so the hover menu stays open. */
+.submenu::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -0.7rem;
+  height: 0.7rem;
+}
+
+.submenu a {
+  display: block;
+  padding: 0.5rem 1rem;
+  white-space: nowrap;
+}
+
+.submenu a:hover,
+.submenu a:focus-visible {
+  text-decoration: underline;
+}
+
+.expanded .submenu {
+  display: block;
+}
+
+@media (hover: hover) and (min-width: 60.01rem) {
+  .group:hover .submenu {
+    display: block;
+  }
+}
+
+@media (max-width: 60rem) {
   .bar {
     display: flex;
     align-items: center;
@@ -47,6 +123,7 @@
   .links {
     display: none;
     flex-direction: column;
+    align-items: stretch;
     gap: 0;
     padding: 0 1rem 0.5rem;
   }
@@ -55,7 +132,7 @@
     display: flex;
   }
 
-  .links li {
+  .links > li {
     border-top: 1px solid var(--foreground);
   }
 
@@ -66,5 +143,34 @@
 
   .right {
     margin-left: 0;
+  }
+
+  /* Groups become a heading followed by their links. */
+  .groupButton {
+    display: none;
+  }
+
+  .groupLabel {
+    display: block;
+    padding: 0.75rem 0 0.25rem;
+    font-size: 0.85rem;
+    font-style: italic;
+  }
+
+  .submenu {
+    display: block;
+    position: static;
+    min-width: 0;
+    margin: 0;
+    padding: 0 0 0.25rem 1rem;
+    border: 0;
+  }
+
+  .submenu::before {
+    content: none;
+  }
+
+  .submenu a {
+    padding: 0.5rem 0;
   }
 }
