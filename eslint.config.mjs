@@ -13,6 +13,8 @@ const eslintConfig = defineConfig([
     "build/**",
     ".netlify/**",
     "next-env.d.ts",
+    // Quiz builder (Node/Python scripts, not app code).
+    "quizzes/**",
   ]),
 ]);
 

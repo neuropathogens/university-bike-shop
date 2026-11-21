@@ -1,0 +1,382 @@
+\documentclass[11pt]{article}
+\usepackage{act-sci}
+\settitle{Interpretation of Data}
+\setsubtitle{Part 2 of 6 \textperiodcentered{} Reporting category: 36--47\% of the section}
+\settarget{$\geq$ 22 correct}
+\settime{32 min}
+
+\begin{document}
+\maketitleblock
+
+\begin{abstract}
+Interpretation of Data (IOD) is the largest reporting category on ACT Science: roughly 15--19 of the 40 questions ask you to read a value, name a trend, estimate between or beyond plotted points, link two figures, or do a few seconds of arithmetic on what you read. None of it needs outside science. Every IOD question is answered by a number or a direction that is already printed on the page; the skill is finding it fast and not misreading it. This guide breaks IOD into seven rules, each with a method, a worked example, the trap ACT sets most often, and a drill on an original passage. A mixed passage at the end tests all seven together. Work untimed the first time, then redo the drills against the clock (about 60 seconds per question).
+\end{abstract}
+
+\scoringline
+
+\tableofcontents
+\clearpage
+
+%% =====================================================================
+\section{Rule ID-1: Read the frame before the data}
+
+\begin{rulebox}{ID-1}{Axes, units and key first}
+Before you read a single number, spend five seconds on the \emph{frame}: the title, both axis labels \emph{with units}, the scale on each axis, and the legend or key. Then go to the question, find the variable it names, and trace to the value with your pencil (or your finger on screen) along a straight line.
+\begin{itemize}
+\item \textbf{Tables:} find the column by its heading and the row by its first entry; read at the intersection.
+\item \textbf{Graphs:} locate the $x$-value on the horizontal axis, go straight up to the curve, then straight across to the vertical axis.
+\item \textbf{Multiple series:} match the series to the question by the legend symbol, not by colour or position.
+\end{itemize}
+\end{rulebox}
+
+\begin{workedex}
+``According to Table 1, what was Enzyme P's rate at \SI{30}{\celsius}?'' Heading \emph{Enzyme P}, row \SI{30}{\celsius}: the cell reads 17. The answer is the printed value; no reasoning about enzymes is involved.
+\end{workedex}
+
+\trap{The wrong answers are usually the values from the \emph{neighbouring} row or the \emph{other} series. If an answer choice matches a number in the table, check that it is in the row and column the question names.}
+
+\section{Rule ID-2: Name the trend across the whole range}
+
+\begin{rulebox}{ID-2}{Direct, inverse, peak, valley, or none}
+State the relationship in a sentence of the form ``as $x$ increases, $y$ \dots'' and check it at \emph{every} step, not only at the ends.
+\begin{itemize}
+\item \textbf{Direct:} $y$ rises whenever $x$ rises. \textbf{Inverse:} $y$ falls whenever $x$ rises.
+\item \textbf{Peak:} increases then decreases (enzyme optimum, population boom-and-bust). \textbf{Valley:} decreases then increases.
+\item \textbf{None:} $y$ stays roughly constant or jumps around with no pattern.
+\item ``Greatest increase'' questions: subtract consecutive values and compare the differences.
+\end{itemize}
+\end{rulebox}
+
+\trap{Answer choices with \emph{only} (``increased only'') are wrong if the variable drops even once. Comparing just the first and last values misses a peak in the middle.}
+
+\passage{Enzyme activity and temperature}
+A student measured the rate at which two enzymes, P and Q, converted substrate to product at seven temperatures. Each trial used the same enzyme concentration, substrate concentration, and pH. Results are in Table 1.
+
+\figlabel{Table 1}
+\datatable{c c c}{%
+Temperature (\si{\celsius}) & Enzyme P rate (\si{\micro\mole\per\minute}) & Enzyme Q rate (\si{\micro\mole\per\minute})\\\midrule
+10 & \phantom{0}4 & \phantom{0}2\\
+20 & \phantom{0}9 & \phantom{0}4\\
+30 & 17 & \phantom{0}7\\
+40 & 26 & 12\\
+50 & 19 & 20\\
+60 & \phantom{0}6 & 31\\
+70 & \phantom{0}1 & 22\\}
+\passageend
+
+\begin{q}{4}{ID-1}{Column ``Enzyme P,'' row \SI{30}{\celsius}: 17. The 7 is Enzyme Q's value in the same row; 4 and 12 come from other rows.}
+According to Table 1, at \SI{30}{\celsius} the rate of Enzyme P was:
+\choicesrow{4 \si{\micro\mole\per\minute}}{7 \si{\micro\mole\per\minute}}{12 \si{\micro\mole\per\minute}}{17 \si{\micro\mole\per\minute}}
+\end{q}
+
+\begin{q}{3}{ID-2}{P rises from 4 to 26 (10--\SI{40}{\celsius}) and then falls to 1. It is a peak, so neither ``only'' choice holds.}
+As temperature increased from \SI{10}{\celsius} to \SI{70}{\celsius}, the rate of Enzyme P:
+\choices{increased only.}{decreased only.}{increased and then decreased.}{decreased and then increased.}
+\end{q}
+
+\begin{q}{4}{ID-2}{Differences for Q: 2, 3, 5, 8, 11, $-9$. The largest rise, 11, is from 50 to \SI{60}{\celsius}.}
+Over which of the following temperature intervals did the rate of Enzyme Q increase by the greatest amount?
+\choicesgrid{\SI{20}{\celsius} to \SI{30}{\celsius}}{\SI{30}{\celsius} to \SI{40}{\celsius}}{\SI{40}{\celsius} to \SI{50}{\celsius}}{\SI{50}{\celsius} to \SI{60}{\celsius}}
+\end{q}
+
+\begin{q}{4}{ID-1}{Gaps between P and Q: \SI{10}{\celsius} $\to$ 2; \SI{20}{\celsius} $\to$ 5; \SI{30}{\celsius} $\to$ 10; \SI{50}{\celsius} $\to$ 1. Smallest gap at \SI{50}{\celsius}.}
+Of the following temperatures, at which were the rates of Enzymes P and Q closest to each other?
+\choicesrow{\SI{10}{\celsius}}{\SI{20}{\celsius}}{\SI{30}{\celsius}}{\SI{50}{\celsius}}
+\end{q}
+
+%% =====================================================================
+\section{Rule ID-3: Interpolate between points, extrapolate along the trend}
+
+\begin{rulebox}{ID-3}{Stay on the curve}
+\textbf{Interpolate} (inside the tested range): find the two measured values on either side and pick an answer between them, nudged toward whichever end is closer. If the curve bends, follow the bend: a curve that is getting steeper sits \emph{below} the straight-line midpoint.\\
+\textbf{Extrapolate} (outside the range): extend the last segment in the same direction and at roughly the same steepness. ACT almost always rewards ``the pattern continues.''
+\end{rulebox}
+
+\begin{workedex}
+Compound X dissolves 62 g at \SI{40}{\celsius} and 106 g at \SI{60}{\celsius}. At \SI{50}{\celsius} the answer must lie between 62 and 106. The straight-line midpoint is 84 g; because the curve is steepening, the true value is a little below that, so 80 g is the best choice.
+\end{workedex}
+
+\trap{Extrapolation choices often include a value that \emph{reverses} the trend, or one that is ``between'' two existing values when the question asks about a point beyond the data. Check direction first, magnitude second.}
+
+\passage{Solubility of three compounds}
+Students dissolved as much of each of three compounds, X, Y and Z, as possible in \SI{100}{\gram} of water at five temperatures. Figure 1 shows the maximum mass that dissolved (the solubility).
+
+\begin{figbox}
+\begin{tikzpicture}
+\begin{axis}[actplot, xlabel={Temperature (\si{\celsius})}, ylabel={Solubility (g per 100 g water)},
+  xmin=0, xmax=80, ymin=0, ymax=180, xtick={0,20,40,60,80}, ytick={0,20,...,180},
+  legend pos=north west]
+\addplot[mark=*, smooth] coordinates {(0,14) (20,32) (40,62) (60,106) (80,168)};
+\addplot[mark=square*, dashed] coordinates {(0,36) (20,36) (40,37) (60,37) (80,38)};
+\addplot[mark=triangle*, densely dotted, smooth] coordinates {(0,60) (20,46) (40,34) (60,24) (80,16)};
+\legend{Compound X, Compound Y, Compound Z}
+\end{axis}
+\end{tikzpicture}
+\figlabel{Figure 1}
+\end{figbox}
+\passageend
+
+\begin{q}{3}{ID-3}{Between 62 (\SI{40}{\celsius}) and 106 (\SI{60}{\celsius}); the curve is steepening, so slightly under the 84 midpoint, about 80.}
+Based on Figure 1, the solubility of Compound X at \SI{50}{\celsius} is closest to:
+\choicesrow{45 g}{60 g}{80 g}{110 g}
+\end{q}
+
+\begin{q}{1}{ID-3}{Z falls at every step (60, 46, 34, 24, 16). Continuing past \SI{80}{\celsius}, it drops below 16.}
+If the trend shown in Figure 1 continues, the solubility of Compound Z at \SI{100}{\celsius} would most likely be:
+\choices{less than 16 g.}{between 16 g and 24 g.}{between 24 g and 34 g.}{greater than 34 g.}
+\end{q}
+
+\begin{q}{2}{ID-3}{Y is about 36--37 throughout. Z is 46 at \SI{20}{\celsius} (above Y) and 34 at \SI{40}{\celsius} (below Y), so the curves cross between 20 and \SI{40}{\celsius}, at about \SI{35}{\celsius}.}
+At approximately what temperature do Compounds Y and Z have the same solubility?
+\choicesrow{\SI{20}{\celsius}}{\SI{35}{\celsius}}{\SI{50}{\celsius}}{\SI{65}{\celsius}}
+\end{q}
+
+\begin{q}{2}{ID-2}{Y changes by only 2 g over \SI{80}{\celsius}; X changes by 154 g and Z by 44 g.}
+The solubility of which compound depends \emph{least} on temperature?
+\choices{Compound X}{Compound Y}{Compound Z}{Compounds X and Z depend on temperature equally.}
+\end{q}
+
+%% =====================================================================
+\section{Rule ID-4: Bridge two figures through the shared variable}
+
+\begin{rulebox}{ID-4}{Find the variable that appears in both}
+When a question needs two figures, one variable appears in both of them; it is the bridge. Read the given value in Figure A, carry the bridge value across, and read the answer in Figure B. Write the intermediate number in the margin so you do not lose it.
+\end{rulebox}
+
+\begin{workedex}
+``At \SI{3000}{\metre}, water boils at about what temperature?'' Altitude appears only in Table 1, and boiling point only in Figure 2. The shared variable is \emph{air pressure}. Table 1: \SI{3000}{\metre} $\to$ \SI{70}{\kilo\pascal}. Figure 2: \SI{70}{\kilo\pascal} $\to$ \SI{90}{\celsius}.
+\end{workedex}
+
+\trap{One wrong choice is usually the value you would get by reading Figure B with the \emph{original} number (e.g., reading ``3000'' on the pressure axis). Another is the bridge value itself.}
+
+\passage{Altitude, air pressure and boiling}
+Table 1 lists average air pressure at several altitudes. Figure 2 shows the boiling point of pure water as a function of air pressure.
+
+\begin{minipage}[c]{0.40\linewidth}
+\figlabel{Table 1}
+\datatable{c c}{Altitude (m) & Air pressure (kPa)\\\midrule
+0 & 101\\ 1000 & 90\\ 2000 & 80\\ 3000 & 70\\ 4000 & 62\\ 5000 & 54\\}
+\end{minipage}\hfill
+\begin{minipage}[c]{0.57\linewidth}
+\centering
+\begin{tikzpicture}
+\begin{axis}[actplot, width=8.2cm, height=5.2cm, xlabel={Air pressure (kPa)}, ylabel={Boiling point (\si{\celsius})},
+  xmin=50, xmax=100, ymin=80, ymax=102, xtick={50,60,...,100}, ytick={80,84,...,100}]
+\addplot[mark=*, smooth] coordinates {(50,81) (60,86) (70,90) (80,94) (90,97) (100,100)};
+\end{axis}
+\end{tikzpicture}
+\figlabel{Figure 2}
+\end{minipage}
+\passageend
+
+\begin{q}{1}{ID-4}{Table 1: \SI{3000}{\metre} $\to$ \SI{70}{\kilo\pascal}. Figure 2: \SI{70}{\kilo\pascal} $\to$ \SI{90}{\celsius}.}
+Based on Table 1 and Figure 2, water at an altitude of \SI{3000}{\metre} boils at approximately:
+\choicesrow{\SI{90}{\celsius}}{\SI{94}{\celsius}}{\SI{97}{\celsius}}{\SI{100}{\celsius}}
+\end{q}
+
+\begin{q}{3}{ID-4}{Figure 2: \SI{86}{\celsius} $\to$ \SI{60}{\kilo\pascal}. Table 1: \SI{60}{\kilo\pascal} lies between \SI{4000}{\metre} (62) and \SI{5000}{\metre} (54), close to 4000, so about \SI{4300}{\metre}.}
+A hiker finds that water boils at \SI{86}{\celsius}. Her altitude is closest to:
+\choicesrow{\SI{2000}{\metre}}{\SI{3000}{\metre}}{\SI{4300}{\metre}}{\SI{5500}{\metre}}
+\end{q}
+
+\begin{q}{2}{ID-2}{Higher altitude $\to$ lower pressure (Table 1); lower pressure $\to$ lower boiling point (Figure 2). Chain the two directions.}
+According to the data, as altitude increases, the boiling point of water:
+\choices{increases only.}{decreases only.}{increases and then decreases.}{remains the same.}
+\end{q}
+
+%% =====================================================================
+\section{Rule ID-5: Do light math, estimate first}
+
+\begin{rulebox}{ID-5}{Difference, rate, ratio, percent, average}
+\begin{itemize}
+\item \textbf{Change} $=$ final $-$ initial. \textbf{Rate} $=$ change in $y$ $\div$ change in $x$ (speed, growth per day, slope).
+\item \textbf{Ratio:} ``how many times greater'' $=$ larger $\div$ smaller.
+\item \textbf{Percent change} $= \dfrac{\text{new}-\text{old}}{\text{old}}\times100\%$. The denominator is always the \emph{starting} value.
+\item \textbf{Average:} sum $\div$ count. With equal steps, the average of a straight line is the midpoint.
+\end{itemize}
+Round aggressively before you calculate: ACT answer choices are usually far apart.
+\end{rulebox}
+
+\trap{Percent-change traps divide by the \emph{new} value, or report the ratio ($4\times$) as the percent increase ($300\%$, not $400\%$).}
+
+\passage{Two carts on a track}
+Two carts started from rest at the same line at $t=\SI{0}{\second}$. Table 2 lists each cart's distance from the start line.
+
+\figlabel{Table 2}
+\datatable{c c c}{Time (s) & Cart A distance (cm) & Cart B distance (cm)\\\midrule
+0 & \phantom{0}0 & \phantom{0}0\\ 1 & 15 & \phantom{0}5\\ 2 & 30 & 20\\ 3 & 45 & 45\\ 4 & 60 & 80\\}
+\passageend
+
+\begin{q}{2}{ID-5}{Cart A covers \SI{60}{\centi\metre} in \SI{4}{\second}: $60\div4=\SI{15}{\centi\metre\per\second}$. It moves 15 cm every second, so its speed is constant.}
+What was the average speed of Cart A from $t=\SI{0}{\second}$ to $t=\SI{4}{\second}$?
+\choicesrow{\SI{4}{\centi\metre\per\second}}{\SI{15}{\centi\metre\per\second}}{\SI{30}{\centi\metre\per\second}}{\SI{60}{\centi\metre\per\second}}
+\end{q}
+
+\begin{q}{3}{ID-5}{$80-20=\SI{60}{\centi\metre}$. Choosing 80 means you read the position instead of computing the change.}
+How far did Cart B travel between $t=\SI{2}{\second}$ and $t=\SI{4}{\second}$?
+\choicesrow{\SI{20}{\centi\metre}}{\SI{35}{\centi\metre}}{\SI{60}{\centi\metre}}{\SI{80}{\centi\metre}}
+\end{q}
+
+\begin{q}{4}{ID-1}{B trails A at 1 and \SI{2}{\second}, ties at \SI{3}{\second} (45 vs 45), and leads only at \SI{4}{\second} (80 vs 60).}
+At which of the following times was Cart B farther from the start line than Cart A?
+\choicesrow{\SI{1}{\second}}{\SI{2}{\second}}{\SI{3}{\second}}{\SI{4}{\second}}
+\end{q}
+
+\begin{q}{1}{ID-5}{$(80-20)/20\times100\% = 300\%$. 400\% is the ratio ($4\times$), not the increase.}
+From $t=\SI{2}{\second}$ to $t=\SI{4}{\second}$, Cart B's distance from the start line increased by what percent?
+\choicesrow{300\%}{400\%}{500\%}{600\%}
+\end{q}
+
+%% =====================================================================
+\section{Rule ID-6: Respect units, powers of ten and log scales}
+
+\begin{rulebox}{ID-6}{Check the scale before you compare}
+\begin{itemize}
+\item \textbf{Scientific notation:} $3.2\times10^{4} = 32{,}000$. Compare exponents first; each $+1$ is $10\times$.
+\item \textbf{Metric prefixes:} kilo- $10^{3}$, centi- $10^{-2}$, milli- $10^{-3}$, micro- $10^{-6}$, nano- $10^{-9}$. Going to a \emph{smaller} unit gives a \emph{bigger} number.
+\item \textbf{Log axes:} gridlines go 1, 10, 100, 1000\ldots{} The visual midpoint between $10^{2}$ and $10^{6}$ is $10^{4}$, \emph{not} $5\times10^{5}$. A straight line on a log axis means growth by a constant \emph{factor}.
+\item \textbf{Two $y$-axes:} read each series against \emph{its own} axis, which the legend or label tells you.
+\end{itemize}
+\end{rulebox}
+
+\passage{Bacterial growth}
+Two strains of bacteria, A and B, were grown separately in broth. Table 3 lists Strain A's density. Figure 3 plots both strains on a \emph{logarithmic} vertical axis.
+
+\begin{minipage}[c]{0.40\linewidth}
+\figlabel{Table 3}
+\datatable{c c}{Time (h) & Strain A (cells/mL)\\\midrule
+0 & $2.0\times10^{3}$\\ 2 & $8.0\times10^{3}$\\ 4 & $3.2\times10^{4}$\\ 6 & $1.3\times10^{5}$\\ 8 & $5.1\times10^{5}$\\}
+\end{minipage}\hfill
+\begin{minipage}[c]{0.57\linewidth}
+\centering
+\begin{tikzpicture}
+\begin{semilogyaxis}[actplot, width=8.2cm, height=5.4cm, xlabel={Time (h)}, ylabel={Cells/mL},
+  xmin=0, xmax=8, ymin=1e2, ymax=1e7, xtick={0,2,...,8}, legend pos=north west]
+\addplot[mark=*] coordinates {(0,2e3) (2,8e3) (4,3.2e4) (6,1.28e5) (8,5.12e5)};
+\addplot[mark=square*, dashed] coordinates {(0,1e2) (2,1e3) (4,1e4) (6,1e5) (8,1e6)};
+\legend{Strain A, Strain B}
+\end{semilogyaxis}
+\end{tikzpicture}
+\figlabel{Figure 3}
+\end{minipage}
+\passageend
+
+\begin{q}{3}{ID-6}{$5.1\times10^{5} \div 2.0\times10^{3} \approx 2.5\times10^{2}$, about 250 times.}
+Strain A's density at \SI{8}{\hour} was approximately how many times its density at \SI{0}{\hour}?
+\choicesrow{4}{25}{250}{2500}
+\end{q}
+
+\begin{q}{1}{ID-6}{\SI{1}{\milli\litre} $=$ \SI{1000}{\micro\litre}, so divide by $10^{3}$: $1.3\times10^{5}/10^{3}=1.3\times10^{2}$ cells per \si{\micro\litre}.}
+At \SI{6}{\hour}, Strain A's density expressed in cells per \emph{microliter} (\SI{1}{\milli\litre} $=$ \SI{1000}{\micro\litre}) was:
+\choicesgrid{$1.3\times10^{2}$}{$1.3\times10^{5}$}{$1.3\times10^{8}$}{$1.3\times10^{11}$}
+\end{q}
+
+\begin{q}{2}{ID-6}{Strain B runs from $10^{2}$ (\SI{0}{\hour}) to $10^{6}$ (\SI{8}{\hour}) in a straight line on a log axis, so at \SI{4}{\hour} it is at the exponent midpoint, $10^{4}$. Choosing $5\times10^{5}$ treats the axis as linear.}
+According to Figure 3, Strain B's density at \SI{4}{\hour} was closest to:
+\choicesgrid{$1\times10^{3}$ cells/mL}{$1\times10^{4}$ cells/mL}{$1\times10^{5}$ cells/mL}{$5\times10^{5}$ cells/mL}
+\end{q}
+
+\begin{q}{1}{ID-5}{Strain A multiplies by 4 every \SI{2}{\hour}. $4=2\times2$, so it doubles every \SI{1}{\hour}.}
+Strain A's density doubled approximately every:
+\choicesrow{\SI{1}{\hour}}{\SI{2}{\hour}}{\SI{4}{\hour}}{\SI{8}{\hour}}
+\end{q}
+
+%% =====================================================================
+\section{Rule ID-7: Translate between tables, graphs and equations}
+
+\begin{rulebox}{ID-7}{Shape first, then intercepts}
+To match a table to a graph, decide three things from the numbers: (1) does $y$ go up or down as $x$ increases; (2) is the change steady (straight line) or does it speed up or slow down (curve); (3) where does it start. Eliminate any graph that fails one of these.\\
+Recognise the two shapes ACT uses most: \textbf{linear} ($y$ changes by equal amounts) and \textbf{inverse} ($x\cdot y$ is constant, a curve that drops fast and then flattens). If $x\cdot y$ is constant, you can predict any new value by division.
+\end{rulebox}
+
+\passage{Gas in a syringe}
+A sealed syringe of gas was held at constant temperature while the plunger was moved. The gas pressure was recorded at five volumes (Table 4).
+
+\figlabel{Table 4}
+\datatable{c c c c c c}{Volume (mL) & 10 & 20 & 30 & 40 & 50\\\midrule Pressure (kPa) & 300 & 150 & 100 & 75 & 60\\}
+\passageend
+
+\begin{q}{3}{ID-7}{Pressure decreases (rules out the rising graphs), and it drops by 150, then 50, then 25, then 15. The decreases shrink, so it is a curve that flattens, not a straight line.}
+Which of the following graphs best represents the relationship between pressure and volume in Table 4?\par\vspace{0.4ex}
+\hspace*{2.1em}%
+\begin{tabular}{@{}l@{\hspace{0.6em}}l@{\hspace{1.2em}}l@{\hspace{0.6em}}l@{}}
+\ch{1} &
+\begin{tikzpicture}[baseline=(current bounding box.center)]\begin{axis}[minichoice, xlabel={volume}, ylabel={pressure}, xmin=0,xmax=10,ymin=0,ymax=10]\addplot[domain=0:10]{x};\end{axis}\end{tikzpicture}
+& \ch{3} &
+\begin{tikzpicture}[baseline=(current bounding box.center)]\begin{axis}[minichoice, xlabel={volume}, ylabel={pressure}, xmin=0,xmax=10,ymin=0,ymax=10]\addplot[domain=1:10,samples=40,smooth]{9/x};\end{axis}\end{tikzpicture}\\[1ex]
+\ch{2} &
+\begin{tikzpicture}[baseline=(current bounding box.center)]\begin{axis}[minichoice, xlabel={volume}, ylabel={pressure}, xmin=0,xmax=10,ymin=0,ymax=10]\addplot[domain=0:10]{9-0.85*x};\end{axis}\end{tikzpicture}
+& \ch{4} &
+\begin{tikzpicture}[baseline=(current bounding box.center)]\begin{axis}[minichoice, xlabel={volume}, ylabel={pressure}, xmin=0,xmax=10,ymin=0,ymax=10]\addplot[domain=0:10,samples=40,smooth]{0.09*x^2};\end{axis}\end{tikzpicture}
+\end{tabular}
+\end{q}
+
+\begin{q}{4}{ID-7}{$P\times V$ is 3000 for every row ($10\times300$, $20\times150$, \ldots). At \SI{60}{\milli\litre}: $3000\div60=\SI{50}{\kilo\pascal}$.}
+If the gas were expanded to \SI{60}{\milli\litre} under the same conditions, its pressure would be closest to:
+\choicesrow{\SI{30}{\kilo\pascal}}{\SI{40}{\kilo\pascal}}{\SI{45}{\kilo\pascal}}{\SI{50}{\kilo\pascal}}
+\end{q}
+
+%% =====================================================================
+\section{Mixed drill: all seven rules}
+
+\tip{Time this one. Five questions, five minutes. Read the frame (ID-1) before the first question and do not reread the passage text until a question sends you there.}
+
+\passage{Temperature and oxygen in the open ocean}
+Oceanographers lowered a sensor at one site and recorded water temperature and dissolved oxygen (O$_2$) every \SI{200}{\metre}. Figure 4 uses two vertical axes: temperature (left, solid line) and dissolved O$_2$ (right, dashed line).
+
+\begin{figbox}
+\begin{tikzpicture}
+\begin{axis}[actplot, width=10cm, height=5.6cm, axis y line*=left, xlabel={Depth (m)}, ylabel={Temperature (\si{\celsius}) \ ---},
+  xmin=0, xmax=1000, ymin=0, ymax=25, xtick={0,200,...,1000}, ytick={0,5,...,25}]
+\addplot[mark=*] coordinates {(0,24) (200,18) (400,10) (600,7) (800,5) (1000,4)};
+\end{axis}
+\begin{axis}[actplot, rightaxis, width=10cm, height=5.6cm,
+  ylabel={Dissolved O$_2$ (mg/L) \ - - -}, xmin=0, xmax=1000, ymin=0, ymax=8, ytick={0,2,...,8}]
+\addplot[mark=square*, dashed] coordinates {(0,7.0) (200,5.5) (400,3.0) (600,2.0) (800,2.5) (1000,3.5)};
+\end{axis}
+\end{tikzpicture}
+\figlabel{Figure 4}
+\end{figbox}
+\passageend
+
+\begin{q}{3}{ID-2}{O$_2$ falls from 7.0 to 2.0 (0--\SI{600}{\metre}) and then rises to 3.5. That is a valley.}
+As depth increased from \SI{0}{\metre} to \SI{1000}{\metre}, dissolved O$_2$:
+\choices{decreased only.}{increased only.}{decreased and then increased.}{increased and then decreased.}
+\end{q}
+
+\begin{q}{2}{ID-4}{Lowest O$_2$ (2.0 mg/L, right axis) is at \SI{600}{\metre}; the temperature there (left axis) is \SI{7}{\celsius}.}
+At the depth where dissolved O$_2$ was lowest, the water temperature was closest to:
+\choicesrow{\SI{5}{\celsius}}{\SI{7}{\celsius}}{\SI{10}{\celsius}}{\SI{18}{\celsius}}
+\end{q}
+
+\begin{q}{1}{ID-3}{\SI{300}{\metre} is halfway between \SI{200}{\metre} (\SI{18}{\celsius}) and \SI{400}{\metre} (\SI{10}{\celsius}); the midpoint is \SI{14}{\celsius}.}
+Based on Figure 4, the water temperature at a depth of \SI{300}{\metre} was closest to:
+\choicesrow{\SI{14}{\celsius}}{\SI{17}{\celsius}}{\SI{19}{\celsius}}{\SI{21}{\celsius}}
+\end{q}
+
+\begin{q}{3}{ID-5}{$24-4=\SI{20}{\celsius}$.}
+By how much did the temperature decrease from the surface to \SI{1000}{\metre}?
+\choicesrow{\SI{4}{\celsius}}{\SI{10}{\celsius}}{\SI{20}{\celsius}}{\SI{24}{\celsius}}
+\end{q}
+
+\begin{q}{2}{ID-6}{$\SI{1}{\milli\gram}=10^{-3}$ g, so 7.0 mg/L $= 7.0\times10^{-3}$ g/L.}
+The surface O$_2$ value, 7.0 mg/L, is equivalent to:
+\choicesgrid{$7.0\times10^{-6}$ g/L}{$7.0\times10^{-3}$ g/L}{$7.0\times10^{3}$ g/L}{$7.0\times10^{6}$ g/L}
+\end{q}
+
+\vspace{2ex}
+\subsection*{Self-diagnosis}
+\small
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+\toprule
+If you missed\ldots & Do this next\\\midrule
+ID-1 or ID-4 & Physically trace every lookup. Write bridge values in the margin.\\
+ID-2 & For every trend question, write the sequence of differences ($+,+,+,-$) before choosing.\\
+ID-3 & Bracket first: name the two measured values the answer must sit between.\\
+ID-5 or ID-6 & Estimate before computing; check that units in the answer match units in the question.\\
+ID-7 & Decide up/down, straight/curved, and start point before looking at the graphs.\\
+\bottomrule
+\end{tabularx}
+
+\makekey
+\end{document}
