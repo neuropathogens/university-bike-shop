@@ -2,6 +2,8 @@ import Link from "next/link";
 import { facebookAccounts, facebookRatingCount } from "@/config/reviews";
 import styles from "./SellYourBike.module.css";
 
+const ratings = facebookAccounts.map((a) => a.rating);
+
 export default function SellYourBike() {
   return (
     <section id="sell-your-bike" className={styles.section}>
@@ -11,11 +13,8 @@ export default function SellYourBike() {
         commission rate of 10%. We will inspect, clean, and tune-up your
         bike, and do all of the messaging for you. Our Facebook Marketplace
         seller accounts have {facebookRatingCount} buyer ratings between them
-        (rated{" "}
-        {new Intl.ListFormat("en").format(
-          facebookAccounts.map((a) => a.rating.toFixed(1)),
-        )}{" "}
-        stars;
+        (rated {Math.min(...ratings).toFixed(1)} to{" "}
+        {Math.max(...ratings).toFixed(1)} stars;
         see our{" "}
         <Link href="/reviews" className={styles.link}>
           reviews
