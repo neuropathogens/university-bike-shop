@@ -220,6 +220,7 @@ a{color:var(--link);text-underline-offset:3px;text-decoration-thickness:.5px}
 .fig figcaption{font-size:14px;color:var(--muted);font-style:italic}
 .target{margin:4px 0 0;font-style:italic}
 .res-sum{display:block}
+.opt>span:nth-child(2){flex:1 1 auto;min-width:0;overflow-wrap:anywhere;-webkit-hyphens:auto;hyphens:auto}
 .sol>div{margin:0 0 10px}
 .crit-pts{margin:0 0 10px;font-size:15.5px}
 .crit-pts p{margin:0 0 4px}
@@ -363,7 +364,7 @@ function renderRun(){
     conf = '<div class="confirm"><p>' + left + " question" + (left === 1 ? " is" : "s are") + " unanswered and will be marked wrong. Finish anyway?</p>" +
       '<button type="button" class="btn" id="conf-no">Keep going</button><button type="button" class="btn btn--solid" id="conf-yes">Finish</button></div>';
   }
-  var eyebrow = "Question " + q.n + (SEC[q.sec] ? " &middot; " + SEC[q.sec] : "") + (q.topic ? " &middot; " + topicShort(q.topic) : "");
+  var eyebrow = "Question " + q.n + (SEC[q.sec] ? " &middot; " + SEC[q.sec] : "") + (q.tag ? " &middot; " + q.tag : (q.topic ? " &middot; " + topicShort(q.topic) : ""));
   mcEl.innerHTML =
     '<div class="bar"><span>Question ' + (S.pos + 1) + " of " + st.total + " &middot; " + (practice ? "Practice" : "Exam") + " mode</span><span>" +
       (practice ? st.right + " correct of " + st.done + " answered" : st.done + " of " + st.total + " answered") + "</span></div>" +
@@ -436,9 +437,11 @@ function compositeHtml(){
   return '<div class="composite" role="status">' + lines.map(function(l){ return "<p>" + l + "</p>"; }).join("") + "</div>";
 }
 function targetHtml(st){
-  var T = META.target;
-  if (!T || st.total !== MC.length) return "";
-  return '<p class="target">' + T.label + ": " + T.mc + " / " + MC.length + " &middot; " + (st.right >= T.mc ? "met" : (T.mc - st.right) + " short") + "</p>";
+  var T = META.target, B = META.bands, h = "";
+  if (st.total !== MC.length) return "";
+  if (T) h += '<p class="target">' + T.label + ": " + T.mc + " / " + MC.length + " &middot; " + (st.right >= T.mc ? "met" : (T.mc - st.right) + " short") + "</p>";
+  if (B) for (var i = 0; i < B.length; i++){ if (st.right >= B[i][0]){ h += '<p class="target">' + B[i][1] + "</p>"; break; } }
+  return h;
 }
 
 var resFilter = "all";
@@ -524,7 +527,7 @@ function frScoreHtml(f){
 }
 function markButtons(f, p, id, m){
   var vals = f.mode === "points" ? range(p.max + 1).map(String) : ["E", "P", "I"];
-  return vals.map(function(x){ return '<button type="button" data-mark="' + id + '" data-v="' + x + '" aria-pressed="' + (m === x) + '">' + x + "</button>"; }).join("");
+  return vals.map(function(x){ return '<button type="button" data-mark="' + id + '" data-f="' + f.n + '" data-v="' + x + '" aria-pressed="' + (m === x) + '">' + x + "</button>"; }).join("");
 }
 function renderFR(){
   if (!HAS_FR) return;
@@ -560,7 +563,7 @@ function renderFR(){
     b.onclick = function(){
       var id = b.dataset.mark; F.marks[id] = F.marks[id] === b.dataset.v ? "" : b.dataset.v; save(FKEY, F);
       b.parentNode.querySelectorAll("button").forEach(function(x){ x.setAttribute("aria-pressed", String(F.marks[id] === x.dataset.v)); });
-      var f = FR.filter(function(x){ return id.indexOf(String(x.n)) === 0 && id.length === String(x.n).length + 1; })[0];
+      var f = FR.filter(function(x){ return String(x.n) === b.dataset.f; })[0];
       document.getElementById("score-" + f.n).innerHTML = frScoreHtml(f);
       document.getElementById("fr-composite").innerHTML = compositeHtml();
       if (S.phase === "results") render();

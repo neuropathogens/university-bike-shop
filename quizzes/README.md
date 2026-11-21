@@ -49,3 +49,7 @@ Every wrong choice must have a note in `ex.others`; the builder refuses a quiz o
   `assign_positions`/`defcheck` reproduce each PDF's choices and letters exactly. Practice-set explanations:
   `ex_setNN.py`; self-check explanations are generated from the lexicon (each wrong choice is named as
   another word's definition).
+- `ap_psych` — AP Psychology: each unit's Question Set (MC, shared data displays, and the 7-point EBQ, or the
+  AAQ for Research Methods, self-scored in points) and each guide's section checks. Parsed from the
+  series' LaTeX (`source/`, from `ap-psych-study-series.zip`); choices are in source order, as in the PDFs.
+  Explanations: `ex_<file>.py`. `STIM_COUNTS` says how many items follow each data display.

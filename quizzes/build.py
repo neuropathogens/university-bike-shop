@@ -125,7 +125,7 @@ def page_data(z):
     }
     for q in z["mc"]:
         d = {k: q[k] for k in ("n", "prompt", "options", "answer") }
-        for k in ("sec", "topic", "fixed", "table", "fig", "ask", "stim"):
+        for k in ("sec", "topic", "tag", "fixed", "table", "fig", "ask", "stim"):
             if q.get(k):
                 d[k] = str(q[k]) if k == "sec" else q[k]
         d["ex"] = {"idea": q["ex"]["idea"], "steps": list(q["ex"].get("steps", [])),

@@ -19,7 +19,7 @@ ACCENTS = {
 
 # no-argument macros -> HTML
 SIMPLE = {
-    "S": "§", "dots": "…", "ldots": "…", "textellipsis": "…", "%": "%", "&": "&amp;", "#": "#", "_": "_", "$": "$",
+    "S": "§", "dots": "…", "ldots": "…", "textellipsis": "…", "%": "%", "&": "&amp;", "#": "#", "_": "_", "$": "&#36;",
     "{": "{", "}": "}", ",": "&thinsp;", " ": " ", "/": "", "-": "&shy;", "@": "", "quad": "&emsp;", "qquad": "&emsp;&emsp;",
     "textendash": "–", "textemdash": "—", "textbar": "|", "textdegree": "°", "copyright": "©", "pounds": "£",
     "checkmark": "✓", "times": "×", "newline": "<br>", "\\": "<br>", "par": "<br>", "noindent": "", "smallskip": "",

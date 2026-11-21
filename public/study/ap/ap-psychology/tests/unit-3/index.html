@@ -1,0 +1,617 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light">
+<script>try{document.documentElement.setAttribute("data-theme",localStorage.getItem("apah.theme")==="dark"?"dark":"light")}catch(e){document.documentElement.setAttribute("data-theme","light")}</script>
+<title>AP Psychology Unit 3 Question Set</title>
+<meta name="description" content="AP Psychology Unit 3: Development and Learning question set: 25 exam-style multiple-choice questions with in-depth explanations, plus a 7-point evidence-based question with a scoring guide.">
+<link rel="icon" href="/favicon.ico" sizes="48x48" type="image/x-icon">
+<link rel="icon" href="/icon.svg" sizes="any" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-icon.png" sizes="180x180">
+<link rel="preload" href="/study/ap/ap-art-history/fonts/LM-regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/study/katex/katex.min.css">
+<style>
+@font-face{font-family:"Latin Modern";font-style:normal;font-weight:400;font-display:swap;src:url("/study/ap/ap-art-history/fonts/LM-regular.woff2") format("woff2")}
+@font-face{font-family:"Latin Modern";font-style:italic;font-weight:400;font-display:swap;src:url("/study/ap/ap-art-history/fonts/LM-italic.woff2") format("woff2")}
+@font-face{font-family:"Latin Modern";font-style:normal;font-weight:600 700;font-display:swap;src:url("/study/ap/ap-art-history/fonts/LM-bold.woff2") format("woff2")}
+@font-face{font-family:"Latin Modern";font-style:italic;font-weight:600 700;font-display:swap;src:url("/study/ap/ap-art-history/fonts/LM-bold-italic.woff2") format("woff2")}
+@font-face{font-family:"Latin Modern Mono";font-style:normal;font-weight:400 500;font-display:swap;src:url("/study/ap/ap-art-history/fonts/LM-mono.woff2") format("woff2")}
+@font-face{font-family:"Latin Modern Mono";font-style:normal;font-weight:600 700;font-display:swap;src:url("/study/ap/ap-art-history/fonts/LM-mono-bold.woff2") format("woff2")}
+
+:root{--bg:#fff;--fg:#000;--muted:#4a4a4a;--line:#c9c9c9;--plate:#f5f5f3;--link:#00008b;--ok:#1d5e20;--bad:#9b1c1c;
+  --serif:"Latin Modern","Computer Modern Serif","CMU Serif",Georgia,serif;--mono:"Latin Modern Mono","SFMono-Regular",Menlo,Consolas,monospace;
+  --gutter:clamp(16px,4vw,40px);color-scheme:light}
+:root[data-theme=dark]{--bg:#111110;--fg:#ecebe6;--muted:#a3a29c;--line:#34342f;--plate:#1b1b19;--link:#9db4ff;--ok:#8fd394;--bad:#ff9b9b;color-scheme:dark}
+*{box-sizing:border-box}
+html{background:var(--bg);scroll-padding-top:16px}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--serif);font-size:17px;line-height:1.5;font-kerning:normal;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+button,input,textarea{font:inherit;color:inherit}
+button{cursor:pointer}
+button:disabled{cursor:default}
+a{color:var(--link);text-underline-offset:3px;text-decoration-thickness:.5px}
+:focus-visible{outline:2px solid var(--link);outline-offset:2px}
+[hidden]{display:none!important}
+.sc{font-variant:small-caps;text-transform:lowercase;letter-spacing:.04em}
+.muted{color:var(--muted)}
+.katex{font-size:1.04em;text-rendering:auto}
+.katex-display{margin:.7em 0;overflow-x:auto;overflow-y:hidden;padding:2px 0}
+
+.runhead{display:flex;flex-wrap:wrap;justify-content:space-between;gap:4px 16px;max-width:1480px;margin:0 auto;padding:14px var(--gutter) 6px;font-size:14px;font-style:italic;color:var(--muted)}
+.runhead a{text-decoration:none}
+.runhead a:hover{text-decoration:underline}
+.runhead-actions{display:flex;flex-wrap:wrap;gap:4px 18px}
+.theme-btn{background:none;border:0;padding:0;font:inherit;font-style:italic;color:var(--link)}
+.theme-btn:hover{text-decoration:underline}
+.rule{max-width:1480px;margin:0 auto;padding-inline:var(--gutter)}
+.rule hr{margin:0;border:0;border-top:.5px solid var(--fg)}
+
+.wrap{max-width:860px;margin:0 auto;padding:0 var(--gutter) 80px}
+.title{text-align:center;padding:34px 0 22px}
+.title h1{margin:0;text-wrap:balance;font-size:clamp(32px,6vw,46px);line-height:1.1;font-weight:700}
+.title .sub{margin:8px 0 0;font-size:18px;font-variant:small-caps;letter-spacing:.03em}
+.title .meta{margin:4px 0 0;font-style:italic;color:var(--muted)}
+
+.tabs{display:flex;justify-content:center;gap:0;margin:0 0 26px;border-bottom:.5px solid var(--fg)}
+.tab{background:none;border:0;border-bottom:2.5px solid transparent;padding:8px 18px;margin-bottom:-1px;font-size:17px;color:var(--muted)}
+.tab[aria-selected=true]{color:var(--fg);border-bottom-color:var(--fg);font-weight:700}
+.tab:hover{color:var(--fg)}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:40px;padding:0 16px;border:1px solid var(--fg);background:var(--bg);font-family:var(--mono);font-size:14.5px;white-space:nowrap}
+.btn:hover:not(:disabled){background:var(--plate)}
+.btn:disabled{opacity:.35}
+.btn--solid{background:var(--fg);color:var(--bg)}
+.btn--solid:hover:not(:disabled){background:var(--fg);opacity:.85}
+.btn--lg{min-height:48px;font-size:15.5px;padding:0 22px}
+.kbd{display:inline-grid;place-items:center;min-width:22px;height:22px;padding:0 4px;border:1px solid currentColor;font-family:var(--mono);font-size:12px;opacity:.8}
+
+/* booktabs tables */
+.bt{border-collapse:collapse;margin:0 auto;font-variant-numeric:tabular-nums}
+.bt th,.bt td{padding:4px 12px;text-align:center;font-weight:400}
+.bt th[scope=row],.bt thead th:first-child{text-align:left}
+.bt thead tr{border-top:1px solid var(--fg);border-bottom:.5px solid var(--fg)}
+.bt tbody tr:last-child{border-bottom:1px solid var(--fg)}
+.bt-wrap{overflow-x:auto;margin:0 0 16px}
+
+/* setup */
+.setup{border-bottom:1.5px solid var(--fg);padding:4px 0 22px;display:grid;gap:18px}
+.setup h2,.results h2,.fr h2{margin:0;font-size:20px}
+.choice-row{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.choice{display:flex;flex-direction:column;align-items:flex-start;gap:2px;padding:12px 14px;border:1px solid var(--fg);background:var(--bg);text-align:left}
+.choice b{font-size:17px}
+.choice span{font-size:14.5px;font-style:italic;color:var(--muted)}
+.choice[aria-pressed=true]{background:var(--fg);color:var(--bg)}
+.choice[aria-pressed=true] span{color:var(--bg);opacity:.8}
+.checks{display:flex;flex-wrap:wrap;gap:8px 22px}
+.checks label{display:inline-flex;align-items:center;gap:8px;cursor:pointer}
+.checks input{width:17px;height:17px;margin:0;accent-color:var(--fg)}
+.setup-actions{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.note{margin:0;font-size:15px;color:var(--muted);font-style:italic}
+
+/* run */
+.bar{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:4px 16px;font-size:15px;color:var(--muted)}
+.track{height:3px;background:var(--line);margin:8px 0 14px}
+.track span{display:block;height:100%;background:var(--fg);transition:width .2s ease}
+.nav{display:grid;grid-template-columns:repeat(auto-fill,minmax(34px,1fr));gap:5px;margin:0 0 22px}
+.nav button{height:32px;padding:0;border:1px solid var(--line);background:var(--bg);font-family:var(--serif);font-size:14px;font-variant-numeric:tabular-nums}
+.nav button:hover{border-color:var(--fg)}
+.nav .is-answered{background:var(--plate);border-color:var(--fg)}
+.nav .is-right{background:var(--fg);color:var(--bg);border-color:var(--fg)}
+.nav .is-wrong{border:1.5px dashed var(--bad);color:var(--bad)}
+.nav .is-current{outline:2px solid var(--fg);outline-offset:1px}
+.q{border-top:1.5px solid var(--fg);padding-top:16px}
+.q-eyebrow{margin:0 0 6px;font-size:14px;color:var(--muted)}
+.q-prompt{margin:0 0 14px;font-size:20px;line-height:1.45;font-weight:400}
+.opts{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.opt{display:flex;align-items:center;gap:12px;width:100%;min-height:52px;padding:10px 14px;border:1px solid var(--fg);background:var(--bg);text-align:left;font-size:16.5px;line-height:1.4}
+.opt:hover:not(:disabled){background:var(--plate)}
+.opt .kbd{flex:none}
+.opt .mark{margin-left:auto;padding-left:6px;font-family:var(--mono);font-size:14px;white-space:nowrap}
+.opt.is-picked{border-width:2px;padding:9px 13px;background:var(--plate)}
+.opt.is-right{background:var(--fg);color:var(--bg);border-color:var(--fg)}
+.opt.is-wrong{border:1.5px dashed var(--bad);color:var(--bad);text-decoration:line-through;text-decoration-thickness:1px}
+.opt.is-wrong .mark,.opt.is-wrong .kbd{text-decoration:none}
+.opt.is-dim{opacity:.5}
+.fb{margin:14px 0 0;padding:12px 16px;border:.5px solid var(--fg);border-left:3px solid var(--ok)}
+.fb.is-wrong{border-left-color:var(--bad)}
+.fb p{margin:0}
+.fb .verdict{font-weight:700;margin-bottom:4px}
+.why p{margin:0 0 6px}
+.steps{margin:2px 0 8px;padding-left:22px}
+.steps li{margin:4px 0;padding-left:2px}
+.why .why-h{margin:10px 0 2px;font-size:14.5px;color:var(--muted)}
+.others{margin:0 0 4px;padding-left:20px}
+.others li{margin:5px 0}
+.others .tag{margin-left:6px;font-family:var(--mono);font-size:12.5px;color:var(--bad);white-space:nowrap}
+.links{margin-top:6px;font-size:15px}
+.step{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:10px;margin-top:20px}
+.step-right{display:flex;flex-wrap:wrap;gap:8px}
+.confirm{margin-top:14px;padding:12px 16px;border:1px solid var(--fg);display:flex;flex-wrap:wrap;align-items:center;gap:10px}
+.confirm p{margin:0;flex:1 1 220px}
+.keys{margin:18px 0 0;font-size:13.5px;color:var(--muted);text-align:center}
+.restart-line{margin:10px 0 0;font-size:14.5px;text-align:center}
+
+/* results */
+.results{padding-top:4px}
+.score{text-align:center;padding:10px 0 18px}
+.score-big{margin:0;font-size:clamp(48px,10vw,72px);font-weight:700;line-height:1;font-variant-numeric:tabular-nums}
+.score p{margin:6px 0 0}
+.res-actions{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin:0 0 22px}
+.res-filter{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:6px;border-bottom:1.5px solid var(--fg);padding-bottom:6px}
+.res-list{list-style:none;margin:0;padding:0}
+.res-list>li{border-bottom:.5px solid var(--line)}
+.res-list>li:last-child{border-bottom:1.5px solid var(--fg)}
+.res-list details{padding:10px 0}
+.res-list summary{display:grid;grid-template-columns:34px 22px minmax(0,1fr);gap:8px;cursor:pointer;list-style:none}
+.res-list summary::-webkit-details-marker{display:none}
+.res-n{font-weight:700;font-variant-numeric:tabular-nums}
+.res-ok{color:var(--ok);font-weight:700}
+.res-bad{color:var(--bad);font-weight:700}
+.res-body{padding:8px 0 4px 64px;font-size:15.5px}
+.res-body p{margin:0 0 4px}
+.res-body .bt-wrap{margin:4px 0 8px}
+.topics{margin:0 0 26px}
+.topics h2{margin:0 0 8px}
+.topics .bt{margin:0;width:100%}
+.topics .bt td:last-child,.topics .bt th:last-child{text-align:left}
+.topics .flag{color:var(--bad);font-style:italic}
+.composite{margin:0 0 26px;padding:12px 16px;border:.5px solid var(--fg);border-left:3px solid var(--fg)}
+.composite p{margin:0}
+.composite p+p{margin-top:4px}
+
+/* free response */
+.fr-intro{margin:0 0 6px;font-style:italic;color:var(--muted)}
+.fr{border-top:1.5px solid var(--fg);padding:18px 0 26px}
+.fr h2 small{font-weight:400;font-style:italic;color:var(--muted);font-size:15px;margin-left:6px}
+.fr-stem{margin:10px 0 6px;text-align:justify;hyphens:auto;-webkit-hyphens:auto}
+.part{margin:18px 0 0}
+.part-prompt{margin:0 0 8px}
+.part-prompt b{margin-right:4px}
+.part textarea{width:100%;min-height:150px;padding:12px 14px;border:1px solid var(--fg);border-radius:0;background:var(--bg);font-family:var(--serif);font-size:16.5px;line-height:1.55;resize:vertical}
+.part-meta{margin-top:4px;font-size:14px;color:var(--muted)}
+.sol{margin-top:12px;padding:12px 18px;border:.5px solid var(--fg)}
+.sol h3{margin:0 0 4px;font-size:15px}
+.sol p{margin:0 0 10px}
+.sol .crit{display:grid;grid-template-columns:28px minmax(0,1fr);gap:2px 8px;margin:0 0 10px;font-size:15.5px}
+.sol .crit dt{font-weight:700}
+.sol .crit dd{margin:0}
+.mark-row{display:flex;flex-wrap:wrap;align-items:center;gap:8px;font-size:15px}
+.seg{display:inline-flex}
+.seg button{min-width:44px;min-height:36px;padding:0 10px;border:1px solid var(--fg);background:var(--bg);font-family:var(--mono);font-size:14px}
+.seg button+button{border-left:0}
+.seg button[aria-pressed=true]{background:var(--fg);color:var(--bg)}
+.fr-actions{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:10px;margin-top:16px}
+.fr-score{font-size:16px}
+.fr-score b{font-variant-numeric:tabular-nums}
+.scale{margin-top:14px}
+.scale summary{cursor:pointer;font-size:15px;color:var(--muted);font-style:italic}
+.scale .bt{margin:8px 0 0}
+.scale .bt td:last-child,.scale .bt th:last-child{text-align:left}
+.foot{margin-top:40px;padding-top:12px;border-top:.5px solid var(--line);font-size:14px;color:var(--muted)}
+
+@media (max-width:640px){
+  .runhead-title{display:none}
+  .runhead-actions{width:100%;justify-content:space-between}
+  .title{padding:22px 0 16px}
+  .choice-row{grid-template-columns:1fr}
+  .q-prompt{font-size:18.5px}
+  .res-body{padding-left:0}
+  .keys{display:none}
+  .fr-stem{text-align:left}
+  .bt th,.bt td{padding:4px 7px}
+  .sol{padding:10px 12px}
+  .katex-display>.katex{font-size:.94em}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+@media print{.runhead,.rule,.tabs,.nav,.step,.keys,.restart-line,.res-actions{display:none!important}}
+/* generic quiz additions */
+.q-prompt p{margin:0}
+.q-prompt p+p{margin-top:8px}
+.q-ask{margin:10px 0 0!important;font-size:16px;font-style:italic;color:var(--muted)}
+.blank{display:inline-block;width:3.4em;height:1em;margin:0 .12em;border-bottom:1.5px solid currentColor;vertical-align:-.12em}
+.stim{margin:0 0 16px;padding:12px 16px;border:.5px solid var(--fg);background:var(--plate);font-size:16.5px;line-height:1.55;max-height:60vh;overflow:auto}
+.stim-h{margin:0 0 6px!important;font-size:14px;color:var(--muted)}
+.stim p{margin:0 0 8px}
+.stim p:last-child{margin-bottom:0}
+.fig{margin:0 0 14px;text-align:center}
+.fig img{max-width:100%;height:auto;background:#fff}
+:root[data-theme=dark] .fig img{filter:invert(.92) hue-rotate(180deg)}
+.fig figcaption{font-size:14px;color:var(--muted);font-style:italic}
+.target{margin:4px 0 0;font-style:italic}
+.res-sum{display:block}
+.opt>span:nth-child(2){flex:1 1 auto;min-width:0;overflow-wrap:anywhere;-webkit-hyphens:auto;hyphens:auto}
+.sol>div{margin:0 0 10px}
+.crit-pts{margin:0 0 10px;font-size:15.5px}
+.crit-pts p{margin:0 0 4px}
+.crit-pts ul{margin:0 0 4px;padding-left:20px}
+</style>
+</head>
+<body>
+<div class="runhead"><span class="runhead-title">AP Psychology &middot; Unit 3: Development and Learning &middot; Question Set</span><span class="runhead-actions"><a href="/study/#ap-psychology">&larr;&nbsp;Study Library</a><a href="/study/ap/ap-psychology/ap-psych-03-development-learning-questions.pdf">PDF version</a><button type="button" class="theme-btn" id="theme-btn">Dark mode</button></span></div>
+<div class="rule"><hr></div>
+
+<main class="wrap">
+  <header class="title">
+    <h1>Unit 3 <span style="white-space:nowrap">Question Set</span></h1>
+    <p class="sub">Development and Learning</p>
+    <p class="meta">25 multiple-choice (about 30 min) &middot; 1 evidence-based question (45 min)</p>
+  </header>
+  <div class="tabs" role="tablist">
+    <button type="button" class="tab" role="tab" id="tab-mc" aria-controls="mc" aria-selected="true">Multiple choice</button>
+    <button type="button" class="tab" role="tab" id="tab-fr" aria-controls="fr" aria-selected="false">Free response</button>
+  </div>
+
+  <section id="mc" role="tabpanel" aria-labelledby="tab-mc"></section>
+  <section id="fr" role="tabpanel" aria-labelledby="tab-fr" hidden></section>
+
+  <p class="foot">From <a href="/study/ap/ap-psychology/ap-psych-03-development-learning-questions.pdf"><i>Unit 3: Development and Learning: Question Set</i></a> (PDF). Answers and rule tags are the document&rsquo;s own key; the explanations expand on it with the concept, how it applies to the scenario, and why each wrong choice is wrong. Topic links open the matching section of <a href="/study/ap/ap-psychology/ap-psych-03-development-learning-guide.pdf">the guide</a>. Your answers are saved only in this browser.</p>
+</main>
+
+<script id="data" type="application/json">{"meta":{"key":"study.ap-psych.unit-3.v1","setupNote":"Allow about 30 minutes for the multiple choice, about 72 seconds per question. Data-display items show the study above the question.","topicPrefix":"","topicCol":"Topic","guideCol":"Guide section","byTopic":"By topic","topicNote":"Two or more misses on one topic: reread that section of the guide.","guide":"/study/ap/ap-psychology/ap-psych-03-development-learning-guide.pdf","guideName":"the <i>Unit 3 guide<\/i>","target":{"label":"Target","mc":22},"frIntro":"Allow 45 minutes. Write each part, then open the scoring guide and give yourself the points your answer earns. Cite sources by author and year."},"topics":{"3.1":{"name":"Themes and methods","page":1},"3.2":{"name":"Physical development","page":1},"3.3":{"name":"Gender and sexual orientation","page":2},"3.4":{"name":"Cognitive development","page":2},"3.5":{"name":"Communication and language","page":4},"3.6":{"name":"Social-emotional development","page":4},"3.7":{"name":"Classical conditioning","page":6},"3.8":{"name":"Operant conditioning","page":7},"3.9":{"name":"Social, cognitive, and neurological factors","page":8}},"sections":{"1":"Development: themes, physical, gender","2":"Cognitive development and language","3":"Social-emotional development","4":"Learning"},"stims":{"s1":{"title":"Data display","html":"<p><b>Study D.<\/b> Researchers observed 120 one-year-olds in the Strange Situation. Results:<\/p><div class=\"bt-wrap\"><table class=\"bt\"><thead><tr><th scope=\"col\">Classification<\/th><th scope=\"col\">Percent of infants<\/th><\/tr><\/thead><tbody><tr><th scope=\"row\">Secure<\/th><td>62<\/td><\/tr><tr><th scope=\"row\">Insecure-avoidant<\/th><td>18<\/td><\/tr><tr><th scope=\"row\">Insecure-anxious (ambivalent)<\/th><td>14<\/td><\/tr><tr><th scope=\"row\">Disorganized<\/th><td>6<\/td><\/tr><\/tbody><\/table><\/div><p>Infants rated securely attached at age 1 were rated by teachers as more socially competent at age 6 (<span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>r<\/mi><mo>=<\/mo><mn>.38<\/mn><\/mrow><annotation encoding=\"application/x-tex\">r = .38<\/annotation><\/semantics><\/math><\/span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"><\/span><span class=\"mord mathnormal\" style=\"margin-right:0.02778em;\">r<\/span><span class=\"mspace\" style=\"margin-right:0.2778em;\"><\/span><span class=\"mrel\">=<\/span><span class=\"mspace\" style=\"margin-right:0.2778em;\"><\/span><\/span><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em;\"><\/span><span class=\"mord\">.38<\/span><\/span><\/span><\/span>).<\/p>"}},"mc":[{"n":1,"prompt":"To learn whether shy toddlers become shy adults, the best design is","options":["a cross-sectional study of toddlers and adults","a longitudinal study following the same children into adulthood","a case study of one shy adult","naturalistic observation of a preschool"],"answer":1,"sec":"1","topic":"3.1","tag":"3.1 Methods","ex":{"idea":"A longitudinal study follows the same people over time, so it can show whether a trait in one person stays stable.","steps":["The question is whether <i>shy toddlers<\/i> become <i>shy adults<\/i>: change within the same individuals.","Only following the same children into adulthood answers that."],"others":{"0":"compares different people at different ages at one time, so it cannot show whether the same toddlers grow into shy adults.","2":"examines one person and cannot show a general pattern.","3":"observes toddlers only, with no follow-up into adulthood."}}},{"n":2,"prompt":"When her cheek is stroked, a newborn turns her head toward the touch and opens her mouth. This is the","options":["grasping reflex","Moro reflex","sucking reflex","rooting reflex"],"answer":3,"sec":"1","topic":"3.2","tag":"3.2 Newborn reflexes","ex":{"idea":"The rooting reflex: when a newborn's cheek is touched, the baby turns toward the touch and opens its mouth, which helps it find the nipple.","steps":["Cheek stroked → turns toward the touch and opens mouth.","That is rooting."],"others":{"0":"is closing the fingers around an object placed in the palm.","1":"is the startle reflex: flinging out the arms and legs at a sudden loss of support or a loud noise.","2":"is sucking on anything placed in the mouth; rooting comes first, turning toward the touch."}}},{"n":3,"prompt":"Infants around the world begin walking at roughly the same age regardless of how much their parents practice with them. This best supports the role of","options":["maturation","teratogens","scaffolding","imprinting"],"answer":0,"sec":"1","topic":"3.2","tag":"3.2 Maturation","ex":{"idea":"Maturation is biological growth that unfolds on a genetic timetable, relatively unaffected by experience.","steps":["Infants everywhere walk at about the same age.","Practice makes little difference, so the timing is biological: maturation."],"others":{"1":"are harmful prenatal agents (alcohol, some drugs) that disrupt development.","2":"is Vygotsky's idea of temporary support from more skilled helpers, which would make practice matter.","3":"is a rapid attachment to the first moving object some animals see in a critical period."}}},{"n":4,"prompt":"In one culture men are expected to cook for guests; in another, cooking for guests is seen as women’s work. These differences reflect","options":["primary sex characteristics","biological sex","gender roles","sexual orientation"],"answer":2,"sec":"1","topic":"3.3","tag":"3.3 Gender","ex":{"idea":"Gender roles are a culture's shared expectations about how people of each gender should behave.","steps":["Cooking for guests is assigned to men in one culture and to women in another.","Expectations that vary by culture are gender roles."],"others":{"0":"are the reproductive organs, which are biological and do not vary by culture.","1":"is the biological category, not a cultural expectation about cooking.","3":"is the direction of a person's sexual attraction, unrelated to cooking roles."}}},{"n":5,"prompt":"A 10-month-old pulls a blanket off a toy he watched being hidden. He has developed","options":["conservation","egocentrism","theory of mind","object permanence"],"answer":3,"sec":"2","topic":"3.4","tag":"3.4 Piaget","ex":{"idea":"Object permanence is understanding that objects still exist when they cannot be seen. In Piaget's theory it develops near the end of the sensorimotor stage.","steps":["The toy is hidden under a blanket.","He searches for it, so he knows it still exists: object permanence."],"others":{"0":"is understanding that quantity stays the same when its shape changes (concrete operational stage).","1":"is difficulty seeing from another's perspective.","2":"is understanding that others have their own beliefs and desires, which develops around age 4."}}},{"n":6,"prompt":"On a video call, a 3-year-old holds up a drawing to her own face and says, “Look, Grandma!” without turning it toward the camera. This shows","options":["object permanence","egocentrism","accommodation","formal operations"],"answer":1,"sec":"2","topic":"3.4","tag":"3.4 Egocentrism","ex":{"idea":"Egocentrism, in Piaget's preoperational stage, is the inability to take another person's perspective: assuming others see what you see.","steps":["She holds the drawing to her own face, facing her, not the camera.","She assumes Grandma sees what she sees: egocentrism."],"others":{"0":"is knowing hidden objects still exist; nothing is hidden here.","2":"is changing a schema to fit new information.","3":"is abstract, hypothetical reasoning in adolescence, far beyond a 3-year-old."}}},{"n":7,"prompt":"Asked how to test which of three factors affects a pendulum’s swing, a student changes one factor at a time while holding the others constant. She is showing","options":["formal operational thinking","concrete operational thinking","preoperational thinking","the imaginary audience"],"answer":0,"sec":"2","topic":"3.4","tag":"3.4 Formal operations","ex":{"idea":"Piaget's formal operational stage (about age 12 and up) brings abstract, hypothetical, systematic reasoning, like testing one variable at a time.","steps":["She designs a controlled test: change one factor and hold the others constant.","That systematic hypothesis testing is formal operational thinking."],"others":{"1":"is logical reasoning about concrete things, but not systematic hypothetical testing.","2":"lacks logical operations altogether.","3":"is the adolescent belief that everyone is watching you."}}},{"n":8,"prompt":"A child correctly predicts that a puppet will look for a marble where the puppet left it, not where the marble was moved while the puppet was away. The child has","options":["conservation","object permanence","a theory of mind","a critical period"],"answer":2,"sec":"2","topic":"3.4","tag":"3.4 Theory of mind","ex":{"idea":"Theory of mind is understanding that others have beliefs, desires, and knowledge that can differ from yours, including false beliefs.","steps":["The puppet didn't see the marble moved, so it falsely believes the marble is where it left it.","Predicting the puppet's search from its false belief shows theory of mind (the Sally–Anne task)."],"others":{"0":"is knowing quantity stays the same despite changes in shape.","1":"is knowing hidden objects still exist, which is much simpler than predicting a false belief.","3":"is a window when certain experiences are needed for normal development."}}},{"n":9,"prompt":"After learning that whales are mammals, a student revises her belief that “everything that lives in the ocean is a fish.” She has","options":["assimilated","accommodated","overgeneralized","conserved"],"answer":1,"sec":"2","topic":"3.4","tag":"3.4 Accommodation","ex":{"idea":"Accommodation is changing an existing schema to fit new information; assimilation is fitting new information into an existing schema.","steps":["Her schema was “ocean animals are fish.”","Learning that whales are mammals, she revises the schema: accommodation."],"others":{"0":"would mean squeezing whales into her fish schema without changing it.","2":"is applying a rule too broadly, which was the original mistake, not the correction.","3":"refers to conservation of quantity, a different concept."}}},{"n":10,"prompt":"A 2-year-old says “Daddy go” and “more juice.” This is","options":["babbling","overgeneralization","the one-word stage","telegraphic speech"],"answer":3,"sec":"2","topic":"3.5","tag":"3.5 Language","ex":{"idea":"Telegraphic speech, around age 2, uses mostly content words (nouns and verbs) and leaves out function words, like a telegram.","steps":["“Daddy go” and “more juice” are two-word phrases with no articles or helpers.","That is telegraphic speech."],"others":{"0":"is repeating speech sounds without meaning (around 4–10 months).","1":"is applying grammar rules too widely (“I goed”).","2":"uses single words; these are two-word phrases."}}},{"n":11,"prompt":"Deaf adults who were first exposed to sign language at age 14 show less fluent grammar than those exposed from birth. This supports the idea of","options":["a critical period","linguistic relativity","a teratogen","assimilation"],"answer":0,"sec":"2","topic":"3.5","tag":"3.5 Critical period","ex":{"idea":"A critical period is a window early in life when certain experiences, such as exposure to language, are needed for normal development.","steps":["Adults first exposed to sign language at 14 have less fluent grammar than those exposed from birth.","Missing early exposure has lasting effects: a critical period for language."],"others":{"1":"is the idea that language shapes thought.","2":"is a harmful prenatal agent.","3":"is fitting new information into existing schemas."}}},{"n":12,"prompt":"In Study D, an infant who barely notices the parent leaving and turns away on the parent’s return would be classified as","options":["secure","anxious","avoidant","disorganized"],"answer":2,"sec":"3","topic":"3.6","tag":"3.6 Attachment","stim":"s1","ex":{"idea":"In Ainsworth's Strange Situation, avoidant infants show little distress when the parent leaves and ignore or turn away on the parent's return.","steps":["Barely notices the parent leaving.","Turns away on return: insecure-avoidant attachment."],"others":{"0":"infants are distressed when the parent leaves and are comforted on return.","1":"(ambivalent) infants are very distressed and are hard to comfort, clinging and resisting at once.","3":"infants show confused, contradictory behavior, such as freezing or approaching while looking away."}}},{"n":13,"prompt":"Which statement about Study D is accurate?","options":["Most infants were insecurely attached.","A majority of infants were securely attached.","Disorganized attachment was the second most common.","The correlation proves that secure attachment causes social competence."],"answer":1,"sec":"3","topic":"3.6","tag":"3.6 Data","stim":"s1","ex":{"idea":"Read the data display: compare the percentages and remember that correlation does not prove causation.","steps":["Secure: 62%, more than half.","So a majority of infants were securely attached."],"others":{"0":"insecure categories add to 18 + 14 + 6 = 38%, a minority.","2":"disorganized is the least common (6%); avoidant (18%) is second.","3":"a correlation cannot prove causation."}}},{"n":14,"prompt":"The correlation of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>r<\/mi><mo>=<\/mo><mn>.38<\/mn><\/mrow><annotation encoding=\"application/x-tex\">r = .38<\/annotation><\/semantics><\/math><\/span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"><\/span><span class=\"mord mathnormal\" style=\"margin-right:0.02778em;\">r<\/span><span class=\"mspace\" style=\"margin-right:0.2778em;\"><\/span><span class=\"mrel\">=<\/span><span class=\"mspace\" style=\"margin-right:0.2778em;\"><\/span><\/span><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em;\"><\/span><span class=\"mord\">.38<\/span><\/span><\/span><\/span> in Study D indicates that","options":["attachment at age 1 determines social skills at age 6","there is a strong negative relationship","teachers caused the attachment classification","securely attached infants tended to be rated more socially competent later, a moderate relationship"],"answer":3,"sec":"3","topic":"3.6","tag":"3.6 Correlation","stim":"s1","ex":{"idea":"r = .38 is a moderate positive correlation: higher on one variable tends to go with higher on the other, but it does not show cause.","steps":["Positive: secure attachment goes with higher later social competence.",".38 is moderate, a tendency rather than a rule."],"others":{"0":"claims causation and certainty that a moderate correlation cannot support.","1":"r = .38 is positive and moderate.","2":"attachment was measured at age 1, before teachers rated the children."}}},{"n":15,"prompt":"A high-school junior tries out different friend groups, styles, and career goals while wondering who she really is. Erikson would say she is in the stage of","options":["identity vs. role confusion","intimacy vs. isolation","competence vs. inferiority","autonomy vs. shame and doubt"],"answer":0,"sec":"3","topic":"3.6","tag":"3.6 Erikson","ex":{"idea":"Erikson's stage for adolescence is identity vs. role confusion: teens try out roles and values to form a stable sense of self.","steps":["She tries different friend groups, styles, and career goals while asking who she really is.","Searching for a self: identity vs. role confusion."],"others":{"1":"is young adulthood, forming close relationships.","2":"(industry vs. inferiority) is the school-age stage of mastering skills.","3":"is the toddler stage of gaining independence."}}},{"n":16,"prompt":"Parents who are loving but set almost no rules or limits are","options":["authoritative","authoritarian","permissive","neglectful"],"answer":2,"sec":"3","topic":"3.6","tag":"3.6 Parenting","ex":{"idea":"Baumrind's parenting styles combine warmth and demands: authoritative (warm + firm limits), authoritarian (strict, little warmth), permissive (warm, few demands), neglectful (neither).","steps":["Loving = high warmth.","Almost no rules = low demands. High warmth, low demands: permissive."],"others":{"0":"parents are warm <i>and<\/i> set clear limits.","1":"parents set strict rules with little warmth.","3":"parents are neither warm nor demanding; these parents are loving."}}},{"n":17,"prompt":"A dog that has heard thunder during many storms now trembles when the sky darkens. In this example, the thunder is the","options":["conditioned stimulus","unconditioned stimulus","conditioned response","neutral stimulus"],"answer":1,"sec":"4","topic":"3.7","tag":"3.7 Classical","ex":{"idea":"In classical conditioning, an unconditioned stimulus (UCS) naturally triggers a response; a neutral stimulus paired with it becomes a conditioned stimulus (CS).","steps":["Thunder naturally makes the dog tremble: UCS.","The darkening sky, repeatedly paired with thunder, is now the CS."],"others":{"0":"is the darkening sky, which triggers trembling only because of learning.","2":"is the trembling to the dark sky, a response, not a stimulus.","3":"was the dark sky before conditioning; thunder was never neutral."}}},{"n":18,"prompt":"After being bitten by a German shepherd, a child becomes afraid of all large dogs. This is","options":["discrimination","extinction","higher-order conditioning","generalization"],"answer":3,"sec":"4","topic":"3.7","tag":"3.7 Generalization","ex":{"idea":"Stimulus generalization is responding to stimuli similar to the conditioned stimulus.","steps":["The original CS is one German shepherd.","The fear spreads to all large dogs: generalization."],"others":{"0":"is the opposite: responding only to the specific stimulus and not to similar ones.","1":"is the weakening of a response when the CS is no longer paired with the UCS.","2":"is a CS being used to condition a new neutral stimulus."}}},{"n":19,"prompt":"A therapist has a client repeatedly enter elevators without anything bad happening until the client’s panic fades. In classical-conditioning terms, the therapist is producing","options":["extinction","acquisition","spontaneous recovery","shaping"],"answer":0,"sec":"4","topic":"3.7","tag":"3.7 Extinction","ex":{"idea":"Extinction in classical conditioning: presenting the conditioned stimulus repeatedly without the unconditioned stimulus weakens the conditioned response.","steps":["Elevators (CS) are presented again and again with nothing bad happening (no UCS).","The panic (CR) fades: extinction. This is the basis of exposure therapy."],"others":{"1":"is the initial learning of the CS–UCS link.","2":"is an extinguished response suddenly reappearing after a pause.","3":"is an operant technique of reinforcing closer and closer approximations."}}},{"n":20,"prompt":"A manager gives employees a &#36;50 bonus for every month without a safety violation, and employees begin following safety rules more consistently. The bonus is","options":["negative reinforcement","positive punishment","positive reinforcement","a primary reinforcer"],"answer":2,"sec":"4","topic":"3.8","tag":"3.8 Reinforcement","ex":{"idea":"Reinforcement increases a behavior. Positive means adding something; negative means removing something.","steps":["The bonus is added.","Safety-rule following increases: positive reinforcement."],"others":{"0":"increases behavior by removing something unpleasant; here something pleasant is added.","1":"adds something unpleasant to decrease behavior.","3":"satisfies a biological need (food, water); money is a secondary reinforcer."}}},{"n":21,"prompt":"A strawberry picker is paid &#36;5 for every full crate. She is on a","options":["variable ratio schedule","fixed ratio schedule","fixed interval schedule","variable interval schedule"],"answer":1,"sec":"4","topic":"3.8","tag":"3.8 Schedules","ex":{"idea":"Ratio schedules reinforce after a number of responses; interval schedules after an amount of time. Fixed means the number or time stays constant.","steps":["She is paid for every full crate, a set amount of work.","Constant number of responses: fixed ratio."],"others":{"0":"reinforces after an unpredictable number of responses, like a slot machine.","2":"reinforces the first response after a set time, like a weekly paycheck.","3":"reinforces after unpredictable time periods, like checking for a text."}}},{"n":22,"prompt":"Students who know a quiz is given every Friday study little early in the week and cram on Thursday. This pattern is typical of a","options":["variable ratio schedule","continuous schedule","variable interval schedule","fixed interval schedule"],"answer":3,"sec":"4","topic":"3.8","tag":"3.8 Schedules","ex":{"idea":"A fixed-interval schedule reinforces the first response after a set time, producing a scalloped pattern: little responding early, a spike near the deadline.","steps":["The quiz comes every Friday, a fixed time.","Studying spikes on Thursday: the typical fixed-interval scallop."],"others":{"0":"produces high, steady responding, not deadline cramming.","1":"reinforces every response; studying is not rewarded every time.","2":"uses unpredictable timing (pop quizzes), which produces steady studying."}}},{"n":23,"prompt":"After failing several tests no matter how much he studied, Eli stops studying even in a new class where effort would pay off. This is","options":["learned helplessness","instinctive drift","latent learning","insight"],"answer":0,"sec":"4","topic":"3.8","tag":"3.8 Learned helplessness","ex":{"idea":"Learned helplessness: after repeated uncontrollable bad outcomes, a person stops trying, even when effort would now succeed.","steps":["Eli failed no matter how hard he studied: the outcome felt uncontrollable.","He stops trying even in a new class where effort pays: learned helplessness."],"others":{"1":"is animals reverting to instinctive behavior despite training.","2":"is learning that is not shown until there is an incentive.","3":"is a sudden realization of a solution."}}},{"n":24,"prompt":"Patients in a hospital ward earn tokens for completing chores and trade them for snacks and privileges. The tokens are","options":["primary reinforcers","punishers","secondary reinforcers","unconditioned stimuli"],"answer":2,"sec":"4","topic":"3.8","tag":"3.8 Secondary reinforcers","ex":{"idea":"Primary reinforcers satisfy biological needs (food, water); secondary (conditioned) reinforcers gain value through association with primary ones (money, tokens).","steps":["Tokens have no value in themselves.","They are valuable only because they buy snacks and privileges: secondary reinforcers (a token economy)."],"others":{"0":"are naturally rewarding, such as the snacks themselves, not the tokens.","1":"decrease behavior; tokens increase chore completion.","3":"is a classical-conditioning term; this is operant reinforcement."}}},{"n":25,"prompt":"After staring at a puzzle for several minutes, Lena suddenly sees the solution and solves it immediately. This is","options":["latent learning","insight learning","shaping","observational learning"],"answer":1,"sec":"4","topic":"3.9","tag":"3.9 Insight","ex":{"idea":"Insight learning is the sudden realization of a problem's solution, as in Köhler's chimpanzees.","steps":["Lena stares at the puzzle with no progress.","The solution appears suddenly and she solves it at once: insight."],"others":{"0":"is learning that stays hidden until there is a reason to show it.","2":"is reinforcing successive approximations, a gradual process.","3":"is learning by watching others."}}}],"fr":[{"n":2,"mode":"points","kind":"Evidence-Based Question","mins":45,"head":"Evidence-Based Question &middot; 7 points &middot; 45 minutes","guide":[],"stem":"<p><b>Directions.<\/b> Read the three summarized sources (fictional, written for practice) and answer the prompt. Cite sources by author and year.<\/p><p><b>Prompt.<\/b> Using evidence from at least two sources, develop and justify an argument about the most effective way for adults to reduce children’s problem behavior.<\/p><p><b>Source 1.<\/b> Ferreira &amp; Odum (2022). <i>Method<\/i>: Meta-analysis of 61 longitudinal studies (total <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>N<\/mi><mo>≈<\/mo><mn>140,000<\/mn><\/mrow><annotation encoding=\"application/x-tex\">N \\approx 140{,}000<\/annotation><\/semantics><\/math><\/span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"><\/span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">N<\/span><span class=\"mspace\" style=\"margin-right:0.2778em;\"><\/span><span class=\"mrel\">≈<\/span><span class=\"mspace\" style=\"margin-right:0.2778em;\"><\/span><\/span><span class=\"base\"><span class=\"strut\" style=\"height:0.8389em;vertical-align:-0.1944em;\"><\/span><span class=\"mord\">140<\/span><span class=\"mord\"><span class=\"mpunct\">,<\/span><\/span><span class=\"mord\">000<\/span><\/span><\/span><\/span> children, 13 countries). <i>Results<\/i>: Physical punishment (spanking) at one time point predicted <i>more<\/i> aggression and rule-breaking two to five years later (average <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>r<\/mi><mo>=<\/mo><mn>.21<\/mn><\/mrow><annotation encoding=\"application/x-tex\">r = .21<\/annotation><\/semantics><\/math><\/span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"><\/span><span class=\"mord mathnormal\" style=\"margin-right:0.02778em;\">r<\/span><span class=\"mspace\" style=\"margin-right:0.2778em;\"><\/span><span class=\"mrel\">=<\/span><span class=\"mspace\" style=\"margin-right:0.2778em;\"><\/span><\/span><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em;\"><\/span><span class=\"mord\">.21<\/span><\/span><\/span><\/span>), even after controlling for earlier behavior. No study found that spanking improved long-term compliance.<\/p><p><b>Source 2.<\/b> Nakamura (2023). <i>Participants<\/i>: 24 second-grade classrooms in Japan. <i>Method<\/i>: Experiment. Classrooms were randomly assigned to a reinforcement program (teachers gave specific praise and points exchangeable for class privileges when students followed rules) or to usual practice. <i>Results<\/i>: After 10 weeks, observed disruptive behaviors fell 41% in program classrooms and 4% in control classrooms (<span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>p<\/mi><mo>&lt;<\/mo><mn>.001<\/mn><\/mrow><annotation encoding=\"application/x-tex\">p &lt; .001<\/annotation><\/semantics><\/math><\/span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7335em;vertical-align:-0.1944em;\"><\/span><span class=\"mord mathnormal\">p<\/span><span class=\"mspace\" style=\"margin-right:0.2778em;\"><\/span><span class=\"mrel\">&lt;<\/span><span class=\"mspace\" style=\"margin-right:0.2778em;\"><\/span><\/span><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em;\"><\/span><span class=\"mord\">.001<\/span><\/span><\/span><\/span>).<\/p><p><b>Source 3.<\/b> Abebe, Lund, &amp; Cho (2021). <i>Participants<\/i>: 830 families in Ethiopia, Norway, and South Korea. <i>Method<\/i>: Longitudinal; parenting style was rated from home observations at age 4 and self-regulation was tested at age 10. <i>Results<\/i>: Children of authoritative parents scored highest on self-regulation in all three countries; children of authoritarian parents scored lowest.<\/p>","parts":[{"label":"A","max":1,"prompt":"Propose a specific and defensible claim based in psychological science that responds to the prompt.","solution":"<p><b>Earns credit:<\/b> “Reinforcing desired behavior within warm, rule-based (authoritative) parenting reduces children’s problem behavior more effectively than physical punishment.”<\/p>","rubric":"<p><b>Common miss:<\/b> “Discipline matters”; a claim the sources cannot support (“spanking always causes violence”).<\/p><p>Worth 1 point. Give yourself full credit only if your answer does what the model does.<\/p>"},{"label":"B(i)","max":1,"prompt":"Support your claim using at least one piece of specific and relevant evidence from one of the sources.","solution":"<p><b>Earns credit:<\/b> Nakamura (2023): random assignment to a praise-and-points program cut disruptive behavior 41% vs. 4% in control classrooms.<\/p>","rubric":"<p><b>Common miss:<\/b> “A study showed rewards work” with no source or numbers.<\/p><p>Worth 1 point. Give yourself full credit only if your answer does what the model does.<\/p>"},{"label":"B(ii)","max":2,"prompt":"Explain how the evidence from Part B(i) supports your claim using a psychological perspective, theory, concept, or research finding learned in AP Psychology.","solution":"<p><b>Earns credit:<\/b> 1 pt: links evidence to claim. 1 pt: course concept applied, e.g., <i>positive reinforcement<\/i> and <i>secondary reinforcers<\/i> (points) increase rule-following; the random assignment allows a causal conclusion.<\/p>","rubric":"<p><b>Common miss:<\/b> Defining reinforcement in general without tying it to the classroom result.<\/p><p>Worth 2 points. Give yourself full credit only if your answer does what the model does.<\/p>"},{"label":"C(i)","max":1,"prompt":"Support your claim using an additional piece of specific and relevant evidence from a different source.","solution":"<p><b>Earns credit:<\/b> Ferreira &amp; Odum (2022): spanking predicted more aggression two to five years later (<span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>r<\/mi><mo>=<\/mo><mn>.21<\/mn><\/mrow><annotation encoding=\"application/x-tex\">r = .21<\/annotation><\/semantics><\/math><\/span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"><\/span><span class=\"mord mathnormal\" style=\"margin-right:0.02778em;\">r<\/span><span class=\"mspace\" style=\"margin-right:0.2778em;\"><\/span><span class=\"mrel\">=<\/span><span class=\"mspace\" style=\"margin-right:0.2778em;\"><\/span><\/span><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em;\"><\/span><span class=\"mord\">.21<\/span><\/span><\/span><\/span>) across 61 studies. <i>Or<\/i> Abebe et al. (2021): children of authoritative parents had the highest self-regulation in three countries.<\/p>","rubric":"<p><b>Common miss:<\/b> Second fact from the same source used in B.<\/p><p>Worth 1 point. Give yourself full credit only if your answer does what the model does.<\/p>"},{"label":"C(ii)","max":2,"prompt":"Explain how the evidence from Part C(i) supports your claim using a different psychological perspective, theory, concept, or research finding learned in AP Psychology.","solution":"<p><b>Earns credit:<\/b> 1 pt: links to claim. 1 pt: a different concept, e.g., <i>observational learning<\/i> (children model the aggression they experience, as in Bandura’s Bobo doll study); <i>positive punishment<\/i> suppresses behavior short-term without teaching alternatives; or <i>authoritative parenting<\/i>. A strong answer notes these data are correlational, so they support but cannot prove causation.<\/p>","rubric":"<p><b>Common miss:<\/b> Saying the meta-analysis proves spanking <i>causes<\/i> aggression.<\/p><p>Worth 2 points. Give yourself full credit only if your answer does what the model does.<\/p>"}]}]}</script>
+<script>
+(function(){
+"use strict";
+var DATA = JSON.parse(document.getElementById("data").textContent);
+var META = DATA.meta, MC = DATA.mc, FR = DATA.fr || [], TOP = DATA.topics || {}, SEC = DATA.sections || {}, STIM = DATA.stims || {}, BY = {};
+MC.forEach(function(q){ BY[q.n] = q; });
+var KEY = META.key, FKEY = META.key + ".fr", HAS_FR = FR.length > 0;
+
+function load(k, d){ try{ var v = localStorage.getItem(k); return v ? JSON.parse(v) : d; }catch(e){ return d; } }
+function save(k, v){ try{ localStorage.setItem(k, JSON.stringify(v)); }catch(e){} }
+function esc(s){ return String(s).replace(/[&<>"]/g, function(c){ return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]; }); }
+function shuffle(a){ a = a.slice(); for (var i = a.length - 1; i > 0; i--){ var j = Math.floor(Math.random() * (i + 1)); var t = a[i]; a[i] = a[j]; a[j] = t; } return a; }
+function range(n){ var a = []; for (var i = 0; i < n; i++) a.push(i); return a; }
+
+var S = load(KEY, null);
+if (!S || !S.phase || !S.order || S.order.some(function(n){ return !BY[n]; })) S = { phase: "setup", mode: "practice", shuffleQ: false, shuffleC: false, order: [], copt: {}, ans: {}, pos: 0, full: null };
+var confirmFinish = false;
+var mcEl = document.getElementById("mc");
+
+function start(nums){
+  var list = nums || MC.map(function(q){ return q.n; });
+  S.order = S.shuffleQ ? shuffle(list) : list.slice();
+  S.copt = {};
+  S.order.forEach(function(n){
+    var q = BY[n], idx = range(q.options.length);
+    S.copt[n] = (S.shuffleC && !q.fixed) ? shuffle(idx) : idx;
+  });
+  S.ans = {}; S.pos = 0; S.phase = "run"; confirmFinish = false;
+  save(KEY, S); render(); focusTop();
+}
+function focusTop(){ var t = document.querySelector(".tabs") || document.querySelector(".title"); if (t && t.getBoundingClientRect().top < 0) t.scrollIntoView(); }
+
+function stats(){
+  var right = 0, done = 0;
+  S.order.forEach(function(n){ if (n in S.ans){ done++; if (S.ans[n] === BY[n].answer) right++; } });
+  return { right: right, done: done, total: S.order.length };
+}
+function topicShort(t){ return (META.topicPrefix || "") + t; }
+function topicLabel(t){ return topicShort(t) + ", " + TOP[t].name; }
+function guideLink(t, short){
+  var g = TOP[t], txt = short ? g.name : topicLabel(t);
+  return (META.guide && g.page) ? '<a href="' + META.guide + "#page=" + g.page + '">' + txt + "</a>" : txt;
+}
+function topicLinks(ts){
+  ts = ts.filter(function(t){ return TOP[t]; });
+  if (!ts.length || !META.guide) return "";
+  return '<p class="links">Review ' + ts.map(function(t){ return guideLink(t); }).join(" &middot; ") + " in " + META.guideName + "</p>";
+}
+function explain(q, picked){
+  var e = q.ex, h = '<div class="why"><p>' + e.idea + "</p>";
+  if (e.steps.length) h += '<ol class="steps">' + e.steps.map(function(s){ return "<li>" + s + "</li>"; }).join("") + "</ol>";
+  var rest = range(q.options.length).filter(function(i){ return i !== q.answer; });
+  if (typeof picked === "number" && picked !== q.answer) rest = [picked].concat(rest.filter(function(i){ return i !== picked; }));
+  h += '<p class="why-h sc">Why not the others</p><ul class="others">' + rest.map(function(i){
+    return "<li>&ldquo;" + q.options[i] + "&rdquo;" + (i === picked ? '<span class="tag">your answer</span>' : "") + " &mdash; " + e.others[i] + "</li>";
+  }).join("") + "</ul></div>";
+  return h;
+}
+function table(q){ return q.table ? '<div class="bt-wrap">' + q.table + "</div>" : ""; }
+function stim(q){ var s = q.stim && STIM[q.stim]; return s ? '<div class="stim">' + (s.title ? '<p class="stim-h sc">' + s.title + "</p>" : "") + s.html + "</div>" : ""; }
+function promptHtml(q){
+  return stim(q) + (q.fig || "") + '<div class="q-prompt"><p>' + q.prompt + "</p>" + (q.ask || META.ask ? '<p class="q-ask">' + (q.ask || META.ask) + "</p>" : "") + "</div>" + table(q);
+}
+
+function renderSetup(){
+  mcEl.innerHTML =
+    '<div class="setup">' +
+      '<h2>How do you want to take it?</h2>' +
+      '<div class="choice-row">' +
+        '<button type="button" class="choice" data-mode="practice" aria-pressed="' + (S.mode === "practice") + '"><b>Practice</b><span>See the answer and why after each question</span></button>' +
+        '<button type="button" class="choice" data-mode="exam" aria-pressed="' + (S.mode === "exam") + '"><b>Exam</b><span>Answer everything, then see your score</span></button>' +
+      '</div>' +
+      '<div class="checks">' +
+        '<label><input type="checkbox" id="opt-sq"' + (S.shuffleQ ? " checked" : "") + '> Shuffle questions</label>' +
+        '<label><input type="checkbox" id="opt-sc"' + (S.shuffleC ? " checked" : "") + '> Shuffle answer choices</label>' +
+      '</div>' +
+      '<div class="setup-actions"><button type="button" class="btn btn--solid btn--lg" id="go">Start' + (HAS_FR ? " multiple choice" : "") + '</button></div>' +
+      '<p class="note">' + META.setupNote + " Keyboard: 1&ndash;" + Math.max.apply(null, MC.map(function(q){ return q.options.length; })) + " to answer, &larr; &rarr; to move, Enter for next.</p>" +
+    '</div>';
+  mcEl.querySelectorAll(".choice").forEach(function(b){ b.onclick = function(){ S.mode = b.dataset.mode; render(); }; });
+  document.getElementById("opt-sq").onchange = function(e){ S.shuffleQ = e.target.checked; };
+  document.getElementById("opt-sc").onchange = function(e){ S.shuffleC = e.target.checked; };
+  document.getElementById("go").onclick = function(){ start(); };
+}
+
+function renderRun(){
+  var n = S.order[S.pos], q = BY[n], st = stats(), practice = S.mode === "practice";
+  var picked = (n in S.ans) ? S.ans[n] : null, locked = practice && picked !== null;
+  var nav = S.order.map(function(m, i){
+    var c = [];
+    if (m in S.ans){ if (practice) c.push(S.ans[m] === BY[m].answer ? "is-right" : "is-wrong"); else c.push("is-answered"); }
+    if (i === S.pos) c.push("is-current");
+    return '<button type="button" class="' + c.join(" ") + '" data-go="' + i + '" aria-label="Question ' + (i + 1) + '"' + (i === S.pos ? ' aria-current="step"' : "") + ">" + (i + 1) + "</button>";
+  }).join("");
+  var opts = S.copt[n].map(function(oi, k){
+    var cls = ["opt"], mark = "";
+    if (locked){
+      if (oi === q.answer){ cls.push("is-right"); mark = oi === picked ? "&check; your answer" : "&check; correct"; }
+      else if (oi === picked){ cls.push("is-wrong"); mark = "&cross; your answer"; }
+      else cls.push("is-dim");
+    } else if (oi === picked) cls.push("is-picked");
+    return '<li><button type="button" class="' + cls.join(" ") + '" data-opt="' + oi + '"' + (locked ? " disabled" : "") + '><span class="kbd">' + (k + 1) + "</span><span>" + q.options[oi] + '</span><span class="mark">' + mark + "</span></button></li>";
+  }).join("");
+  var fb = "";
+  if (locked){
+    var ok = picked === q.answer, ans = q.options[q.answer];
+    fb = '<div class="fb' + (ok ? "" : " is-wrong") + '"><p class="verdict" role="status">' + (ok ? "Correct." : "Not quite. The answer is &ldquo;" + ans + "&rdquo;" + (/[.?!]$/.test(ans) ? "" : ".")) + "</p>" + explain(q, picked) + topicLinks([q.topic]) + "</div>";
+  }
+  var last = S.pos === S.order.length - 1, allDone = st.done === st.total;
+  var nextBtn = last
+    ? '<button type="button" class="btn btn--solid" id="finish">' + (practice ? "See results" : "Finish test") + "</button>"
+    : '<button type="button" class="btn btn--solid" id="next">Next &rarr;</button>';
+  var finishEarly = (!last && !practice) ? '<button type="button" class="btn" id="finish">Finish test</button>' : (!last && practice && allDone ? '<button type="button" class="btn" id="finish">See results</button>' : "");
+  var conf = "";
+  if (confirmFinish){
+    var left = st.total - st.done;
+    conf = '<div class="confirm"><p>' + left + " question" + (left === 1 ? " is" : "s are") + " unanswered and will be marked wrong. Finish anyway?</p>" +
+      '<button type="button" class="btn" id="conf-no">Keep going</button><button type="button" class="btn btn--solid" id="conf-yes">Finish</button></div>';
+  }
+  var eyebrow = "Question " + q.n + (SEC[q.sec] ? " &middot; " + SEC[q.sec] : "") + (q.tag ? " &middot; " + q.tag : (q.topic ? " &middot; " + topicShort(q.topic) : ""));
+  mcEl.innerHTML =
+    '<div class="bar"><span>Question ' + (S.pos + 1) + " of " + st.total + " &middot; " + (practice ? "Practice" : "Exam") + " mode</span><span>" +
+      (practice ? st.right + " correct of " + st.done + " answered" : st.done + " of " + st.total + " answered") + "</span></div>" +
+    '<div class="track"><span style="width:' + (st.done / st.total * 100) + '%"></span></div>' +
+    '<nav class="nav" aria-label="Questions">' + nav + "</nav>" +
+    '<article class="q">' +
+      '<p class="q-eyebrow sc">' + eyebrow + "</p>" +
+      promptHtml(q) +
+      '<ol class="opts">' + opts + "</ol>" + fb +
+      '<div class="step"><button type="button" class="btn" id="prev"' + (S.pos === 0 ? " disabled" : "") + '>&larr; Back</button><span class="step-right">' + finishEarly + nextBtn + "</span></div>" +
+      conf +
+    "</article>" +
+    '<p class="keys"><span class="kbd">1</span>&ndash;<span class="kbd">' + q.options.length + '</span> answer &nbsp; <span class="kbd">&larr;</span> <span class="kbd">&rarr;</span> move &nbsp; <span class="kbd">Enter</span> next</p>' +
+    '<p class="restart-line"><a href="#" id="restart">Start over</a> <span class="muted">&middot; progress is saved in this browser</span></p>';
+
+  mcEl.querySelectorAll("[data-go]").forEach(function(b){ b.onclick = function(){ go(+b.dataset.go); }; });
+  mcEl.querySelectorAll("[data-opt]").forEach(function(b){ b.onclick = function(){ pick(+b.dataset.opt); }; });
+  bind("prev", function(){ go(S.pos - 1); });
+  bind("next", function(){ go(S.pos + 1); });
+  bind("finish", finish);
+  bind("conf-no", function(){ confirmFinish = false; render(); });
+  bind("conf-yes", function(){ confirmFinish = false; showResults(); });
+  bind("restart", function(e){ e.preventDefault(); S.phase = "setup"; save(KEY, S); render(); });
+}
+function bind(id, fn){ var el = document.getElementById(id); if (el) el.onclick = fn; }
+
+function pick(oi){
+  var n = S.order[S.pos];
+  if (S.mode === "practice" && (n in S.ans)) return;
+  S.ans[n] = oi; save(KEY, S); render();
+  if (S.mode === "practice"){ var fb = mcEl.querySelector(".fb"); if (fb && fb.getBoundingClientRect().bottom > innerHeight) fb.scrollIntoView({ block: "nearest" }); }
+}
+function go(i){
+  if (i < 0 || i >= S.order.length) return;
+  S.pos = i; confirmFinish = false; save(KEY, S); render();
+  var q = mcEl.querySelector(".q"); if (q && q.getBoundingClientRect().top < 0) q.scrollIntoView();
+}
+function finish(){
+  var st = stats();
+  if (st.done < st.total && !confirmFinish){ confirmFinish = true; render(); var c = mcEl.querySelector(".confirm"); if (c) c.scrollIntoView({ block: "nearest" }); return; }
+  showResults();
+}
+function showResults(){
+  S.phase = "results";
+  if (S.order.length === MC.length) S.full = stats().right;
+  save(KEY, S); render(); if (HAS_FR) renderFR(); focusTop();
+}
+
+/* composite score (only when the document defines one) */
+function frTotal(){
+  var t = 0;
+  for (var i = 0; i < FR.length; i++){ var s = frScore(FR[i]); if (s === null) return null; t += s; }
+  return t;
+}
+function frMax(){ return FR.reduce(function(a, f){ return a + frItemMax(f); }, 0); }
+function compositeHtml(){
+  var C = META.composite;
+  if (!C || !HAS_FR) return "";
+  var mc = (typeof S.full === "number") ? S.full : null, fr = frTotal(), fm = frMax(), mm = MC.length;
+  if (mc === null && fr === null) return "";
+  var lines = [];
+  if (mc === null) lines.push("Free response: <b>" + fr + " / " + fm + "</b>. Take the full multiple-choice part to get your composite score.");
+  else if (fr === null) lines.push("Multiple choice: <b>" + mc + " / " + mm + "</b>. Write and mark every free-response question to get your composite score.");
+  else {
+    var c = Math.round(C.mcWeight * mc / mm + C.frWeight * fr / fm), band = "";
+    for (var i = 0; i < C.bands.length; i++){ if (c >= C.bands[i][0]){ band = C.bands[i][1]; break; } }
+    lines.push("Composite score: <b>" + c + " / " + (C.mcWeight + C.frWeight) + "</b> &nbsp;<span class=\"muted\">= " + C.mcWeight + " &times; " + mc + "/" + mm + " + " + C.frWeight + " &times; " + fr + "/" + fm + "</span>");
+    if (band) lines.push(band);
+  }
+  return '<div class="composite" role="status">' + lines.map(function(l){ return "<p>" + l + "</p>"; }).join("") + "</div>";
+}
+function targetHtml(st){
+  var T = META.target, B = META.bands, h = "";
+  if (st.total !== MC.length) return "";
+  if (T) h += '<p class="target">' + T.label + ": " + T.mc + " / " + MC.length + " &middot; " + (st.right >= T.mc ? "met" : (T.mc - st.right) + " short") + "</p>";
+  if (B) for (var i = 0; i < B.length; i++){ if (st.right >= B[i][0]){ h += '<p class="target">' + B[i][1] + "</p>"; break; } }
+  return h;
+}
+
+var resFilter = "all";
+function renderResults(){
+  var st = stats(), pct = Math.round(st.right / st.total * 100), fullRun = st.total === MC.length;
+  var missed = S.order.filter(function(n){ return S.ans[n] !== BY[n].answer; });
+  var rows = S.order.map(function(n, i){
+    var q = BY[n], a = S.ans[n], ok = a === q.answer;
+    if (resFilter === "missed" && ok) return "";
+    return '<li><details><summary><span class="res-n">' + (i + 1) + '.</span><span class="' + (ok ? "res-ok" : "res-bad") + '" aria-label="' + (ok ? "correct" : "wrong") + '">' + (ok ? "&check;" : "&cross;") + '</span><span class="res-sum">' + q.prompt + "</span></summary>" +
+      '<div class="res-body">' + stim(q) + (q.fig || "") + table(q) + '<p><span class="sc">Your answer:</span> ' + (a === undefined ? "<i>skipped</i>" : q.options[a]) + "</p>" +
+      (ok ? "" : '<p><span class="sc">Correct:</span> ' + q.options[q.answer] + "</p>") +
+      explain(q, a) + topicLinks([q.topic]) + "</div></details></li>";
+  }).join("");
+  var tally = {};
+  S.order.forEach(function(n){ var t = BY[n].topic; if (!t) return; tally[t] = tally[t] || { right: 0, total: 0 }; tally[t].total++; if (S.ans[n] === BY[n].answer) tally[t].right++; });
+  var trows = Object.keys(TOP).filter(function(t){ return tally[t]; }).map(function(t){
+    var x = tally[t], miss = x.total - x.right;
+    return "<tr><th scope=\"row\">" + topicShort(t) + "</th><td>" + x.right + " / " + x.total + "</td><td>" + guideLink(t, true) +
+      (miss >= 2 ? ' <span class="flag">&middot; reread this section</span>' : "") + "</td></tr>";
+  }).join("");
+  mcEl.innerHTML =
+    '<div class="results">' +
+      '<div class="score"><p class="score-big">' + st.right + " / " + st.total + "</p><p>" + pct + "% correct" + (fullRun ? "" : " &middot; retry of missed questions") + "</p>" + targetHtml(st) + "</div>" +
+      '<div class="res-actions">' +
+        (missed.length ? '<button type="button" class="btn btn--solid" id="retry">Retry the ' + missed.length + " missed</button>" : "") +
+        '<button type="button" class="btn" id="again">Take the full test again</button>' +
+        (HAS_FR ? '<button type="button" class="btn" id="to-fr">Go to free response</button>' : "") +
+      "</div>" +
+      compositeHtml() +
+      (trows ? '<div class="topics"><h2>' + (META.byTopic || "By topic") + '</h2><table class="bt"><thead><tr><th scope="col">' + (META.topicCol || "Topic") + '</th><th scope="col">Correct</th><th scope="col">' + (META.guideCol || "Guide section") + "</th></tr></thead><tbody>" + trows + "</tbody></table>" +
+        (META.topicNote ? '<p class="note" style="margin-top:6px">' + META.topicNote + "</p>" : "") + "</div>" : "") +
+      '<div class="res-filter"><h2>Review</h2><span><label><input type="checkbox" id="only-missed"' + (resFilter === "missed" ? " checked" : "") + "> Show missed only</label></span></div>" +
+      '<ul class="res-list">' + (rows || '<li><p class="note" style="padding:12px 0">Nothing missed.</p></li>') + "</ul>" +
+    "</div>";
+  bind("retry", function(){ start(missed); });
+  bind("again", function(){ S.phase = "setup"; save(KEY, S); render(); });
+  bind("to-fr", function(){ setTab("fr"); });
+  document.getElementById("only-missed").onchange = function(e){ resFilter = e.target.checked ? "missed" : "all"; render(); };
+}
+
+function render(){
+  if (S.phase === "run" && S.order.length) renderRun();
+  else if (S.phase === "results" && S.order.length) renderResults();
+  else { S.phase = "setup"; renderSetup(); }
+}
+
+/* free response: "epi" parts (E/P/I -> 0-4 per question) or "points" parts (0..max each) */
+var frEl = document.getElementById("fr"), F = load(FKEY, null);
+if (!F || typeof F !== "object") F = {};
+F.drafts = F.drafts || {}; F.marks = F.marks || {}; F.open = F.open || {};
+var LABELS = { 4: "Complete", 3: "Substantial", 2: "Developing", 1: "Minimal", 0: "" };
+function frItemMax(f){ return f.mode === "points" ? f.parts.reduce(function(a, p){ return a + p.max; }, 0) : 4; }
+function frScore(f){
+  if (f.mode === "points"){
+    var t = 0;
+    for (var j = 0; j < f.parts.length; j++){ var v = F.marks[f.n + f.parts[j].label]; if (v === undefined || v === "") return null; t += +v; }
+    return t;
+  }
+  var e = 0, p = 0;
+  for (var i = 0; i < f.parts.length; i++){
+    var m = F.marks[f.n + f.parts[i].label];
+    if (!m) return null;
+    if (m === "E") e++; else if (m === "P") p++;
+  }
+  if (e === 3) return 4;
+  if (e === 2 && p === 1) return 3;
+  if ((e === 2 && p === 0) || (e === 1 && p >= 1) || p === 3) return 2;
+  if ((e === 1 && p === 0) || (e === 0 && p === 2)) return 1;
+  return 0;
+}
+function words(t){ var m = t.trim().match(/\S+/g); return m ? m.length : 0; }
+var SCALE = '<details class="scale"><summary>How part scores convert to 0&ndash;4</summary><table class="bt"><thead><tr><th scope="col">Score</th><th scope="col">Label</th><th scope="col">Part scores (three parts, each E, P, or I)</th></tr></thead><tbody>' +
+  "<tr><td>4</td><td>Complete</td><td>three parts E</td></tr>" +
+  "<tr><td>3</td><td>Substantial</td><td>two parts E and one part P</td></tr>" +
+  "<tr><td>2</td><td>Developing</td><td>two E and no P; or one E and one or two P; or three P</td></tr>" +
+  "<tr><td>1</td><td>Minimal</td><td>one E and no P; or no E and two P</td></tr>" +
+  "<tr><td>0</td><td></td><td>anything less</td></tr></tbody></table></details>";
+function frScoreHtml(f){
+  var s = frScore(f), mx = frItemMax(f);
+  if (s === null) return '<span class="muted">Mark every part to score this question.</span>';
+  return "Score: <b>" + s + " / " + mx + "</b>" + (f.mode !== "points" && LABELS[s] ? " &middot; " + LABELS[s] : "");
+}
+function markButtons(f, p, id, m){
+  var vals = f.mode === "points" ? range(p.max + 1).map(String) : ["E", "P", "I"];
+  return vals.map(function(x){ return '<button type="button" data-mark="' + id + '" data-f="' + f.n + '" data-v="' + x + '" aria-pressed="' + (m === x) + '">' + x + "</button>"; }).join("");
+}
+function renderFR(){
+  if (!HAS_FR) return;
+  frEl.innerHTML = '<p class="fr-intro">' + META.frIntro + "</p>" +
+    FR.map(function(f){
+      var open = !!F.open[f.n];
+      var parts = f.parts.map(function(p){
+        var id = f.n + p.label, d = F.drafts[id] || "", m = (F.marks[id] === undefined ? "" : String(F.marks[id]));
+        var crit = f.mode === "points"
+          ? '<div class="crit-pts">' + p.rubric + "</div>"
+          : '<dl class="crit"><dt>E</dt><dd>if the response ' + p.e + "</dd><dt>P</dt><dd>if " + p.p + "</dd></dl>";
+        return '<div class="part"><p class="part-prompt"><b>(' + p.label + ")</b>" + p.prompt + "</p>" +
+          '<label class="sc" for="fr-' + id + '">Your answer to (' + p.label + ")</label>" +
+          '<textarea id="fr-' + id + '" data-fr="' + id + '" spellcheck="true">' + esc(d) + "</textarea>" +
+          '<p class="part-meta" id="wc-' + id + '">' + words(d) + " words &middot; saved in this browser</p>" +
+          '<div class="sol"' + (open ? "" : " hidden") + ' data-sol="' + f.n + '"><h3>Model solution (' + p.label + ")</h3><div>" + p.solution + "</div>" + crit +
+            '<div class="mark-row"><span>Your mark for (' + p.label + ")" + (f.mode === "points" ? ", out of " + p.max : "") + ':</span><span class="seg" role="group" aria-label="Mark for part ' + p.label + '">' + markButtons(f, p, id, m) + "</span></div></div></div>";
+      }).join("");
+      return '<article class="fr"><h2>Question ' + f.n + "<small>" + f.head + "</small></h2>" +
+        (f.stim ? stim(f) : "") + '<div class="fr-stem">' + f.stem + "</div>" + parts +
+        '<div class="fr-actions"><span class="fr-score" id="score-' + f.n + '">' + (open ? frScoreHtml(f) : "") + "</span>" +
+          '<button type="button" class="btn" data-open="' + f.n + '" aria-expanded="' + open + '">' + (open ? "Hide model solution" : "Show model solution and scoring") + "</button></div>" +
+        (open ? (f.mode === "points" ? "" : SCALE) + topicLinks(f.guide || []) : "") +
+        "</article>";
+    }).join("") + '<div id="fr-composite">' + compositeHtml() + "</div>";
+  frEl.querySelectorAll("textarea").forEach(function(t){
+    t.oninput = function(){ F.drafts[t.dataset.fr] = t.value; save(FKEY, F); document.getElementById("wc-" + t.dataset.fr).innerHTML = words(t.value) + " words &middot; saved in this browser"; };
+  });
+  frEl.querySelectorAll("[data-open]").forEach(function(b){
+    b.onclick = function(){ var n = b.dataset.open; F.open[n] = !F.open[n]; save(FKEY, F); renderFR(); var a = document.getElementById("score-" + n); if (a) a.closest(".fr").querySelector(".part").scrollIntoView({ block: "nearest" }); };
+  });
+  frEl.querySelectorAll("[data-mark]").forEach(function(b){
+    b.onclick = function(){
+      var id = b.dataset.mark; F.marks[id] = F.marks[id] === b.dataset.v ? "" : b.dataset.v; save(FKEY, F);
+      b.parentNode.querySelectorAll("button").forEach(function(x){ x.setAttribute("aria-pressed", String(F.marks[id] === x.dataset.v)); });
+      var f = FR.filter(function(x){ return String(x.n) === b.dataset.f; })[0];
+      document.getElementById("score-" + f.n).innerHTML = frScoreHtml(f);
+      document.getElementById("fr-composite").innerHTML = compositeHtml();
+      if (S.phase === "results") render();
+    };
+  });
+}
+
+/* tabs (only when there is a free-response part) */
+function setTab(t){
+  if (!HAS_FR) return;
+  var mc = t === "mc";
+  document.getElementById("tab-mc").setAttribute("aria-selected", String(mc));
+  document.getElementById("tab-fr").setAttribute("aria-selected", String(!mc));
+  mcEl.hidden = !mc; frEl.hidden = mc;
+  try{ history.replaceState(null, "", mc ? location.pathname : "#free-response"); }catch(e){}
+  focusTop();
+}
+if (HAS_FR){
+  document.getElementById("tab-mc").onclick = function(){ setTab("mc"); };
+  document.getElementById("tab-fr").onclick = function(){ setTab("fr"); };
+}
+
+/* keyboard */
+document.addEventListener("keydown", function(e){
+  if (e.metaKey || e.ctrlKey || e.altKey) return;
+  var tag = (e.target.tagName || "").toLowerCase();
+  if (tag === "textarea" || tag === "input") return;
+  if (mcEl.hidden || S.phase !== "run") return;
+  var n = S.order[S.pos], q = BY[n];
+  if (/^[1-9]$/.test(e.key)){ var k = +e.key - 1; if (k < q.options.length){ e.preventDefault(); pick(S.copt[n][k]); } }
+  else if (e.key === "ArrowRight"){ e.preventDefault(); go(S.pos + 1); }
+  else if (e.key === "ArrowLeft"){ e.preventDefault(); go(S.pos - 1); }
+  else if (e.key === "Enter" && tag !== "button" && tag !== "a"){ e.preventDefault(); if (S.pos < S.order.length - 1) go(S.pos + 1); else finish(); }
+});
+
+/* theme */
+var root = document.documentElement, tb = document.getElementById("theme-btn");
+function syncTheme(){ var dark = root.getAttribute("data-theme") === "dark"; tb.textContent = dark ? "Light mode" : "Dark mode"; tb.setAttribute("aria-pressed", String(dark)); }
+tb.onclick = function(){ var dark = root.getAttribute("data-theme") !== "dark"; root.setAttribute("data-theme", dark ? "dark" : "light"); try{ localStorage.setItem("apah.theme", dark ? "dark" : "light"); }catch(e){} syncTheme(); };
+syncTheme();
+
+render(); renderFR();
+if (HAS_FR && location.hash === "#free-response") setTab("fr");
+})();
+</script>
+</body>
+</html>
