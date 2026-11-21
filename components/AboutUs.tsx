@@ -46,11 +46,12 @@ const TEAM = [
   { name: "Albert Xu", role: "Web" },
   { name: "Gavin Lin", role: "Outreach" },
   { name: "Christopher Lin", role: "Diversity, Equity, Inclusion" },
-  { name: "Lachlan Taylor", role: "Intern" },
-  { name: "Orlando Jimenez", role: "Intern" },
-  { name: "Brandon Zhang", role: "Intern" },
-  { name: "Crystal Zhang", role: "Intern" },
-  { name: "Reed Truong", role: "Intern" },
+  { name: "Lachlan Taylor", role: "Workshop Assistant" },
+  { name: "Orlando Jimenez", role: "Workshop Assistant" },
+  { name: "Brandon Zhang", role: "Workshop Assistant" },
+  { name: "Crystal Zhang", role: "Workshop Assistant" },
+  { name: "Reed Truong", role: "Workshop Assistant" },
+  { name: "Zachary Lai", role: "Workshop Assistant" },
 ];
 
 export default function AboutUs() {
