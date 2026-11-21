@@ -252,7 +252,7 @@ a{color:var(--link);text-underline-offset:3px;text-decoration-thickness:.5px}
 var DATA = JSON.parse(document.getElementById("data").textContent);
 var META = DATA.meta, MC = DATA.mc, FR = DATA.fr || [], TOP = DATA.topics || {}, SEC = DATA.sections || {}, STIM = DATA.stims || {}, BY = {};
 MC.forEach(function(q){ BY[q.n] = q; });
-var KEY = META.key, FKEY = META.key + ".fr", HAS_FR = FR.length > 0;
+var KEY = META.key, FKEY = META.fkey || META.key + ".fr", HAS_FR = FR.length > 0;
 
 function load(k, d){ try{ var v = localStorage.getItem(k); return v ? JSON.parse(v) : d; }catch(e){ return d; } }
 function save(k, v){ try{ localStorage.setItem(k, JSON.stringify(v)); }catch(e){} }

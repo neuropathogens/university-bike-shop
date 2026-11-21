@@ -58,3 +58,7 @@ Every wrong choice must have a note in `ex.others`; the builder refuses a quiz o
   Long reaction equations are shown as display math so they never overflow a phone. The two energy-profile
   figures are crops of the PDF pages (`public/study/ap/ap-chemistry/tests/fig/`), rendered with
   `sips --resampleWidth 1800` from single pages split out with pypdf.
+- `ap_stats` — AP Statistics Unit 6 Practice Sets B and C (`tests/6b`, `tests/6c`), moved here from their
+  original one-off builder: `q_6x.py` (transcribed set), `ex_6x.py` (explanations), `checks_6x.py` (numeric
+  asserts). E/P/I free response and the 50/50 composite score with each set's bands. `fkey` keeps the
+  original localStorage keys.
