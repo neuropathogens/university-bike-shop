@@ -125,7 +125,7 @@ def page_data(z):
     }
     for q in z["mc"]:
         d = {k: q[k] for k in ("n", "prompt", "options", "answer") }
-        for k in ("sec", "topic", "tag", "fixed", "table", "fig", "ask", "stim"):
+        for k in ("sec", "topic", "tag", "fixed", "table", "fig", "ask", "stim", "labels"):
             if q.get(k):
                 d[k] = str(q[k]) if k == "sec" else q[k]
         d["ex"] = {"idea": q["ex"]["idea"], "steps": list(q["ex"].get("steps", [])),
@@ -188,7 +188,7 @@ def main(args):
             urls.add(z["url"])
             out, size, nmath = build_quiz(z, tpl)
             print(f"  {z['url']:<52} {len(z['mc']):>3} MC {len(z.get('fr', [])):>2} FR {size / 1024:>5.0f} KB {nmath:>4} math")
-            if z.get("pdf"):
+            if z.get("pdf") and z.get("manifest", True):
                 manifest[z["pdf"]] = z["url"]
         print(f"{fam}: {len(mod.QUIZZES)} quizzes")
     mpath.write_text(json.dumps(dict(sorted(manifest.items())), indent=1) + "\n")

@@ -1,0 +1,643 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light">
+<script>try{document.documentElement.setAttribute("data-theme",localStorage.getItem("apah.theme")==="dark"?"dark":"light")}catch(e){document.documentElement.setAttribute("data-theme","light")}</script>
+<title>APAH Vocabulary 2: Painting, drawing and printmaking</title>
+<meta name="description" content="AP Art History vocabulary practice, Painting, drawing and printmaking: 75 name-the-term questions, each explained with the glossary entry and what the wrong choices mean.">
+<link rel="icon" href="/favicon.ico" sizes="48x48" type="image/x-icon">
+<link rel="icon" href="/icon.svg" sizes="any" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-icon.png" sizes="180x180">
+<link rel="preload" href="/study/ap/ap-art-history/fonts/LM-regular.woff2" as="font" type="font/woff2" crossorigin>
+
+<style>
+@font-face{font-family:"Latin Modern";font-style:normal;font-weight:400;font-display:swap;src:url("/study/ap/ap-art-history/fonts/LM-regular.woff2") format("woff2")}
+@font-face{font-family:"Latin Modern";font-style:italic;font-weight:400;font-display:swap;src:url("/study/ap/ap-art-history/fonts/LM-italic.woff2") format("woff2")}
+@font-face{font-family:"Latin Modern";font-style:normal;font-weight:600 700;font-display:swap;src:url("/study/ap/ap-art-history/fonts/LM-bold.woff2") format("woff2")}
+@font-face{font-family:"Latin Modern";font-style:italic;font-weight:600 700;font-display:swap;src:url("/study/ap/ap-art-history/fonts/LM-bold-italic.woff2") format("woff2")}
+@font-face{font-family:"Latin Modern Mono";font-style:normal;font-weight:400 500;font-display:swap;src:url("/study/ap/ap-art-history/fonts/LM-mono.woff2") format("woff2")}
+@font-face{font-family:"Latin Modern Mono";font-style:normal;font-weight:600 700;font-display:swap;src:url("/study/ap/ap-art-history/fonts/LM-mono-bold.woff2") format("woff2")}
+
+:root{--bg:#fff;--fg:#000;--muted:#4a4a4a;--line:#c9c9c9;--plate:#f5f5f3;--hl:#fbe9a6;--link:#00008b;--ok:#1d5e20;--bad:#9b1c1c;
+  --serif:"Latin Modern","Computer Modern Serif","CMU Serif",Georgia,serif;--mono:"Latin Modern Mono","SFMono-Regular",Menlo,Consolas,monospace;
+  --gutter:clamp(16px,4vw,40px);color-scheme:light}
+:root[data-theme=dark]{--bg:#111110;--fg:#ecebe6;--muted:#a3a29c;--line:#34342f;--plate:#1b1b19;--hl:#4d4320;--link:#9db4ff;--ok:#8fd394;--bad:#ff9b9b;color-scheme:dark}
+*{box-sizing:border-box}
+html{background:var(--bg);scroll-padding-top:16px}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--serif);font-size:17px;line-height:1.5;font-kerning:normal;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+button,input,textarea{font:inherit;color:inherit}
+button{cursor:pointer}
+button:disabled{cursor:default}
+a{color:var(--link);text-underline-offset:3px;text-decoration-thickness:.5px}
+:focus-visible{outline:2px solid var(--link);outline-offset:2px}
+[hidden]{display:none!important}
+.sc{font-variant:small-caps;text-transform:lowercase;letter-spacing:.04em}
+.muted{color:var(--muted)}
+.katex{font-size:1.04em;text-rendering:auto}
+.katex-display{margin:.7em 0;overflow-x:auto;overflow-y:hidden;padding:2px 0}
+
+.runhead{display:flex;flex-wrap:wrap;justify-content:space-between;gap:4px 16px;max-width:1480px;margin:0 auto;padding:14px var(--gutter) 6px;font-size:14px;font-style:italic;color:var(--muted)}
+.runhead a{text-decoration:none}
+.runhead a:hover{text-decoration:underline}
+.runhead-actions{display:flex;flex-wrap:wrap;gap:4px 18px}
+.theme-btn{background:none;border:0;padding:0;font:inherit;font-style:italic;color:var(--link)}
+.theme-btn:hover{text-decoration:underline}
+.rule{max-width:1480px;margin:0 auto;padding-inline:var(--gutter)}
+.rule hr{margin:0;border:0;border-top:.5px solid var(--fg)}
+
+.wrap{max-width:860px;margin:0 auto;padding:0 var(--gutter) 80px}
+.title{text-align:center;padding:34px 0 22px}
+.title h1{margin:0;text-wrap:balance;font-size:clamp(32px,6vw,46px);line-height:1.1;font-weight:700}
+.title .sub{margin:8px 0 0;font-size:18px;font-variant:small-caps;letter-spacing:.03em}
+.title .meta{margin:4px 0 0;font-style:italic;color:var(--muted)}
+
+.tabs{display:flex;justify-content:center;gap:0;margin:0 0 26px;border-bottom:.5px solid var(--fg)}
+.tab{background:none;border:0;border-bottom:2.5px solid transparent;padding:8px 18px;margin-bottom:-1px;font-size:17px;color:var(--muted)}
+.tab[aria-selected=true]{color:var(--fg);border-bottom-color:var(--fg);font-weight:700}
+.tab:hover{color:var(--fg)}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:40px;padding:0 16px;border:1px solid var(--fg);background:var(--bg);font-family:var(--mono);font-size:14.5px;white-space:nowrap}
+.btn:hover:not(:disabled){background:var(--plate)}
+.btn:disabled{opacity:.35}
+.btn--solid{background:var(--fg);color:var(--bg)}
+.btn--solid:hover:not(:disabled){background:var(--fg);opacity:.85}
+.btn--lg{min-height:48px;font-size:15.5px;padding:0 22px}
+.kbd{display:inline-grid;place-items:center;min-width:22px;height:22px;padding:0 4px;border:1px solid currentColor;font-family:var(--mono);font-size:12px;opacity:.8}
+
+/* booktabs tables */
+.bt{border-collapse:collapse;margin:0 auto;font-variant-numeric:tabular-nums}
+.bt th,.bt td{padding:4px 12px;text-align:center;font-weight:400}
+.bt th[scope=row],.bt thead th:first-child{text-align:left}
+.bt thead tr{border-top:1px solid var(--fg);border-bottom:.5px solid var(--fg)}
+.bt tbody tr:last-child{border-bottom:1px solid var(--fg)}
+.bt-wrap{overflow-x:auto;margin:0 0 16px}
+
+/* setup */
+.setup{border-bottom:1.5px solid var(--fg);padding:4px 0 22px;display:grid;gap:18px}
+.setup h2,.results h2,.fr h2{margin:0;font-size:20px}
+.choice-row{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.choice{display:flex;flex-direction:column;align-items:flex-start;gap:2px;padding:12px 14px;border:1px solid var(--fg);background:var(--bg);text-align:left}
+.choice b{font-size:17px}
+.choice span{font-size:14.5px;font-style:italic;color:var(--muted)}
+.choice[aria-pressed=true]{background:var(--fg);color:var(--bg)}
+.choice[aria-pressed=true] span{color:var(--bg);opacity:.8}
+.checks{display:flex;flex-wrap:wrap;gap:8px 22px}
+.checks label{display:inline-flex;align-items:center;gap:8px;cursor:pointer}
+.checks input{width:17px;height:17px;margin:0;accent-color:var(--fg)}
+.setup-actions{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.note{margin:0;font-size:15px;color:var(--muted);font-style:italic}
+
+/* run */
+.bar{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:4px 16px;font-size:15px;color:var(--muted)}
+.track{height:3px;background:var(--line);margin:8px 0 14px}
+.track span{display:block;height:100%;background:var(--fg);transition:width .2s ease}
+.nav{display:grid;grid-template-columns:repeat(auto-fill,minmax(34px,1fr));gap:5px;margin:0 0 22px}
+.nav button{height:32px;padding:0;border:1px solid var(--line);background:var(--bg);font-family:var(--serif);font-size:14px;font-variant-numeric:tabular-nums}
+.nav button:hover{border-color:var(--fg)}
+.nav .is-answered{background:var(--plate);border-color:var(--fg)}
+.nav .is-right{background:var(--fg);color:var(--bg);border-color:var(--fg)}
+.nav .is-wrong{border:1.5px dashed var(--bad);color:var(--bad)}
+.nav .is-current{outline:2px solid var(--fg);outline-offset:1px}
+.q{border-top:1.5px solid var(--fg);padding-top:16px}
+.q-eyebrow{margin:0 0 6px;font-size:14px;color:var(--muted)}
+.q-prompt{margin:0 0 14px;font-size:20px;line-height:1.45;font-weight:400}
+.opts{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.opt{display:flex;align-items:center;gap:12px;width:100%;min-height:52px;padding:10px 14px;border:1px solid var(--fg);background:var(--bg);text-align:left;font-size:16.5px;line-height:1.4}
+.opt:hover:not(:disabled){background:var(--plate)}
+.opt .kbd{flex:none}
+.opt .mark{margin-left:auto;padding-left:6px;font-family:var(--mono);font-size:14px;white-space:nowrap}
+.opt.is-picked{border-width:2px;padding:9px 13px;background:var(--plate)}
+.opt.is-right{background:var(--fg);color:var(--bg);border-color:var(--fg)}
+.opt.is-wrong{border:1.5px dashed var(--bad);color:var(--bad);text-decoration:line-through;text-decoration-thickness:1px}
+.opt.is-wrong .mark,.opt.is-wrong .kbd{text-decoration:none}
+.opt.is-dim{opacity:.5}
+.fb{margin:14px 0 0;padding:12px 16px;border:.5px solid var(--fg);border-left:3px solid var(--ok)}
+.fb.is-wrong{border-left-color:var(--bad)}
+.fb p{margin:0}
+.fb .verdict{font-weight:700;margin-bottom:4px}
+.why p{margin:0 0 6px}
+.steps{margin:2px 0 8px;padding-left:22px}
+.steps li{margin:4px 0;padding-left:2px}
+.why .why-h{margin:10px 0 2px;font-size:14.5px;color:var(--muted)}
+.others{margin:0 0 4px;padding-left:20px}
+.others li{margin:5px 0}
+.others .tag{margin-left:6px;font-family:var(--mono);font-size:12.5px;color:var(--bad);white-space:nowrap}
+.links{margin-top:6px;font-size:15px}
+.step{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:10px;margin-top:20px}
+.step-right{display:flex;flex-wrap:wrap;gap:8px}
+.confirm{margin-top:14px;padding:12px 16px;border:1px solid var(--fg);display:flex;flex-wrap:wrap;align-items:center;gap:10px}
+.confirm p{margin:0;flex:1 1 220px}
+.keys{margin:18px 0 0;font-size:13.5px;color:var(--muted);text-align:center}
+.restart-line{margin:10px 0 0;font-size:14.5px;text-align:center}
+
+/* results */
+.results{padding-top:4px}
+.score{text-align:center;padding:10px 0 18px}
+.score-big{margin:0;font-size:clamp(48px,10vw,72px);font-weight:700;line-height:1;font-variant-numeric:tabular-nums}
+.score p{margin:6px 0 0}
+.res-actions{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin:0 0 22px}
+.res-filter{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:6px;border-bottom:1.5px solid var(--fg);padding-bottom:6px}
+.res-list{list-style:none;margin:0;padding:0}
+.res-list>li{border-bottom:.5px solid var(--line)}
+.res-list>li:last-child{border-bottom:1.5px solid var(--fg)}
+.res-list details{padding:10px 0}
+.res-list summary{display:grid;grid-template-columns:34px 22px minmax(0,1fr);gap:8px;cursor:pointer;list-style:none}
+.res-list summary::-webkit-details-marker{display:none}
+.res-n{font-weight:700;font-variant-numeric:tabular-nums}
+.res-ok{color:var(--ok);font-weight:700}
+.res-bad{color:var(--bad);font-weight:700}
+.res-body{padding:8px 0 4px 64px;font-size:15.5px}
+.res-body p{margin:0 0 4px}
+.res-body .bt-wrap{margin:4px 0 8px}
+.topics{margin:0 0 26px}
+.topics h2{margin:0 0 8px}
+.topics .bt{margin:0;width:100%}
+.topics .bt td:last-child,.topics .bt th:last-child{text-align:left}
+.topics .flag{color:var(--bad);font-style:italic}
+.composite{margin:0 0 26px;padding:12px 16px;border:.5px solid var(--fg);border-left:3px solid var(--fg)}
+.composite p{margin:0}
+.composite p+p{margin-top:4px}
+
+/* free response */
+.fr-intro{margin:0 0 6px;font-style:italic;color:var(--muted)}
+.fr{border-top:1.5px solid var(--fg);padding:18px 0 26px}
+.fr h2 small{font-weight:400;font-style:italic;color:var(--muted);font-size:15px;margin-left:6px}
+.fr-stem{margin:10px 0 6px;text-align:justify;hyphens:auto;-webkit-hyphens:auto}
+.part{margin:18px 0 0}
+.part-prompt{margin:0 0 8px}
+.part-prompt b{margin-right:4px}
+.part textarea{width:100%;min-height:150px;padding:12px 14px;border:1px solid var(--fg);border-radius:0;background:var(--bg);font-family:var(--serif);font-size:16.5px;line-height:1.55;resize:vertical}
+.part-meta{margin-top:4px;font-size:14px;color:var(--muted)}
+.sol{margin-top:12px;padding:12px 18px;border:.5px solid var(--fg)}
+.sol h3{margin:0 0 4px;font-size:15px}
+.sol p{margin:0 0 10px}
+.sol .crit{display:grid;grid-template-columns:28px minmax(0,1fr);gap:2px 8px;margin:0 0 10px;font-size:15.5px}
+.sol .crit dt{font-weight:700}
+.sol .crit dd{margin:0}
+.mark-row{display:flex;flex-wrap:wrap;align-items:center;gap:8px;font-size:15px}
+.seg{display:inline-flex}
+.seg button{min-width:44px;min-height:36px;padding:0 10px;border:1px solid var(--fg);background:var(--bg);font-family:var(--mono);font-size:14px}
+.seg button+button{border-left:0}
+.seg button[aria-pressed=true]{background:var(--fg);color:var(--bg)}
+.fr-actions{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:10px;margin-top:16px}
+.fr-score{font-size:16px}
+.fr-score b{font-variant-numeric:tabular-nums}
+.scale{margin-top:14px}
+.scale summary{cursor:pointer;font-size:15px;color:var(--muted);font-style:italic}
+.scale .bt{margin:8px 0 0}
+.scale .bt td:last-child,.scale .bt th:last-child{text-align:left}
+.foot{margin-top:40px;padding-top:12px;border-top:.5px solid var(--line);font-size:14px;color:var(--muted)}
+
+@media (max-width:640px){
+  .runhead-title{display:none}
+  .runhead-actions{width:100%;justify-content:space-between}
+  .title{padding:22px 0 16px}
+  .choice-row{grid-template-columns:1fr}
+  .q-prompt{font-size:18.5px}
+  .res-body{padding-left:0}
+  .keys{display:none}
+  .fr-stem{text-align:left}
+  .bt th,.bt td{padding:4px 7px}
+  .sol{padding:10px 12px}
+  .katex-display>.katex{font-size:.94em}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+@media print{.runhead,.rule,.tabs,.nav,.step,.keys,.restart-line,.res-actions{display:none!important}}
+/* generic quiz additions */
+.q-prompt p{margin:0}
+.q-prompt p+p{margin-top:8px}
+.q-ask{margin:10px 0 0!important;font-size:16px;font-style:italic;color:var(--muted)}
+.blank{display:inline-block;width:3.4em;height:1em;margin:0 .12em;border-bottom:1.5px solid currentColor;vertical-align:-.12em}
+.stim{position:relative;margin:0 0 16px;padding:12px 16px;border:.5px solid var(--fg);background:var(--plate);font-size:16.5px;line-height:1.55;max-height:60vh;overflow:auto}
+.stim-h{margin:0 0 6px!important;font-size:14px;color:var(--muted)}
+.stim p{margin:0 0 8px}
+.stim p:last-child{margin-bottom:0}
+u.ul{text-decoration-thickness:1px;text-underline-offset:3px}
+.qn{display:inline-block;min-width:1.4em;padding:0 .2em;margin:0 .15em;border:.5px solid var(--fg);font:600 11.5px/1.4 system-ui,-apple-system,sans-serif;text-align:center;vertical-align:.12em;font-variant-numeric:tabular-nums}
+.stim .qn[data-cur]{background:var(--fg);color:var(--bg)}
+.stim u[data-cur]{background:var(--hl);box-shadow:0 0 0 2px var(--hl)}
+.stim .ln{display:inline-block;min-width:1.3em;padding:0 .25em;margin-right:.25em;border:.5px solid var(--line);color:var(--muted);font:500 11px/1.4 system-ui,-apple-system,sans-serif;text-align:center;vertical-align:.12em;font-variant-numeric:tabular-nums}
+.stim .ln[data-cur]{background:var(--hl);color:var(--fg);border-color:var(--fg)}
+.stim-intro{font-style:italic;color:var(--muted);font-size:15px}
+.stim-sub{margin-top:12px!important}
+.stim-note{font-size:15px;color:var(--muted)}
+.fig .figcap{margin:0 0 6px;font-size:15px}
+.stim.free{max-height:none;overflow:visible}
+.bt th[colspan]{text-align:center}
+.stim .figcap{text-align:center;font-size:15px;margin:10px 0 4px}
+.stim .fig{margin:6px 0 10px}
+.stim .bt-wrap{margin:0 0 10px}
+.fig-img,.opt-img{max-width:100%;height:auto;background:#fff}
+.opt-img{display:block;max-width:140px}
+:root[data-theme=dark] .fig-img,:root[data-theme=dark] .opt-img{filter:invert(.92) hue-rotate(180deg)}
+.fig{margin:0 0 14px;text-align:center}
+.fig img{max-width:100%;height:auto;background:#fff}
+:root[data-theme=dark] .fig img{filter:invert(.92) hue-rotate(180deg)}
+.fig figcaption{font-size:14px;color:var(--muted);font-style:italic}
+.target{margin:4px 0 0;font-style:italic}
+.res-sum{display:block}
+.opt>span:nth-child(2){flex:1 1 auto;min-width:0;overflow-wrap:anywhere;-webkit-hyphens:auto;hyphens:auto}
+@media (max-width:640px){.opt .mark{white-space:normal;text-align:right;max-width:6.2em;line-height:1.25}}
+.sol>div{margin:0 0 10px}
+.crit-pts{margin:0 0 10px;font-size:15.5px}
+.crit-pts p{margin:0 0 4px}
+.crit-pts ul{margin:0 0 4px;padding-left:20px}
+</style>
+</head>
+<body>
+<div class="runhead"><span class="runhead-title">AP Art History &middot; Vocabulary &middot; Name the term</span><span class="runhead-actions"><a href="/study/#ap-art-history">&larr;&nbsp;Study Library</a><a href="/study/ap/ap-art-history/apah-vocabulary.pdf">PDF version</a><button type="button" class="theme-btn" id="theme-btn">Dark mode</button></span></div>
+<div class="rule"><hr></div>
+
+<main class="wrap">
+  <header class="title">
+    <h1>Painting, drawing and printmaking</h1>
+    <p class="sub">AP Art History Vocabulary &middot; Section 2 of 8</p>
+    <p class="meta">75 questions (Nos. 66&ndash;140) &middot; name the term from its definition</p>
+  </header>
+
+  <section id="mc"></section>
+  <section id="fr" role="tabpanel" aria-labelledby="tab-fr" hidden></section>
+
+  <p class="foot">From <a href="/study/ap/ap-art-history/apah-vocabulary.pdf"><i>APAH Vocabulary: Every Term, Explained</i></a> (PDF), Section 10. Answers are the PDF&rsquo;s key; each explanation is the term&rsquo;s own glossary entry, plus what each wrong choice means. Your answers are saved only in this browser.</p>
+</main>
+
+<script id="data" type="application/json">{"meta":{"key":"study.apah-vocab.2.v1","ask":"Which term does this define?","setupNote":"Sections: <a href=\"/study/ap/ap-art-history/tests/vocab-1/\">1<\/a> &middot; <b>2<\/b> &middot; <a href=\"/study/ap/ap-art-history/tests/vocab-3/\">3<\/a> &middot; <a href=\"/study/ap/ap-art-history/tests/vocab-4/\">4<\/a> &middot; <a href=\"/study/ap/ap-art-history/tests/vocab-5/\">5<\/a> &middot; <a href=\"/study/ap/ap-art-history/tests/vocab-6/\">6<\/a> &middot; <a href=\"/study/ap/ap-art-history/tests/vocab-7/\">7<\/a> &middot; <a href=\"/study/ap/ap-art-history/tests/vocab-8/\">8<\/a>. The wrong choices come from the same category, so they look plausible: match the definition’s key words.","topicPrefix":"Section ","topicCol":"Section","guideCol":"In the glossary","byTopic":"Score","topicNote":"Reread the glossary section for every term you missed, then retry the missed questions.","guide":"/study/ap/ap-art-history/apah-vocabulary.pdf","guideName":"the glossary"},"topics":{"2":{"name":"Painting, drawing and printmaking","page":13}},"sections":{},"stims":{},"mc":[{"n":66,"prompt":"Burnt wood (or bone) used as a black drawing material. One of the oldest art materials.","options":["charcoal","Kufic","folding screen","sketch"],"answer":0,"topic":"2","ex":{"idea":"<b>charcoal<\/b>: Burnt wood (or bone) used as a black drawing material. One of the oldest art materials.","steps":["Think of the black stuff left in a campfire, used as a crayon.","Seen in: No. 1 Apollo 11 Stones.","Related terms: drawing, pigment, rock art."],"others":{"1":"means something else: An early, angular style of Arabic script with straight lines and sharp corners, used in the first centuries of Islam for copying the Qur’an and in architecture.","2":"means something else: A free-standing set of hinged panels, often painted, used to divide space in a room.","3":"means something else: A quick, rough drawing or painting used to try out an idea before a finished work."}}},{"n":67,"prompt":"Opaque watercolor: water-based paint with extra white or chalk added so it covers what is underneath, drying flat and matte.","options":["colophon","drawing","gouache","byōbu"],"answer":2,"topic":"2","ex":{"idea":"<b>gouache<\/b> (gwahsh): Opaque watercolor: water-based paint with extra white or chalk added so it covers what is underneath, drying flat and matte.","steps":["Think of poster paint.","Seen in: No. 142 The Jungle.","Related terms: watercolor, opaque watercolor, binder."],"others":{"0":"means something else: A note at the end of a book or scroll recording who made it, when, or who later admired it. In Chinese scrolls, later owners and viewers often added their own colophons.","1":"means something else: Making marks on a surface with a tool like pencil, charcoal, chalk or ink, usually emphasizing line. Drawings can be finished works or sketches for later projects.","3":"means something else: A Japanese folding screen made of hinged panels, often painted on gold-leafed paper, used to divide rooms and decorate homes."}}},{"n":68,"prompt":"A type of painting from colonial Mexico (1700s) showing families of mixed racial background in sets, each labeled with a category name. They recorded a colonial system of racial ranking.","options":["cut paper","wash","cross-hatching","casta painting"],"answer":3,"topic":"2","ex":{"idea":"<b>casta painting<\/b> (KAHS-tuh): A type of painting from colonial Mexico (1700s) showing families of mixed racial background in sets, each labeled with a category name. They recorded a colonial system of racial ranking.","steps":["Think of a chart that tries to label and rank people by ancestry.","Seen in: No. 97 Spaniard and Indian Produce a Mestizo.","Related terms: oil paint, canvas."],"others":{"0":"means something else: Shapes cut out of paper and arranged or pasted as a work of art. Kara Walker uses large black cut-paper silhouettes on white walls.","1":"means something else: A thin, watery layer of ink or paint brushed over an area to give a soft, even tone.","2":"means something else: Shading made by drawing sets of fine parallel lines that cross each other. The closer the lines, the darker the area."}}},{"n":69,"prompt":"Paint made with pigment mixed in a drying oil, usually linseed oil. It dries slowly, so artists can blend smoothly and build up thin glazes; it became the main European painting medium by the 1500s.","options":["roundel","cut paper","oil paint","broken color"],"answer":2,"topic":"2","ex":{"idea":"<b>oil paint<\/b>: Paint made with pigment mixed in a drying oil, usually linseed oil. It dries slowly, so artists can blend smoothly and build up thin glazes; it became the main European painting medium by the 1500s.","steps":["Think of a paint that stays wet long enough to keep fixing it for days.","Seen in: No. 68 The Arnolfini Portrait; No. 66 Merode Altarpiece; No. 80 Venus of Urbino.","Related terms: glaze (oil painting), tempera, canvas, impasto."],"others":{"0":"means something else: A circular frame or medallion containing a picture or design.","1":"means something else: Shapes cut out of paper and arranged or pasted as a work of art. Kara Walker uses large black cut-paper silhouettes on white walls.","3":"means something else: Painting with separate, unblended dabs of color placed side by side so they mix in the viewer’s eye instead of on the palette. A key Impressionist technique."}}},{"n":70,"prompt":"A painting made on a portable support, like canvas or panel, that can be moved and hung anywhere, as opposed to a mural fixed to a wall.","options":["easel painting","ignudo","unprimed canvas","letterpress"],"answer":0,"topic":"2","ex":{"idea":"<b>easel painting<\/b>: A painting made on a portable support, like canvas or panel, that can be moved and hung anywhere, as opposed to a mural fixed to a wall.","steps":["Think of a framed painting you could carry out the door.","Seen in: No. 91 Las Meninas.","Related terms: canvas, mural, panel."],"others":{"1":"means something else: Italian for ‘nude’. One of the twenty muscular nude young men Michelangelo painted on the Sistine Chapel ceiling, seated at the corners of the smaller Genesis scenes. Plural: ignudi.","2":"means something else: Canvas not coated with gesso or primer, so thinned paint soaks straight into the fabric. Helen Frankenthaler poured paint onto it in her soak-stain technique.","3":"means something else: Printing with raised metal or wooden letters that are inked and pressed onto paper. It could be combined with woodcut pictures on the same page."}}},{"n":71,"prompt":"A work made by gluing paper, photos, fabric or other materials onto a flat surface. From the French ‘coller’, to glue.","options":["biombo","negative","still life","collage"],"answer":3,"topic":"2","ex":{"idea":"<b>collage<\/b> (kuh-LAHZH): A work made by gluing paper, photos, fabric or other materials onto a flat surface. From the French ‘coller’, to glue.","steps":["Think of a scrapbook page or a vision board.","Seen in: No. 233 Trade (Gifts for Trading Land).","Related terms: photomontage, mixed media, assemblage."],"others":{"0":"means something else: A Spanish word for a folding screen, borrowed from the Japanese ‘byōbu’. Biombos were made in colonial Mexico after Japanese screens arrived by trade.","1":"means something else: In photography, developed film or a glass plate on which light and dark are reversed. Shining light through it makes positive prints, so many copies can come from one negative.","2":"means something else: A painting of non-moving objects, such as fruit, flowers, cups or skulls, arranged by the artist."}}},{"n":72,"prompt":"A dark box or room with a tiny hole or lens that projects an upsidedown image of the outside scene onto a wall or screen. Artists could trace it, and it led to the camera.","options":["mythological painting","letterpress","camera obscura","daguerreotype"],"answer":2,"topic":"2","ex":{"idea":"<b>camera obscura<\/b> (OB-skyoor-uh): A dark box or room with a tiny hole or lens that projects an upsidedown image of the outside scene onto a wall or screen. Artists could trace it, and it led to the camera.","steps":["Think of it as: Latin for ‘dark room’. Think of a pinhole camera you can stand inside.","Related terms: photography, daguerreotype, naturalism."],"others":{"0":"means something else: A painting of stories from Greek and Roman myths. In the Renaissance, myths like Botticelli’s Birth of Venus were also read as ideas about beauty and love.","1":"means something else: Printing with raised metal or wooden letters that are inked and pressed onto paper. It could be combined with woodcut pictures on the same page.","3":"means something else: The first widely used photographic process (announced 1839). It made one single, mirror-like image on a polished silver-coated copper plate, with no negative, so it could not be copied."}}},{"n":73,"prompt":"A picture whose main subject is natural scenery: land, sky, trees and water. It was a major subject in China by the 900s and became one in Europe from the 1500s.","options":["gestural","miniature","meritorious subject portrait","landscape"],"answer":3,"topic":"2","ex":{"idea":"<b>landscape<\/b>: A picture whose main subject is natural scenery: land, sky, trees and water. It was a major subject in China by the 900s and became one in Europe from the 1500s.","steps":["Seen in: No. 83 Hunters in the Snow; No. 109 The Oxbow; No. 118 The Valley of Mexico; No. 201 Travelers among Mountains and Streams.","Related terms: monumental landscape, shanshui, Hudson River School, atmospheric perspective."],"others":{"0":"means something else: Describes loose, energetic brushwork that records the movement of the artist’s hand and arm. It is a hallmark of Abstract Expressionism and Neo-Expressionism.","1":"means something else: A small, detailed painting, often in a book or album. In the Persian and Mughal worlds, miniatures were made with fine brushes, bright opaque color and gold.","2":"means something else: A Korean Joseon court portrait ordered by the king to honor an oﬀicial for loyal service. It shows the sitter in full oﬀicial robes, often with a rank badge."}}},{"n":74,"prompt":"Painting with pigment mixed into hot melted wax. The colors stay bright and glossy for centuries. Used for Roman-Egyptian mummy portraits and early icons.","options":["negative","frontispiece","cut paper","encaustic"],"answer":3,"topic":"2","ex":{"idea":"<b>encaustic<\/b> (en-KAW-stik): Painting with pigment mixed into hot melted wax. The colors stay bright and glossy for centuries. Used for Roman-Egyptian mummy portraits and early icons.","steps":["Think of painting with melted crayons.","Seen in: No. 54 Theotokos and Child.","Related terms: binder, panel, icon."],"others":{"0":"means something else: In photography, developed film or a glass plate on which light and dark are reversed. Shining light through it makes positive prints, so many copies can come from one negative.","1":"means something else: A picture placed facing the title page at the start of a book.","2":"means something else: Shapes cut out of paper and arranged or pasted as a work of art. Kara Walker uses large black cut-paper silhouettes on white walls."}}},{"n":75,"prompt":"A thin, watery layer of ink or paint brushed over an area to give a soft, even tone.","options":["biombo","seal","en plein air","wash"],"answer":3,"topic":"2","ex":{"idea":"<b>wash<\/b>: A thin, watery layer of ink or paint brushed over an area to give a soft, even tone.","steps":["Think of a drop of ink spreading in a glass of water.","Seen in: No. 227 Summer Trees; No. 201 Travelers among Mountains and Streams.","Related terms: ink, watercolor, tarashikomi."],"others":{"0":"means something else: A Spanish word for a folding screen, borrowed from the Japanese ‘byōbu’. Biombos were made in colonial Mexico after Japanese screens arrived by trade.","1":"means something else: A carved stamp, usually printed in red ink, that marks a work with an artist’s or owner’s name. Chinese paintings often collect many seals from the people who owned them.","2":"means something else: Painting outdoors, directly in front of the subject, instead of in a studio. Made easier in the 1800s by paint in portable tubes. French for ‘in the open air’."}}},{"n":76,"prompt":"A printed image, such as an engraving, that an artist copied or adapted. Colonial painters in the Americas often worked from European prints, so poses and compositions traveled across the ocean.","options":["seascape","shanshui","monumental landscape","print source"],"answer":3,"topic":"2","ex":{"idea":"<b>print source<\/b>: A printed image, such as an engraving, that an artist copied or adapted. Colonial painters in the Americas often worked from European prints, so poses and compositions traveled across the ocean.","steps":["Seen in: No. 90 Angel with Arquebus.","Related terms: engraving, Cuzco School, cultural exchange."],"others":{"0":"means something else: A painting whose main subject is the sea.","1":"means something else: Chinese for ‘mountainwater’: the Chinese tradition of landscape painting with mountains, rivers and mist, expressing harmony between people and nature.","2":"means something else: A Northern Song Chinese style of landscape painting with towering central mountains that dwarf tiny human figures, expressing the grandeur and order of nature."}}},{"n":77,"prompt":"A handwritten book decorated with painted pictures, colored letters and often gold or silver. Before printing, every book was made by hand.","options":["diptych","illuminated manuscript","gelatin silver print","gold ground"],"answer":1,"topic":"2","ex":{"idea":"<b>illuminated manuscript<\/b>: A handwritten book decorated with painted pictures, colored letters and often gold or silver. Before printing, every book was made by hand.","steps":["Think of a hand-copied book where the pages literally glow with gold.","Seen in: No. 50 Vienna Genesis; No. 55 Lindisfarne Gospels; No. 61 Bible moralisée; No. 64 Golden Haggadah.","Related terms: vellum, codex, carpet page, folio."],"others":{"0":"means something else: A work made of two panels, often hinged together.","2":"means something else: The standard black-and-white photographic print of the 1900s, made on paper coated with light-sensitive silver salts held in gelatin.","3":"means something else: A background covered with gold leaf instead of a landscape or room, making holy figures seem to exist in heaven rather than on earth."}}},{"n":78,"prompt":"Painting done entirely in shades of gray, often to imitate stone sculpture.","options":["ground","aquatint","altarpiece","grisaille"],"answer":3,"topic":"2","ex":{"idea":"<b>grisaille<\/b> (gree-ZYE): Painting done entirely in shades of gray, often to imitate stone sculpture.","steps":["Think of a black-and-white painting meant to look like a carved statue.","Seen in: No. 63 Arena Chapel (Virtues and Vices).","Related terms: monochrome, value, trompe l’oeil."],"others":{"0":"means something else: The prepared layer put on a support before painting, such as gesso on a panel. In etching it is the wax coating on the plate.","1":"means something else: A printmaking technique, related to etching, that uses acid eating through a powdered resin layer to make soft areas of tone that look like watercolor washes, instead of only lines.","2":"means something else: A painted or carved work placed on or behind the altar of a church, showing holy figures or stories. Many have several hinged panels."}}},{"n":79,"prompt":"The surface a painting or drawing is made on, such as wood panel, canvas, paper, silk, vellum, plaster or hide.","options":["narrative series","self-portrait","support","plate"],"answer":2,"topic":"2","ex":{"idea":"<b>support<\/b>: The surface a painting or drawing is made on, such as wood panel, canvas, paper, silk, vellum, plaster or hide.","steps":["Think of the ‘what is it painted on’ answer.","Seen in: No. 122 The Scream (cardboard); No. 141 Migration Series (hardboard).","Related terms: panel, canvas, ground, medium."],"others":{"0":"means something else: A set of paintings or prints that tell a story in order, like chapters in a book. Hogarth’s Marriage A-la-Mode and Jacob Lawrence’s sixty Migration Series panels are examples.","1":"means something else: A picture an artist makes of themself.","3":"means something else: The flat piece of metal (usually copper) into which an image is cut or etched for intaglio printing. Also a single full-page picture in a book."}}},{"n":80,"prompt":"Italian for ‘changing’. Painting the shadows of a fabric in a different, often lighter or brighter color instead of a darker shade of the same one, so the cloth seems to shimmer. Mannerists like Pontormo loved it.","options":["digital photography","cangiante","impasto","graﬀiti"],"answer":1,"topic":"2","ex":{"idea":"<b>cangiante<\/b> (kahn-jee-AHN-tay): Italian for ‘changing’. Painting the shadows of a fabric in a different, often lighter or brighter color instead of a darker shade of the same one, so the cloth seems to shimmer. Mannerists like Pontormo loved it.","steps":["Think of it as: Like shot silk or a jacket that looks pink in one light and yellow in another.","Seen in: No. 78 Entombment of Christ.","Related terms: Mannerism, color, modeling (shading)."],"others":{"0":"means something else: Photography that records images as computer data instead of on film, which makes pictures easy to edit and combine. Mariko Mori used digital tools to build Pure Land.","2":"means something else: Paint laid on so thickly that it stands up from the surface and shows the marks of the brush or knife.","3":"means something else: Words or images scrawled or spray-painted on public walls. Jean-Michel Basquiat began as the graﬀiti writer SAMO and brought its rough, word-filled look into his paintings."}}},{"n":81,"prompt":"A vertical scroll painting mounted on silk or paper with a rod at the bottom, made to hang on a wall and be rolled up for storage.","options":["wing","hanging scroll","cartouche","tempera"],"answer":1,"topic":"2","ex":{"idea":"<b>hanging scroll<\/b>: A vertical scroll painting mounted on silk or paper with a rod at the bottom, made to hang on a wall and be rolled up for storage.","steps":["Think of a poster that rolls up like a window shade.","Seen in: No. 201 Travelers among Mountains and Streams; No. 205 Portrait of Sin Sukju.","Related terms: handscroll, scroll, silk."],"others":{"0":"means something else: A side panel of an altarpiece, often hinged so it can close over the center panel. Wings were often painted on both sides, with different scenes showing when open or closed.","2":"means something else: A decorative frame, often shaped like a scroll or shield, that holds an inscription. In Egyptian art the word means the oval loop drawn around a pharaoh’s name.","3":"means something else: Paint made by mixing pigment with egg yolk (egg tempera). It dries fast to a matte finish with crisp detail, but can’t be blended smoothly. The main panel paint before oil."}}},{"n":82,"prompt":"In Chinese painting, a type of brushstroke (cun) used to show the texture of rocks and mountains, such as ‘raindrop’ or ‘axe-cut’ strokes. Fan Kuan’s mountains are built from thousands of raindrop strokes.","options":["self-portrait","broken color","emaki","texture stroke"],"answer":3,"topic":"2","ex":{"idea":"<b>texture stroke<\/b>: In Chinese painting, a type of brushstroke (cun) used to show the texture of rocks and mountains, such as ‘raindrop’ or ‘axe-cut’ strokes. Fan Kuan’s mountains are built from thousands of raindrop strokes.","steps":["Seen in: No. 201 Travelers among Mountains and Streams.","Related terms: brush and ink, shanshui, monumental landscape."],"others":{"0":"means something else: A picture an artist makes of themself.","1":"means something else: Painting with separate, unblended dabs of color placed side by side so they mix in the viewer’s eye instead of on the palette. A key Impressionist technique.","2":"means something else: Short for emakimono: a Japanese illustrated handscroll that combines pictures and text to tell a story, unrolled section by section from right to left."}}},{"n":83,"prompt":"Making marks on a surface with a tool like pencil, charcoal, chalk or ink, usually emphasizing line. These can be finished works or sketches for later projects.","options":["graphite","drawing","labors of the months","retablo"],"answer":1,"topic":"2","ex":{"idea":"<b>drawing<\/b>: Making marks on a surface with a tool like pencil, charcoal, chalk or ink, usually emphasizing line. Drawings can be finished works or sketches for later projects.","steps":["Think of everything from a doodle to an architect’s plan.","Seen in: No. 242 Lying with the Wolf ; No. 1 Apollo 11 Stones.","Related terms: graphite, charcoal, cartoon, line."],"others":{"0":"means something else: The soft gray carbon inside an ordinary pencil, used for drawing.","2":"means something else: A medieval series of images showing the typical work of each month, such as plowing, harvesting and hunting, common in calendars, prayer books and church carvings.","3":"means something else: Spanish for ‘altarpiece’. In Mexico it also means a small devotional painting on tin thanking a saint for a miracle. Frida Kahlo borrowed the look of these folk paintings."}}},{"n":84,"prompt":"Gold hammered into sheets thinner than tissue paper and applied to a surface to make it shine.","options":["retablo","woodblock print","gold leaf","impression"],"answer":2,"topic":"2","ex":{"idea":"<b>gold leaf<\/b>: Gold hammered into sheets thinner than tissue paper and applied to a surface to make it shine.","steps":["Think of a golden sticker so thin you could see light through it.","Seen in: No. 128 The Kiss (Klimt); No. 64 Golden Haggadah; No. 210 White and Red Plum Blossoms; No. 61 Bible moralisée.","Related terms: gilding, gold ground, illuminated manuscript."],"others":{"0":"means something else: Spanish for ‘altarpiece’. In Mexico it also means a small devotional painting on tin thanking a saint for a miracle. Frida Kahlo borrowed the look of these folk paintings.","1":"means something else: A print made by carving a picture into a block of wood, inking the raised surface and pressing paper onto it. Japanese color woodblock prints used a separate block for each color.","3":"means something else: One single print pulled from a block or plate. Early impressions are often the sharpest."}}},{"n":85,"prompt":"A background covered with gold leaf instead of a landscape or room, making holy figures seem to exist in heaven rather than on earth.","options":["woodcut","gold ground","byōbu","album page"],"answer":1,"topic":"2","ex":{"idea":"<b>gold ground<\/b>: A background covered with gold leaf instead of a landscape or room, making holy figures seem to exist in heaven rather than on earth.","steps":["Think of a portrait set against a glowing golden wall instead of a view.","Seen in: No. 54 Theotokos and Child; No. 61 Bible moralisée dedication page.","Related terms: gold leaf, icon, panel."],"others":{"0":"means something else: A relief print from a carved wood block, especially in the European tradition. Its lines are often bold and blocky, and it could be printed cheaply in large numbers.","2":"means something else: A Japanese folding screen made of hinged panels, often painted on gold-leafed paper, used to divide rooms and decorate homes.","3":"means something else: A single painting or sheet of calligraphy made to be mounted in an album, rather than to illustrate the text of a book. Persian, Mughal and Ottoman collectors gathered such pages into albums called muraqqa."}}},{"n":86,"prompt":"The museum-label name for acrylic and similar plastic-based paints. They dry fast and come in bright colors.","options":["pastel","giornata","synthetic polymer paint","byōbu"],"answer":2,"topic":"2","ex":{"idea":"<b>synthetic polymer paint<\/b>: The museum-label name for acrylic and similar plastic-based paints. They dry fast and come in bright colors.","steps":["Seen in: No. 234 Earth’s Creation.","Related terms: acrylic paint."],"others":{"0":"means something else: Sticks of powdered pigment held together with a little binder, used like chalk. Pastel gives soft, powdery, bright color.","1":"means something else: The patch of fresh plaster a fresco painter could finish in one day before it dried. Plural: giornate. You can sometimes see the seams between days.","3":"means something else: A Japanese folding screen made of hinged panels, often painted on gold-leafed paper, used to divide rooms and decorate homes."}}},{"n":87,"prompt":"An early photographic print (about 1850 to 1890) made on paper coated with egg white, which held the light-sensitive chemicals and gave a fine, glossy image.","options":["frontispiece","disguised symbolism","albumen print","reclining nude"],"answer":2,"topic":"2","ex":{"idea":"<b>albumen print<\/b> (al-BYOO-min): An early photographic print (about 1850 to 1890) made on paper coated with egg white, which held the light-sensitive chemicals and gave a fine, glossy image.","steps":["Think of it as: Egg white was the glue that held the picture on the paper.","Seen in: No. 117 The Horse in Motion.","Related terms: photography, daguerreotype, chronophotography."],"others":{"0":"means something else: A picture placed facing the title page at the start of a book.","1":"means something else: Ordinary objects in a realistic scene that quietly carry religious meaning, a hallmark of Northern Renaissance painting. In the Merode Altarpiece, the lilies, candle and washbasin all point to Mary’s purity.","3":"means something else: A nude figure lying on a couch or bed, a long-running European art type from Titian’s Venus of Urbino to Ingres’s Grande Odalisque and Manet’s Olympia, later reworked by artists like Kiki Smith and Wangechi Mutu."}}},{"n":88,"prompt":"A Persian, Mughal or Ottoman album that collected paintings and samples of calligraphy, often set in decorated borders, for a royal or elite collector.","options":["genre scene","monumental landscape","muraqqa","letterpress"],"answer":2,"topic":"2","ex":{"idea":"<b>muraqqa<\/b> (MOO-rah-kah): A Persian, Mughal or Ottoman album that collected paintings and samples of calligraphy, often set in decorated borders, for a royal or elite collector.","steps":["Seen in: No. 208 Jahangir Preferring a Sufi Shaikh to Kings.","Related terms: album page, calligraphy, Mughal."],"others":{"0":"means something else: A painting of ordinary people doing everyday things, like working, cooking or chatting.","1":"means something else: A Northern Song Chinese style of landscape painting with towering central mountains that dwarf tiny human figures, expressing the grandeur and order of nature.","3":"means something else: Printing with raised metal or wooden letters that are inked and pressed onto paper. It could be combined with woodcut pictures on the same page."}}},{"n":89,"prompt":"Pouring very thin paint onto raw, unprimed canvas so it soaks into the cloth, leaving soft, see-through pools of color. Pioneered by Helen Frankenthaler.","options":["key block","shanshui","ground","soak-stain"],"answer":3,"topic":"2","ex":{"idea":"<b>soak-stain<\/b>: Pouring very thin paint onto raw, unprimed canvas so it soaks into the cloth, leaving soft, see-through pools of color. Pioneered by Helen Frankenthaler.","steps":["Think of spilled juice spreading into a tablecloth.","Seen in: No. 149 The Bay.","Related terms: acrylic paint, canvas, nonrepresentational."],"others":{"0":"means something else: In color woodblock printing, the block carved with the main black outlines. The separate color blocks are cut to line up with it.","1":"means something else: Chinese for ‘mountainwater’: the Chinese tradition of landscape painting with mountains, rivers and mist, expressing harmony between people and nature.","2":"means something else: The prepared layer put on a support before painting, such as gesso on a panel. In etching it is the wax coating on the plate."}}},{"n":90,"prompt":"A thin, tough, smooth plastic film. Some contemporary artists paint and collage on it instead of paper or canvas.","options":["folio","Mylar","lithograph","meritorious subject portrait"],"answer":1,"topic":"2","ex":{"idea":"<b>Mylar<\/b> (MY-lar): A thin, tough, smooth plastic film. Some contemporary artists paint and collage on it instead of paper or canvas.","steps":["Think of the shiny material in party balloons, in a matte form.","Seen in: No. 247 Preying Mantra.","Related terms: support, mixed media, collage."],"others":{"0":"means something else: A single sheet or page of a manuscript or book. Folios are numbered with r (recto, the front) and v (verso, the back).","2":"means something else: A print made by drawing with a greasy crayon on a flat stone or metal plate. The surface is wet, so greasy ink sticks only to the drawing (oil and water don’t mix). Invented about 1796.","3":"means something else: A Korean Joseon court portrait ordered by the king to honor an oﬀicial for loyal service. It shows the sitter in full oﬀicial robes, often with a rank badge."}}},{"n":91,"prompt":"Chinese for ‘mountain-water’: the Chinese tradition of landscape painting with mountains, rivers and mist, expressing harmony between people and nature.","options":["shanshui","zoopraxiscope","self-portrait","parchment"],"answer":0,"topic":"2","ex":{"idea":"<b>shanshui<\/b> (shahn-SHWAY): Chinese for ‘mountainwater’: the Chinese tradition of landscape painting with mountains, rivers and mist, expressing harmony between people and nature.","steps":["Seen in: No. 201 Travelers among Mountains and Streams.","Related terms: monumental landscape, literati, brush and ink."],"others":{"1":"means something else: A device Eadweard Muybridge built in 1879 to project his sequences of motion pictures, painted from his photographs onto a spinning glass disk, so they appeared to move. It was an early ancestor of film.","2":"means something else: A picture an artist makes of themself.","3":"means something else: Animal skin (usually sheep or goat) soaked, scraped, stretched and dried to make a smooth, tough writing surface. Fine calfskin parchment is called vellum."}}},{"n":92,"prompt":"A Japanese folding screen made of hinged panels, often painted on gold-leafed paper, used to divide rooms and decorate homes.","options":["impression","tarashikomi","byōbu","plate"],"answer":2,"topic":"2","ex":{"idea":"<b>byōbu<\/b> (BYOH-boo): A Japanese folding screen made of hinged panels, often painted on gold-leafed paper, used to divide rooms and decorate homes.","steps":["Think of a room divider that is also a giant painting.","Seen in: No. 210 White and Red Plum Blossoms.","Related terms: folding screen, biombo, gold leaf."],"others":{"0":"means something else: One single print pulled from a block or plate. Early impressions are often the sharpest.","1":"means something else: A Japanese technique of dropping ink or paint onto an area that is still wet, so the colors pool and blur into soft, mottled patches.","3":"means something else: The flat piece of metal (usually copper) into which an image is cut or etched for intaglio printing. Also a single full-page picture in a book."}}},{"n":93,"prompt":"A print made by carving a picture into a block of wood, inking the raised surface and pressing paper onto it. Japanese color these used a separate block for each color.","options":["watercolor","dot painting","enconchado","woodblock print"],"answer":3,"topic":"2","ex":{"idea":"<b>woodblock print<\/b>: A print made by carving a picture into a block of wood, inking the raised surface and pressing paper onto it. Japanese color woodblock prints used a separate block for each color.","steps":["Think of a potato stamp, made by experts, with one block per color.","Seen in: No. 211 Great Wave.","Related terms: ukiyo-e, woodcut, relief print."],"others":{"0":"means something else: Paint made with pigment and a watersoluble gum binder, applied with water. Usually transparent, so the paper glows through.","1":"means something else: A style of contemporary Aboriginal Australian painting built up from many dabs or dots of color, connected to body painting and ceremonial designs about ancestral land.","2":"means something else: A kind of painting from colonial Mexico with pieces of mother-ofpearl set into the surface under the paint, so it shimmers. It was inspired by Asian lacquerware with shell inlay."}}},{"n":94,"prompt":"A white mix of chalk or plaster and glue brushed onto wood panels or canvas to make a smooth, bright surface for painting.","options":["gesso","posthumous portrait","mythological painting","dot painting"],"answer":0,"topic":"2","ex":{"idea":"<b>gesso<\/b> (JES-oh): A white mix of chalk or plaster and glue brushed onto wood panels or canvas to make a smooth, bright surface for painting.","steps":["Think of primer paint on a wall before the real color.","Related terms: ground, panel, tempera."],"others":{"1":"means something else: A portrait made after the sitter’s death, from memory, earlier images or descriptions. Cabrera’s Sor Juana and Lindauer’s Tamati Waka Nene are examples.","2":"means something else: A painting of stories from Greek and Roman myths. In the Renaissance, myths like Botticelli’s Birth of Venus were also read as ideas about beauty and love.","3":"means something else: A style of contemporary Aboriginal Australian painting built up from many dabs or dots of color, connected to body painting and ceremonial designs about ancestral land."}}},{"n":95,"prompt":"A printmaking technique, related to etching, that uses acid eating through a powdered resin layer to make soft areas of tone that look like watercolor washes, instead of only lines.","options":["letterpress","aquatint","roundel","action painting"],"answer":1,"topic":"2","ex":{"idea":"<b>aquatint<\/b> (AH-kwuh-tint): A printmaking technique, related to etching, that uses acid eating through a powdered resin layer to make soft areas of tone that look like watercolor washes, instead of only lines.","steps":["Think of shading in a print that looks grainy, like fine sandpaper.","Seen in: No. 121 The Coiffure.","Related terms: etching, intaglio, drypoint."],"others":{"0":"means something else: Printing with raised metal or wooden letters that are inked and pressed onto paper. It could be combined with woodcut pictures on the same page.","2":"means something else: A circular frame or medallion containing a picture or design.","3":"means something else: A style of Abstract Expressionism (1940s and 1950s, New York) in which the painting records the artist’s energetic physical movements: big slashing, dripping or scrubbing brushstrokes."}}},{"n":96,"prompt":"Italian for ‘nude’. One of the twenty muscular nude young men Michelangelo painted on the Sistine Chapel ceiling, seated at the corners of the smaller Genesis scenes. Plural: ignudi.","options":["broken color","woodcut","ignudo","muraqqa"],"answer":2,"topic":"2","ex":{"idea":"<b>ignudo<\/b> (een-YOO-doh): Italian for ‘nude’. One of the twenty muscular nude young men Michelangelo painted on the Sistine Chapel ceiling, seated at the corners of the smaller Genesis scenes. Plural: ignudi.","steps":["Seen in: No. 75 Sistine Chapel ceiling.","Related terms: nude, High Renaissance, fresco."],"others":{"0":"means something else: Painting with separate, unblended dabs of color placed side by side so they mix in the viewer’s eye instead of on the palette. A key Impressionist technique.","1":"means something else: A relief print from a carved wood block, especially in the European tradition. Its lines are often bold and blocky, and it could be printed cheaply in large numbers.","3":"means something else: A Persian, Mughal or Ottoman album that collected paintings and samples of calligraphy, often set in decorated borders, for a royal or elite collector."}}},{"n":97,"prompt":"Shading made by drawing sets of fine parallel lines that cross each other. The closer the lines, the darker the area.","options":["cross-hatching","history painting","cartoon","en plein air"],"answer":0,"topic":"2","ex":{"idea":"<b>cross-hatching<\/b>: Shading made by drawing sets of fine parallel lines that cross each other. The closer the lines, the darker the area.","steps":["Think of a tic-tac-toe grid repeated very small to make a shadow.","Seen in: No. 74 Adam and Eve (Dürer).","Related terms: hatching, engraving, modeling (shading)."],"others":{"1":"means something else: In the European academic system, large paintings of important stories from history, myth, religion or literature, meant to teach a moral lesson. It was ranked the highest kind of painting.","2":"means something else: In older art, a full-size preparatory drawing for a fresco, tapestry or painting. Its outlines were transferred to the wall by pricking holes and dusting charcoal through them.","3":"means something else: Painting outdoors, directly in front of the subject, instead of in a studio. Made easier in the 1800s by paint in portable tubes. French for ‘in the open air’."}}},{"n":98,"prompt":"A long roll of papyrus, paper or silk with writing or images, unrolled to read and rolled up to store.","options":["scroll","matrix","self-portrait","gouache"],"answer":0,"topic":"2","ex":{"idea":"<b>scroll<\/b>: A long roll of papyrus, paper or silk with writing or images, unrolled to read and rolled up to store.","steps":["Think of a treasure map rolled up with a ribbon.","Seen in: No. 24 Last judgment of Hu-Nefer; No. 203 Night Attack on the Sanjô Palace; No. 205 Portrait of Sin Sukju.","Related terms: handscroll, hanging scroll, codex."],"others":{"1":"means something else: The block, plate, stone or screen that holds the image in printmaking and is inked to make each print.","2":"means something else: A picture an artist makes of themself.","3":"means something else: Opaque watercolor: water-based paint with extra white or chalk added so it covers what is underneath, drying flat and matte."}}},{"n":99,"prompt":"An early, angular style of Arabic script with straight lines and sharp corners, used in the first centuries of Islam for copying the Qur’an and in architecture.","options":["charcoal","altarpiece","di sotto in sù","Kufic"],"answer":3,"topic":"2","ex":{"idea":"<b>Kufic<\/b> (KOO-fik): An early, angular style of Arabic script with straight lines and sharp corners, used in the first centuries of Islam for copying the Qur’an and in architecture.","steps":["Think of a blocky font compared with flowing cursive.","Seen in: No. 187 Folio from a Qur’an.","Related terms: calligraphy, folio, parchment."],"others":{"0":"means something else: Burnt wood (or bone) used as a black drawing material. One of the oldest art materials.","1":"means something else: A painted or carved work placed on or behind the altar of a church, showing holy figures or stories. Many have several hinged panels.","2":"means something else: Painting a ceiling so the figures look as if you are seeing them from directly below, floating in real space above you. Italian for ‘from below to above’."}}},{"n":100,"prompt":"A painting of non-moving objects, such as fruit, flowers, cups or skulls, arranged by the artist.","options":["fresco","still life","roundel","support"],"answer":1,"topic":"2","ex":{"idea":"<b>still life<\/b>: A painting of non-moving objects, such as fruit, flowers, cups or skulls, arranged by the artist.","steps":["Think of a carefully styled food photo.","Seen in: No. 96 Fruit and Insects; No. 110 Still Life in Studio.","Related terms: genre scene, naturalism, vanitas."],"others":{"0":"means something else: Painting on plaster on a wall or ceiling. In true (buon) fresco the plaster is still wet; in fresco secco it is dry.","2":"means something else: A circular frame or medallion containing a picture or design.","3":"means something else: The surface a painting or drawing is made on, such as wood panel, canvas, paper, silk, vellum, plaster or hide."}}},{"n":101,"prompt":"A flat board, usually wood, used as a surface to paint on. Before canvas took over, most European paintings were on these.","options":["brushwork","panel","stencil","ignudo"],"answer":1,"topic":"2","ex":{"idea":"<b>panel<\/b>: A flat board, usually wood, used as a surface to paint on. Before canvas took over, most European paintings were on panels.","steps":["Think of painting on a tabletop or a cabinet door.","Seen in: No. 66 Merode Altarpiece; No. 68 The Arnolfini Portrait; No. 54 Theotokos and Child.","Related terms: support, canvas, gesso."],"others":{"0":"means something else: The way paint is put on with a brush, and whether you can see the strokes. It can be smooth and invisible or thick, quick and expressive.","2":"means something else: A sheet with shapes cut out of it, through which paint or ink is brushed or sprayed so only the open areas print. Braque stenciled letters into The Portuguese;","3":"means something else: Italian for ‘nude’. One of the twenty muscular nude young men Michelangelo painted on the Sistine Chapel ceiling, seated at the corners of the smaller Genesis scenes. Plural: ignudi."}}},{"n":102,"prompt":"Painting with separate, unblended dabs of color placed side by side so they mix in the viewer’s eye instead of on the palette. A key Impressionist technique.","options":["seal","broken color","monumental landscape","miniature"],"answer":1,"topic":"2","ex":{"idea":"<b>broken color<\/b>: Painting with separate, unblended dabs of color placed side by side so they mix in the viewer’s eye instead of on the palette. A key Impressionist technique.","steps":["Think of it as: Up close it looks like confetti; step back and it turns into steam, sky or water.","Seen in: No. 116 The Saint-Lazare Station.","Related terms: Impressionism, brushwork, en plein air."],"others":{"0":"means something else: A carved stamp, usually printed in red ink, that marks a work with an artist’s or owner’s name. Chinese paintings often collect many seals from the people who owned them.","2":"means something else: A Northern Song Chinese style of landscape painting with towering central mountains that dwarf tiny human figures, expressing the grandeur and order of nature.","3":"means something else: A small, detailed painting, often in a book or album. In the Persian and Mughal worlds, miniatures were made with fine brushes, bright opaque color and gold."}}},{"n":103,"prompt":"Individual letters or characters made as separate pieces that can be arranged into text, printed, and then reused.","options":["movable type","zoopraxiscope","relief print","dot painting"],"answer":0,"topic":"2","ex":{"idea":"<b>movable type<\/b>: Individual letters or characters made as separate pieces that can be arranged into text, printed, and then reused.","steps":["Think of Scrabble tiles that you can rearrange to print new words.","Seen in: No. 79 Allegory of Law and Grace; No. 229 A Book from the Sky.","Related terms: letterpress, woodblock print, printmaking."],"others":{"1":"means something else: A device Eadweard Muybridge built in 1879 to project his sequences of motion pictures, painted from his photographs onto a spinning glass disk, so they appeared to move. It was an early ancestor of film.","2":"means something else: A print made by carving away the parts of a block that should stay blank, then inking the raised parts left standing. Woodcuts and woodblock prints are relief prints.","3":"means something else: A style of contemporary Aboriginal Australian painting built up from many dabs or dots of color, connected to body painting and ceremonial designs about ancestral land."}}},{"n":104,"prompt":"Light thrown onto a wall or screen from a projector, used by some contemporary artists as part of an installation, so viewers’ shadows can join the scene.","options":["cartoon","printmaking","chronophotography","projection"],"answer":3,"topic":"2","ex":{"idea":"<b>projection<\/b>: Light thrown onto a wall or screen from a projector, used by some contemporary artists as part of an installation, so viewers’ shadows can join the scene.","steps":["Think of an overhead projector in class.","Seen in: No. 243 Darkytown Rebellion.","Related terms: installation, cut paper, video art."],"others":{"0":"means something else: In older art, a full-size preparatory drawing for a fresco, tapestry or painting. Its outlines were transferred to the wall by pricking holes and dusting charcoal through them.","1":"means something else: Making images that can be repeated by transferring ink from a prepared surface (block, plate, stone or screen) onto paper. The main families are relief, intaglio, lithography and screenprinting.","2":"means something else: Taking a quick series of photos of something moving to study each stage of its motion. Pioneered by Eadweard Muybridge."}}},{"n":105,"prompt":"Painting on animal skin. Plains and Plateau peoples of North America painted hides to record histories, events and visions.","options":["modern moral subject","digital photography","hide painting","inscription"],"answer":2,"topic":"2","ex":{"idea":"<b>hide painting<\/b>: Painting on animal skin. Plains and Plateau peoples of North America painted hides to record histories, events and visions.","steps":["Think of a deer or elk skin used as a canvas.","Seen in: No. 165 Painted elk hide.","Related terms: support, narrative, pigment."],"others":{"0":"means something else: William Hogarth’s name for his painted and printed series that mocked the bad behavior of his own day, such as greed, vanity and loveless marriages for money, to teach a moral lesson.","1":"means something else: Photography that records images as computer data instead of on film, which makes pictures easy to edit and combine. Mariko Mori used digital tools to build Pure Land.","3":"means something else: Words written, painted or carved on a work, such as a title, poem, name or dedication."}}},{"n":106,"prompt":"The drawing an artist makes on a surface before painting over it. Scientists can often see it with infrared light.","options":["self-portrait","gouache","illuminated manuscript","underdrawing"],"answer":3,"topic":"2","ex":{"idea":"<b>underdrawing<\/b>: The drawing an artist makes on a surface before painting over it. Scientists can often see it with infrared light.","steps":["Think of the pencil lines under a finished comic.","Related terms: sketch, cartoon, ground."],"others":{"0":"means something else: A picture an artist makes of themself.","1":"means something else: Opaque watercolor: water-based paint with extra white or chalk added so it covers what is underneath, drying flat and matte.","2":"means something else: A handwritten book decorated with painted pictures, colored letters and often gold or silver. Before printing, every book was made by hand."}}},{"n":107,"prompt":"Shading made with many fine parallel lines close together.","options":["enconchado","tarashikomi","hatching","brush and ink"],"answer":2,"topic":"2","ex":{"idea":"<b>hatching<\/b>: Shading made with many fine parallel lines close together.","steps":["Think of quick diagonal pencil strokes used to darken a sketch.","Seen in: No. 74 Adam and Eve (Dürer).","Related terms: crosshatching, engraving, line."],"others":{"0":"means something else: A kind of painting from colonial Mexico with pieces of mother-ofpearl set into the surface under the paint, so it shimmers. It was inspired by Asian lacquerware with shell inlay.","1":"means something else: A Japanese technique of dropping ink or paint onto an area that is still wet, so the colors pool and blur into soft, mottled patches.","3":"means something else: The basic tools of East Asian painting and calligraphy: a soft, pointed brush and black ink ground from an ink stick. The same brushstrokes are used for writing and painting."}}},{"n":108,"prompt":"A painting of ordinary people doing everyday things, like working, cooking or chatting.","options":["drawing","genre scene","hatching","hardboard"],"answer":1,"topic":"2","ex":{"idea":"<b>genre scene<\/b> (ZHAHN-ruh): A painting of ordinary people doing everyday things, like working, cooking or chatting.","steps":["Think of a slice-of-life scene instead of a superhero movie.","Seen in: No. 92 Woman Holding a Balance; No. 83 Hunters in the Snow; No. 113 The Stone Breakers.","Related terms: history painting, still life, realism."],"others":{"0":"means something else: Making marks on a surface with a tool like pencil, charcoal, chalk or ink, usually emphasizing line. Drawings can be finished works or sketches for later projects.","2":"means something else: Shading made with many fine parallel lines close together.","3":"means something else: A thin, stiff board made of compressed wood fibers, used as a cheap painting surface. Jacob Lawrence painted his Migration Series on hardboard panels."}}},{"n":109,"prompt":"Painting a design directly by hand, without stencils, stamps or rubbing boards. Niuean hiapo stands out because its fine, dense patterns were painted freehand.","options":["seal","letterpress","freehand painting","hanging scroll"],"answer":2,"topic":"2","ex":{"idea":"<b>freehand painting<\/b>: Painting a design directly by hand, without stencils, stamps or rubbing boards. Niuean hiapo stands out because its fine, dense patterns were painted freehand.","steps":["Seen in: No. 219 Hiapo (tapa).","Related terms: hiapo, tapa, stencil."],"others":{"0":"means something else: A carved stamp, usually printed in red ink, that marks a work with an artist’s or owner’s name. Chinese paintings often collect many seals from the people who owned them.","1":"means something else: Printing with raised metal or wooden letters that are inked and pressed onto paper. It could be combined with woodcut pictures on the same page.","3":"means something else: A vertical scroll painting mounted on silk or paper with a rod at the bottom, made to hang on a wall and be rolled up for storage."}}},{"n":110,"prompt":"Words written, painted or carved on a work, such as a title, poem, name or dedication.","options":["modern moral subject","dedication page","enconchado","inscription"],"answer":3,"topic":"2","ex":{"idea":"<b>inscription<\/b>: Words written, painted or carved on a work, such as a title, poem, name or dedication.","steps":["Think of a message engraved on the back of a watch.","Seen in: No. 19 Code of Hammurabi; No. 57 Pyxis of al-Mughira; No. 188 Basin (Baptistère de St. Louis).","Related terms: calligraphy, colophon, seal."],"others":{"0":"means something else: William Hogarth’s name for his painted and printed series that mocked the bad behavior of his own day, such as greed, vanity and loveless marriages for money, to teach a moral lesson.","1":"means something else: A page at the start of a manuscript that shows or names the patron for whom the book was made.","2":"means something else: A kind of painting from colonial Mexico with pieces of mother-ofpearl set into the surface under the paint, so it shimmers. It was inspired by Asian lacquerware with shell inlay."}}},{"n":111,"prompt":"Oil paint formed into a solid stick, like a giant crayon, so artists can draw directly with paint. Basquiat used it in Horn Players.","options":["woodblock print","oil paintstick","unprimed canvas","album page"],"answer":1,"topic":"2","ex":{"idea":"<b>oil paintstick<\/b>: Oil paint formed into a solid stick, like a giant crayon, so artists can draw directly with paint. Basquiat used it in Horn Players.","steps":["Seen in: No. 226 Horn Players.","Related terms: oil paint, mixed media, graﬀiti."],"others":{"0":"means something else: A print made by carving a picture into a block of wood, inking the raised surface and pressing paper onto it. Japanese color woodblock prints used a separate block for each color.","2":"means something else: Canvas not coated with gesso or primer, so thinned paint soaks straight into the fabric. Helen Frankenthaler poured paint onto it in her soak-stain technique.","3":"means something else: A single painting or sheet of calligraphy made to be mounted in an album, rather than to illustrate the text of a book. Persian, Mughal and Ottoman collectors gathered such pages into albums called muraqqa."}}},{"n":112,"prompt":"A small scene or picture set within a larger composition or border. Four corner these in the Virgin of Guadalupe painting tell the story of her appearances.","options":["narrative series","photogravure","vignette","landscape"],"answer":2,"topic":"2","ex":{"idea":"<b>vignette<\/b> (vin-YET): A small scene or picture set within a larger composition or border. Four corner vignettes in the Virgin of Guadalupe painting tell the story of her appearances.","steps":["Seen in: No. 95 The Virgin of Guadalupe.","Related terms: cartouche, roundel."],"others":{"0":"means something else: A set of paintings or prints that tell a story in order, like chapters in a book. Hogarth’s Marriage A-la-Mode and Jacob Lawrence’s sixty Migration Series panels are examples.","1":"means something else: A printing process that transfers a photograph onto a metal plate etched with acid, then prints it in ink, giving rich, velvety tones.","3":"means something else: A picture whose main subject is natural scenery: land, sky, trees and water. It was a major subject in China by the 900s and became one in Europe from the 1500s."}}},{"n":113,"prompt":"The family of printmaking methods where lines are cut or etched into a metal plate. Ink sits in the grooves, and strong pressure pulls it onto paper. Engraving, etching, drypoint and aquatint are all this.","options":["seascape","sketch","emaki","intaglio"],"answer":3,"topic":"2","ex":{"idea":"<b>intaglio<\/b> (in-TAL-yo): The family of printmaking methods where lines are cut or etched into a metal plate. Ink sits in the grooves, and strong pressure pulls it onto paper. Engraving, etching, drypoint and aquatint are all intaglio.","steps":["Think of the opposite of a rubber stamp: the ink lives in the low parts, not the high parts.","Seen in: No. 74 Adam and Eve (engraving); No. 87 Self-Portrait with Saskia (etching); No. 121 The Coiffure.","Related terms: engraving, etching, relief print, plate."],"others":{"0":"means something else: A painting whose main subject is the sea.","1":"means something else: A quick, rough drawing or painting used to try out an idea before a finished work.","2":"means something else: Short for emakimono: a Japanese illustrated handscroll that combines pictures and text to tell a story, unrolled section by section from right to left."}}},{"n":114,"prompt":"Canvas not coated with gesso or primer, so thinned paint soaks straight into the fabric. Helen Frankenthaler poured paint onto it in her soak-stain technique.","options":["en plein air","unprimed canvas","impression","biombo"],"answer":1,"topic":"2","ex":{"idea":"<b>unprimed canvas<\/b>: Canvas not coated with gesso or primer, so thinned paint soaks straight into the fabric. Helen Frankenthaler poured paint onto it in her soak-stain technique.","steps":["Seen in: No. 149 The Bay.","Related terms: soak-stain, canvas, color field painting."],"others":{"0":"means something else: Painting outdoors, directly in front of the subject, instead of in a studio. Made easier in the 1800s by paint in portable tubes. French for ‘in the open air’.","2":"means something else: One single print pulled from a block or plate. Early impressions are often the sharpest.","3":"means something else: A Spanish word for a folding screen, borrowed from the Japanese ‘byōbu’. Biombos were made in colonial Mexico after Japanese screens arrived by trade."}}},{"n":115,"prompt":"A woman in an Ottoman harem; in European painting, a reclining nude in an imagined ‘Oriental’ setting, a favorite subject of Orientalism.","options":["diptych","seascape","odalisque","drawing"],"answer":2,"topic":"2","ex":{"idea":"<b>odalisque<\/b> (OH-duh-lisk): A woman in an Ottoman harem; in European painting, a reclining nude in an imagined ‘Oriental’ setting, a favorite subject of Orientalism.","steps":["Seen in: No. 107 La Grande Odalisque.","Related terms: Orientalism, reclining nude, exoticism."],"others":{"0":"means something else: A work made of two panels, often hinged together.","1":"means something else: A painting whose main subject is the sea.","3":"means something else: Making marks on a surface with a tool like pencil, charcoal, chalk or ink, usually emphasizing line. Drawings can be finished works or sketches for later projects."}}},{"n":116,"prompt":"A note written in the margin or between the lines of a text to explain or translate it. Spanish these label the Aztec pictures in the Codex Mendoza.","options":["reclining nude","biombo","colorito","gloss"],"answer":3,"topic":"2","ex":{"idea":"<b>gloss<\/b>: A note written in the margin or between the lines of a text to explain or translate it. Spanish glosses label the Aztec pictures in the Codex Mendoza.","steps":["Seen in: No. 81 Codex Mendoza.","Related terms: codex, pictograph, hybridity."],"others":{"0":"means something else: A nude figure lying on a couch or bed, a long-running European art type from Titian’s Venus of Urbino to Ingres’s Grande Odalisque and Manet’s Olympia, later reworked by artists like Kiki Smith and Wangechi Mutu.","1":"means something else: A Spanish word for a folding screen, borrowed from the Japanese ‘byōbu’. Biombos were made in colonial Mexico after Japanese screens arrived by trade.","2":"means something else: Italian for ‘coloring’. The Venetian approach of building a painting through rich color and soft brushwork rather than precise drawing. Titian is the classic example; it is the opposite of disegno."}}},{"n":117,"prompt":"Animal skin (usually sheep or goat) soaked, scraped, stretched and dried to make a smooth, tough writing surface. Fine calfskin this is called vellum.","options":["matrix","parchment","cangiante","acrylic paint"],"answer":1,"topic":"2","ex":{"idea":"<b>parchment<\/b>: Animal skin (usually sheep or goat) soaked, scraped, stretched and dried to make a smooth, tough writing surface. Fine calfskin parchment is called vellum.","steps":["Think of a very thin, stiff leather page.","Seen in: No. 187 Folio from a Qur’an.","Related terms: vellum, codex, illuminated manuscript."],"others":{"0":"means something else: The block, plate, stone or screen that holds the image in printmaking and is inked to make each print.","2":"means something else: Italian for ‘changing’. Painting the shadows of a fabric in a different, often lighter or brighter color instead of a darker shade of the same one, so the cloth seems to shimmer. Mannerists like Pontormo loved it.","3":"means something else: A fast-drying, waterbased paint made with plastic (synthetic polymer) binder, invented in the mid-1900s. It can be thinned like watercolor or used thick like oil."}}},{"n":118,"prompt":"Shapes cut out of paper and arranged or pasted as a work of art. Kara Walker uses large black cut-paper silhouettes on white walls.","options":["fresco secco","matrix","history painting","cut paper"],"answer":3,"topic":"2","ex":{"idea":"<b>cut paper<\/b>: Shapes cut out of paper and arranged or pasted as a work of art. Kara Walker uses large black cut-paper silhouettes on white walls.","steps":["Think of paper snowflakes, but telling a story.","Seen in: No. 243 Darkytown Rebellion.","Related terms: silhouette, collage, projection."],"others":{"0":"means something else: Painting on dry plaster with paint that has its own binder. It allows more detail and colors but flakes off over time.","1":"means something else: The block, plate, stone or screen that holds the image in printmaking and is inked to make each print.","2":"means something else: In the European academic system, large paintings of important stories from history, myth, religion or literature, meant to teach a moral lesson. It was ranked the highest kind of painting."}}},{"n":119,"prompt":"An intaglio print made by cutting lines into a metal plate with a burin, filling the grooves with ink, wiping the surface clean and pressing paper onto it. It gives sharp, precise lines.","options":["dot painting","self-portrait","vellum","engraving"],"answer":3,"topic":"2","ex":{"idea":"<b>engraving<\/b>: An intaglio print made by cutting lines into a metal plate with a burin, filling the grooves with ink, wiping the surface clean and pressing paper onto it. It gives sharp, precise lines.","steps":["Think of a dollar bill: its fine lines come from engraving.","Seen in: No. 74 Adam and Eve (Dürer).","Related terms: burin, intaglio, cross-hatching, etching."],"others":{"0":"means something else: A style of contemporary Aboriginal Australian painting built up from many dabs or dots of color, connected to body painting and ceremonial designs about ancestral land.","1":"means something else: A picture an artist makes of themself.","2":"means something else: Fine, smooth parchment made from calfskin, used for the best medieval manuscripts. Some luxury manuscripts were dyed purple, the royal color."}}},{"n":120,"prompt":"A work made of two panels, often hinged together.","options":["cut paper","diptych","vellum","gloss"],"answer":1,"topic":"2","ex":{"idea":"<b>diptych<\/b> (DIP-tik): A work made of two panels, often hinged together.","steps":["Think of a two-page spread in a book.","Seen in: No. 147 Marilyn Diptych.","Related terms: triptych, polyptych, panel."],"others":{"0":"means something else: Shapes cut out of paper and arranged or pasted as a work of art. Kara Walker uses large black cut-paper silhouettes on white walls.","2":"means something else: Fine, smooth parchment made from calfskin, used for the best medieval manuscripts. Some luxury manuscripts were dyed purple, the royal color.","3":"means something else: A note written in the margin or between the lines of a text to explain or translate it. Spanish glosses label the Aztec pictures in the Codex Mendoza."}}},{"n":121,"prompt":"A large painting done directly on a wall or ceiling.","options":["improvisation","plate","collage","mural"],"answer":3,"topic":"2","ex":{"idea":"<b>mural<\/b> (MYOOR-ul): A large painting done directly on a wall or ceiling.","steps":["Think of street art covering the side of a building.","Seen in: No. 143 Dream of a Sunday Afternoon in the Alameda Park; No. 75 Sistine Chapel.","Related terms: fresco, buon fresco."],"others":{"0":"means something else: Making something up on the spot, like a jazz musician. Kandinsky called a group of his paintings Improvisations because they came from spontaneous inner feeling rather than planning.","1":"means something else: The flat piece of metal (usually copper) into which an image is cut or etched for intaglio printing. Also a single full-page picture in a book.","2":"means something else: A work made by gluing paper, photos, fabric or other materials onto a flat surface. From the French ‘coller’, to glue."}}},{"n":122,"prompt":"Short for ___mono: a Japanese illustrated handscroll that combines pictures and text to tell a story, unrolled section by section from right to left.","options":["miniature","collage","emaki","caricature"],"answer":2,"topic":"2","ex":{"idea":"<b>emaki<\/b> (eh-MAH-kee): Short for emakimono: a Japanese illustrated handscroll that combines pictures and text to tell a story, unrolled section by section from right to left.","steps":["Think of it as: A comic strip on a roll, read one arm’s length at a time.","Seen in: No. 203 Night Attack on the Sanjô Palace.","Related terms: handscroll, yamato-e, continuous narrative."],"others":{"0":"means something else: A small, detailed painting, often in a book or album. In the Persian and Mughal worlds, miniatures were made with fine brushes, bright opaque color and gold.","1":"means something else: A work made by gluing paper, photos, fabric or other materials onto a flat surface. From the French ‘coller’, to glue.","3":"means something else: A picture that exaggerates a person’s features or a group’s traits for comic or critical effect. Daumier mocked Nadar this way; Kara Walker turns racist caricatures back on their makers."}}},{"n":123,"prompt":"A Spanish word for a folding screen, borrowed from the Japanese ‘byōbu’. These were made in colonial Mexico after Japanese screens arrived by trade.","options":["illuminated manuscript","grisaille","biombo","wash"],"answer":2,"topic":"2","ex":{"idea":"<b>biombo<\/b> (bee-OM-bo): A Spanish word for a folding screen, borrowed from the Japanese ‘byōbu’. Biombos were made in colonial Mexico after Japanese screens arrived by trade.","steps":["Think of it as: The name itself shows the trade route: Japan to Mexico.","Seen in: No. 94 Screen with the Siege of Belgrade.","Related terms: folding screen, enconchado, mother-of-pearl."],"others":{"0":"means something else: A handwritten book decorated with painted pictures, colored letters and often gold or silver. Before printing, every book was made by hand.","1":"means something else: Painting done entirely in shades of gray, often to imitate stone sculpture.","3":"means something else: A thin, watery layer of ink or paint brushed over an area to give a soft, even tone."}}},{"n":124,"prompt":"A book or document written by hand. Before printing, every book was a this, and luxury ones were richly painted.","options":["photogravure","Kufic","manuscript","composite image"],"answer":2,"topic":"2","ex":{"idea":"<b>manuscript<\/b> (MAN-yoo-skript): A book or document written by hand. Before printing, every book was a manuscript, and luxury ones were richly painted.","steps":["Think of it as: ‘Manu’ means hand and ‘script’ means written.","Seen in: No. 55 Lindisfarne Gospels; No. 64 Golden Haggadah; No. 189 Bahram Gur Fights the Karg; No. 190 The Court of Gayumars.","Related terms: illuminated manuscript, codex, folio, vellum."],"others":{"0":"means something else: A printing process that transfers a photograph onto a metal plate etched with acid, then prints it in ink, giving rich, velvety tones.","1":"means something else: An early, angular style of Arabic script with straight lines and sharp corners, used in the first centuries of Islam for copying the Qur’an and in architecture.","3":"means something else: A picture built by combining parts from different sources or moments into one. Rachel Ruysch gathered flowers that never bloomed at the same time into one bouquet;"}}},{"n":125,"prompt":"Fine, smooth parchment made from calfskin, used for the best medieval manuscripts. Some luxury manuscripts were dyed purple, the royal color.","options":["composite image","vellum","print source","shanshui"],"answer":1,"topic":"2","ex":{"idea":"<b>vellum<\/b> (VEL-um): Fine, smooth parchment made from calfskin, used for the best medieval manuscripts. Some luxury manuscripts were dyed purple, the royal color.","steps":["Think of premium leather paper.","Seen in: No. 50 Vienna Genesis (purple vellum); No. 55 Lindisfarne Gospels; No. 61 Bible moralisée; No. 64 Golden Haggadah.","Related terms: parchment, illuminated manuscript, codex."],"others":{"0":"means something else: A picture built by combining parts from different sources or moments into one. Rachel Ruysch gathered flowers that never bloomed at the same time into one bouquet;","2":"means something else: A printed image, such as an engraving, that an artist copied or adapted. Colonial painters in the Americas often worked from European prints, so poses and compositions traveled across the ocean.","3":"means something else: Chinese for ‘mountainwater’: the Chinese tradition of landscape painting with mountains, rivers and mist, expressing harmony between people and nature."}}},{"n":126,"prompt":"Painting on plaster on a wall or ceiling. In true (buon) this the plaster is still wet; in this secco it is dry.","options":["manuscript","rock art","fresco","gold leaf"],"answer":2,"topic":"2","ex":{"idea":"<b>fresco<\/b> (FRES-ko): Painting on plaster on a wall or ceiling. In true (buon) fresco the plaster is still wet; in fresco secco it is dry.","steps":["Think of it as: Italian for ‘fresh’, as in freshly laid plaster.","Seen in: No. 75 Sistine Chapel; No. 63 Arena Chapel; No. 32 Tomb of the Triclinium; No. 39 House of the Vettii.","Related terms: buon fresco, fresco secco, mural, giornata."],"others":{"0":"means something else: A book or document written by hand. Before printing, every book was a manuscript, and luxury ones were richly painted.","1":"means something else: Paintings (pictographs) or carvings (petroglyphs) made on cave walls, cliffs or stones. The earliest surviving art.","3":"means something else: Gold hammered into sheets thinner than tissue paper and applied to a surface to make it shine."}}},{"n":127,"prompt":"A painting whose main subject is the sea.","options":["seascape","key block","panel","support"],"answer":0,"topic":"2","ex":{"idea":"<b>seascape<\/b>: A painting whose main subject is the sea.","steps":["Think of it as: A landscape, but mostly water.","Seen in: No. 111 Slave Ship.","Related terms: landscape, Romanticism, sublime."],"others":{"1":"means something else: In color woodblock printing, the block carved with the main black outlines. The separate color blocks are cut to line up with it.","2":"means something else: A flat board, usually wood, used as a surface to paint on. Before canvas took over, most European paintings were on panels.","3":"means something else: The surface a painting or drawing is made on, such as wood panel, canvas, paper, silk, vellum, plaster or hide."}}},{"n":128,"prompt":"Photography that records images as computer data instead of on film, which makes pictures easy to edit and combine. Mariko Mori used digital tools to build Pure Land.","options":["digital photography","cartoon","cartouche","canvas"],"answer":0,"topic":"2","ex":{"idea":"<b>digital photography<\/b>: Photography that records images as computer data instead of on film, which makes pictures easy to edit and combine. Mariko Mori used digital tools to build Pure Land.","steps":["Seen in: No. 241 Pure Land.","Related terms: photography, composite image, digital art."],"others":{"1":"means something else: In older art, a full-size preparatory drawing for a fresco, tapestry or painting. Its outlines were transferred to the wall by pricking holes and dusting charcoal through them.","2":"means something else: A decorative frame, often shaped like a scroll or shield, that holds an inscription. In Egyptian art the word means the oval loop drawn around a pharaoh’s name.","3":"means something else: A strong woven cloth, usually linen or cotton, stretched over a wooden frame and used as a surface for painting. It replaced wooden panels for most painting after the 1500s because it is lighter and can be rolled."}}},{"n":129,"prompt":"In color woodblock printing, the block carved with the main black outlines. The separate color blocks are cut to line up with it.","options":["ignudo","posthumous portrait","gouache","key block"],"answer":3,"topic":"2","ex":{"idea":"<b>key block<\/b>: In color woodblock printing, the block carved with the main black outlines. The separate color blocks are cut to line up with it.","steps":["Think of it as: The coloring-book outline that all the colors fill in.","Seen in: No. 211 Great Wave.","Related terms: woodblock print, ukiyo-e, relief print."],"others":{"0":"means something else: Italian for ‘nude’. One of the twenty muscular nude young men Michelangelo painted on the Sistine Chapel ceiling, seated at the corners of the smaller Genesis scenes. Plural: ignudi.","1":"means something else: A portrait made after the sitter’s death, from memory, earlier images or descriptions. Cabrera’s Sor Juana and Lindauer’s Tamati Waka Nene are examples.","2":"means something else: Opaque watercolor: water-based paint with extra white or chalk added so it covers what is underneath, drying flat and matte."}}},{"n":130,"prompt":"An intaglio printmaking method where the artist scratches lines straight into a metal plate with a sharp needle. The scratch throws up a rough edge (burr) that prints soft, velvety lines.","options":["incipit page","drypoint","edition","gelatin silver print"],"answer":1,"topic":"2","ex":{"idea":"<b>drypoint<\/b>: An intaglio printmaking method where the artist scratches lines straight into a metal plate with a sharp needle. The scratch throws up a rough edge (burr) that prints soft, velvety lines.","steps":["Think of scratching a design into a smooth metal surface with a nail.","Seen in: No. 121 The Coiffure; No. 106 Y no hai remedio.","Related terms: engraving, etching, intaglio."],"others":{"0":"means something else: The decorated opening page of a book or chapter in a manuscript, where the first words are made huge and ornamental. From the Latin for ‘it begins’.","2":"means something else: The total set of prints made from one block or plate at one time. Each sheet in it is an impression.","3":"means something else: The standard black-and-white photographic print of the 1900s, made on paper coated with light-sensitive silver salts held in gelatin."}}},{"n":131,"prompt":"A side panel of an altarpiece, often hinged so it can close over the center panel. These were often painted on both sides, with different scenes showing when open or closed.","options":["oil paint","wing","projection","sketch"],"answer":1,"topic":"2","ex":{"idea":"<b>wing<\/b>: A side panel of an altarpiece, often hinged so it can close over the center panel. Wings were often painted on both sides, with different scenes showing when open or closed.","steps":["Think of the doors of a cabinet.","Seen in: No. 66 Merode Altarpiece; No. 77 Isenheim altarpiece.","Related terms: triptych, polyptych, altarpiece."],"others":{"0":"means something else: Paint made with pigment mixed in a drying oil, usually linseed oil. It dries slowly, so artists can blend smoothly and build up thin glazes; it became the main European painting medium by the 1500s.","2":"means something else: Light thrown onto a wall or screen from a projector, used by some contemporary artists as part of an installation, so viewers’ shadows can join the scene.","3":"means something else: A quick, rough drawing or painting used to try out an idea before a finished work."}}},{"n":132,"prompt":"A print made by drawing with a greasy crayon on a flat stone or metal plate. The surface is wet, so greasy ink sticks only to the drawing (oil and water don’t mix). Invented about 1796.","options":["inscription","printmaking","lithograph","improvisation"],"answer":2,"topic":"2","ex":{"idea":"<b>lithograph<\/b> (LITH-uh-graf): A print made by drawing with a greasy crayon on a flat stone or metal plate. The surface is wet, so greasy ink sticks only to the drawing (oil and water don’t mix). Invented about 1796.","steps":["Think of drawing with a crayon, then using the oil-and-water trick to print it.","Seen in: No. 114 Nadar Raising Photography to the Height of Art; No. 212 Chairman Mao en Route to Anyuan.","Related terms: printmaking, screenprint, edition."],"others":{"0":"means something else: Words written, painted or carved on a work, such as a title, poem, name or dedication.","1":"means something else: Making images that can be repeated by transferring ink from a prepared surface (block, plate, stone or screen) onto paper. The main families are relief, intaglio, lithography and screenprinting.","3":"means something else: Making something up on the spot, like a jazz musician. Kandinsky called a group of his paintings Improvisations because they came from spontaneous inner feeling rather than planning."}}},{"n":133,"prompt":"Color made by grinding up colored rocks and earth, such as red and yellow ochre or black manganese. The oldest paints.","options":["illuminated manuscript","mural","mineral pigment","emaki"],"answer":2,"topic":"2","ex":{"idea":"<b>mineral pigment<\/b>: Color made by grinding up colored rocks and earth, such as red and yellow ochre or black manganese. The oldest paints.","steps":["Think of crushing colored chalk or clay into powder.","Seen in: No. 2 Great Hall of the Bulls; No. 4 Running horned woman.","Related terms: pigment, rock art, binder."],"others":{"0":"means something else: A handwritten book decorated with painted pictures, colored letters and often gold or silver. Before printing, every book was made by hand.","1":"means something else: A large painting done directly on a wall or ceiling.","3":"means something else: Short for emakimono: a Japanese illustrated handscroll that combines pictures and text to tell a story, unrolled section by section from right to left."}}},{"n":134,"prompt":"A technique, used by Cézanne and the Cubists, of leaving edges open so one plane flows into the next, blurring the boundaries between objects and space.","options":["parchment","fresco secco","etching","passage"],"answer":3,"topic":"2","ex":{"idea":"<b>passage<\/b> (pah-SAHZH): A technique, used by Cézanne and the Cubists, of leaving edges open so one plane flows into the next, blurring the boundaries between objects and space.","steps":["Seen in: No. 125 Mont Sainte-Victoire.","Related terms: modulation, Cubism, Post-Impressionism."],"others":{"0":"means something else: Animal skin (usually sheep or goat) soaked, scraped, stretched and dried to make a smooth, tough writing surface. Fine calfskin parchment is called vellum.","1":"means something else: Painting on dry plaster with paint that has its own binder. It allows more detail and colors but flakes off over time.","2":"means something else: An intaglio print made by drawing through a wax coating on a metal plate, then dipping the plate in acid, which eats lines into the exposed metal. The lines can be looser and more sketch-like than engraving."}}},{"n":135,"prompt":"Italian for both ‘drawing’ and ‘design’. The Florentine and Roman belief that great art begins with drawing and careful intellectual planning, praised in artists like Michelangelo. It was debated against Venetian colorito.","options":["letterpress","texture stroke","mythological painting","disegno"],"answer":3,"topic":"2","ex":{"idea":"<b>disegno<\/b> (dee-ZEN-yoh): Italian for both ‘drawing’ and ‘design’. The Florentine and Roman belief that great art begins with drawing and careful intellectual planning, praised in artists like Michelangelo. It was debated against Venetian colorito.","steps":["Think of it as: Disegno is the blueprint; colorito is the paint job. Renaissance critics argued over which mattered more.","Seen in: No. 75 Sistine Chapel ceiling.","Related terms: colorito, cartoon, High Renaissance."],"others":{"0":"means something else: Printing with raised metal or wooden letters that are inked and pressed onto paper. It could be combined with woodcut pictures on the same page.","1":"means something else: In Chinese painting, a type of brushstroke (cun) used to show the texture of rocks and mountains, such as ‘raindrop’ or ‘axe-cut’ strokes. Fan Kuan’s mountains are built from thousands of raindrop strokes.","2":"means something else: A painting of stories from Greek and Roman myths. In the Renaissance, myths like Botticelli’s Birth of Venus were also read as ideas about beauty and love."}}},{"n":136,"prompt":"A single sheet or page of a manuscript or book. These are numbered with r (recto, the front) and v (verso, the back).","options":["miniature","folio","disguised symbolism","fresco"],"answer":1,"topic":"2","ex":{"idea":"<b>folio<\/b> (FOH-lee-oh): A single sheet or page of a manuscript or book. Folios are numbered with r (recto, the front) and v (verso, the back).","steps":["Think of one leaf of a notebook, both sides.","Seen in: No. 187 Folio from a Qur’an; No. 81 Codex Mendoza.","Related terms: codex, illuminated manuscript, parchment."],"others":{"0":"means something else: A small, detailed painting, often in a book or album. In the Persian and Mughal worlds, miniatures were made with fine brushes, bright opaque color and gold.","2":"means something else: Ordinary objects in a realistic scene that quietly carry religious meaning, a hallmark of Northern Renaissance painting. In the Merode Altarpiece, the lilies, candle and washbasin all point to Mary’s purity.","3":"means something else: Painting on plaster on a wall or ceiling. In true (buon) fresco the plaster is still wet; in fresco secco it is dry."}}},{"n":137,"prompt":"A style of contemporary Aboriginal Australian painting built up from many dabs or dots of color, connected to body painting and ceremonial designs about ancestral land.","options":["dot painting","opaque watercolor","soak-stain","cut paper"],"answer":0,"topic":"2","ex":{"idea":"<b>dot painting<\/b>: A style of contemporary Aboriginal Australian painting built up from many dabs or dots of color, connected to body painting and ceremonial designs about ancestral land.","steps":["Think of millions of colored dots that together map a place and its stories.","Seen in: No. 234 Earth’s Creation.","Related terms: acrylic paint, abstract, pattern."],"others":{"1":"means something else: Water-based paint thick enough to cover what is underneath, used for Persian and Mughal miniatures. Similar to gouache.","2":"means something else: Pouring very thin paint onto raw, unprimed canvas so it soaks into the cloth, leaving soft, see-through pools of color. Pioneered by Helen Frankenthaler.","3":"means something else: Shapes cut out of paper and arranged or pasted as a work of art. Kara Walker uses large black cut-paper silhouettes on white walls."}}},{"n":138,"prompt":"A Japanese technique of dropping ink or paint onto an area that is still wet, so the colors pool and blur into soft, mottled patches.","options":["tarashikomi","incipit page","oil paint","graﬀiti"],"answer":0,"topic":"2","ex":{"idea":"<b>tarashikomi<\/b> (tah-rah-shee-KOH-mee): A Japanese technique of dropping ink or paint onto an area that is still wet, so the colors pool and blur into soft, mottled patches.","steps":["Think of dripping food coloring onto a wet paper towel.","Seen in: No. 210 White and Red Plum Blossoms.","Related terms: ink, wash, byōbu."],"others":{"1":"means something else: The decorated opening page of a book or chapter in a manuscript, where the first words are made huge and ornamental. From the Latin for ‘it begins’.","2":"means something else: Paint made with pigment mixed in a drying oil, usually linseed oil. It dries slowly, so artists can blend smoothly and build up thin glazes; it became the main European painting medium by the 1500s.","3":"means something else: Words or images scrawled or spray-painted on public walls. Jean-Michel Basquiat began as the graﬀiti writer SAMO and brought its rough, word-filled look into his paintings."}}},{"n":139,"prompt":"A single painting or sheet of calligraphy made to be mounted in an album, rather than to illustrate the text of a book. Persian, Mughal and Ottoman collectors gathered such pages into albums called muraqqa.","options":["impression","album page","cross-hatching","graphite"],"answer":1,"topic":"2","ex":{"idea":"<b>album page<\/b>: A single painting or sheet of calligraphy made to be mounted in an album, rather than to illustrate the text of a book. Persian, Mughal and Ottoman collectors gathered such pages into albums called muraqqa.","steps":["Think of it as: Like one page in a royal collector’s scrapbook.","Seen in: No. 208 Jahangir Preferring a Sufi Shaikh to Kings.","Related terms: muraqqa, miniature, Mughal."],"others":{"0":"means something else: One single print pulled from a block or plate. Early impressions are often the sharpest.","2":"means something else: Shading made by drawing sets of fine parallel lines that cross each other. The closer the lines, the darker the area.","3":"means something else: The soft gray carbon inside an ordinary pencil, used for drawing."}}},{"n":140,"prompt":"The soft gray carbon inside an ordinary pencil, used for drawing.","options":["graphite","diptych","graﬀiti","palimpsest"],"answer":0,"topic":"2","ex":{"idea":"<b>graphite<\/b>: The soft gray carbon inside an ordinary pencil, used for drawing.","steps":["Think of it as: It is literally pencil ‘lead’ (which contains no lead).","Seen in: No. 242 Lying with the Wolf.","Related terms: drawing, charcoal."],"others":{"1":"means something else: A work made of two panels, often hinged together.","2":"means something else: Words or images scrawled or spray-painted on public walls. Jean-Michel Basquiat began as the graﬀiti writer SAMO and brought its rough, word-filled look into his paintings.","3":"means something else: Originally a manuscript page scraped clean and written over, with traces of the old writing still visible. In art, any surface where earlier layers show through later ones."}}}],"fr":[]}</script>
+<script>
+(function(){
+"use strict";
+var DATA = JSON.parse(document.getElementById("data").textContent);
+var META = DATA.meta, MC = DATA.mc, FR = DATA.fr || [], TOP = DATA.topics || {}, SEC = DATA.sections || {}, STIM = DATA.stims || {}, BY = {};
+MC.forEach(function(q){ BY[q.n] = q; });
+var KEY = META.key, FKEY = META.fkey || META.key + ".fr", HAS_FR = FR.length > 0;
+
+function load(k, d){ try{ var v = localStorage.getItem(k); return v ? JSON.parse(v) : d; }catch(e){ return d; } }
+function save(k, v){ try{ localStorage.setItem(k, JSON.stringify(v)); }catch(e){} }
+function esc(s){ return String(s).replace(/[&<>"]/g, function(c){ return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]; }); }
+function shuffle(a){ a = a.slice(); for (var i = a.length - 1; i > 0; i--){ var j = Math.floor(Math.random() * (i + 1)); var t = a[i]; a[i] = a[j]; a[j] = t; } return a; }
+function range(n){ var a = []; for (var i = 0; i < n; i++) a.push(i); return a; }
+
+var S = load(KEY, null);
+if (!S || !S.phase || !S.order || S.order.some(function(n){ return !BY[n]; })) S = { phase: "setup", mode: "practice", shuffleQ: false, shuffleC: false, order: [], copt: {}, ans: {}, pos: 0, full: null };
+var confirmFinish = false;
+var mcEl = document.getElementById("mc");
+
+function start(nums){
+  var list = nums || MC.map(function(q){ return q.n; });
+  S.order = S.shuffleQ ? shuffle(list) : list.slice();
+  S.copt = {};
+  S.order.forEach(function(n){
+    var q = BY[n], idx = range(q.options.length);
+    S.copt[n] = (S.shuffleC && !q.fixed) ? shuffle(idx) : idx;
+  });
+  S.ans = {}; S.pos = 0; S.phase = "run"; confirmFinish = false;
+  save(KEY, S); render(); focusTop();
+}
+function focusTop(){ var t = document.querySelector(".tabs") || document.querySelector(".title"); if (t && t.getBoundingClientRect().top < 0) t.scrollIntoView(); }
+
+function stats(){
+  var right = 0, done = 0;
+  S.order.forEach(function(n){ if (n in S.ans){ done++; if (S.ans[n] === BY[n].answer) right++; } });
+  return { right: right, done: done, total: S.order.length };
+}
+function topicShort(t){ return (META.topicPrefix || "") + t; }
+function topicLabel(t){ return topicShort(t) + ", " + TOP[t].name; }
+function guideLink(t, short){
+  var g = TOP[t], txt = short ? g.name : topicLabel(t);
+  var href = g.url ? g.url : (META.guide && g.page ? META.guide + "#page=" + g.page : "");
+  return href ? '<a href="' + href + '">' + txt + "</a>" : txt;
+}
+function topicLinks(ts){
+  ts = ts.filter(function(t){ return TOP[t]; });
+  if (!ts.length || !(META.guide || TOP[ts[0]].url)) return "";
+  return '<p class="links">Review ' + ts.map(function(t){ return guideLink(t); }).join(" &middot; ") + " in " + META.guideName + "</p>";
+}
+function explain(q, picked){
+  var e = q.ex, h = '<div class="why"><p>' + e.idea + "</p>";
+  if (e.steps.length) h += '<ol class="steps">' + e.steps.map(function(s){ return "<li>" + s + "</li>"; }).join("") + "</ol>";
+  var rest = range(q.options.length).filter(function(i){ return i !== q.answer; });
+  if (typeof picked === "number" && picked !== q.answer) rest = [picked].concat(rest.filter(function(i){ return i !== picked; }));
+  h += '<p class="why-h sc">Why not the others</p><ul class="others">' + rest.map(function(i){
+    return "<li>" + quoted(q, i) + (i === picked ? '<span class="tag">your answer</span>' : "") + " &mdash; " + e.others[i] + "</li>";
+  }).join("") + "</ul></div>";
+  return h;
+}
+function quoted(q, i){ return q.labels ? q.labels[i] : "&ldquo;" + q.options[i] + "&rdquo;"; }
+function table(q){ return q.table ? '<div class="bt-wrap">' + q.table + "</div>" : ""; }
+function stim(q){
+  var s = q.stim && STIM[q.stim]; if (!s) return "";
+  var html = s.html.split(' data-q="' + q.n + '"').join(' data-q="' + q.n + '" data-cur')
+    .replace(/data-qs="([^"]*)"/g, function(m, l){ return (" " + l + " ").indexOf(" " + q.n + " ") >= 0 ? m + " data-cur" : m; });
+  return '<div class="stim' + (s.cls ? " " + s.cls : "") + '">' + (s.title ? '<p class="stim-h sc">' + s.title + "</p>" : "") + html + "</div>";
+}
+function scrollStim(root){
+  root.querySelectorAll(".stim").forEach(function(box){ var c = box.querySelector("[data-cur]"); if (c && box.scrollHeight > box.clientHeight) box.scrollTop = Math.max(0, c.offsetTop - box.clientHeight / 3); });
+}
+function promptHtml(q){
+  return stim(q) + (q.fig || "") + '<div class="q-prompt"><p>' + q.prompt + "</p>" + (q.ask || META.ask ? '<p class="q-ask">' + (q.ask || META.ask) + "</p>" : "") + "</div>" + table(q);
+}
+
+function renderSetup(){
+  mcEl.innerHTML =
+    '<div class="setup">' +
+      '<h2>How do you want to take it?</h2>' +
+      '<div class="choice-row">' +
+        '<button type="button" class="choice" data-mode="practice" aria-pressed="' + (S.mode === "practice") + '"><b>Practice</b><span>See the answer and why after each question</span></button>' +
+        '<button type="button" class="choice" data-mode="exam" aria-pressed="' + (S.mode === "exam") + '"><b>Exam</b><span>Answer everything, then see your score</span></button>' +
+      '</div>' +
+      '<div class="checks">' +
+        '<label><input type="checkbox" id="opt-sq"' + (S.shuffleQ ? " checked" : "") + '> Shuffle questions</label>' +
+        '<label><input type="checkbox" id="opt-sc"' + (S.shuffleC ? " checked" : "") + '> Shuffle answer choices</label>' +
+      '</div>' +
+      '<div class="setup-actions"><button type="button" class="btn btn--solid btn--lg" id="go">Start' + (HAS_FR ? " multiple choice" : "") + '</button></div>' +
+      '<p class="note">' + META.setupNote + " Keyboard: 1&ndash;" + Math.max.apply(null, MC.map(function(q){ return q.options.length; })) + " to answer, &larr; &rarr; to move, Enter for next.</p>" +
+    '</div>';
+  mcEl.querySelectorAll(".choice").forEach(function(b){ b.onclick = function(){ S.mode = b.dataset.mode; render(); }; });
+  document.getElementById("opt-sq").onchange = function(e){ S.shuffleQ = e.target.checked; };
+  document.getElementById("opt-sc").onchange = function(e){ S.shuffleC = e.target.checked; };
+  document.getElementById("go").onclick = function(){ start(); };
+}
+
+function renderRun(){
+  var n = S.order[S.pos], q = BY[n], st = stats(), practice = S.mode === "practice";
+  var picked = (n in S.ans) ? S.ans[n] : null, locked = practice && picked !== null;
+  var nav = S.order.map(function(m, i){
+    var c = [];
+    if (m in S.ans){ if (practice) c.push(S.ans[m] === BY[m].answer ? "is-right" : "is-wrong"); else c.push("is-answered"); }
+    if (i === S.pos) c.push("is-current");
+    return '<button type="button" class="' + c.join(" ") + '" data-go="' + i + '" aria-label="Question ' + (i + 1) + '"' + (i === S.pos ? ' aria-current="step"' : "") + ">" + (i + 1) + "</button>";
+  }).join("");
+  var opts = S.copt[n].map(function(oi, k){
+    var cls = ["opt"], mark = "";
+    if (locked){
+      if (oi === q.answer){ cls.push("is-right"); mark = oi === picked ? "&check; your answer" : "&check; correct"; }
+      else if (oi === picked){ cls.push("is-wrong"); mark = "&cross; your answer"; }
+      else cls.push("is-dim");
+    } else if (oi === picked) cls.push("is-picked");
+    return '<li><button type="button" class="' + cls.join(" ") + '" data-opt="' + oi + '"' + (locked ? " disabled" : "") + '><span class="kbd">' + (k + 1) + "</span><span>" + q.options[oi] + '</span><span class="mark">' + mark + "</span></button></li>";
+  }).join("");
+  var fb = "";
+  if (locked){
+    var ok = picked === q.answer, ans = quoted(q, q.answer);
+    fb = '<div class="fb' + (ok ? "" : " is-wrong") + '"><p class="verdict" role="status">' + (ok ? "Correct." : "Not quite. The answer is " + ans + (/[.?!](&rdquo;)?$/.test(ans) ? "" : ".")) + "</p>" + explain(q, picked) + topicLinks([q.topic]) + "</div>";
+  }
+  var last = S.pos === S.order.length - 1, allDone = st.done === st.total;
+  var nextBtn = last
+    ? '<button type="button" class="btn btn--solid" id="finish">' + (practice ? "See results" : "Finish test") + "</button>"
+    : '<button type="button" class="btn btn--solid" id="next">Next &rarr;</button>';
+  var finishEarly = (!last && !practice) ? '<button type="button" class="btn" id="finish">Finish test</button>' : (!last && practice && allDone ? '<button type="button" class="btn" id="finish">See results</button>' : "");
+  var conf = "";
+  if (confirmFinish){
+    var left = st.total - st.done;
+    conf = '<div class="confirm"><p>' + left + " question" + (left === 1 ? " is" : "s are") + " unanswered and will be marked wrong. Finish anyway?</p>" +
+      '<button type="button" class="btn" id="conf-no">Keep going</button><button type="button" class="btn btn--solid" id="conf-yes">Finish</button></div>';
+  }
+  var eyebrow = "Question " + q.n + (SEC[q.sec] ? " &middot; " + SEC[q.sec] : "") + (q.tag ? " &middot; " + q.tag : (q.topic ? " &middot; " + topicShort(q.topic) : ""));
+  mcEl.innerHTML =
+    '<div class="bar"><span>Question ' + (S.pos + 1) + " of " + st.total + " &middot; " + (practice ? "Practice" : "Exam") + " mode</span><span>" +
+      (practice ? st.right + " correct of " + st.done + " answered" : st.done + " of " + st.total + " answered") + "</span></div>" +
+    '<div class="track"><span style="width:' + (st.done / st.total * 100) + '%"></span></div>' +
+    '<nav class="nav" aria-label="Questions">' + nav + "</nav>" +
+    '<article class="q">' +
+      '<p class="q-eyebrow sc">' + eyebrow + "</p>" +
+      promptHtml(q) +
+      '<ol class="opts">' + opts + "</ol>" + fb +
+      '<div class="step"><button type="button" class="btn" id="prev"' + (S.pos === 0 ? " disabled" : "") + '>&larr; Back</button><span class="step-right">' + finishEarly + nextBtn + "</span></div>" +
+      conf +
+    "</article>" +
+    '<p class="keys"><span class="kbd">1</span>&ndash;<span class="kbd">' + q.options.length + '</span> answer &nbsp; <span class="kbd">&larr;</span> <span class="kbd">&rarr;</span> move &nbsp; <span class="kbd">Enter</span> next</p>' +
+    '<p class="restart-line"><a href="#" id="restart">Start over</a> <span class="muted">&middot; progress is saved in this browser</span></p>';
+
+  scrollStim(mcEl);
+  mcEl.querySelectorAll("[data-go]").forEach(function(b){ b.onclick = function(){ go(+b.dataset.go); }; });
+  mcEl.querySelectorAll("[data-opt]").forEach(function(b){ b.onclick = function(){ pick(+b.dataset.opt); }; });
+  bind("prev", function(){ go(S.pos - 1); });
+  bind("next", function(){ go(S.pos + 1); });
+  bind("finish", finish);
+  bind("conf-no", function(){ confirmFinish = false; render(); });
+  bind("conf-yes", function(){ confirmFinish = false; showResults(); });
+  bind("restart", function(e){ e.preventDefault(); S.phase = "setup"; save(KEY, S); render(); });
+}
+function bind(id, fn){ var el = document.getElementById(id); if (el) el.onclick = fn; }
+
+function pick(oi){
+  var n = S.order[S.pos];
+  if (S.mode === "practice" && (n in S.ans)) return;
+  S.ans[n] = oi; save(KEY, S); render();
+  if (S.mode === "practice"){ var fb = mcEl.querySelector(".fb"); if (fb && fb.getBoundingClientRect().bottom > innerHeight) fb.scrollIntoView({ block: "nearest" }); }
+}
+function go(i){
+  if (i < 0 || i >= S.order.length) return;
+  S.pos = i; confirmFinish = false; save(KEY, S); render();
+  var q = mcEl.querySelector(".q"); if (q && q.getBoundingClientRect().top < 0) q.scrollIntoView();
+}
+function finish(){
+  var st = stats();
+  if (st.done < st.total && !confirmFinish){ confirmFinish = true; render(); var c = mcEl.querySelector(".confirm"); if (c) c.scrollIntoView({ block: "nearest" }); return; }
+  showResults();
+}
+function showResults(){
+  S.phase = "results";
+  if (S.order.length === MC.length) S.full = stats().right;
+  save(KEY, S); render(); if (HAS_FR) renderFR(); focusTop();
+}
+
+/* composite score (only when the document defines one) */
+function frTotal(){
+  var t = 0;
+  for (var i = 0; i < FR.length; i++){ var s = frScore(FR[i]); if (s === null) return null; t += s; }
+  return t;
+}
+function frMax(){ return FR.reduce(function(a, f){ return a + frItemMax(f); }, 0); }
+function compositeHtml(){
+  var C = META.composite;
+  if (!C || !HAS_FR) return "";
+  var mc = (typeof S.full === "number") ? S.full : null, fr = frTotal(), fm = frMax(), mm = MC.length;
+  if (mc === null && fr === null) return "";
+  var lines = [];
+  if (mc === null) lines.push("Free response: <b>" + fr + " / " + fm + "</b>. Take the full multiple-choice part to get your composite score.");
+  else if (fr === null) lines.push("Multiple choice: <b>" + mc + " / " + mm + "</b>. Write and mark every free-response question to get your composite score.");
+  else {
+    var c = Math.round(C.mcWeight * mc / mm + C.frWeight * fr / fm), band = "";
+    for (var i = 0; i < C.bands.length; i++){ if (c >= C.bands[i][0]){ band = C.bands[i][1]; break; } }
+    lines.push("Composite score: <b>" + c + " / " + (C.mcWeight + C.frWeight) + "</b> &nbsp;<span class=\"muted\">= " + C.mcWeight + " &times; " + mc + "/" + mm + " + " + C.frWeight + " &times; " + fr + "/" + fm + "</span>");
+    if (band) lines.push(band);
+  }
+  return '<div class="composite" role="status">' + lines.map(function(l){ return "<p>" + l + "</p>"; }).join("") + "</div>";
+}
+function targetHtml(st){
+  var T = META.target, B = META.bands, h = "";
+  if (st.total !== MC.length) return "";
+  if (T) h += '<p class="target">' + T.label + ": " + T.mc + " / " + MC.length + " &middot; " + (st.right >= T.mc ? "met" : (T.mc - st.right) + " short") + "</p>";
+  if (B) for (var i = 0; i < B.length; i++){ if (st.right >= B[i][0]){ h += '<p class="target">' + B[i][1] + "</p>"; break; } }
+  return h;
+}
+
+var resFilter = "all";
+function renderResults(){
+  var st = stats(), pct = Math.round(st.right / st.total * 100), fullRun = st.total === MC.length;
+  var missed = S.order.filter(function(n){ return S.ans[n] !== BY[n].answer; });
+  var rows = S.order.map(function(n, i){
+    var q = BY[n], a = S.ans[n], ok = a === q.answer;
+    if (resFilter === "missed" && ok) return "";
+    return '<li><details><summary><span class="res-n">' + (i + 1) + '.</span><span class="' + (ok ? "res-ok" : "res-bad") + '" aria-label="' + (ok ? "correct" : "wrong") + '">' + (ok ? "&check;" : "&cross;") + '</span><span class="res-sum">' + q.prompt + "</span></summary>" +
+      '<div class="res-body">' + stim(q) + (q.fig || "") + table(q) + '<p><span class="sc">Your answer:</span> ' + (a === undefined ? "<i>skipped</i>" : q.options[a]) + "</p>" +
+      (ok ? "" : '<p><span class="sc">Correct:</span> ' + q.options[q.answer] + "</p>") +
+      explain(q, a) + topicLinks([q.topic]) + "</div></details></li>";
+  }).join("");
+  var tally = {};
+  S.order.forEach(function(n){ var t = BY[n].topic; if (!t) return; tally[t] = tally[t] || { right: 0, total: 0 }; tally[t].total++; if (S.ans[n] === BY[n].answer) tally[t].right++; });
+  var trows = Object.keys(TOP).filter(function(t){ return tally[t]; }).map(function(t){
+    var x = tally[t], miss = x.total - x.right;
+    return "<tr><th scope=\"row\">" + topicShort(t) + "</th><td>" + x.right + " / " + x.total + "</td><td>" + guideLink(t, true) +
+      ((META.flag ? x.right < META.flag.below * x.total : miss >= 2) ? ' <span class="flag">&middot; ' + (META.flag ? META.flag.text : "reread this section") + "</span>" : "") + "</td></tr>";
+  }).join("");
+  mcEl.innerHTML =
+    '<div class="results">' +
+      '<div class="score"><p class="score-big">' + st.right + " / " + st.total + "</p><p>" + pct + "% correct" + (fullRun ? "" : " &middot; retry of missed questions") + "</p>" + targetHtml(st) + "</div>" +
+      '<div class="res-actions">' +
+        (missed.length ? '<button type="button" class="btn btn--solid" id="retry">Retry the ' + missed.length + " missed</button>" : "") +
+        '<button type="button" class="btn" id="again">Take the full test again</button>' +
+        (HAS_FR ? '<button type="button" class="btn" id="to-fr">Go to free response</button>' : "") +
+      "</div>" +
+      compositeHtml() +
+      (trows ? '<div class="topics"><h2>' + (META.byTopic || "By topic") + '</h2><table class="bt"><thead><tr><th scope="col">' + (META.topicCol || "Topic") + '</th><th scope="col">Correct</th><th scope="col">' + (META.guideCol || "Guide section") + "</th></tr></thead><tbody>" + trows + "</tbody></table>" +
+        (META.topicNote ? '<p class="note" style="margin-top:6px">' + META.topicNote + "</p>" : "") + "</div>" : "") +
+      '<div class="res-filter"><h2>Review</h2><span><label><input type="checkbox" id="only-missed"' + (resFilter === "missed" ? " checked" : "") + "> Show missed only</label></span></div>" +
+      '<ul class="res-list">' + (rows || '<li><p class="note" style="padding:12px 0">Nothing missed.</p></li>') + "</ul>" +
+    "</div>";
+  bind("retry", function(){ start(missed); });
+  bind("again", function(){ S.phase = "setup"; save(KEY, S); render(); });
+  bind("to-fr", function(){ setTab("fr"); });
+  document.getElementById("only-missed").onchange = function(e){ resFilter = e.target.checked ? "missed" : "all"; render(); };
+}
+
+function render(){
+  if (S.phase === "run" && S.order.length) renderRun();
+  else if (S.phase === "results" && S.order.length) renderResults();
+  else { S.phase = "setup"; renderSetup(); }
+}
+
+/* free response: "epi" parts (E/P/I -> 0-4 per question) or "points" parts (0..max each) */
+var frEl = document.getElementById("fr"), F = load(FKEY, null);
+if (!F || typeof F !== "object") F = {};
+F.drafts = F.drafts || {}; F.marks = F.marks || {}; F.open = F.open || {};
+var LABELS = { 4: "Complete", 3: "Substantial", 2: "Developing", 1: "Minimal", 0: "" };
+function frItemMax(f){ return f.mode === "points" ? f.parts.reduce(function(a, p){ return a + p.max; }, 0) : 4; }
+function frScore(f){
+  if (f.mode === "points"){
+    var t = 0;
+    for (var j = 0; j < f.parts.length; j++){ var v = F.marks[f.n + f.parts[j].label]; if (v === undefined || v === "") return null; t += +v; }
+    return t;
+  }
+  var e = 0, p = 0;
+  for (var i = 0; i < f.parts.length; i++){
+    var m = F.marks[f.n + f.parts[i].label];
+    if (!m) return null;
+    if (m === "E") e++; else if (m === "P") p++;
+  }
+  if (e === 3) return 4;
+  if (e === 2 && p === 1) return 3;
+  if ((e === 2 && p === 0) || (e === 1 && p >= 1) || p === 3) return 2;
+  if ((e === 1 && p === 0) || (e === 0 && p === 2)) return 1;
+  return 0;
+}
+function words(t){ var m = t.trim().match(/\S+/g); return m ? m.length : 0; }
+var SCALE = '<details class="scale"><summary>How part scores convert to 0&ndash;4</summary><table class="bt"><thead><tr><th scope="col">Score</th><th scope="col">Label</th><th scope="col">Part scores (three parts, each E, P, or I)</th></tr></thead><tbody>' +
+  "<tr><td>4</td><td>Complete</td><td>three parts E</td></tr>" +
+  "<tr><td>3</td><td>Substantial</td><td>two parts E and one part P</td></tr>" +
+  "<tr><td>2</td><td>Developing</td><td>two E and no P; or one E and one or two P; or three P</td></tr>" +
+  "<tr><td>1</td><td>Minimal</td><td>one E and no P; or no E and two P</td></tr>" +
+  "<tr><td>0</td><td></td><td>anything less</td></tr></tbody></table></details>";
+function frScoreHtml(f){
+  var s = frScore(f), mx = frItemMax(f);
+  if (s === null) return '<span class="muted">Mark every part to score this question.</span>';
+  return "Score: <b>" + s + " / " + mx + "</b>" + (f.mode !== "points" && LABELS[s] ? " &middot; " + LABELS[s] : "");
+}
+function markButtons(f, p, id, m){
+  var vals = f.mode === "points" ? range(p.max + 1).map(String) : ["E", "P", "I"];
+  return vals.map(function(x){ return '<button type="button" data-mark="' + id + '" data-f="' + f.n + '" data-v="' + x + '" aria-pressed="' + (m === x) + '">' + x + "</button>"; }).join("");
+}
+function renderFR(){
+  if (!HAS_FR) return;
+  frEl.innerHTML = '<p class="fr-intro">' + META.frIntro + "</p>" +
+    FR.map(function(f){
+      var open = !!F.open[f.n];
+      var parts = f.parts.map(function(p){
+        var id = f.n + p.label, d = F.drafts[id] || "", m = (F.marks[id] === undefined ? "" : String(F.marks[id]));
+        var crit = f.mode === "points"
+          ? '<div class="crit-pts">' + p.rubric + "</div>"
+          : '<dl class="crit"><dt>E</dt><dd>if the response ' + p.e + "</dd><dt>P</dt><dd>if " + p.p + "</dd></dl>";
+        return '<div class="part"><p class="part-prompt"><b>(' + p.label + ")</b>" + p.prompt + "</p>" +
+          '<label class="sc" for="fr-' + id + '">Your answer to (' + p.label + ")</label>" +
+          '<textarea id="fr-' + id + '" data-fr="' + id + '" spellcheck="true">' + esc(d) + "</textarea>" +
+          '<p class="part-meta" id="wc-' + id + '">' + words(d) + " words &middot; saved in this browser</p>" +
+          '<div class="sol"' + (open ? "" : " hidden") + ' data-sol="' + f.n + '"><h3>Model solution (' + p.label + ")</h3><div>" + p.solution + "</div>" + crit +
+            '<div class="mark-row"><span>Your mark for (' + p.label + ")" + (f.mode === "points" ? ", out of " + p.max : "") + ':</span><span class="seg" role="group" aria-label="Mark for part ' + p.label + '">' + markButtons(f, p, id, m) + "</span></div></div></div>";
+      }).join("");
+      return '<article class="fr"><h2>Question ' + f.n + "<small>" + f.head + "</small></h2>" +
+        (f.stim ? stim(f) : "") + '<div class="fr-stem">' + f.stem + "</div>" + parts +
+        '<div class="fr-actions"><span class="fr-score" id="score-' + f.n + '">' + (open ? frScoreHtml(f) : "") + "</span>" +
+          '<button type="button" class="btn" data-open="' + f.n + '" aria-expanded="' + open + '">' + (open ? "Hide model solution" : "Show model solution and scoring") + "</button></div>" +
+        (open ? (f.mode === "points" ? "" : SCALE) + topicLinks(f.guide || []) : "") +
+        "</article>";
+    }).join("") + '<div id="fr-composite">' + compositeHtml() + "</div>";
+  frEl.querySelectorAll("textarea").forEach(function(t){
+    t.oninput = function(){ F.drafts[t.dataset.fr] = t.value; save(FKEY, F); document.getElementById("wc-" + t.dataset.fr).innerHTML = words(t.value) + " words &middot; saved in this browser"; };
+  });
+  frEl.querySelectorAll("[data-open]").forEach(function(b){
+    b.onclick = function(){ var n = b.dataset.open; F.open[n] = !F.open[n]; save(FKEY, F); renderFR(); var a = document.getElementById("score-" + n); if (a) a.closest(".fr").querySelector(".part").scrollIntoView({ block: "nearest" }); };
+  });
+  frEl.querySelectorAll("[data-mark]").forEach(function(b){
+    b.onclick = function(){
+      var id = b.dataset.mark; F.marks[id] = F.marks[id] === b.dataset.v ? "" : b.dataset.v; save(FKEY, F);
+      b.parentNode.querySelectorAll("button").forEach(function(x){ x.setAttribute("aria-pressed", String(F.marks[id] === x.dataset.v)); });
+      var f = FR.filter(function(x){ return String(x.n) === b.dataset.f; })[0];
+      document.getElementById("score-" + f.n).innerHTML = frScoreHtml(f);
+      document.getElementById("fr-composite").innerHTML = compositeHtml();
+      if (S.phase === "results") render();
+    };
+  });
+}
+
+/* tabs (only when there is a free-response part) */
+function setTab(t){
+  if (!HAS_FR) return;
+  var mc = t === "mc";
+  document.getElementById("tab-mc").setAttribute("aria-selected", String(mc));
+  document.getElementById("tab-fr").setAttribute("aria-selected", String(!mc));
+  mcEl.hidden = !mc; frEl.hidden = mc;
+  try{ history.replaceState(null, "", mc ? location.pathname : "#free-response"); }catch(e){}
+  focusTop();
+}
+if (HAS_FR){
+  document.getElementById("tab-mc").onclick = function(){ setTab("mc"); };
+  document.getElementById("tab-fr").onclick = function(){ setTab("fr"); };
+}
+
+/* keyboard */
+document.addEventListener("keydown", function(e){
+  if (e.metaKey || e.ctrlKey || e.altKey) return;
+  var tag = (e.target.tagName || "").toLowerCase();
+  if (tag === "textarea" || tag === "input") return;
+  if (mcEl.hidden || S.phase !== "run") return;
+  var n = S.order[S.pos], q = BY[n];
+  if (/^[1-9]$/.test(e.key)){ var k = +e.key - 1; if (k < q.options.length){ e.preventDefault(); pick(S.copt[n][k]); } }
+  else if (e.key === "ArrowRight"){ e.preventDefault(); go(S.pos + 1); }
+  else if (e.key === "ArrowLeft"){ e.preventDefault(); go(S.pos - 1); }
+  else if (e.key === "Enter" && tag !== "button" && tag !== "a"){ e.preventDefault(); if (S.pos < S.order.length - 1) go(S.pos + 1); else finish(); }
+});
+
+/* theme */
+var root = document.documentElement, tb = document.getElementById("theme-btn");
+function syncTheme(){ var dark = root.getAttribute("data-theme") === "dark"; tb.textContent = dark ? "Light mode" : "Dark mode"; tb.setAttribute("aria-pressed", String(dark)); }
+tb.onclick = function(){ var dark = root.getAttribute("data-theme") !== "dark"; root.setAttribute("data-theme", dark ? "dark" : "light"); try{ localStorage.setItem("apah.theme", dark ? "dark" : "light"); }catch(e){} syncTheme(); };
+syncTheme();
+
+render(); renderFR();
+if (HAS_FR && location.hash === "#free-response") setTab("fr");
+})();
+</script>
+</body>
+</html>

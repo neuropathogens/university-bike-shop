@@ -1,0 +1,643 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light">
+<script>try{document.documentElement.setAttribute("data-theme",localStorage.getItem("apah.theme")==="dark"?"dark":"light")}catch(e){document.documentElement.setAttribute("data-theme","light")}</script>
+<title>APAH Vocabulary 1: Looking and describing</title>
+<meta name="description" content="AP Art History vocabulary practice, Looking and describing: 65 name-the-term questions, each explained with the glossary entry and what the wrong choices mean.">
+<link rel="icon" href="/favicon.ico" sizes="48x48" type="image/x-icon">
+<link rel="icon" href="/icon.svg" sizes="any" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-icon.png" sizes="180x180">
+<link rel="preload" href="/study/ap/ap-art-history/fonts/LM-regular.woff2" as="font" type="font/woff2" crossorigin>
+
+<style>
+@font-face{font-family:"Latin Modern";font-style:normal;font-weight:400;font-display:swap;src:url("/study/ap/ap-art-history/fonts/LM-regular.woff2") format("woff2")}
+@font-face{font-family:"Latin Modern";font-style:italic;font-weight:400;font-display:swap;src:url("/study/ap/ap-art-history/fonts/LM-italic.woff2") format("woff2")}
+@font-face{font-family:"Latin Modern";font-style:normal;font-weight:600 700;font-display:swap;src:url("/study/ap/ap-art-history/fonts/LM-bold.woff2") format("woff2")}
+@font-face{font-family:"Latin Modern";font-style:italic;font-weight:600 700;font-display:swap;src:url("/study/ap/ap-art-history/fonts/LM-bold-italic.woff2") format("woff2")}
+@font-face{font-family:"Latin Modern Mono";font-style:normal;font-weight:400 500;font-display:swap;src:url("/study/ap/ap-art-history/fonts/LM-mono.woff2") format("woff2")}
+@font-face{font-family:"Latin Modern Mono";font-style:normal;font-weight:600 700;font-display:swap;src:url("/study/ap/ap-art-history/fonts/LM-mono-bold.woff2") format("woff2")}
+
+:root{--bg:#fff;--fg:#000;--muted:#4a4a4a;--line:#c9c9c9;--plate:#f5f5f3;--hl:#fbe9a6;--link:#00008b;--ok:#1d5e20;--bad:#9b1c1c;
+  --serif:"Latin Modern","Computer Modern Serif","CMU Serif",Georgia,serif;--mono:"Latin Modern Mono","SFMono-Regular",Menlo,Consolas,monospace;
+  --gutter:clamp(16px,4vw,40px);color-scheme:light}
+:root[data-theme=dark]{--bg:#111110;--fg:#ecebe6;--muted:#a3a29c;--line:#34342f;--plate:#1b1b19;--hl:#4d4320;--link:#9db4ff;--ok:#8fd394;--bad:#ff9b9b;color-scheme:dark}
+*{box-sizing:border-box}
+html{background:var(--bg);scroll-padding-top:16px}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--serif);font-size:17px;line-height:1.5;font-kerning:normal;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+button,input,textarea{font:inherit;color:inherit}
+button{cursor:pointer}
+button:disabled{cursor:default}
+a{color:var(--link);text-underline-offset:3px;text-decoration-thickness:.5px}
+:focus-visible{outline:2px solid var(--link);outline-offset:2px}
+[hidden]{display:none!important}
+.sc{font-variant:small-caps;text-transform:lowercase;letter-spacing:.04em}
+.muted{color:var(--muted)}
+.katex{font-size:1.04em;text-rendering:auto}
+.katex-display{margin:.7em 0;overflow-x:auto;overflow-y:hidden;padding:2px 0}
+
+.runhead{display:flex;flex-wrap:wrap;justify-content:space-between;gap:4px 16px;max-width:1480px;margin:0 auto;padding:14px var(--gutter) 6px;font-size:14px;font-style:italic;color:var(--muted)}
+.runhead a{text-decoration:none}
+.runhead a:hover{text-decoration:underline}
+.runhead-actions{display:flex;flex-wrap:wrap;gap:4px 18px}
+.theme-btn{background:none;border:0;padding:0;font:inherit;font-style:italic;color:var(--link)}
+.theme-btn:hover{text-decoration:underline}
+.rule{max-width:1480px;margin:0 auto;padding-inline:var(--gutter)}
+.rule hr{margin:0;border:0;border-top:.5px solid var(--fg)}
+
+.wrap{max-width:860px;margin:0 auto;padding:0 var(--gutter) 80px}
+.title{text-align:center;padding:34px 0 22px}
+.title h1{margin:0;text-wrap:balance;font-size:clamp(32px,6vw,46px);line-height:1.1;font-weight:700}
+.title .sub{margin:8px 0 0;font-size:18px;font-variant:small-caps;letter-spacing:.03em}
+.title .meta{margin:4px 0 0;font-style:italic;color:var(--muted)}
+
+.tabs{display:flex;justify-content:center;gap:0;margin:0 0 26px;border-bottom:.5px solid var(--fg)}
+.tab{background:none;border:0;border-bottom:2.5px solid transparent;padding:8px 18px;margin-bottom:-1px;font-size:17px;color:var(--muted)}
+.tab[aria-selected=true]{color:var(--fg);border-bottom-color:var(--fg);font-weight:700}
+.tab:hover{color:var(--fg)}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:40px;padding:0 16px;border:1px solid var(--fg);background:var(--bg);font-family:var(--mono);font-size:14.5px;white-space:nowrap}
+.btn:hover:not(:disabled){background:var(--plate)}
+.btn:disabled{opacity:.35}
+.btn--solid{background:var(--fg);color:var(--bg)}
+.btn--solid:hover:not(:disabled){background:var(--fg);opacity:.85}
+.btn--lg{min-height:48px;font-size:15.5px;padding:0 22px}
+.kbd{display:inline-grid;place-items:center;min-width:22px;height:22px;padding:0 4px;border:1px solid currentColor;font-family:var(--mono);font-size:12px;opacity:.8}
+
+/* booktabs tables */
+.bt{border-collapse:collapse;margin:0 auto;font-variant-numeric:tabular-nums}
+.bt th,.bt td{padding:4px 12px;text-align:center;font-weight:400}
+.bt th[scope=row],.bt thead th:first-child{text-align:left}
+.bt thead tr{border-top:1px solid var(--fg);border-bottom:.5px solid var(--fg)}
+.bt tbody tr:last-child{border-bottom:1px solid var(--fg)}
+.bt-wrap{overflow-x:auto;margin:0 0 16px}
+
+/* setup */
+.setup{border-bottom:1.5px solid var(--fg);padding:4px 0 22px;display:grid;gap:18px}
+.setup h2,.results h2,.fr h2{margin:0;font-size:20px}
+.choice-row{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.choice{display:flex;flex-direction:column;align-items:flex-start;gap:2px;padding:12px 14px;border:1px solid var(--fg);background:var(--bg);text-align:left}
+.choice b{font-size:17px}
+.choice span{font-size:14.5px;font-style:italic;color:var(--muted)}
+.choice[aria-pressed=true]{background:var(--fg);color:var(--bg)}
+.choice[aria-pressed=true] span{color:var(--bg);opacity:.8}
+.checks{display:flex;flex-wrap:wrap;gap:8px 22px}
+.checks label{display:inline-flex;align-items:center;gap:8px;cursor:pointer}
+.checks input{width:17px;height:17px;margin:0;accent-color:var(--fg)}
+.setup-actions{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.note{margin:0;font-size:15px;color:var(--muted);font-style:italic}
+
+/* run */
+.bar{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:4px 16px;font-size:15px;color:var(--muted)}
+.track{height:3px;background:var(--line);margin:8px 0 14px}
+.track span{display:block;height:100%;background:var(--fg);transition:width .2s ease}
+.nav{display:grid;grid-template-columns:repeat(auto-fill,minmax(34px,1fr));gap:5px;margin:0 0 22px}
+.nav button{height:32px;padding:0;border:1px solid var(--line);background:var(--bg);font-family:var(--serif);font-size:14px;font-variant-numeric:tabular-nums}
+.nav button:hover{border-color:var(--fg)}
+.nav .is-answered{background:var(--plate);border-color:var(--fg)}
+.nav .is-right{background:var(--fg);color:var(--bg);border-color:var(--fg)}
+.nav .is-wrong{border:1.5px dashed var(--bad);color:var(--bad)}
+.nav .is-current{outline:2px solid var(--fg);outline-offset:1px}
+.q{border-top:1.5px solid var(--fg);padding-top:16px}
+.q-eyebrow{margin:0 0 6px;font-size:14px;color:var(--muted)}
+.q-prompt{margin:0 0 14px;font-size:20px;line-height:1.45;font-weight:400}
+.opts{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.opt{display:flex;align-items:center;gap:12px;width:100%;min-height:52px;padding:10px 14px;border:1px solid var(--fg);background:var(--bg);text-align:left;font-size:16.5px;line-height:1.4}
+.opt:hover:not(:disabled){background:var(--plate)}
+.opt .kbd{flex:none}
+.opt .mark{margin-left:auto;padding-left:6px;font-family:var(--mono);font-size:14px;white-space:nowrap}
+.opt.is-picked{border-width:2px;padding:9px 13px;background:var(--plate)}
+.opt.is-right{background:var(--fg);color:var(--bg);border-color:var(--fg)}
+.opt.is-wrong{border:1.5px dashed var(--bad);color:var(--bad);text-decoration:line-through;text-decoration-thickness:1px}
+.opt.is-wrong .mark,.opt.is-wrong .kbd{text-decoration:none}
+.opt.is-dim{opacity:.5}
+.fb{margin:14px 0 0;padding:12px 16px;border:.5px solid var(--fg);border-left:3px solid var(--ok)}
+.fb.is-wrong{border-left-color:var(--bad)}
+.fb p{margin:0}
+.fb .verdict{font-weight:700;margin-bottom:4px}
+.why p{margin:0 0 6px}
+.steps{margin:2px 0 8px;padding-left:22px}
+.steps li{margin:4px 0;padding-left:2px}
+.why .why-h{margin:10px 0 2px;font-size:14.5px;color:var(--muted)}
+.others{margin:0 0 4px;padding-left:20px}
+.others li{margin:5px 0}
+.others .tag{margin-left:6px;font-family:var(--mono);font-size:12.5px;color:var(--bad);white-space:nowrap}
+.links{margin-top:6px;font-size:15px}
+.step{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:10px;margin-top:20px}
+.step-right{display:flex;flex-wrap:wrap;gap:8px}
+.confirm{margin-top:14px;padding:12px 16px;border:1px solid var(--fg);display:flex;flex-wrap:wrap;align-items:center;gap:10px}
+.confirm p{margin:0;flex:1 1 220px}
+.keys{margin:18px 0 0;font-size:13.5px;color:var(--muted);text-align:center}
+.restart-line{margin:10px 0 0;font-size:14.5px;text-align:center}
+
+/* results */
+.results{padding-top:4px}
+.score{text-align:center;padding:10px 0 18px}
+.score-big{margin:0;font-size:clamp(48px,10vw,72px);font-weight:700;line-height:1;font-variant-numeric:tabular-nums}
+.score p{margin:6px 0 0}
+.res-actions{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin:0 0 22px}
+.res-filter{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:6px;border-bottom:1.5px solid var(--fg);padding-bottom:6px}
+.res-list{list-style:none;margin:0;padding:0}
+.res-list>li{border-bottom:.5px solid var(--line)}
+.res-list>li:last-child{border-bottom:1.5px solid var(--fg)}
+.res-list details{padding:10px 0}
+.res-list summary{display:grid;grid-template-columns:34px 22px minmax(0,1fr);gap:8px;cursor:pointer;list-style:none}
+.res-list summary::-webkit-details-marker{display:none}
+.res-n{font-weight:700;font-variant-numeric:tabular-nums}
+.res-ok{color:var(--ok);font-weight:700}
+.res-bad{color:var(--bad);font-weight:700}
+.res-body{padding:8px 0 4px 64px;font-size:15.5px}
+.res-body p{margin:0 0 4px}
+.res-body .bt-wrap{margin:4px 0 8px}
+.topics{margin:0 0 26px}
+.topics h2{margin:0 0 8px}
+.topics .bt{margin:0;width:100%}
+.topics .bt td:last-child,.topics .bt th:last-child{text-align:left}
+.topics .flag{color:var(--bad);font-style:italic}
+.composite{margin:0 0 26px;padding:12px 16px;border:.5px solid var(--fg);border-left:3px solid var(--fg)}
+.composite p{margin:0}
+.composite p+p{margin-top:4px}
+
+/* free response */
+.fr-intro{margin:0 0 6px;font-style:italic;color:var(--muted)}
+.fr{border-top:1.5px solid var(--fg);padding:18px 0 26px}
+.fr h2 small{font-weight:400;font-style:italic;color:var(--muted);font-size:15px;margin-left:6px}
+.fr-stem{margin:10px 0 6px;text-align:justify;hyphens:auto;-webkit-hyphens:auto}
+.part{margin:18px 0 0}
+.part-prompt{margin:0 0 8px}
+.part-prompt b{margin-right:4px}
+.part textarea{width:100%;min-height:150px;padding:12px 14px;border:1px solid var(--fg);border-radius:0;background:var(--bg);font-family:var(--serif);font-size:16.5px;line-height:1.55;resize:vertical}
+.part-meta{margin-top:4px;font-size:14px;color:var(--muted)}
+.sol{margin-top:12px;padding:12px 18px;border:.5px solid var(--fg)}
+.sol h3{margin:0 0 4px;font-size:15px}
+.sol p{margin:0 0 10px}
+.sol .crit{display:grid;grid-template-columns:28px minmax(0,1fr);gap:2px 8px;margin:0 0 10px;font-size:15.5px}
+.sol .crit dt{font-weight:700}
+.sol .crit dd{margin:0}
+.mark-row{display:flex;flex-wrap:wrap;align-items:center;gap:8px;font-size:15px}
+.seg{display:inline-flex}
+.seg button{min-width:44px;min-height:36px;padding:0 10px;border:1px solid var(--fg);background:var(--bg);font-family:var(--mono);font-size:14px}
+.seg button+button{border-left:0}
+.seg button[aria-pressed=true]{background:var(--fg);color:var(--bg)}
+.fr-actions{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:10px;margin-top:16px}
+.fr-score{font-size:16px}
+.fr-score b{font-variant-numeric:tabular-nums}
+.scale{margin-top:14px}
+.scale summary{cursor:pointer;font-size:15px;color:var(--muted);font-style:italic}
+.scale .bt{margin:8px 0 0}
+.scale .bt td:last-child,.scale .bt th:last-child{text-align:left}
+.foot{margin-top:40px;padding-top:12px;border-top:.5px solid var(--line);font-size:14px;color:var(--muted)}
+
+@media (max-width:640px){
+  .runhead-title{display:none}
+  .runhead-actions{width:100%;justify-content:space-between}
+  .title{padding:22px 0 16px}
+  .choice-row{grid-template-columns:1fr}
+  .q-prompt{font-size:18.5px}
+  .res-body{padding-left:0}
+  .keys{display:none}
+  .fr-stem{text-align:left}
+  .bt th,.bt td{padding:4px 7px}
+  .sol{padding:10px 12px}
+  .katex-display>.katex{font-size:.94em}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+@media print{.runhead,.rule,.tabs,.nav,.step,.keys,.restart-line,.res-actions{display:none!important}}
+/* generic quiz additions */
+.q-prompt p{margin:0}
+.q-prompt p+p{margin-top:8px}
+.q-ask{margin:10px 0 0!important;font-size:16px;font-style:italic;color:var(--muted)}
+.blank{display:inline-block;width:3.4em;height:1em;margin:0 .12em;border-bottom:1.5px solid currentColor;vertical-align:-.12em}
+.stim{position:relative;margin:0 0 16px;padding:12px 16px;border:.5px solid var(--fg);background:var(--plate);font-size:16.5px;line-height:1.55;max-height:60vh;overflow:auto}
+.stim-h{margin:0 0 6px!important;font-size:14px;color:var(--muted)}
+.stim p{margin:0 0 8px}
+.stim p:last-child{margin-bottom:0}
+u.ul{text-decoration-thickness:1px;text-underline-offset:3px}
+.qn{display:inline-block;min-width:1.4em;padding:0 .2em;margin:0 .15em;border:.5px solid var(--fg);font:600 11.5px/1.4 system-ui,-apple-system,sans-serif;text-align:center;vertical-align:.12em;font-variant-numeric:tabular-nums}
+.stim .qn[data-cur]{background:var(--fg);color:var(--bg)}
+.stim u[data-cur]{background:var(--hl);box-shadow:0 0 0 2px var(--hl)}
+.stim .ln{display:inline-block;min-width:1.3em;padding:0 .25em;margin-right:.25em;border:.5px solid var(--line);color:var(--muted);font:500 11px/1.4 system-ui,-apple-system,sans-serif;text-align:center;vertical-align:.12em;font-variant-numeric:tabular-nums}
+.stim .ln[data-cur]{background:var(--hl);color:var(--fg);border-color:var(--fg)}
+.stim-intro{font-style:italic;color:var(--muted);font-size:15px}
+.stim-sub{margin-top:12px!important}
+.stim-note{font-size:15px;color:var(--muted)}
+.fig .figcap{margin:0 0 6px;font-size:15px}
+.stim.free{max-height:none;overflow:visible}
+.bt th[colspan]{text-align:center}
+.stim .figcap{text-align:center;font-size:15px;margin:10px 0 4px}
+.stim .fig{margin:6px 0 10px}
+.stim .bt-wrap{margin:0 0 10px}
+.fig-img,.opt-img{max-width:100%;height:auto;background:#fff}
+.opt-img{display:block;max-width:140px}
+:root[data-theme=dark] .fig-img,:root[data-theme=dark] .opt-img{filter:invert(.92) hue-rotate(180deg)}
+.fig{margin:0 0 14px;text-align:center}
+.fig img{max-width:100%;height:auto;background:#fff}
+:root[data-theme=dark] .fig img{filter:invert(.92) hue-rotate(180deg)}
+.fig figcaption{font-size:14px;color:var(--muted);font-style:italic}
+.target{margin:4px 0 0;font-style:italic}
+.res-sum{display:block}
+.opt>span:nth-child(2){flex:1 1 auto;min-width:0;overflow-wrap:anywhere;-webkit-hyphens:auto;hyphens:auto}
+@media (max-width:640px){.opt .mark{white-space:normal;text-align:right;max-width:6.2em;line-height:1.25}}
+.sol>div{margin:0 0 10px}
+.crit-pts{margin:0 0 10px;font-size:15.5px}
+.crit-pts p{margin:0 0 4px}
+.crit-pts ul{margin:0 0 4px;padding-left:20px}
+</style>
+</head>
+<body>
+<div class="runhead"><span class="runhead-title">AP Art History &middot; Vocabulary &middot; Name the term</span><span class="runhead-actions"><a href="/study/#ap-art-history">&larr;&nbsp;Study Library</a><a href="/study/ap/ap-art-history/apah-vocabulary.pdf">PDF version</a><button type="button" class="theme-btn" id="theme-btn">Dark mode</button></span></div>
+<div class="rule"><hr></div>
+
+<main class="wrap">
+  <header class="title">
+    <h1>Looking and describing</h1>
+    <p class="sub">AP Art History Vocabulary &middot; Section 1 of 8</p>
+    <p class="meta">65 questions (Nos. 1&ndash;65) &middot; name the term from its definition</p>
+  </header>
+
+  <section id="mc"></section>
+  <section id="fr" role="tabpanel" aria-labelledby="tab-fr" hidden></section>
+
+  <p class="foot">From <a href="/study/ap/ap-art-history/apah-vocabulary.pdf"><i>APAH Vocabulary: Every Term, Explained</i></a> (PDF), Section 10. Answers are the PDF&rsquo;s key; each explanation is the term&rsquo;s own glossary entry, plus what each wrong choice means. Your answers are saved only in this browser.</p>
+</main>
+
+<script id="data" type="application/json">{"meta":{"key":"study.apah-vocab.1.v1","ask":"Which term does this define?","setupNote":"Sections: <b>1<\/b> &middot; <a href=\"/study/ap/ap-art-history/tests/vocab-2/\">2<\/a> &middot; <a href=\"/study/ap/ap-art-history/tests/vocab-3/\">3<\/a> &middot; <a href=\"/study/ap/ap-art-history/tests/vocab-4/\">4<\/a> &middot; <a href=\"/study/ap/ap-art-history/tests/vocab-5/\">5<\/a> &middot; <a href=\"/study/ap/ap-art-history/tests/vocab-6/\">6<\/a> &middot; <a href=\"/study/ap/ap-art-history/tests/vocab-7/\">7<\/a> &middot; <a href=\"/study/ap/ap-art-history/tests/vocab-8/\">8<\/a>. The wrong choices come from the same category, so they look plausible: match the definition’s key words.","topicPrefix":"Section ","topicCol":"Section","guideCol":"In the glossary","byTopic":"Score","topicNote":"Reread the glossary section for every term you missed, then retry the missed questions.","guide":"/study/ap/ap-art-history/apah-vocabulary.pdf","guideName":"the glossary"},"topics":{"1":{"name":"Looking and describing","page":3}},"sections":{},"stims":{},"mc":[{"n":1,"prompt":"A slanted line or direction. These feel active and unstable compared with calm horizontals and verticals.","options":["diagonal","sublime","twisted perspective","repoussoir"],"answer":0,"topic":"1","ex":{"idea":"<b>diagonal<\/b>: A slanted line or direction. Diagonals feel active and unstable compared with calm horizontals and verticals.","steps":["Think of a falling tree versus a standing one.","Seen in: No. 101 The Swing; No. 108 Liberty Leading the People; No. 211 Great Wave.","Related terms: line, dynamic, asymmetry."],"others":{"1":"means something else: A feeling of awe mixed with fear in front of something overwhelming, like a storm, a huge mountain or the open sea. Romantic artists of the 1800s chased this feeling.","2":"means something else: Another name for composite view: showing a body or animal from different angles at once, such as horns seen from the front on a head seen from the side.","3":"means something else: An object or figure placed at the very front edge of a picture, often dark and to one side, that pushes your eye back into the scene."}}},{"n":2,"prompt":"Art that tells a story or shows an event from a story.","options":["horizon line","archaic smile","twisted perspective","narrative"],"answer":3,"topic":"1","ex":{"idea":"<b>narrative<\/b>: Art that tells a story or shows an event from a story.","steps":["Think of a movie still that makes you wonder what happens next.","Seen in: No. 59 Bayeux Tapestry; No. 203 Night Attack on the Sanjô Palace; No. 16 Standard of Ur.","Related terms: continuous narrative, register, gesture."],"others":{"0":"means something else: The line where the land or sea seems to meet the sky. In linear perspective, the vanishing point usually sits on it, at the viewer’s eye level.","1":"means something else: The slight, fixed smile on Greek statues made around 600 to 480 B.C.E. It probably did not mean happiness; it was a way to make the face look alive.","2":"means something else: Another name for composite view: showing a body or animal from different angles at once, such as horns seen from the front on a head seen from the side."}}},{"n":3,"prompt":"How a surface feels, or looks like it would feel: rough, smooth, soft, bumpy, glossy. Actual this can be touched; implied this is only painted.","options":["biomorphic","dramatic lighting","texture","value"],"answer":2,"topic":"1","ex":{"idea":"<b>texture<\/b>: How a surface feels, or looks like it would feel: rough, smooth, soft, bumpy, glossy. Actual texture can be touched; implied texture is only painted.","steps":["Think of the difference between sandpaper and silk.","Seen in: No. 138 Object (fur-covered cup); No. 120 The Starry Night; No. 245 Old Man’s Cloth.","Related terms: implied texture, impasto, finish."],"others":{"0":"means something else: Shapes that look like living things: soft, rounded and curvy rather than geometric, though not any particular plant or animal.","1":"means something else: Strong, focused light that throws some areas into bright highlight and leaves others in deep shadow, raising the emotional temperature of a scene.","3":"means something else: How light or dark a color or tone is, from white through grays to black."}}},{"n":4,"prompt":"A color made lighter by adding white.","options":["tint","representational","space","cool colors"],"answer":0,"topic":"1","ex":{"idea":"<b>tint<\/b>: A color made lighter by adding white.","steps":["Think of pink as a tint of red.","Related terms: shade, value, hue."],"others":{"1":"means something else: Art that shows recognizable things from the real world, whether realistic or stylized.","2":"means something else: The area around, between and within things. In a flat picture it means the illusion of depth; in sculpture and architecture it means the real air and room the work occupies.","3":"means something else: Blues, greens and purples. They feel calm or cold and tend to seem to sink back into the distance."}}},{"n":5,"prompt":"An accepted, repeated way of showing something in a particular culture, even if it is not realistic. Viewers in that culture understand it automatically.","options":["hue","sublime","convention","expressive"],"answer":2,"topic":"1","ex":{"idea":"<b>convention<\/b>: An accepted, repeated way of showing something in a particular culture, even if it is not realistic. Viewers in that culture understand it automatically.","steps":["Think of how a heart shape means love even though real hearts do not look like that.","Seen in: No. 13 Palette of King Narmer; No. 24 Last judgment of Hu-Nefer.","Related terms: composite view, hierarchical scale, stylized."],"others":{"0":"means something else: The plain name of a color: red, blue, green and so on.","1":"means something else: A feeling of awe mixed with fear in front of something overwhelming, like a storm, a huge mountain or the open sea. Romantic artists of the 1800s chased this feeling.","3":"means something else: Made to show strong feeling. An expressive work uses color, line or distortion to make you feel something rather than to record what things look like."}}},{"n":6,"prompt":"The line where the land or sea seems to meet the sky. In linear perspective, the vanishing point usually sits on it, at the viewer’s eye level.","options":["shifting perspective","stylized","horizon line","diminution of scale"],"answer":2,"topic":"1","ex":{"idea":"<b>horizon line<\/b>: The line where the land or sea seems to meet the sky. In linear perspective, the vanishing point usually sits on it, at the viewer’s eye level.","steps":["Think of where the ocean meets the sky at the beach.","Seen in: No. 83 Hunters in the Snow; No. 109 The Oxbow.","Related terms: vanishing point, linear perspective, viewpoint."],"others":{"0":"means something else: A Chinese way of painting landscape in which the viewer seems to move through the scene, seeing different parts from different heights instead of from one fixed spot.","1":"means something else: Shown in a simplified, exaggerated or decorative way that follows a set style rather than copying nature exactly.","3":"means something else: Making things smaller the farther away they are supposed to be. One of the basic tricks for showing depth."}}},{"n":7,"prompt":"One horizontal band in a work that is divided into stacked rows, like shelves. Each this often shows a different scene or level of importance.","options":["viewpoint","register","zoomorphic","implied texture"],"answer":1,"topic":"1","ex":{"idea":"<b>register<\/b>: One horizontal band in a work that is divided into stacked rows, like shelves. Each register often shows a different scene or level of importance.","steps":["Think of the rows on a bookshelf or panels in a comic page.","Seen in: No. 13 Palette of King Narmer; No. 16 Standard of Ur; No. 24 Last judgment of Hu-Nefer; No. 64 Golden Haggadah.","Related terms: ground line, frieze, narrative."],"others":{"0":"means something else: The position from which the viewer seems to see the scene: low, high, straight on, from the side. Also called vantage point.","2":"means something else: Shaped like an animal or using animal forms as decoration.","3":"means something else: Texture that is painted or drawn to look rough, soft or shiny, even though the actual surface is smooth."}}},{"n":8,"prompt":"Placing one image on top of another so they overlap, as when prehistoric painters added new animals over older ones on the same wall.","options":["superimposition","motif","proportion","visual weight"],"answer":0,"topic":"1","ex":{"idea":"<b>superimposition<\/b>: Placing one image on top of another so they overlap, as when prehistoric painters added new animals over older ones on the same wall.","steps":["Seen in: No. 2 Great Hall of the Bulls; No. 4 Running horned woman.","Related terms: overlapping, rock art."],"others":{"1":"means something else: A repeated shape, figure or idea that shows up again and again in a work or style.","2":"means something else: The size of one part compared with another part or with the whole, such as head to body.","3":"means something else: How strongly a part of a work pulls your attention. Big, dark, bright or busy areas feel heavier than small, pale or plain ones."}}},{"n":9,"prompt":"How strong, pure or intense a color is. A highly saturated red is vivid; a low-this red is dull and grayish. Also called intensity or chroma.","options":["three-quarter view","sublime","saturation","psychological realism"],"answer":2,"topic":"1","ex":{"idea":"<b>saturation<\/b>: How strong, pure or intense a color is. A highly saturated red is vivid; a low-saturation red is dull and grayish. Also called intensity or chroma.","steps":["Think of the saturation slider on a photo app.","Related terms: hue, value, color."],"others":{"0":"means something else: A view of a face or figure turned partly away, halfway between frontal and profile, so you see one side more than the other.","1":"means something else: A feeling of awe mixed with fear in front of something overwhelming, like a storm, a huge mountain or the open sea. Romantic artists of the 1800s chased this feeling.","3":"means something else: Showing people’s inner emotions and states of mind truthfully, not just their outward appearance. Each of Rodin’s Burghers of Calais shows his own kind of despair."}}},{"n":10,"prompt":"Tricks that make a flat surface seem to have real depth, space or objects, so the wall or ceiling seems to open up.","options":["gesture","monochrome","rhythm","illusionism"],"answer":3,"topic":"1","ex":{"idea":"<b>illusionism<\/b>: Tricks that make a flat surface seem to have real depth, space or objects, so the wall or ceiling seems to open up.","steps":["Think of a 3D street-art painting that looks like a hole in the sidewalk.","Seen in: No. 39 House of the Vettii; No. 82 Il Gesù ceiling; No. 75 Sistine Chapel ceiling.","Related terms: trompe l’oeil, linear perspective, foreshortening."],"others":{"0":"means something else: The pose or hand movement of a figure that communicates something, like pointing, blessing or reaching.","1":"means something else: Made in one color, or in shades of a single color (including just black ink and grays). Also called monochromatic.","2":"means something else: A sense of movement made by repeating elements at regular or changing intervals, the way a beat repeats in music."}}},{"n":11,"prompt":"Art that simplifies, exaggerates or rearranges what things really look like, so you may only partly recognize the subject (or not at all). The word describes how far an image has moved away from a photo-like copy.","options":["axis","linear perspective","abstract","aniconic"],"answer":2,"topic":"1","ex":{"idea":"<b>abstract<\/b>: Art that simplifies, exaggerates or rearranges what things really look like, so you may only partly recognize the subject (or not at all). The word describes how far an image has moved away from a photo-like copy.","steps":["Think of a stick figure or an emoji face: you know it is a person, but it is not trying to look real.","Seen in: No. 132 Improvisation 28; No. 136 Composition with Red, Blue and Yellow; No. 145 Woman, I.","Related terms: nonrepresentational, stylized, naturalism, distortion."],"others":{"0":"means something else: An imaginary straight line running through the center of a body, object or building, around which its parts are arranged. A standing figure usually has a vertical axis; in contrapposto that axis bends.","1":"means something else: A math-based system for showing depth on a flat surface. Parallel lines (orthogonals) are drawn to meet at a vanishing point, and objects shrink as they recede. Developed in Renaissance Italy around 1420.","3":"means something else: Avoiding pictures of people, animals or gods, especially in a religious setting. Instead the art uses writing, patterns and plants."}}},{"n":12,"prompt":"Showing different parts of one body from their most recognizable angles at the same time: head in profile, eye from the front, shoulders from the front, legs in profile. Common in Egyptian and Near Eastern art. Also called twisted perspective.","options":["shifting perspective","figure-ground relationship","vanishing point","composite view"],"answer":3,"topic":"1","ex":{"idea":"<b>composite view<\/b>: Showing different parts of one body from their most recognizable angles at the same time: head in profile, eye from the front, shoulders from the front, legs in profile. Common in Egyptian and Near Eastern art. Also called twisted perspective.","steps":["Think of a figure built from the clearest photo of each body part, glued together.","Seen in: No. 13 Palette of King Narmer; No. 24 Last judgment of Hu-Nefer; No. 2 Great Hall of the Bulls.","Related terms: twisted perspective, profile, convention, frontal."],"others":{"0":"means something else: A Chinese way of painting landscape in which the viewer seems to move through the scene, seeing different parts from different heights instead of from one fixed spot.","1":"means something else: How the main shapes (the figure) stand out from what is behind them (the ground). Some works play with this so you are not sure which is which.","2":"means something else: In linear perspective, the spot on the horizon line where receding parallel lines appear to meet and disappear. Artists often place something important there."}}},{"n":13,"prompt":"Cutting off part of a scene at the edge of the frame, so figures or objects are only partly shown. It makes an image feel like a quick snapshot.","options":["cropping","symmetry","painterly","grid"],"answer":0,"topic":"1","ex":{"idea":"<b>cropping<\/b>: Cutting off part of a scene at the edge of the frame, so figures or objects are only partly shown. It makes an image feel like a quick snapshot.","steps":["Think of a phone photo where someone’s arm is cut off by the edge.","Seen in: No. 121 The Coiffure.","Related terms: composition, picture plane, viewpoint."],"others":{"1":"means something else: When one half of a work mirrors the other across a center line. It feels orderly, stable and formal.","2":"means something else: A style where you can see loose brushstrokes and soft edges, with color and texture more important than crisp outlines.","3":"means something else: A network of crossing horizontal and vertical lines. Artists use grids to arrange a composition, to keep proportions, or as the look of the work itself."}}},{"n":14,"prompt":"A round or oval framed area holding a design or figure, often used as the central motif of carpets, ivories and ceilings.","options":["medallion","intimate","space","symmetry"],"answer":0,"topic":"1","ex":{"idea":"<b>medallion<\/b> (meh-DAL-yun): A round or oval framed area holding a design or figure, often used as the central motif of carpets, ivories and ceilings.","steps":["Seen in: No. 57 Pyxis of al-Mughira; No. 191 Ardabil Carpet.","Related terms: roundel, motif, arabesque."],"others":{"1":"means something else: Describes a work that feels private, smallscale or personal, as if you are seeing a quiet everyday moment.","2":"means something else: The area around, between and within things. In a flat picture it means the illusion of depth; in sculpture and architecture it means the real air and room the work occupies.","3":"means something else: When one half of a work mirrors the other across a center line. It feels orderly, stable and formal."}}},{"n":15,"prompt":"A strong difference between two things placed together: light and dark, rough and smooth, big and small, bright and dull. This grabs attention.","options":["contrast","texture","saturation","tint"],"answer":0,"topic":"1","ex":{"idea":"<b>contrast<\/b>: A strong difference between two things placed together: light and dark, rough and smooth, big and small, bright and dull. Contrast grabs attention.","steps":["Think of white text on a black screen.","Seen in: No. 85 Calling of Saint Matthew.","Related terms: chiaroscuro, emphasis, complementary colors."],"others":{"1":"means something else: How a surface feels, or looks like it would feel: rough, smooth, soft, bumpy, glossy. Actual texture can be touched; implied texture is only painted.","2":"means something else: How strong, pure or intense a color is. A highly saturated red is vivid; a low-saturation red is dull and grayish. Also called intensity or chroma.","3":"means something else: A color made lighter by adding white."}}},{"n":16,"prompt":"Orange, green and purple: the colors you get by mixing two primary colors.","options":["modeling (shading)","secondary colors","atmospheric perspective","naturalism"],"answer":1,"topic":"1","ex":{"idea":"<b>secondary colors<\/b>: Orange, green and purple: the colors you get by mixing two primary colors.","steps":["Think of it as: Blue plus yellow gives green, like mixing two juice flavors.","Related terms: primary colors, color wheel, complementary colors."],"others":{"0":"means something else: Using gradual light and shadow on a flat surface to make a form look rounded and three-dimensional.","2":"means something else: A way to show distance by making faraway things paler, bluer, hazier and less detailed, the way mountains look on the horizon. Also called aerial perspective.","3":"means something else: Showing things the way they actually look in the real world, with accurate details, proportions, light and texture."}}},{"n":17,"prompt":"Colors that sit next to each other on the color wheel, such as yellow, yellow-orange and orange. Used together they feel calm and unified rather than clashing.","options":["secondary colors","analogous colors","cropping","silhouette"],"answer":1,"topic":"1","ex":{"idea":"<b>analogous colors<\/b>: Colors that sit next to each other on the color wheel, such as yellow, yellow-orange and orange. Used together they feel calm and unified rather than clashing.","steps":["Think of a sunset that goes from yellow to orange to red with no sharp jumps.","Related terms: color wheel, complementary colors, hue."],"others":{"0":"means something else: Orange, green and purple: the colors you get by mixing two primary colors.","2":"means something else: Cutting off part of a scene at the edge of the frame, so figures or objects are only partly shown. It makes an image feel like a quick snapshot.","3":"means something else: A shape filled in with one solid dark color, showing only the outline. Popular as cut-paper portraits in the 1700s and 1800s."}}},{"n":18,"prompt":"Using differences in shape, color, size or texture to keep a work interesting. Usually balanced against unity.","options":["shade","line","variety","vanishing point"],"answer":2,"topic":"1","ex":{"idea":"<b>variety<\/b>: Using differences in shape, color, size or texture to keep a work interesting. Usually balanced against unity.","steps":["Think of a playlist that mixes fast and slow songs.","Related terms: unity, contrast, composition."],"others":{"0":"means something else: A color made darker by adding black. (A tint is the lighter version, made by adding white.)","1":"means something else: A mark that is longer than it is wide. Lines can be straight, curved, thick, thin, calm or agitated, and they outline shapes, show movement or carry feeling.","3":"means something else: In linear perspective, the spot on the horizon line where receding parallel lines appear to meet and disappear. Artists often place something important there."}}},{"n":19,"prompt":"A way of showing depth used in Chinese and Japanese painting: the sides of buildings are drawn as parallel diagonal lines that never meet, so the scene can unroll sideways without one fixed viewpoint.","options":["superimposition","oblique perspective","fragmentation","rhythm"],"answer":1,"topic":"1","ex":{"idea":"<b>oblique perspective<\/b>: A way of showing depth used in Chinese and Japanese painting: the sides of buildings are drawn as parallel diagonal lines that never meet, so the scene can unroll sideways without one fixed viewpoint.","steps":["Think of an isometric video game, where buildings are drawn at an angle but don’t shrink.","Seen in: No. 203 Night Attack on the Sanjô Palace.","Related terms: linear perspective, handscroll, bird’s-eye view."],"others":{"0":"means something else: Placing one image on top of another so they overlap, as when prehistoric painters added new animals over older ones on the same wall.","2":"means something else: Breaking forms into pieces, planes or shards, often reassembled in a new way. Central to Cubism.","3":"means something else: A sense of movement made by repeating elements at regular or changing intervals, the way a beat repeats in music."}}},{"n":20,"prompt":"How smooth or rough the final surface is. A high this hides brushstrokes completely; a loose this leaves them visible.","options":["linear perspective","finish","closed form","texture"],"answer":1,"topic":"1","ex":{"idea":"<b>finish<\/b>: How smooth or rough the final surface is. A high finish hides brushstrokes completely; a loose finish leaves them visible.","steps":["Think of a glossy car paint job versus a hand-painted fence.","Seen in: No. 107 La Grande Odalisque; No. 120 The Starry Night.","Related terms: brushwork, painterly, texture."],"others":{"0":"means something else: A math-based system for showing depth on a flat surface. Parallel lines (orthogonals) are drawn to meet at a vanishing point, and objects shrink as they recede. Developed in Renaissance Italy around 1420.","2":"means something else: A sculpture or figure that stays compact, with arms and legs held close to the body so it reads as one solid block. The opposite of open form.","3":"means something else: How a surface feels, or looks like it would feel: rough, smooth, soft, bumpy, glossy. Actual texture can be touched; implied texture is only painted."}}},{"n":21,"prompt":"The position from which the viewer seems to see the scene: low, high, straight on, from the side. Also called vantage point.","options":["viewpoint","gaze","contrapposto","palette"],"answer":0,"topic":"1","ex":{"idea":"<b>viewpoint<\/b>: The position from which the viewer seems to see the scene: low, high, straight on, from the side. Also called vantage point.","steps":["Think of where the camera is placed in a movie shot.","Seen in: No. 118 The Valley of Mexico; No. 121 The Coiffure.","Related terms: bird’s-eye view, horizon line, multiple viewpoints."],"others":{"1":"means something else: Where figures are looking, and how they look at us or at each other. Art historians also use ‘the gaze’ to talk about who is doing the looking and who is being looked at.","2":"means something else: A relaxed standing pose where the weight rests on one leg, so the hips tilt one way and the shoulders tilt the other, giving the body a gentle S-curve. Invented by the Greeks to make statues look alive.","3":"means something else: The range of colors an artist uses in a work, for example a ‘limited palette’ or a ‘warm palette’. It is also the board on which a painter mixes paint."}}},{"n":22,"prompt":"Made of regular, measurable shapes such as squares, circles, triangles and straight lines. The opposite of organic.","options":["repetition","expressive","geometric","shifting perspective"],"answer":2,"topic":"1","ex":{"idea":"<b>geometric<\/b>: Made of regular, measurable shapes such as squares, circles, triangles and straight lines. The opposite of organic.","steps":["Think of shapes you could draw with a ruler and compass.","Seen in: No. 136 Composition with Red, Blue and Yellow; No. 162 All-T’oqapu tunic; No. 5 Beaker with ibex motifs; No. 55 Lindisfarne Gospels.","Related terms: organic, pattern, grid, abstract."],"others":{"0":"means something else: Using the same element again and again. It can create rhythm, unity or, in modern art, a sense of mass production.","1":"means something else: Made to show strong feeling. An expressive work uses color, line or distortion to make you feel something rather than to record what things look like.","3":"means something else: A Chinese way of painting landscape in which the viewer seems to move through the scene, seeing different parts from different heights instead of from one fixed spot."}}},{"n":23,"prompt":"Stretching, twisting or exaggerating forms on purpose, usually to show emotion or a new idea rather than accuracy.","options":["contour line","distortion","aniconic","abstract"],"answer":1,"topic":"1","ex":{"idea":"<b>distortion<\/b>: Stretching, twisting or exaggerating forms on purpose, usually to show emotion or a new idea rather than accuracy.","steps":["Think of a funhouse mirror.","Seen in: No. 122 The Scream; No. 145 Woman, I ; No. 126 Les Demoiselles d’Avignon.","Related terms: expressive, elongation, abstract."],"others":{"0":"means something else: The outline that marks the outer edge of a shape or figure. A strong contour makes shapes look crisp and clear.","2":"means something else: Avoiding pictures of people, animals or gods, especially in a religious setting. Instead the art uses writing, patterns and plants.","3":"means something else: Art that simplifies, exaggerates or rearranges what things really look like, so you may only partly recognize the subject (or not at all). The word describes how far an image has moved away from a photo-like copy."}}},{"n":24,"prompt":"Drawing something that points toward or away from you so it looks squashed and shorter, which makes it seem to stick out in space.","options":["serene","composition","visual weight","foreshortening"],"answer":3,"topic":"1","ex":{"idea":"<b>foreshortening<\/b>: Drawing something that points toward or away from you so it looks squashed and shorter, which makes it seem to stick out in space.","steps":["Think of a selfie with your arm stretched toward the camera: your hand looks huge and your arm almost disappears.","Seen in: No. 75 Sistine Chapel ceiling; No. 82 Il Gesù ceiling.","Related terms: linear perspective, illusionism, di sotto in sù."],"others":{"0":"means something else: Calm, peaceful and still in mood.","1":"means something else: How everything in a work is arranged: where figures sit, how big they are, which way lines run. Good composition guides your eye where the artist wants it.","2":"means something else: How strongly a part of a work pulls your attention. Big, dark, bright or busy areas feel heavier than small, pale or plain ones."}}},{"n":25,"prompt":"A flat, enclosed area with only height and width, such as a circle or a blob.","options":["shape","geometric","diagonal","implied line"],"answer":0,"topic":"1","ex":{"idea":"<b>shape<\/b>: A flat, enclosed area with only height and width, such as a circle or a blob.","steps":["Think of a cookie cutter outline.","Related terms: form, geometric, organic."],"others":{"1":"means something else: Made of regular, measurable shapes such as squares, circles, triangles and straight lines. The opposite of organic.","2":"means something else: A slanted line or direction. Diagonals feel active and unstable compared with calm horizontals and verticals.","3":"means something else: A line you do not actually see but your eye follows anyway, such as the direction of a pointing finger, a gaze, or a row of objects."}}},{"n":26,"prompt":"A shape that has (or looks like it has) three dimensions: height, width and depth. In art talk ‘this’ can also mean all the visual parts of a work together, as opposed to its subject.","options":["balance","linear perspective","form","visual weight"],"answer":2,"topic":"1","ex":{"idea":"<b>form<\/b>: A shape that has (or looks like it has) three dimensions: height, width and depth. In art talk ‘form’ can also mean all the visual parts of a work together, as opposed to its subject.","steps":["Think of it as: A circle is a shape; a ball is a form.","Related terms: shape, volume, formal analysis."],"others":{"0":"means something else: How the visual ‘weight’ of shapes, colors and objects is spread around a work so it feels stable instead of tipping to one side. It can be symmetrical, asymmetrical or radial.","1":"means something else: A math-based system for showing depth on a flat surface. Parallel lines (orthogonals) are drawn to meet at a vanishing point, and objects shrink as they recede. Developed in Renaissance Italy around 1420.","3":"means something else: How strongly a part of a work pulls your attention. Big, dark, bright or busy areas feel heavier than small, pale or plain ones."}}},{"n":27,"prompt":"Showing people’s inner emotions and states of mind truthfully, not just their outward appearance. Each of Rodin’s Burghers of Calais shows his own kind of despair.","options":["psychological realism","overlapping","figure-ground relationship","all-over composition"],"answer":0,"topic":"1","ex":{"idea":"<b>psychological realism<\/b>: Showing people’s inner emotions and states of mind truthfully, not just their outward appearance. Each of Rodin’s Burghers of Calais shows his own kind of despair.","steps":["Seen in: No. 119 The Burghers of Calais.","Related terms: realism, expressive, pathos."],"others":{"1":"means something else: Placing one thing partly in front of another. The one that blocks the other looks closer. It is the simplest way to show depth.","2":"means something else: How the main shapes (the figure) stand out from what is behind them (the ground). Some works play with this so you are not sure which is which.","3":"means something else: A composition with no single focal point or center of interest: marks and shapes spread evenly across the surface, right to the edges."}}},{"n":28,"prompt":"Facing straight out at the viewer, square to the front. This figures often look formal, stiff and powerful.","options":["dynamic","tenebrism","frontal","naturalism"],"answer":2,"topic":"1","ex":{"idea":"<b>frontal<\/b>: Facing straight out at the viewer, square to the front. Frontal figures often look formal, stiff and powerful.","steps":["Think of a passport photo.","Seen in: No. 18 King Menkaura and queen; No. 54 Theotokos and Child; No. 14 Votive figures from Eshnunna; No. 51 San Vitale.","Related terms: hieratic, profile, closed form."],"others":{"0":"means something else: Full of energy and suggested movement, usually through diagonals, twisting bodies or swirling lines. The opposite of static.","1":"means something else: An extreme form of chiaroscuro in which most of the picture is very dark and a few areas are hit by sharp, spotlight-like light. Associated with Caravaggio and his followers.","3":"means something else: Showing things the way they actually look in the real world, with accurate details, proportions, light and texture."}}},{"n":29,"prompt":"A wide view showing a large stretch of land or city, as if you can turn your head and take it all in.","options":["horizon line","static","panoramic","viewpoint"],"answer":2,"topic":"1","ex":{"idea":"<b>panoramic<\/b>: A wide view showing a large stretch of land or city, as if you can turn your head and take it all in.","steps":["Think of the panorama setting on your phone camera.","Seen in: No. 109 The Oxbow; No. 118 The Valley of Mexico.","Related terms: bird’s-eye view, horizon line, sublime."],"others":{"0":"means something else: The line where the land or sea seems to meet the sky. In linear perspective, the vanishing point usually sits on it, at the viewer’s eye level.","1":"means something else: Still and stable, with no suggested motion. Often achieved through vertical and horizontal lines and frontal poses.","3":"means something else: The position from which the viewer seems to see the scene: low, high, straight on, from the side. Also called vantage point."}}},{"n":30,"prompt":"A decoration of bands, ribbons or animal bodies that weave over and under each other in complicated knots.","options":["interlace","dramatic lighting","three-quarter view","modeling (shading)"],"answer":0,"topic":"1","ex":{"idea":"<b>interlace<\/b>: A decoration of bands, ribbons or animal bodies that weave over and under each other in complicated knots.","steps":["Think of a Celtic knot or a tangle of braided cords.","Seen in: No. 55 Lindisfarne Gospels; No. 53 Merovingian looped fibulae.","Related terms: zoomorphic, carpet page, horror vacui, arabesque."],"others":{"1":"means something else: Strong, focused light that throws some areas into bright highlight and leaves others in deep shadow, raising the emotional temperature of a scene.","2":"means something else: A view of a face or figure turned partly away, halfway between frontal and profile, so you see one side more than the other.","3":"means something else: Using gradual light and shadow on a flat surface to make a form look rounded and three-dimensional."}}},{"n":31,"prompt":"Reds, oranges and yellows. They feel warm, energetic or emotional and tend to seem to come toward you.","options":["realism","warm colors","finish","composition"],"answer":1,"topic":"1","ex":{"idea":"<b>warm colors<\/b>: Reds, oranges and yellows. They feel warm, energetic or emotional and tend to seem to come toward you.","steps":["Think of fire and sunlight.","Seen in: No. 111 Slave Ship.","Related terms: cool colors, color wheel, hue."],"others":{"0":"means something else: With a small r, it means showing things truthfully, including ugly or ordinary details. With a capital R, it names a 19th-century movement that painted everyday working people instead of heroes and myths.","2":"means something else: How smooth or rough the final surface is. A high finish hides brushstrokes completely; a loose finish leaves them visible.","3":"means something else: How everything in a work is arranged: where figures sit, how big they are, which way lines run. Good composition guides your eye where the artist wants it."}}},{"n":32,"prompt":"An imaginary straight line running through the center of a body, object or building, around which its parts are arranged. A standing figure usually has a vertical this; in contrapposto that this bends.","options":["axis","narrative","trompe l’oeil","emphasis"],"answer":0,"topic":"1","ex":{"idea":"<b>axis<\/b>: An imaginary straight line running through the center of a body, object or building, around which its parts are arranged. A standing figure usually has a vertical axis; in contrapposto that axis bends.","steps":["Think of the spine of a book or the pole on a merry-go-round.","Seen in: No. 34 Doryphoros.","Related terms: symmetry, contrapposto, balance."],"others":{"1":"means something else: Art that tells a story or shows an event from a story.","2":"means something else: Painting so convincing that it fools you into thinking a painted thing is real. French for ‘fool the eye’.","3":"means something else: The way an artist makes one part stand out more than the rest, using light, color, size, placement or lines that point to it."}}},{"n":33,"prompt":"Egg-shaped. In Northwest Coast art, the this is a rounded, slightly squarish oval used as a basic building block of formline designs.","options":["proportion","figurative","repetition","ovoid"],"answer":3,"topic":"1","ex":{"idea":"<b>ovoid<\/b> (OH-void): Egg-shaped. In Northwest Coast art, the ovoid is a rounded, slightly squarish oval used as a basic building block of formline designs.","steps":["Seen in: No. 164 Transformation mask; No. 217 Female deity (Nukuoro).","Related terms: formline, Northwest Coast."],"others":{"0":"means something else: The size of one part compared with another part or with the whole, such as head to body.","1":"means something else: Art that shows recognizable figures, especially people or animals. Often used as the opposite of abstract or nonrepresentational.","2":"means something else: Using the same element again and again. It can create rhythm, unity or, in modern art, a sense of mass production."}}},{"n":34,"prompt":"The part of a picture that seems closest to you, at the bottom or front of the scene.","options":["unity","pattern","foreground","gesture"],"answer":2,"topic":"1","ex":{"idea":"<b>foreground<\/b>: The part of a picture that seems closest to you, at the bottom or front of the scene.","steps":["Think of the people standing right in front of the camera.","Seen in: No. 83 Hunters in the Snow; No. 201 Travelers among Mountains and Streams.","Related terms: middle ground, background, repoussoir."],"others":{"0":"means something else: The sense that all parts of a work belong together and make a complete whole.","1":"means something else: A design made by repeating shapes, lines or colors in a regular way.","3":"means something else: The pose or hand movement of a figure that communicates something, like pointing, blessing or reaching."}}},{"n":35,"prompt":"How the visual ‘weight’ of shapes, colors and objects is spread around a work so it feels stable instead of tipping to one side. It can be symmetrical, asymmetrical or radial.","options":["curvilinear","balance","aniconic","profile"],"answer":1,"topic":"1","ex":{"idea":"<b>balance<\/b>: How the visual ‘weight’ of shapes, colors and objects is spread around a work so it feels stable instead of tipping to one side. It can be symmetrical, asymmetrical or radial.","steps":["Think of arranging furniture so one side of a room does not feel crowded.","Related terms: symmetry, asymmetry, radial balance, composition."],"others":{"0":"means something else: Made of curving, flowing lines rather than straight ones.","2":"means something else: Avoiding pictures of people, animals or gods, especially in a religious setting. Instead the art uses writing, patterns and plants.","3":"means something else: A side view, especially of a face or figure, showing its outline."}}},{"n":36,"prompt":"The real, everyday color of an object in normal light, such as a lemon’s yellow or grass’s green.","options":["orthogonal","bird’s-eye view","complementary colors","local color"],"answer":3,"topic":"1","ex":{"idea":"<b>local color<\/b>: The real, everyday color of an object in normal light, such as a lemon’s yellow or grass’s green.","steps":["Think of the color you would name if someone asked ‘what color is a banana?’","Seen in: No. 68 The Arnolfini Portrait; No. 96 Fruit and Insects.","Related terms: arbitrary color, naturalism, hue."],"others":{"0":"means something else: In linear perspective, the diagonal lines (real or implied) that run back into the picture and meet at the vanishing point, such as the edges of a ceiling or floor tiles.","1":"means something else: A view from high above, looking down on a scene as a bird would. It lets an artist show a lot of ground at once, such as a whole battle or city.","2":"means something else: Pairs of colors opposite each other on the color wheel: red and green, blue and orange, yellow and purple. Placed side by side they make each other look stronger."}}},{"n":37,"prompt":"A mark that is longer than it is wide. These can be straight, curved, thick, thin, calm or agitated, and they out___ shapes, show movement or carry feeling.","options":["twisted perspective","archaic smile","ovoid","line"],"answer":3,"topic":"1","ex":{"idea":"<b>line<\/b>: A mark that is longer than it is wide. Lines can be straight, curved, thick, thin, calm or agitated, and they outline shapes, show movement or carry feeling.","steps":["Think of handwriting: the same words feel different in neat print and angry scrawl.","Seen in: No. 120 The Starry Night; No. 211 Great Wave; No. 132 Improvisation 28.","Related terms: contour line, implied line, diagonal."],"others":{"0":"means something else: Another name for composite view: showing a body or animal from different angles at once, such as horns seen from the front on a head seen from the side.","1":"means something else: The slight, fixed smile on Greek statues made around 600 to 480 B.C.E. It probably did not mean happiness; it was a way to make the face look alive.","2":"means something else: Egg-shaped. In Northwest Coast art, the ovoid is a rounded, slightly squarish oval used as a basic building block of formline designs."}}},{"n":38,"prompt":"Made to show strong feeling. An this work uses color, line or distortion to make you feel something rather than to record what things look like.","options":["expressive","one-point perspective","superimposition","narrative"],"answer":0,"topic":"1","ex":{"idea":"<b>expressive<\/b>: Made to show strong feeling. An expressive work uses color, line or distortion to make you feel something rather than to record what things look like.","steps":["Think of the difference between a weather report and a breakup song.","Seen in: No. 122 The Scream; No. 62 Röttgen Pietà; No. 133 Self-Portrait as a Soldier.","Related terms: pathos, distortion, arbitrary color."],"others":{"1":"means something else: Linear perspective in which all the receding lines meet at a single vanishing point.","2":"means something else: Placing one image on top of another so they overlap, as when prehistoric painters added new animals over older ones on the same wall.","3":"means something else: Art that tells a story or shows an event from a story."}}},{"n":39,"prompt":"The way an artist makes one part stand out more than the rest, using light, color, size, placement or lines that point to it.","options":["distortion","oblique perspective","shape","emphasis"],"answer":3,"topic":"1","ex":{"idea":"<b>emphasis<\/b>: The way an artist makes one part stand out more than the rest, using light, color, size, placement or lines that point to it.","steps":["Think of bold text in a paragraph.","Seen in: No. 85 Calling of Saint Matthew; No. 73 Last Supper.","Related terms: focal point, contrast, hierarchical scale."],"others":{"0":"means something else: Stretching, twisting or exaggerating forms on purpose, usually to show emotion or a new idea rather than accuracy.","1":"means something else: A way of showing depth used in Chinese and Japanese painting: the sides of buildings are drawn as parallel diagonal lines that never meet, so the scene can unroll sideways without one fixed viewpoint.","2":"means something else: A flat, enclosed area with only height and width, such as a circle or a blob."}}},{"n":40,"prompt":"Filling every inch of a surface with figures or decoration so no empty space is left. Latin for ‘fear of empty space’.","options":["silhouette","horror vacui","foreground","theatricality"],"answer":1,"topic":"1","ex":{"idea":"<b>horror vacui<\/b> (HOR-or VAH-kyoo-ee): Filling every inch of a surface with figures or decoration so no empty space is left. Latin for ‘fear of empty space’.","steps":["Think of a bedroom wall completely covered in posters.","Seen in: No. 47 Ludovisi Battle Sarcophagus; No. 55 Lindisfarne Gospels carpet page.","Related terms: negative space, pattern, interlace."],"others":{"0":"means something else: A shape filled in with one solid dark color, showing only the outline. Popular as cut-paper portraits in the 1700s and 1800s.","2":"means something else: The part of a picture that seems closest to you, at the bottom or front of the scene.","3":"means something else: Staging a work like a dramatic scene in a play, with spotlights, emotional gestures and sometimes an ‘audience’ built in. Typical of Baroque art."}}},{"n":41,"prompt":"A circle that arranges colors in rainbow order so you can see which colors are related. Opposite colors are complementary; neighbors are analogous.","options":["value","flatness","hierarchical scale","color wheel"],"answer":3,"topic":"1","ex":{"idea":"<b>color wheel<\/b>: A circle that arranges colors in rainbow order so you can see which colors are related. Opposite colors are complementary; neighbors are analogous.","steps":["Think of a pizza where each slice is a color.","Related terms: primary colors, secondary colors, complementary colors, analogous colors."],"others":{"0":"means something else: How light or dark a color or tone is, from white through grays to black.","1":"means something else: When a picture looks deliberately twodimensional, with little shading or depth, so you notice the surface. Many modern painters chose flatness on purpose.","2":"means something else: Making the most important person the biggest, no matter where they stand in the scene. Size shows rank, not distance."}}},{"n":42,"prompt":"Showing things the way they actually look in the real world, with accurate details, proportions, light and texture.","options":["one-point perspective","scale","naturalism","shifting perspective"],"answer":2,"topic":"1","ex":{"idea":"<b>naturalism<\/b>: Showing things the way they actually look in the real world, with accurate details, proportions, light and texture.","steps":["Think of a high-quality photo: no improvements, no simplifying.","Seen in: No. 15 Seated scribe; No. 68 The Arnolfini Portrait; No. 96 Fruit and Insects; No. 41 Seated boxer.","Related terms: idealized, realism, verism, stylized."],"others":{"0":"means something else: Linear perspective in which all the receding lines meet at a single vanishing point.","1":"means something else: How big something is, either compared with us (a huge statue, a tiny figurine) or compared with other things in the same work.","3":"means something else: A Chinese way of painting landscape in which the viewer seems to move through the scene, seeing different parts from different heights instead of from one fixed spot."}}},{"n":43,"prompt":"In linear perspective, the diagonal lines (real or implied) that run back into the picture and meet at the vanishing point, such as the edges of a ceiling or floor tiles.","options":["color","realism","orthogonal","idealized"],"answer":2,"topic":"1","ex":{"idea":"<b>orthogonal<\/b> (or-THOG-uh-nul): In linear perspective, the diagonal lines (real or implied) that run back into the picture and meet at the vanishing point, such as the edges of a ceiling or floor tiles.","steps":["Think of the lines of a road or train tracks heading into the distance.","Seen in: No. 73 Last Supper; No. 76 School of Athens.","Related terms: linear perspective, vanishing point, one-point perspective."],"others":{"0":"means something else: What we see when light reflects off a surface. When describing color, people talk about hue (its name), value (how light or dark) and saturation (how strong or dull).","1":"means something else: With a small r, it means showing things truthfully, including ugly or ordinary details. With a capital R, it names a 19th-century movement that painted everyday working people instead of heroes and myths.","3":"means something else: Showing people or things as more perfect than they really are: smooth, balanced, young and flawless, following a standard of beauty."}}},{"n":44,"prompt":"Placing one thing partly in front of another. The one that blocks the other looks closer. It is the simplest way to show depth.","options":["geometric","atmospheric perspective","foreshortening","overlapping"],"answer":3,"topic":"1","ex":{"idea":"<b>overlapping<\/b>: Placing one thing partly in front of another. The one that blocks the other looks closer. It is the simplest way to show depth.","steps":["Think of a stack of playing cards fanned in your hand.","Seen in: No. 16 Standard of Ur; No. 63 Arena Chapel, Lamentation.","Related terms: space, diminution of scale, foreground."],"others":{"0":"means something else: Made of regular, measurable shapes such as squares, circles, triangles and straight lines. The opposite of organic.","1":"means something else: A way to show distance by making faraway things paler, bluer, hazier and less detailed, the way mountains look on the horizon. Also called aerial perspective.","2":"means something else: Drawing something that points toward or away from you so it looks squashed and shorter, which makes it seem to stick out in space."}}},{"n":45,"prompt":"How strongly a part of a work pulls your attention. Big, dark, bright or busy areas feel heavier than small, pale or plain ones.","options":["vertical perspective","biomorphic","visual weight","balance"],"answer":2,"topic":"1","ex":{"idea":"<b>visual weight<\/b>: How strongly a part of a work pulls your attention. Big, dark, bright or busy areas feel heavier than small, pale or plain ones.","steps":["Think of how one bright red sock stands out in a pile of gray laundry.","Related terms: balance, emphasis, asymmetry."],"others":{"0":"means something else: A way of showing depth by placing things that are farther away higher up in the picture, rather than smaller.","1":"means something else: Shapes that look like living things: soft, rounded and curvy rather than geometric, though not any particular plant or animal.","3":"means something else: How the visual ‘weight’ of shapes, colors and objects is spread around a work so it feels stable instead of tipping to one side. It can be symmetrical, asymmetrical or radial."}}},{"n":46,"prompt":"How the main shapes (the figure) stand out from what is behind them (the ground). Some works play with this so you are not sure which is which.","options":["serene","figure-ground relationship","gaze","superimposition"],"answer":1,"topic":"1","ex":{"idea":"<b>figure-ground relationship<\/b>: How the main shapes (the figure) stand out from what is behind them (the ground). Some works play with this so you are not sure which is which.","steps":["Think of the classic picture that can be read as either a vase or two faces.","Seen in: No. 243 Darkytown Rebellion.","Related terms: positive space, negative space, silhouette."],"others":{"0":"means something else: Calm, peaceful and still in mood.","2":"means something else: Where figures are looking, and how they look at us or at each other. Art historians also use ‘the gaze’ to talk about who is doing the looking and who is being looked at.","3":"means something else: Placing one image on top of another so they overlap, as when prehistoric painters added new animals over older ones on the same wall."}}},{"n":47,"prompt":"Avoiding pictures of people, animals or gods, especially in a religious setting. Instead the art uses writing, patterns and plants. Common in Islamic religious spaces and in very early Buddhist art, where the Buddha was shown only by symbols such as a footprint or an empty throne.","options":["verism","archaic smile","dynamic","aniconic"],"answer":3,"topic":"1","ex":{"idea":"<b>aniconic<\/b> (AN-eye-KON-ik): Avoiding pictures of people, animals or gods, especially in a religious setting. Instead the art uses writing, patterns and plants. Common in Islamic religious spaces and in very early Buddhist art, where the Buddha was shown only by symbols such as a footprint or an empty throne.","steps":["Think of a mosque wall covered in beautiful writing and patterns but with no faces anywhere.","Seen in: No. 185 Dome of the Rock; No. 187 Folio from a Qur’an; No. 192 Great Stupa at Sanchi.","Related terms: arabesque, calligraphy, geometric, pattern."],"others":{"0":"means something else: Extreme, warts-and-all realism, especially in Roman Republican portraits that proudly show wrinkles, sagging skin and age as signs of wisdom and service.","1":"means something else: The slight, fixed smile on Greek statues made around 600 to 480 B.C.E. It probably did not mean happiness; it was a way to make the face look alive.","2":"means something else: Full of energy and suggested movement, usually through diagonals, twisting bodies or swirling lines. The opposite of static."}}},{"n":48,"prompt":"The size of one part compared with another part or with the whole, such as head to body.","options":["proportion","twisted perspective","hieratic","elongation"],"answer":0,"topic":"1","ex":{"idea":"<b>proportion<\/b>: The size of one part compared with another part or with the whole, such as head to body.","steps":["Think of a recipe ratio: two cups flour to one cup sugar.","Seen in: No. 34 Doryphoros.","Related terms: canon of proportions, scale, elongation."],"others":{"1":"means something else: Another name for composite view: showing a body or animal from different angles at once, such as horns seen from the front on a head seen from the side.","2":"means something else: Stiff, formal, frontal and solemn, used for gods, rulers and holy figures to show they are above ordinary life.","3":"means something else: Stretching a figure or body part longer than normal, usually for elegance or spiritual effect."}}},{"n":49,"prompt":"Breaking forms into pieces, planes or shards, often reassembled in a new way. Central to Cubism.","options":["profile","gaze","fragmentation","flatness"],"answer":2,"topic":"1","ex":{"idea":"<b>fragmentation<\/b>: Breaking forms into pieces, planes or shards, often reassembled in a new way. Central to Cubism.","steps":["Think of a reflection in a shattered mirror.","Seen in: No. 130 The Portuguese; No. 126 Les Demoiselles d’Avignon.","Related terms: multiple viewpoints, abstract, collage."],"others":{"0":"means something else: A side view, especially of a face or figure, showing its outline.","1":"means something else: Where figures are looking, and how they look at us or at each other. Art historians also use ‘the gaze’ to talk about who is doing the looking and who is being looked at.","3":"means something else: When a picture looks deliberately twodimensional, with little shading or depth, so you notice the surface. Many modern painters chose flatness on purpose."}}},{"n":50,"prompt":"Describing and explaining a work by looking only at its visual parts: line, color, shape, space, texture, composition and so on, before talking about meaning.","options":["saturation","warm colors","formal analysis","medallion"],"answer":2,"topic":"1","ex":{"idea":"<b>formal analysis<\/b>: Describing and explaining a work by looking only at its visual parts: line, color, shape, space, texture, composition and so on, before talking about meaning.","steps":["Think of reviewing a car by its looks and build before asking who made it or why.","Related terms: form, composition, line, color."],"others":{"0":"means something else: How strong, pure or intense a color is. A highly saturated red is vivid; a low-saturation red is dull and grayish. Also called intensity or chroma.","1":"means something else: Reds, oranges and yellows. They feel warm, energetic or emotional and tend to seem to come toward you.","3":"means something else: A round or oval framed area holding a design or figure, often used as the central motif of carpets, ivories and ceilings."}}},{"n":51,"prompt":"The plain name of a color: red, blue, green and so on.","options":["primary colors","hue","repetition","composition"],"answer":1,"topic":"1","ex":{"idea":"<b>hue<\/b>: The plain name of a color: red, blue, green and so on.","steps":["Think of the crayon’s name before you ask whether it is light or dark.","Related terms: color, value, saturation."],"others":{"0":"means something else: Red, yellow and blue in traditional painting. They cannot be mixed from other paints, and they can be mixed to make most other colors.","2":"means something else: Using the same element again and again. It can create rhythm, unity or, in modern art, a sense of mass production.","3":"means something else: How everything in a work is arranged: where figures sit, how big they are, which way lines run. Good composition guides your eye where the artist wants it."}}},{"n":52,"prompt":"Making the most important person the biggest, no matter where they stand in the scene. Size shows rank, not distance.","options":["hierarchical scale","fragmentation","multiple viewpoints","orthogonal"],"answer":0,"topic":"1","ex":{"idea":"<b>hierarchical scale<\/b> (HY-er-ARK-ih-kul): Making the most important person the biggest, no matter where they stand in the scene. Size shows rank, not distance.","steps":["Think of a team photo where the coach is drawn twice as tall as the players.","Seen in: No. 13 Palette of King Narmer; No. 16 Standard of Ur; No. 169 Wall plaque from Oba’s palace.","Related terms: scale, convention, emphasis."],"others":{"1":"means something else: Breaking forms into pieces, planes or shards, often reassembled in a new way. Central to Cubism.","2":"means something else: Showing an object or figure from several angles at once in one image, so it looks broken up or tilted. Key to Cubism and to Cézanne’s late paintings.","3":"means something else: In linear perspective, the diagonal lines (real or implied) that run back into the picture and meet at the vanishing point, such as the edges of a ceiling or floor tiles."}}},{"n":53,"prompt":"Art that shows recognizable things from the real world, whether realistic or stylized.","options":["representational","isocephaly","shifting perspective","foreshortening"],"answer":0,"topic":"1","ex":{"idea":"<b>representational<\/b>: Art that shows recognizable things from the real world, whether realistic or stylized.","steps":["Think of it as: If you can name what it is, it is representational.","Related terms: figurative, nonrepresentational, naturalism."],"others":{"1":"means something else: Lining up all the heads in a crowd at the same height, whether the figures are standing, riding or walking. It keeps a long frieze tidy.","2":"means something else: A Chinese way of painting landscape in which the viewer seems to move through the scene, seeing different parts from different heights instead of from one fixed spot.","3":"means something else: Drawing something that points toward or away from you so it looks squashed and shorter, which makes it seem to stick out in space."}}},{"n":54,"prompt":"The pose or hand movement of a figure that communicates something, like pointing, blessing or reaching.","options":["middle ground","theatricality","gesture","repetition"],"answer":2,"topic":"1","ex":{"idea":"<b>gesture<\/b>: The pose or hand movement of a figure that communicates something, like pointing, blessing or reaching.","steps":["Think of a referee’s signals: you understand them without words.","Seen in: No. 76 School of Athens; No. 85 Calling of Saint Matthew; No. 103 The Oath of the Horatii.","Related terms: implied line, gaze, narrative."],"others":{"0":"means something else: The zone of a picture between the foreground and the background.","1":"means something else: Staging a work like a dramatic scene in a play, with spotlights, emotional gestures and sometimes an ‘audience’ built in. Typical of Baroque art.","3":"means something else: Using the same element again and again. It can create rhythm, unity or, in modern art, a sense of mass production."}}},{"n":55,"prompt":"The zone of a picture between the foreground and the background.","options":["middle ground","oblique perspective","static","fragmentation"],"answer":0,"topic":"1","ex":{"idea":"<b>middle ground<\/b>: The zone of a picture between the foreground and the background.","steps":["Think of the middle row of a stadium crowd.","Seen in: No. 83 Hunters in the Snow; No. 201 Travelers among Mountains and Streams.","Related terms: foreground, background, space."],"others":{"1":"means something else: A way of showing depth used in Chinese and Japanese painting: the sides of buildings are drawn as parallel diagonal lines that never meet, so the scene can unroll sideways without one fixed viewpoint.","2":"means something else: Still and stable, with no suggested motion. Often achieved through vertical and horizontal lines and frontal poses.","3":"means something else: Breaking forms into pieces, planes or shards, often reassembled in a new way. Central to Cubism."}}},{"n":56,"prompt":"A style that relies on clear outlines and sharp edges between forms, so shapes look crisp and polished. Often contrasted with a painterly style.","options":["theatricality","linear style","verism","shifting perspective"],"answer":1,"topic":"1","ex":{"idea":"<b>linear style<\/b>: A style that relies on clear outlines and sharp edges between forms, so shapes look crisp and polished. Often contrasted with a painterly style.","steps":["Think of a clean comic outline versus a smudgy watercolor.","Seen in: No. 107 La Grande Odalisque; No. 103 The Oath of the Horatii.","Related terms: painterly, contour line, finish."],"others":{"0":"means something else: Staging a work like a dramatic scene in a play, with spotlights, emotional gestures and sometimes an ‘audience’ built in. Typical of Baroque art.","2":"means something else: Extreme, warts-and-all realism, especially in Roman Republican portraits that proudly show wrinkles, sagging skin and age as signs of wisdom and service.","3":"means something else: A Chinese way of painting landscape in which the viewer seems to move through the scene, seeing different parts from different heights instead of from one fixed spot."}}},{"n":57,"prompt":"A line you do not actually see but your eye follows anyway, such as the direction of a pointing finger, a gaze, or a row of objects.","options":["diagonal","implied line","medallion","variety"],"answer":1,"topic":"1","ex":{"idea":"<b>implied line<\/b>: A line you do not actually see but your eye follows anyway, such as the direction of a pointing finger, a gaze, or a row of objects.","steps":["Think of how everyone turns to look when one person points at the sky.","Seen in: No. 85 Calling of Saint Matthew; No. 103 The Oath of the Horatii.","Related terms: line, gaze, gesture."],"others":{"0":"means something else: A slanted line or direction. Diagonals feel active and unstable compared with calm horizontals and verticals.","2":"means something else: A round or oval framed area holding a design or figure, often used as the central motif of carpets, ivories and ceilings.","3":"means something else: Using differences in shape, color, size or texture to keep a work interesting. Usually balanced against unity."}}},{"n":58,"prompt":"A set of rules for the ideal size of each body part compared with the others, used so every figure looks ‘correct’. The Greek sculptor Polykleitos wrote one; Egyptian artists used a grid system.","options":["illusionism","contrast","canon of proportions","highlight"],"answer":2,"topic":"1","ex":{"idea":"<b>canon of proportions<\/b>: A set of rules for the ideal size of each body part compared with the others, used so every figure looks ‘correct’. The Greek sculptor Polykleitos wrote one; Egyptian artists used a grid system.","steps":["Think of a recipe for the perfect body: the head is one part, the body is seven parts, and so on.","Seen in: No. 34 Doryphoros; No. 18 King Menkaura and queen.","Related terms: proportion, idealized, contrapposto, grid."],"others":{"0":"means something else: Tricks that make a flat surface seem to have real depth, space or objects, so the wall or ceiling seems to open up.","1":"means something else: A strong difference between two things placed together: light and dark, rough and smooth, big and small, bright and dull. Contrast grabs attention.","3":"means something else: The brightest spot on a surface, where light hits it most directly. Small highlights make things look shiny or wet."}}},{"n":59,"prompt":"A style where you can see loose brushstrokes and soft edges, with color and texture more important than crisp outlines.","options":["all-over composition","shifting perspective","painterly","contrapposto"],"answer":2,"topic":"1","ex":{"idea":"<b>painterly<\/b>: A style where you can see loose brushstrokes and soft edges, with color and texture more important than crisp outlines.","steps":["Think of a sketch done with quick, visible strokes instead of careful outlines.","Seen in: No. 120 The Starry Night; No. 145 Woman, I ; No. 116 The Saint-Lazare Station.","Related terms: linear style, brushwork, impasto."],"others":{"0":"means something else: A composition with no single focal point or center of interest: marks and shapes spread evenly across the surface, right to the edges.","1":"means something else: A Chinese way of painting landscape in which the viewer seems to move through the scene, seeing different parts from different heights instead of from one fixed spot.","3":"means something else: A relaxed standing pose where the weight rests on one leg, so the hips tilt one way and the shoulders tilt the other, giving the body a gentle S-curve. Invented by the Greeks to make statues look alive."}}},{"n":60,"prompt":"Texture that is painted or drawn to look rough, soft or shiny, even though the actual surface is smooth.","options":["implied texture","visual weight","radial balance","nude"],"answer":0,"topic":"1","ex":{"idea":"<b>implied texture<\/b>: Texture that is painted or drawn to look rough, soft or shiny, even though the actual surface is smooth.","steps":["Think of a photo of a fuzzy sweater on a smooth phone screen.","Seen in: No. 68 The Arnolfini Portrait; No. 96 Fruit and Insects.","Related terms: texture, naturalism, glaze (oil painting)."],"others":{"1":"means something else: How strongly a part of a work pulls your attention. Big, dark, bright or busy areas feel heavier than small, pale or plain ones.","2":"means something else: Balance in which parts spread out evenly from a central point, like spokes of a wheel.","3":"means something else: A human figure shown without clothes as a subject of art. The idealized nude was central to Greek and Renaissance art and was later challenged by artists like Manet and Kiki Smith."}}},{"n":61,"prompt":"Made in one color, or in shades of a single color (including just black ink and grays). Also called monochromatic.","options":["ovoid","archaic smile","monochrome","fragmentation"],"answer":2,"topic":"1","ex":{"idea":"<b>monochrome<\/b> (MON-uh-krome): Made in one color, or in shades of a single color (including just black ink and grays). Also called monochromatic.","steps":["Think of a black-and-white photo.","Seen in: No. 227 Summer Trees; No. 229 A Book from the Sky.","Related terms: palette, value, ink."],"others":{"0":"means something else: Egg-shaped. In Northwest Coast art, the ovoid is a rounded, slightly squarish oval used as a basic building block of formline designs.","1":"means something else: The slight, fixed smile on Greek statues made around 600 to 480 B.C.E. It probably did not mean happiness; it was a way to make the face look alive.","3":"means something else: Breaking forms into pieces, planes or shards, often reassembled in a new way. Central to Cubism."}}},{"n":62,"prompt":"Surrounding the viewer with sound, image or space, so you feel you are inside the work rather than looking at it.","options":["vertical perspective","overlapping","finish","immersive"],"answer":3,"topic":"1","ex":{"idea":"<b>immersive<\/b>: Surrounding the viewer with sound, image or space, so you feel you are inside the work rather than looking at it.","steps":["Think of it as: Like the difference between watching a movie on a phone and standing in the middle of it.","Seen in: No. 239 The Crossing.","Related terms: installation, video art, multimedia."],"others":{"0":"means something else: A way of showing depth by placing things that are farther away higher up in the picture, rather than smaller.","1":"means something else: Placing one thing partly in front of another. The one that blocks the other looks closer. It is the simplest way to show depth.","2":"means something else: How smooth or rough the final surface is. A high finish hides brushstrokes completely; a loose finish leaves them visible."}}},{"n":63,"prompt":"Shown in a simplified, exaggerated or decorative way that follows a set style rather than copying nature exactly.","options":["cropping","local color","stylized","hieratic"],"answer":2,"topic":"1","ex":{"idea":"<b>stylized<\/b>: Shown in a simplified, exaggerated or decorative way that follows a set style rather than copying nature exactly.","steps":["Think of a cartoon character: clearly a person, but drawn in a recognizable style.","Seen in: No. 9 Ambum Stone; No. 14 Votive figures from Eshnunna; No. 214 Moai on platform; No. 210 White and Red Plum Blossoms.","Related terms: abstract, naturalism, schematic."],"others":{"0":"means something else: Cutting off part of a scene at the edge of the frame, so figures or objects are only partly shown. It makes an image feel like a quick snapshot.","1":"means something else: The real, everyday color of an object in normal light, such as a lemon’s yellow or grass’s green.","3":"means something else: Stiff, formal, frontal and solemn, used for gods, rulers and holy figures to show they are above ordinary life."}}},{"n":64,"prompt":"Lining up all the heads in a crowd at the same height, whether the figures are standing, riding or walking. It keeps a long frieze tidy.","options":["monochrome","warm colors","hierarchical scale","isocephaly"],"answer":3,"topic":"1","ex":{"idea":"<b>isocephaly<\/b> (EYE-so-SEF-uh-lee): Lining up all the heads in a crowd at the same height, whether the figures are standing, riding or walking. It keeps a long frieze tidy.","steps":["Think of a class photo where everyone’s heads are level because of how they’re arranged.","Seen in: No. 35 Acropolis (Parthenon frieze).","Related terms: frieze, register, convention."],"others":{"0":"means something else: Made in one color, or in shades of a single color (including just black ink and grays). Also called monochromatic.","1":"means something else: Reds, oranges and yellows. They feel warm, energetic or emotional and tend to seem to come toward you.","2":"means something else: Making the most important person the biggest, no matter where they stand in the scene. Size shows rank, not distance."}}},{"n":65,"prompt":"Strong, focused light that throws some areas into bright highlight and leaves others in deep shadow, raising the emotional temperature of a scene.","options":["dynamic","dramatic lighting","zoomorphic","linear style"],"answer":1,"topic":"1","ex":{"idea":"<b>dramatic lighting<\/b>: Strong, focused light that throws some areas into bright highlight and leaves others in deep shadow, raising the emotional temperature of a scene.","steps":["Think of a stage spotlight in a dark theater.","Seen in: No. 85 Calling of Saint Matthew; No. 100 A Philosopher Giving a Lecture on the Orrery; No. 111 Slave Ship.","Related terms: tenebrism, chiaroscuro, theatricality."],"others":{"0":"means something else: Full of energy and suggested movement, usually through diagonals, twisting bodies or swirling lines. The opposite of static.","2":"means something else: Shaped like an animal or using animal forms as decoration.","3":"means something else: A style that relies on clear outlines and sharp edges between forms, so shapes look crisp and polished. Often contrasted with a painterly style."}}}],"fr":[]}</script>
+<script>
+(function(){
+"use strict";
+var DATA = JSON.parse(document.getElementById("data").textContent);
+var META = DATA.meta, MC = DATA.mc, FR = DATA.fr || [], TOP = DATA.topics || {}, SEC = DATA.sections || {}, STIM = DATA.stims || {}, BY = {};
+MC.forEach(function(q){ BY[q.n] = q; });
+var KEY = META.key, FKEY = META.fkey || META.key + ".fr", HAS_FR = FR.length > 0;
+
+function load(k, d){ try{ var v = localStorage.getItem(k); return v ? JSON.parse(v) : d; }catch(e){ return d; } }
+function save(k, v){ try{ localStorage.setItem(k, JSON.stringify(v)); }catch(e){} }
+function esc(s){ return String(s).replace(/[&<>"]/g, function(c){ return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]; }); }
+function shuffle(a){ a = a.slice(); for (var i = a.length - 1; i > 0; i--){ var j = Math.floor(Math.random() * (i + 1)); var t = a[i]; a[i] = a[j]; a[j] = t; } return a; }
+function range(n){ var a = []; for (var i = 0; i < n; i++) a.push(i); return a; }
+
+var S = load(KEY, null);
+if (!S || !S.phase || !S.order || S.order.some(function(n){ return !BY[n]; })) S = { phase: "setup", mode: "practice", shuffleQ: false, shuffleC: false, order: [], copt: {}, ans: {}, pos: 0, full: null };
+var confirmFinish = false;
+var mcEl = document.getElementById("mc");
+
+function start(nums){
+  var list = nums || MC.map(function(q){ return q.n; });
+  S.order = S.shuffleQ ? shuffle(list) : list.slice();
+  S.copt = {};
+  S.order.forEach(function(n){
+    var q = BY[n], idx = range(q.options.length);
+    S.copt[n] = (S.shuffleC && !q.fixed) ? shuffle(idx) : idx;
+  });
+  S.ans = {}; S.pos = 0; S.phase = "run"; confirmFinish = false;
+  save(KEY, S); render(); focusTop();
+}
+function focusTop(){ var t = document.querySelector(".tabs") || document.querySelector(".title"); if (t && t.getBoundingClientRect().top < 0) t.scrollIntoView(); }
+
+function stats(){
+  var right = 0, done = 0;
+  S.order.forEach(function(n){ if (n in S.ans){ done++; if (S.ans[n] === BY[n].answer) right++; } });
+  return { right: right, done: done, total: S.order.length };
+}
+function topicShort(t){ return (META.topicPrefix || "") + t; }
+function topicLabel(t){ return topicShort(t) + ", " + TOP[t].name; }
+function guideLink(t, short){
+  var g = TOP[t], txt = short ? g.name : topicLabel(t);
+  var href = g.url ? g.url : (META.guide && g.page ? META.guide + "#page=" + g.page : "");
+  return href ? '<a href="' + href + '">' + txt + "</a>" : txt;
+}
+function topicLinks(ts){
+  ts = ts.filter(function(t){ return TOP[t]; });
+  if (!ts.length || !(META.guide || TOP[ts[0]].url)) return "";
+  return '<p class="links">Review ' + ts.map(function(t){ return guideLink(t); }).join(" &middot; ") + " in " + META.guideName + "</p>";
+}
+function explain(q, picked){
+  var e = q.ex, h = '<div class="why"><p>' + e.idea + "</p>";
+  if (e.steps.length) h += '<ol class="steps">' + e.steps.map(function(s){ return "<li>" + s + "</li>"; }).join("") + "</ol>";
+  var rest = range(q.options.length).filter(function(i){ return i !== q.answer; });
+  if (typeof picked === "number" && picked !== q.answer) rest = [picked].concat(rest.filter(function(i){ return i !== picked; }));
+  h += '<p class="why-h sc">Why not the others</p><ul class="others">' + rest.map(function(i){
+    return "<li>" + quoted(q, i) + (i === picked ? '<span class="tag">your answer</span>' : "") + " &mdash; " + e.others[i] + "</li>";
+  }).join("") + "</ul></div>";
+  return h;
+}
+function quoted(q, i){ return q.labels ? q.labels[i] : "&ldquo;" + q.options[i] + "&rdquo;"; }
+function table(q){ return q.table ? '<div class="bt-wrap">' + q.table + "</div>" : ""; }
+function stim(q){
+  var s = q.stim && STIM[q.stim]; if (!s) return "";
+  var html = s.html.split(' data-q="' + q.n + '"').join(' data-q="' + q.n + '" data-cur')
+    .replace(/data-qs="([^"]*)"/g, function(m, l){ return (" " + l + " ").indexOf(" " + q.n + " ") >= 0 ? m + " data-cur" : m; });
+  return '<div class="stim' + (s.cls ? " " + s.cls : "") + '">' + (s.title ? '<p class="stim-h sc">' + s.title + "</p>" : "") + html + "</div>";
+}
+function scrollStim(root){
+  root.querySelectorAll(".stim").forEach(function(box){ var c = box.querySelector("[data-cur]"); if (c && box.scrollHeight > box.clientHeight) box.scrollTop = Math.max(0, c.offsetTop - box.clientHeight / 3); });
+}
+function promptHtml(q){
+  return stim(q) + (q.fig || "") + '<div class="q-prompt"><p>' + q.prompt + "</p>" + (q.ask || META.ask ? '<p class="q-ask">' + (q.ask || META.ask) + "</p>" : "") + "</div>" + table(q);
+}
+
+function renderSetup(){
+  mcEl.innerHTML =
+    '<div class="setup">' +
+      '<h2>How do you want to take it?</h2>' +
+      '<div class="choice-row">' +
+        '<button type="button" class="choice" data-mode="practice" aria-pressed="' + (S.mode === "practice") + '"><b>Practice</b><span>See the answer and why after each question</span></button>' +
+        '<button type="button" class="choice" data-mode="exam" aria-pressed="' + (S.mode === "exam") + '"><b>Exam</b><span>Answer everything, then see your score</span></button>' +
+      '</div>' +
+      '<div class="checks">' +
+        '<label><input type="checkbox" id="opt-sq"' + (S.shuffleQ ? " checked" : "") + '> Shuffle questions</label>' +
+        '<label><input type="checkbox" id="opt-sc"' + (S.shuffleC ? " checked" : "") + '> Shuffle answer choices</label>' +
+      '</div>' +
+      '<div class="setup-actions"><button type="button" class="btn btn--solid btn--lg" id="go">Start' + (HAS_FR ? " multiple choice" : "") + '</button></div>' +
+      '<p class="note">' + META.setupNote + " Keyboard: 1&ndash;" + Math.max.apply(null, MC.map(function(q){ return q.options.length; })) + " to answer, &larr; &rarr; to move, Enter for next.</p>" +
+    '</div>';
+  mcEl.querySelectorAll(".choice").forEach(function(b){ b.onclick = function(){ S.mode = b.dataset.mode; render(); }; });
+  document.getElementById("opt-sq").onchange = function(e){ S.shuffleQ = e.target.checked; };
+  document.getElementById("opt-sc").onchange = function(e){ S.shuffleC = e.target.checked; };
+  document.getElementById("go").onclick = function(){ start(); };
+}
+
+function renderRun(){
+  var n = S.order[S.pos], q = BY[n], st = stats(), practice = S.mode === "practice";
+  var picked = (n in S.ans) ? S.ans[n] : null, locked = practice && picked !== null;
+  var nav = S.order.map(function(m, i){
+    var c = [];
+    if (m in S.ans){ if (practice) c.push(S.ans[m] === BY[m].answer ? "is-right" : "is-wrong"); else c.push("is-answered"); }
+    if (i === S.pos) c.push("is-current");
+    return '<button type="button" class="' + c.join(" ") + '" data-go="' + i + '" aria-label="Question ' + (i + 1) + '"' + (i === S.pos ? ' aria-current="step"' : "") + ">" + (i + 1) + "</button>";
+  }).join("");
+  var opts = S.copt[n].map(function(oi, k){
+    var cls = ["opt"], mark = "";
+    if (locked){
+      if (oi === q.answer){ cls.push("is-right"); mark = oi === picked ? "&check; your answer" : "&check; correct"; }
+      else if (oi === picked){ cls.push("is-wrong"); mark = "&cross; your answer"; }
+      else cls.push("is-dim");
+    } else if (oi === picked) cls.push("is-picked");
+    return '<li><button type="button" class="' + cls.join(" ") + '" data-opt="' + oi + '"' + (locked ? " disabled" : "") + '><span class="kbd">' + (k + 1) + "</span><span>" + q.options[oi] + '</span><span class="mark">' + mark + "</span></button></li>";
+  }).join("");
+  var fb = "";
+  if (locked){
+    var ok = picked === q.answer, ans = quoted(q, q.answer);
+    fb = '<div class="fb' + (ok ? "" : " is-wrong") + '"><p class="verdict" role="status">' + (ok ? "Correct." : "Not quite. The answer is " + ans + (/[.?!](&rdquo;)?$/.test(ans) ? "" : ".")) + "</p>" + explain(q, picked) + topicLinks([q.topic]) + "</div>";
+  }
+  var last = S.pos === S.order.length - 1, allDone = st.done === st.total;
+  var nextBtn = last
+    ? '<button type="button" class="btn btn--solid" id="finish">' + (practice ? "See results" : "Finish test") + "</button>"
+    : '<button type="button" class="btn btn--solid" id="next">Next &rarr;</button>';
+  var finishEarly = (!last && !practice) ? '<button type="button" class="btn" id="finish">Finish test</button>' : (!last && practice && allDone ? '<button type="button" class="btn" id="finish">See results</button>' : "");
+  var conf = "";
+  if (confirmFinish){
+    var left = st.total - st.done;
+    conf = '<div class="confirm"><p>' + left + " question" + (left === 1 ? " is" : "s are") + " unanswered and will be marked wrong. Finish anyway?</p>" +
+      '<button type="button" class="btn" id="conf-no">Keep going</button><button type="button" class="btn btn--solid" id="conf-yes">Finish</button></div>';
+  }
+  var eyebrow = "Question " + q.n + (SEC[q.sec] ? " &middot; " + SEC[q.sec] : "") + (q.tag ? " &middot; " + q.tag : (q.topic ? " &middot; " + topicShort(q.topic) : ""));
+  mcEl.innerHTML =
+    '<div class="bar"><span>Question ' + (S.pos + 1) + " of " + st.total + " &middot; " + (practice ? "Practice" : "Exam") + " mode</span><span>" +
+      (practice ? st.right + " correct of " + st.done + " answered" : st.done + " of " + st.total + " answered") + "</span></div>" +
+    '<div class="track"><span style="width:' + (st.done / st.total * 100) + '%"></span></div>' +
+    '<nav class="nav" aria-label="Questions">' + nav + "</nav>" +
+    '<article class="q">' +
+      '<p class="q-eyebrow sc">' + eyebrow + "</p>" +
+      promptHtml(q) +
+      '<ol class="opts">' + opts + "</ol>" + fb +
+      '<div class="step"><button type="button" class="btn" id="prev"' + (S.pos === 0 ? " disabled" : "") + '>&larr; Back</button><span class="step-right">' + finishEarly + nextBtn + "</span></div>" +
+      conf +
+    "</article>" +
+    '<p class="keys"><span class="kbd">1</span>&ndash;<span class="kbd">' + q.options.length + '</span> answer &nbsp; <span class="kbd">&larr;</span> <span class="kbd">&rarr;</span> move &nbsp; <span class="kbd">Enter</span> next</p>' +
+    '<p class="restart-line"><a href="#" id="restart">Start over</a> <span class="muted">&middot; progress is saved in this browser</span></p>';
+
+  scrollStim(mcEl);
+  mcEl.querySelectorAll("[data-go]").forEach(function(b){ b.onclick = function(){ go(+b.dataset.go); }; });
+  mcEl.querySelectorAll("[data-opt]").forEach(function(b){ b.onclick = function(){ pick(+b.dataset.opt); }; });
+  bind("prev", function(){ go(S.pos - 1); });
+  bind("next", function(){ go(S.pos + 1); });
+  bind("finish", finish);
+  bind("conf-no", function(){ confirmFinish = false; render(); });
+  bind("conf-yes", function(){ confirmFinish = false; showResults(); });
+  bind("restart", function(e){ e.preventDefault(); S.phase = "setup"; save(KEY, S); render(); });
+}
+function bind(id, fn){ var el = document.getElementById(id); if (el) el.onclick = fn; }
+
+function pick(oi){
+  var n = S.order[S.pos];
+  if (S.mode === "practice" && (n in S.ans)) return;
+  S.ans[n] = oi; save(KEY, S); render();
+  if (S.mode === "practice"){ var fb = mcEl.querySelector(".fb"); if (fb && fb.getBoundingClientRect().bottom > innerHeight) fb.scrollIntoView({ block: "nearest" }); }
+}
+function go(i){
+  if (i < 0 || i >= S.order.length) return;
+  S.pos = i; confirmFinish = false; save(KEY, S); render();
+  var q = mcEl.querySelector(".q"); if (q && q.getBoundingClientRect().top < 0) q.scrollIntoView();
+}
+function finish(){
+  var st = stats();
+  if (st.done < st.total && !confirmFinish){ confirmFinish = true; render(); var c = mcEl.querySelector(".confirm"); if (c) c.scrollIntoView({ block: "nearest" }); return; }
+  showResults();
+}
+function showResults(){
+  S.phase = "results";
+  if (S.order.length === MC.length) S.full = stats().right;
+  save(KEY, S); render(); if (HAS_FR) renderFR(); focusTop();
+}
+
+/* composite score (only when the document defines one) */
+function frTotal(){
+  var t = 0;
+  for (var i = 0; i < FR.length; i++){ var s = frScore(FR[i]); if (s === null) return null; t += s; }
+  return t;
+}
+function frMax(){ return FR.reduce(function(a, f){ return a + frItemMax(f); }, 0); }
+function compositeHtml(){
+  var C = META.composite;
+  if (!C || !HAS_FR) return "";
+  var mc = (typeof S.full === "number") ? S.full : null, fr = frTotal(), fm = frMax(), mm = MC.length;
+  if (mc === null && fr === null) return "";
+  var lines = [];
+  if (mc === null) lines.push("Free response: <b>" + fr + " / " + fm + "</b>. Take the full multiple-choice part to get your composite score.");
+  else if (fr === null) lines.push("Multiple choice: <b>" + mc + " / " + mm + "</b>. Write and mark every free-response question to get your composite score.");
+  else {
+    var c = Math.round(C.mcWeight * mc / mm + C.frWeight * fr / fm), band = "";
+    for (var i = 0; i < C.bands.length; i++){ if (c >= C.bands[i][0]){ band = C.bands[i][1]; break; } }
+    lines.push("Composite score: <b>" + c + " / " + (C.mcWeight + C.frWeight) + "</b> &nbsp;<span class=\"muted\">= " + C.mcWeight + " &times; " + mc + "/" + mm + " + " + C.frWeight + " &times; " + fr + "/" + fm + "</span>");
+    if (band) lines.push(band);
+  }
+  return '<div class="composite" role="status">' + lines.map(function(l){ return "<p>" + l + "</p>"; }).join("") + "</div>";
+}
+function targetHtml(st){
+  var T = META.target, B = META.bands, h = "";
+  if (st.total !== MC.length) return "";
+  if (T) h += '<p class="target">' + T.label + ": " + T.mc + " / " + MC.length + " &middot; " + (st.right >= T.mc ? "met" : (T.mc - st.right) + " short") + "</p>";
+  if (B) for (var i = 0; i < B.length; i++){ if (st.right >= B[i][0]){ h += '<p class="target">' + B[i][1] + "</p>"; break; } }
+  return h;
+}
+
+var resFilter = "all";
+function renderResults(){
+  var st = stats(), pct = Math.round(st.right / st.total * 100), fullRun = st.total === MC.length;
+  var missed = S.order.filter(function(n){ return S.ans[n] !== BY[n].answer; });
+  var rows = S.order.map(function(n, i){
+    var q = BY[n], a = S.ans[n], ok = a === q.answer;
+    if (resFilter === "missed" && ok) return "";
+    return '<li><details><summary><span class="res-n">' + (i + 1) + '.</span><span class="' + (ok ? "res-ok" : "res-bad") + '" aria-label="' + (ok ? "correct" : "wrong") + '">' + (ok ? "&check;" : "&cross;") + '</span><span class="res-sum">' + q.prompt + "</span></summary>" +
+      '<div class="res-body">' + stim(q) + (q.fig || "") + table(q) + '<p><span class="sc">Your answer:</span> ' + (a === undefined ? "<i>skipped</i>" : q.options[a]) + "</p>" +
+      (ok ? "" : '<p><span class="sc">Correct:</span> ' + q.options[q.answer] + "</p>") +
+      explain(q, a) + topicLinks([q.topic]) + "</div></details></li>";
+  }).join("");
+  var tally = {};
+  S.order.forEach(function(n){ var t = BY[n].topic; if (!t) return; tally[t] = tally[t] || { right: 0, total: 0 }; tally[t].total++; if (S.ans[n] === BY[n].answer) tally[t].right++; });
+  var trows = Object.keys(TOP).filter(function(t){ return tally[t]; }).map(function(t){
+    var x = tally[t], miss = x.total - x.right;
+    return "<tr><th scope=\"row\">" + topicShort(t) + "</th><td>" + x.right + " / " + x.total + "</td><td>" + guideLink(t, true) +
+      ((META.flag ? x.right < META.flag.below * x.total : miss >= 2) ? ' <span class="flag">&middot; ' + (META.flag ? META.flag.text : "reread this section") + "</span>" : "") + "</td></tr>";
+  }).join("");
+  mcEl.innerHTML =
+    '<div class="results">' +
+      '<div class="score"><p class="score-big">' + st.right + " / " + st.total + "</p><p>" + pct + "% correct" + (fullRun ? "" : " &middot; retry of missed questions") + "</p>" + targetHtml(st) + "</div>" +
+      '<div class="res-actions">' +
+        (missed.length ? '<button type="button" class="btn btn--solid" id="retry">Retry the ' + missed.length + " missed</button>" : "") +
+        '<button type="button" class="btn" id="again">Take the full test again</button>' +
+        (HAS_FR ? '<button type="button" class="btn" id="to-fr">Go to free response</button>' : "") +
+      "</div>" +
+      compositeHtml() +
+      (trows ? '<div class="topics"><h2>' + (META.byTopic || "By topic") + '</h2><table class="bt"><thead><tr><th scope="col">' + (META.topicCol || "Topic") + '</th><th scope="col">Correct</th><th scope="col">' + (META.guideCol || "Guide section") + "</th></tr></thead><tbody>" + trows + "</tbody></table>" +
+        (META.topicNote ? '<p class="note" style="margin-top:6px">' + META.topicNote + "</p>" : "") + "</div>" : "") +
+      '<div class="res-filter"><h2>Review</h2><span><label><input type="checkbox" id="only-missed"' + (resFilter === "missed" ? " checked" : "") + "> Show missed only</label></span></div>" +
+      '<ul class="res-list">' + (rows || '<li><p class="note" style="padding:12px 0">Nothing missed.</p></li>') + "</ul>" +
+    "</div>";
+  bind("retry", function(){ start(missed); });
+  bind("again", function(){ S.phase = "setup"; save(KEY, S); render(); });
+  bind("to-fr", function(){ setTab("fr"); });
+  document.getElementById("only-missed").onchange = function(e){ resFilter = e.target.checked ? "missed" : "all"; render(); };
+}
+
+function render(){
+  if (S.phase === "run" && S.order.length) renderRun();
+  else if (S.phase === "results" && S.order.length) renderResults();
+  else { S.phase = "setup"; renderSetup(); }
+}
+
+/* free response: "epi" parts (E/P/I -> 0-4 per question) or "points" parts (0..max each) */
+var frEl = document.getElementById("fr"), F = load(FKEY, null);
+if (!F || typeof F !== "object") F = {};
+F.drafts = F.drafts || {}; F.marks = F.marks || {}; F.open = F.open || {};
+var LABELS = { 4: "Complete", 3: "Substantial", 2: "Developing", 1: "Minimal", 0: "" };
+function frItemMax(f){ return f.mode === "points" ? f.parts.reduce(function(a, p){ return a + p.max; }, 0) : 4; }
+function frScore(f){
+  if (f.mode === "points"){
+    var t = 0;
+    for (var j = 0; j < f.parts.length; j++){ var v = F.marks[f.n + f.parts[j].label]; if (v === undefined || v === "") return null; t += +v; }
+    return t;
+  }
+  var e = 0, p = 0;
+  for (var i = 0; i < f.parts.length; i++){
+    var m = F.marks[f.n + f.parts[i].label];
+    if (!m) return null;
+    if (m === "E") e++; else if (m === "P") p++;
+  }
+  if (e === 3) return 4;
+  if (e === 2 && p === 1) return 3;
+  if ((e === 2 && p === 0) || (e === 1 && p >= 1) || p === 3) return 2;
+  if ((e === 1 && p === 0) || (e === 0 && p === 2)) return 1;
+  return 0;
+}
+function words(t){ var m = t.trim().match(/\S+/g); return m ? m.length : 0; }
+var SCALE = '<details class="scale"><summary>How part scores convert to 0&ndash;4</summary><table class="bt"><thead><tr><th scope="col">Score</th><th scope="col">Label</th><th scope="col">Part scores (three parts, each E, P, or I)</th></tr></thead><tbody>' +
+  "<tr><td>4</td><td>Complete</td><td>three parts E</td></tr>" +
+  "<tr><td>3</td><td>Substantial</td><td>two parts E and one part P</td></tr>" +
+  "<tr><td>2</td><td>Developing</td><td>two E and no P; or one E and one or two P; or three P</td></tr>" +
+  "<tr><td>1</td><td>Minimal</td><td>one E and no P; or no E and two P</td></tr>" +
+  "<tr><td>0</td><td></td><td>anything less</td></tr></tbody></table></details>";
+function frScoreHtml(f){
+  var s = frScore(f), mx = frItemMax(f);
+  if (s === null) return '<span class="muted">Mark every part to score this question.</span>';
+  return "Score: <b>" + s + " / " + mx + "</b>" + (f.mode !== "points" && LABELS[s] ? " &middot; " + LABELS[s] : "");
+}
+function markButtons(f, p, id, m){
+  var vals = f.mode === "points" ? range(p.max + 1).map(String) : ["E", "P", "I"];
+  return vals.map(function(x){ return '<button type="button" data-mark="' + id + '" data-f="' + f.n + '" data-v="' + x + '" aria-pressed="' + (m === x) + '">' + x + "</button>"; }).join("");
+}
+function renderFR(){
+  if (!HAS_FR) return;
+  frEl.innerHTML = '<p class="fr-intro">' + META.frIntro + "</p>" +
+    FR.map(function(f){
+      var open = !!F.open[f.n];
+      var parts = f.parts.map(function(p){
+        var id = f.n + p.label, d = F.drafts[id] || "", m = (F.marks[id] === undefined ? "" : String(F.marks[id]));
+        var crit = f.mode === "points"
+          ? '<div class="crit-pts">' + p.rubric + "</div>"
+          : '<dl class="crit"><dt>E</dt><dd>if the response ' + p.e + "</dd><dt>P</dt><dd>if " + p.p + "</dd></dl>";
+        return '<div class="part"><p class="part-prompt"><b>(' + p.label + ")</b>" + p.prompt + "</p>" +
+          '<label class="sc" for="fr-' + id + '">Your answer to (' + p.label + ")</label>" +
+          '<textarea id="fr-' + id + '" data-fr="' + id + '" spellcheck="true">' + esc(d) + "</textarea>" +
+          '<p class="part-meta" id="wc-' + id + '">' + words(d) + " words &middot; saved in this browser</p>" +
+          '<div class="sol"' + (open ? "" : " hidden") + ' data-sol="' + f.n + '"><h3>Model solution (' + p.label + ")</h3><div>" + p.solution + "</div>" + crit +
+            '<div class="mark-row"><span>Your mark for (' + p.label + ")" + (f.mode === "points" ? ", out of " + p.max : "") + ':</span><span class="seg" role="group" aria-label="Mark for part ' + p.label + '">' + markButtons(f, p, id, m) + "</span></div></div></div>";
+      }).join("");
+      return '<article class="fr"><h2>Question ' + f.n + "<small>" + f.head + "</small></h2>" +
+        (f.stim ? stim(f) : "") + '<div class="fr-stem">' + f.stem + "</div>" + parts +
+        '<div class="fr-actions"><span class="fr-score" id="score-' + f.n + '">' + (open ? frScoreHtml(f) : "") + "</span>" +
+          '<button type="button" class="btn" data-open="' + f.n + '" aria-expanded="' + open + '">' + (open ? "Hide model solution" : "Show model solution and scoring") + "</button></div>" +
+        (open ? (f.mode === "points" ? "" : SCALE) + topicLinks(f.guide || []) : "") +
+        "</article>";
+    }).join("") + '<div id="fr-composite">' + compositeHtml() + "</div>";
+  frEl.querySelectorAll("textarea").forEach(function(t){
+    t.oninput = function(){ F.drafts[t.dataset.fr] = t.value; save(FKEY, F); document.getElementById("wc-" + t.dataset.fr).innerHTML = words(t.value) + " words &middot; saved in this browser"; };
+  });
+  frEl.querySelectorAll("[data-open]").forEach(function(b){
+    b.onclick = function(){ var n = b.dataset.open; F.open[n] = !F.open[n]; save(FKEY, F); renderFR(); var a = document.getElementById("score-" + n); if (a) a.closest(".fr").querySelector(".part").scrollIntoView({ block: "nearest" }); };
+  });
+  frEl.querySelectorAll("[data-mark]").forEach(function(b){
+    b.onclick = function(){
+      var id = b.dataset.mark; F.marks[id] = F.marks[id] === b.dataset.v ? "" : b.dataset.v; save(FKEY, F);
+      b.parentNode.querySelectorAll("button").forEach(function(x){ x.setAttribute("aria-pressed", String(F.marks[id] === x.dataset.v)); });
+      var f = FR.filter(function(x){ return String(x.n) === b.dataset.f; })[0];
+      document.getElementById("score-" + f.n).innerHTML = frScoreHtml(f);
+      document.getElementById("fr-composite").innerHTML = compositeHtml();
+      if (S.phase === "results") render();
+    };
+  });
+}
+
+/* tabs (only when there is a free-response part) */
+function setTab(t){
+  if (!HAS_FR) return;
+  var mc = t === "mc";
+  document.getElementById("tab-mc").setAttribute("aria-selected", String(mc));
+  document.getElementById("tab-fr").setAttribute("aria-selected", String(!mc));
+  mcEl.hidden = !mc; frEl.hidden = mc;
+  try{ history.replaceState(null, "", mc ? location.pathname : "#free-response"); }catch(e){}
+  focusTop();
+}
+if (HAS_FR){
+  document.getElementById("tab-mc").onclick = function(){ setTab("mc"); };
+  document.getElementById("tab-fr").onclick = function(){ setTab("fr"); };
+}
+
+/* keyboard */
+document.addEventListener("keydown", function(e){
+  if (e.metaKey || e.ctrlKey || e.altKey) return;
+  var tag = (e.target.tagName || "").toLowerCase();
+  if (tag === "textarea" || tag === "input") return;
+  if (mcEl.hidden || S.phase !== "run") return;
+  var n = S.order[S.pos], q = BY[n];
+  if (/^[1-9]$/.test(e.key)){ var k = +e.key - 1; if (k < q.options.length){ e.preventDefault(); pick(S.copt[n][k]); } }
+  else if (e.key === "ArrowRight"){ e.preventDefault(); go(S.pos + 1); }
+  else if (e.key === "ArrowLeft"){ e.preventDefault(); go(S.pos - 1); }
+  else if (e.key === "Enter" && tag !== "button" && tag !== "a"){ e.preventDefault(); if (S.pos < S.order.length - 1) go(S.pos + 1); else finish(); }
+});
+
+/* theme */
+var root = document.documentElement, tb = document.getElementById("theme-btn");
+function syncTheme(){ var dark = root.getAttribute("data-theme") === "dark"; tb.textContent = dark ? "Light mode" : "Dark mode"; tb.setAttribute("aria-pressed", String(dark)); }
+tb.onclick = function(){ var dark = root.getAttribute("data-theme") !== "dark"; root.setAttribute("data-theme", dark ? "dark" : "light"); try{ localStorage.setItem("apah.theme", dark ? "dark" : "light"); }catch(e){} syncTheme(); };
+syncTheme();
+
+render(); renderFR();
+if (HAS_FR && location.hash === "#free-response") setTab("fr");
+})();
+</script>
+</body>
+</html>

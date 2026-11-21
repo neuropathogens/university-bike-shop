@@ -1,0 +1,398 @@
+\documentclass[11pt]{article}
+\usepackage{act-sci}
+\settitle{Full-Length Practice Test}
+\setsubtitle{Part 6 of 6 \textperiodcentered{} 40 questions \textperiodcentered{} 40 minutes \textperiodcentered{} 7 passages}
+\settarget{$\geq$ 32 correct}
+\settime{40 min}
+
+\begin{document}
+\maketitleblock
+
+\begin{abstract}
+This test follows the enhanced-ACT Science blueprint: 40 questions in 40 minutes across seven original passages (three data representations, three research summaries including one engineering-design study, and one conflicting viewpoints set). The categories fall inside ACT's published ranges: 17 Interpretation of Data (42.5\%), 10 Scientific Investigation (25\%), and 13 Evaluation of Models, Inferences \& Experimental Results (32.5\%). Take it in one sitting with a timer and no calculator. Write each answer in the blank beside the question. When the timer ends, mark where you were, finish untimed in a different pen, and score both. The answer key gives the reasoning and the rule from Parts 2--4 for every question, and a category breakdown shows which guide to go back to.
+\end{abstract}
+
+\scoringline
+
+\begin{center}
+\fbox{\parbox{0.92\linewidth}{\small\textbf{DIRECTIONS:} There are seven passages in this test. Each passage is followed by several questions. After reading a passage, choose the best answer to each question and write its letter in the blank beside the question. You may refer to the passages as often as necessary. You are \emph{not} permitted to use a calculator on this test.}}
+\end{center}
+\clearpage
+
+%% =====================================================================
+\passage{Soil temperature}
+Soil warms and cools each day as sunlight strikes the surface. A scientist buried temperature probes at several depths in a bare field and recorded soil temperature every 4 hours for one day (Figure 1). She also calculated each depth's \emph{daily range}, the difference between its highest and lowest temperature that day (Figure 2).
+
+\begin{figbox}
+\begin{tikzpicture}
+\begin{axis}[actplot, width=10.5cm, height=5.6cm, xlabel={Time of day (h)}, ylabel={Temperature (\si{\celsius})},
+  xmin=0, xmax=24, ymin=5, ymax=35, xtick={0,4,...,24}, ytick={5,10,...,35}, legend style={at={(0.5,1.03)}, anchor=south}, legend columns=3]
+\addplot[mark=*, smooth] coordinates {(0,12) (4,9) (8,15) (12,30) (16,27) (20,17) (24,12)};
+\addplot[mark=square*, dashed, smooth] coordinates {(0,16) (4,14) (8,14) (12,20) (16,24) (20,20) (24,16)};
+\addplot[mark=triangle*, densely dotted] coordinates {(0,17) (4,17) (8,17) (12,17) (16,17) (20,17) (24,17)};
+\legend{surface, 10 cm, 50 cm}
+\end{axis}
+\end{tikzpicture}
+\figlabel{Figure 1}
+\end{figbox}
+\begin{figbox}
+\begin{tikzpicture}
+\begin{axis}[actplot, width=9cm, height=5cm, xlabel={Depth (cm)}, ylabel={Daily range (\si{\celsius})},
+  xmin=0, xmax=50, ymin=0, ymax=24, xtick={0,10,...,50}, ytick={0,4,...,24}]
+\addplot[mark=*, smooth] coordinates {(0,21) (5,15) (10,10) (20,5) (30,2) (50,0.5)};
+\end{axis}
+\end{tikzpicture}
+\figlabel{Figure 2}
+\end{figbox}
+\passageend
+
+\begin{q}{4}{ID-1}{Figure 1, surface curve at 12 h: \SI{30}{\celsius}. 20 is the 10 cm value at that time; 27 is the surface value at 16 h.}
+According to Figure 1, the surface temperature at 12 h was closest to:
+\choicesrow{\SI{17}{\celsius}}{\SI{20}{\celsius}}{\SI{27}{\celsius}}{\SI{30}{\celsius}}
+\end{q}
+
+\begin{q}{2}{ID-2}{Figure 2 falls at every step: 21, 15, 10, 5, 2, 0.5.}
+According to Figure 2, as depth increases, the daily range of soil temperature:
+\choices{increases only.}{decreases only.}{increases and then decreases.}{remains constant.}
+\end{q}
+
+\begin{q}{3}{ID-1}{The 10 cm curve peaks at \SI{24}{\celsius} at 16 h, four hours after the surface peak at 12 h.}
+According to Figure 1, the temperature at 10 cm reached its maximum at approximately:
+\choicesrow{4 h}{12 h}{16 h}{20 h}
+\end{q}
+
+\begin{q}{2}{ID-3}{40 cm is between 30 cm (2) and 50 cm (0.5), so about \SI{1}{\celsius}.}
+Based on Figure 2, the daily range at a depth of 40 cm would most likely be closest to:
+\choicesrow{\SI{0.1}{\celsius}}{\SI{1}{\celsius}}{\SI{3}{\celsius}}{\SI{5}{\celsius}}
+\end{q}
+
+\begin{q}{3}{ID-5}{Surface: 9 at 4 h $\to$ 30 at 12 h; $30-9 = \SI{21}{\celsius}$.}
+By how much did the surface temperature increase from 4 h to 12 h?
+\choicesrow{\SI{9}{\celsius}}{\SI{15}{\celsius}}{\SI{21}{\celsius}}{\SI{30}{\celsius}}
+\end{q}
+
+\begin{q}{1}{EM-2}{Figure 1 shows the 50 cm temperature flat at \SI{17}{\celsius}; Figure 2 shows its daily range is only about \SI{0.5}{\celsius}.}
+A burrowing animal that needs a nearly constant temperature all day would do best at which depth?
+\choicesrow{50 cm}{10 cm}{5 cm}{Surface}
+\end{q}
+
+%% =====================================================================
+\passage{Magnesium and acid}
+When magnesium (Mg) metal is placed in hydrochloric acid (HCl), it reacts and dissolves, releasing hydrogen gas:
+\[\ce{Mg + 2HCl -> MgCl2 + H2}\]
+In each trial below, students placed \SI{0.10}{\gram} of Mg into \SI{50}{\milli\litre} of HCl and recorded the time needed for all the Mg to dissolve.
+
+\textbf{Experiment 1.} Mg ribbon was used at \SI{25}{\celsius} with four HCl concentrations (Table 1).\\
+\textbf{Experiment 2.} Mg ribbon was used with \SI{1.0}{M} HCl at four temperatures (Table 2).\\
+\textbf{Experiment 3.} \SI{1.0}{M} HCl at \SI{25}{\celsius} was used with Mg ribbon and with Mg powder (Table 3).
+
+\begin{minipage}[t]{0.32\linewidth}
+\figlabel{Table 1}
+\datatable{c c}{HCl (M) & Time (s)\\\midrule 0.5 & 240\\ 1.0 & 120\\ 1.5 & \phantom{0}80\\ 2.0 & \phantom{0}60\\}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.32\linewidth}
+\figlabel{Table 2}
+\datatable{c c}{Temp.\ (\si{\celsius}) & Time (s)\\\midrule 15 & 210\\ 25 & 120\\ 35 & \phantom{0}66\\ 45 & \phantom{0}37\\}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.32\linewidth}
+\figlabel{Table 3}
+\datatable{c c}{Form of Mg & Time (s)\\\midrule ribbon & 120\\ powder & \phantom{0}35\\}
+\end{minipage}
+\passageend
+
+\begin{q}{1}{SI-1}{Only temperature differs among the trials of Experiment 2; HCl was 1.0 M throughout.}
+In Experiment 2, the independent variable was:
+\choices{temperature.}{HCl concentration.}{time for the Mg to dissolve.}{mass of Mg.}
+\end{q}
+
+\begin{q}{2}{ID-2}{240, 120, 80, 60: the time falls at every step as concentration rises.}
+According to Table 1, as HCl concentration increased, the time for the Mg to dissolve:
+\choices{increased only.}{decreased only.}{increased and then decreased.}{remained constant.}
+\end{q}
+
+\begin{q}{3}{ID-3}{\SI{30}{\celsius} is between 25 (120 s) and \SI{35}{\celsius} (66 s) at the same 1.0 M concentration.}
+If Experiment 2 had included a trial at \SI{30}{\celsius}, the time for the Mg to dissolve would most likely have been:
+\choices{less than 37 s.}{between 37 s and 66 s.}{between 66 s and 120 s.}{greater than 120 s.}
+\end{q}
+
+\begin{q}{4}{SI-3}{Holding the Mg mass constant means differences in time come from the variable under test, not from having more metal to dissolve.}
+The students used \SI{0.10}{\gram} of Mg in every trial most likely to ensure that:
+\choices{the reaction would produce no hydrogen gas.}{the HCl concentration stayed constant.}{the reaction would happen at \SI{25}{\celsius}.}{differences in dissolving time were not caused by different amounts of Mg.}
+\end{q}
+
+\begin{q}{1}{EM-1}{Powder, which has far more exposed surface than ribbon, dissolved in 35 s instead of 120 s under otherwise identical conditions.}
+Do the results of Experiment 3 support the hypothesis that increasing the surface area of Mg increases the rate of reaction?
+\choices{Yes; the powder dissolved in less time than the ribbon.}{Yes; the ribbon dissolved in less time than the powder.}{No; the powder dissolved in more time than the ribbon.}{No; both forms used the same HCl concentration.}
+\end{q}
+
+\begin{q}{2}{SI-5}{Only the acid type changes. Concentration, Mg mass and form, volume, and temperature match the 1.0 M / \SI{25}{\celsius} / ribbon condition already tested.}
+The students want to know whether the \emph{type} of acid affects dissolving time. Which experiment would best test this?
+\choices{Use \SI{0.10}{\gram} of Mg ribbon in \SI{1.0}{M} HCl at 15, 25, and \SI{35}{\celsius}.}{Use \SI{0.10}{\gram} of Mg ribbon in \SI{50}{\milli\litre} of three different \SI{1.0}{M} acids at \SI{25}{\celsius}.}{Use Mg ribbon in \SI{1.0}{M} HCl and Mg powder in a different \SI{1.0}{M} acid at \SI{25}{\celsius}.}{Use \SI{0.10}{\gram} of Mg ribbon in HCl at four concentrations at \SI{25}{\celsius}.}
+\end{q}
+
+%% =====================================================================
+\passage{Bouncing balls}
+Students dropped three balls (A, B and C) onto a concrete floor from several heights and measured the height of the first bounce (the rebound height). All Figure 3 trials were done at \SI{20}{\celsius}. The students then dropped Ball A from \SI{100}{\centi\metre} after storing it at different temperatures, and recorded the \emph{rebound fraction} (rebound height $\div$ drop height) in Table 4.
+
+\begin{minipage}[c]{0.60\linewidth}
+\centering
+\begin{tikzpicture}
+\begin{axis}[actplot, width=8.6cm, height=5.6cm, xlabel={Drop height (cm)}, ylabel={Rebound height (cm)},
+  xmin=0, xmax=100, ymin=0, ymax=90, xtick={0,25,50,75,100}, ytick={0,15,...,90}, legend pos=north west]
+\addplot[mark=*] coordinates {(25,20) (50,40) (75,60) (100,80)};
+\addplot[mark=square*, dashed] coordinates {(25,14) (50,28) (75,41) (100,55)};
+\addplot[mark=triangle*, densely dotted] coordinates {(25,8) (50,15) (75,23) (100,30)};
+\legend{Ball A, Ball B, Ball C}
+\end{axis}
+\end{tikzpicture}
+\figlabel{Figure 3}
+\end{minipage}\hfill
+\begin{minipage}[c]{0.37\linewidth}
+\figlabel{Table 4 (Ball A)}
+\datatable{c c}{Temp.\ (\si{\celsius}) & Rebound fraction\\\midrule $-10$ & 0.45\\ 0 & 0.60\\ 20 & 0.80\\ 40 & 0.85\\}
+\end{minipage}
+\passageend
+
+\begin{q}{2}{ID-1}{Ball B (dashed) at a 75 cm drop rebounds to 41 cm.}
+According to Figure 3, when Ball B was dropped from 75 cm, its rebound height was closest to:
+\choicesrow{23 cm}{41 cm}{55 cm}{60 cm}
+\end{q}
+
+\begin{q}{3}{ID-3}{Ball C's rebound is about 0.3 of the drop height (30 cm from 100 cm). Following the straight line to 150 cm gives about 45 cm.}
+If the trend in Figure 3 continues, Ball C dropped from 150 cm at \SI{20}{\celsius} would rebound to about:
+\choicesrow{15 cm}{30 cm}{45 cm}{60 cm}
+\end{q}
+
+\begin{q}{4}{ID-5}{Ball A: $80/100 = 0.80$, i.e., 80\% at every height (20/25, 40/50, 60/75 also give 0.80).}
+At \SI{20}{\celsius}, Ball A's rebound height was what percent of its drop height?
+\choicesrow{30\%}{55\%}{70\%}{80\%}
+\end{q}
+
+\begin{q}{1}{ID-2}{0.45, 0.60, 0.80, 0.85: the fraction rises at every step.}
+According to Table 4, as the temperature of Ball A increased, its rebound fraction:
+\choices{increased only.}{decreased only.}{increased and then decreased.}{remained constant.}
+\end{q}
+
+\begin{q}{2}{EM-2}{At \SI{0}{\celsius} the rebound fraction is 0.60, so a 100 cm drop gives $0.60 \times 100 = 60$ cm. 80 cm is the \SI{20}{\celsius} result from Figure 3.}
+Based on Table 4, if Ball A were stored at \SI{0}{\celsius} and dropped from 100 cm, its rebound height would most likely be about:
+\choicesrow{45 cm}{60 cm}{80 cm}{85 cm}
+\end{q}
+
+%% =====================================================================
+\passage{Designing a small wind turbine}
+An engineering class built a small wind turbine whose rotor turns a generator. They tested rotors in a wind tunnel and recorded the generator's output voltage. Their design goal was an output of \emph{at least} \SI{2.5}{\volt} at a wind speed of \SI{5}{\metre\per\second}, using \emph{no more than 4 blades} (because of material limits). The \emph{pitch angle} is the angle at which each blade is tilted relative to the plane of rotation.
+
+\textbf{Test 1.} A 3-blade rotor was tested at a wind speed of \SI{5}{\metre\per\second} with four pitch angles.\\
+\textbf{Test 2.} Rotors with different numbers of blades were tested at a pitch angle of \ang{30} and \SI{5}{\metre\per\second}.\\
+\textbf{Test 3.} The 3-blade, \ang{30} rotor was tested at five wind speeds.
+
+\begin{minipage}[t]{0.32\linewidth}
+\figlabel{Table 5: Test 1}
+\datatable{c c}{Pitch angle & Voltage (V)\\\midrule \ang{10} & 1.2\\ \ang{20} & 2.1\\ \ang{30} & 2.4\\ \ang{40} & 1.6\\}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.32\linewidth}
+\figlabel{Table 6: Test 2}
+\datatable{c c}{Blades & Voltage (V)\\\midrule 2 & 1.8\\ 3 & 2.4\\ 4 & 2.6\\ 6 & 2.2\\}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.32\linewidth}
+\figlabel{Table 7: Test 3}
+\datatable{c c}{Wind (m/s) & Voltage (V)\\\midrule 2 & 0.4\\ 3 & 1.0\\ 4 & 1.7\\ 5 & 2.4\\ 6 & 3.1\\}
+\end{minipage}
+\passageend
+
+\begin{q}{3}{SI-1}{In Test 2 every rotor had a \ang{30} pitch at \SI{5}{\metre\per\second}; only the number of blades changed.}
+Which of the following was held constant in Test 2?
+\choicesgrid{Number of blades}{Output voltage}{Pitch angle}{Rotor material cost}
+\end{q}
+
+\begin{q}{3}{ID-2}{1.2, 2.1, 2.4, then 1.6: voltage peaks at \ang{30} and then falls.}
+According to Test 1, as pitch angle increased from \ang{10} to \ang{40}, voltage:
+\choices{increased only.}{decreased only.}{increased and then decreased.}{decreased and then increased.}
+\end{q}
+
+\begin{q}{2}{SI-7}{Needs $\geq$ 2.5 V and $\leq$ 4 blades. 4 blades at \ang{30} gives 2.6 V (pass). 3 blades gives 2.4 V (fail); 6 blades breaks the blade limit; 3 blades at \ang{20} gives 2.1 V.}
+Which rotor tested met the design goal?
+\choicesgrid{3 blades, \ang{30}}{4 blades, \ang{30}}{6 blades, \ang{30}}{3 blades, \ang{20}}
+\end{q}
+
+\begin{q}{4}{SI-4}{Tests 1 and 2 were both run at \SI{5}{\metre\per\second}; only Test 3 varied the wind speed.}
+Which variable was varied in Test 3 but held constant in Tests 1 and 2?
+\choicesgrid{Pitch angle}{Number of blades}{Output voltage}{Wind speed}
+\end{q}
+
+\begin{q}{3}{ID-3}{\SI{4.5}{\metre\per\second} lies between 4 (1.7 V) and 5 (2.4 V); the midpoint is about 2.0 V.}
+Based on Test 3, at a wind speed of \SI{4.5}{\metre\per\second} the 3-blade, \ang{30} rotor would most likely produce about:
+\choicesrow{\SI{1.0}{\volt}}{\SI{1.4}{\volt}}{\SI{2.0}{\volt}}{\SI{2.7}{\volt}}
+\end{q}
+
+\begin{q}{1}{SI-5}{To find the best pitch for a 4-blade rotor, vary only the pitch, keep 4 blades and the \SI{5}{\metre\per\second} test wind.}
+The class suspects the best pitch angle may be different for a 4-blade rotor. Which test should they run next?
+\choices{Test a 4-blade rotor at \SI{5}{\metre\per\second} with pitch angles of \ang{10}, \ang{20}, \ang{30}, and \ang{40}.}{Test 2-, 3-, 4- and 6-blade rotors at \ang{30} and \SI{6}{\metre\per\second}.}{Test a 4-blade rotor at \ang{30} with wind speeds from 2 to \SI{6}{\metre\per\second}.}{Test a 3-blade rotor at \ang{25} and a 4-blade rotor at \ang{35}, both at \SI{5}{\metre\per\second}.}
+\end{q}
+
+%% =====================================================================
+\passage{Formation of the Hawaiian Islands (conflicting viewpoints)}
+The Hawaiian Islands are volcanic and lie in a chain running northwest to southeast across the Pacific Plate. Active volcanoes occur only on the southeastern island, Hawai`i. Table 8 lists the approximate age of the oldest volcanic rock on four islands and each island's distance northwest of the active volcano K\={\i}lauea.
+
+\figlabel{Table 8}
+\datatable{l c c}{Island & Age of oldest rock (million years) & Distance NW of K\={\i}lauea (km)\\\midrule
+Hawai`i & 0.4 & \phantom{0}50\\ Maui & 1.3 & 150\\ O`ahu & 3.0 & 300\\ Kaua`i & 5.1 & 500\\}
+
+\textbf{Hypothesis 1.} A narrow column of hot rock, a \emph{plume}, rises from deep in the mantle and stays in a fixed position. The Pacific Plate moves northwest over the plume at a nearly steady rate. Magma from the plume builds a volcano on the part of the plate above it; as the plate carries that volcano away, it becomes inactive and a new volcano forms over the plume. This produces a chain whose ages increase steadily with distance from the plume. Because the magma comes from the deep mantle, Hawaiian lava should have the chemical signature of deep-mantle rock, such as a high ratio of helium-3 to helium-4.
+
+\textbf{Hypothesis 2.} There is no deep plume. Stresses in the Pacific Plate opened a long crack that has slowly extended toward the southeast. Magma from the \emph{shallow} upper mantle rises through the newest part of the crack, so volcanoes form along the crack in the order it opened, and the oldest islands lie at the northwest end. Because the magma is shallow, Hawaiian lava should chemically resemble lava from mid-ocean ridges, which has a low helium-3 to helium-4 ratio.
+\passageend
+
+\begin{q}{2}{EM-3}{Hypothesis 1: a fixed plume and a plate moving northwest carry older volcanoes away from the plume.}
+According to Hypothesis 1, islands farther northwest are older because:
+\choices{a crack in the plate opened first at its northwest end.}{the Pacific Plate has carried them northwest away from a fixed plume.}{the plume has moved northwest beneath a stationary plate.}{northwestern islands formed from shallow-mantle magma.}
+\end{q}
+
+\begin{q}{4}{EM-4}{Both hypotheses accept the ages in Table 8 and explain why northwestern islands are older; they disagree only on the source of the magma.}
+Supporters of both hypotheses would agree that:
+\choices{a deep-mantle plume lies beneath Hawai`i.}{the Hawaiian magma comes from the shallow mantle.}{the Pacific Plate is not moving.}{Kaua`i is older than Hawai`i.}
+\end{q}
+
+\begin{q}{1}{EM-5}{Hypothesis 1 predicts a high He-3/He-4 ratio (deep source); Hypothesis 2 predicts a low, ridge-like ratio. A high ratio fits only Hypothesis 1.}
+Suppose lava from K\={\i}lauea is found to have a helium-3 to helium-4 ratio much higher than that of mid-ocean ridge lava. This finding would:
+\choices{support Hypothesis 1 and weaken Hypothesis 2.}{support Hypothesis 2 and weaken Hypothesis 1.}{support both hypotheses.}{weaken both hypotheses.}
+\end{q}
+
+\begin{q}{3}{EM-2}{The plate moves northwest over a fixed plume, so the next volcano forms where the plate now sits over the plume: southeast of the youngest island.}
+According to Hypothesis 1, the next new island in the chain will most likely form:
+\choices{northwest of Kaua`i.}{between Maui and O`ahu.}{southeast of Hawai`i.}{directly on top of O`ahu.}
+\end{q}
+
+\begin{q}{3}{EM-2}{Kaua`i: 500 km in about 5 million years. $5\times10^{7}$ cm $\div$ $5\times10^{6}$ yr $=$ 10 cm/yr. (Using Hawai`i to Kaua`i: 450 km in 4.7 Myr, about 9.6 cm/yr.)}
+If Hypothesis 1 is correct, the Pacific Plate has moved at an average rate closest to:
+\choicesrow{0.1 cm/yr}{1 cm/yr}{10 cm/yr}{100 cm/yr}
+\end{q}
+
+\begin{q}{4}{EM-5}{Hypothesis 1 requires the plume to stay in a \emph{fixed} position. A plume that has wandered hundreds of kilometers contradicts that assumption. Hypothesis 2 does not involve a plume.}
+Which finding, if true, would most directly weaken Hypothesis 1 but \emph{not} Hypothesis 2?
+\choices{The islands' ages increase steadily toward the northwest.}{Hawaiian lava has a low helium-3 to helium-4 ratio.}{No crack has been detected in the Pacific Plate near Hawai`i.}{The deep-mantle heat source beneath Hawai`i has shifted several hundred kilometers over the past 5 million years.}
+\end{q}
+
+%% =====================================================================
+\passage{Antibiotics and bacterial growth}
+To test antibiotics, researchers spread bacteria evenly over agar plates and placed small paper disks soaked in antibiotic on the surface. After incubation, a clear \emph{zone of inhibition}, where no bacteria grew, appeared around effective disks. A larger zone indicates greater effectiveness. All plates were incubated at \SI{37}{\celsius} for \SI{24}{\hour}.
+
+\textbf{Study 1.} \textit{E.\ coli} plates received disks with \SI{10}{\micro\gram} of Antibiotic X, Y, or Z, or a disk soaked in sterile water.\\
+\textbf{Study 2.} \textit{E.\ coli} plates received disks with different amounts of Antibiotic Z.\\
+\textbf{Study 3.} Plates of three bacterial species received disks with \SI{10}{\micro\gram} of Antibiotic X.
+
+\begin{minipage}[t]{0.32\linewidth}
+\figlabel{Table 9: Study 1}
+\datatable{c c}{Disk & Zone (mm)\\\midrule water & \phantom{0}0\\ X & 18\\ Y & \phantom{0}9\\ Z & 24\\}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.32\linewidth}
+\figlabel{Table 10: Study 2}
+\datatable{c c}{Z (\si{\micro\gram}) & Zone (mm)\\\midrule 2.5 & 12\\ 5 & 18\\ 10 & 24\\ 20 & 27\\}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.32\linewidth}
+\figlabel{Table 11: Study 3}
+\datatable{l c}{Species & Zone (mm)\\\midrule \textit{E.\ coli} & 18\\ \textit{S.\ aureus} & 25\\ \textit{P.\ aeruginosa} & \phantom{0}0\\}
+\end{minipage}
+\passageend
+
+\begin{q}{4}{SI-2}{The water disk has no antibiotic, so it shows whether the disk or the procedure alone creates a clear zone. Its 0 mm zone is the baseline.}
+The main purpose of the disk soaked in sterile water in Study 1 was to:
+\choices{test a fourth antibiotic.}{increase the number of disks per plate.}{keep the incubation temperature constant.}{show whether a disk without antibiotic produced a zone of inhibition.}
+\end{q}
+
+\begin{q}{3}{ID-1}{Study 1 at \SI{10}{\micro\gram}: Z gave the largest zone (24 mm), versus X 18 and Y 9.}
+Based on Study 1, which antibiotic was most effective against \textit{E.\ coli}?
+\choicesgrid{Antibiotic X}{Antibiotic Y}{Antibiotic Z}{All were equally effective.}
+\end{q}
+
+\begin{q}{1}{ID-2}{12, 18, 24, 27: the zone grows with every increase in Z.}
+According to Study 2, as the amount of Antibiotic Z increased, the zone of inhibition:
+\choices{increased only.}{decreased only.}{increased and then decreased.}{remained constant.}
+\end{q}
+
+\begin{q}{2}{SI-4}{Study 1: one species, several antibiotics. Study 3: one antibiotic (X), several species.}
+Studies 1 and 3 differed in that:
+\choices{Study 1 used several bacterial species, while Study 3 used only \textit{E.\ coli}.}{Study 1 varied the antibiotic, while Study 3 varied the bacterial species.}{Study 1 varied the amount of antibiotic, while Study 3 did not.}{Study 1 was incubated at a different temperature than Study 3.}
+\end{q}
+
+\begin{q}{4}{EM-6}{\textit{P.\ aeruginosa} showed no zone at all (0 mm), so X was not effective against every species tested.}
+A student concludes that Antibiotic X is effective against all bacteria. Is this conclusion supported by Study 3?
+\choices{Yes; X produced a zone with \textit{E.\ coli}.}{Yes; X produced its largest zone with \textit{S.\ aureus}.}{No; X produced a larger zone with \textit{S.\ aureus} than with \textit{E.\ coli}.}{No; X produced no zone with \textit{P.\ aeruginosa}.}
+\end{q}
+
+\begin{q}{1}{SI-3}{Identical incubation conditions keep growth conditions the same, so differences in zone size reflect the antibiotic or species being tested.}
+All plates were incubated at \SI{37}{\celsius} for \SI{24}{\hour} most likely so that:
+\choices{differences in zone size were not caused by differences in growth conditions.}{the antibiotics would evaporate.}{the bacteria would stop growing.}{the zones would all be the same size.}
+\end{q}
+
+%% =====================================================================
+\passage{Ocean chemistry and shells}
+Some of the carbon dioxide (CO$_2$) added to the atmosphere dissolves in seawater and lowers its pH. Figure 4 shows the average atmospheric CO$_2$ concentration and the average pH of surface seawater at an open-ocean station from 1990 to 2020 (approximate values). In a separate laboratory study, juvenile marine snails of one species were raised for 60 days in seawater adjusted to different pH values, and their average shell mass was measured (Table 12).
+
+\begin{minipage}[c]{0.62\linewidth}
+\centering
+\begin{tikzpicture}
+\begin{axis}[actplot, width=8.4cm, height=5.4cm, axis y line*=left, xlabel={Year}, ylabel={CO$_2$ (ppm) \ ---},
+  xmin=1990, xmax=2020, ymin=340, ymax=420, xtick={1990,2000,2010,2020}, ytick={340,360,...,420},
+  x tick label style={/pgf/number format/1000 sep=}]
+\addplot[mark=*] coordinates {(1990,354) (1995,361) (2000,369) (2005,379) (2010,389) (2015,400) (2020,413)};
+\end{axis}
+\begin{axis}[actplot, rightaxis, width=8.4cm, height=5.4cm, ylabel={Seawater pH \ - - -},
+  xmin=1990, xmax=2020, ymin=8.03, ymax=8.13, ytick={8.04,8.06,...,8.12},
+  yticklabel style={/pgf/number format/fixed, /pgf/number format/precision=2}]
+\addplot[mark=square*, dashed] coordinates {(1990,8.11) (1995,8.10) (2000,8.09) (2005,8.08) (2010,8.07) (2015,8.06) (2020,8.05)};
+\end{axis}
+\end{tikzpicture}
+\figlabel{Figure 4}
+\end{minipage}\hfill
+\begin{minipage}[c]{0.35\linewidth}
+\figlabel{Table 12}
+\datatable{c c}{Seawater pH & Shell mass (mg)\\\midrule 8.2 & 52\\ 8.1 & 50\\ 8.0 & 46\\ 7.9 & 40\\ 7.8 & 33\\}
+\end{minipage}
+\passageend
+
+\begin{q}{2}{ID-2}{From 1990 to 2020 CO$_2$ rose (354 $\to$ 413) while pH fell every 5 years (8.11 $\to$ 8.05).}
+According to Figure 4, as atmospheric CO$_2$ increased from 1990 to 2020, seawater pH:
+\choices{increased only.}{decreased only.}{increased and then decreased.}{remained constant.}
+\end{q}
+
+\begin{q}{2}{ID-1}{Table 12, pH 7.9 row: 40 mg.}
+According to Table 12, the average shell mass at pH 7.9 was:
+\choicesrow{33 mg}{40 mg}{46 mg}{50 mg}
+\end{q}
+
+\begin{q}{3}{EM-2}{pH 7.95 lies between 8.0 (46 mg) and 7.9 (40 mg).}
+If the snails were raised at pH 7.95, their average shell mass would most likely be:
+\choices{less than 33 mg.}{between 33 mg and 40 mg.}{between 40 mg and 46 mg.}{greater than 50 mg.}
+\end{q}
+
+\begin{q}{1}{EM-1}{Shell mass falls at every lower pH (52, 50, 46, 40, 33). The reason given is true and directly relevant.}
+Do the data in Table 12 support the hypothesis that lower seawater pH reduces the shell mass of this snail species?
+\choices{Yes; shell mass decreased each time pH was lowered.}{Yes; atmospheric CO$_2$ increased from 1990 to 2020.}{No; shell mass increased each time pH was lowered.}{No; the snails were raised for only 60 days.}
+\end{q}
+
+\begin{q}{4}{EM-6}{Table 12 covers one species in a laboratory. Extending the result to all marine snails goes beyond what was tested.}
+A student claims that, based on Table 12, \emph{all} marine snail species will lose shell mass as ocean pH declines. This claim is:
+\choices{supported, because shell mass decreased at every lower pH.}{supported, because Figure 4 shows ocean pH is falling.}{not supported, because shell mass increased at lower pH.}{not supported, because only one species was tested.}
+\end{q}
+
+\vspace{1ex}
+\begin{center}\small\textbf{END OF TEST.} \quad If time remains, check your work on this test only.\end{center}
+
+%% =====================================================================
+\makekey
+
+\subsection*{Category breakdown}
+\small
+\begin{tabularx}{\linewidth}{@{}l c X c@{}}
+\toprule
+Category & Score & Questions & Review\\\midrule
+Interpretation of Data & \rule{0.8cm}{0.4pt}\,/\,17 & 1, 2, 3, 4, 5, 8, 9, 13, 14, 15, 16, 19, 22, 31, 32, 36, 37 & Part 2\\
+Scientific Investigation & \rule{0.8cm}{0.4pt}\,/\,10 & 7, 10, 12, 18, 20, 21, 23, 30, 33, 35 & Part 3\\
+Evaluation of Models, Inferences \& Results & \rule{0.8cm}{0.4pt}\,/\,13 & 6, 11, 17, 24, 25, 26, 27, 28, 29, 34, 38, 39, 40 & Part 4\\
+\bottomrule
+\end{tabularx}
+
+\vspace{1ex}
+\textbf{Reading your result.} A raw score of 32 or more on a form like this is strong. Below that, total your misses by rule (last column of the key). Any rule missed twice or more is the next thing to study: go back to that rule's section, redo its drill timed, then retake the passages you missed after a week.
+\end{document}

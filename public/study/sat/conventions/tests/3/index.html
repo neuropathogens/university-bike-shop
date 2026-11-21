@@ -224,6 +224,14 @@ u.ul{text-decoration-thickness:1px;text-underline-offset:3px}
 .stim-sub{margin-top:12px!important}
 .stim-note{font-size:15px;color:var(--muted)}
 .fig .figcap{margin:0 0 6px;font-size:15px}
+.stim.free{max-height:none;overflow:visible}
+.bt th[colspan]{text-align:center}
+.stim .figcap{text-align:center;font-size:15px;margin:10px 0 4px}
+.stim .fig{margin:6px 0 10px}
+.stim .bt-wrap{margin:0 0 10px}
+.fig-img,.opt-img{max-width:100%;height:auto;background:#fff}
+.opt-img{display:block;max-width:140px}
+:root[data-theme=dark] .fig-img,:root[data-theme=dark] .opt-img{filter:invert(.92) hue-rotate(180deg)}
 .fig{margin:0 0 14px;text-align:center}
 .fig img{max-width:100%;height:auto;background:#fff}
 :root[data-theme=dark] .fig img{filter:invert(.92) hue-rotate(180deg)}
@@ -311,16 +319,17 @@ function explain(q, picked){
   var rest = range(q.options.length).filter(function(i){ return i !== q.answer; });
   if (typeof picked === "number" && picked !== q.answer) rest = [picked].concat(rest.filter(function(i){ return i !== picked; }));
   h += '<p class="why-h sc">Why not the others</p><ul class="others">' + rest.map(function(i){
-    return "<li>&ldquo;" + q.options[i] + "&rdquo;" + (i === picked ? '<span class="tag">your answer</span>' : "") + " &mdash; " + e.others[i] + "</li>";
+    return "<li>" + quoted(q, i) + (i === picked ? '<span class="tag">your answer</span>' : "") + " &mdash; " + e.others[i] + "</li>";
   }).join("") + "</ul></div>";
   return h;
 }
+function quoted(q, i){ return q.labels ? q.labels[i] : "&ldquo;" + q.options[i] + "&rdquo;"; }
 function table(q){ return q.table ? '<div class="bt-wrap">' + q.table + "</div>" : ""; }
 function stim(q){
   var s = q.stim && STIM[q.stim]; if (!s) return "";
   var html = s.html.split(' data-q="' + q.n + '"').join(' data-q="' + q.n + '" data-cur')
     .replace(/data-qs="([^"]*)"/g, function(m, l){ return (" " + l + " ").indexOf(" " + q.n + " ") >= 0 ? m + " data-cur" : m; });
-  return '<div class="stim">' + (s.title ? '<p class="stim-h sc">' + s.title + "</p>" : "") + html + "</div>";
+  return '<div class="stim' + (s.cls ? " " + s.cls : "") + '">' + (s.title ? '<p class="stim-h sc">' + s.title + "</p>" : "") + html + "</div>";
 }
 function scrollStim(root){
   root.querySelectorAll(".stim").forEach(function(box){ var c = box.querySelector("[data-cur]"); if (c && box.scrollHeight > box.clientHeight) box.scrollTop = Math.max(0, c.offsetTop - box.clientHeight / 3); });
@@ -370,8 +379,8 @@ function renderRun(){
   }).join("");
   var fb = "";
   if (locked){
-    var ok = picked === q.answer, ans = q.options[q.answer];
-    fb = '<div class="fb' + (ok ? "" : " is-wrong") + '"><p class="verdict" role="status">' + (ok ? "Correct." : "Not quite. The answer is &ldquo;" + ans + "&rdquo;" + (/[.?!]$/.test(ans) ? "" : ".")) + "</p>" + explain(q, picked) + topicLinks([q.topic]) + "</div>";
+    var ok = picked === q.answer, ans = quoted(q, q.answer);
+    fb = '<div class="fb' + (ok ? "" : " is-wrong") + '"><p class="verdict" role="status">' + (ok ? "Correct." : "Not quite. The answer is " + ans + (/[.?!](&rdquo;)?$/.test(ans) ? "" : ".")) + "</p>" + explain(q, picked) + topicLinks([q.topic]) + "</div>";
   }
   var last = S.pos === S.order.length - 1, allDone = st.done === st.total;
   var nextBtn = last

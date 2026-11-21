@@ -1,0 +1,643 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light">
+<script>try{document.documentElement.setAttribute("data-theme",localStorage.getItem("apah.theme")==="dark"?"dark":"light")}catch(e){document.documentElement.setAttribute("data-theme","light")}</script>
+<title>ACT Science Part 2: Interpretation of Data</title>
+<meta name="description" content="ACT Science Part 2 (Interpretation of Data): 26 questions with the rule behind each answer and why every wrong choice is wrong.">
+<link rel="icon" href="/favicon.ico" sizes="48x48" type="image/x-icon">
+<link rel="icon" href="/icon.svg" sizes="any" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-icon.png" sizes="180x180">
+<link rel="preload" href="/study/ap/ap-art-history/fonts/LM-regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/study/katex/katex.min.css">
+<style>
+@font-face{font-family:"Latin Modern";font-style:normal;font-weight:400;font-display:swap;src:url("/study/ap/ap-art-history/fonts/LM-regular.woff2") format("woff2")}
+@font-face{font-family:"Latin Modern";font-style:italic;font-weight:400;font-display:swap;src:url("/study/ap/ap-art-history/fonts/LM-italic.woff2") format("woff2")}
+@font-face{font-family:"Latin Modern";font-style:normal;font-weight:600 700;font-display:swap;src:url("/study/ap/ap-art-history/fonts/LM-bold.woff2") format("woff2")}
+@font-face{font-family:"Latin Modern";font-style:italic;font-weight:600 700;font-display:swap;src:url("/study/ap/ap-art-history/fonts/LM-bold-italic.woff2") format("woff2")}
+@font-face{font-family:"Latin Modern Mono";font-style:normal;font-weight:400 500;font-display:swap;src:url("/study/ap/ap-art-history/fonts/LM-mono.woff2") format("woff2")}
+@font-face{font-family:"Latin Modern Mono";font-style:normal;font-weight:600 700;font-display:swap;src:url("/study/ap/ap-art-history/fonts/LM-mono-bold.woff2") format("woff2")}
+
+:root{--bg:#fff;--fg:#000;--muted:#4a4a4a;--line:#c9c9c9;--plate:#f5f5f3;--hl:#fbe9a6;--link:#00008b;--ok:#1d5e20;--bad:#9b1c1c;
+  --serif:"Latin Modern","Computer Modern Serif","CMU Serif",Georgia,serif;--mono:"Latin Modern Mono","SFMono-Regular",Menlo,Consolas,monospace;
+  --gutter:clamp(16px,4vw,40px);color-scheme:light}
+:root[data-theme=dark]{--bg:#111110;--fg:#ecebe6;--muted:#a3a29c;--line:#34342f;--plate:#1b1b19;--hl:#4d4320;--link:#9db4ff;--ok:#8fd394;--bad:#ff9b9b;color-scheme:dark}
+*{box-sizing:border-box}
+html{background:var(--bg);scroll-padding-top:16px}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--serif);font-size:17px;line-height:1.5;font-kerning:normal;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+button,input,textarea{font:inherit;color:inherit}
+button{cursor:pointer}
+button:disabled{cursor:default}
+a{color:var(--link);text-underline-offset:3px;text-decoration-thickness:.5px}
+:focus-visible{outline:2px solid var(--link);outline-offset:2px}
+[hidden]{display:none!important}
+.sc{font-variant:small-caps;text-transform:lowercase;letter-spacing:.04em}
+.muted{color:var(--muted)}
+.katex{font-size:1.04em;text-rendering:auto}
+.katex-display{margin:.7em 0;overflow-x:auto;overflow-y:hidden;padding:2px 0}
+
+.runhead{display:flex;flex-wrap:wrap;justify-content:space-between;gap:4px 16px;max-width:1480px;margin:0 auto;padding:14px var(--gutter) 6px;font-size:14px;font-style:italic;color:var(--muted)}
+.runhead a{text-decoration:none}
+.runhead a:hover{text-decoration:underline}
+.runhead-actions{display:flex;flex-wrap:wrap;gap:4px 18px}
+.theme-btn{background:none;border:0;padding:0;font:inherit;font-style:italic;color:var(--link)}
+.theme-btn:hover{text-decoration:underline}
+.rule{max-width:1480px;margin:0 auto;padding-inline:var(--gutter)}
+.rule hr{margin:0;border:0;border-top:.5px solid var(--fg)}
+
+.wrap{max-width:860px;margin:0 auto;padding:0 var(--gutter) 80px}
+.title{text-align:center;padding:34px 0 22px}
+.title h1{margin:0;text-wrap:balance;font-size:clamp(32px,6vw,46px);line-height:1.1;font-weight:700}
+.title .sub{margin:8px 0 0;font-size:18px;font-variant:small-caps;letter-spacing:.03em}
+.title .meta{margin:4px 0 0;font-style:italic;color:var(--muted)}
+
+.tabs{display:flex;justify-content:center;gap:0;margin:0 0 26px;border-bottom:.5px solid var(--fg)}
+.tab{background:none;border:0;border-bottom:2.5px solid transparent;padding:8px 18px;margin-bottom:-1px;font-size:17px;color:var(--muted)}
+.tab[aria-selected=true]{color:var(--fg);border-bottom-color:var(--fg);font-weight:700}
+.tab:hover{color:var(--fg)}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:40px;padding:0 16px;border:1px solid var(--fg);background:var(--bg);font-family:var(--mono);font-size:14.5px;white-space:nowrap}
+.btn:hover:not(:disabled){background:var(--plate)}
+.btn:disabled{opacity:.35}
+.btn--solid{background:var(--fg);color:var(--bg)}
+.btn--solid:hover:not(:disabled){background:var(--fg);opacity:.85}
+.btn--lg{min-height:48px;font-size:15.5px;padding:0 22px}
+.kbd{display:inline-grid;place-items:center;min-width:22px;height:22px;padding:0 4px;border:1px solid currentColor;font-family:var(--mono);font-size:12px;opacity:.8}
+
+/* booktabs tables */
+.bt{border-collapse:collapse;margin:0 auto;font-variant-numeric:tabular-nums}
+.bt th,.bt td{padding:4px 12px;text-align:center;font-weight:400}
+.bt th[scope=row],.bt thead th:first-child{text-align:left}
+.bt thead tr{border-top:1px solid var(--fg);border-bottom:.5px solid var(--fg)}
+.bt tbody tr:last-child{border-bottom:1px solid var(--fg)}
+.bt-wrap{overflow-x:auto;margin:0 0 16px}
+
+/* setup */
+.setup{border-bottom:1.5px solid var(--fg);padding:4px 0 22px;display:grid;gap:18px}
+.setup h2,.results h2,.fr h2{margin:0;font-size:20px}
+.choice-row{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.choice{display:flex;flex-direction:column;align-items:flex-start;gap:2px;padding:12px 14px;border:1px solid var(--fg);background:var(--bg);text-align:left}
+.choice b{font-size:17px}
+.choice span{font-size:14.5px;font-style:italic;color:var(--muted)}
+.choice[aria-pressed=true]{background:var(--fg);color:var(--bg)}
+.choice[aria-pressed=true] span{color:var(--bg);opacity:.8}
+.checks{display:flex;flex-wrap:wrap;gap:8px 22px}
+.checks label{display:inline-flex;align-items:center;gap:8px;cursor:pointer}
+.checks input{width:17px;height:17px;margin:0;accent-color:var(--fg)}
+.setup-actions{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.note{margin:0;font-size:15px;color:var(--muted);font-style:italic}
+
+/* run */
+.bar{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:4px 16px;font-size:15px;color:var(--muted)}
+.track{height:3px;background:var(--line);margin:8px 0 14px}
+.track span{display:block;height:100%;background:var(--fg);transition:width .2s ease}
+.nav{display:grid;grid-template-columns:repeat(auto-fill,minmax(34px,1fr));gap:5px;margin:0 0 22px}
+.nav button{height:32px;padding:0;border:1px solid var(--line);background:var(--bg);font-family:var(--serif);font-size:14px;font-variant-numeric:tabular-nums}
+.nav button:hover{border-color:var(--fg)}
+.nav .is-answered{background:var(--plate);border-color:var(--fg)}
+.nav .is-right{background:var(--fg);color:var(--bg);border-color:var(--fg)}
+.nav .is-wrong{border:1.5px dashed var(--bad);color:var(--bad)}
+.nav .is-current{outline:2px solid var(--fg);outline-offset:1px}
+.q{border-top:1.5px solid var(--fg);padding-top:16px}
+.q-eyebrow{margin:0 0 6px;font-size:14px;color:var(--muted)}
+.q-prompt{margin:0 0 14px;font-size:20px;line-height:1.45;font-weight:400}
+.opts{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.opt{display:flex;align-items:center;gap:12px;width:100%;min-height:52px;padding:10px 14px;border:1px solid var(--fg);background:var(--bg);text-align:left;font-size:16.5px;line-height:1.4}
+.opt:hover:not(:disabled){background:var(--plate)}
+.opt .kbd{flex:none}
+.opt .mark{margin-left:auto;padding-left:6px;font-family:var(--mono);font-size:14px;white-space:nowrap}
+.opt.is-picked{border-width:2px;padding:9px 13px;background:var(--plate)}
+.opt.is-right{background:var(--fg);color:var(--bg);border-color:var(--fg)}
+.opt.is-wrong{border:1.5px dashed var(--bad);color:var(--bad);text-decoration:line-through;text-decoration-thickness:1px}
+.opt.is-wrong .mark,.opt.is-wrong .kbd{text-decoration:none}
+.opt.is-dim{opacity:.5}
+.fb{margin:14px 0 0;padding:12px 16px;border:.5px solid var(--fg);border-left:3px solid var(--ok)}
+.fb.is-wrong{border-left-color:var(--bad)}
+.fb p{margin:0}
+.fb .verdict{font-weight:700;margin-bottom:4px}
+.why p{margin:0 0 6px}
+.steps{margin:2px 0 8px;padding-left:22px}
+.steps li{margin:4px 0;padding-left:2px}
+.why .why-h{margin:10px 0 2px;font-size:14.5px;color:var(--muted)}
+.others{margin:0 0 4px;padding-left:20px}
+.others li{margin:5px 0}
+.others .tag{margin-left:6px;font-family:var(--mono);font-size:12.5px;color:var(--bad);white-space:nowrap}
+.links{margin-top:6px;font-size:15px}
+.step{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:10px;margin-top:20px}
+.step-right{display:flex;flex-wrap:wrap;gap:8px}
+.confirm{margin-top:14px;padding:12px 16px;border:1px solid var(--fg);display:flex;flex-wrap:wrap;align-items:center;gap:10px}
+.confirm p{margin:0;flex:1 1 220px}
+.keys{margin:18px 0 0;font-size:13.5px;color:var(--muted);text-align:center}
+.restart-line{margin:10px 0 0;font-size:14.5px;text-align:center}
+
+/* results */
+.results{padding-top:4px}
+.score{text-align:center;padding:10px 0 18px}
+.score-big{margin:0;font-size:clamp(48px,10vw,72px);font-weight:700;line-height:1;font-variant-numeric:tabular-nums}
+.score p{margin:6px 0 0}
+.res-actions{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin:0 0 22px}
+.res-filter{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:6px;border-bottom:1.5px solid var(--fg);padding-bottom:6px}
+.res-list{list-style:none;margin:0;padding:0}
+.res-list>li{border-bottom:.5px solid var(--line)}
+.res-list>li:last-child{border-bottom:1.5px solid var(--fg)}
+.res-list details{padding:10px 0}
+.res-list summary{display:grid;grid-template-columns:34px 22px minmax(0,1fr);gap:8px;cursor:pointer;list-style:none}
+.res-list summary::-webkit-details-marker{display:none}
+.res-n{font-weight:700;font-variant-numeric:tabular-nums}
+.res-ok{color:var(--ok);font-weight:700}
+.res-bad{color:var(--bad);font-weight:700}
+.res-body{padding:8px 0 4px 64px;font-size:15.5px}
+.res-body p{margin:0 0 4px}
+.res-body .bt-wrap{margin:4px 0 8px}
+.topics{margin:0 0 26px}
+.topics h2{margin:0 0 8px}
+.topics .bt{margin:0;width:100%}
+.topics .bt td:last-child,.topics .bt th:last-child{text-align:left}
+.topics .flag{color:var(--bad);font-style:italic}
+.composite{margin:0 0 26px;padding:12px 16px;border:.5px solid var(--fg);border-left:3px solid var(--fg)}
+.composite p{margin:0}
+.composite p+p{margin-top:4px}
+
+/* free response */
+.fr-intro{margin:0 0 6px;font-style:italic;color:var(--muted)}
+.fr{border-top:1.5px solid var(--fg);padding:18px 0 26px}
+.fr h2 small{font-weight:400;font-style:italic;color:var(--muted);font-size:15px;margin-left:6px}
+.fr-stem{margin:10px 0 6px;text-align:justify;hyphens:auto;-webkit-hyphens:auto}
+.part{margin:18px 0 0}
+.part-prompt{margin:0 0 8px}
+.part-prompt b{margin-right:4px}
+.part textarea{width:100%;min-height:150px;padding:12px 14px;border:1px solid var(--fg);border-radius:0;background:var(--bg);font-family:var(--serif);font-size:16.5px;line-height:1.55;resize:vertical}
+.part-meta{margin-top:4px;font-size:14px;color:var(--muted)}
+.sol{margin-top:12px;padding:12px 18px;border:.5px solid var(--fg)}
+.sol h3{margin:0 0 4px;font-size:15px}
+.sol p{margin:0 0 10px}
+.sol .crit{display:grid;grid-template-columns:28px minmax(0,1fr);gap:2px 8px;margin:0 0 10px;font-size:15.5px}
+.sol .crit dt{font-weight:700}
+.sol .crit dd{margin:0}
+.mark-row{display:flex;flex-wrap:wrap;align-items:center;gap:8px;font-size:15px}
+.seg{display:inline-flex}
+.seg button{min-width:44px;min-height:36px;padding:0 10px;border:1px solid var(--fg);background:var(--bg);font-family:var(--mono);font-size:14px}
+.seg button+button{border-left:0}
+.seg button[aria-pressed=true]{background:var(--fg);color:var(--bg)}
+.fr-actions{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:10px;margin-top:16px}
+.fr-score{font-size:16px}
+.fr-score b{font-variant-numeric:tabular-nums}
+.scale{margin-top:14px}
+.scale summary{cursor:pointer;font-size:15px;color:var(--muted);font-style:italic}
+.scale .bt{margin:8px 0 0}
+.scale .bt td:last-child,.scale .bt th:last-child{text-align:left}
+.foot{margin-top:40px;padding-top:12px;border-top:.5px solid var(--line);font-size:14px;color:var(--muted)}
+
+@media (max-width:640px){
+  .runhead-title{display:none}
+  .runhead-actions{width:100%;justify-content:space-between}
+  .title{padding:22px 0 16px}
+  .choice-row{grid-template-columns:1fr}
+  .q-prompt{font-size:18.5px}
+  .res-body{padding-left:0}
+  .keys{display:none}
+  .fr-stem{text-align:left}
+  .bt th,.bt td{padding:4px 7px}
+  .sol{padding:10px 12px}
+  .katex-display>.katex{font-size:.94em}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+@media print{.runhead,.rule,.tabs,.nav,.step,.keys,.restart-line,.res-actions{display:none!important}}
+/* generic quiz additions */
+.q-prompt p{margin:0}
+.q-prompt p+p{margin-top:8px}
+.q-ask{margin:10px 0 0!important;font-size:16px;font-style:italic;color:var(--muted)}
+.blank{display:inline-block;width:3.4em;height:1em;margin:0 .12em;border-bottom:1.5px solid currentColor;vertical-align:-.12em}
+.stim{position:relative;margin:0 0 16px;padding:12px 16px;border:.5px solid var(--fg);background:var(--plate);font-size:16.5px;line-height:1.55;max-height:60vh;overflow:auto}
+.stim-h{margin:0 0 6px!important;font-size:14px;color:var(--muted)}
+.stim p{margin:0 0 8px}
+.stim p:last-child{margin-bottom:0}
+u.ul{text-decoration-thickness:1px;text-underline-offset:3px}
+.qn{display:inline-block;min-width:1.4em;padding:0 .2em;margin:0 .15em;border:.5px solid var(--fg);font:600 11.5px/1.4 system-ui,-apple-system,sans-serif;text-align:center;vertical-align:.12em;font-variant-numeric:tabular-nums}
+.stim .qn[data-cur]{background:var(--fg);color:var(--bg)}
+.stim u[data-cur]{background:var(--hl);box-shadow:0 0 0 2px var(--hl)}
+.stim .ln{display:inline-block;min-width:1.3em;padding:0 .25em;margin-right:.25em;border:.5px solid var(--line);color:var(--muted);font:500 11px/1.4 system-ui,-apple-system,sans-serif;text-align:center;vertical-align:.12em;font-variant-numeric:tabular-nums}
+.stim .ln[data-cur]{background:var(--hl);color:var(--fg);border-color:var(--fg)}
+.stim-intro{font-style:italic;color:var(--muted);font-size:15px}
+.stim-sub{margin-top:12px!important}
+.stim-note{font-size:15px;color:var(--muted)}
+.fig .figcap{margin:0 0 6px;font-size:15px}
+.stim.free{max-height:none;overflow:visible}
+.bt th[colspan]{text-align:center}
+.stim .figcap{text-align:center;font-size:15px;margin:10px 0 4px}
+.stim .fig{margin:6px 0 10px}
+.stim .bt-wrap{margin:0 0 10px}
+.fig-img,.opt-img{max-width:100%;height:auto;background:#fff}
+.opt-img{display:block;max-width:140px}
+:root[data-theme=dark] .fig-img,:root[data-theme=dark] .opt-img{filter:invert(.92) hue-rotate(180deg)}
+.fig{margin:0 0 14px;text-align:center}
+.fig img{max-width:100%;height:auto;background:#fff}
+:root[data-theme=dark] .fig img{filter:invert(.92) hue-rotate(180deg)}
+.fig figcaption{font-size:14px;color:var(--muted);font-style:italic}
+.target{margin:4px 0 0;font-style:italic}
+.res-sum{display:block}
+.opt>span:nth-child(2){flex:1 1 auto;min-width:0;overflow-wrap:anywhere;-webkit-hyphens:auto;hyphens:auto}
+@media (max-width:640px){.opt .mark{white-space:normal;text-align:right;max-width:6.2em;line-height:1.25}}
+.sol>div{margin:0 0 10px}
+.crit-pts{margin:0 0 10px;font-size:15.5px}
+.crit-pts p{margin:0 0 4px}
+.crit-pts ul{margin:0 0 4px;padding-left:20px}
+</style>
+</head>
+<body>
+<div class="runhead"><span class="runhead-title">ACT Science &middot; Interpretation of Data</span><span class="runhead-actions"><a href="/study/#act-science">&larr;&nbsp;Study Library</a><a href="/study/act/science/act-science-02-interpretation-of-data.pdf">PDF version</a><button type="button" class="theme-btn" id="theme-btn">Dark mode</button></span></div>
+<div class="rule"><hr></div>
+
+<main class="wrap">
+  <header class="title">
+    <h1>Interpretation of Data</h1>
+    <p class="sub">ACT Science &middot; Part 2 of 6</p>
+    <p class="meta">26 questions &middot; target 22 correct &middot; 32 min</p>
+  </header>
+
+  <section id="mc"></section>
+  <section id="fr" role="tabpanel" aria-labelledby="tab-fr" hidden></section>
+
+  <p class="foot">From <a href="/study/act/science/act-science-02-interpretation-of-data.pdf"><i>ACT Science Part 2: Interpretation of Data</i></a> (PDF). Answers and rule tags are the part&rsquo;s own key; the explanations expand on it with the rule, the reading of the data, and why each wrong choice is wrong. Figures are taken from the PDF. Your answers are saved only in this browser.</p>
+</main>
+
+<script id="data" type="application/json">{"meta":{"key":"study.act-science.2.v1","setupNote":"Work untimed the first time, then redo the drills against the clock (target time 32 minutes).","topicPrefix":"","topicCol":"Rule","guideCol":"In the guide","byTopic":"By rule","topicNote":"Two or more misses on one rule: reread that rule in the guide, then redo its questions.","guide":"/study/act/science/act-science-02-interpretation-of-data.pdf","guideName":"the guide","target":{"label":"Target","mc":22}},"topics":{"ID-1":{"name":"Read the frame before the data","page":2},"ID-2":{"name":"Name the trend across the whole range","page":2},"ID-3":{"name":"Interpolate between points, extrapolate along the trend","page":3},"ID-4":{"name":"Bridge two figures through the shared variable","page":5},"ID-5":{"name":"Do light math, estimate first","page":6},"ID-6":{"name":"Respect units, powers of ten and log scales","page":7},"ID-7":{"name":"Translate between tables, graphs and equations","page":8}},"sections":{"1":"Passage I: Enzyme activity and temperature","2":"Passage II: Solubility of three compounds","3":"Passage III: Altitude, air pressure and boiling","4":"Passage IV: Two carts on a track","5":"Passage V: Bacterial growth","6":"Passage VI: Gas in a syringe","7":"Passage VII: Temperature and oxygen in the open ocean"},"stims":{"p1":{"title":"Passage I &middot; Enzyme activity and temperature","html":"<p>A student measured the rate at which two enzymes, P and Q, converted substrate to product at seven temperatures. Each trial used the same enzyme concentration, substrate concentration, and pH. Results are in Table 1.<\/p><p class=\"figcap\"><b>Table 1<\/b><\/p><div class=\"bt-wrap\"><table class=\"bt\"><thead><tr><th scope=\"col\">Temperature (°C)<\/th><th scope=\"col\">Enzyme P rate (µmol/min)<\/th><th scope=\"col\">Enzyme Q rate (µmol/min)<\/th><\/tr><\/thead><tbody><tr><td>10<\/td><td>4<\/td><td>2<\/td><\/tr><tr><td>20<\/td><td>9<\/td><td>4<\/td><\/tr><tr><td>30<\/td><td>17<\/td><td>7<\/td><\/tr><tr><td>40<\/td><td>26<\/td><td>12<\/td><\/tr><tr><td>50<\/td><td>19<\/td><td>20<\/td><\/tr><tr><td>60<\/td><td>6<\/td><td>31<\/td><\/tr><tr><td>70<\/td><td>1<\/td><td>22<\/td><\/tr><\/tbody><\/table><\/div>","cls":"free"},"p2":{"title":"Passage II &middot; Solubility of three compounds","html":"<p>Students dissolved as much of each of three compounds, X, Y and Z, as possible in 100&#8239;g of water at five temperatures. Figure 1 shows the maximum mass that dissolved (the solubility).<\/p><div class=\"fig\"><img class=\"fig-img\" src=\"/study/act/science/tests/fig/p2-solubility.png\" alt=\"Line graph of solubility in grams per 100 grams of water against temperature from 0 to 80 °C. Compound X rises steeply from 14 to 168; Compound Y stays near 36 to 38; Compound Z falls from 60 to 16.\" width=\"480\" height=\"264\" loading=\"lazy\"><\/div><p class=\"figcap\"><b>Figure 1<\/b><\/p>","cls":"free"},"p3":{"title":"Passage III &middot; Altitude, air pressure and boiling","html":"<p>Table 1 lists average air pressure at several altitudes. Figure 2 shows the boiling point of pure water as a function of air pressure.<\/p><p class=\"figcap\"><b>Table 1<\/b><\/p><div class=\"bt-wrap\"><table class=\"bt\"><thead><tr><th scope=\"col\">Altitude (m)<\/th><th scope=\"col\">Air pressure (kPa)<\/th><\/tr><\/thead><tbody><tr><td>0<\/td><td>101<\/td><\/tr><tr><td>1000<\/td><td>90<\/td><\/tr><tr><td>2000<\/td><td>80<\/td><\/tr><tr><td>3000<\/td><td>70<\/td><\/tr><tr><td>4000<\/td><td>62<\/td><\/tr><tr><td>5000<\/td><td>54<\/td><\/tr><\/tbody><\/table><\/div><p><\/p><div class=\"fig\"><img class=\"fig-img\" src=\"/study/act/science/tests/fig/p2-boiling.png\" alt=\"Line graph of boiling point against air pressure: 81 °C at 50 kPa, 86 at 60, 90 at 70, 94 at 80, 97 at 90, 100 at 100 kPa.\" width=\"384\" height=\"230\" loading=\"lazy\"><\/div><p class=\"figcap\"><b>Figure 2<\/b><\/p>","cls":"free"},"p4":{"title":"Passage IV &middot; Two carts on a track","html":"<p>Two carts started from rest at the same line at <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>t<\/mi><mo>=<\/mo><mn>0<\/mn><mtext> <\/mtext><mtext>s<\/mtext><\/mrow><annotation encoding=\"application/x-tex\">t=0\\,\\text{s}<\/annotation><\/semantics><\/math><\/span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6151em;\"><\/span><span class=\"mord mathnormal\">t<\/span><span class=\"mspace\" style=\"margin-right:0.2778em;\"><\/span><span class=\"mrel\">=<\/span><span class=\"mspace\" style=\"margin-right:0.2778em;\"><\/span><\/span><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em;\"><\/span><span class=\"mord\">0<\/span><span class=\"mspace\" style=\"margin-right:0.1667em;\"><\/span><span class=\"mord text\"><span class=\"mord\">s<\/span><\/span><\/span><\/span><\/span>. Table 2 lists each cart’s distance from the start line.<\/p><p class=\"figcap\"><b>Table 2<\/b><\/p><div class=\"bt-wrap\"><table class=\"bt\"><thead><tr><th scope=\"col\">Time (s)<\/th><th scope=\"col\">Cart A distance (cm)<\/th><th scope=\"col\">Cart B distance (cm)<\/th><\/tr><\/thead><tbody><tr><td>0<\/td><td>0<\/td><td>0<\/td><\/tr><tr><td>1<\/td><td>15<\/td><td>5<\/td><\/tr><tr><td>2<\/td><td>30<\/td><td>20<\/td><\/tr><tr><td>3<\/td><td>45<\/td><td>45<\/td><\/tr><tr><td>4<\/td><td>60<\/td><td>80<\/td><\/tr><\/tbody><\/table><\/div>","cls":"free"},"p5":{"title":"Passage V &middot; Bacterial growth","html":"<p>Two strains of bacteria, A and B, were grown separately in broth. Table 3 lists Strain A’s density. Figure 3 plots both strains on a <i>logarithmic<\/i> vertical axis.<\/p><p class=\"figcap\"><b>Table 3<\/b><\/p><div class=\"bt-wrap\"><table class=\"bt\"><thead><tr><th scope=\"col\">Time (h)<\/th><th scope=\"col\">Strain A (cells/mL)<\/th><\/tr><\/thead><tbody><tr><td>0<\/td><td><span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>2.0<\/mn><mo>×<\/mo><msup><mn>10<\/mn><mn>3<\/mn><\/msup><\/mrow><annotation encoding=\"application/x-tex\">2.0\\times10^{3}<\/annotation><\/semantics><\/math><\/span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7278em;vertical-align:-0.0833em;\"><\/span><span class=\"mord\">2.0<\/span><span class=\"mspace\" style=\"margin-right:0.2222em;\"><\/span><span class=\"mbin\">×<\/span><span class=\"mspace\" style=\"margin-right:0.2222em;\"><\/span><\/span><span class=\"base\"><span class=\"strut\" style=\"height:0.8141em;\"><\/span><span class=\"mord\">1<\/span><span class=\"mord\"><span class=\"mord\">0<\/span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8141em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"><\/span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">3<\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/td><\/tr><tr><td>2<\/td><td><span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>8.0<\/mn><mo>×<\/mo><msup><mn>10<\/mn><mn>3<\/mn><\/msup><\/mrow><annotation encoding=\"application/x-tex\">8.0\\times10^{3}<\/annotation><\/semantics><\/math><\/span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7278em;vertical-align:-0.0833em;\"><\/span><span class=\"mord\">8.0<\/span><span class=\"mspace\" style=\"margin-right:0.2222em;\"><\/span><span class=\"mbin\">×<\/span><span class=\"mspace\" style=\"margin-right:0.2222em;\"><\/span><\/span><span class=\"base\"><span class=\"strut\" style=\"height:0.8141em;\"><\/span><span class=\"mord\">1<\/span><span class=\"mord\"><span class=\"mord\">0<\/span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8141em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"><\/span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">3<\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/td><\/tr><tr><td>4<\/td><td><span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>3.2<\/mn><mo>×<\/mo><msup><mn>10<\/mn><mn>4<\/mn><\/msup><\/mrow><annotation encoding=\"application/x-tex\">3.2\\times10^{4}<\/annotation><\/semantics><\/math><\/span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7278em;vertical-align:-0.0833em;\"><\/span><span class=\"mord\">3.2<\/span><span class=\"mspace\" style=\"margin-right:0.2222em;\"><\/span><span class=\"mbin\">×<\/span><span class=\"mspace\" style=\"margin-right:0.2222em;\"><\/span><\/span><span class=\"base\"><span class=\"strut\" style=\"height:0.8141em;\"><\/span><span class=\"mord\">1<\/span><span class=\"mord\"><span class=\"mord\">0<\/span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8141em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"><\/span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">4<\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/td><\/tr><tr><td>6<\/td><td><span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>1.3<\/mn><mo>×<\/mo><msup><mn>10<\/mn><mn>5<\/mn><\/msup><\/mrow><annotation encoding=\"application/x-tex\">1.3\\times10^{5}<\/annotation><\/semantics><\/math><\/span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7278em;vertical-align:-0.0833em;\"><\/span><span class=\"mord\">1.3<\/span><span class=\"mspace\" style=\"margin-right:0.2222em;\"><\/span><span class=\"mbin\">×<\/span><span class=\"mspace\" style=\"margin-right:0.2222em;\"><\/span><\/span><span class=\"base\"><span class=\"strut\" style=\"height:0.8141em;\"><\/span><span class=\"mord\">1<\/span><span class=\"mord\"><span class=\"mord\">0<\/span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8141em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"><\/span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">5<\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/td><\/tr><tr><td>8<\/td><td><span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>5.1<\/mn><mo>×<\/mo><msup><mn>10<\/mn><mn>5<\/mn><\/msup><\/mrow><annotation encoding=\"application/x-tex\">5.1\\times10^{5}<\/annotation><\/semantics><\/math><\/span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7278em;vertical-align:-0.0833em;\"><\/span><span class=\"mord\">5.1<\/span><span class=\"mspace\" style=\"margin-right:0.2222em;\"><\/span><span class=\"mbin\">×<\/span><span class=\"mspace\" style=\"margin-right:0.2222em;\"><\/span><\/span><span class=\"base\"><span class=\"strut\" style=\"height:0.8141em;\"><\/span><span class=\"mord\">1<\/span><span class=\"mord\"><span class=\"mord\">0<\/span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8141em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"><\/span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">5<\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/td><\/tr><\/tbody><\/table><\/div><p><\/p><div class=\"fig\"><img class=\"fig-img\" src=\"/study/act/science/tests/fig/p2-bacteria.png\" alt=\"Graph with a logarithmic vertical axis of cells per mL against time from 0 to 8 hours. Strain A rises from 2 × 10³ to about 5 × 10⁵; Strain B rises in a straight line from 10² to 10⁶.\" width=\"384\" height=\"245\" loading=\"lazy\"><\/div><p class=\"figcap\"><b>Figure 3<\/b><\/p>","cls":"free"},"p6":{"title":"Passage VI &middot; Gas in a syringe","html":"<p>A sealed syringe of gas was held at constant temperature while the plunger was moved. The gas pressure was recorded at five volumes (Table 4).<\/p><p class=\"figcap\"><b>Table 4<\/b><\/p><div class=\"bt-wrap\"><table class=\"bt\"><thead><tr><th scope=\"col\">Volume (mL)<\/th><th scope=\"col\">10<\/th><th scope=\"col\">20<\/th><th scope=\"col\">30<\/th><th scope=\"col\">40<\/th><th scope=\"col\">50<\/th><\/tr><\/thead><tbody><tr><td>Pressure (kPa)<\/td><td>300<\/td><td>150<\/td><td>100<\/td><td>75<\/td><td>60<\/td><\/tr><\/tbody><\/table><\/div>","cls":"free"},"p7":{"title":"Passage VII &middot; Temperature and oxygen in the open ocean","html":"<p>Oceanographers lowered a sensor at one site and recorded water temperature and dissolved oxygen (O<span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mrow><\/mrow><mn>2<\/mn><\/msub><\/mrow><annotation encoding=\"application/x-tex\">_2<\/annotation><\/semantics><\/math><\/span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4511em;vertical-align:-0.15em;\"><\/span><span class=\"mord\"><span><\/span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"><\/span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2<\/span><\/span><\/span><\/span><span class=\"vlist-s\">​<\/span><\/span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span>) every 200&#8239;m. Figure 4 uses two vertical axes: temperature (left, solid line) and dissolved O<span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mrow><\/mrow><mn>2<\/mn><\/msub><\/mrow><annotation encoding=\"application/x-tex\">_2<\/annotation><\/semantics><\/math><\/span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4511em;vertical-align:-0.15em;\"><\/span><span class=\"mord\"><span><\/span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"><\/span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2<\/span><\/span><\/span><\/span><span class=\"vlist-s\">​<\/span><\/span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span> (right, dashed line).<\/p><div class=\"fig\"><img class=\"fig-img\" src=\"/study/act/science/tests/fig/p2-ocean.png\" alt=\"Graph with two vertical axes against depth from 0 to 1000 m. Temperature (solid, left axis) falls from 24 °C to 4 °C. Dissolved oxygen (dashed, right axis, mg/L) falls from 7.0 to a low of 2.0 at 600 m, then rises to 3.5 at 1000 m.\" width=\"515\" height=\"246\" loading=\"lazy\"><\/div><p class=\"figcap\"><b>Figure 4<\/b><\/p>","cls":"free"}},"mc":[{"n":1,"prompt":"According to Table 1, at 30&#8239;°C the rate of Enzyme P was:","options":["4 µmol/min","7 µmol/min","12 µmol/min","17 µmol/min"],"answer":3,"sec":"1","topic":"ID-1","stim":"p1","ex":{"idea":"Read the frame first, then the cell where the named row and column meet (Rule ID-1).","steps":["Column: Enzyme P rate. Row: 30 °C.","The cell reads 17 µmol/min."],"others":{"0":"Enzyme P at 10 °C, the wrong row.","1":"Enzyme Q at 30 °C, the wrong column.","2":"Enzyme Q at 40 °C, wrong row and column."}}},{"n":2,"prompt":"As temperature increased from 10&#8239;°C to 70&#8239;°C, the rate of Enzyme P:","options":["increased only.","decreased only.","increased and then decreased.","decreased and then increased."],"answer":2,"sec":"1","topic":"ID-2","stim":"p1","ex":{"idea":"Name the trend across the whole range, checking every step (Rule ID-2).","steps":["Enzyme P: 4, 9, 17, 26 (rising to 40 °C), then 19, 6, 1 (falling).","It rises and then falls: a peak."],"others":{"0":"P falls after 40 °C, so “only” fails.","1":"P rises from 10 to 40 °C.","3":"the order is reversed: P rises first."}}},{"n":3,"prompt":"Over which of the following temperature intervals did the rate of Enzyme Q increase by the greatest amount?","options":["20&#8239;°C to 30&#8239;°C","30&#8239;°C to 40&#8239;°C","40&#8239;°C to 50&#8239;°C","50&#8239;°C to 60&#8239;°C"],"answer":3,"sec":"1","topic":"ID-2","stim":"p1","ex":{"idea":"“Greatest increase” questions: subtract consecutive values and compare the differences (Rule ID-2).","steps":["Enzyme Q: 2, 4, 7, 12, 20, 31, 22. Differences: +2, +3, +5, +8, +11, −9.","The largest increase, +11, is from 50 °C to 60 °C."],"others":{"0":"+3 (4 to 7).","1":"+5 (7 to 12).","2":"+8 (12 to 20)."}}},{"n":4,"prompt":"Of the following temperatures, at which were the rates of Enzymes P and Q closest to each other?","options":["10&#8239;°C","20&#8239;°C","30&#8239;°C","50&#8239;°C"],"answer":3,"sec":"1","topic":"ID-1","stim":"p1","ex":{"idea":"Compare two columns row by row: compute the gap at each listed temperature (Rule ID-1).","steps":["Gaps |P − Q|: 10 °C: 4 − 2 = 2; 20 °C: 9 − 4 = 5; 30 °C: 17 − 7 = 10; 50 °C: 20 − 19 = 1.","The smallest gap is at 50 °C."],"others":{"0":"a gap of 2.","1":"a gap of 5.","2":"a gap of 10."}}},{"n":5,"prompt":"Based on Figure 1, the solubility of Compound X at 50&#8239;°C is closest to:","options":["45 g","60 g","80 g","110 g"],"answer":2,"sec":"2","topic":"ID-3","stim":"p2","ex":{"idea":"Interpolate inside the tested range: bracket the value between the two measured points, then follow the curve’s bend (Rule ID-3).","steps":["Compound X: 62 g at 40 °C and 106 g at 60 °C, so 50 °C lies between 62 and 106.","The straight-line midpoint is 84 g; the curve is steepening, so the true value is a little lower: about 80 g."],"others":{"0":"below the 40 °C value of 62 g.","1":"still below 62 g, the value at 40 °C.","3":"above the 60 °C value of 106 g."}}},{"n":6,"prompt":"If the trend shown in Figure 1 continues, the solubility of Compound Z at 100&#8239;°C would most likely be:","options":["less than 16 g.","between 16 g and 24 g.","between 24 g and 34 g.","greater than 34 g."],"answer":0,"sec":"2","topic":"ID-3","stim":"p2","ex":{"idea":"Extrapolate by extending the trend in the same direction (Rule ID-3).","steps":["Z falls at every step: 60, 46, 34, 24, 16.","Continuing past 80 °C, it keeps falling, so below 16 g at 100 °C."],"others":{"1":"values already passed at 60–80 °C; that reverses the trend.","2":"values from 40–60 °C.","3":"above Z’s value at 40 °C; the trend is downward."}}},{"n":7,"prompt":"At approximately what temperature do Compounds Y and Z have the same solubility?","options":["20&#8239;°C","35&#8239;°C","50&#8239;°C","65&#8239;°C"],"answer":1,"sec":"2","topic":"ID-3","stim":"p2","ex":{"idea":"Where two curves cross, the values are equal. Find the interval where one goes from above to below the other.","steps":["Y stays at about 36–37 g. Z is 46 g at 20 °C (above Y) and 34 g at 40 °C (below Y).","They cross between 20 °C and 40 °C, about 35 °C."],"others":{"0":"at 20 °C, Z (46) is still well above Y (36).","2":"at 50 °C, Z (about 29) is below Y.","3":"at 65 °C, Z (about 22) is far below Y."}}},{"n":8,"prompt":"The solubility of which compound depends <i>least<\/i> on temperature?","options":["Compound X","Compound Y","Compound Z","Compounds X and Z depend on temperature equally."],"answer":1,"sec":"2","topic":"ID-2","stim":"p2","ex":{"idea":"“Depends least” means the smallest change across the range (Rule ID-2).","steps":["Change from 0 to 80 °C: X 14 → 168 (154 g); Y 36 → 38 (2 g); Z 60 → 16 (44 g).","Y barely changes, so its solubility depends least on temperature."],"others":{"0":"X changes the most, 154 g.","2":"Z changes by 44 g.","3":"X and Z change by very different amounts (154 g vs. 44 g)."}}},{"n":9,"prompt":"Based on Table 1 and Figure 2, water at an altitude of 3000&#8239;m boils at approximately:","options":["90&#8239;°C","94&#8239;°C","97&#8239;°C","100&#8239;°C"],"answer":0,"sec":"3","topic":"ID-4","stim":"p3","ex":{"idea":"Bridge two figures through the variable they share (Rule ID-4).","steps":["Table 1: 3000 m → 70 kPa. The shared variable is air pressure.","Figure 2: 70 kPa → 90 °C."],"others":{"1":"the boiling point at 80 kPa (2000 m).","2":"the boiling point at 90 kPa (1000 m).","3":"the boiling point at sea level (about 100 kPa)."}}},{"n":10,"prompt":"A hiker finds that water boils at 86&#8239;°C. Her altitude is closest to:","options":["2000&#8239;m","3000&#8239;m","4300&#8239;m","5500&#8239;m"],"answer":2,"sec":"3","topic":"ID-4","stim":"p3","ex":{"idea":"Run the bridge backward: from boiling point to pressure, then pressure to altitude (Rule ID-4).","steps":["Figure 2: 86 °C → 60 kPa.","Table 1: 60 kPa lies between 4000 m (62 kPa) and 5000 m (54 kPa), closer to 4000 m: about 4300 m."],"others":{"0":"2000 m is 80 kPa, where water boils near 94 °C.","1":"3000 m is 70 kPa, where water boils near 90 °C.","3":"beyond 5000 m (54 kPa), where water boils below 86 °C."}}},{"n":11,"prompt":"According to the data, as altitude increases, the boiling point of water:","options":["increases only.","decreases only.","increases and then decreases.","remains the same."],"answer":1,"sec":"3","topic":"ID-2","stim":"p3","ex":{"idea":"Chain two trends: if A lowers B and B lowers C, then A lowers C.","steps":["Table 1: as altitude rises, pressure falls (101 → 54 kPa).","Figure 2: as pressure falls, boiling point falls. So as altitude rises, boiling point decreases only."],"others":{"0":"reverses the chain.","2":"both trends are steady; there is no turning point.","3":"boiling point changes from 100 °C to about 83 °C."}}},{"n":12,"prompt":"What was the average speed of Cart A from <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>t<\/mi><mo>=<\/mo><mn>0<\/mn><mtext> <\/mtext><mtext>s<\/mtext><\/mrow><annotation encoding=\"application/x-tex\">t=0\\,\\text{s}<\/annotation><\/semantics><\/math><\/span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6151em;\"><\/span><span class=\"mord mathnormal\">t<\/span><span class=\"mspace\" style=\"margin-right:0.2778em;\"><\/span><span class=\"mrel\">=<\/span><span class=\"mspace\" style=\"margin-right:0.2778em;\"><\/span><\/span><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em;\"><\/span><span class=\"mord\">0<\/span><span class=\"mspace\" style=\"margin-right:0.1667em;\"><\/span><span class=\"mord text\"><span class=\"mord\">s<\/span><\/span><\/span><\/span><\/span> to <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>t<\/mi><mo>=<\/mo><mn>4<\/mn><mtext> <\/mtext><mtext>s<\/mtext><\/mrow><annotation encoding=\"application/x-tex\">t=4\\,\\text{s}<\/annotation><\/semantics><\/math><\/span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6151em;\"><\/span><span class=\"mord mathnormal\">t<\/span><span class=\"mspace\" style=\"margin-right:0.2778em;\"><\/span><span class=\"mrel\">=<\/span><span class=\"mspace\" style=\"margin-right:0.2778em;\"><\/span><\/span><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em;\"><\/span><span class=\"mord\">4<\/span><span class=\"mspace\" style=\"margin-right:0.1667em;\"><\/span><span class=\"mord text\"><span class=\"mord\">s<\/span><\/span><\/span><\/span><\/span>?","options":["4&#8239;cm/s","15&#8239;cm/s","30&#8239;cm/s","60&#8239;cm/s"],"answer":1,"sec":"4","topic":"ID-5","stim":"p4","ex":{"idea":"Average speed = total distance ÷ total time (Rule ID-5).","steps":["Cart A goes from 0 to 60 cm in 4 s.","60 ÷ 4 = 15 cm/s (it covers 15 cm every second)."],"others":{"0":"4 is the time, not the speed.","2":"Cart A’s position at 2 s, not a speed.","3":"Cart A’s position at 4 s, a distance rather than a speed."}}},{"n":13,"prompt":"How far did Cart B travel between <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>t<\/mi><mo>=<\/mo><mn>2<\/mn><mtext> <\/mtext><mtext>s<\/mtext><\/mrow><annotation encoding=\"application/x-tex\">t=2\\,\\text{s}<\/annotation><\/semantics><\/math><\/span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6151em;\"><\/span><span class=\"mord mathnormal\">t<\/span><span class=\"mspace\" style=\"margin-right:0.2778em;\"><\/span><span class=\"mrel\">=<\/span><span class=\"mspace\" style=\"margin-right:0.2778em;\"><\/span><\/span><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em;\"><\/span><span class=\"mord\">2<\/span><span class=\"mspace\" style=\"margin-right:0.1667em;\"><\/span><span class=\"mord text\"><span class=\"mord\">s<\/span><\/span><\/span><\/span><\/span> and <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>t<\/mi><mo>=<\/mo><mn>4<\/mn><mtext> <\/mtext><mtext>s<\/mtext><\/mrow><annotation encoding=\"application/x-tex\">t=4\\,\\text{s}<\/annotation><\/semantics><\/math><\/span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6151em;\"><\/span><span class=\"mord mathnormal\">t<\/span><span class=\"mspace\" style=\"margin-right:0.2778em;\"><\/span><span class=\"mrel\">=<\/span><span class=\"mspace\" style=\"margin-right:0.2778em;\"><\/span><\/span><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em;\"><\/span><span class=\"mord\">4<\/span><span class=\"mspace\" style=\"margin-right:0.1667em;\"><\/span><span class=\"mord text\"><span class=\"mord\">s<\/span><\/span><\/span><\/span><\/span>?","options":["20&#8239;cm","35&#8239;cm","60&#8239;cm","80&#8239;cm"],"answer":2,"sec":"4","topic":"ID-5","stim":"p4","ex":{"idea":"Distance traveled over an interval is the change in position: later minus earlier (Rule ID-5).","steps":["Cart B: 20 cm at 2 s and 80 cm at 4 s.","80 − 20 = 60 cm."],"others":{"0":"B’s position at 2 s.","1":"the change from 3 s to 4 s.","3":"B’s position at 4 s, not the change."}}},{"n":14,"prompt":"At which of the following times was Cart B farther from the start line than Cart A?","options":["1&#8239;s","2&#8239;s","3&#8239;s","4&#8239;s"],"answer":3,"sec":"4","topic":"ID-1","stim":"p4","ex":{"idea":"Compare the two columns at each listed time (Rule ID-1).","steps":["1 s: 5 vs. 15 (A ahead). 2 s: 20 vs. 30 (A ahead). 3 s: 45 vs. 45 (tie).","4 s: 80 vs. 60. Only at 4 s is B farther."],"others":{"0":"A is ahead, 15 cm to 5 cm.","1":"A is ahead, 30 cm to 20 cm.","2":"they are tied at 45 cm."}}},{"n":15,"prompt":"From <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>t<\/mi><mo>=<\/mo><mn>2<\/mn><mtext> <\/mtext><mtext>s<\/mtext><\/mrow><annotation encoding=\"application/x-tex\">t=2\\,\\text{s}<\/annotation><\/semantics><\/math><\/span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6151em;\"><\/span><span class=\"mord mathnormal\">t<\/span><span class=\"mspace\" style=\"margin-right:0.2778em;\"><\/span><span class=\"mrel\">=<\/span><span class=\"mspace\" style=\"margin-right:0.2778em;\"><\/span><\/span><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em;\"><\/span><span class=\"mord\">2<\/span><span class=\"mspace\" style=\"margin-right:0.1667em;\"><\/span><span class=\"mord text\"><span class=\"mord\">s<\/span><\/span><\/span><\/span><\/span> to <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>t<\/mi><mo>=<\/mo><mn>4<\/mn><mtext> <\/mtext><mtext>s<\/mtext><\/mrow><annotation encoding=\"application/x-tex\">t=4\\,\\text{s}<\/annotation><\/semantics><\/math><\/span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6151em;\"><\/span><span class=\"mord mathnormal\">t<\/span><span class=\"mspace\" style=\"margin-right:0.2778em;\"><\/span><span class=\"mrel\">=<\/span><span class=\"mspace\" style=\"margin-right:0.2778em;\"><\/span><\/span><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em;\"><\/span><span class=\"mord\">4<\/span><span class=\"mspace\" style=\"margin-right:0.1667em;\"><\/span><span class=\"mord text\"><span class=\"mord\">s<\/span><\/span><\/span><\/span><\/span>, Cart B’s distance from the start line increased by what percent?","options":["300%","400%","500%","600%"],"answer":0,"sec":"4","topic":"ID-5","stim":"p4","ex":{"idea":"Percent increase = (new − old) ÷ old × 100%. Do not confuse it with the ratio new ÷ old.","steps":["Cart B: 20 cm → 80 cm. Increase: 60 cm.","60 ÷ 20 × 100% = 300%."],"others":{"1":"the ratio 80 ÷ 20 = 4, written as 400%; the increase is 300%.","2":"does not follow from 20 and 80.","3":"does not follow from 20 and 80."}}},{"n":16,"prompt":"Strain A’s density at 8&#8239;h was approximately how many times its density at 0&#8239;h?","options":["4","25","250","2500"],"answer":2,"sec":"5","topic":"ID-6","stim":"p5","ex":{"idea":"With powers of ten, divide the coefficients and subtract the exponents (Rule ID-6).","steps":["8 h: 5.1 × 10⁵; 0 h: 2.0 × 10³.","(5.1 ÷ 2.0) × 10⁵⁻³ ≈ 2.5 × 10² = about 250 times."],"others":{"0":"the growth over 2 hours (×4), not 8.","1":"off by a factor of 10.","3":"off by a factor of 10 in the other direction."}}},{"n":17,"prompt":"At 6&#8239;h, Strain A’s density expressed in cells per <i>microliter<\/i> (1&#8239;mL <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>=<\/mo><\/mrow><annotation encoding=\"application/x-tex\">=<\/annotation><\/semantics><\/math><\/span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.3669em;\"><\/span><span class=\"mrel\">=<\/span><\/span><\/span><\/span> 1000&#8239;µL) was:","options":["<span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>1.3<\/mn><mo>×<\/mo><msup><mn>10<\/mn><mn>2<\/mn><\/msup><\/mrow><annotation encoding=\"application/x-tex\">1.3\\times10^{2}<\/annotation><\/semantics><\/math><\/span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7278em;vertical-align:-0.0833em;\"><\/span><span class=\"mord\">1.3<\/span><span class=\"mspace\" style=\"margin-right:0.2222em;\"><\/span><span class=\"mbin\">×<\/span><span class=\"mspace\" style=\"margin-right:0.2222em;\"><\/span><\/span><span class=\"base\"><span class=\"strut\" style=\"height:0.8141em;\"><\/span><span class=\"mord\">1<\/span><span class=\"mord\"><span class=\"mord\">0<\/span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8141em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"><\/span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">2<\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span>","<span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>1.3<\/mn><mo>×<\/mo><msup><mn>10<\/mn><mn>5<\/mn><\/msup><\/mrow><annotation encoding=\"application/x-tex\">1.3\\times10^{5}<\/annotation><\/semantics><\/math><\/span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7278em;vertical-align:-0.0833em;\"><\/span><span class=\"mord\">1.3<\/span><span class=\"mspace\" style=\"margin-right:0.2222em;\"><\/span><span class=\"mbin\">×<\/span><span class=\"mspace\" style=\"margin-right:0.2222em;\"><\/span><\/span><span class=\"base\"><span class=\"strut\" style=\"height:0.8141em;\"><\/span><span class=\"mord\">1<\/span><span class=\"mord\"><span class=\"mord\">0<\/span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8141em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"><\/span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">5<\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span>","<span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>1.3<\/mn><mo>×<\/mo><msup><mn>10<\/mn><mn>8<\/mn><\/msup><\/mrow><annotation encoding=\"application/x-tex\">1.3\\times10^{8}<\/annotation><\/semantics><\/math><\/span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7278em;vertical-align:-0.0833em;\"><\/span><span class=\"mord\">1.3<\/span><span class=\"mspace\" style=\"margin-right:0.2222em;\"><\/span><span class=\"mbin\">×<\/span><span class=\"mspace\" style=\"margin-right:0.2222em;\"><\/span><\/span><span class=\"base\"><span class=\"strut\" style=\"height:0.8141em;\"><\/span><span class=\"mord\">1<\/span><span class=\"mord\"><span class=\"mord\">0<\/span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8141em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"><\/span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">8<\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span>","<span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>1.3<\/mn><mo>×<\/mo><msup><mn>10<\/mn><mn>11<\/mn><\/msup><\/mrow><annotation encoding=\"application/x-tex\">1.3\\times10^{11}<\/annotation><\/semantics><\/math><\/span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7278em;vertical-align:-0.0833em;\"><\/span><span class=\"mord\">1.3<\/span><span class=\"mspace\" style=\"margin-right:0.2222em;\"><\/span><span class=\"mbin\">×<\/span><span class=\"mspace\" style=\"margin-right:0.2222em;\"><\/span><\/span><span class=\"base\"><span class=\"strut\" style=\"height:0.8141em;\"><\/span><span class=\"mord\">1<\/span><span class=\"mord\"><span class=\"mord\">0<\/span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8141em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"><\/span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">11<\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span>"],"answer":0,"sec":"5","topic":"ID-6","stim":"p5","ex":{"idea":"Converting to a smaller unit: there are more of the small units, so each holds less (Rule ID-6).","steps":["At 6 h: 1.3 × 10⁵ cells/mL. 1 mL = 1000 µL = 10³ µL.","Per µL: 1.3 × 10⁵ ÷ 10³ = 1.3 × 10² cells/µL."],"others":{"1":"the value per mL, not converted.","2":"multiplies by 10³ instead of dividing.","3":"multiplies by 10⁶."}}},{"n":18,"prompt":"According to Figure 3, Strain B’s density at 4&#8239;h was closest to:","options":["<span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>1<\/mn><mo>×<\/mo><msup><mn>10<\/mn><mn>3<\/mn><\/msup><\/mrow><annotation encoding=\"application/x-tex\">1\\times10^{3}<\/annotation><\/semantics><\/math><\/span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7278em;vertical-align:-0.0833em;\"><\/span><span class=\"mord\">1<\/span><span class=\"mspace\" style=\"margin-right:0.2222em;\"><\/span><span class=\"mbin\">×<\/span><span class=\"mspace\" style=\"margin-right:0.2222em;\"><\/span><\/span><span class=\"base\"><span class=\"strut\" style=\"height:0.8141em;\"><\/span><span class=\"mord\">1<\/span><span class=\"mord\"><span class=\"mord\">0<\/span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8141em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"><\/span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">3<\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span> cells/mL","<span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>1<\/mn><mo>×<\/mo><msup><mn>10<\/mn><mn>4<\/mn><\/msup><\/mrow><annotation encoding=\"application/x-tex\">1\\times10^{4}<\/annotation><\/semantics><\/math><\/span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7278em;vertical-align:-0.0833em;\"><\/span><span class=\"mord\">1<\/span><span class=\"mspace\" style=\"margin-right:0.2222em;\"><\/span><span class=\"mbin\">×<\/span><span class=\"mspace\" style=\"margin-right:0.2222em;\"><\/span><\/span><span class=\"base\"><span class=\"strut\" style=\"height:0.8141em;\"><\/span><span class=\"mord\">1<\/span><span class=\"mord\"><span class=\"mord\">0<\/span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8141em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"><\/span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">4<\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span> cells/mL","<span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>1<\/mn><mo>×<\/mo><msup><mn>10<\/mn><mn>5<\/mn><\/msup><\/mrow><annotation encoding=\"application/x-tex\">1\\times10^{5}<\/annotation><\/semantics><\/math><\/span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7278em;vertical-align:-0.0833em;\"><\/span><span class=\"mord\">1<\/span><span class=\"mspace\" style=\"margin-right:0.2222em;\"><\/span><span class=\"mbin\">×<\/span><span class=\"mspace\" style=\"margin-right:0.2222em;\"><\/span><\/span><span class=\"base\"><span class=\"strut\" style=\"height:0.8141em;\"><\/span><span class=\"mord\">1<\/span><span class=\"mord\"><span class=\"mord\">0<\/span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8141em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"><\/span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">5<\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span> cells/mL","<span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>5<\/mn><mo>×<\/mo><msup><mn>10<\/mn><mn>5<\/mn><\/msup><\/mrow><annotation encoding=\"application/x-tex\">5\\times10^{5}<\/annotation><\/semantics><\/math><\/span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7278em;vertical-align:-0.0833em;\"><\/span><span class=\"mord\">5<\/span><span class=\"mspace\" style=\"margin-right:0.2222em;\"><\/span><span class=\"mbin\">×<\/span><span class=\"mspace\" style=\"margin-right:0.2222em;\"><\/span><\/span><span class=\"base\"><span class=\"strut\" style=\"height:0.8141em;\"><\/span><span class=\"mord\">1<\/span><span class=\"mord\"><span class=\"mord\">0<\/span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8141em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"><\/span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">5<\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span> cells/mL"],"answer":1,"sec":"5","topic":"ID-6","stim":"p5","ex":{"idea":"On a log axis, equal distances mean equal factors; the visual midpoint between 10² and 10⁶ is 10⁴ (Rule ID-6).","steps":["Strain B is a straight line on the log axis from 10² at 0 h to 10⁶ at 8 h.","4 h is halfway, so the exponent is halfway: 10⁴ cells/mL."],"others":{"0":"Strain B at 2 h.","2":"Strain B at 6 h.","3":"half of 10⁶, which treats the log axis as if it were linear."}}},{"n":19,"prompt":"Strain A’s density doubled approximately every:","options":["1&#8239;h","2&#8239;h","4&#8239;h","8&#8239;h"],"answer":0,"sec":"5","topic":"ID-5","stim":"p5","ex":{"idea":"Doubling time: find how much the value multiplies over a known interval, then count doublings.","steps":["Strain A: 2.0 × 10³ → 8.0 × 10³ in 2 h, a factor of 4.","4 = 2 × 2: two doublings in 2 h, so it doubles about every 1 h."],"others":{"1":"in 2 h it quadruples, not doubles.","2":"in 4 h it grows 16-fold.","3":"in 8 h it grows about 250-fold."}}},{"n":20,"prompt":"Which of the following graphs best represents the relationship between pressure and volume in Table 4?<\/p><p>","options":["<img class=\"opt-img\" src=\"/study/act/science/tests/fig/p2-graph-rising.png\" alt=\"Pressure rises in a straight line as volume increases.\" width=\"106\" height=\"76\" loading=\"lazy\">","<img class=\"opt-img\" src=\"/study/act/science/tests/fig/p2-graph-falling.png\" alt=\"Pressure falls in a straight line as volume increases.\" width=\"106\" height=\"73\" loading=\"lazy\">","<img class=\"opt-img\" src=\"/study/act/science/tests/fig/p2-graph-inverse.png\" alt=\"Pressure drops steeply at first, then levels off as volume increases.\" width=\"109\" height=\"76\" loading=\"lazy\">","<img class=\"opt-img\" src=\"/study/act/science/tests/fig/p2-graph-curving-up.png\" alt=\"Pressure rises along an upward-curving line as volume increases.\" width=\"109\" height=\"73\" loading=\"lazy\">"],"answer":2,"sec":"6","topic":"ID-7","stim":"p6","labels":["the graph in which pressure rises in a straight line as volume increases","the graph in which pressure falls in a straight line as volume increases","the graph in which pressure drops steeply at first, then levels off as volume increases","the graph in which pressure rises along an upward-curving line as volume increases"],"ex":{"idea":"Match a table to a graph by direction, then shape (straight or curved), then start (Rule ID-7).","steps":["Direction: as volume rises, pressure falls (300, 150, 100, 75, 60), which rules out the rising graphs.","Shape: the drops shrink (150, 50, 25, 15), so the curve falls fast and then flattens: an inverse curve."],"others":{"0":"the table shows pressure falling as volume rises.","1":"a straight line falls by equal amounts, but the drops here shrink.","3":"the table shows pressure falling as volume rises."}}},{"n":21,"prompt":"If the gas were expanded to 60&#8239;mL under the same conditions, its pressure would be closest to:","options":["30&#8239;kPa","40&#8239;kPa","45&#8239;kPa","50&#8239;kPa"],"answer":3,"sec":"6","topic":"ID-7","stim":"p6","ex":{"idea":"If x · y is constant, predict a new value by division (Rule ID-7).","steps":["P × V = 3000 in every row (10 × 300, 20 × 150, 30 × 100, 40 × 75, 50 × 60).","At 60 mL: 3000 ÷ 60 = 50 kPa."],"others":{"0":"too low: 30 kPa × 60 mL = 1800, not 3000.","1":"too low: 40 kPa × 60 mL = 2400, not 3000.","2":"too low: 45 × 60 = 2700, not 3000."}}},{"n":22,"prompt":"As depth increased from 0&#8239;m to 1000&#8239;m, dissolved O<span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mrow><\/mrow><mn>2<\/mn><\/msub><\/mrow><annotation encoding=\"application/x-tex\">_2<\/annotation><\/semantics><\/math><\/span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4511em;vertical-align:-0.15em;\"><\/span><span class=\"mord\"><span><\/span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"><\/span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2<\/span><\/span><\/span><\/span><span class=\"vlist-s\">​<\/span><\/span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span>:","options":["decreased only.","increased only.","decreased and then increased.","increased and then decreased."],"answer":2,"sec":"7","topic":"ID-2","stim":"p7","ex":{"idea":"Read each series against its own axis, and check every step (Rules ID-1, ID-2).","steps":["Dissolved O₂ (dashed, right axis): 7.0, 5.5, 3.0, 2.0 (to 600 m), then 2.5, 3.5.","It decreases and then increases: a valley."],"others":{"0":"O₂ rises below 600 m.","1":"O₂ falls from the surface to 600 m.","3":"the order is reversed."}}},{"n":23,"prompt":"At the depth where dissolved O<span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mrow><\/mrow><mn>2<\/mn><\/msub><\/mrow><annotation encoding=\"application/x-tex\">_2<\/annotation><\/semantics><\/math><\/span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4511em;vertical-align:-0.15em;\"><\/span><span class=\"mord\"><span><\/span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"><\/span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2<\/span><\/span><\/span><\/span><span class=\"vlist-s\">​<\/span><\/span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span> was lowest, the water temperature was closest to:","options":["5&#8239;°C","7&#8239;°C","10&#8239;°C","18&#8239;°C"],"answer":1,"sec":"7","topic":"ID-4","stim":"p7","ex":{"idea":"Bridge two series through the shared variable, here depth (Rule ID-4).","steps":["Lowest O₂ (2.0 mg/L, right axis) is at 600 m.","Temperature at 600 m (solid line, left axis): 7 °C."],"others":{"0":"the temperature at 800 m.","2":"the temperature at 400 m.","3":"the temperature at 200 m."}}},{"n":24,"prompt":"Based on Figure 4, the water temperature at a depth of 300&#8239;m was closest to:","options":["14&#8239;°C","17&#8239;°C","19&#8239;°C","21&#8239;°C"],"answer":0,"sec":"7","topic":"ID-3","stim":"p7","ex":{"idea":"Interpolate between the two nearest measured depths (Rule ID-3).","steps":["300 m is halfway between 200 m (18 °C) and 400 m (10 °C).","Midpoint: (18 + 10) ÷ 2 = 14 °C."],"others":{"1":"too close to the 200 m value.","2":"above the 200 m value, though temperature falls with depth.","3":"even farther above the 200 m value."}}},{"n":25,"prompt":"By how much did the temperature decrease from the surface to 1000&#8239;m?","options":["4&#8239;°C","10&#8239;°C","20&#8239;°C","24&#8239;°C"],"answer":2,"sec":"7","topic":"ID-5","stim":"p7","ex":{"idea":"A change is the difference between two readings (Rule ID-5).","steps":["Surface: 24 °C. 1000 m: 4 °C.","24 − 4 = 20 °C."],"others":{"0":"the temperature at 1000 m, not the change.","1":"does not follow from 24 and 4.","3":"the surface temperature, not the change."}}},{"n":26,"prompt":"The surface O<span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mrow><\/mrow><mn>2<\/mn><\/msub><\/mrow><annotation encoding=\"application/x-tex\">_2<\/annotation><\/semantics><\/math><\/span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4511em;vertical-align:-0.15em;\"><\/span><span class=\"mord\"><span><\/span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"><\/span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2<\/span><\/span><\/span><\/span><span class=\"vlist-s\">​<\/span><\/span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span> value, 7.0 mg/L, is equivalent to:","options":["<span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>7.0<\/mn><mo>×<\/mo><msup><mn>10<\/mn><mrow><mo>−<\/mo><mn>6<\/mn><\/mrow><\/msup><\/mrow><annotation encoding=\"application/x-tex\">7.0\\times10^{-6}<\/annotation><\/semantics><\/math><\/span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7278em;vertical-align:-0.0833em;\"><\/span><span class=\"mord\">7.0<\/span><span class=\"mspace\" style=\"margin-right:0.2222em;\"><\/span><span class=\"mbin\">×<\/span><span class=\"mspace\" style=\"margin-right:0.2222em;\"><\/span><\/span><span class=\"base\"><span class=\"strut\" style=\"height:0.8141em;\"><\/span><span class=\"mord\">1<\/span><span class=\"mord\"><span class=\"mord\">0<\/span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8141em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"><\/span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">−<\/span><span class=\"mord mtight\">6<\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span> g/L","<span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>7.0<\/mn><mo>×<\/mo><msup><mn>10<\/mn><mrow><mo>−<\/mo><mn>3<\/mn><\/mrow><\/msup><\/mrow><annotation encoding=\"application/x-tex\">7.0\\times10^{-3}<\/annotation><\/semantics><\/math><\/span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7278em;vertical-align:-0.0833em;\"><\/span><span class=\"mord\">7.0<\/span><span class=\"mspace\" style=\"margin-right:0.2222em;\"><\/span><span class=\"mbin\">×<\/span><span class=\"mspace\" style=\"margin-right:0.2222em;\"><\/span><\/span><span class=\"base\"><span class=\"strut\" style=\"height:0.8141em;\"><\/span><span class=\"mord\">1<\/span><span class=\"mord\"><span class=\"mord\">0<\/span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8141em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"><\/span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">−<\/span><span class=\"mord mtight\">3<\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span> g/L","<span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>7.0<\/mn><mo>×<\/mo><msup><mn>10<\/mn><mn>3<\/mn><\/msup><\/mrow><annotation encoding=\"application/x-tex\">7.0\\times10^{3}<\/annotation><\/semantics><\/math><\/span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7278em;vertical-align:-0.0833em;\"><\/span><span class=\"mord\">7.0<\/span><span class=\"mspace\" style=\"margin-right:0.2222em;\"><\/span><span class=\"mbin\">×<\/span><span class=\"mspace\" style=\"margin-right:0.2222em;\"><\/span><\/span><span class=\"base\"><span class=\"strut\" style=\"height:0.8141em;\"><\/span><span class=\"mord\">1<\/span><span class=\"mord\"><span class=\"mord\">0<\/span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8141em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"><\/span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">3<\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span> g/L","<span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>7.0<\/mn><mo>×<\/mo><msup><mn>10<\/mn><mn>6<\/mn><\/msup><\/mrow><annotation encoding=\"application/x-tex\">7.0\\times10^{6}<\/annotation><\/semantics><\/math><\/span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7278em;vertical-align:-0.0833em;\"><\/span><span class=\"mord\">7.0<\/span><span class=\"mspace\" style=\"margin-right:0.2222em;\"><\/span><span class=\"mbin\">×<\/span><span class=\"mspace\" style=\"margin-right:0.2222em;\"><\/span><\/span><span class=\"base\"><span class=\"strut\" style=\"height:0.8141em;\"><\/span><span class=\"mord\">1<\/span><span class=\"mord\"><span class=\"mord\">0<\/span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8141em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"><\/span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">6<\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span> g/L"],"answer":1,"sec":"7","topic":"ID-6","stim":"p7","ex":{"idea":"Metric prefixes: milli = 10⁻³. Converting to a larger unit makes the number smaller (Rule ID-6).","steps":["1 mg = 10⁻³ g.","7.0 mg/L = 7.0 × 10⁻³ g/L."],"others":{"0":"uses micro (10⁻⁶) instead of milli.","2":"multiplies by 10³; grams are larger than milligrams, so the number must shrink.","3":"multiplies by 10⁶."}}}],"fr":[]}</script>
+<script>
+(function(){
+"use strict";
+var DATA = JSON.parse(document.getElementById("data").textContent);
+var META = DATA.meta, MC = DATA.mc, FR = DATA.fr || [], TOP = DATA.topics || {}, SEC = DATA.sections || {}, STIM = DATA.stims || {}, BY = {};
+MC.forEach(function(q){ BY[q.n] = q; });
+var KEY = META.key, FKEY = META.fkey || META.key + ".fr", HAS_FR = FR.length > 0;
+
+function load(k, d){ try{ var v = localStorage.getItem(k); return v ? JSON.parse(v) : d; }catch(e){ return d; } }
+function save(k, v){ try{ localStorage.setItem(k, JSON.stringify(v)); }catch(e){} }
+function esc(s){ return String(s).replace(/[&<>"]/g, function(c){ return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]; }); }
+function shuffle(a){ a = a.slice(); for (var i = a.length - 1; i > 0; i--){ var j = Math.floor(Math.random() * (i + 1)); var t = a[i]; a[i] = a[j]; a[j] = t; } return a; }
+function range(n){ var a = []; for (var i = 0; i < n; i++) a.push(i); return a; }
+
+var S = load(KEY, null);
+if (!S || !S.phase || !S.order || S.order.some(function(n){ return !BY[n]; })) S = { phase: "setup", mode: "practice", shuffleQ: false, shuffleC: false, order: [], copt: {}, ans: {}, pos: 0, full: null };
+var confirmFinish = false;
+var mcEl = document.getElementById("mc");
+
+function start(nums){
+  var list = nums || MC.map(function(q){ return q.n; });
+  S.order = S.shuffleQ ? shuffle(list) : list.slice();
+  S.copt = {};
+  S.order.forEach(function(n){
+    var q = BY[n], idx = range(q.options.length);
+    S.copt[n] = (S.shuffleC && !q.fixed) ? shuffle(idx) : idx;
+  });
+  S.ans = {}; S.pos = 0; S.phase = "run"; confirmFinish = false;
+  save(KEY, S); render(); focusTop();
+}
+function focusTop(){ var t = document.querySelector(".tabs") || document.querySelector(".title"); if (t && t.getBoundingClientRect().top < 0) t.scrollIntoView(); }
+
+function stats(){
+  var right = 0, done = 0;
+  S.order.forEach(function(n){ if (n in S.ans){ done++; if (S.ans[n] === BY[n].answer) right++; } });
+  return { right: right, done: done, total: S.order.length };
+}
+function topicShort(t){ return (META.topicPrefix || "") + t; }
+function topicLabel(t){ return topicShort(t) + ", " + TOP[t].name; }
+function guideLink(t, short){
+  var g = TOP[t], txt = short ? g.name : topicLabel(t);
+  var href = g.url ? g.url : (META.guide && g.page ? META.guide + "#page=" + g.page : "");
+  return href ? '<a href="' + href + '">' + txt + "</a>" : txt;
+}
+function topicLinks(ts){
+  ts = ts.filter(function(t){ return TOP[t]; });
+  if (!ts.length || !(META.guide || TOP[ts[0]].url)) return "";
+  return '<p class="links">Review ' + ts.map(function(t){ return guideLink(t); }).join(" &middot; ") + " in " + META.guideName + "</p>";
+}
+function explain(q, picked){
+  var e = q.ex, h = '<div class="why"><p>' + e.idea + "</p>";
+  if (e.steps.length) h += '<ol class="steps">' + e.steps.map(function(s){ return "<li>" + s + "</li>"; }).join("") + "</ol>";
+  var rest = range(q.options.length).filter(function(i){ return i !== q.answer; });
+  if (typeof picked === "number" && picked !== q.answer) rest = [picked].concat(rest.filter(function(i){ return i !== picked; }));
+  h += '<p class="why-h sc">Why not the others</p><ul class="others">' + rest.map(function(i){
+    return "<li>" + quoted(q, i) + (i === picked ? '<span class="tag">your answer</span>' : "") + " &mdash; " + e.others[i] + "</li>";
+  }).join("") + "</ul></div>";
+  return h;
+}
+function quoted(q, i){ return q.labels ? q.labels[i] : "&ldquo;" + q.options[i] + "&rdquo;"; }
+function table(q){ return q.table ? '<div class="bt-wrap">' + q.table + "</div>" : ""; }
+function stim(q){
+  var s = q.stim && STIM[q.stim]; if (!s) return "";
+  var html = s.html.split(' data-q="' + q.n + '"').join(' data-q="' + q.n + '" data-cur')
+    .replace(/data-qs="([^"]*)"/g, function(m, l){ return (" " + l + " ").indexOf(" " + q.n + " ") >= 0 ? m + " data-cur" : m; });
+  return '<div class="stim' + (s.cls ? " " + s.cls : "") + '">' + (s.title ? '<p class="stim-h sc">' + s.title + "</p>" : "") + html + "</div>";
+}
+function scrollStim(root){
+  root.querySelectorAll(".stim").forEach(function(box){ var c = box.querySelector("[data-cur]"); if (c && box.scrollHeight > box.clientHeight) box.scrollTop = Math.max(0, c.offsetTop - box.clientHeight / 3); });
+}
+function promptHtml(q){
+  return stim(q) + (q.fig || "") + '<div class="q-prompt"><p>' + q.prompt + "</p>" + (q.ask || META.ask ? '<p class="q-ask">' + (q.ask || META.ask) + "</p>" : "") + "</div>" + table(q);
+}
+
+function renderSetup(){
+  mcEl.innerHTML =
+    '<div class="setup">' +
+      '<h2>How do you want to take it?</h2>' +
+      '<div class="choice-row">' +
+        '<button type="button" class="choice" data-mode="practice" aria-pressed="' + (S.mode === "practice") + '"><b>Practice</b><span>See the answer and why after each question</span></button>' +
+        '<button type="button" class="choice" data-mode="exam" aria-pressed="' + (S.mode === "exam") + '"><b>Exam</b><span>Answer everything, then see your score</span></button>' +
+      '</div>' +
+      '<div class="checks">' +
+        '<label><input type="checkbox" id="opt-sq"' + (S.shuffleQ ? " checked" : "") + '> Shuffle questions</label>' +
+        '<label><input type="checkbox" id="opt-sc"' + (S.shuffleC ? " checked" : "") + '> Shuffle answer choices</label>' +
+      '</div>' +
+      '<div class="setup-actions"><button type="button" class="btn btn--solid btn--lg" id="go">Start' + (HAS_FR ? " multiple choice" : "") + '</button></div>' +
+      '<p class="note">' + META.setupNote + " Keyboard: 1&ndash;" + Math.max.apply(null, MC.map(function(q){ return q.options.length; })) + " to answer, &larr; &rarr; to move, Enter for next.</p>" +
+    '</div>';
+  mcEl.querySelectorAll(".choice").forEach(function(b){ b.onclick = function(){ S.mode = b.dataset.mode; render(); }; });
+  document.getElementById("opt-sq").onchange = function(e){ S.shuffleQ = e.target.checked; };
+  document.getElementById("opt-sc").onchange = function(e){ S.shuffleC = e.target.checked; };
+  document.getElementById("go").onclick = function(){ start(); };
+}
+
+function renderRun(){
+  var n = S.order[S.pos], q = BY[n], st = stats(), practice = S.mode === "practice";
+  var picked = (n in S.ans) ? S.ans[n] : null, locked = practice && picked !== null;
+  var nav = S.order.map(function(m, i){
+    var c = [];
+    if (m in S.ans){ if (practice) c.push(S.ans[m] === BY[m].answer ? "is-right" : "is-wrong"); else c.push("is-answered"); }
+    if (i === S.pos) c.push("is-current");
+    return '<button type="button" class="' + c.join(" ") + '" data-go="' + i + '" aria-label="Question ' + (i + 1) + '"' + (i === S.pos ? ' aria-current="step"' : "") + ">" + (i + 1) + "</button>";
+  }).join("");
+  var opts = S.copt[n].map(function(oi, k){
+    var cls = ["opt"], mark = "";
+    if (locked){
+      if (oi === q.answer){ cls.push("is-right"); mark = oi === picked ? "&check; your answer" : "&check; correct"; }
+      else if (oi === picked){ cls.push("is-wrong"); mark = "&cross; your answer"; }
+      else cls.push("is-dim");
+    } else if (oi === picked) cls.push("is-picked");
+    return '<li><button type="button" class="' + cls.join(" ") + '" data-opt="' + oi + '"' + (locked ? " disabled" : "") + '><span class="kbd">' + (k + 1) + "</span><span>" + q.options[oi] + '</span><span class="mark">' + mark + "</span></button></li>";
+  }).join("");
+  var fb = "";
+  if (locked){
+    var ok = picked === q.answer, ans = quoted(q, q.answer);
+    fb = '<div class="fb' + (ok ? "" : " is-wrong") + '"><p class="verdict" role="status">' + (ok ? "Correct." : "Not quite. The answer is " + ans + (/[.?!](&rdquo;)?$/.test(ans) ? "" : ".")) + "</p>" + explain(q, picked) + topicLinks([q.topic]) + "</div>";
+  }
+  var last = S.pos === S.order.length - 1, allDone = st.done === st.total;
+  var nextBtn = last
+    ? '<button type="button" class="btn btn--solid" id="finish">' + (practice ? "See results" : "Finish test") + "</button>"
+    : '<button type="button" class="btn btn--solid" id="next">Next &rarr;</button>';
+  var finishEarly = (!last && !practice) ? '<button type="button" class="btn" id="finish">Finish test</button>' : (!last && practice && allDone ? '<button type="button" class="btn" id="finish">See results</button>' : "");
+  var conf = "";
+  if (confirmFinish){
+    var left = st.total - st.done;
+    conf = '<div class="confirm"><p>' + left + " question" + (left === 1 ? " is" : "s are") + " unanswered and will be marked wrong. Finish anyway?</p>" +
+      '<button type="button" class="btn" id="conf-no">Keep going</button><button type="button" class="btn btn--solid" id="conf-yes">Finish</button></div>';
+  }
+  var eyebrow = "Question " + q.n + (SEC[q.sec] ? " &middot; " + SEC[q.sec] : "") + (q.tag ? " &middot; " + q.tag : (q.topic ? " &middot; " + topicShort(q.topic) : ""));
+  mcEl.innerHTML =
+    '<div class="bar"><span>Question ' + (S.pos + 1) + " of " + st.total + " &middot; " + (practice ? "Practice" : "Exam") + " mode</span><span>" +
+      (practice ? st.right + " correct of " + st.done + " answered" : st.done + " of " + st.total + " answered") + "</span></div>" +
+    '<div class="track"><span style="width:' + (st.done / st.total * 100) + '%"></span></div>' +
+    '<nav class="nav" aria-label="Questions">' + nav + "</nav>" +
+    '<article class="q">' +
+      '<p class="q-eyebrow sc">' + eyebrow + "</p>" +
+      promptHtml(q) +
+      '<ol class="opts">' + opts + "</ol>" + fb +
+      '<div class="step"><button type="button" class="btn" id="prev"' + (S.pos === 0 ? " disabled" : "") + '>&larr; Back</button><span class="step-right">' + finishEarly + nextBtn + "</span></div>" +
+      conf +
+    "</article>" +
+    '<p class="keys"><span class="kbd">1</span>&ndash;<span class="kbd">' + q.options.length + '</span> answer &nbsp; <span class="kbd">&larr;</span> <span class="kbd">&rarr;</span> move &nbsp; <span class="kbd">Enter</span> next</p>' +
+    '<p class="restart-line"><a href="#" id="restart">Start over</a> <span class="muted">&middot; progress is saved in this browser</span></p>';
+
+  scrollStim(mcEl);
+  mcEl.querySelectorAll("[data-go]").forEach(function(b){ b.onclick = function(){ go(+b.dataset.go); }; });
+  mcEl.querySelectorAll("[data-opt]").forEach(function(b){ b.onclick = function(){ pick(+b.dataset.opt); }; });
+  bind("prev", function(){ go(S.pos - 1); });
+  bind("next", function(){ go(S.pos + 1); });
+  bind("finish", finish);
+  bind("conf-no", function(){ confirmFinish = false; render(); });
+  bind("conf-yes", function(){ confirmFinish = false; showResults(); });
+  bind("restart", function(e){ e.preventDefault(); S.phase = "setup"; save(KEY, S); render(); });
+}
+function bind(id, fn){ var el = document.getElementById(id); if (el) el.onclick = fn; }
+
+function pick(oi){
+  var n = S.order[S.pos];
+  if (S.mode === "practice" && (n in S.ans)) return;
+  S.ans[n] = oi; save(KEY, S); render();
+  if (S.mode === "practice"){ var fb = mcEl.querySelector(".fb"); if (fb && fb.getBoundingClientRect().bottom > innerHeight) fb.scrollIntoView({ block: "nearest" }); }
+}
+function go(i){
+  if (i < 0 || i >= S.order.length) return;
+  S.pos = i; confirmFinish = false; save(KEY, S); render();
+  var q = mcEl.querySelector(".q"); if (q && q.getBoundingClientRect().top < 0) q.scrollIntoView();
+}
+function finish(){
+  var st = stats();
+  if (st.done < st.total && !confirmFinish){ confirmFinish = true; render(); var c = mcEl.querySelector(".confirm"); if (c) c.scrollIntoView({ block: "nearest" }); return; }
+  showResults();
+}
+function showResults(){
+  S.phase = "results";
+  if (S.order.length === MC.length) S.full = stats().right;
+  save(KEY, S); render(); if (HAS_FR) renderFR(); focusTop();
+}
+
+/* composite score (only when the document defines one) */
+function frTotal(){
+  var t = 0;
+  for (var i = 0; i < FR.length; i++){ var s = frScore(FR[i]); if (s === null) return null; t += s; }
+  return t;
+}
+function frMax(){ return FR.reduce(function(a, f){ return a + frItemMax(f); }, 0); }
+function compositeHtml(){
+  var C = META.composite;
+  if (!C || !HAS_FR) return "";
+  var mc = (typeof S.full === "number") ? S.full : null, fr = frTotal(), fm = frMax(), mm = MC.length;
+  if (mc === null && fr === null) return "";
+  var lines = [];
+  if (mc === null) lines.push("Free response: <b>" + fr + " / " + fm + "</b>. Take the full multiple-choice part to get your composite score.");
+  else if (fr === null) lines.push("Multiple choice: <b>" + mc + " / " + mm + "</b>. Write and mark every free-response question to get your composite score.");
+  else {
+    var c = Math.round(C.mcWeight * mc / mm + C.frWeight * fr / fm), band = "";
+    for (var i = 0; i < C.bands.length; i++){ if (c >= C.bands[i][0]){ band = C.bands[i][1]; break; } }
+    lines.push("Composite score: <b>" + c + " / " + (C.mcWeight + C.frWeight) + "</b> &nbsp;<span class=\"muted\">= " + C.mcWeight + " &times; " + mc + "/" + mm + " + " + C.frWeight + " &times; " + fr + "/" + fm + "</span>");
+    if (band) lines.push(band);
+  }
+  return '<div class="composite" role="status">' + lines.map(function(l){ return "<p>" + l + "</p>"; }).join("") + "</div>";
+}
+function targetHtml(st){
+  var T = META.target, B = META.bands, h = "";
+  if (st.total !== MC.length) return "";
+  if (T) h += '<p class="target">' + T.label + ": " + T.mc + " / " + MC.length + " &middot; " + (st.right >= T.mc ? "met" : (T.mc - st.right) + " short") + "</p>";
+  if (B) for (var i = 0; i < B.length; i++){ if (st.right >= B[i][0]){ h += '<p class="target">' + B[i][1] + "</p>"; break; } }
+  return h;
+}
+
+var resFilter = "all";
+function renderResults(){
+  var st = stats(), pct = Math.round(st.right / st.total * 100), fullRun = st.total === MC.length;
+  var missed = S.order.filter(function(n){ return S.ans[n] !== BY[n].answer; });
+  var rows = S.order.map(function(n, i){
+    var q = BY[n], a = S.ans[n], ok = a === q.answer;
+    if (resFilter === "missed" && ok) return "";
+    return '<li><details><summary><span class="res-n">' + (i + 1) + '.</span><span class="' + (ok ? "res-ok" : "res-bad") + '" aria-label="' + (ok ? "correct" : "wrong") + '">' + (ok ? "&check;" : "&cross;") + '</span><span class="res-sum">' + q.prompt + "</span></summary>" +
+      '<div class="res-body">' + stim(q) + (q.fig || "") + table(q) + '<p><span class="sc">Your answer:</span> ' + (a === undefined ? "<i>skipped</i>" : q.options[a]) + "</p>" +
+      (ok ? "" : '<p><span class="sc">Correct:</span> ' + q.options[q.answer] + "</p>") +
+      explain(q, a) + topicLinks([q.topic]) + "</div></details></li>";
+  }).join("");
+  var tally = {};
+  S.order.forEach(function(n){ var t = BY[n].topic; if (!t) return; tally[t] = tally[t] || { right: 0, total: 0 }; tally[t].total++; if (S.ans[n] === BY[n].answer) tally[t].right++; });
+  var trows = Object.keys(TOP).filter(function(t){ return tally[t]; }).map(function(t){
+    var x = tally[t], miss = x.total - x.right;
+    return "<tr><th scope=\"row\">" + topicShort(t) + "</th><td>" + x.right + " / " + x.total + "</td><td>" + guideLink(t, true) +
+      ((META.flag ? x.right < META.flag.below * x.total : miss >= 2) ? ' <span class="flag">&middot; ' + (META.flag ? META.flag.text : "reread this section") + "</span>" : "") + "</td></tr>";
+  }).join("");
+  mcEl.innerHTML =
+    '<div class="results">' +
+      '<div class="score"><p class="score-big">' + st.right + " / " + st.total + "</p><p>" + pct + "% correct" + (fullRun ? "" : " &middot; retry of missed questions") + "</p>" + targetHtml(st) + "</div>" +
+      '<div class="res-actions">' +
+        (missed.length ? '<button type="button" class="btn btn--solid" id="retry">Retry the ' + missed.length + " missed</button>" : "") +
+        '<button type="button" class="btn" id="again">Take the full test again</button>' +
+        (HAS_FR ? '<button type="button" class="btn" id="to-fr">Go to free response</button>' : "") +
+      "</div>" +
+      compositeHtml() +
+      (trows ? '<div class="topics"><h2>' + (META.byTopic || "By topic") + '</h2><table class="bt"><thead><tr><th scope="col">' + (META.topicCol || "Topic") + '</th><th scope="col">Correct</th><th scope="col">' + (META.guideCol || "Guide section") + "</th></tr></thead><tbody>" + trows + "</tbody></table>" +
+        (META.topicNote ? '<p class="note" style="margin-top:6px">' + META.topicNote + "</p>" : "") + "</div>" : "") +
+      '<div class="res-filter"><h2>Review</h2><span><label><input type="checkbox" id="only-missed"' + (resFilter === "missed" ? " checked" : "") + "> Show missed only</label></span></div>" +
+      '<ul class="res-list">' + (rows || '<li><p class="note" style="padding:12px 0">Nothing missed.</p></li>') + "</ul>" +
+    "</div>";
+  bind("retry", function(){ start(missed); });
+  bind("again", function(){ S.phase = "setup"; save(KEY, S); render(); });
+  bind("to-fr", function(){ setTab("fr"); });
+  document.getElementById("only-missed").onchange = function(e){ resFilter = e.target.checked ? "missed" : "all"; render(); };
+}
+
+function render(){
+  if (S.phase === "run" && S.order.length) renderRun();
+  else if (S.phase === "results" && S.order.length) renderResults();
+  else { S.phase = "setup"; renderSetup(); }
+}
+
+/* free response: "epi" parts (E/P/I -> 0-4 per question) or "points" parts (0..max each) */
+var frEl = document.getElementById("fr"), F = load(FKEY, null);
+if (!F || typeof F !== "object") F = {};
+F.drafts = F.drafts || {}; F.marks = F.marks || {}; F.open = F.open || {};
+var LABELS = { 4: "Complete", 3: "Substantial", 2: "Developing", 1: "Minimal", 0: "" };
+function frItemMax(f){ return f.mode === "points" ? f.parts.reduce(function(a, p){ return a + p.max; }, 0) : 4; }
+function frScore(f){
+  if (f.mode === "points"){
+    var t = 0;
+    for (var j = 0; j < f.parts.length; j++){ var v = F.marks[f.n + f.parts[j].label]; if (v === undefined || v === "") return null; t += +v; }
+    return t;
+  }
+  var e = 0, p = 0;
+  for (var i = 0; i < f.parts.length; i++){
+    var m = F.marks[f.n + f.parts[i].label];
+    if (!m) return null;
+    if (m === "E") e++; else if (m === "P") p++;
+  }
+  if (e === 3) return 4;
+  if (e === 2 && p === 1) return 3;
+  if ((e === 2 && p === 0) || (e === 1 && p >= 1) || p === 3) return 2;
+  if ((e === 1 && p === 0) || (e === 0 && p === 2)) return 1;
+  return 0;
+}
+function words(t){ var m = t.trim().match(/\S+/g); return m ? m.length : 0; }
+var SCALE = '<details class="scale"><summary>How part scores convert to 0&ndash;4</summary><table class="bt"><thead><tr><th scope="col">Score</th><th scope="col">Label</th><th scope="col">Part scores (three parts, each E, P, or I)</th></tr></thead><tbody>' +
+  "<tr><td>4</td><td>Complete</td><td>three parts E</td></tr>" +
+  "<tr><td>3</td><td>Substantial</td><td>two parts E and one part P</td></tr>" +
+  "<tr><td>2</td><td>Developing</td><td>two E and no P; or one E and one or two P; or three P</td></tr>" +
+  "<tr><td>1</td><td>Minimal</td><td>one E and no P; or no E and two P</td></tr>" +
+  "<tr><td>0</td><td></td><td>anything less</td></tr></tbody></table></details>";
+function frScoreHtml(f){
+  var s = frScore(f), mx = frItemMax(f);
+  if (s === null) return '<span class="muted">Mark every part to score this question.</span>';
+  return "Score: <b>" + s + " / " + mx + "</b>" + (f.mode !== "points" && LABELS[s] ? " &middot; " + LABELS[s] : "");
+}
+function markButtons(f, p, id, m){
+  var vals = f.mode === "points" ? range(p.max + 1).map(String) : ["E", "P", "I"];
+  return vals.map(function(x){ return '<button type="button" data-mark="' + id + '" data-f="' + f.n + '" data-v="' + x + '" aria-pressed="' + (m === x) + '">' + x + "</button>"; }).join("");
+}
+function renderFR(){
+  if (!HAS_FR) return;
+  frEl.innerHTML = '<p class="fr-intro">' + META.frIntro + "</p>" +
+    FR.map(function(f){
+      var open = !!F.open[f.n];
+      var parts = f.parts.map(function(p){
+        var id = f.n + p.label, d = F.drafts[id] || "", m = (F.marks[id] === undefined ? "" : String(F.marks[id]));
+        var crit = f.mode === "points"
+          ? '<div class="crit-pts">' + p.rubric + "</div>"
+          : '<dl class="crit"><dt>E</dt><dd>if the response ' + p.e + "</dd><dt>P</dt><dd>if " + p.p + "</dd></dl>";
+        return '<div class="part"><p class="part-prompt"><b>(' + p.label + ")</b>" + p.prompt + "</p>" +
+          '<label class="sc" for="fr-' + id + '">Your answer to (' + p.label + ")</label>" +
+          '<textarea id="fr-' + id + '" data-fr="' + id + '" spellcheck="true">' + esc(d) + "</textarea>" +
+          '<p class="part-meta" id="wc-' + id + '">' + words(d) + " words &middot; saved in this browser</p>" +
+          '<div class="sol"' + (open ? "" : " hidden") + ' data-sol="' + f.n + '"><h3>Model solution (' + p.label + ")</h3><div>" + p.solution + "</div>" + crit +
+            '<div class="mark-row"><span>Your mark for (' + p.label + ")" + (f.mode === "points" ? ", out of " + p.max : "") + ':</span><span class="seg" role="group" aria-label="Mark for part ' + p.label + '">' + markButtons(f, p, id, m) + "</span></div></div></div>";
+      }).join("");
+      return '<article class="fr"><h2>Question ' + f.n + "<small>" + f.head + "</small></h2>" +
+        (f.stim ? stim(f) : "") + '<div class="fr-stem">' + f.stem + "</div>" + parts +
+        '<div class="fr-actions"><span class="fr-score" id="score-' + f.n + '">' + (open ? frScoreHtml(f) : "") + "</span>" +
+          '<button type="button" class="btn" data-open="' + f.n + '" aria-expanded="' + open + '">' + (open ? "Hide model solution" : "Show model solution and scoring") + "</button></div>" +
+        (open ? (f.mode === "points" ? "" : SCALE) + topicLinks(f.guide || []) : "") +
+        "</article>";
+    }).join("") + '<div id="fr-composite">' + compositeHtml() + "</div>";
+  frEl.querySelectorAll("textarea").forEach(function(t){
+    t.oninput = function(){ F.drafts[t.dataset.fr] = t.value; save(FKEY, F); document.getElementById("wc-" + t.dataset.fr).innerHTML = words(t.value) + " words &middot; saved in this browser"; };
+  });
+  frEl.querySelectorAll("[data-open]").forEach(function(b){
+    b.onclick = function(){ var n = b.dataset.open; F.open[n] = !F.open[n]; save(FKEY, F); renderFR(); var a = document.getElementById("score-" + n); if (a) a.closest(".fr").querySelector(".part").scrollIntoView({ block: "nearest" }); };
+  });
+  frEl.querySelectorAll("[data-mark]").forEach(function(b){
+    b.onclick = function(){
+      var id = b.dataset.mark; F.marks[id] = F.marks[id] === b.dataset.v ? "" : b.dataset.v; save(FKEY, F);
+      b.parentNode.querySelectorAll("button").forEach(function(x){ x.setAttribute("aria-pressed", String(F.marks[id] === x.dataset.v)); });
+      var f = FR.filter(function(x){ return String(x.n) === b.dataset.f; })[0];
+      document.getElementById("score-" + f.n).innerHTML = frScoreHtml(f);
+      document.getElementById("fr-composite").innerHTML = compositeHtml();
+      if (S.phase === "results") render();
+    };
+  });
+}
+
+/* tabs (only when there is a free-response part) */
+function setTab(t){
+  if (!HAS_FR) return;
+  var mc = t === "mc";
+  document.getElementById("tab-mc").setAttribute("aria-selected", String(mc));
+  document.getElementById("tab-fr").setAttribute("aria-selected", String(!mc));
+  mcEl.hidden = !mc; frEl.hidden = mc;
+  try{ history.replaceState(null, "", mc ? location.pathname : "#free-response"); }catch(e){}
+  focusTop();
+}
+if (HAS_FR){
+  document.getElementById("tab-mc").onclick = function(){ setTab("mc"); };
+  document.getElementById("tab-fr").onclick = function(){ setTab("fr"); };
+}
+
+/* keyboard */
+document.addEventListener("keydown", function(e){
+  if (e.metaKey || e.ctrlKey || e.altKey) return;
+  var tag = (e.target.tagName || "").toLowerCase();
+  if (tag === "textarea" || tag === "input") return;
+  if (mcEl.hidden || S.phase !== "run") return;
+  var n = S.order[S.pos], q = BY[n];
+  if (/^[1-9]$/.test(e.key)){ var k = +e.key - 1; if (k < q.options.length){ e.preventDefault(); pick(S.copt[n][k]); } }
+  else if (e.key === "ArrowRight"){ e.preventDefault(); go(S.pos + 1); }
+  else if (e.key === "ArrowLeft"){ e.preventDefault(); go(S.pos - 1); }
+  else if (e.key === "Enter" && tag !== "button" && tag !== "a"){ e.preventDefault(); if (S.pos < S.order.length - 1) go(S.pos + 1); else finish(); }
+});
+
+/* theme */
+var root = document.documentElement, tb = document.getElementById("theme-btn");
+function syncTheme(){ var dark = root.getAttribute("data-theme") === "dark"; tb.textContent = dark ? "Light mode" : "Dark mode"; tb.setAttribute("aria-pressed", String(dark)); }
+tb.onclick = function(){ var dark = root.getAttribute("data-theme") !== "dark"; root.setAttribute("data-theme", dark ? "dark" : "light"); try{ localStorage.setItem("apah.theme", dark ? "dark" : "light"); }catch(e){} syncTheme(); };
+syncTheme();
+
+render(); renderFR();
+if (HAS_FR && location.hash === "#free-response") setTab("fr");
+})();
+</script>
+</body>
+</html>
