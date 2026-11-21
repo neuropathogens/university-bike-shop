@@ -53,3 +53,8 @@ Every wrong choice must have a note in `ex.others`; the builder refuses a quiz o
   AAQ for Research Methods, self-scored in points) and each guide's section checks. Parsed from the
   series' LaTeX (`source/`, from `ap-psych-study-series.zip`); choices are in source order, as in the PDFs.
   Explanations: `ex_<file>.py`. `STIM_COUNTS` says how many items follow each data display.
+- `ap_chem` — AP Chemistry Unit 5 Practice Sets A and B (`tests/5a`, `tests/5b`): transcribed from the PDFs
+  into TeX with mhchem (`\ce{}`); `checks.py` asserts every computed answer and every computed distractor.
+  Long reaction equations are shown as display math so they never overflow a phone. The two energy-profile
+  figures are crops of the PDF pages (`public/study/ap/ap-chemistry/tests/fig/`), rendered with
+  `sips --resampleWidth 1800` from single pages split out with pypdf.
