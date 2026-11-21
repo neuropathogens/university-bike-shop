@@ -1,4 +1,9 @@
 {
+ "/study/act/english/act-english-1-conventions.pdf": "/study/act/english/tests/1/",
+ "/study/act/english/act-english-2-production-of-writing.pdf": "/study/act/english/tests/2/",
+ "/study/act/english/act-english-3-knowledge-of-language.pdf": "/study/act/english/tests/3/",
+ "/study/act/english/act-english-4-practice-section.pdf": "/study/act/english/tests/practice-section/",
+ "/study/act/math/act-math-00-overview.pdf": "/study/act/math/tests/0/",
  "/study/act/math/act-math-01-number-quantity.pdf": "/study/act/math/tests/1/",
  "/study/act/math/act-math-02-algebra.pdf": "/study/act/math/tests/2/",
  "/study/act/math/act-math-03-functions.pdf": "/study/act/math/tests/3/",
@@ -6,6 +11,7 @@
  "/study/act/math/act-math-05-statistics-probability.pdf": "/study/act/math/tests/5/",
  "/study/act/math/act-math-06-essential-skills.pdf": "/study/act/math/tests/6/",
  "/study/act/math/act-math-07-modeling.pdf": "/study/act/math/tests/7/",
+ "/study/act/math/act-math-08-practice-test.pdf": "/study/act/math/tests/practice-test/",
  "/study/ap/ap-chemistry/unit-5/ap-chem-unit-5-2-practice-set-a.pdf": "/study/ap/ap-chemistry/tests/5a/",
  "/study/ap/ap-chemistry/unit-5/ap-chem-unit-5-3-practice-set-b.pdf": "/study/ap/ap-chemistry/tests/5b/",
  "/study/ap/ap-psychology/ap-psych-00-research-methods-guide.pdf": "/study/ap/ap-psychology/tests/research-methods-checks/",

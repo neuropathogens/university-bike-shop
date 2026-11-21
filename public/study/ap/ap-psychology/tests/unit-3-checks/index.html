@@ -20,10 +20,10 @@
 @font-face{font-family:"Latin Modern Mono";font-style:normal;font-weight:400 500;font-display:swap;src:url("/study/ap/ap-art-history/fonts/LM-mono.woff2") format("woff2")}
 @font-face{font-family:"Latin Modern Mono";font-style:normal;font-weight:600 700;font-display:swap;src:url("/study/ap/ap-art-history/fonts/LM-mono-bold.woff2") format("woff2")}
 
-:root{--bg:#fff;--fg:#000;--muted:#4a4a4a;--line:#c9c9c9;--plate:#f5f5f3;--link:#00008b;--ok:#1d5e20;--bad:#9b1c1c;
+:root{--bg:#fff;--fg:#000;--muted:#4a4a4a;--line:#c9c9c9;--plate:#f5f5f3;--hl:#fbe9a6;--link:#00008b;--ok:#1d5e20;--bad:#9b1c1c;
   --serif:"Latin Modern","Computer Modern Serif","CMU Serif",Georgia,serif;--mono:"Latin Modern Mono","SFMono-Regular",Menlo,Consolas,monospace;
   --gutter:clamp(16px,4vw,40px);color-scheme:light}
-:root[data-theme=dark]{--bg:#111110;--fg:#ecebe6;--muted:#a3a29c;--line:#34342f;--plate:#1b1b19;--link:#9db4ff;--ok:#8fd394;--bad:#ff9b9b;color-scheme:dark}
+:root[data-theme=dark]{--bg:#111110;--fg:#ecebe6;--muted:#a3a29c;--line:#34342f;--plate:#1b1b19;--hl:#4d4320;--link:#9db4ff;--ok:#8fd394;--bad:#ff9b9b;color-scheme:dark}
 *{box-sizing:border-box}
 html{background:var(--bg);scroll-padding-top:16px}
 body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--serif);font-size:17px;line-height:1.5;font-kerning:normal;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
@@ -210,10 +210,14 @@ a{color:var(--link);text-underline-offset:3px;text-decoration-thickness:.5px}
 .q-prompt p+p{margin-top:8px}
 .q-ask{margin:10px 0 0!important;font-size:16px;font-style:italic;color:var(--muted)}
 .blank{display:inline-block;width:3.4em;height:1em;margin:0 .12em;border-bottom:1.5px solid currentColor;vertical-align:-.12em}
-.stim{margin:0 0 16px;padding:12px 16px;border:.5px solid var(--fg);background:var(--plate);font-size:16.5px;line-height:1.55;max-height:60vh;overflow:auto}
+.stim{position:relative;margin:0 0 16px;padding:12px 16px;border:.5px solid var(--fg);background:var(--plate);font-size:16.5px;line-height:1.55;max-height:60vh;overflow:auto}
 .stim-h{margin:0 0 6px!important;font-size:14px;color:var(--muted)}
 .stim p{margin:0 0 8px}
 .stim p:last-child{margin-bottom:0}
+u.ul{text-decoration-thickness:1px;text-underline-offset:3px}
+.qn{display:inline-block;min-width:1.4em;padding:0 .2em;margin:0 .15em;border:.5px solid var(--fg);font:600 11.5px/1.4 system-ui,-apple-system,sans-serif;text-align:center;vertical-align:.12em;font-variant-numeric:tabular-nums}
+.stim .qn[data-cur]{background:var(--fg);color:var(--bg)}
+.stim u[data-cur]{background:var(--hl);box-shadow:0 0 0 2px var(--hl)}
 .fig{margin:0 0 14px;text-align:center}
 .fig img{max-width:100%;height:auto;background:#fff}
 :root[data-theme=dark] .fig img{filter:invert(.92) hue-rotate(180deg)}
@@ -252,7 +256,7 @@ a{color:var(--link);text-underline-offset:3px;text-decoration-thickness:.5px}
 var DATA = JSON.parse(document.getElementById("data").textContent);
 var META = DATA.meta, MC = DATA.mc, FR = DATA.fr || [], TOP = DATA.topics || {}, SEC = DATA.sections || {}, STIM = DATA.stims || {}, BY = {};
 MC.forEach(function(q){ BY[q.n] = q; });
-var KEY = META.key, FKEY = META.key + ".fr", HAS_FR = FR.length > 0;
+var KEY = META.key, FKEY = META.fkey || META.key + ".fr", HAS_FR = FR.length > 0;
 
 function load(k, d){ try{ var v = localStorage.getItem(k); return v ? JSON.parse(v) : d; }catch(e){ return d; } }
 function save(k, v){ try{ localStorage.setItem(k, JSON.stringify(v)); }catch(e){} }
@@ -287,11 +291,12 @@ function topicShort(t){ return (META.topicPrefix || "") + t; }
 function topicLabel(t){ return topicShort(t) + ", " + TOP[t].name; }
 function guideLink(t, short){
   var g = TOP[t], txt = short ? g.name : topicLabel(t);
-  return (META.guide && g.page) ? '<a href="' + META.guide + "#page=" + g.page + '">' + txt + "</a>" : txt;
+  var href = g.url ? g.url : (META.guide && g.page ? META.guide + "#page=" + g.page : "");
+  return href ? '<a href="' + href + '">' + txt + "</a>" : txt;
 }
 function topicLinks(ts){
   ts = ts.filter(function(t){ return TOP[t]; });
-  if (!ts.length || !META.guide) return "";
+  if (!ts.length || !(META.guide || TOP[ts[0]].url)) return "";
   return '<p class="links">Review ' + ts.map(function(t){ return guideLink(t); }).join(" &middot; ") + " in " + META.guideName + "</p>";
 }
 function explain(q, picked){
@@ -305,7 +310,14 @@ function explain(q, picked){
   return h;
 }
 function table(q){ return q.table ? '<div class="bt-wrap">' + q.table + "</div>" : ""; }
-function stim(q){ var s = q.stim && STIM[q.stim]; return s ? '<div class="stim">' + (s.title ? '<p class="stim-h sc">' + s.title + "</p>" : "") + s.html + "</div>" : ""; }
+function stim(q){
+  var s = q.stim && STIM[q.stim]; if (!s) return "";
+  var html = s.html.split(' data-q="' + q.n + '"').join(' data-q="' + q.n + '" data-cur');
+  return '<div class="stim">' + (s.title ? '<p class="stim-h sc">' + s.title + "</p>" : "") + html + "</div>";
+}
+function scrollStim(root){
+  root.querySelectorAll(".stim").forEach(function(box){ var c = box.querySelector("[data-cur]"); if (c && box.scrollHeight > box.clientHeight) box.scrollTop = Math.max(0, c.offsetTop - box.clientHeight / 3); });
+}
 function promptHtml(q){
   return stim(q) + (q.fig || "") + '<div class="q-prompt"><p>' + q.prompt + "</p>" + (q.ask || META.ask ? '<p class="q-ask">' + (q.ask || META.ask) + "</p>" : "") + "</div>" + table(q);
 }
@@ -381,6 +393,7 @@ function renderRun(){
     '<p class="keys"><span class="kbd">1</span>&ndash;<span class="kbd">' + q.options.length + '</span> answer &nbsp; <span class="kbd">&larr;</span> <span class="kbd">&rarr;</span> move &nbsp; <span class="kbd">Enter</span> next</p>' +
     '<p class="restart-line"><a href="#" id="restart">Start over</a> <span class="muted">&middot; progress is saved in this browser</span></p>';
 
+  scrollStim(mcEl);
   mcEl.querySelectorAll("[data-go]").forEach(function(b){ b.onclick = function(){ go(+b.dataset.go); }; });
   mcEl.querySelectorAll("[data-opt]").forEach(function(b){ b.onclick = function(){ pick(+b.dataset.opt); }; });
   bind("prev", function(){ go(S.pos - 1); });
@@ -462,7 +475,7 @@ function renderResults(){
   var trows = Object.keys(TOP).filter(function(t){ return tally[t]; }).map(function(t){
     var x = tally[t], miss = x.total - x.right;
     return "<tr><th scope=\"row\">" + topicShort(t) + "</th><td>" + x.right + " / " + x.total + "</td><td>" + guideLink(t, true) +
-      (miss >= 2 ? ' <span class="flag">&middot; reread this section</span>' : "") + "</td></tr>";
+      ((META.flag ? x.right < META.flag.below * x.total : miss >= 2) ? ' <span class="flag">&middot; ' + (META.flag ? META.flag.text : "reread this section") + "</span>" : "") + "</td></tr>";
   }).join("");
   mcEl.innerHTML =
     '<div class="results">' +

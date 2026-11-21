@@ -1,0 +1,627 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light">
+<script>try{document.documentElement.setAttribute("data-theme",localStorage.getItem("apah.theme")==="dark"?"dark":"light")}catch(e){document.documentElement.setAttribute("data-theme","light")}</script>
+<title>ACT English Full-Length Practice Section</title>
+<meta name="description" content="ACT English full-length practice section: five passages and 50 questions with a worked explanation for every answer and a score by reporting category.">
+<link rel="icon" href="/favicon.ico" sizes="48x48" type="image/x-icon">
+<link rel="icon" href="/icon.svg" sizes="any" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-icon.png" sizes="180x180">
+<link rel="preload" href="/study/ap/ap-art-history/fonts/LM-regular.woff2" as="font" type="font/woff2" crossorigin>
+
+<style>
+@font-face{font-family:"Latin Modern";font-style:normal;font-weight:400;font-display:swap;src:url("/study/ap/ap-art-history/fonts/LM-regular.woff2") format("woff2")}
+@font-face{font-family:"Latin Modern";font-style:italic;font-weight:400;font-display:swap;src:url("/study/ap/ap-art-history/fonts/LM-italic.woff2") format("woff2")}
+@font-face{font-family:"Latin Modern";font-style:normal;font-weight:600 700;font-display:swap;src:url("/study/ap/ap-art-history/fonts/LM-bold.woff2") format("woff2")}
+@font-face{font-family:"Latin Modern";font-style:italic;font-weight:600 700;font-display:swap;src:url("/study/ap/ap-art-history/fonts/LM-bold-italic.woff2") format("woff2")}
+@font-face{font-family:"Latin Modern Mono";font-style:normal;font-weight:400 500;font-display:swap;src:url("/study/ap/ap-art-history/fonts/LM-mono.woff2") format("woff2")}
+@font-face{font-family:"Latin Modern Mono";font-style:normal;font-weight:600 700;font-display:swap;src:url("/study/ap/ap-art-history/fonts/LM-mono-bold.woff2") format("woff2")}
+
+:root{--bg:#fff;--fg:#000;--muted:#4a4a4a;--line:#c9c9c9;--plate:#f5f5f3;--hl:#fbe9a6;--link:#00008b;--ok:#1d5e20;--bad:#9b1c1c;
+  --serif:"Latin Modern","Computer Modern Serif","CMU Serif",Georgia,serif;--mono:"Latin Modern Mono","SFMono-Regular",Menlo,Consolas,monospace;
+  --gutter:clamp(16px,4vw,40px);color-scheme:light}
+:root[data-theme=dark]{--bg:#111110;--fg:#ecebe6;--muted:#a3a29c;--line:#34342f;--plate:#1b1b19;--hl:#4d4320;--link:#9db4ff;--ok:#8fd394;--bad:#ff9b9b;color-scheme:dark}
+*{box-sizing:border-box}
+html{background:var(--bg);scroll-padding-top:16px}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--serif);font-size:17px;line-height:1.5;font-kerning:normal;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+button,input,textarea{font:inherit;color:inherit}
+button{cursor:pointer}
+button:disabled{cursor:default}
+a{color:var(--link);text-underline-offset:3px;text-decoration-thickness:.5px}
+:focus-visible{outline:2px solid var(--link);outline-offset:2px}
+[hidden]{display:none!important}
+.sc{font-variant:small-caps;text-transform:lowercase;letter-spacing:.04em}
+.muted{color:var(--muted)}
+.katex{font-size:1.04em;text-rendering:auto}
+.katex-display{margin:.7em 0;overflow-x:auto;overflow-y:hidden;padding:2px 0}
+
+.runhead{display:flex;flex-wrap:wrap;justify-content:space-between;gap:4px 16px;max-width:1480px;margin:0 auto;padding:14px var(--gutter) 6px;font-size:14px;font-style:italic;color:var(--muted)}
+.runhead a{text-decoration:none}
+.runhead a:hover{text-decoration:underline}
+.runhead-actions{display:flex;flex-wrap:wrap;gap:4px 18px}
+.theme-btn{background:none;border:0;padding:0;font:inherit;font-style:italic;color:var(--link)}
+.theme-btn:hover{text-decoration:underline}
+.rule{max-width:1480px;margin:0 auto;padding-inline:var(--gutter)}
+.rule hr{margin:0;border:0;border-top:.5px solid var(--fg)}
+
+.wrap{max-width:860px;margin:0 auto;padding:0 var(--gutter) 80px}
+.title{text-align:center;padding:34px 0 22px}
+.title h1{margin:0;text-wrap:balance;font-size:clamp(32px,6vw,46px);line-height:1.1;font-weight:700}
+.title .sub{margin:8px 0 0;font-size:18px;font-variant:small-caps;letter-spacing:.03em}
+.title .meta{margin:4px 0 0;font-style:italic;color:var(--muted)}
+
+.tabs{display:flex;justify-content:center;gap:0;margin:0 0 26px;border-bottom:.5px solid var(--fg)}
+.tab{background:none;border:0;border-bottom:2.5px solid transparent;padding:8px 18px;margin-bottom:-1px;font-size:17px;color:var(--muted)}
+.tab[aria-selected=true]{color:var(--fg);border-bottom-color:var(--fg);font-weight:700}
+.tab:hover{color:var(--fg)}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:40px;padding:0 16px;border:1px solid var(--fg);background:var(--bg);font-family:var(--mono);font-size:14.5px;white-space:nowrap}
+.btn:hover:not(:disabled){background:var(--plate)}
+.btn:disabled{opacity:.35}
+.btn--solid{background:var(--fg);color:var(--bg)}
+.btn--solid:hover:not(:disabled){background:var(--fg);opacity:.85}
+.btn--lg{min-height:48px;font-size:15.5px;padding:0 22px}
+.kbd{display:inline-grid;place-items:center;min-width:22px;height:22px;padding:0 4px;border:1px solid currentColor;font-family:var(--mono);font-size:12px;opacity:.8}
+
+/* booktabs tables */
+.bt{border-collapse:collapse;margin:0 auto;font-variant-numeric:tabular-nums}
+.bt th,.bt td{padding:4px 12px;text-align:center;font-weight:400}
+.bt th[scope=row],.bt thead th:first-child{text-align:left}
+.bt thead tr{border-top:1px solid var(--fg);border-bottom:.5px solid var(--fg)}
+.bt tbody tr:last-child{border-bottom:1px solid var(--fg)}
+.bt-wrap{overflow-x:auto;margin:0 0 16px}
+
+/* setup */
+.setup{border-bottom:1.5px solid var(--fg);padding:4px 0 22px;display:grid;gap:18px}
+.setup h2,.results h2,.fr h2{margin:0;font-size:20px}
+.choice-row{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.choice{display:flex;flex-direction:column;align-items:flex-start;gap:2px;padding:12px 14px;border:1px solid var(--fg);background:var(--bg);text-align:left}
+.choice b{font-size:17px}
+.choice span{font-size:14.5px;font-style:italic;color:var(--muted)}
+.choice[aria-pressed=true]{background:var(--fg);color:var(--bg)}
+.choice[aria-pressed=true] span{color:var(--bg);opacity:.8}
+.checks{display:flex;flex-wrap:wrap;gap:8px 22px}
+.checks label{display:inline-flex;align-items:center;gap:8px;cursor:pointer}
+.checks input{width:17px;height:17px;margin:0;accent-color:var(--fg)}
+.setup-actions{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.note{margin:0;font-size:15px;color:var(--muted);font-style:italic}
+
+/* run */
+.bar{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:4px 16px;font-size:15px;color:var(--muted)}
+.track{height:3px;background:var(--line);margin:8px 0 14px}
+.track span{display:block;height:100%;background:var(--fg);transition:width .2s ease}
+.nav{display:grid;grid-template-columns:repeat(auto-fill,minmax(34px,1fr));gap:5px;margin:0 0 22px}
+.nav button{height:32px;padding:0;border:1px solid var(--line);background:var(--bg);font-family:var(--serif);font-size:14px;font-variant-numeric:tabular-nums}
+.nav button:hover{border-color:var(--fg)}
+.nav .is-answered{background:var(--plate);border-color:var(--fg)}
+.nav .is-right{background:var(--fg);color:var(--bg);border-color:var(--fg)}
+.nav .is-wrong{border:1.5px dashed var(--bad);color:var(--bad)}
+.nav .is-current{outline:2px solid var(--fg);outline-offset:1px}
+.q{border-top:1.5px solid var(--fg);padding-top:16px}
+.q-eyebrow{margin:0 0 6px;font-size:14px;color:var(--muted)}
+.q-prompt{margin:0 0 14px;font-size:20px;line-height:1.45;font-weight:400}
+.opts{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.opt{display:flex;align-items:center;gap:12px;width:100%;min-height:52px;padding:10px 14px;border:1px solid var(--fg);background:var(--bg);text-align:left;font-size:16.5px;line-height:1.4}
+.opt:hover:not(:disabled){background:var(--plate)}
+.opt .kbd{flex:none}
+.opt .mark{margin-left:auto;padding-left:6px;font-family:var(--mono);font-size:14px;white-space:nowrap}
+.opt.is-picked{border-width:2px;padding:9px 13px;background:var(--plate)}
+.opt.is-right{background:var(--fg);color:var(--bg);border-color:var(--fg)}
+.opt.is-wrong{border:1.5px dashed var(--bad);color:var(--bad);text-decoration:line-through;text-decoration-thickness:1px}
+.opt.is-wrong .mark,.opt.is-wrong .kbd{text-decoration:none}
+.opt.is-dim{opacity:.5}
+.fb{margin:14px 0 0;padding:12px 16px;border:.5px solid var(--fg);border-left:3px solid var(--ok)}
+.fb.is-wrong{border-left-color:var(--bad)}
+.fb p{margin:0}
+.fb .verdict{font-weight:700;margin-bottom:4px}
+.why p{margin:0 0 6px}
+.steps{margin:2px 0 8px;padding-left:22px}
+.steps li{margin:4px 0;padding-left:2px}
+.why .why-h{margin:10px 0 2px;font-size:14.5px;color:var(--muted)}
+.others{margin:0 0 4px;padding-left:20px}
+.others li{margin:5px 0}
+.others .tag{margin-left:6px;font-family:var(--mono);font-size:12.5px;color:var(--bad);white-space:nowrap}
+.links{margin-top:6px;font-size:15px}
+.step{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:10px;margin-top:20px}
+.step-right{display:flex;flex-wrap:wrap;gap:8px}
+.confirm{margin-top:14px;padding:12px 16px;border:1px solid var(--fg);display:flex;flex-wrap:wrap;align-items:center;gap:10px}
+.confirm p{margin:0;flex:1 1 220px}
+.keys{margin:18px 0 0;font-size:13.5px;color:var(--muted);text-align:center}
+.restart-line{margin:10px 0 0;font-size:14.5px;text-align:center}
+
+/* results */
+.results{padding-top:4px}
+.score{text-align:center;padding:10px 0 18px}
+.score-big{margin:0;font-size:clamp(48px,10vw,72px);font-weight:700;line-height:1;font-variant-numeric:tabular-nums}
+.score p{margin:6px 0 0}
+.res-actions{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin:0 0 22px}
+.res-filter{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:6px;border-bottom:1.5px solid var(--fg);padding-bottom:6px}
+.res-list{list-style:none;margin:0;padding:0}
+.res-list>li{border-bottom:.5px solid var(--line)}
+.res-list>li:last-child{border-bottom:1.5px solid var(--fg)}
+.res-list details{padding:10px 0}
+.res-list summary{display:grid;grid-template-columns:34px 22px minmax(0,1fr);gap:8px;cursor:pointer;list-style:none}
+.res-list summary::-webkit-details-marker{display:none}
+.res-n{font-weight:700;font-variant-numeric:tabular-nums}
+.res-ok{color:var(--ok);font-weight:700}
+.res-bad{color:var(--bad);font-weight:700}
+.res-body{padding:8px 0 4px 64px;font-size:15.5px}
+.res-body p{margin:0 0 4px}
+.res-body .bt-wrap{margin:4px 0 8px}
+.topics{margin:0 0 26px}
+.topics h2{margin:0 0 8px}
+.topics .bt{margin:0;width:100%}
+.topics .bt td:last-child,.topics .bt th:last-child{text-align:left}
+.topics .flag{color:var(--bad);font-style:italic}
+.composite{margin:0 0 26px;padding:12px 16px;border:.5px solid var(--fg);border-left:3px solid var(--fg)}
+.composite p{margin:0}
+.composite p+p{margin-top:4px}
+
+/* free response */
+.fr-intro{margin:0 0 6px;font-style:italic;color:var(--muted)}
+.fr{border-top:1.5px solid var(--fg);padding:18px 0 26px}
+.fr h2 small{font-weight:400;font-style:italic;color:var(--muted);font-size:15px;margin-left:6px}
+.fr-stem{margin:10px 0 6px;text-align:justify;hyphens:auto;-webkit-hyphens:auto}
+.part{margin:18px 0 0}
+.part-prompt{margin:0 0 8px}
+.part-prompt b{margin-right:4px}
+.part textarea{width:100%;min-height:150px;padding:12px 14px;border:1px solid var(--fg);border-radius:0;background:var(--bg);font-family:var(--serif);font-size:16.5px;line-height:1.55;resize:vertical}
+.part-meta{margin-top:4px;font-size:14px;color:var(--muted)}
+.sol{margin-top:12px;padding:12px 18px;border:.5px solid var(--fg)}
+.sol h3{margin:0 0 4px;font-size:15px}
+.sol p{margin:0 0 10px}
+.sol .crit{display:grid;grid-template-columns:28px minmax(0,1fr);gap:2px 8px;margin:0 0 10px;font-size:15.5px}
+.sol .crit dt{font-weight:700}
+.sol .crit dd{margin:0}
+.mark-row{display:flex;flex-wrap:wrap;align-items:center;gap:8px;font-size:15px}
+.seg{display:inline-flex}
+.seg button{min-width:44px;min-height:36px;padding:0 10px;border:1px solid var(--fg);background:var(--bg);font-family:var(--mono);font-size:14px}
+.seg button+button{border-left:0}
+.seg button[aria-pressed=true]{background:var(--fg);color:var(--bg)}
+.fr-actions{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:10px;margin-top:16px}
+.fr-score{font-size:16px}
+.fr-score b{font-variant-numeric:tabular-nums}
+.scale{margin-top:14px}
+.scale summary{cursor:pointer;font-size:15px;color:var(--muted);font-style:italic}
+.scale .bt{margin:8px 0 0}
+.scale .bt td:last-child,.scale .bt th:last-child{text-align:left}
+.foot{margin-top:40px;padding-top:12px;border-top:.5px solid var(--line);font-size:14px;color:var(--muted)}
+
+@media (max-width:640px){
+  .runhead-title{display:none}
+  .runhead-actions{width:100%;justify-content:space-between}
+  .title{padding:22px 0 16px}
+  .choice-row{grid-template-columns:1fr}
+  .q-prompt{font-size:18.5px}
+  .res-body{padding-left:0}
+  .keys{display:none}
+  .fr-stem{text-align:left}
+  .bt th,.bt td{padding:4px 7px}
+  .sol{padding:10px 12px}
+  .katex-display>.katex{font-size:.94em}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+@media print{.runhead,.rule,.tabs,.nav,.step,.keys,.restart-line,.res-actions{display:none!important}}
+/* generic quiz additions */
+.q-prompt p{margin:0}
+.q-prompt p+p{margin-top:8px}
+.q-ask{margin:10px 0 0!important;font-size:16px;font-style:italic;color:var(--muted)}
+.blank{display:inline-block;width:3.4em;height:1em;margin:0 .12em;border-bottom:1.5px solid currentColor;vertical-align:-.12em}
+.stim{position:relative;margin:0 0 16px;padding:12px 16px;border:.5px solid var(--fg);background:var(--plate);font-size:16.5px;line-height:1.55;max-height:60vh;overflow:auto}
+.stim-h{margin:0 0 6px!important;font-size:14px;color:var(--muted)}
+.stim p{margin:0 0 8px}
+.stim p:last-child{margin-bottom:0}
+u.ul{text-decoration-thickness:1px;text-underline-offset:3px}
+.qn{display:inline-block;min-width:1.4em;padding:0 .2em;margin:0 .15em;border:.5px solid var(--fg);font:600 11.5px/1.4 system-ui,-apple-system,sans-serif;text-align:center;vertical-align:.12em;font-variant-numeric:tabular-nums}
+.stim .qn[data-cur]{background:var(--fg);color:var(--bg)}
+.stim u[data-cur]{background:var(--hl);box-shadow:0 0 0 2px var(--hl)}
+.fig{margin:0 0 14px;text-align:center}
+.fig img{max-width:100%;height:auto;background:#fff}
+:root[data-theme=dark] .fig img{filter:invert(.92) hue-rotate(180deg)}
+.fig figcaption{font-size:14px;color:var(--muted);font-style:italic}
+.target{margin:4px 0 0;font-style:italic}
+.res-sum{display:block}
+.opt>span:nth-child(2){flex:1 1 auto;min-width:0;overflow-wrap:anywhere;-webkit-hyphens:auto;hyphens:auto}
+@media (max-width:640px){.opt .mark{white-space:normal;text-align:right;max-width:6.2em;line-height:1.25}}
+.sol>div{margin:0 0 10px}
+.crit-pts{margin:0 0 10px;font-size:15.5px}
+.crit-pts p{margin:0 0 4px}
+.crit-pts ul{margin:0 0 4px;padding-left:20px}
+</style>
+</head>
+<body>
+<div class="runhead"><span class="runhead-title">ACT English &middot; Full-Length Practice Section</span><span class="runhead-actions"><a href="/study/#act-english">&larr;&nbsp;Study Library</a><a href="/study/act/english/act-english-4-practice-section.pdf">PDF version</a><button type="button" class="theme-btn" id="theme-btn">Dark mode</button></span></div>
+<div class="rule"><hr></div>
+
+<main class="wrap">
+  <header class="title">
+    <h1>Full-Length <span style="white-space:nowrap">Practice Section</span></h1>
+    <p class="sub">ACT English &middot; Part 4</p>
+    <p class="meta">50 questions &middot; 35 minutes &middot; five passages</p>
+  </header>
+
+  <section id="mc"></section>
+  <section id="fr" role="tabpanel" aria-labelledby="tab-fr" hidden></section>
+
+  <p class="foot">From <a href="/study/act/english/act-english-4-practice-section.pdf"><i>ACT English Part 4: Full-Length Practice Section</i></a> (PDF). Answers and rule tags are the part&rsquo;s own key; the explanations expand on it with the rule, how it applies to the sentence, and why each wrong choice is wrong. Choices stay in the test&rsquo;s order (NO CHANGE first). Your answers are saved only in this browser.</p>
+</main>
+
+<script id="data" type="application/json">{"meta":{"key":"study.act-english.practice-section.v1","setupNote":"Set a 35-minute timer and use Exam mode for a real simulation (about 42 seconds per question). Answer every question: there is no penalty for guessing.","topicPrefix":"Part ","topicCol":"Review","guideCol":"Reporting category","byTopic":"By reporting category","topicNote":"Tally your misses by category, then reread that part of the series and redo the items you missed. ACT converts raw scores to the 1&ndash;36 scale with a different table for each form, so treat the raw score as a diagnostic.","guide":"/study/act/english/act-english-0-overview.pdf","guideName":"its part of the series","flag":{"below":0.7,"text":"below 70%: review this part"}},"topics":{"2":{"name":"Production of Writing","page":1,"url":"/study/act/english/act-english-2-production-of-writing.pdf"},"3":{"name":"Knowledge of Language","page":1,"url":"/study/act/english/act-english-3-knowledge-of-language.pdf"},"1":{"name":"Conventions of Standard English","page":1,"url":"/study/act/english/act-english-1-conventions.pdf"}},"sections":{"1":"Passage I: The Woman Who Mapped the Ocean Floor","2":"Passage II: Learning the Fold","3":"Passage III: Boston’s Great Molasses Flood","4":"Passage IV: Old Violins, New Ears","5":"Passage V: Fix It, Don’t Toss It"},"stims":{"p1":{"title":"The Woman Who Mapped the Ocean Floor","html":"<p>In 1948, Marie Tharp joined a team of Columbia University scientists who were studying the ocean floor. She held degrees in geology and mathematics, but <u class=\"ul\" data-q=\"1\">women, at the time<\/u><span class=\"qn\" data-q=\"1\">1<\/span> were not permitted aboard the research ships that collected data at sea. So Tharp worked on shore, turning columns of sonar readings into detailed profiles of the seafloor.<\/p><p>The work was slow and painstaking. Each sounding recorded the depth of the water at a single point, and Tharp had to plot thousands of them by hand. <u class=\"ul\" data-q=\"2\">Additionally,<\/u><span class=\"qn\" data-q=\"2\">2<\/span> patterns began to emerge from the data. In 1952, while studying profiles of the North Atlantic, she noticed a deep V-shaped notch running along the crest of the Mid-Atlantic Ridge. She <u class=\"ul\" data-q=\"3\">figured out and concluded<\/u><span class=\"qn\" data-q=\"3\">3<\/span> that the notch was a rift valley, a place where the seafloor was being pulled apart.<\/p><p>Her colleague Bruce Heezen at first dismissed the idea as “girl talk.” A rift valley would support the theory of continental drift, which most American geologists at the time <u class=\"ul\" data-q=\"4\">rejects<\/u><span class=\"qn\" data-q=\"4\">4<\/span>. Tharp, however, <u class=\"ul\" data-q=\"5\">was persistent and kept insisting<\/u><span class=\"qn\" data-q=\"5\">5<\/span>. When Heezen later compared her profiles with records of undersea earthquakes, he found that the earthquakes clustered along the same narrow line.<span class=\"qn\" data-q=\"6\">6<\/span><\/p><p>Over the next two decades, Tharp and Heezen mapped the floors of every ocean. Their 1977 <i>World Ocean Floor<\/i> map, painted by the Austrian artist Heinrich Berann, <u class=\"ul\" data-q=\"7\">showing<\/u><span class=\"qn\" data-q=\"7\">7<\/span> a planet wrapped in a 40,000-mile chain of underwater mountains. <u class=\"ul\" data-q=\"8\">The map is still sold in some museum gift shops.<\/u><span class=\"qn\" data-q=\"8\">8<\/span><\/p><p>Today, Tharp is recognized as one of the scientists whose work helped establish the theory of plate tectonics. <u class=\"ul\" data-q=\"9\">Tharps<\/u><span class=\"qn\" data-q=\"9\">9<\/span> maps, once dismissed as guesswork, now hang in classrooms around the world.<span class=\"qn\" data-q=\"10\">10<\/span><\/p>"},"p2":{"title":"Learning the Fold","html":"<p>Every Lunar New Year, my grandmother turns her kitchen table into an assembly line. Bowls of filling, stacks of round wrappers, and a dish of water for sealing the edges <u class=\"ul\" data-q=\"11\">covers<\/u><span class=\"qn\" data-q=\"11\">11<\/span> nearly every inch of the surface. For most of my childhood, my job was simple: I carried the finished dumplings to the freezer on a floured baking sheet.<\/p><p>When I turned thirteen, my grandmother decided I was ready to fold. She showed me how to place a spoonful of filling in the center of a wrapper, <u class=\"ul\" data-q=\"12\">wet the edge with a fingertip, and pleating<\/u><span class=\"qn\" data-q=\"12\">12<\/span> the dough into a crescent. Her fingers moved so <u class=\"ul\" data-q=\"13\">quick<\/u><span class=\"qn\" data-q=\"13\">13<\/span> that the pleats seemed to appear on their own. <u class=\"ul\" data-q=\"14\">Mine were not as good.<\/u><span class=\"qn\" data-q=\"14\">14<\/span><\/p><p><b>[1]<\/b> I expected my grandmother to take over. <b>[2]<\/b> Instead, she slid another wrapper across the table and said, “Again.” <b>[3]<\/b> By the end of the afternoon, my pleats were still uneven, but my dumplings no longer fell apart. <b>[4]<\/b> We folded side by side for three <u class=\"ul\" data-q=\"15\">hours, she<\/u><span class=\"qn\" data-q=\"15\">15<\/span> corrected my grip whenever my thumb slipped.<span class=\"qn\" data-q=\"16\">16<\/span><\/p><p><u class=\"ul\" data-q=\"17\">Nevertheless,<\/u><span class=\"qn\" data-q=\"17\">17<\/span> folding dumplings has become my favorite part of the holiday. I have learned that the pleats are not only decorative; they also keep the filling <u class=\"ul\" data-q=\"18\">sealed inside<\/u><span class=\"qn\" data-q=\"18\">18<\/span> as the dumplings boil. My grandmother, who learned to fold from her own mother in a village outside Tianjin, <u class=\"ul\" data-q=\"19\">says, that<\/u><span class=\"qn\" data-q=\"19\">19<\/span> the hands remember what the mind forgets. I used to think this was just a saying. Now I <u class=\"ul\" data-q=\"20\">doubt<\/u><span class=\"qn\" data-q=\"20\">20<\/span> she is right.<\/p>"},"p3":{"title":"Boston’s Great Molasses Flood","html":"<p>On the afternoon of January 15, 1919, people in Boston’s North End heard a sharp rattling like machine-gun fire. Rivets were bursting from the side of a fifty-foot-tall steel tank that held more than two million gallons of molasses. Within seconds, the tank split open, and a wave of syrup as high as twenty-five feet <u class=\"ul\" data-q=\"21\">roars<\/u><span class=\"qn\" data-q=\"21\">21<\/span> through the neighborhood at an estimated thirty-five miles per hour.<\/p><p>The flood killed twenty-one people and injured about 150 more. It crushed buildings, <u class=\"ul\" data-q=\"22\">bending<\/u><span class=\"qn\" data-q=\"22\">22<\/span> the steel supports of an elevated railway, and trapped horses in the thick, sticky mass. Rescue efforts were slow. <u class=\"ul\" data-q=\"23\">Similarly,<\/u><span class=\"qn\" data-q=\"23\">23<\/span> as the evening air cooled, the molasses thickened, making it nearly impossible for rescuers to wade through it.<\/p><p>Investigators soon discovered that the tank had been poorly built. It had leaked from the day it was first filled, and rather than repair it, the company painted it brown so the leaks would be <u class=\"ul\" data-q=\"24\">less noticeable and harder to see<\/u><span class=\"qn\" data-q=\"24\">24<\/span>. The man who had overseen its construction was not an engineer and could not read a blueprint.<span class=\"qn\" data-q=\"25\">25<\/span><\/p><p>After a lengthy court battle, the tank’s owner, the United States Industrial Alcohol Company, <u class=\"ul\" data-q=\"26\">was<\/u><span class=\"qn\" data-q=\"26\">26<\/span> found responsible for the disaster. <u class=\"ul\" data-q=\"27\">The case was in the news.<\/u><span class=\"qn\" data-q=\"27\">27<\/span> Massachusetts soon began requiring engineers to sign and file the calculations for large construction projects, and other states later adopted similar rules.<\/p><p>Today, a small plaque near Langone Park marks the site. Some longtime residents claim that on hot summer days, the <u class=\"ul\" data-q=\"28\">neighborhood’s<\/u><span class=\"qn\" data-q=\"28\">28<\/span> streets still smell faintly of molasses. The disaster may sound almost comical a century later, but for the people of the North End, it was <u class=\"ul\" data-q=\"29\">a total nightmare, no joke<\/u><span class=\"qn\" data-q=\"29\">29<\/span>.<span class=\"qn\" data-q=\"30\">30<\/span><\/p>"},"p4":{"title":"Old Violins, New Ears","html":"<p>For nearly three hundred years, violins built by Antonio Stradivari have been treated as the finest instruments ever made. <u class=\"ul\" data-q=\"31\">Its<\/u><span class=\"qn\" data-q=\"31\">31<\/span> rich tone has been credited to everything from a secret varnish to the unusually dense wood that grew in Europe during a cold period known as the Little Ice Age. Today, a single Stradivarius can sell for more than ten million dollars.<\/p><p>In 2010, a team of researchers led by the acoustics scientist Claudia Fritz set out to test the instruments’ reputation. The team gathered twenty-one experienced violinists in a hotel room in Indianapolis <u class=\"ul\" data-q=\"32\">and, gave<\/u><span class=\"qn\" data-q=\"32\">32<\/span> each of them six violins to play: three new instruments and three old Italian ones, two of them made by Stradivari. To keep the players from identifying the violins by sight, the researchers dimmed the lights and <u class=\"ul\" data-q=\"33\">took other steps<\/u><span class=\"qn\" data-q=\"33\">33<\/span>.<\/p><p>The results surprised nearly everyone. The players could not reliably tell the old violins from the new ones. <u class=\"ul\" data-q=\"34\">In fact,<\/u><span class=\"qn\" data-q=\"34\">34<\/span> the instrument chosen most often as the one a player would take home was new, while the one chosen least often was a Stradivarius.<\/p><p>Not everyone accepted the findings. Some critics argued that a hotel room was a poor place to judge instruments designed to fill a concert hall. <u class=\"ul\" data-q=\"35\">Similarly,<\/u><span class=\"qn\" data-q=\"35\">35<\/span> Fritz’s team ran new experiments in 2012 and 2014, this time in concert halls in Paris and New York, with audiences listening from the seats. Once again, listeners <u class=\"ul\" data-q=\"36\">generally preferred<\/u><span class=\"qn\" data-q=\"36\">36<\/span> the new violins, which they judged to project their sound more powerfully.<\/p><p>The experiments have not ended the debate. Some dealers and collectors <u class=\"ul\" data-q=\"37\">insists<\/u><span class=\"qn\" data-q=\"37\">37<\/span> that a great Stradivarius reveals its qualities only after months of playing. Others point out that a violin’s value comes from its history as much as its <u class=\"ul\" data-q=\"38\">sound: a<\/u><span class=\"qn\" data-q=\"38\">38<\/span> Stradivarius connects a musician to three centuries of great performers.<span class=\"qn\" data-q=\"39\">39<\/span> Whatever science concludes, Stradivari’s instruments are likely to remain <u class=\"ul\" data-q=\"40\">mega-pricey<\/u><span class=\"qn\" data-q=\"40\">40<\/span> symbols of musical history.<\/p>"},"p5":{"title":"Fix It, Don’t Toss It","html":"<p>On a Saturday morning in a community center, a retired electrician named Gloria bends over a broken toaster while its owner watches. Nearby, a tailor patches a pair of <u class=\"ul\" data-q=\"41\">jeans, a teenager<\/u><span class=\"qn\" data-q=\"41\">41<\/span> helps an elderly man replace a cracked phone screen. This is a repair café, a free event where volunteers help visitors fix <u class=\"ul\" data-q=\"42\">their<\/u><span class=\"qn\" data-q=\"42\">42<\/span> broken belongings instead of throwing them away.<\/p><p>The first repair café opened in Amsterdam in 2009. Its founder, Martine Postma, was a journalist who worried about how many usable objects ended up in landfills. <u class=\"ul\" data-q=\"43\">In contrast,<\/u><span class=\"qn\" data-q=\"43\">43<\/span> the idea has spread to thousands of locations around the world, from small towns in the Netherlands to large cities in the United States and Australia.<\/p><p><b>[1]<\/b> Most repairs at the café take less than an hour. <b>[2]<\/b> Volunteers do not simply fix items for visitors; they ask the owners to work alongside them. <b>[3]<\/b> The goal is for visitors to leave not only with a working lamp or zipper but also <u class=\"ul\" data-q=\"44\">having<\/u><span class=\"qn\" data-q=\"44\">44<\/span> the confidence to attempt the next repair on their own. <b>[4]<\/b> That way, visitors learn how their belongings actually work.<span class=\"qn\" data-q=\"45\">45<\/span><\/p><p>The cafés are also part of a larger movement. Supporters of the “right to repair” argue that manufacturers <u class=\"ul\" data-q=\"46\">make it difficult and hard<\/u><span class=\"qn\" data-q=\"46\">46<\/span> to fix products by gluing parts together and refusing to sell replacement components. <u class=\"ul\" data-q=\"47\">Some places have done things about this.<\/u><span class=\"qn\" data-q=\"47\">47<\/span><\/p><p>For Gloria, though, repair is less about politics than about <u class=\"ul\" data-q=\"48\">the sheer awesomeness of<\/u><span class=\"qn\" data-q=\"48\">48<\/span> fixing something with her own hands. She has repaired hundreds of <u class=\"ul\" data-q=\"49\">appliances—lamps, radios, coffee makers, even a 1950s jukebox,<\/u><span class=\"qn\" data-q=\"49\">49<\/span> since she started volunteering.<span class=\"qn\" data-q=\"50\">50<\/span><\/p>"}},"mc":[{"n":1,"prompt":"<span class=\"sc\">Underlined<\/span> <u class=\"ul\">women, at the time<\/u>","options":["NO CHANGE","women at the time,","women, at the time,","women; at the time"],"answer":2,"sec":"1","topic":"1","tag":"Conventions of Standard English &middot; Commas: nonessential pair","fixed":true,"ask":"Which choice results in a grammatically acceptable sentence?","stim":"p1","ex":{"idea":"An interrupter opened with a comma must be closed with a comma (a matched pair). Never leave a single comma between a subject and its verb.","steps":["“at the time” interrupts the clause “women… were not permitted.” The comma after “women” opens the interruption.","Close it after “time”: “women, at the time, were not permitted…”"],"others":{"0":"opens the interrupter but never closes it.","1":"closes the interrupter without opening it, leaving one comma between the subject and “were.”","3":"a semicolon needs an IC on both sides; “but women” is not one."}}},{"n":2,"prompt":"<span class=\"sc\">Underlined<\/span> <u class=\"ul\">Additionally,<\/u>","options":["NO CHANGE","In contrast,","For example,","Gradually,"],"answer":3,"sec":"1","topic":"2","tag":"Production of Writing &middot; Transitions","fixed":true,"ask":"Which choice provides the most logical transition?","stim":"p1","ex":{"idea":"Choose the transition from the logic: what happens after slow, point-by-point work is a change over time.","steps":["The paragraph describes slow plotting of thousands of soundings.","Patterns emerged as the work went on, so the link is time/sequence: “Gradually.”"],"others":{"0":"“Additionally” signals another point of the same kind; patterns emerging is the result of the plotting, not one more fact about it.","1":"nothing is contrasted; the patterns come out of the same work.","2":"patterns emerging is not an example of slow plotting."}}},{"n":3,"prompt":"<span class=\"sc\">Underlined<\/span> <u class=\"ul\">figured out and concluded<\/u>","options":["NO CHANGE","figured out, concluding,","concluded","came to the figuring out"],"answer":2,"sec":"1","topic":"3","tag":"Knowledge of Language &middot; Concision / redundancy","fixed":true,"ask":"Which choice is most concise?","stim":"p1","ex":{"idea":"Cut synonyms: keep the single precise verb.","steps":["“figured out” and “concluded” mean the same thing here.","Keep the precise one: “She concluded that the notch was a rift valley.”"],"others":{"0":"“figured out and concluded” says one thing twice.","1":"still repeats the idea, and the participle is awkward.","3":"wordy and unidiomatic."}}},{"n":4,"prompt":"<span class=\"sc\">Underlined<\/span> <u class=\"ul\">rejects<\/u>","options":["NO CHANGE","rejected","will reject","have rejected"],"answer":1,"sec":"1","topic":"1","tag":"Conventions of Standard English &middot; Verb tense","fixed":true,"ask":"Which choice results in a grammatically acceptable sentence?","stim":"p1","ex":{"idea":"Keep verb tense consistent with the time frame. “At the time” plus a past-tense narration calls for the simple past.","steps":["The narration is past (“dismissed,” “would support”), and “at the time” refers to the 1950s.","Simple past: “which most American geologists at the time rejected.”"],"others":{"0":"present tense, and singular, though “geologists” is plural.","2":"future tense for a past situation.","3":"present perfect connects to now, but the rejection was “at the time.”"}}},{"n":5,"prompt":"<span class=\"sc\">Underlined<\/span> <u class=\"ul\">was persistent and kept insisting<\/u>","options":["NO CHANGE","was persistent, persisting","kept persisting and insisting","persisted"],"answer":3,"sec":"1","topic":"3","tag":"Knowledge of Language &middot; Concision / redundancy","fixed":true,"ask":"Which choice is most concise?","stim":"p1","ex":{"idea":"When two phrases say the same thing, replace them with one verb.","steps":["“was persistent” and “kept insisting” express the same idea.","“persisted” says it in one word."],"others":{"0":"says the same idea twice.","1":"repeats “persist” twice.","2":"still doubled, and wordy."}}},{"n":6,"prompt":"<span class=\"sc\">At box<\/span> <span class=\"qn\">6<\/span> in the passage","options":["Yes, because it explains what the earthquake data meant for Heezen’s view of Tharp’s idea.","Yes, because it describes how records of undersea earthquakes were collected.","No, because it repeats information stated in the preceding sentence.","No, because it shifts the paragraph’s focus from Tharp to earthquakes."],"answer":0,"sec":"1","topic":"2","tag":"Production of Writing &middot; Add / delete","fixed":true,"ask":"At this point, the writer is considering adding the following sentence: <i>The match convinced Heezen that Tharp had been right.<\/i> Should the writer make this addition?","stim":"p1","ex":{"idea":"Add a sentence when it completes the paragraph’s point with new information; check the reason against the text.","steps":["The paragraph opens with Heezen dismissing the idea and ends with the earthquake data lining up with the rift.","The new sentence states what that meant: Heezen was convinced. It completes the paragraph, so add it for that reason."],"others":{"1":"the sentence says nothing about how the records were collected.","2":"the preceding sentence gives the data; it never says Heezen changed his mind.","3":"the sentence is about Heezen’s view of Tharp’s idea, so the focus stays on Tharp’s work."}}},{"n":7,"prompt":"<span class=\"sc\">Underlined<\/span> <u class=\"ul\">showing<\/u>","options":["NO CHANGE","showed","which showed","having shown"],"answer":1,"sec":"1","topic":"1","tag":"Conventions of Standard English &middot; Sentence boundaries","fixed":true,"ask":"Which choice results in a grammatically acceptable sentence?","stim":"p1","ex":{"idea":"Every sentence needs a main (finite) verb. An -ing form or a which-clause cannot be the main verb.","steps":["Subject: “Their 1977 World Ocean Floor map” (the “painted by…” phrase is set off by commas).","It needs a finite verb: “showed a planet wrapped in a 40,000-mile chain…”"],"others":{"0":"“showing” is not a finite verb, so the sentence has none: a fragment.","2":"turns the rest into a relative clause, leaving the subject with no main verb.","3":"a participle, not a main verb; still a fragment."}}},{"n":8,"prompt":"<span class=\"sc\">Underlined<\/span> <u class=\"ul\">The map is still sold in some museum gift shops.<\/u>","options":["Kept, because it shows that the map remains popular.","Kept, because it explains how Berann painted the map.","Deleted, because it shifts the focus from the map’s scientific significance to a minor detail.","Deleted, because it contradicts the claim that the map was published in 1977."],"answer":2,"sec":"1","topic":"2","tag":"Production of Writing &middot; Add / delete","fixed":true,"ask":"The writer is considering deleting the underlined sentence. Should it be kept or deleted?","stim":"p1","ex":{"idea":"Delete a sentence that shifts to a minor detail, and choose the reason that describes it accurately.","steps":["The paragraph is about what the map revealed: a planet wrapped in underwater mountains.","Where copies are sold today is trivia that shifts the focus, so delete it."],"others":{"0":"“some museum gift shops” shows little, and popularity is not the paragraph’s point.","1":"the sentence says nothing about painting.","3":"right decision, wrong reason: nothing about 1977 is contradicted."}}},{"n":9,"prompt":"<span class=\"sc\">Underlined<\/span> <u class=\"ul\">Tharps<\/u>","options":["NO CHANGE","Tharps’","Tharp’s","Tharp"],"answer":2,"sec":"1","topic":"1","tag":"Conventions of Standard English &middot; Apostrophes","fixed":true,"ask":"Which choice results in a grammatically acceptable sentence?","stim":"p1","ex":{"idea":"Singular possessive: name + ’s.","steps":["One person, Tharp, owns the maps.","Singular possessive: “Tharp’s maps.”"],"others":{"0":"“Tharps” is a plural with no possession.","1":"plural possessive, but there is one Tharp.","3":"no possessive; “Tharp maps” is not standard."}}},{"n":10,"prompt":"<span class=\"sc\">At box<\/span> <span class=\"qn\">10<\/span> in the passage","options":["Yes, because it explains how Tharp’s maps revealed a rift valley that supported the theory of continental drift.","Yes, because it focuses on the history of sonar technology.","No, because it focuses primarily on Heezen’s career.","No, because it describes the map’s artistic qualities rather than its scientific significance."],"answer":0,"sec":"1","topic":"2","tag":"Production of Writing &middot; Writer’s goal","fixed":true,"ask":"Suppose the writer’s primary purpose had been to describe how one scientist’s work changed the understanding of Earth’s structure. Would this essay accomplish that purpose?","stim":"p1","ex":{"idea":"Purpose questions: decide what the whole essay does, then pick the accurate reason.","steps":["The essay: Tharp’s profiles → the rift valley → support for continental drift → plate tectonics.","That is one scientist’s work changing the understanding of Earth’s structure: Yes."],"others":{"1":"sonar is mentioned only as the data source; its history is not the focus.","2":"Heezen is a supporting figure; the essay is about Tharp.","3":"the artist is mentioned once; the essay stresses scientific significance."}}},{"n":11,"prompt":"<span class=\"sc\">Underlined<\/span> <u class=\"ul\">covers<\/u>","options":["NO CHANGE","cover","is covering","has covered"],"answer":1,"sec":"2","topic":"1","tag":"Conventions of Standard English &middot; Subject–verb agreement","fixed":true,"ask":"Which choice results in a grammatically acceptable sentence?","stim":"p2","ex":{"idea":"Subjects joined by “and” are plural. Ignore prepositional phrases (“of filling,” “of water”) when finding the subject.","steps":["The subject: “Bowls…, stacks…, and a dish…”: three things joined by “and.”","Plural, present tense (matching “turns”): “cover.”"],"others":{"0":"“covers” is singular; it agrees with “water,” not with the compound subject.","2":"singular.","3":"singular, and the tense shifts."}}},{"n":12,"prompt":"<span class=\"sc\">Underlined<\/span> <u class=\"ul\">wet the edge with a fingertip, and pleating<\/u>","options":["NO CHANGE","wetting the edge with a fingertip, and pleat","wet the edge with a fingertip and then pleating","wet the edge with a fingertip, and pleat"],"answer":3,"sec":"2","topic":"1","tag":"Conventions of Standard English &middot; Parallelism","fixed":true,"ask":"Which choice results in a grammatically acceptable sentence?","stim":"p2","ex":{"idea":"Items in a series must share one grammatical form.","steps":["“showed me how to place…, wet…, and ___”: the series is built on base verbs after “how to.”","Third item: “pleat.” So “wet the edge with a fingertip, and pleat the dough.”"],"others":{"0":"“pleating” breaks the base-verb pattern.","1":"“wetting” breaks the pattern even though “pleat” matches.","2":"“pleating” breaks the pattern."}}},{"n":13,"prompt":"<span class=\"sc\">Underlined<\/span> <u class=\"ul\">quick<\/u>","options":["NO CHANGE","quickly","quicker","quickest"],"answer":1,"sec":"2","topic":"1","tag":"Conventions of Standard English &middot; Adjective vs. adverb","fixed":true,"ask":"Which choice results in a grammatically acceptable sentence?","stim":"p2","ex":{"idea":"Adverbs modify verbs. If the word tells how an action happened, it needs the -ly form.","steps":["The word tells how her fingers “moved.”","A verb takes an adverb: “moved so quickly.”"],"others":{"0":"“quick” is an adjective; it cannot modify “moved.”","2":"comparative adjective, and there is no comparison here.","3":"superlative adjective, with no comparison."}}},{"n":14,"prompt":"<span class=\"sc\">Underlined<\/span> <u class=\"ul\">Mine were not as good.<\/u>","options":["NO CHANGE","Mine were made with the same filling.","Mine were lumpy and lopsided, and half of them burst open in the boiling water.","Mine took a while."],"answer":2,"sec":"2","topic":"2","tag":"Production of Writing &middot; Writer’s goal","fixed":true,"ask":"Which choice most vividly shows how poorly the narrator’s first dumplings turned out?","stim":"p2","ex":{"idea":"When the stem asks for the most vivid detail, pick the concrete, specific image.","steps":["The goal: show how poorly the first dumplings turned out.","“lumpy and lopsided, and half of them burst open” is concrete. It also sets up “no longer fell apart” later."],"others":{"0":"“not as good” is vague.","1":"says nothing about how they turned out.","3":"about time, not quality."}}},{"n":15,"prompt":"<span class=\"sc\">Underlined<\/span> <u class=\"ul\">hours, she<\/u>","options":["NO CHANGE","hours; she","hours she","hours, she,"],"answer":1,"sec":"2","topic":"1","tag":"Conventions of Standard English &middot; Sentence boundaries","fixed":true,"ask":"Which choice results in a grammatically acceptable sentence?","stim":"p2","ex":{"idea":"Two ICs need a real joiner. A comma alone is a comma splice; a semicolon joins them.","steps":["“We folded side by side for three hours” is an IC; “she corrected my grip whenever my thumb slipped” is an IC.","Join with a semicolon: “for three hours; she corrected…”"],"others":{"0":"a comma between two ICs: a comma splice.","2":"no punctuation between two ICs: a run-on.","3":"still a splice, and adds a comma between the subject “she” and its verb."}}},{"n":16,"prompt":"<span class=\"sc\">At box<\/span> <span class=\"qn\">16<\/span> in the passage","options":["where it is now.","before Sentence 1.","after Sentence 1.","after Sentence 4."],"answer":3,"sec":"2","topic":"2","tag":"Production of Writing &middot; Placement / order","fixed":true,"ask":"For the sake of logic and cohesion, Sentence 3 should be placed:","stim":"p2","ex":{"idea":"Order sentences by time. A result (“By the end of the afternoon”) must come after the activity it ends.","steps":["Sentence 4 describes three hours of folding side by side.","Sentence 3 (“By the end of the afternoon…”) is the outcome of that practice, so it belongs after Sentence 4."],"others":{"0":"the end of the afternoon would come before the three hours of folding.","1":"the outcome would come before the scene is set.","2":"the result would come before “Again” and the hours of practice."}}},{"n":17,"prompt":"<span class=\"sc\">Underlined<\/span> <u class=\"ul\">Nevertheless,<\/u>","options":["NO CHANGE","For example,","Since then,","On the other hand,"],"answer":2,"sec":"2","topic":"2","tag":"Production of Writing &middot; Transitions","fixed":true,"ask":"Which choice provides the most logical transition?","stim":"p2","ex":{"idea":"A new paragraph that moves forward in time needs a time transition.","steps":["The previous paragraph is that first afternoon. This paragraph is about the years since.","Time link: “Since then.”"],"others":{"0":"“Nevertheless” signals a contrast, but nothing contradicts; the narrator grew to love folding.","1":"a favorite holiday tradition is not an example of the first lesson.","3":"signals an opposing view; there is none."}}},{"n":18,"prompt":"<span class=\"sc\">Underlined<\/span> <u class=\"ul\">sealed inside<\/u>","options":["NO CHANGE","securely sealed and safely enclosed inside","sealed inside and enclosed","sealed and also enclosed inside"],"answer":0,"sec":"2","topic":"3","tag":"Knowledge of Language &middot; Concision / redundancy","fixed":true,"ask":"Which choice is most concise?","stim":"p2","ex":{"idea":"Keep the shortest choice that is complete; do not add synonyms.","steps":["“sealed inside” already says the filling stays enclosed.","Every alternative adds a word that repeats the idea, so keep it."],"others":{"1":"“securely sealed and safely enclosed” says it twice.","2":"“enclosed” repeats “sealed inside.”","3":"“also enclosed” repeats “sealed.”"}}},{"n":19,"prompt":"<span class=\"sc\">Underlined<\/span> <u class=\"ul\">says, that<\/u>","options":["NO CHANGE","says: that","says; that","says that"],"answer":3,"sec":"2","topic":"1","tag":"Conventions of Standard English &middot; Unnecessary punctuation","fixed":true,"ask":"Which choice results in a grammatically acceptable sentence?","stim":"p2","ex":{"idea":"No punctuation between a verb and the that-clause that is its object.","steps":["“My grandmother… says that the hands remember…”: the that-clause is what she says.","No comma, colon, or semicolon: “says that.”"],"others":{"0":"a comma between the verb “says” and its object clause.","1":"a colon must follow a complete IC and cannot separate a verb from its object.","2":"a semicolon needs two ICs."}}},{"n":20,"prompt":"<span class=\"sc\">Underlined<\/span> <u class=\"ul\">doubt<\/u>","options":["NO CHANGE","deny","suspect","dispute"],"answer":2,"sec":"2","topic":"3","tag":"Knowledge of Language &middot; Word choice","fixed":true,"ask":"Which choice is most precise in context?","stim":"p2","ex":{"idea":"Use the context to find the meaning needed; here a change of mind calls for the opposite of doubt.","steps":["“I used to think this was just a saying.” “Now I ___ she is right.” The structure signals a change of mind.","Now the narrator leans toward believing her: “suspect.”"],"others":{"0":"“doubt” means the narrator still disbelieves, so nothing changed.","1":"rejects the idea, the opposite of the change of mind.","3":"argues against the idea, also the opposite."}}},{"n":21,"prompt":"<span class=\"sc\">Underlined<\/span> <u class=\"ul\">roars<\/u>","options":["NO CHANGE","has roared","roared","will roar"],"answer":2,"sec":"3","topic":"1","tag":"Conventions of Standard English &middot; Verb tense","fixed":true,"ask":"Which choice results in a grammatically acceptable sentence?","stim":"p3","ex":{"idea":"Keep verb tense consistent within a narrative.","steps":["The event is told in the past: “heard,” “were bursting,” “split open.”","The wave’s action is in the same past: “roared.”"],"others":{"0":"present tense in a past narrative.","1":"present perfect connects to now; this happened in 1919.","3":"future tense in a past narrative."}}},{"n":22,"prompt":"<span class=\"sc\">Underlined<\/span> <u class=\"ul\">bending<\/u>","options":["NO CHANGE","having bent","were bending","bent"],"answer":3,"sec":"3","topic":"1","tag":"Conventions of Standard English &middot; Parallelism","fixed":true,"ask":"Which choice results in a grammatically acceptable sentence?","stim":"p3","ex":{"idea":"Verbs in a series must match in form.","steps":["“It crushed buildings, ___ the steel supports…, and trapped horses.”","Three past-tense verbs: crushed, bent, trapped."],"others":{"0":"“bending” is a participle among past-tense verbs.","1":"a perfect participle, still not parallel.","2":"progressive form, not parallel with “crushed” and “trapped.”"}}},{"n":23,"prompt":"<span class=\"sc\">Underlined<\/span> <u class=\"ul\">Similarly,<\/u>","options":["NO CHANGE","However,","In part, this was because","Despite this,"],"answer":2,"sec":"3","topic":"2","tag":"Production of Writing &middot; Transitions","fixed":true,"ask":"Which choice provides the most logical transition?","stim":"p3","ex":{"idea":"Choose the transition from the relationship: a sentence that explains why the previous one happened is a cause.","steps":["“Rescue efforts were slow.” Next: the cooling molasses thickened.","The thickening explains the slowness: “In part, this was because…”"],"others":{"0":"“Similarly” signals a second, parallel point; the thickening explains the slow rescue rather than paralleling it.","1":"signals contrast, but the thickening supports the slow rescue.","3":"signals contrast; the thickening is a cause, not an obstacle overcome."}}},{"n":24,"prompt":"<span class=\"sc\">Underlined<\/span> <u class=\"ul\">less noticeable and harder to see<\/u>","options":["NO CHANGE","harder to see","less noticeable, harder to see","harder to see and less noticeable to observers"],"answer":1,"sec":"3","topic":"3","tag":"Knowledge of Language &middot; Concision / redundancy","fixed":true,"ask":"Which choice is most concise?","stim":"p3","ex":{"idea":"Drop one of two synonyms.","steps":["“less noticeable” and “harder to see” say the same thing.","Keep one: “so the leaks would be harder to see.”"],"others":{"0":"repeats the idea.","2":"still both synonyms.","3":"repeats the idea and adds “to observers.”"}}},{"n":25,"prompt":"<span class=\"sc\">At box<\/span> <span class=\"qn\">25<\/span> in the passage","options":["Yes, because it explains why the company needed such a large tank.","Yes, because it shows how investigators discovered the leaks.","No, because it contradicts the claim that the tank leaked.","No, because it interrupts the paragraph’s focus on how poorly the tank was built."],"answer":3,"sec":"3","topic":"2","tag":"Production of Writing &middot; Add / delete","fixed":true,"ask":"At this point, the writer is considering adding the following sentence: <i>Molasses was commonly used to make rum and industrial alcohol.<\/i> Should the writer make this addition?","stim":"p3","ex":{"idea":"An addition must support the paragraph’s focus; interesting background is not enough.","steps":["The paragraph builds a case that the tank was poorly built: leaks, brown paint, an unqualified supervisor.","The uses of molasses are off that focus, so do not add it."],"others":{"0":"it says what molasses was used for, not why the tank was so large, and the paragraph is about construction.","1":"it says nothing about the investigation.","2":"right decision, wrong reason: nothing about leaks is contradicted."}}},{"n":26,"prompt":"<span class=\"sc\">Underlined<\/span> <u class=\"ul\">was<\/u>","options":["NO CHANGE","were","have been","are"],"answer":0,"sec":"3","topic":"1","tag":"Conventions of Standard English &middot; Subject–verb agreement","fixed":true,"ask":"Which choice results in a grammatically acceptable sentence?","stim":"p3","ex":{"idea":"Find the true subject; an appositive set off by commas does not change it.","steps":["The subject is “the tank’s owner” (singular). “the United States Industrial Alcohol Company” renames it between commas.","Singular, past tense: “was found responsible.” Already correct."],"others":{"1":"plural verb with the singular subject “owner.”","2":"plural, and the tense shifts.","3":"plural and present."}}},{"n":27,"prompt":"<span class=\"sc\">Underlined<\/span> <u class=\"ul\">The case was in the news.<\/u>","options":["NO CHANGE","Many people still remember the flood.","Boston is one of the oldest cities in the country.","The disaster also led to stricter rules for designing large structures."],"answer":3,"sec":"3","topic":"2","tag":"Production of Writing &middot; Intro / bridge","fixed":true,"ask":"Which choice most effectively introduces the specific change described in the next sentence?","stim":"p3","ex":{"idea":"An introductory sentence should set up exactly what the next sentence describes.","steps":["The next sentence: Massachusetts began requiring engineers to sign and file calculations.","“The disaster also led to stricter rules for designing large structures” introduces that change."],"others":{"0":"vague; being “in the news” does not set up new engineering rules.","1":"about memory, not regulations.","2":"unrelated background."}}},{"n":28,"prompt":"<span class=\"sc\">Underlined<\/span> <u class=\"ul\">neighborhood’s<\/u>","options":["NO CHANGE","neighborhoods","neighborhoods’","neighborhoods’s"],"answer":0,"sec":"3","topic":"1","tag":"Conventions of Standard English &middot; Apostrophes","fixed":true,"ask":"Which choice results in a grammatically acceptable sentence?","stim":"p3","ex":{"idea":"Singular possessive: noun + ’s.","steps":["One neighborhood (the North End) owns the streets.","“the neighborhood’s streets” is already correct."],"others":{"1":"a plain plural with no possession.","2":"plural possessive, but there is one neighborhood.","3":"never correct."}}},{"n":29,"prompt":"<span class=\"sc\">Underlined<\/span> <u class=\"ul\">a total nightmare, no joke<\/u>","options":["NO CHANGE","a tragedy","super bad","the worst, like, ever"],"answer":1,"sec":"3","topic":"3","tag":"Knowledge of Language &middot; Style / tone","fixed":true,"ask":"Which choice best maintains the style and tone of the essay?","stim":"p3","ex":{"idea":"Match the essay’s serious, informational register.","steps":["The essay describes deaths and injuries in a formal tone.","“a tragedy” fits the tone and the facts."],"others":{"0":"“a total nightmare, no joke” is slang.","2":"slang.","3":"slang."}}},{"n":30,"prompt":"<span class=\"sc\">At box<\/span> <span class=\"qn\">30<\/span> in the passage","options":["Yes, because it states that the tank held more than two million gallons of molasses.","Yes, because it identifies the company that owned the tank.","No, because it focuses on the flood and its aftermath rather than on how molasses is made or used.","No, because it suggests that molasses is no longer produced."],"answer":2,"sec":"3","topic":"2","tag":"Production of Writing &middot; Writer’s goal","fixed":true,"ask":"Suppose the writer’s primary purpose had been to explain how molasses is produced and used in industry. Would this essay accomplish that purpose?","stim":"p3","ex":{"idea":"Purpose questions: compare the stated purpose with what the essay actually does.","steps":["The essay covers the flood, its causes, and its legal and regulatory aftermath.","It never explains how molasses is made or used, so No."],"others":{"0":"a quantity is not an explanation of production or use.","1":"naming the owner explains nothing about molasses.","3":"false: nothing suggests molasses is no longer produced."}}},{"n":31,"prompt":"<span class=\"sc\">Underlined<\/span> <u class=\"ul\">Its<\/u>","options":["NO CHANGE","Their","It’s","There"],"answer":1,"sec":"4","topic":"1","tag":"Conventions of Standard English &middot; Pronouns","fixed":true,"ask":"Which choice results in a grammatically acceptable sentence?","stim":"p4","ex":{"idea":"A pronoun must agree in number with its antecedent.","steps":["The antecedent is “violins built by Antonio Stradivari,” plural.","Plural possessive pronoun: “Their rich tone.”"],"others":{"0":"“Its” is singular; “violins” is plural.","2":"“It’s” means “it is.”","3":"“There” is a place word, not a possessive."}}},{"n":32,"prompt":"<span class=\"sc\">Underlined<\/span> <u class=\"ul\">and, gave<\/u>","options":["NO CHANGE","and, giving","and gave,","and gave"],"answer":3,"sec":"4","topic":"1","tag":"Conventions of Standard English &middot; Unnecessary punctuation","fixed":true,"ask":"Which choice results in a grammatically acceptable sentence?","stim":"p4","ex":{"idea":"A compound verb (two verbs sharing one subject) takes no comma before or after “and,” and nothing separates a verb from its object.","steps":["“The team gathered twenty-one violinists… and gave each of them six violins.”","No commas: “and gave.”"],"others":{"0":"a comma after “and” is never needed here.","1":"a stray comma, and “giving” breaks the compound verb.","2":"a comma between “gave” and its object."}}},{"n":33,"prompt":"<span class=\"sc\">Underlined<\/span> <u class=\"ul\">took other steps<\/u>","options":["NO CHANGE","made sure things were fair","had the musicians wear modified welders’ goggles","were very careful"],"answer":2,"sec":"4","topic":"2","tag":"Production of Writing &middot; Writer’s goal","fixed":true,"ask":"Which choice gives the most specific detail about how the researchers hid the violins’ identities?","stim":"p4","ex":{"idea":"When the stem asks for the most specific detail, choose the concrete method over vague wording.","steps":["The question asks how the researchers hid the violins’ identities.","“had the musicians wear modified welders’ goggles” is a specific method."],"others":{"0":"“took other steps” is vague.","1":"vague.","3":"vague."}}},{"n":34,"prompt":"<span class=\"sc\">Underlined<\/span> <u class=\"ul\">In fact,<\/u>","options":["NO CHANGE","However,","Nevertheless,","Otherwise,"],"answer":0,"sec":"4","topic":"2","tag":"Production of Writing &middot; Transitions","fixed":true,"ask":"Which choice provides the most logical transition?","stim":"p4","ex":{"idea":"“In fact” signals that the next sentence intensifies or goes beyond the previous one.","steps":["Previous: players could not tell old from new. Next: the favorite was new and the least favorite a Stradivarius.","That goes further than the previous claim, so “In fact” is right."],"others":{"1":"signals contrast; the second sentence strengthens the first.","2":"signals an unexpected contrast; there is none.","3":"means “if not,” which makes no sense."}}},{"n":35,"prompt":"<span class=\"sc\">Underlined<\/span> <u class=\"ul\">Similarly,<\/u>","options":["NO CHANGE","In response,","For example,","Even so,"],"answer":1,"sec":"4","topic":"2","tag":"Production of Writing &middot; Transitions","fixed":true,"ask":"Which choice provides the most logical transition?","stim":"p4","ex":{"idea":"An action taken to answer an objection is a response.","steps":["Critics objected that a hotel room was a poor test.","The team ran new tests in concert halls to answer them: “In response.”"],"others":{"0":"“Similarly” would mean the new tests resemble the criticism.","2":"the new tests are not an example of the criticism.","3":"signals “despite that,” but the tests answer the critics rather than ignore them."}}},{"n":36,"prompt":"<span class=\"sc\">Underlined<\/span> <u class=\"ul\">generally preferred<\/u>","options":["NO CHANGE","preferred and favored generally","had a general preference and liking for","generally preferred and liked better"],"answer":0,"sec":"4","topic":"3","tag":"Knowledge of Language &middot; Concision / redundancy","fixed":true,"ask":"Which choice is most concise?","stim":"p4","ex":{"idea":"Keep the shortest complete choice; do not add synonyms.","steps":["“generally preferred” is complete and clear.","Each alternative repeats the idea of preference, so keep it."],"others":{"1":"“favored” repeats “preferred.”","2":"wordy, and “liking” repeats “preference.”","3":"“liked better” repeats “preferred.”"}}},{"n":37,"prompt":"<span class=\"sc\">Underlined<\/span> <u class=\"ul\">insists<\/u>","options":["NO CHANGE","insist","has insisted","is insisting"],"answer":1,"sec":"4","topic":"1","tag":"Conventions of Standard English &middot; Subject–verb agreement","fixed":true,"ask":"Which choice results in a grammatically acceptable sentence?","stim":"p4","ex":{"idea":"A compound subject joined by “and” is plural.","steps":["Subject: “Some dealers and collectors.”","Plural, present tense: “insist.”"],"others":{"0":"“insists” is singular.","2":"singular.","3":"singular."}}},{"n":38,"prompt":"<span class=\"sc\">Underlined<\/span> <u class=\"ul\">sound: a<\/u>","options":["NO CHANGE","sound; and a","sound, a","sound a"],"answer":0,"sec":"4","topic":"1","tag":"Conventions of Standard English &middot; Colons","fixed":true,"ask":"Which choice results in a grammatically acceptable sentence?","stim":"p4","ex":{"idea":"A colon after a complete IC can introduce an explanation of it.","steps":["“a violin’s value comes from its history as much as its sound” is a complete IC.","What follows explains how history adds value, so the colon is correct."],"others":{"1":"a semicolon followed by “and” is wrong here, and it loses the explanation link.","2":"a comma between two ICs: a comma splice.","3":"no punctuation between two ICs: a run-on."}}},{"n":39,"prompt":"<span class=\"sc\">At box<\/span> <span class=\"qn\">39<\/span> in the passage","options":["Yes, because it adds an interesting detail about Stradivari’s city.","Yes, because it explains why Stradivarius violins are valuable.","No, because it contradicts the claim that Stradivari worked in Italy.","No, because it is unrelated to the paragraph’s discussion of why the violins remain prized."],"answer":3,"sec":"4","topic":"2","tag":"Production of Writing &middot; Add / delete","fixed":true,"ask":"At this point, the writer is considering adding the following sentence: <i>Cremona, the city where Stradivari worked, is also known for its nougat.<\/i> Should the writer make this addition?","stim":"p4","ex":{"idea":"Interesting is not the same as relevant. An addition must support the paragraph’s point.","steps":["The paragraph weighs why the violins are still prized: sound after months of playing, and history.","Cremona’s nougat has nothing to do with that, so do not add it."],"others":{"0":"interesting but irrelevant to why the violins remain prized.","1":"nougat does not explain the violins’ value.","2":"right decision, wrong reason: nothing is contradicted."}}},{"n":40,"prompt":"<span class=\"sc\">Underlined<\/span> <u class=\"ul\">mega-pricey<\/u>","options":["NO CHANGE","crazy expensive","treasured","super-duper valued"],"answer":2,"sec":"4","topic":"3","tag":"Knowledge of Language &middot; Style / tone","fixed":true,"ask":"Which choice best maintains the style and tone of the essay?","stim":"p4","ex":{"idea":"Match the essay’s formal register.","steps":["The essay is a formal account of research.","“treasured” is formal and fits “symbols of musical history.”"],"others":{"0":"“mega-pricey” is slang.","1":"slang.","3":"slang."}}},{"n":41,"prompt":"<span class=\"sc\">Underlined<\/span> <u class=\"ul\">jeans, a teenager<\/u>","options":["NO CHANGE","jeans, and a teenager","jeans a teenager","jeans, while, a teenager"],"answer":1,"sec":"5","topic":"1","tag":"Conventions of Standard English &middot; Sentence boundaries","fixed":true,"ask":"Which choice results in a grammatically acceptable sentence?","stim":"p5","ex":{"idea":"Two ICs can be joined by a comma plus a coordinating conjunction (FANBOYS).","steps":["“a tailor patches a pair of jeans” is an IC; “a teenager helps an elderly man…” is an IC.","Comma + “and”: “jeans, and a teenager helps…”"],"others":{"0":"a comma alone between two ICs: a comma splice.","2":"no punctuation: a run-on.","3":"the comma after “while” splits it from its own clause."}}},{"n":42,"prompt":"<span class=\"sc\">Underlined<\/span> <u class=\"ul\">their<\/u>","options":["NO CHANGE","there","they’re","it’s"],"answer":0,"sec":"5","topic":"1","tag":"Conventions of Standard English &middot; Pronouns / possessives","fixed":true,"ask":"Which choice results in a grammatically acceptable sentence?","stim":"p5","ex":{"idea":"Their = belonging to them; there = a place; they’re = they are.","steps":["The belongings belong to the visitors.","Possessive: “their broken belongings.” Already correct."],"others":{"1":"a place word, not a possessive.","2":"means “they are.”","3":"means “it is,” and it is singular."}}},{"n":43,"prompt":"<span class=\"sc\">Underlined<\/span> <u class=\"ul\">In contrast,<\/u>","options":["NO CHANGE","For instance,","Nonetheless,","Since then,"],"answer":3,"sec":"5","topic":"2","tag":"Production of Writing &middot; Transitions","fixed":true,"ask":"Which choice provides the most logical transition?","stim":"p5","ex":{"idea":"A paragraph that moves from an origin to later growth needs a time transition.","steps":["2009: the first repair café. Then: thousands of locations worldwide.","The link is time: “Since then.”"],"others":{"0":"“In contrast” signals opposition; the spread follows the founding.","1":"the spread is not an example of Postma’s worry.","2":"signals “despite that,” but nothing stood in the way."}}},{"n":44,"prompt":"<span class=\"sc\">Underlined<\/span> <u class=\"ul\">having<\/u>","options":["NO CHANGE","to have","with","they have"],"answer":2,"sec":"5","topic":"1","tag":"Conventions of Standard English &middot; Parallelism","fixed":true,"ask":"Which choice results in a grammatically acceptable sentence?","stim":"p5","ex":{"idea":"Paired constructions (not only… but also…) need the same form on both sides.","steps":["“leave not only with a working lamp or zipper but also ___ the confidence.”","The first half is “with + noun,” so the second must be too: “but also with the confidence.”"],"others":{"0":"“having” does not match “with.”","1":"an infinitive does not match “with.”","3":"a clause does not match “with.”"}}},{"n":45,"prompt":"<span class=\"sc\">At box<\/span> <span class=\"qn\">45<\/span> in the passage","options":["where it is now.","before Sentence 1.","after Sentence 1.","after Sentence 2."],"answer":3,"sec":"5","topic":"2","tag":"Production of Writing &middot; Placement / order","fixed":true,"ask":"For the sake of logic and cohesion, Sentence 4 should be placed:","stim":"p5","ex":{"idea":"Pronoun links decide placement: “That way” must follow the method it refers to.","steps":["“That way, visitors learn how their belongings actually work” refers to owners working alongside volunteers (Sentence 2).","Putting it after Sentence 2 also leads into the goal stated in Sentence 3."],"others":{"0":"after Sentence 3, “That way” would point to the goal, not the method.","1":"“That way” would refer to nothing.","2":"“That way” would refer to how quick repairs are, which does not explain learning."}}},{"n":46,"prompt":"<span class=\"sc\">Underlined<\/span> <u class=\"ul\">make it difficult and hard<\/u>","options":["NO CHANGE","make it difficult, hard,","create a situation in which it is hard and difficult","make it difficult"],"answer":3,"sec":"5","topic":"3","tag":"Knowledge of Language &middot; Concision / redundancy","fixed":true,"ask":"Which choice is most concise?","stim":"p5","ex":{"idea":"Drop one of two synonyms.","steps":["“difficult” and “hard” mean the same thing.","Keep one: “make it difficult to fix products.”"],"others":{"0":"“difficult and hard” is redundant.","1":"still redundant.","2":"wordy and redundant."}}},{"n":47,"prompt":"<span class=\"sc\">Underlined<\/span> <u class=\"ul\">Some places have done things about this.<\/u>","options":["NO CHANGE","Many people own smartphones.","In recent years, several U.S. states and the European Union have passed laws requiring companies to make repair manuals and spare parts available.","Some companies make very good products."],"answer":2,"sec":"5","topic":"2","tag":"Production of Writing &middot; Writer’s goal","fixed":true,"ask":"Which choice provides the most specific support for the idea that the right-to-repair movement has gained influence?","stim":"p5","ex":{"idea":"Support for a claim must be specific evidence of that exact claim.","steps":["The claim to support: the right-to-repair movement has gained influence.","Laws passed by U.S. states and the EU are concrete evidence of influence."],"others":{"0":"“done things about this” is vague.","1":"unrelated to the movement’s influence.","3":"unrelated, and vague."}}},{"n":48,"prompt":"<span class=\"sc\">Underlined<\/span> <u class=\"ul\">the sheer awesomeness of<\/u>","options":["NO CHANGE","the satisfaction of","how dope it is","the mega-fun of"],"answer":1,"sec":"5","topic":"3","tag":"Knowledge of Language &middot; Style / tone","fixed":true,"ask":"Which choice best maintains the style and tone of the essay?","stim":"p5","ex":{"idea":"Match the essay’s straightforward register.","steps":["The essay is plain and informational.","“the satisfaction of fixing something with her own hands” fits."],"others":{"0":"“the sheer awesomeness of” is slang.","2":"slang.","3":"slang."}}},{"n":49,"prompt":"<span class=\"sc\">Underlined<\/span> <u class=\"ul\">appliances—lamps, radios, coffee makers, even a 1950s jukebox,<\/u>","options":["NO CHANGE","appliances, lamps, radios, coffee makers, even a 1950s jukebox—","appliances—lamps, radios, coffee makers, even a 1950s jukebox","appliances—lamps, radios, coffee makers, even a 1950s jukebox—"],"answer":3,"sec":"5","topic":"1","tag":"Conventions of Standard English &middot; Dashes (matched pair)","fixed":true,"ask":"Which choice results in a grammatically acceptable sentence?","stim":"p5","ex":{"idea":"An interruption opened with a dash must close with a dash (matched pair).","steps":["The dash after “appliances” opens a list of examples that interrupts “hundreds of appliances… since she started volunteering.”","Close it with a second dash: “appliances—lamps, radios, coffee makers, even a 1950s jukebox—since…”"],"others":{"0":"opens with a dash but closes with a comma; the marks must match.","1":"opens with a comma and closes with a dash; mismatched, and the list blends into the sentence.","2":"never closes the interruption, so “jukebox since she started” runs together."}}},{"n":50,"prompt":"<span class=\"sc\">At box<\/span> <span class=\"qn\">50<\/span> in the passage","options":["Yes, because it explains that repair cafés were invented by an electrician.","Yes, because it describes how repair cafés work and connects them to a broader movement to make repair easier.","No, because it focuses mainly on laws passed by the European Union.","No, because it describes only the history of the first repair café."],"answer":1,"sec":"5","topic":"2","tag":"Production of Writing &middot; Writer’s goal","fixed":true,"ask":"Suppose the writer’s primary purpose had been to describe a community effort that encourages people to repair rather than discard their belongings. Would this essay accomplish that purpose?","stim":"p5","ex":{"idea":"Purpose questions: decide what the essay does, then check that the reason is accurate.","steps":["The essay describes how repair cafés work and ties them to the right-to-repair movement.","That is a community effort encouraging repair over discarding: Yes, for that reason."],"others":{"0":"false reason: the founder, Martine Postma, was a journalist, not an electrician.","2":"laws are mentioned briefly; they are not the focus.","3":"the first café is one paragraph; the essay goes well beyond it."}}}],"fr":[]}</script>
+<script>
+(function(){
+"use strict";
+var DATA = JSON.parse(document.getElementById("data").textContent);
+var META = DATA.meta, MC = DATA.mc, FR = DATA.fr || [], TOP = DATA.topics || {}, SEC = DATA.sections || {}, STIM = DATA.stims || {}, BY = {};
+MC.forEach(function(q){ BY[q.n] = q; });
+var KEY = META.key, FKEY = META.fkey || META.key + ".fr", HAS_FR = FR.length > 0;
+
+function load(k, d){ try{ var v = localStorage.getItem(k); return v ? JSON.parse(v) : d; }catch(e){ return d; } }
+function save(k, v){ try{ localStorage.setItem(k, JSON.stringify(v)); }catch(e){} }
+function esc(s){ return String(s).replace(/[&<>"]/g, function(c){ return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]; }); }
+function shuffle(a){ a = a.slice(); for (var i = a.length - 1; i > 0; i--){ var j = Math.floor(Math.random() * (i + 1)); var t = a[i]; a[i] = a[j]; a[j] = t; } return a; }
+function range(n){ var a = []; for (var i = 0; i < n; i++) a.push(i); return a; }
+
+var S = load(KEY, null);
+if (!S || !S.phase || !S.order || S.order.some(function(n){ return !BY[n]; })) S = { phase: "setup", mode: "practice", shuffleQ: false, shuffleC: false, order: [], copt: {}, ans: {}, pos: 0, full: null };
+var confirmFinish = false;
+var mcEl = document.getElementById("mc");
+
+function start(nums){
+  var list = nums || MC.map(function(q){ return q.n; });
+  S.order = S.shuffleQ ? shuffle(list) : list.slice();
+  S.copt = {};
+  S.order.forEach(function(n){
+    var q = BY[n], idx = range(q.options.length);
+    S.copt[n] = (S.shuffleC && !q.fixed) ? shuffle(idx) : idx;
+  });
+  S.ans = {}; S.pos = 0; S.phase = "run"; confirmFinish = false;
+  save(KEY, S); render(); focusTop();
+}
+function focusTop(){ var t = document.querySelector(".tabs") || document.querySelector(".title"); if (t && t.getBoundingClientRect().top < 0) t.scrollIntoView(); }
+
+function stats(){
+  var right = 0, done = 0;
+  S.order.forEach(function(n){ if (n in S.ans){ done++; if (S.ans[n] === BY[n].answer) right++; } });
+  return { right: right, done: done, total: S.order.length };
+}
+function topicShort(t){ return (META.topicPrefix || "") + t; }
+function topicLabel(t){ return topicShort(t) + ", " + TOP[t].name; }
+function guideLink(t, short){
+  var g = TOP[t], txt = short ? g.name : topicLabel(t);
+  var href = g.url ? g.url : (META.guide && g.page ? META.guide + "#page=" + g.page : "");
+  return href ? '<a href="' + href + '">' + txt + "</a>" : txt;
+}
+function topicLinks(ts){
+  ts = ts.filter(function(t){ return TOP[t]; });
+  if (!ts.length || !(META.guide || TOP[ts[0]].url)) return "";
+  return '<p class="links">Review ' + ts.map(function(t){ return guideLink(t); }).join(" &middot; ") + " in " + META.guideName + "</p>";
+}
+function explain(q, picked){
+  var e = q.ex, h = '<div class="why"><p>' + e.idea + "</p>";
+  if (e.steps.length) h += '<ol class="steps">' + e.steps.map(function(s){ return "<li>" + s + "</li>"; }).join("") + "</ol>";
+  var rest = range(q.options.length).filter(function(i){ return i !== q.answer; });
+  if (typeof picked === "number" && picked !== q.answer) rest = [picked].concat(rest.filter(function(i){ return i !== picked; }));
+  h += '<p class="why-h sc">Why not the others</p><ul class="others">' + rest.map(function(i){
+    return "<li>&ldquo;" + q.options[i] + "&rdquo;" + (i === picked ? '<span class="tag">your answer</span>' : "") + " &mdash; " + e.others[i] + "</li>";
+  }).join("") + "</ul></div>";
+  return h;
+}
+function table(q){ return q.table ? '<div class="bt-wrap">' + q.table + "</div>" : ""; }
+function stim(q){
+  var s = q.stim && STIM[q.stim]; if (!s) return "";
+  var html = s.html.split(' data-q="' + q.n + '"').join(' data-q="' + q.n + '" data-cur');
+  return '<div class="stim">' + (s.title ? '<p class="stim-h sc">' + s.title + "</p>" : "") + html + "</div>";
+}
+function scrollStim(root){
+  root.querySelectorAll(".stim").forEach(function(box){ var c = box.querySelector("[data-cur]"); if (c && box.scrollHeight > box.clientHeight) box.scrollTop = Math.max(0, c.offsetTop - box.clientHeight / 3); });
+}
+function promptHtml(q){
+  return stim(q) + (q.fig || "") + '<div class="q-prompt"><p>' + q.prompt + "</p>" + (q.ask || META.ask ? '<p class="q-ask">' + (q.ask || META.ask) + "</p>" : "") + "</div>" + table(q);
+}
+
+function renderSetup(){
+  mcEl.innerHTML =
+    '<div class="setup">' +
+      '<h2>How do you want to take it?</h2>' +
+      '<div class="choice-row">' +
+        '<button type="button" class="choice" data-mode="practice" aria-pressed="' + (S.mode === "practice") + '"><b>Practice</b><span>See the answer and why after each question</span></button>' +
+        '<button type="button" class="choice" data-mode="exam" aria-pressed="' + (S.mode === "exam") + '"><b>Exam</b><span>Answer everything, then see your score</span></button>' +
+      '</div>' +
+      '<div class="checks">' +
+        '<label><input type="checkbox" id="opt-sq"' + (S.shuffleQ ? " checked" : "") + '> Shuffle questions</label>' +
+        '<label><input type="checkbox" id="opt-sc"' + (S.shuffleC ? " checked" : "") + '> Shuffle answer choices</label>' +
+      '</div>' +
+      '<div class="setup-actions"><button type="button" class="btn btn--solid btn--lg" id="go">Start' + (HAS_FR ? " multiple choice" : "") + '</button></div>' +
+      '<p class="note">' + META.setupNote + " Keyboard: 1&ndash;" + Math.max.apply(null, MC.map(function(q){ return q.options.length; })) + " to answer, &larr; &rarr; to move, Enter for next.</p>" +
+    '</div>';
+  mcEl.querySelectorAll(".choice").forEach(function(b){ b.onclick = function(){ S.mode = b.dataset.mode; render(); }; });
+  document.getElementById("opt-sq").onchange = function(e){ S.shuffleQ = e.target.checked; };
+  document.getElementById("opt-sc").onchange = function(e){ S.shuffleC = e.target.checked; };
+  document.getElementById("go").onclick = function(){ start(); };
+}
+
+function renderRun(){
+  var n = S.order[S.pos], q = BY[n], st = stats(), practice = S.mode === "practice";
+  var picked = (n in S.ans) ? S.ans[n] : null, locked = practice && picked !== null;
+  var nav = S.order.map(function(m, i){
+    var c = [];
+    if (m in S.ans){ if (practice) c.push(S.ans[m] === BY[m].answer ? "is-right" : "is-wrong"); else c.push("is-answered"); }
+    if (i === S.pos) c.push("is-current");
+    return '<button type="button" class="' + c.join(" ") + '" data-go="' + i + '" aria-label="Question ' + (i + 1) + '"' + (i === S.pos ? ' aria-current="step"' : "") + ">" + (i + 1) + "</button>";
+  }).join("");
+  var opts = S.copt[n].map(function(oi, k){
+    var cls = ["opt"], mark = "";
+    if (locked){
+      if (oi === q.answer){ cls.push("is-right"); mark = oi === picked ? "&check; your answer" : "&check; correct"; }
+      else if (oi === picked){ cls.push("is-wrong"); mark = "&cross; your answer"; }
+      else cls.push("is-dim");
+    } else if (oi === picked) cls.push("is-picked");
+    return '<li><button type="button" class="' + cls.join(" ") + '" data-opt="' + oi + '"' + (locked ? " disabled" : "") + '><span class="kbd">' + (k + 1) + "</span><span>" + q.options[oi] + '</span><span class="mark">' + mark + "</span></button></li>";
+  }).join("");
+  var fb = "";
+  if (locked){
+    var ok = picked === q.answer, ans = q.options[q.answer];
+    fb = '<div class="fb' + (ok ? "" : " is-wrong") + '"><p class="verdict" role="status">' + (ok ? "Correct." : "Not quite. The answer is &ldquo;" + ans + "&rdquo;" + (/[.?!]$/.test(ans) ? "" : ".")) + "</p>" + explain(q, picked) + topicLinks([q.topic]) + "</div>";
+  }
+  var last = S.pos === S.order.length - 1, allDone = st.done === st.total;
+  var nextBtn = last
+    ? '<button type="button" class="btn btn--solid" id="finish">' + (practice ? "See results" : "Finish test") + "</button>"
+    : '<button type="button" class="btn btn--solid" id="next">Next &rarr;</button>';
+  var finishEarly = (!last && !practice) ? '<button type="button" class="btn" id="finish">Finish test</button>' : (!last && practice && allDone ? '<button type="button" class="btn" id="finish">See results</button>' : "");
+  var conf = "";
+  if (confirmFinish){
+    var left = st.total - st.done;
+    conf = '<div class="confirm"><p>' + left + " question" + (left === 1 ? " is" : "s are") + " unanswered and will be marked wrong. Finish anyway?</p>" +
+      '<button type="button" class="btn" id="conf-no">Keep going</button><button type="button" class="btn btn--solid" id="conf-yes">Finish</button></div>';
+  }
+  var eyebrow = "Question " + q.n + (SEC[q.sec] ? " &middot; " + SEC[q.sec] : "") + (q.tag ? " &middot; " + q.tag : (q.topic ? " &middot; " + topicShort(q.topic) : ""));
+  mcEl.innerHTML =
+    '<div class="bar"><span>Question ' + (S.pos + 1) + " of " + st.total + " &middot; " + (practice ? "Practice" : "Exam") + " mode</span><span>" +
+      (practice ? st.right + " correct of " + st.done + " answered" : st.done + " of " + st.total + " answered") + "</span></div>" +
+    '<div class="track"><span style="width:' + (st.done / st.total * 100) + '%"></span></div>' +
+    '<nav class="nav" aria-label="Questions">' + nav + "</nav>" +
+    '<article class="q">' +
+      '<p class="q-eyebrow sc">' + eyebrow + "</p>" +
+      promptHtml(q) +
+      '<ol class="opts">' + opts + "</ol>" + fb +
+      '<div class="step"><button type="button" class="btn" id="prev"' + (S.pos === 0 ? " disabled" : "") + '>&larr; Back</button><span class="step-right">' + finishEarly + nextBtn + "</span></div>" +
+      conf +
+    "</article>" +
+    '<p class="keys"><span class="kbd">1</span>&ndash;<span class="kbd">' + q.options.length + '</span> answer &nbsp; <span class="kbd">&larr;</span> <span class="kbd">&rarr;</span> move &nbsp; <span class="kbd">Enter</span> next</p>' +
+    '<p class="restart-line"><a href="#" id="restart">Start over</a> <span class="muted">&middot; progress is saved in this browser</span></p>';
+
+  scrollStim(mcEl);
+  mcEl.querySelectorAll("[data-go]").forEach(function(b){ b.onclick = function(){ go(+b.dataset.go); }; });
+  mcEl.querySelectorAll("[data-opt]").forEach(function(b){ b.onclick = function(){ pick(+b.dataset.opt); }; });
+  bind("prev", function(){ go(S.pos - 1); });
+  bind("next", function(){ go(S.pos + 1); });
+  bind("finish", finish);
+  bind("conf-no", function(){ confirmFinish = false; render(); });
+  bind("conf-yes", function(){ confirmFinish = false; showResults(); });
+  bind("restart", function(e){ e.preventDefault(); S.phase = "setup"; save(KEY, S); render(); });
+}
+function bind(id, fn){ var el = document.getElementById(id); if (el) el.onclick = fn; }
+
+function pick(oi){
+  var n = S.order[S.pos];
+  if (S.mode === "practice" && (n in S.ans)) return;
+  S.ans[n] = oi; save(KEY, S); render();
+  if (S.mode === "practice"){ var fb = mcEl.querySelector(".fb"); if (fb && fb.getBoundingClientRect().bottom > innerHeight) fb.scrollIntoView({ block: "nearest" }); }
+}
+function go(i){
+  if (i < 0 || i >= S.order.length) return;
+  S.pos = i; confirmFinish = false; save(KEY, S); render();
+  var q = mcEl.querySelector(".q"); if (q && q.getBoundingClientRect().top < 0) q.scrollIntoView();
+}
+function finish(){
+  var st = stats();
+  if (st.done < st.total && !confirmFinish){ confirmFinish = true; render(); var c = mcEl.querySelector(".confirm"); if (c) c.scrollIntoView({ block: "nearest" }); return; }
+  showResults();
+}
+function showResults(){
+  S.phase = "results";
+  if (S.order.length === MC.length) S.full = stats().right;
+  save(KEY, S); render(); if (HAS_FR) renderFR(); focusTop();
+}
+
+/* composite score (only when the document defines one) */
+function frTotal(){
+  var t = 0;
+  for (var i = 0; i < FR.length; i++){ var s = frScore(FR[i]); if (s === null) return null; t += s; }
+  return t;
+}
+function frMax(){ return FR.reduce(function(a, f){ return a + frItemMax(f); }, 0); }
+function compositeHtml(){
+  var C = META.composite;
+  if (!C || !HAS_FR) return "";
+  var mc = (typeof S.full === "number") ? S.full : null, fr = frTotal(), fm = frMax(), mm = MC.length;
+  if (mc === null && fr === null) return "";
+  var lines = [];
+  if (mc === null) lines.push("Free response: <b>" + fr + " / " + fm + "</b>. Take the full multiple-choice part to get your composite score.");
+  else if (fr === null) lines.push("Multiple choice: <b>" + mc + " / " + mm + "</b>. Write and mark every free-response question to get your composite score.");
+  else {
+    var c = Math.round(C.mcWeight * mc / mm + C.frWeight * fr / fm), band = "";
+    for (var i = 0; i < C.bands.length; i++){ if (c >= C.bands[i][0]){ band = C.bands[i][1]; break; } }
+    lines.push("Composite score: <b>" + c + " / " + (C.mcWeight + C.frWeight) + "</b> &nbsp;<span class=\"muted\">= " + C.mcWeight + " &times; " + mc + "/" + mm + " + " + C.frWeight + " &times; " + fr + "/" + fm + "</span>");
+    if (band) lines.push(band);
+  }
+  return '<div class="composite" role="status">' + lines.map(function(l){ return "<p>" + l + "</p>"; }).join("") + "</div>";
+}
+function targetHtml(st){
+  var T = META.target, B = META.bands, h = "";
+  if (st.total !== MC.length) return "";
+  if (T) h += '<p class="target">' + T.label + ": " + T.mc + " / " + MC.length + " &middot; " + (st.right >= T.mc ? "met" : (T.mc - st.right) + " short") + "</p>";
+  if (B) for (var i = 0; i < B.length; i++){ if (st.right >= B[i][0]){ h += '<p class="target">' + B[i][1] + "</p>"; break; } }
+  return h;
+}
+
+var resFilter = "all";
+function renderResults(){
+  var st = stats(), pct = Math.round(st.right / st.total * 100), fullRun = st.total === MC.length;
+  var missed = S.order.filter(function(n){ return S.ans[n] !== BY[n].answer; });
+  var rows = S.order.map(function(n, i){
+    var q = BY[n], a = S.ans[n], ok = a === q.answer;
+    if (resFilter === "missed" && ok) return "";
+    return '<li><details><summary><span class="res-n">' + (i + 1) + '.</span><span class="' + (ok ? "res-ok" : "res-bad") + '" aria-label="' + (ok ? "correct" : "wrong") + '">' + (ok ? "&check;" : "&cross;") + '</span><span class="res-sum">' + q.prompt + "</span></summary>" +
+      '<div class="res-body">' + stim(q) + (q.fig || "") + table(q) + '<p><span class="sc">Your answer:</span> ' + (a === undefined ? "<i>skipped</i>" : q.options[a]) + "</p>" +
+      (ok ? "" : '<p><span class="sc">Correct:</span> ' + q.options[q.answer] + "</p>") +
+      explain(q, a) + topicLinks([q.topic]) + "</div></details></li>";
+  }).join("");
+  var tally = {};
+  S.order.forEach(function(n){ var t = BY[n].topic; if (!t) return; tally[t] = tally[t] || { right: 0, total: 0 }; tally[t].total++; if (S.ans[n] === BY[n].answer) tally[t].right++; });
+  var trows = Object.keys(TOP).filter(function(t){ return tally[t]; }).map(function(t){
+    var x = tally[t], miss = x.total - x.right;
+    return "<tr><th scope=\"row\">" + topicShort(t) + "</th><td>" + x.right + " / " + x.total + "</td><td>" + guideLink(t, true) +
+      ((META.flag ? x.right < META.flag.below * x.total : miss >= 2) ? ' <span class="flag">&middot; ' + (META.flag ? META.flag.text : "reread this section") + "</span>" : "") + "</td></tr>";
+  }).join("");
+  mcEl.innerHTML =
+    '<div class="results">' +
+      '<div class="score"><p class="score-big">' + st.right + " / " + st.total + "</p><p>" + pct + "% correct" + (fullRun ? "" : " &middot; retry of missed questions") + "</p>" + targetHtml(st) + "</div>" +
+      '<div class="res-actions">' +
+        (missed.length ? '<button type="button" class="btn btn--solid" id="retry">Retry the ' + missed.length + " missed</button>" : "") +
+        '<button type="button" class="btn" id="again">Take the full test again</button>' +
+        (HAS_FR ? '<button type="button" class="btn" id="to-fr">Go to free response</button>' : "") +
+      "</div>" +
+      compositeHtml() +
+      (trows ? '<div class="topics"><h2>' + (META.byTopic || "By topic") + '</h2><table class="bt"><thead><tr><th scope="col">' + (META.topicCol || "Topic") + '</th><th scope="col">Correct</th><th scope="col">' + (META.guideCol || "Guide section") + "</th></tr></thead><tbody>" + trows + "</tbody></table>" +
+        (META.topicNote ? '<p class="note" style="margin-top:6px">' + META.topicNote + "</p>" : "") + "</div>" : "") +
+      '<div class="res-filter"><h2>Review</h2><span><label><input type="checkbox" id="only-missed"' + (resFilter === "missed" ? " checked" : "") + "> Show missed only</label></span></div>" +
+      '<ul class="res-list">' + (rows || '<li><p class="note" style="padding:12px 0">Nothing missed.</p></li>') + "</ul>" +
+    "</div>";
+  bind("retry", function(){ start(missed); });
+  bind("again", function(){ S.phase = "setup"; save(KEY, S); render(); });
+  bind("to-fr", function(){ setTab("fr"); });
+  document.getElementById("only-missed").onchange = function(e){ resFilter = e.target.checked ? "missed" : "all"; render(); };
+}
+
+function render(){
+  if (S.phase === "run" && S.order.length) renderRun();
+  else if (S.phase === "results" && S.order.length) renderResults();
+  else { S.phase = "setup"; renderSetup(); }
+}
+
+/* free response: "epi" parts (E/P/I -> 0-4 per question) or "points" parts (0..max each) */
+var frEl = document.getElementById("fr"), F = load(FKEY, null);
+if (!F || typeof F !== "object") F = {};
+F.drafts = F.drafts || {}; F.marks = F.marks || {}; F.open = F.open || {};
+var LABELS = { 4: "Complete", 3: "Substantial", 2: "Developing", 1: "Minimal", 0: "" };
+function frItemMax(f){ return f.mode === "points" ? f.parts.reduce(function(a, p){ return a + p.max; }, 0) : 4; }
+function frScore(f){
+  if (f.mode === "points"){
+    var t = 0;
+    for (var j = 0; j < f.parts.length; j++){ var v = F.marks[f.n + f.parts[j].label]; if (v === undefined || v === "") return null; t += +v; }
+    return t;
+  }
+  var e = 0, p = 0;
+  for (var i = 0; i < f.parts.length; i++){
+    var m = F.marks[f.n + f.parts[i].label];
+    if (!m) return null;
+    if (m === "E") e++; else if (m === "P") p++;
+  }
+  if (e === 3) return 4;
+  if (e === 2 && p === 1) return 3;
+  if ((e === 2 && p === 0) || (e === 1 && p >= 1) || p === 3) return 2;
+  if ((e === 1 && p === 0) || (e === 0 && p === 2)) return 1;
+  return 0;
+}
+function words(t){ var m = t.trim().match(/\S+/g); return m ? m.length : 0; }
+var SCALE = '<details class="scale"><summary>How part scores convert to 0&ndash;4</summary><table class="bt"><thead><tr><th scope="col">Score</th><th scope="col">Label</th><th scope="col">Part scores (three parts, each E, P, or I)</th></tr></thead><tbody>' +
+  "<tr><td>4</td><td>Complete</td><td>three parts E</td></tr>" +
+  "<tr><td>3</td><td>Substantial</td><td>two parts E and one part P</td></tr>" +
+  "<tr><td>2</td><td>Developing</td><td>two E and no P; or one E and one or two P; or three P</td></tr>" +
+  "<tr><td>1</td><td>Minimal</td><td>one E and no P; or no E and two P</td></tr>" +
+  "<tr><td>0</td><td></td><td>anything less</td></tr></tbody></table></details>";
+function frScoreHtml(f){
+  var s = frScore(f), mx = frItemMax(f);
+  if (s === null) return '<span class="muted">Mark every part to score this question.</span>';
+  return "Score: <b>" + s + " / " + mx + "</b>" + (f.mode !== "points" && LABELS[s] ? " &middot; " + LABELS[s] : "");
+}
+function markButtons(f, p, id, m){
+  var vals = f.mode === "points" ? range(p.max + 1).map(String) : ["E", "P", "I"];
+  return vals.map(function(x){ return '<button type="button" data-mark="' + id + '" data-f="' + f.n + '" data-v="' + x + '" aria-pressed="' + (m === x) + '">' + x + "</button>"; }).join("");
+}
+function renderFR(){
+  if (!HAS_FR) return;
+  frEl.innerHTML = '<p class="fr-intro">' + META.frIntro + "</p>" +
+    FR.map(function(f){
+      var open = !!F.open[f.n];
+      var parts = f.parts.map(function(p){
+        var id = f.n + p.label, d = F.drafts[id] || "", m = (F.marks[id] === undefined ? "" : String(F.marks[id]));
+        var crit = f.mode === "points"
+          ? '<div class="crit-pts">' + p.rubric + "</div>"
+          : '<dl class="crit"><dt>E</dt><dd>if the response ' + p.e + "</dd><dt>P</dt><dd>if " + p.p + "</dd></dl>";
+        return '<div class="part"><p class="part-prompt"><b>(' + p.label + ")</b>" + p.prompt + "</p>" +
+          '<label class="sc" for="fr-' + id + '">Your answer to (' + p.label + ")</label>" +
+          '<textarea id="fr-' + id + '" data-fr="' + id + '" spellcheck="true">' + esc(d) + "</textarea>" +
+          '<p class="part-meta" id="wc-' + id + '">' + words(d) + " words &middot; saved in this browser</p>" +
+          '<div class="sol"' + (open ? "" : " hidden") + ' data-sol="' + f.n + '"><h3>Model solution (' + p.label + ")</h3><div>" + p.solution + "</div>" + crit +
+            '<div class="mark-row"><span>Your mark for (' + p.label + ")" + (f.mode === "points" ? ", out of " + p.max : "") + ':</span><span class="seg" role="group" aria-label="Mark for part ' + p.label + '">' + markButtons(f, p, id, m) + "</span></div></div></div>";
+      }).join("");
+      return '<article class="fr"><h2>Question ' + f.n + "<small>" + f.head + "</small></h2>" +
+        (f.stim ? stim(f) : "") + '<div class="fr-stem">' + f.stem + "</div>" + parts +
+        '<div class="fr-actions"><span class="fr-score" id="score-' + f.n + '">' + (open ? frScoreHtml(f) : "") + "</span>" +
+          '<button type="button" class="btn" data-open="' + f.n + '" aria-expanded="' + open + '">' + (open ? "Hide model solution" : "Show model solution and scoring") + "</button></div>" +
+        (open ? (f.mode === "points" ? "" : SCALE) + topicLinks(f.guide || []) : "") +
+        "</article>";
+    }).join("") + '<div id="fr-composite">' + compositeHtml() + "</div>";
+  frEl.querySelectorAll("textarea").forEach(function(t){
+    t.oninput = function(){ F.drafts[t.dataset.fr] = t.value; save(FKEY, F); document.getElementById("wc-" + t.dataset.fr).innerHTML = words(t.value) + " words &middot; saved in this browser"; };
+  });
+  frEl.querySelectorAll("[data-open]").forEach(function(b){
+    b.onclick = function(){ var n = b.dataset.open; F.open[n] = !F.open[n]; save(FKEY, F); renderFR(); var a = document.getElementById("score-" + n); if (a) a.closest(".fr").querySelector(".part").scrollIntoView({ block: "nearest" }); };
+  });
+  frEl.querySelectorAll("[data-mark]").forEach(function(b){
+    b.onclick = function(){
+      var id = b.dataset.mark; F.marks[id] = F.marks[id] === b.dataset.v ? "" : b.dataset.v; save(FKEY, F);
+      b.parentNode.querySelectorAll("button").forEach(function(x){ x.setAttribute("aria-pressed", String(F.marks[id] === x.dataset.v)); });
+      var f = FR.filter(function(x){ return String(x.n) === b.dataset.f; })[0];
+      document.getElementById("score-" + f.n).innerHTML = frScoreHtml(f);
+      document.getElementById("fr-composite").innerHTML = compositeHtml();
+      if (S.phase === "results") render();
+    };
+  });
+}
+
+/* tabs (only when there is a free-response part) */
+function setTab(t){
+  if (!HAS_FR) return;
+  var mc = t === "mc";
+  document.getElementById("tab-mc").setAttribute("aria-selected", String(mc));
+  document.getElementById("tab-fr").setAttribute("aria-selected", String(!mc));
+  mcEl.hidden = !mc; frEl.hidden = mc;
+  try{ history.replaceState(null, "", mc ? location.pathname : "#free-response"); }catch(e){}
+  focusTop();
+}
+if (HAS_FR){
+  document.getElementById("tab-mc").onclick = function(){ setTab("mc"); };
+  document.getElementById("tab-fr").onclick = function(){ setTab("fr"); };
+}
+
+/* keyboard */
+document.addEventListener("keydown", function(e){
+  if (e.metaKey || e.ctrlKey || e.altKey) return;
+  var tag = (e.target.tagName || "").toLowerCase();
+  if (tag === "textarea" || tag === "input") return;
+  if (mcEl.hidden || S.phase !== "run") return;
+  var n = S.order[S.pos], q = BY[n];
+  if (/^[1-9]$/.test(e.key)){ var k = +e.key - 1; if (k < q.options.length){ e.preventDefault(); pick(S.copt[n][k]); } }
+  else if (e.key === "ArrowRight"){ e.preventDefault(); go(S.pos + 1); }
+  else if (e.key === "ArrowLeft"){ e.preventDefault(); go(S.pos - 1); }
+  else if (e.key === "Enter" && tag !== "button" && tag !== "a"){ e.preventDefault(); if (S.pos < S.order.length - 1) go(S.pos + 1); else finish(); }
+});
+
+/* theme */
+var root = document.documentElement, tb = document.getElementById("theme-btn");
+function syncTheme(){ var dark = root.getAttribute("data-theme") === "dark"; tb.textContent = dark ? "Light mode" : "Dark mode"; tb.setAttribute("aria-pressed", String(dark)); }
+tb.onclick = function(){ var dark = root.getAttribute("data-theme") !== "dark"; root.setAttribute("data-theme", dark ? "dark" : "light"); try{ localStorage.setItem("apah.theme", dark ? "dark" : "light"); }catch(e){} syncTheme(); };
+syncTheme();
+
+render(); renderFR();
+if (HAS_FR && location.hash === "#free-response") setTab("fr");
+})();
+</script>
+</body>
+</html>

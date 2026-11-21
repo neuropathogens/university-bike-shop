@@ -114,10 +114,10 @@ def walk(o, fn):
 
 def page_data(z):
     meta_keys = ("key", "fkey", "ask", "setupNote", "topicPrefix", "topicCol", "guideCol", "byTopic", "topicNote", "guide",
-                 "guideName", "target", "bands", "composite", "frIntro")
+                 "guideName", "target", "bands", "composite", "frIntro", "flag")
     data = {
         "meta": {k: z[k] for k in meta_keys if k in z},
-        "topics": {t: {"name": v[0], "page": v[1]} for t, v in z.get("topics", {}).items()},
+        "topics": {t: dict(name=v[0], page=v[1], **({"url": v[2]} if len(v) > 2 else {})) for t, v in z.get("topics", {}).items()},
         "sections": {str(k): v for k, v in z.get("sections", {}).items()},
         "stims": z.get("stims", {}),
         "mc": [],
