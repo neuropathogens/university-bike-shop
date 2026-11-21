@@ -8,17 +8,24 @@
   gap: 1rem;
 }
 
-.intro {
-  max-width: 40rem;
+.section h2 {
+  margin-top: 1.5rem;
 }
 
-.summary {
-  font-style: italic;
+.intro {
+  max-width: 40rem;
 }
 
 .stars {
   letter-spacing: 0.1em;
   white-space: nowrap;
+}
+
+.accounts {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
 .list {
@@ -43,17 +50,21 @@
   line-height: 1.5;
 }
 
+.translation {
+  font-style: italic;
+}
+
 .name {
   font-weight: bold;
 }
 
-.source {
+.meta {
   display: block;
   font-style: italic;
 }
 
-.source a,
-.more a {
+a.meta,
+.underline {
   text-decoration: underline;
 }
 

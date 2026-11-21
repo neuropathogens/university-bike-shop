@@ -1,3 +1,5 @@
+import Link from "next/link";
+import { facebookAccounts, facebookRatingCount } from "@/config/reviews";
 import styles from "./SellYourBike.module.css";
 
 export default function SellYourBike() {
@@ -7,9 +9,18 @@ export default function SellYourBike() {
       <p>
         We can help you consign your road, gravel, or triathlon bike at a
         commission rate of 10%. We will inspect, clean, and tune-up your
-        bike, and do all of the messaging for you. We have a 5-star seller
-        rating on FB marketplace (50+ reviews), and we will promise that
-        same quality to you.
+        bike, and do all of the messaging for you. Our Facebook Marketplace
+        seller accounts have {facebookRatingCount} buyer ratings between them
+        (rated{" "}
+        {new Intl.ListFormat("en").format(
+          facebookAccounts.map((a) => a.rating.toFixed(1)),
+        )}{" "}
+        stars;
+        see our{" "}
+        <Link href="/reviews" className={styles.link}>
+          reviews
+        </Link>
+        ), and we will promise that same quality to you.
       </p>
       <p>
         Please message (650) 656-6807 or email universitybikeshop@gmail.com
