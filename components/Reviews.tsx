@@ -1,95 +1,44 @@
 import {
   facebookAccounts,
-  facebookAsOf,
   facebookRatingCount,
-  reviews,
-  type Review,
+  lastUpdated,
+  spotlights,
 } from "@/config/reviews";
 import styles from "./Reviews.module.css";
 
-const MONTHS = [
-  "January", "February", "March", "April", "May", "June",
-  "July", "August", "September", "October", "November", "December",
-];
-
-const LANGUAGES: Record<string, string> = { zh: "Chinese" };
-
-function formatDate(date: string) {
-  const [year, month] = date.split("-");
-  return month ? `${MONTHS[Number(month) - 1]} ${year}` : year;
-}
-
-function Stars({ rating }: { rating: number }) {
-  const full = Math.round(rating);
-  return (
-    <span className={styles.stars} role="img" aria-label={`${rating} out of 5 stars`}>
-      {"★".repeat(full)}
-      {"☆".repeat(5 - full)}
-    </span>
-  );
-}
-
-function ReviewItem({ review }: { review: Review }) {
-  const meta = [
-    review.account,
-    review.date && formatDate(review.date),
-    review.notable && `Notable: ${review.notable.join(", ")}`,
-  ].filter(Boolean);
-  const language = review.lang && LANGUAGES[review.lang.split("-")[0]];
-
-  return (
-    <li className={styles.review}>
-      <figure>
-        {review.rating !== undefined && <Stars rating={review.rating} />}
-        <blockquote lang={review.lang}>
-          <p>&ldquo;{review.quote}&rdquo;</p>
-        </blockquote>
-        {review.translation && (
-          <p className={styles.translation}>
-            {language ? `Translated from ${language}: ` : "Translation: "}
-            &ldquo;{review.translation}&rdquo;
-          </p>
-        )}
-        <figcaption>
-          <span className={styles.name}>{review.name}</span>
-          {review.detail && <>, {review.detail}</>}
-          {meta.length > 0 && <span className={styles.meta}>{meta.join(" · ")}</span>}
-          {review.link && (
-            <a className={styles.meta} href={review.link} target="_blank" rel="noopener noreferrer">
-              See the original post
-            </a>
-          )}
-        </figcaption>
-      </figure>
-    </li>
-  );
-}
+const updatedLabel = new Intl.DateTimeFormat("en-US", {
+  timeZone: "America/Los_Angeles",
+  month: "long",
+  day: "numeric",
+  year: "numeric",
+  hour: "numeric",
+  minute: "2-digit",
+  timeZoneName: "short",
+}).format(new Date(lastUpdated));
 
 export default function Reviews() {
-  const facebook = reviews.filter((r) => r.source === "facebook");
-  const instagram = reviews.filter((r) => r.source === "instagram");
-
   return (
     <section id="reviews" className={styles.section}>
       <h1>Reviews</h1>
+      <p className={styles.updated}>
+        Last updated <time dateTime={lastUpdated}>{updatedLabel}</time>
+      </p>
       <p className={styles.intro}>
-        What customers have said about buying bikes from us, from our Facebook
-        Marketplace seller accounts and the riders we&apos;ve featured on
-        Instagram.
+        Our buyer ratings on Facebook Marketplace and the riders we&apos;ve
+        featured on Instagram.
       </p>
 
       <h2>Facebook Marketplace</h2>
       <p className={styles.intro}>
         We sell through several Facebook Marketplace seller accounts. Together
-        they have {facebookRatingCount} buyer ratings (as of{" "}
-        {formatDate(facebookAsOf)}):
+        they have {facebookRatingCount} buyer ratings:
       </p>
       <ul className={styles.accounts}>
         {facebookAccounts.map((account) => (
           <li key={account.name}>
             <span className={styles.name}>{account.name}</span>{" "}
             <span aria-hidden="true">★</span> {account.rating.toFixed(1)} out
-            of 5 ({account.count} ratings)
+            of 5 ({account.count} ratings{account.note ? `, ${account.note}` : ""})
             {account.strengths && (
               <span className={styles.meta}>
                 Strengths buyers named most:{" "}
@@ -99,11 +48,6 @@ export default function Reviews() {
               </span>
             )}
           </li>
-        ))}
-      </ul>
-      <ul className={styles.list}>
-        {facebook.map((review) => (
-          <ReviewItem key={`${review.name}-${review.quote.slice(0, 24)}`} review={review} />
         ))}
       </ul>
 
@@ -120,11 +64,18 @@ export default function Reviews() {
         </a>
         .
       </p>
-      <ul className={styles.list}>
-        {instagram.map((review) => (
-          <ReviewItem key={`${review.name}-${review.quote.slice(0, 24)}`} review={review} />
+      <div className={styles.spotlights}>
+        {spotlights.map((spotlight) => (
+          <img
+            key={spotlight.src}
+            src={spotlight.src}
+            width={spotlight.width}
+            height={spotlight.height}
+            alt={spotlight.alt}
+            decoding="async"
+          />
         ))}
-      </ul>
+      </div>
 
       <p className={styles.more}>
         Bought or sold a bike with us?{" "}
