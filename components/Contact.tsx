@@ -13,6 +13,14 @@ export default function Contact() {
         >
           @universitybikes
         </a>
+        {" · "}
+        <a
+          href="https://www.linkedin.com/company/144140744/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          LinkedIn
+        </a>
       </p>
     </footer>
   );

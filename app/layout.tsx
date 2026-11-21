@@ -50,7 +50,10 @@ const localBusinessJsonLd = {
     addressRegion: "CA",
     addressCountry: "US",
   },
-  sameAs: ["https://www.instagram.com/universitybikes"],
+  sameAs: [
+    "https://www.instagram.com/universitybikes",
+    "https://www.linkedin.com/company/144140744/",
+  ],
   description:
     "Student-run bike shop in Palo Alto, CA selling used road, gravel, triathlon, and mountain bikes, with repairs, tune-ups, and bike fits by appointment.",
 };
