@@ -226,6 +226,8 @@ u.ul{text-decoration-thickness:1px;text-underline-offset:3px}
 .fig .figcap{margin:0 0 6px;font-size:15px}
 .stim.free{max-height:none;overflow:visible}
 .bt th[colspan]{text-align:center}
+.fig-after{margin:12px 0 4px}
+.fig-after img{max-width:min(100%,420px);max-height:340px;width:auto;object-fit:contain}
 .stim .figcap{text-align:center;font-size:15px;margin:10px 0 4px}
 .stim .fig{margin:6px 0 10px}
 .stim .bt-wrap{margin:0 0 10px}
@@ -380,7 +382,7 @@ function renderRun(){
   var fb = "";
   if (locked){
     var ok = picked === q.answer, ans = quoted(q, q.answer);
-    fb = '<div class="fb' + (ok ? "" : " is-wrong") + '"><p class="verdict" role="status">' + (ok ? "Correct." : "Not quite. The answer is " + ans + (/[.?!](&rdquo;)?$/.test(ans) ? "" : ".")) + "</p>" + explain(q, picked) + topicLinks([q.topic]) + "</div>";
+    fb = '<div class="fb' + (ok ? "" : " is-wrong") + '"><p class="verdict" role="status">' + (ok ? "Correct." : "Not quite. The answer is " + ans + (/[.?!](&rdquo;)?$/.test(ans) ? "" : ".")) + "</p>" + explain(q, picked) + (q.after || "") + topicLinks([q.topic]) + "</div>";
   }
   var last = S.pos === S.order.length - 1, allDone = st.done === st.total;
   var nextBtn = last
@@ -484,7 +486,7 @@ function renderResults(){
     return '<li><details><summary><span class="res-n">' + (i + 1) + '.</span><span class="' + (ok ? "res-ok" : "res-bad") + '" aria-label="' + (ok ? "correct" : "wrong") + '">' + (ok ? "&check;" : "&cross;") + '</span><span class="res-sum">' + q.prompt + "</span></summary>" +
       '<div class="res-body">' + stim(q) + (q.fig || "") + table(q) + '<p><span class="sc">Your answer:</span> ' + (a === undefined ? "<i>skipped</i>" : q.options[a]) + "</p>" +
       (ok ? "" : '<p><span class="sc">Correct:</span> ' + q.options[q.answer] + "</p>") +
-      explain(q, a) + topicLinks([q.topic]) + "</div></details></li>";
+      explain(q, a) + (q.after || "") + topicLinks([q.topic]) + "</div></details></li>";
   }).join("");
   var tally = {};
   S.order.forEach(function(n){ var t = BY[n].topic; if (!t) return; tally[t] = tally[t] || { right: 0, total: 0 }; tally[t].total++; if (S.ans[n] === BY[n].answer) tally[t].right++; });

@@ -1,0 +1,645 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light">
+<script>try{document.documentElement.setAttribute("data-theme",localStorage.getItem("apah.theme")==="dark"?"dark":"light")}catch(e){document.documentElement.setAttribute("data-theme","light")}</script>
+<title>APAH 250 Practice 10: Global Contemporary</title>
+<meta name="description" content="AP Art History practice on the required works, Global Contemporary: 54 questions, two per work, each explained with the guide&#x27;s facts and why every wrong choice is wrong.">
+<link rel="icon" href="/favicon.ico" sizes="48x48" type="image/x-icon">
+<link rel="icon" href="/icon.svg" sizes="any" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-icon.png" sizes="180x180">
+<link rel="preload" href="/study/ap/ap-art-history/fonts/LM-regular.woff2" as="font" type="font/woff2" crossorigin>
+
+<style>
+@font-face{font-family:"Latin Modern";font-style:normal;font-weight:400;font-display:swap;src:url("/study/ap/ap-art-history/fonts/LM-regular.woff2") format("woff2")}
+@font-face{font-family:"Latin Modern";font-style:italic;font-weight:400;font-display:swap;src:url("/study/ap/ap-art-history/fonts/LM-italic.woff2") format("woff2")}
+@font-face{font-family:"Latin Modern";font-style:normal;font-weight:600 700;font-display:swap;src:url("/study/ap/ap-art-history/fonts/LM-bold.woff2") format("woff2")}
+@font-face{font-family:"Latin Modern";font-style:italic;font-weight:600 700;font-display:swap;src:url("/study/ap/ap-art-history/fonts/LM-bold-italic.woff2") format("woff2")}
+@font-face{font-family:"Latin Modern Mono";font-style:normal;font-weight:400 500;font-display:swap;src:url("/study/ap/ap-art-history/fonts/LM-mono.woff2") format("woff2")}
+@font-face{font-family:"Latin Modern Mono";font-style:normal;font-weight:600 700;font-display:swap;src:url("/study/ap/ap-art-history/fonts/LM-mono-bold.woff2") format("woff2")}
+
+:root{--bg:#fff;--fg:#000;--muted:#4a4a4a;--line:#c9c9c9;--plate:#f5f5f3;--hl:#fbe9a6;--link:#00008b;--ok:#1d5e20;--bad:#9b1c1c;
+  --serif:"Latin Modern","Computer Modern Serif","CMU Serif",Georgia,serif;--mono:"Latin Modern Mono","SFMono-Regular",Menlo,Consolas,monospace;
+  --gutter:clamp(16px,4vw,40px);color-scheme:light}
+:root[data-theme=dark]{--bg:#111110;--fg:#ecebe6;--muted:#a3a29c;--line:#34342f;--plate:#1b1b19;--hl:#4d4320;--link:#9db4ff;--ok:#8fd394;--bad:#ff9b9b;color-scheme:dark}
+*{box-sizing:border-box}
+html{background:var(--bg);scroll-padding-top:16px}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--serif);font-size:17px;line-height:1.5;font-kerning:normal;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+button,input,textarea{font:inherit;color:inherit}
+button{cursor:pointer}
+button:disabled{cursor:default}
+a{color:var(--link);text-underline-offset:3px;text-decoration-thickness:.5px}
+:focus-visible{outline:2px solid var(--link);outline-offset:2px}
+[hidden]{display:none!important}
+.sc{font-variant:small-caps;text-transform:lowercase;letter-spacing:.04em}
+.muted{color:var(--muted)}
+.katex{font-size:1.04em;text-rendering:auto}
+.katex-display{margin:.7em 0;overflow-x:auto;overflow-y:hidden;padding:2px 0}
+
+.runhead{display:flex;flex-wrap:wrap;justify-content:space-between;gap:4px 16px;max-width:1480px;margin:0 auto;padding:14px var(--gutter) 6px;font-size:14px;font-style:italic;color:var(--muted)}
+.runhead a{text-decoration:none}
+.runhead a:hover{text-decoration:underline}
+.runhead-actions{display:flex;flex-wrap:wrap;gap:4px 18px}
+.theme-btn{background:none;border:0;padding:0;font:inherit;font-style:italic;color:var(--link)}
+.theme-btn:hover{text-decoration:underline}
+.rule{max-width:1480px;margin:0 auto;padding-inline:var(--gutter)}
+.rule hr{margin:0;border:0;border-top:.5px solid var(--fg)}
+
+.wrap{max-width:860px;margin:0 auto;padding:0 var(--gutter) 80px}
+.title{text-align:center;padding:34px 0 22px}
+.title h1{margin:0;text-wrap:balance;font-size:clamp(32px,6vw,46px);line-height:1.1;font-weight:700}
+.title .sub{margin:8px 0 0;font-size:18px;font-variant:small-caps;letter-spacing:.03em}
+.title .meta{margin:4px 0 0;font-style:italic;color:var(--muted)}
+
+.tabs{display:flex;justify-content:center;gap:0;margin:0 0 26px;border-bottom:.5px solid var(--fg)}
+.tab{background:none;border:0;border-bottom:2.5px solid transparent;padding:8px 18px;margin-bottom:-1px;font-size:17px;color:var(--muted)}
+.tab[aria-selected=true]{color:var(--fg);border-bottom-color:var(--fg);font-weight:700}
+.tab:hover{color:var(--fg)}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:40px;padding:0 16px;border:1px solid var(--fg);background:var(--bg);font-family:var(--mono);font-size:14.5px;white-space:nowrap}
+.btn:hover:not(:disabled){background:var(--plate)}
+.btn:disabled{opacity:.35}
+.btn--solid{background:var(--fg);color:var(--bg)}
+.btn--solid:hover:not(:disabled){background:var(--fg);opacity:.85}
+.btn--lg{min-height:48px;font-size:15.5px;padding:0 22px}
+.kbd{display:inline-grid;place-items:center;min-width:22px;height:22px;padding:0 4px;border:1px solid currentColor;font-family:var(--mono);font-size:12px;opacity:.8}
+
+/* booktabs tables */
+.bt{border-collapse:collapse;margin:0 auto;font-variant-numeric:tabular-nums}
+.bt th,.bt td{padding:4px 12px;text-align:center;font-weight:400}
+.bt th[scope=row],.bt thead th:first-child{text-align:left}
+.bt thead tr{border-top:1px solid var(--fg);border-bottom:.5px solid var(--fg)}
+.bt tbody tr:last-child{border-bottom:1px solid var(--fg)}
+.bt-wrap{overflow-x:auto;margin:0 0 16px}
+
+/* setup */
+.setup{border-bottom:1.5px solid var(--fg);padding:4px 0 22px;display:grid;gap:18px}
+.setup h2,.results h2,.fr h2{margin:0;font-size:20px}
+.choice-row{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.choice{display:flex;flex-direction:column;align-items:flex-start;gap:2px;padding:12px 14px;border:1px solid var(--fg);background:var(--bg);text-align:left}
+.choice b{font-size:17px}
+.choice span{font-size:14.5px;font-style:italic;color:var(--muted)}
+.choice[aria-pressed=true]{background:var(--fg);color:var(--bg)}
+.choice[aria-pressed=true] span{color:var(--bg);opacity:.8}
+.checks{display:flex;flex-wrap:wrap;gap:8px 22px}
+.checks label{display:inline-flex;align-items:center;gap:8px;cursor:pointer}
+.checks input{width:17px;height:17px;margin:0;accent-color:var(--fg)}
+.setup-actions{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.note{margin:0;font-size:15px;color:var(--muted);font-style:italic}
+
+/* run */
+.bar{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:4px 16px;font-size:15px;color:var(--muted)}
+.track{height:3px;background:var(--line);margin:8px 0 14px}
+.track span{display:block;height:100%;background:var(--fg);transition:width .2s ease}
+.nav{display:grid;grid-template-columns:repeat(auto-fill,minmax(34px,1fr));gap:5px;margin:0 0 22px}
+.nav button{height:32px;padding:0;border:1px solid var(--line);background:var(--bg);font-family:var(--serif);font-size:14px;font-variant-numeric:tabular-nums}
+.nav button:hover{border-color:var(--fg)}
+.nav .is-answered{background:var(--plate);border-color:var(--fg)}
+.nav .is-right{background:var(--fg);color:var(--bg);border-color:var(--fg)}
+.nav .is-wrong{border:1.5px dashed var(--bad);color:var(--bad)}
+.nav .is-current{outline:2px solid var(--fg);outline-offset:1px}
+.q{border-top:1.5px solid var(--fg);padding-top:16px}
+.q-eyebrow{margin:0 0 6px;font-size:14px;color:var(--muted)}
+.q-prompt{margin:0 0 14px;font-size:20px;line-height:1.45;font-weight:400}
+.opts{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.opt{display:flex;align-items:center;gap:12px;width:100%;min-height:52px;padding:10px 14px;border:1px solid var(--fg);background:var(--bg);text-align:left;font-size:16.5px;line-height:1.4}
+.opt:hover:not(:disabled){background:var(--plate)}
+.opt .kbd{flex:none}
+.opt .mark{margin-left:auto;padding-left:6px;font-family:var(--mono);font-size:14px;white-space:nowrap}
+.opt.is-picked{border-width:2px;padding:9px 13px;background:var(--plate)}
+.opt.is-right{background:var(--fg);color:var(--bg);border-color:var(--fg)}
+.opt.is-wrong{border:1.5px dashed var(--bad);color:var(--bad);text-decoration:line-through;text-decoration-thickness:1px}
+.opt.is-wrong .mark,.opt.is-wrong .kbd{text-decoration:none}
+.opt.is-dim{opacity:.5}
+.fb{margin:14px 0 0;padding:12px 16px;border:.5px solid var(--fg);border-left:3px solid var(--ok)}
+.fb.is-wrong{border-left-color:var(--bad)}
+.fb p{margin:0}
+.fb .verdict{font-weight:700;margin-bottom:4px}
+.why p{margin:0 0 6px}
+.steps{margin:2px 0 8px;padding-left:22px}
+.steps li{margin:4px 0;padding-left:2px}
+.why .why-h{margin:10px 0 2px;font-size:14.5px;color:var(--muted)}
+.others{margin:0 0 4px;padding-left:20px}
+.others li{margin:5px 0}
+.others .tag{margin-left:6px;font-family:var(--mono);font-size:12.5px;color:var(--bad);white-space:nowrap}
+.links{margin-top:6px;font-size:15px}
+.step{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:10px;margin-top:20px}
+.step-right{display:flex;flex-wrap:wrap;gap:8px}
+.confirm{margin-top:14px;padding:12px 16px;border:1px solid var(--fg);display:flex;flex-wrap:wrap;align-items:center;gap:10px}
+.confirm p{margin:0;flex:1 1 220px}
+.keys{margin:18px 0 0;font-size:13.5px;color:var(--muted);text-align:center}
+.restart-line{margin:10px 0 0;font-size:14.5px;text-align:center}
+
+/* results */
+.results{padding-top:4px}
+.score{text-align:center;padding:10px 0 18px}
+.score-big{margin:0;font-size:clamp(48px,10vw,72px);font-weight:700;line-height:1;font-variant-numeric:tabular-nums}
+.score p{margin:6px 0 0}
+.res-actions{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin:0 0 22px}
+.res-filter{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:6px;border-bottom:1.5px solid var(--fg);padding-bottom:6px}
+.res-list{list-style:none;margin:0;padding:0}
+.res-list>li{border-bottom:.5px solid var(--line)}
+.res-list>li:last-child{border-bottom:1.5px solid var(--fg)}
+.res-list details{padding:10px 0}
+.res-list summary{display:grid;grid-template-columns:34px 22px minmax(0,1fr);gap:8px;cursor:pointer;list-style:none}
+.res-list summary::-webkit-details-marker{display:none}
+.res-n{font-weight:700;font-variant-numeric:tabular-nums}
+.res-ok{color:var(--ok);font-weight:700}
+.res-bad{color:var(--bad);font-weight:700}
+.res-body{padding:8px 0 4px 64px;font-size:15.5px}
+.res-body p{margin:0 0 4px}
+.res-body .bt-wrap{margin:4px 0 8px}
+.topics{margin:0 0 26px}
+.topics h2{margin:0 0 8px}
+.topics .bt{margin:0;width:100%}
+.topics .bt td:last-child,.topics .bt th:last-child{text-align:left}
+.topics .flag{color:var(--bad);font-style:italic}
+.composite{margin:0 0 26px;padding:12px 16px;border:.5px solid var(--fg);border-left:3px solid var(--fg)}
+.composite p{margin:0}
+.composite p+p{margin-top:4px}
+
+/* free response */
+.fr-intro{margin:0 0 6px;font-style:italic;color:var(--muted)}
+.fr{border-top:1.5px solid var(--fg);padding:18px 0 26px}
+.fr h2 small{font-weight:400;font-style:italic;color:var(--muted);font-size:15px;margin-left:6px}
+.fr-stem{margin:10px 0 6px;text-align:justify;hyphens:auto;-webkit-hyphens:auto}
+.part{margin:18px 0 0}
+.part-prompt{margin:0 0 8px}
+.part-prompt b{margin-right:4px}
+.part textarea{width:100%;min-height:150px;padding:12px 14px;border:1px solid var(--fg);border-radius:0;background:var(--bg);font-family:var(--serif);font-size:16.5px;line-height:1.55;resize:vertical}
+.part-meta{margin-top:4px;font-size:14px;color:var(--muted)}
+.sol{margin-top:12px;padding:12px 18px;border:.5px solid var(--fg)}
+.sol h3{margin:0 0 4px;font-size:15px}
+.sol p{margin:0 0 10px}
+.sol .crit{display:grid;grid-template-columns:28px minmax(0,1fr);gap:2px 8px;margin:0 0 10px;font-size:15.5px}
+.sol .crit dt{font-weight:700}
+.sol .crit dd{margin:0}
+.mark-row{display:flex;flex-wrap:wrap;align-items:center;gap:8px;font-size:15px}
+.seg{display:inline-flex}
+.seg button{min-width:44px;min-height:36px;padding:0 10px;border:1px solid var(--fg);background:var(--bg);font-family:var(--mono);font-size:14px}
+.seg button+button{border-left:0}
+.seg button[aria-pressed=true]{background:var(--fg);color:var(--bg)}
+.fr-actions{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:10px;margin-top:16px}
+.fr-score{font-size:16px}
+.fr-score b{font-variant-numeric:tabular-nums}
+.scale{margin-top:14px}
+.scale summary{cursor:pointer;font-size:15px;color:var(--muted);font-style:italic}
+.scale .bt{margin:8px 0 0}
+.scale .bt td:last-child,.scale .bt th:last-child{text-align:left}
+.foot{margin-top:40px;padding-top:12px;border-top:.5px solid var(--line);font-size:14px;color:var(--muted)}
+
+@media (max-width:640px){
+  .runhead-title{display:none}
+  .runhead-actions{width:100%;justify-content:space-between}
+  .title{padding:22px 0 16px}
+  .choice-row{grid-template-columns:1fr}
+  .q-prompt{font-size:18.5px}
+  .res-body{padding-left:0}
+  .keys{display:none}
+  .fr-stem{text-align:left}
+  .bt th,.bt td{padding:4px 7px}
+  .sol{padding:10px 12px}
+  .katex-display>.katex{font-size:.94em}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+@media print{.runhead,.rule,.tabs,.nav,.step,.keys,.restart-line,.res-actions{display:none!important}}
+/* generic quiz additions */
+.q-prompt p{margin:0}
+.q-prompt p+p{margin-top:8px}
+.q-ask{margin:10px 0 0!important;font-size:16px;font-style:italic;color:var(--muted)}
+.blank{display:inline-block;width:3.4em;height:1em;margin:0 .12em;border-bottom:1.5px solid currentColor;vertical-align:-.12em}
+.stim{position:relative;margin:0 0 16px;padding:12px 16px;border:.5px solid var(--fg);background:var(--plate);font-size:16.5px;line-height:1.55;max-height:60vh;overflow:auto}
+.stim-h{margin:0 0 6px!important;font-size:14px;color:var(--muted)}
+.stim p{margin:0 0 8px}
+.stim p:last-child{margin-bottom:0}
+u.ul{text-decoration-thickness:1px;text-underline-offset:3px}
+.qn{display:inline-block;min-width:1.4em;padding:0 .2em;margin:0 .15em;border:.5px solid var(--fg);font:600 11.5px/1.4 system-ui,-apple-system,sans-serif;text-align:center;vertical-align:.12em;font-variant-numeric:tabular-nums}
+.stim .qn[data-cur]{background:var(--fg);color:var(--bg)}
+.stim u[data-cur]{background:var(--hl);box-shadow:0 0 0 2px var(--hl)}
+.stim .ln{display:inline-block;min-width:1.3em;padding:0 .25em;margin-right:.25em;border:.5px solid var(--line);color:var(--muted);font:500 11px/1.4 system-ui,-apple-system,sans-serif;text-align:center;vertical-align:.12em;font-variant-numeric:tabular-nums}
+.stim .ln[data-cur]{background:var(--hl);color:var(--fg);border-color:var(--fg)}
+.stim-intro{font-style:italic;color:var(--muted);font-size:15px}
+.stim-sub{margin-top:12px!important}
+.stim-note{font-size:15px;color:var(--muted)}
+.fig .figcap{margin:0 0 6px;font-size:15px}
+.stim.free{max-height:none;overflow:visible}
+.bt th[colspan]{text-align:center}
+.fig-after{margin:12px 0 4px}
+.fig-after img{max-width:min(100%,420px);max-height:340px;width:auto;object-fit:contain}
+.stim .figcap{text-align:center;font-size:15px;margin:10px 0 4px}
+.stim .fig{margin:6px 0 10px}
+.stim .bt-wrap{margin:0 0 10px}
+.fig-img,.opt-img{max-width:100%;height:auto;background:#fff}
+.opt-img{display:block;max-width:140px}
+:root[data-theme=dark] .fig-img,:root[data-theme=dark] .opt-img{filter:invert(.92) hue-rotate(180deg)}
+.fig{margin:0 0 14px;text-align:center}
+.fig img{max-width:100%;height:auto;background:#fff}
+:root[data-theme=dark] .fig img{filter:invert(.92) hue-rotate(180deg)}
+.fig figcaption{font-size:14px;color:var(--muted);font-style:italic}
+.target{margin:4px 0 0;font-style:italic}
+.res-sum{display:block}
+.opt>span:nth-child(2){flex:1 1 auto;min-width:0;overflow-wrap:anywhere;-webkit-hyphens:auto;hyphens:auto}
+@media (max-width:640px){.opt .mark{white-space:normal;text-align:right;max-width:6.2em;line-height:1.25}}
+.sol>div{margin:0 0 10px}
+.crit-pts{margin:0 0 10px;font-size:15.5px}
+.crit-pts p{margin:0 0 4px}
+.crit-pts ul{margin:0 0 4px;padding-left:20px}
+</style>
+</head>
+<body>
+<div class="runhead"><span class="runhead-title">AP Art History &middot; The 250 required works &middot; Practice</span><span class="runhead-actions"><a href="/study/#ap-art-history">&larr;&nbsp;Study Library</a><a href="/study/ap/ap-art-history/apah-250-every-work-explained.pdf">PDF version</a><button type="button" class="theme-btn" id="theme-btn">Dark mode</button></span></div>
+<div class="rule"><hr></div>
+
+<main class="wrap">
+  <header class="title">
+    <h1>Global Contemporary</h1>
+    <p class="sub">APAH 250 &middot; Content area 10 of 10</p>
+    <p class="meta">54 questions (Nos. 447&ndash;500) &middot; two per work &middot; works 224&ndash;250</p>
+  </header>
+
+  <section id="mc"></section>
+  <section id="fr" role="tabpanel" aria-labelledby="tab-fr" hidden></section>
+
+  <p class="foot">From <a href="/study/ap/ap-art-history/apah-250-every-work-explained.pdf"><i>APAH 250: Every Required Work, Explained</i></a> (PDF), Section 12. Answers and reasons are the guide&rsquo;s own key; the explanations add the work&rsquo;s identification, the relevant facts from its entry, and why each wrong choice is wrong. Photographs as on this site&rsquo;s APAH page. Your answers are saved only in this browser.</p>
+</main>
+
+<script id="data" type="application/json">{"meta":{"key":"study.apah-works.10.v1","setupNote":"Content areas: <a href=\"/study/ap/ap-art-history/tests/works-1/\">1<\/a> &middot; <a href=\"/study/ap/ap-art-history/tests/works-2/\">2<\/a> &middot; <a href=\"/study/ap/ap-art-history/tests/works-3/\">3<\/a> &middot; <a href=\"/study/ap/ap-art-history/tests/works-4/\">4<\/a> &middot; <a href=\"/study/ap/ap-art-history/tests/works-5/\">5<\/a> &middot; <a href=\"/study/ap/ap-art-history/tests/works-6/\">6<\/a> &middot; <a href=\"/study/ap/ap-art-history/tests/works-7/\">7<\/a> &middot; <a href=\"/study/ap/ap-art-history/tests/works-8/\">8<\/a> &middot; <a href=\"/study/ap/ap-art-history/tests/works-9/\">9<\/a> &middot; <b>10<\/b>. Each answer shows the work&rsquo;s official photograph.","topicPrefix":"No. ","topicCol":"Work","guideCol":"Entry in the guide","byTopic":"By work","topicNote":"Two misses on one work: reread its entry in the guide.","guide":"/study/ap/ap-art-history/apah-250-every-work-explained.pdf","guideName":"the guide"},"topics":{"224":{"name":"The Gates","page":523},"225":{"name":"Vietnam Veterans Memorial","page":525},"226":{"name":"Horn Players","page":528},"227":{"name":"Summer Trees","page":530},"228":{"name":"Androgyn III","page":532},"229":{"name":"A Book from the Sky","page":534},"230":{"name":"Pink Panther","page":536},"231":{"name":"Untitled (#228), from the History Portraits series","page":538},"232":{"name":"Dancing at the Louvre","page":541},"233":{"name":"Trade (Gifts for Trading Land with White People)","page":543},"234":{"name":"Earth’s Creation","page":545},"235":{"name":"Rebellious Silence, from the Women of Allah series","page":547},"236":{"name":"En la Barberia no se Llora (No Crying Allowed in the Barbershop)","page":550},"237":{"name":"Pisupo Lua Afe (Corned Beef 2000)","page":552},"238":{"name":"Electronic Superhighway: Continental U.S., Alaska, Hawaii","page":554},"239":{"name":"The Crossing","page":556},"240":{"name":"Guggenheim Museum Bilbao","page":558},"241":{"name":"Pure Land","page":560},"242":{"name":"Lying with the Wolf","page":563},"243":{"name":"Darkytown Rebellion","page":565},"244":{"name":"The Swing (after Fragonard)","page":567},"245":{"name":"Old Man’s Cloth","page":569},"246":{"name":"Stadia II","page":572},"247":{"name":"Preying Mantra","page":574},"248":{"name":"Shibboleth","page":576},"249":{"name":"MAXXI National Museum of XXI Century Arts","page":578},"250":{"name":"Kui Hua Zi (Sunflower Seeds)","page":580}},"sections":{},"stims":{},"mc":[{"n":447,"prompt":"How long was The Gates on view in Central Park?","options":["16 weeks","1 year","6 months","16 days"],"answer":3,"topic":"224","tag":"No. 224, The Gates","after":"<figure class=\"fig fig-after\"><img class=\"photo\" src=\"/study/ap/ap-art-history/cb/224-1.jpg\" alt=\"The Gates, official photograph\" loading=\"lazy\"><figcaption>No. 224, The Gates<\/figcaption><\/figure>","ex":{"idea":"Its impermanence was part of its meaning.","steps":["No. 224, <i>The Gates<\/i>: Christo and Jeanne-Claude; 1979–2005 C.E.; Mixed-media installation.","From the guide: The Gates was a temporary artwork by Christo and Jeanne-Claude: 7,503 saffron-colored gates, each 16 feet tall with a hanging fabric panel, set along 23 miles of footpaths in New York’s Central Park. It stood for just 16 days, from February 12 to 27, 2005, then was taken down and recycled. The artists spent 26 years getting permission and paid the roughly 21 million dollar cost themselves, so it was free and open to anyone who walked through.","From the guide: After 26 years waiting at the gate, Christo and Jeanne-Claude opened The Gates in 2005: 7,503 gates, 23 miles, 16 days."],"others":{"0":"Far too long; it stood for 16 days.","1":"Far too long.","2":"Far too long."}}},{"n":448,"prompt":"How did Christo and Jeanne-Claude pay for The Gates?","options":["By charging visitors admission","With a grant from New York City","With corporate sponsorships","By selling their own drawings"],"answer":3,"topic":"224","tag":"No. 224, The Gates","after":"<figure class=\"fig fig-after\"><img class=\"photo\" src=\"/study/ap/ap-art-history/cb/224-1.jpg\" alt=\"The Gates, official photograph\" loading=\"lazy\"><figcaption>No. 224, The Gates<\/figcaption><\/figure>","ex":{"idea":"They accepted no sponsorship.","steps":["No. 224, <i>The Gates<\/i>: Christo and Jeanne-Claude; 1979–2005 C.E.; Mixed-media installation.","From the guide: After 26 years waiting at the gate, Christo and Jeanne-Claude opened The Gates in 2005: 7,503 gates, 23 miles, 16 days.","From the guide: The Gates was a temporary artwork by Christo and Jeanne-Claude: 7,503 saffron-colored gates, each 16 feet tall with a hanging fabric panel, set along 23 miles of footpaths in New York’s Central Park. It stood for just 16 days, from February 12 to 27, 2005, then was taken down and recycled. The artists spent 26 years getting permission and paid the roughly 21 million dollar cost themselves, so it was free and open to anyone who walked through."],"others":{"0":"Admission was free.","1":"The city gave no grant.","2":"They accepted no sponsorship."}}},{"n":449,"prompt":"How are the names arranged on the Vietnam Veterans Memorial?","options":["Grouped by rank","In order of death","In alphabetical order","Grouped by home state"],"answer":1,"topic":"225","tag":"No. 225, Vietnam Veterans Memorial","after":"<figure class=\"fig fig-after\"><img class=\"photo\" src=\"/study/ap/ap-art-history/cb/225-1.jpg\" alt=\"Vietnam Veterans Memorial, official photograph\" loading=\"lazy\"><figcaption>No. 225, Vietnam Veterans Memorial<\/figcaption><\/figure>","ex":{"idea":"The list begins and ends at the apex, where 1959 and 1975 meet.","steps":["No. 225, <i>Vietnam Veterans Memorial<\/i>: Maya Lin; 1982 C.E.; Granite.","From the guide: The Vietnam Veterans Memorial is a long, V-shaped wall of polished black granite set into the ground on the National Mall in Washington, D.C., carrying the names of more than 58,000 Americans who died or went missing in the Vietnam War. Maya Lin designed it at 21 as a Yale undergraduate, winning an open national competition. It rejected the traditional heroic statue in favor of a quiet, reflective surface where visitors see themselves among the names, and it changed how memorials are designed.","From the guide: If asked how names are arranged → chronologically by date of death, starting and ending at the vertex."],"others":{"0":"Ranks are not listed or grouped.","2":"Not alphabetical; the order is by date of death.","3":"Not by state."}}},{"n":450,"prompt":"Why was Maya Lin’s design controversial at first?","options":["It listed oﬀicers’ names first","It used white marble, not granite","It stood far from the National Mall","It had no heroic statues"],"answer":3,"topic":"225","tag":"No. 225, Vietnam Veterans Memorial","after":"<figure class=\"fig fig-after\"><img class=\"photo\" src=\"/study/ap/ap-art-history/cb/225-1.jpg\" alt=\"Vietnam Veterans Memorial, official photograph\" loading=\"lazy\"><figcaption>No. 225, Vietnam Veterans Memorial<\/figcaption><\/figure>","ex":{"idea":"A statue of three soldiers and a flag were added nearby as a compromise.","steps":["No. 225, <i>Vietnam Veterans Memorial<\/i>: Maya Lin; 1982 C.E.; Granite.","From the guide: If asked about reception → controversial at first; a realistic statue and flag were added as compromise.","From the guide: As a compromise a flagpole and Frederick Hart’s realistic statue Three Servicemen (1984) were added nearby; the Vietnam Women’s Memorial followed in 1993."],"others":{"0":"Ranks are not shown at all.","1":"It is black granite, not white marble.","2":"It stands on the National Mall."}}},{"n":451,"prompt":"Which musicians does Basquiat’s Horn Players honor?","options":["Louis Armstrong and Duke Ellington","Billie Holiday and Count Basie","Miles Davis and John Coltrane","Charlie Parker and Dizzy Gillespie"],"answer":3,"topic":"226","tag":"No. 226, Horn Players","after":"<figure class=\"fig fig-after\"><img class=\"photo\" src=\"/study/ap/ap-art-history/cb/226-1.jpg\" alt=\"Horn Players, official photograph\" loading=\"lazy\"><figcaption>No. 226, Horn Players<\/figcaption><\/figure>","ex":{"idea":"Their names and bebop song titles appear in the painting.","steps":["No. 226, <i>Horn Players<\/i>: Jean-Michel Basquiat; 1983 C.E.; Acrylic and oil paintstick on three canvas panels.","From the guide: Horn Players is a large three-panel painting by Jean-Michel Basquiat that pays tribute to the bebop jazz pioneers Charlie Parker (alto saxophone) and Dizzy Gillespie (trumpet). Against a black background, rough figures share space with scrawled and crossed-out words, song titles and body-part labels. It shows how Basquiat brought graﬀiti-style energy into the gallery and put Black artists, long sidelined in art history, at the center of a big painting.","From the guide: If asked about subject → Charlie Parker and Dizzy Gillespie, bebop jazz."],"others":{"0":"Not Armstrong and Ellington.","1":"Not Holiday and Basie.","2":"Not Davis and Coltrane."}}},{"n":452,"prompt":"Why might Basquiat have used a triptych for Horn Players?","options":["To show three moments in one song","To fit the narrow walls of a jazz club","To present the musicians like saints","To copy a Japanese folding screen"],"answer":2,"topic":"226","tag":"No. 226, Horn Players","after":"<figure class=\"fig fig-after\"><img class=\"photo\" src=\"/study/ap/ap-art-history/cb/226-1.jpg\" alt=\"Horn Players, official photograph\" loading=\"lazy\"><figcaption>No. 226, Horn Players<\/figcaption><\/figure>","ex":{"idea":"The format echoes religious altarpieces.","steps":["No. 226, <i>Horn Players<\/i>: Jean-Michel Basquiat; 1983 C.E.; Acrylic and oil paintstick on three canvas panels.","From the guide: The triptych format echoes Christian altarpieces, which can turn the musicians into a kind of saints.","From the guide: Basquiat’s Horn Players (1983): Bird and Diz with their horns, three panels for two jazz saints. ‘Ornithology’ is Bird’s tune."],"others":{"0":"Not three moments of one song.","1":"Not sized for a club wall.","3":"Not a Japanese screen."}}},{"n":453,"prompt":"What movement does Song Su-nam’s Summer Trees belong to?","options":["Gutai, Japanese performance art","Sumukhwa, the Korean ink movement","Minjung, political protest art","Dansaekhwa, monochrome oil painting"],"answer":1,"topic":"227","tag":"No. 227, Summer Trees","after":"<figure class=\"fig fig-after\"><img class=\"photo\" src=\"/study/ap/ap-art-history/cb/227-1.jpg\" alt=\"Summer Trees, official photograph\" loading=\"lazy\"><figcaption>No. 227, Summer Trees<\/figcaption><\/figure>","ex":{"idea":"It renewed traditional ink painting in dialogue with abstraction.","steps":["No. 227, <i>Summer Trees<\/i>: Song Su-nam; 1983 C.E.; Ink on paper.","From the guide: Summer Trees is an ink painting on paper by the South Korean artist Song Su-nam, made of soft vertical bands of gray and black ink that bleed into one another, suggesting a dense grove of trees in summer haze. Song led the Sumukhwa (ink painting) movement of the 1980s, which argued that Korean artists could be fully modern and abstract while using the traditional ink and brush of East Asian scholar-painters instead of Western oil paint.","From the guide: If asked about the movement → Sumukhwa, the 1980s Korean ink painting movement."],"others":{"0":"Gutai is Japanese performance art.","2":"Minjung is political protest art.","3":"Dansaekhwa is monochrome painting, not this ink movement."}}},{"n":454,"prompt":"How does Summer Trees suggest trees?","options":["Soft vertical strokes of bleeding ink","Detailed leaves drawn in fine line","Thick green oil paint on canvas","Cut-out paper shapes pasted down"],"answer":0,"topic":"227","tag":"No. 227, Summer Trees","after":"<figure class=\"fig fig-after\"><img class=\"photo\" src=\"/study/ap/ap-art-history/cb/227-1.jpg\" alt=\"Summer Trees, official photograph\" loading=\"lazy\"><figcaption>No. 227, Summer Trees<\/figcaption><\/figure>","ex":{"idea":"The forms are nearly abstract.","steps":["No. 227, <i>Summer Trees<\/i>: Song Su-nam; 1983 C.E.; Ink on paper.","From the guide: Summer Trees is an ink painting on paper by the South Korean artist Song Su-nam, made of soft vertical bands of gray and black ink that bleed into one another, suggesting a dense grove of trees in summer haze. Song led the Sumukhwa (ink painting) movement of the 1980s, which argued that Korean artists could be fully modern and abstract while using the traditional ink and brush of East Asian scholar-painters instead of Western oil paint.","From the guide: A soft, blurry field of vertical gray and black ink strokes on paper, darker and denser in the middle and paler toward the edges, with no outlines or details."],"others":{"1":"No fine leaves.","2":"It is ink on paper, not oil.","3":"Not collage."}}},{"n":455,"prompt":"Which body parts are missing from the figure in Androgyn III?","options":["The hips and thighs","The head and arms","The torso and chest","The legs and feet"],"answer":1,"topic":"228","tag":"No. 228, Androgyn III","after":"<figure class=\"fig fig-after\"><img class=\"photo\" src=\"/study/ap/ap-art-history/cb/228-1.jpg\" alt=\"Androgyn III, official photograph\" loading=\"lazy\"><figcaption>No. 228, Androgyn III<\/figcaption><\/figure>","ex":{"idea":"The hollow, headless, armless shell suggests anonymous, vulnerable people.","steps":["No. 228, <i>Androgyn III<\/i>: Magdalena Abakanowicz; 1985 C.E.; Burlap, resin, wood, nails, string.","From the guide: Androgyn III is a sculpture by the Polish artist Magdalena Abakanowicz: a hollow, headless and armless human torso made of coarse burlap stiffened with resin, sitting on a rough frame of wooden poles. From the front it reads as a body; from behind it is clearly an empty shell. It belongs to her many works about anonymous, fragile and repeated human bodies, shaped by her experience of World War II and Communist rule in Poland.","From the guide: If asked about form → headless, armless, hollow figure on a wooden frame."],"others":{"0":"The hips and thighs are present.","2":"The torso is present, as a hollow shell.","3":"The legs are present."}}},{"n":456,"prompt":"Which history shaped Abakanowicz’s work?","options":["Colonial rule in Kenya and Ghana","The Cultural Revolution in China","Apartheid in South Africa","War and communist rule in Poland"],"answer":3,"topic":"228","tag":"No. 228, Androgyn III","after":"<figure class=\"fig fig-after\"><img class=\"photo\" src=\"/study/ap/ap-art-history/cb/228-1.jpg\" alt=\"Androgyn III, official photograph\" loading=\"lazy\"><figcaption>No. 228, Androgyn III<\/figcaption><\/figure>","ex":{"idea":"The figures evoke mass society and suffering.","steps":["No. 228, <i>Androgyn III<\/i>: Magdalena Abakanowicz; 1985 C.E.; Burlap, resin, wood, nails, string.","From the guide: Androgyn III is a sculpture by the Polish artist Magdalena Abakanowicz: a hollow, headless and armless human torso made of coarse burlap stiffened with resin, sitting on a rough frame of wooden poles. From the front it reads as a body; from behind it is clearly an empty shell. It belongs to her many works about anonymous, fragile and repeated human bodies, shaped by her experience of World War II and Communist rule in Poland.","From the guide: If asked about context → World War II and Communist rule in Poland; her roots in fiber art."],"others":{"0":"Not Kenya or Ghana.","1":"Not the Cultural Revolution.","2":"Not apartheid."}}},{"n":457,"prompt":"What is unusual about the characters in A Book from the Sky?","options":["They are copied from ancient oracle bones","They spell out the sayings of Mao","They are printed backward in a mirror","They are invented and unreadable"],"answer":3,"topic":"229","tag":"No. 229, A Book from the Sky","after":"<figure class=\"fig fig-after\"><img class=\"photo\" src=\"/study/ap/ap-art-history/cb/229-1.jpg\" alt=\"A Book from the Sky, official photograph\" loading=\"lazy\"><figcaption>No. 229, A Book from the Sky<\/figcaption><\/figure>","ex":{"idea":"No one, including Chinese readers, can read them.","steps":["No. 229, <i>A Book from the Sky<\/i>: Xu Bing; 1987–1991 C.E.; Mixed-media installation.","From the guide: A Book from the Sky is a room-filling installation by Chinese artist Xu Bing: hand-printed books laid out on the floor, long scrolls hanging from the ceiling and panels on the walls, all covered with about 4,000 characters he invented. Each looks exactly like a real Chinese character, but none can be read by anyone. Xu spent four years carving and printing this nonsense with traditional methods, raising questions about language, authority and the trust people place in the written word.","From the guide: If asked about content → about 4,000 invented, unreadable characters."],"others":{"0":"They are invented, not copied from oracle bones.","1":"They spell nothing, including Mao’s sayings.","2":"They are not mirror-printed."}}},{"n":458,"prompt":"How were the books in A Book from the Sky produced?","options":["Photocopied from old manuscripts","Printed with hand-carved wooden type","Written by hand with a brush","Printed on a modern offset printing press"],"answer":1,"topic":"229","tag":"No. 229, A Book from the Sky","after":"<figure class=\"fig fig-after\"><img class=\"photo\" src=\"/study/ap/ap-art-history/cb/229-1.jpg\" alt=\"A Book from the Sky, official photograph\" loading=\"lazy\"><figcaption>No. 229, A Book from the Sky<\/figcaption><\/figure>","ex":{"idea":"Xu Bing carved about 4,000 characters himself.","steps":["No. 229, <i>A Book from the Sky<\/i>: Xu Bing; 1987–1991 C.E.; Mixed-media installation.","From the guide: A Book from the Sky is a room-filling installation by Chinese artist Xu Bing: hand-printed books laid out on the floor, long scrolls hanging from the ceiling and panels on the walls, all covered with about 4,000 characters he invented. Each looks exactly like a real Chinese character, but none can be read by anyone. Xu spent four years carving and printing this nonsense with traditional methods, raising questions about language, authority and the trust people place in the written word.","From the guide: The characters are in Song-style type, the standard look of printed Chinese books."],"others":{"0":"Not photocopied.","2":"Not handwritten.","3":"Not offset-printed."}}},{"n":459,"prompt":"Which series does Koons’s Pink Panther belong to?","options":["Celebration","Banality","Easyfun","Popeye"],"answer":1,"topic":"230","tag":"No. 230, Pink Panther","after":"<figure class=\"fig fig-after\"><img class=\"photo\" src=\"/study/ap/ap-art-history/cb/230-1.jpg\" alt=\"Pink Panther, official photograph\" loading=\"lazy\"><figcaption>No. 230, Pink Panther<\/figcaption><\/figure>","ex":{"idea":"Kitsch subjects were made by skilled porcelain fabricators.","steps":["No. 230, <i>Pink Panther<\/i>: Jeff Koons; 1988 C.E.; Glazed porcelain.","From the guide: Koons + kitsch = cash. Pink Panther, 1988, Banality series: a porcelain pin-up hugs a cartoon cat.","From the guide: Pink Panther is a glossy porcelain sculpture by Jeff Koons of a topless blonde woman hugging the cartoon Pink Panther, made in 1988 for his Banality series. It looks like an oversized gift-shop knickknack, and that is the point: Koons takes kitsch (cheap, sentimental, massmarket taste) and turns it into an expensive, carefully crafted art object. It asks who decides what counts as good taste, and how money, celebrity and pop culture shape the art world."],"others":{"0":"Celebration is a later Koons series.","2":"Easyfun is another Koons series.","3":"Popeye is a later Koons series."}}},{"n":460,"prompt":"Who made the porcelain for Pink Panther?","options":["Students in an art school","Koons himself in his studio","Hired artisans in a workshop","Chinese potters at Jingdezhen"],"answer":2,"topic":"230","tag":"No. 230, Pink Panther","after":"<figure class=\"fig fig-after\"><img class=\"photo\" src=\"/study/ap/ap-art-history/cb/230-1.jpg\" alt=\"Pink Panther, official photograph\" loading=\"lazy\"><figcaption>No. 230, Pink Panther<\/figcaption><\/figure>","ex":{"idea":"Koons designed it; skilled Italian porcelain workshops fabricated it.","steps":["No. 230, <i>Pink Panther<\/i>: Jeff Koons; 1988 C.E.; Glazed porcelain.","From the guide: Koons + kitsch = cash. Pink Panther, 1988, Banality series: a porcelain pin-up hugs a cartoon cat.","From the guide: Made by skilled Italian porcelain workshops following Koons’s design. He did not make it with his own hands."],"others":{"0":"Not students.","1":"Koons designed it; he did not make the porcelain himself.","3":"It was made in European workshops, not Jingdezhen."}}},{"n":461,"prompt":"Whom does Cindy Sherman play in Untitled No. 228?","options":["Venus rising from a scallop shell","The Virgin Mary holding the Christ child","Saint Teresa in religious ecstasy","Judith with Holofernes’s head"],"answer":3,"topic":"231","tag":"No. 231, Untitled (#228), from the History Portraits series","after":"<figure class=\"fig fig-after\"><img class=\"photo\" src=\"/study/ap/ap-art-history/cb/231-1.jpg\" alt=\"Untitled (#228), from the History Portraits series, official photograph\" loading=\"lazy\"><figcaption>No. 231, Untitled (#228), from the History Portraits series<\/figcaption><\/figure>","ex":{"idea":"Prosthetics make the fakery visible.","steps":["No. 231, <i>Untitled (#228), from the History Portraits series<\/i>: Cindy Sherman; 1990 C.E.; Photograph.","From the guide: Sherman the ‘sheriff’ takes the head: Cindy Sherman, Untitled 228, 1990. The History Portraits ran 1988 to 1990, so this one comes at the end of the series.","From the guide: Sherman wears prosthetics (fake body parts), a wig, heavy makeup and a homemade costume; the edges and seams are left visible on purpose so the fakery shows."],"others":{"0":"Not Venus.","1":"Not the Virgin Mary.","2":"Not Saint Teresa."}}},{"n":462,"prompt":"What does Sherman examine in the History Portraits?","options":["How portrait painters trained","How art history constructs women","How cameras record historical events","How Rome rebuilt its museums"],"answer":1,"topic":"231","tag":"No. 231, Untitled (#228), from the History Portraits series","after":"<figure class=\"fig fig-after\"><img class=\"photo\" src=\"/study/ap/ap-art-history/cb/231-1.jpg\" alt=\"Untitled (#228), from the History Portraits series, official photograph\" loading=\"lazy\"><figcaption>No. 231, Untitled (#228), from the History Portraits series<\/figcaption><\/figure>","ex":{"idea":"She uses her own body to question representation and gender.","steps":["No. 231, <i>Untitled (#228), from the History Portraits series<\/i>: Cindy Sherman; 1990 C.E.; Photograph.","From the guide: Key theme: identity and gender are constructed, not natural; critique of the male gaze in art history.","From the guide: Made as gallery art, one of about 35 photographs in the History Portraits series (1988– 1990), shown and sold through her New York dealer, Metro Pictures."],"others":{"0":"Not painter training.","2":"Not news photography.","3":"Not museums in Rome."}}},{"n":463,"prompt":"What form does Faith Ringgold use in Dancing at the Louvre?","options":["A story quilt with written text","A mural painted in true fresco","A photograph printed on silk","A woodcut printed in a series"],"answer":0,"topic":"232","tag":"No. 232, Dancing at the Louvre","after":"<figure class=\"fig fig-after\"><img class=\"photo\" src=\"/study/ap/ap-art-history/cb/232-1.jpg\" alt=\"Dancing at the Louvre, official photograph\" loading=\"lazy\"><figcaption>No. 232, Dancing at the Louvre<\/figcaption><\/figure>","ex":{"idea":"Quilting, a women’s craft, becomes fine art.","steps":["No. 232, <i>Dancing at the Louvre<\/i>: Faith Ringgold; 1991 C.E.; Acrylic on canvas, tie-dyed, pieced fabric border.","From the guide: A painted story quilt by Faith Ringgold: a painting on canvas showing a woman and three little girls dancing in front of the Mona Lisa at the Louvre, framed by quilted fabric and handwritten text. The text tells the story of Willia Marie Simone, a made-up Black American woman artist living in 1920s Paris. It combines painting, quilting and storytelling to put Black women into an art history that left them out.","From the guide: The quilt form itself is a message: African American women’s craft and oral storytelling count as art."],"others":{"1":"Not fresco.","2":"Not a photograph.","3":"Not a woodcut."}}},{"n":464,"prompt":"Where do the woman and girls dance in Dancing at the Louvre?","options":["Beside the Venus de Milo","In front of the Mona Lisa","Under the museum’s glass pyramid","Along the river Seine"],"answer":1,"topic":"232","tag":"No. 232, Dancing at the Louvre","after":"<figure class=\"fig fig-after\"><img class=\"photo\" src=\"/study/ap/ap-art-history/cb/232-1.jpg\" alt=\"Dancing at the Louvre, official photograph\" loading=\"lazy\"><figcaption>No. 232, Dancing at the Louvre<\/figcaption><\/figure>","ex":{"idea":"They claim space in an art history that left Black women out.","steps":["No. 232, <i>Dancing at the Louvre<\/i>: Faith Ringgold; 1991 C.E.; Acrylic on canvas, tie-dyed, pieced fabric border.","From the guide: A painted story quilt by Faith Ringgold: a painting on canvas showing a woman and three little girls dancing in front of the Mona Lisa at the Louvre, framed by quilted fabric and handwritten text. The text tells the story of Willia Marie Simone, a made-up Black American woman artist living in 1920s Paris. It combines painting, quilting and storytelling to put Black women into an art history that left them out.","From the guide: Theme: who belongs in the museum and in art history; Black women claiming space."],"others":{"0":"Not the Venus de Milo.","2":"Not the glass pyramid.","3":"Not the Seine."}}},{"n":465,"prompt":"What hangs on a chain above the canvas in Trade?","options":["Maps of the original treaty lands","Team caps, toy tomahawks and beads","Woven baskets and clay pots","A buffalo hide and a hunting rifle"],"answer":1,"topic":"233","tag":"No. 233, Trade (Gifts for Trading Land with White People)","after":"<figure class=\"fig fig-after\"><img class=\"photo\" src=\"/study/ap/ap-art-history/cb/233-1.jpg\" alt=\"Trade (Gifts for Trading Land with White People), official photograph\" loading=\"lazy\"><figcaption>No. 233, Trade (Gifts for Trading Land with White People)<\/figcaption><\/figure>","ex":{"idea":"Mascot souvenirs mock stereotypes; the canoe is painted and collaged on the canvas below.","steps":["No. 233, <i>Trade (Gifts for Trading Land with White People)<\/i>: Jaune Quick-to-See Smith; 1992 C.E.; Oil and mixed media on canvas.","From the guide: A large painting-plus-objects by Salish and Kootenai artist Jaune Quick-toSee Smith, made in 1992 when the US was marking 500 years since Columbus. A canoe floats across a collaged, paint-dripped canvas, and above it hangs a chain of cheap souvenirs: sports caps with Native mascots, toy tomahawks, plastic beads. The title offers to trade the junk back for the land, mocking the myth that Native people sold their land for trinkets.","From the guide: A wide, three-part canvas covered with newspaper collage and runny drips of red, yellow and green paint, with a big outlined canoe in the middle and a chain of real objects (team caps, toy tomahawks, beads) strung across the top."],"others":{"0":"Not treaty maps.","2":"Not baskets and pots.","3":"Not a hide and rifle."}}},{"n":466,"prompt":"What anniversary does Trade respond to?","options":["The 50th year of the Sioux treaty","The 200th year of the U.S.","The 100th year of reservations","The 500th year since Columbus"],"answer":3,"topic":"233","tag":"No. 233, Trade (Gifts for Trading Land with White People)","after":"<figure class=\"fig fig-after\"><img class=\"photo\" src=\"/study/ap/ap-art-history/cb/233-1.jpg\" alt=\"Trade (Gifts for Trading Land with White People), official photograph\" loading=\"lazy\"><figcaption>No. 233, Trade (Gifts for Trading Land with White People)<\/figcaption><\/figure>","ex":{"idea":"It was made around the 1992 quincentennial.","steps":["No. 233, <i>Trade (Gifts for Trading Land with White People)<\/i>: Jaune Quick-to-See Smith; 1992 C.E.; Oil and mixed media on canvas.","From the guide: A large painting-plus-objects by Salish and Kootenai artist Jaune Quick-toSee Smith, made in 1992 when the US was marking 500 years since Columbus. A canoe floats across a collaged, paint-dripped canvas, and above it hangs a chain of cheap souvenirs: sports caps with Native mascots, toy tomahawks, plastic beads. The title offers to trade the junk back for the land, mocking the myth that Native people sold their land for trinkets.","From the guide: That year Smith also organized a traveling exhibition of Native artists, The Submuloc Show/Columbus Wohs (‘Columbus Show’ spelled backward), answering the celebrations."],"others":{"0":"Not a Sioux treaty anniversary.","1":"Not the U.S. bicentennial.","2":"Not a reservation centennial."}}},{"n":467,"prompt":"What does Earth’s Creation express?","options":["A map drawn for land claims","A view of the Outback from above","The Dreaming of her country","The paths of rivers in drought"],"answer":2,"topic":"234","tag":"No. 234, Earth’s Creation","after":"<figure class=\"fig fig-after\"><img class=\"photo\" src=\"/study/ap/ap-art-history/cb/234-1.jpg\" alt=\"Earth’s Creation, official photograph\" loading=\"lazy\"><figcaption>No. 234, Earth’s Creation<\/figcaption><\/figure>","ex":{"idea":"Alhalkere in the wet season, when plants bloom.","steps":["No. 234, <i>Earth’s Creation<\/i>: Emily Kame Kngwarreye; 1994 C.E.; Synthetic polymer paint on canvas.","From the guide: If asked the subject → her country Alhalkere and the Dreaming, after the wet season.","From the guide: It shows Alhalkere, her ancestral country in the Utopia region of the Northern Territory, during the wet season when rain makes plants and seeds flourish."],"others":{"0":"Not a land-claim map.","1":"Not an aerial view.","3":"Not rivers in drought; it shows the wet season."}}},{"n":468,"prompt":"When did Kngwarreye begin painting on canvas?","options":["After a career in film","As a young art student","While living in Sydney","In her late seventies"],"answer":3,"topic":"234","tag":"No. 234, Earth’s Creation","after":"<figure class=\"fig fig-after\"><img class=\"photo\" src=\"/study/ap/ap-art-history/cb/234-1.jpg\" alt=\"Earth’s Creation, official photograph\" loading=\"lazy\"><figcaption>No. 234, Earth’s Creation<\/figcaption><\/figure>","ex":{"idea":"She made thousands of works in about eight years.","steps":["No. 234, <i>Earth’s Creation<\/i>: Emily Kame Kngwarreye; 1994 C.E.; Synthetic polymer paint on canvas.","From the guide: She began acrylic painting on canvas in 1988–1989 and made roughly 3,000 works in about eight years, a remarkable late career.","From the guide: Biography hook: started painting on canvas in her late seventies, after years of batik."],"others":{"0":"No film career.","1":"Not as a young student.","2":"She lived in Utopia, in Central Australia."}}},{"n":469,"prompt":"What is written on Neshat’s face in Rebellious Silence?","options":["Verses from the Qur’an","Poetry by an Iranian woman","Her own name and birth date","A list of war martyrs"],"answer":1,"topic":"235","tag":"No. 235, Rebellious Silence, from the Women of Allah series","after":"<figure class=\"fig fig-after\"><img class=\"photo\" src=\"/study/ap/ap-art-history/cb/235-1.jpg\" alt=\"Rebellious Silence, from the Women of Allah series, official photograph\" loading=\"lazy\"><figcaption>No. 235, Rebellious Silence, from the Women of Allah series<\/figcaption><\/figure>","ex":{"idea":"The Farsi text is by Tahereh Saffarzadeh.","steps":["No. 235, <i>Rebellious Silence, from the Women of Allah series<\/i>: Shirin Neshat; 1994 C.E.; Ink on photograph.","From the guide: The text is poetry by an Iranian woman (Tahereh Saffarzadeh), in Persian (Farsi) written in Arabic script.","From the guide: A black-and-white photograph from Shirin Neshat’s Women of Allah series: a woman in a black chador holds a rifle upright so its barrel splits her face, and Persian poetry is written in ink over her skin. Neshat, an Iranian artist living in the US, made it after returning to Iran in 1990 and seeing how the 1979 Islamic Revolution had changed women’s lives. It refuses to give Western viewers an easy story about veiled women."],"others":{"0":"The text is poetry, not Qur’an verses.","2":"Not her name.","3":"Not a list of martyrs."}}},{"n":470,"prompt":"Which series does Rebellious Silence belong to?","options":["Women of Allah","Banality","The French Collection","History Portraits"],"answer":0,"topic":"235","tag":"No. 235, Rebellious Silence, from the Women of Allah series","after":"<figure class=\"fig fig-after\"><img class=\"photo\" src=\"/study/ap/ap-art-history/cb/235-1.jpg\" alt=\"Rebellious Silence, from the Women of Allah series, official photograph\" loading=\"lazy\"><figcaption>No. 235, Rebellious Silence, from the Women of Allah series<\/figcaption><\/figure>","ex":{"idea":"It explores women and martyrdom after the Islamic Revolution.","steps":["No. 235, <i>Rebellious Silence, from the Women of Allah series<\/i>: Shirin Neshat; 1994 C.E.; Ink on photograph.","From the guide: A black-and-white photograph from Shirin Neshat’s Women of Allah series: a woman in a black chador holds a rifle upright so its barrel splits her face, and Persian poetry is written in ink over her skin. Neshat, an Iranian artist living in the US, made it after returning to Iran in 1990 and seeing how the 1979 Islamic Revolution had changed women’s lives. It refuses to give Western viewers an easy story about veiled women.","From the guide: If asked the context → post-1979 Islamic Revolution Iran; women, faith, violence and martyrdom."],"others":{"1":"Banality is Koons’s series.","2":"The French Collection is Ringgold’s series.","3":"History Portraits is Sherman’s series."}}},{"n":471,"prompt":"What do the videos in Osorio’s barbershop show?","options":["Barbers at work","Boys playing ball","Men crying","Evening news"],"answer":2,"topic":"236","tag":"No. 236, En la Barberia no se Llora (No Crying Allowed in the Barbershop)","after":"<figure class=\"fig fig-after\"><img class=\"photo\" src=\"/study/ap/ap-art-history/cb/236-1.jpg\" alt=\"En la Barberia no se Llora (No Crying Allowed in the Barbershop), official photograph\" loading=\"lazy\"><figcaption>No. 236, En la Barberia no se Llora (No Crying Allowed in the Barbershop)<\/figcaption><\/figure>","ex":{"idea":"The title says crying is not allowed there.","steps":["No. 236, <i>En la Barberia no se Llora (No Crying Allowed in the Barbershop)<\/i>: Pepon Osorio; 1994 C.E.; Mixed-media installation.","From the guide: Key irony: the title forbids crying, while the videos show men crying.","From the guide: The videos of crying men contradict the title and show the emotional cost of that code."],"others":{"0":"Not barbers at work.","1":"Not boys playing.","3":"Not the news."}}},{"n":472,"prompt":"Where was En la Barberia no se Llora first installed?","options":["A storefront in Hartford","A museum in San Juan","A school in Miami","A gallery in lower Manhattan"],"answer":0,"topic":"236","tag":"No. 236, En la Barberia no se Llora (No Crying Allowed in the Barbershop)","after":"<figure class=\"fig fig-after\"><img class=\"photo\" src=\"/study/ap/ap-art-history/cb/236-1.jpg\" alt=\"En la Barberia no se Llora (No Crying Allowed in the Barbershop), official photograph\" loading=\"lazy\"><figcaption>No. 236, En la Barberia no se Llora (No Crying Allowed in the Barbershop)<\/figcaption><\/figure>","ex":{"idea":"Osorio made it with a Puerto Rican community.","steps":["No. 236, <i>En la Barberia no se Llora (No Crying Allowed in the Barbershop)<\/i>: Pepon Osorio; 1994 C.E.; Mixed-media installation.","From the guide: A room-sized installation by Puerto Rican artist Pepón Osorio that recreates a barbershop, packed floor to ceiling with chairs, mirrors, photos, toys and keepsakes, while small video screens in the barber chairs show men crying. The barbershop is where boys learn how to be men, and the title states the rule they learn: men do not cry. It was first set up in an empty storefront in a Puerto Rican neighborhood of Hartford, Connecticut, for the community itself.","From the guide: Commissioned in 1994 by Real Art Ways, an alternative arts organization, and installed in a vacant storefront on Park Street in Hartford, Connecticut, a largely Puerto Rican neighborhood."],"others":{"1":"Not San Juan.","2":"Not Miami.","3":"Not Manhattan."}}},{"n":473,"prompt":"What is Tuffery’s bull made of?","options":["Carved wooden panels","Recycled bottle caps","Woven pandanus leaf strips","Flattened corned beef cans"],"answer":3,"topic":"237","tag":"No. 237, Pisupo Lua Afe (Corned Beef 2000)","after":"<figure class=\"fig fig-after\"><img class=\"photo\" src=\"/study/ap/ap-art-history/cb/237-1.jpg\" alt=\"Pisupo Lua Afe (Corned Beef 2000), official photograph\" loading=\"lazy\"><figcaption>No. 237, Pisupo Lua Afe (Corned Beef 2000)<\/figcaption><\/figure>","ex":{"idea":"Pisupo means corned beef in Samoan.","steps":["No. 237, <i>Pisupo Lua Afe (Corned Beef 2000)<\/i>: Michel Tuffery; 1994 C.E.; Mixed media.","From the guide: A roughly life-size bull made from flattened corned-beef cans riveted together, by New Zealand artist Michel Tuffery, who has Samoan, Tahitian and Cook Islands heritage. Canned corned beef, called pisupo in Samoa, became a staple and a ceremonial gift in the Pacific, pushing out traditional foods and causing health problems. The bull is a funny, shiny animal and a serious critique of what global trade did to Pacific diets and economies.","From the guide: Pisupo sounds like ‘pea soup’: the first tinned food, now all canned meat. Tuffery’s tin bull, 1994, looks ahead to 2000 (‘lua afe’)."],"others":{"0":"Not wood.","1":"Not bottle caps (that is El Anatsui).","2":"Not pandanus."}}},{"n":474,"prompt":"What issue does Pisupo Lua Afe raise?","options":["Tourism in the islands","Imported food in Pacific life","Overfishing of the coral reefs","Rising sea levels"],"answer":1,"topic":"237","tag":"No. 237, Pisupo Lua Afe (Corned Beef 2000)","after":"<figure class=\"fig fig-after\"><img class=\"photo\" src=\"/study/ap/ap-art-history/cb/237-1.jpg\" alt=\"Pisupo Lua Afe (Corned Beef 2000), official photograph\" loading=\"lazy\"><figcaption>No. 237, Pisupo Lua Afe (Corned Beef 2000)<\/figcaption><\/figure>","ex":{"idea":"Canned food replaced traditional foods in gift exchange and harmed health.","steps":["No. 237, <i>Pisupo Lua Afe (Corned Beef 2000)<\/i>: Michel Tuffery; 1994 C.E.; Mixed media.","From the guide: A roughly life-size bull made from flattened corned-beef cans riveted together, by New Zealand artist Michel Tuffery, who has Samoan, Tahitian and Cook Islands heritage. Canned corned beef, called pisupo in Samoa, became a staple and a ceremonial gift in the Pacific, pushing out traditional foods and causing health problems. The bull is a funny, shiny animal and a serious critique of what global trade did to Pacific diets and economies.","From the guide: Meaning of the title: pisupo means canned food (from ‘pea soup’); lua afe means 2000."],"others":{"0":"Not tourism.","2":"Not overfishing.","3":"Not sea levels."}}},{"n":475,"prompt":"What shape do the monitors form in Electronic Superhighway?","options":["A highway interchange","A map of the United States","The globe of the Earth","A waving American flag"],"answer":1,"topic":"238","tag":"No. 238, Electronic Superhighway: Continental U.S., Alaska, Hawaii","after":"<figure class=\"fig fig-after\"><img class=\"photo\" src=\"/study/ap/ap-art-history/cb/238-1.jpg\" alt=\"Electronic Superhighway: Continental U.S., Alaska, Hawaii, official photograph\" loading=\"lazy\"><figcaption>No. 238, Electronic Superhighway: Continental U.S., Alaska, Hawaii<\/figcaption><\/figure>","ex":{"idea":"Neon outlines each state.","steps":["No. 238, <i>Electronic Superhighway: Continental U.S., Alaska, Hawaii<\/i>: Nam June Paik; 1995 C.E.; Mixed-media installation (49-channel closed-circuit video).","From the guide: A wall-sized map of the United States made from hundreds of television sets, with each state outlined in colored neon and its screens playing video about that state. KoreanAmerican artist Nam June Paik, the founder of video art, coined the phrase ‘electronic superhighway’ in 1974, predicting a networked world. The work shows America as something experienced through screens and media rather than through travel.","From the guide: Form: TV monitors arranged as a map of the US, outlined in neon."],"others":{"0":"Not an interchange.","2":"Not a globe.","3":"Not a flag."}}},{"n":476,"prompt":"Nam June Paik is often called the father of which art form?","options":["Pop Art","Op Art","Video art","Land art"],"answer":2,"topic":"238","tag":"No. 238, Electronic Superhighway: Continental U.S., Alaska, Hawaii","after":"<figure class=\"fig fig-after\"><img class=\"photo\" src=\"/study/ap/ap-art-history/cb/238-1.jpg\" alt=\"Electronic Superhighway: Continental U.S., Alaska, Hawaii, official photograph\" loading=\"lazy\"><figcaption>No. 238, Electronic Superhighway: Continental U.S., Alaska, Hawaii<\/figcaption><\/figure>","ex":{"idea":"He coined the phrase ‘electronic superhighway’ in the 1970s.","steps":["No. 238, <i>Electronic Superhighway: Continental U.S., Alaska, Hawaii<\/i>: Nam June Paik; 1995 C.E.; Mixed-media installation (49-channel closed-circuit video).","From the guide: A wall-sized map of the United States made from hundreds of television sets, with each state outlined in colored neon and its screens playing video about that state. KoreanAmerican artist Nam June Paik, the founder of video art, coined the phrase ‘electronic superhighway’ in 1974, predicting a networked world. The work shows America as something experienced through screens and media rather than through travel.","From the guide: If asked the artist → Nam June Paik, Korean-American, the ‘father of video art’."],"others":{"0":"Not Pop Art.","1":"Not Op Art.","3":"Not Land art."}}},{"n":477,"prompt":"What happens to the man in Bill Viola’s The Crossing?","options":["He is consumed by fire and water","He climbs a ladder into light","He walks slowly across a frozen lake","He crosses a busy city street"],"answer":0,"topic":"239","tag":"No. 239, The Crossing","after":"<figure class=\"fig fig-after\"><img class=\"photo\" src=\"/study/ap/ap-art-history/cb/239-1.jpg\" alt=\"The Crossing, official photograph\" loading=\"lazy\"><figcaption>No. 239, The Crossing<\/figcaption><\/figure>","ex":{"idea":"The two projections play back to back in slow motion.","steps":["No. 239, <i>The Crossing<\/i>: Bill Viola; 1996 C.E.; Video/sound installation.","From the guide: A video installation by Bill Viola in which two huge projections play on the two sides of one screen in a dark room. On both sides a man walks slowly toward you; on one, flames rise from his feet until he is consumed, and on the other, water pours down on him until he vanishes. Shown in extreme slow motion with roaring sound, it is about death, purification and transformation, drawing on Christian, Buddhist and Sufi ideas.","From the guide: Elements: fire on one side, water on the other; the man disappears in both."],"others":{"1":"Not a ladder.","2":"Not a frozen lake.","3":"Not a street."}}},{"n":478,"prompt":"What do the elements in The Crossing suggest?","options":["Industry and its pollution","Summer and winter","Destruction and purification","War and peace treaties"],"answer":2,"topic":"239","tag":"No. 239, The Crossing","after":"<figure class=\"fig fig-after\"><img class=\"photo\" src=\"/study/ap/ap-art-history/cb/239-1.jpg\" alt=\"The Crossing, official photograph\" loading=\"lazy\"><figcaption>No. 239, The Crossing<\/figcaption><\/figure>","ex":{"idea":"Viola drew on Christian, Buddhist and Sufi ideas.","steps":["No. 239, <i>The Crossing<\/i>: Bill Viola; 1996 C.E.; Video/sound installation.","From the guide: A video installation by Bill Viola in which two huge projections play on the two sides of one screen in a dark room. On both sides a man walks slowly toward you; on one, flames rise from his feet until he is consumed, and on the other, water pours down on him until he vanishes. Shown in extreme slow motion with roaring sound, it is about death, purification and transformation, drawing on Christian, Buddhist and Sufi ideas.","From the guide: Traditions: Christian, Buddhist and Sufi mysticism; Renaissance altarpieces and diptychs."],"others":{"0":"Not industry.","1":"Not seasons.","3":"Not war and peace."}}},{"n":479,"prompt":"Which software helped design the Guggenheim Bilbao?","options":["Photoshop","AutoCAD","CATIA","SketchUp"],"answer":2,"topic":"240","tag":"No. 240, Guggenheim Museum Bilbao","after":"<figure class=\"fig fig-after\"><img class=\"photo\" src=\"/study/ap/ap-art-history/cb/240-1.jpg\" alt=\"Guggenheim Museum Bilbao, official photograph\" loading=\"lazy\"><figcaption>No. 240, Guggenheim Museum Bilbao<\/figcaption><\/figure>","ex":{"idea":"It came from aerospace engineering.","steps":["No. 240, <i>Guggenheim Museum Bilbao<\/i>: Frank Gehry; 1997 C.E.; Titanium, glass, and limestone.","From the guide: Designed with CATIA, three-dimensional modeling software created for French aerospace engineering, which allowed precise, buildable curves.","From the guide: Technique: designed with CATIA aerospace software."],"others":{"0":"Photoshop edits images.","1":"AutoCAD was not the key software.","3":"SketchUp was not used."}}},{"n":480,"prompt":"What is the ‘Bilbao effect’?","options":["Art lost among flashy architecture","A museum running out of space for its art","A building reviving a city","Titanium changing color in the rain"],"answer":2,"topic":"240","tag":"No. 240, Guggenheim Museum Bilbao","after":"<figure class=\"fig fig-after\"><img class=\"photo\" src=\"/study/ap/ap-art-history/cb/240-1.jpg\" alt=\"Guggenheim Museum Bilbao, official photograph\" loading=\"lazy\"><figcaption>No. 240, Guggenheim Museum Bilbao<\/figcaption><\/figure>","ex":{"idea":"The museum boosted tourism in a declining industrial city.","steps":["No. 240, <i>Guggenheim Museum Bilbao<\/i>: Frank Gehry; 1997 C.E.; Titanium, glass, and limestone.","From the guide: A contemporary art museum in Bilbao, Spain, designed by Frank Gehry and opened in 1997, made of swooping curved forms clad in thin, shiny titanium. It was designed with aerospace software that made its irregular shapes buildable. The building drew so many tourists to a declining industrial city that ‘the Bilbao effect’ became a term for cities using a signature building to revive themselves.","From the guide: Key term: the ‘Bilbao effect’, urban regeneration through a landmark building."],"others":{"0":"That is a criticism, not the effect.","1":"Not a lack of space.","3":"Not the titanium."}}},{"n":481,"prompt":"How does Mariko Mori appear in Pure Land?","options":["As a samurai riding a white horse","As a geisha in a tea house","As an astronaut on the moon","As a Buddhist goddess on a lotus"],"answer":3,"topic":"241","tag":"No. 241, Pure Land","after":"<figure class=\"fig fig-after\"><img class=\"photo\" src=\"/study/ap/ap-art-history/cb/241-1.jpg\" alt=\"Pure Land, official photograph\" loading=\"lazy\"><figcaption>No. 241, Pure Land<\/figcaption><\/figure>","ex":{"idea":"She floats above the Dead Sea.","steps":["No. 241, <i>Pure Land<\/i>: Mariko Mori; 1998 C.E.; Color photograph on glass.","From the guide: A huge, glossy digital photograph mounted on glass in which Japanese artist Mariko Mori, dressed as a Buddhist goddess, floats on a lotus above the Dead Sea while small cartoonish beings play music in the sky around her. The title refers to the paradise of Pure Land Buddhism. It fuses ancient Buddhist imagery with anime, pop culture and digital technology, imagining a future where spirituality and technology meet.","From the guide: Mori floats over the Dead Sea in a ‘pure’ digital land, 1998. Mori = more tech, more glitter, still Buddhist."],"others":{"0":"Not a samurai.","1":"Not a geisha.","2":"Not an astronaut."}}},{"n":482,"prompt":"What does Pure Land combine?","options":["Buddhist imagery and pop technology","Chinese landscape and Cubism","Islamic calligraphy and photography","Christian icons and graﬀiti"],"answer":0,"topic":"241","tag":"No. 241, Pure Land","after":"<figure class=\"fig fig-after\"><img class=\"photo\" src=\"/study/ap/ap-art-history/cb/241-1.jpg\" alt=\"Pure Land, official photograph\" loading=\"lazy\"><figcaption>No. 241, Pure Land<\/figcaption><\/figure>","ex":{"idea":"Anime, science fiction and spiritual traditions meet.","steps":["No. 241, <i>Pure Land<\/i>: Mariko Mori; 1998 C.E.; Color photograph on glass.","From the guide: A huge, glossy digital photograph mounted on glass in which Japanese artist Mariko Mori, dressed as a Buddhist goddess, floats on a lotus above the Dead Sea while small cartoonish beings play music in the sky around her. The title refers to the paradise of Pure Land Buddhism. It fuses ancient Buddhist imagery with anime, pop culture and digital technology, imagining a future where spirituality and technology meet.","From the guide: It brings Buddhist imagery to international contemporary-art audiences who may know it only through pop culture."],"others":{"1":"Not Chinese landscape and Cubism.","2":"Not calligraphy.","3":"Not Christian icons."}}},{"n":483,"prompt":"Which fairy tale does Lying with the Wolf invert?","options":["Little Red Riding Hood","Hansel and Gretel","Beauty and the Beast","The Three Little Pigs"],"answer":0,"topic":"242","tag":"No. 242, Lying with the Wolf","after":"<figure class=\"fig fig-after\"><img class=\"photo\" src=\"/study/ap/ap-art-history/cb/242-1.jpg\" alt=\"Lying with the Wolf, official photograph\" loading=\"lazy\"><figcaption>No. 242, Lying with the Wolf<\/figcaption><\/figure>","ex":{"idea":"The woman and wolf rest together peacefully.","steps":["No. 242, <i>Lying with the Wolf<\/i>: Kiki Smith; 2001 C.E.; Ink and pencil on paper.","From the guide: A very large, delicate drawing in ink and pencil by Kiki Smith of a nude woman lying calmly against a wolf, her arm around its neck. Smith reworks fairy tales like Little Red Riding Hood and stories of saints so that the woman and the predator become companions instead of victim and threat. It is a feminist retelling about women, nature and animals.","From the guide: In Little Red Riding Hood, the wolf devours the girl until a male hunter rescues her; Smith removes the violence and the rescuer."],"others":{"1":"Not Hansel and Gretel.","2":"Not Beauty and the Beast.","3":"Not the Three Little Pigs."}}},{"n":484,"prompt":"Which saint does Kiki Smith’s drawing also recall?","options":["Cecilia","Catherine","Genevieve","Teresa"],"answer":2,"topic":"242","tag":"No. 242, Lying with the Wolf","after":"<figure class=\"fig fig-after\"><img class=\"photo\" src=\"/study/ap/ap-art-history/cb/242-1.jpg\" alt=\"Lying with the Wolf, official photograph\" loading=\"lazy\"><figcaption>No. 242, Lying with the Wolf<\/figcaption><\/figure>","ex":{"idea":"Saint Genevieve was said to have calmed a wolf.","steps":["No. 242, <i>Lying with the Wolf<\/i>: Kiki Smith; 2001 C.E.; Ink and pencil on paper.","From the guide: Smith has linked the image to Saint Genevieve, the patron saint of Paris, said in legend to have calmed a wolf.","From the guide: A very large, delicate drawing in ink and pencil by Kiki Smith of a nude woman lying calmly against a wolf, her arm around its neck. Smith reworks fairy tales like Little Red Riding Hood and stories of saints so that the woman and the predator become companions instead of victim and threat. It is a feminist retelling about women, nature and animals."],"others":{"0":"Not Cecilia.","1":"Not Catherine.","3":"Not Teresa."}}},{"n":485,"prompt":"How do viewers become part of Darkytown Rebellion?","options":["They hear their voices replayed","Their shadows fall on the walls","They walk on painted floors","They are filmed and projected"],"answer":1,"topic":"243","tag":"No. 243, Darkytown Rebellion","after":"<figure class=\"fig fig-after\"><img class=\"photo\" src=\"/study/ap/ap-art-history/cb/243-1.jpg\" alt=\"Darkytown Rebellion, official photograph\" loading=\"lazy\"><figcaption>No. 243, Darkytown Rebellion<\/figcaption><\/figure>","ex":{"idea":"Projected light casts viewers’ shadows among the silhouettes.","steps":["No. 243, <i>Darkytown Rebellion<\/i>: Kara Walker; 2001 C.E.; Cut paper and projection on wall.","From the guide: A room-sized installation by Kara Walker of black cut-paper silhouettes of figures in the clothes of the pre–Civil War South, acting out violent, sexual and humiliating scenes about slavery. Colored light is projected onto the walls, so visitors’ own shadows fall among the figures. Walker uses the polite, old-fashioned craft of the silhouette to show the brutality and racist stereotypes it was never used to depict.","From the guide: Key feature: viewers’ shadows become part of the work."],"others":{"0":"No audio.","2":"Not painted floors.","3":"Not filmed."}}},{"n":486,"prompt":"Which painting does Kara Walker’s title refer to?","options":["The Raft of the Medusa","The Third of May, 1808, by Goya","The Oath of the Horatii","Liberty Leading the People"],"answer":3,"topic":"243","tag":"No. 243, Darkytown Rebellion","after":"<figure class=\"fig fig-after\"><img class=\"photo\" src=\"/study/ap/ap-art-history/cb/243-1.jpg\" alt=\"Darkytown Rebellion, official photograph\" loading=\"lazy\"><figcaption>No. 243, Darkytown Rebellion<\/figcaption><\/figure>","ex":{"idea":"Delacroix’s painting of revolution.","steps":["No. 243, <i>Darkytown Rebellion<\/i>: Kara Walker; 2001 C.E.; Cut paper and projection on wall."],"others":{"0":"Géricault’s raft is not the source.","1":"Goya’s execution scene is not the source.","2":"David’s Oath is not the source."}}},{"n":487,"prompt":"Why is Shonibare’s swinging figure headless?","options":["It hides the model’s identity","It alludes to the guillotine","The head was stolen in 2002","It was too costly to cast one"],"answer":1,"topic":"244","tag":"No. 244, The Swing (after Fragonard)","after":"<figure class=\"fig fig-after\"><img class=\"photo\" src=\"/study/ap/ap-art-history/cb/244-1.jpg\" alt=\"The Swing (after Fragonard), official photograph\" loading=\"lazy\"><figcaption>No. 244, The Swing (after Fragonard)<\/figcaption><\/figure>","ex":{"idea":"The aristocracy’s fate in the French Revolution.","steps":["No. 244, <i>The Swing (after Fragonard)<\/i>: Yinka Shonibare; 2001 C.E.; Mixed-media installation.","From the guide: Headless → guillotine and the French Revolution.","From the guide: The figure is headless, a signature feature of Shonibare’s mannequins."],"others":{"0":"Not to hide identity.","2":"No theft.","3":"Not cost."}}},{"n":488,"prompt":"What is ironic about the ‘African’ fabric in Shonibare’s work?","options":["It was printed in Paris","It was made by the Dutch","It was woven in Ghana","It came from India"],"answer":1,"topic":"244","tag":"No. 244, The Swing (after Fragonard)","after":"<figure class=\"fig fig-after\"><img class=\"photo\" src=\"/study/ap/ap-art-history/cb/244-1.jpg\" alt=\"The Swing (after Fragonard), official photograph\" loading=\"lazy\"><figcaption>No. 244, The Swing (after Fragonard)<\/figcaption><\/figure>","ex":{"idea":"Dutch wax prints were inspired by Indonesian batik and sold in West Africa.","steps":["No. 244, <i>The Swing (after Fragonard)<\/i>: Yinka Shonibare; 2001 C.E.; Mixed-media installation.","From the guide: Dutch wax cloth was made by Dutch (and British) factories copying Indonesian batik, then sold in West Africa, where it became a symbol of African identity.","From the guide: The dress is made of Dutch wax print fabric, in bright, bold patterns associated with West Africa."],"others":{"0":"Not Paris.","2":"Not Ghana; that is the irony.","3":"Not India."}}},{"n":489,"prompt":"What is Old Man’s Cloth made from?","options":["Bottle caps and copper wire","Melted aluminum soda cans","Beads and cowrie shells","Strips of woven kente silk"],"answer":0,"topic":"245","tag":"No. 245, Old Man’s Cloth","after":"<figure class=\"fig fig-after\"><img class=\"photo\" src=\"/study/ap/ap-art-history/cb/245-1.jpg\" alt=\"Old Man’s Cloth, official photograph\" loading=\"lazy\"><figcaption>No. 245, Old Man’s Cloth<\/figcaption><\/figure>","ex":{"idea":"Liquor bottle caps were flattened and stitched together.","steps":["No. 245, <i>Old Man’s Cloth<\/i>: El Anatsui; 2003 C.E.; Aluminum and copper wire.","From the guide: A huge, shimmering wall hanging by Ghanaian artist El Anatsui, made from thousands of flattened aluminum caps and seals from liquor bottles, stitched together with copper wire. It drapes and folds like fabric and recalls Ghana’s kente cloth. The bottle caps carry a history: European alcohol was traded for enslaved people in West Africa, and it is still part of local economies.","From the guide: Aluminum and copper wire: thousands of bottle caps and neck seals flattened, cut and folded, then joined with copper wire."],"others":{"1":"Not melted cans.","2":"Not beads or shells.","3":"It resembles kente but is not woven silk."}}},{"n":490,"prompt":"Which textile does Old Man’s Cloth resemble?","options":["Batik","Tapa cloth","Kente cloth","Mudcloth"],"answer":2,"topic":"245","tag":"No. 245, Old Man’s Cloth","after":"<figure class=\"fig fig-after\"><img class=\"photo\" src=\"/study/ap/ap-art-history/cb/245-1.jpg\" alt=\"Old Man’s Cloth, official photograph\" loading=\"lazy\"><figcaption>No. 245, Old Man’s Cloth<\/figcaption><\/figure>","ex":{"idea":"Ghanaian kente is associated with royalty.","steps":["No. 245, <i>Old Man’s Cloth<\/i>: El Anatsui; 2003 C.E.; Aluminum and copper wire.","From the guide: El Anatsui’s ‘Old Man’s Cloth’, 2003: an elder’s kente made of liquor caps. ‘Ana-TSUI’ sounds like ‘a new sew’ of trash.","From the guide: Kente cloth, made by the Asante and Ewe peoples of Ghana, signals royalty, status and important occasions; Anatsui is Ewe."],"others":{"0":"Batik is Indonesian (it inspired the Dutch wax prints in Shonibare’s work).","1":"Tapa is Pacific barkcloth.","3":"Mudcloth comes from Mali."}}},{"n":491,"prompt":"What architectural drawings underlie Mehretu’s Stadia II?","options":["Sports stadiums","Airport terminals","City subway maps","Gothic cathedrals"],"answer":0,"topic":"246","tag":"No. 246, Stadia II","after":"<figure class=\"fig fig-after\"><img class=\"photo\" src=\"/study/ap/ap-art-history/cb/246-1.jpg\" alt=\"Stadia II, official photograph\" loading=\"lazy\"><figcaption>No. 246, Stadia II<\/figcaption><\/figure>","ex":{"idea":"Stadiums suggest spectacle, nationalism and crowds.","steps":["No. 246, <i>Stadia II<\/i>: Julie Mehretu; 2004 C.E.; Ink and acrylic on canvas.","From the guide: A large layered painting by Ethiopian-born American artist Julie Mehretu, combining architectural drawings of stadiums with swirling marks, flags and bursts of color. Stadiums are places where crowds, nationalism, sports, spectacle and advertising meet, and the painting maps that energy. It looks abstract but is built on real architectural plans.","From the guide: Themes: spectacle, crowds, nationalism, globalization."],"others":{"1":"Not airports.","2":"Not subway maps.","3":"Not cathedrals."}}},{"n":492,"prompt":"What does Stadia II mainly explore?","options":["Her childhood home in Ethiopia","The history of Olympic sport","Mass spectacle and globalization","The decline of public parks in cities"],"answer":2,"topic":"246","tag":"No. 246, Stadia II","after":"<figure class=\"fig fig-after\"><img class=\"photo\" src=\"/study/ap/ap-art-history/cb/246-1.jpg\" alt=\"Stadia II, official photograph\" loading=\"lazy\"><figcaption>No. 246, Stadia II<\/figcaption><\/figure>","ex":{"idea":"Layered marks map global urban space.","steps":["No. 246, <i>Stadia II<\/i>: Julie Mehretu; 2004 C.E.; Ink and acrylic on canvas.","From the guide: A large layered painting by Ethiopian-born American artist Julie Mehretu, combining architectural drawings of stadiums with swirling marks, flags and bursts of color. Stadiums are places where crowds, nationalism, sports, spectacle and advertising meet, and the painting maps that energy. It looks abstract but is built on real architectural plans.","From the guide: Themes: spectacle, crowds, nationalism, globalization."],"others":{"0":"Not her childhood home.","1":"Not Olympic history.","3":"Not parks."}}},{"n":493,"prompt":"Which insect is merged with the woman in Preying Mantra?","options":["A blue dragonfly","A praying mantis","A desert locust","A dung beetle"],"answer":1,"topic":"247","tag":"No. 247, Preying Mantra","after":"<figure class=\"fig fig-after\"><img class=\"photo\" src=\"/study/ap/ap-art-history/cb/247-1.jpg\" alt=\"Preying Mantra, official photograph\" loading=\"lazy\"><figcaption>No. 247, Preying Mantra<\/figcaption><\/figure>","ex":{"idea":"The female mantis sometimes eats the male after mating.","steps":["No. 247, <i>Preying Mantra<\/i>: Wangechi Mutu; 2006 C.E.; Mixed media on Mylar.","From the guide: The female praying mantis sometimes eats the male after mating, linking the figure to the idea of the dangerous woman.","From the guide: A collage by Kenyan-born artist Wangechi Mutu of a reclining female figure built from magazine clippings, ink and paint on shiny Mylar film. She is part woman, part praying mantis and part snake, seductive and dangerous at once. Mutu uses fashion, pornography, medical and ethnographic images to critique how media and colonial history have pictured Black women’s bodies."],"others":{"0":"Not a dragonfly.","2":"Not a locust.","3":"Not a beetle."}}},{"n":494,"prompt":"What does Mutu critique in Preying Mantra?","options":["How fashion uses recycled cloth","How media show Black women","How museums store collages","How cities treat migrants"],"answer":1,"topic":"247","tag":"No. 247, Preying Mantra","after":"<figure class=\"fig fig-after\"><img class=\"photo\" src=\"/study/ap/ap-art-history/cb/247-1.jpg\" alt=\"Preying Mantra, official photograph\" loading=\"lazy\"><figcaption>No. 247, Preying Mantra<\/figcaption><\/figure>","ex":{"idea":"Collaged magazine images expose stereotypes.","steps":["No. 247, <i>Preying Mantra<\/i>: Wangechi Mutu; 2006 C.E.; Mixed media on Mylar.","From the guide: A collage by Kenyan-born artist Wangechi Mutu of a reclining female figure built from magazine clippings, ink and paint on shiny Mylar film. She is part woman, part praying mantis and part snake, seductive and dangerous at once. Mutu uses fashion, pornography, medical and ethnographic images to critique how media and colonial history have pictured Black women’s bodies.","From the guide: Attribution clue: a hybrid female body collaged from magazine skin on glossy Mylar means Wangechi Mutu."],"others":{"0":"Not fashion.","2":"Not museum storage.","3":"Not migrants."}}},{"n":495,"prompt":"What is Shibboleth?","options":["A wall of stacked chairs","A crack in a museum floor","A pile of human hair","A room of red thread"],"answer":1,"topic":"248","tag":"No. 248, Shibboleth","after":"<figure class=\"fig fig-after\"><img class=\"photo\" src=\"/study/ap/ap-art-history/cb/248-1.jpg\" alt=\"Shibboleth, official photograph\" loading=\"lazy\"><figcaption>No. 248, Shibboleth<\/figcaption><\/figure>","ex":{"idea":"It ran about 548 feet across the Turbine Hall.","steps":["No. 248, <i>Shibboleth<\/i>: Doris Salcedo; 2007–2008 C.E.; Installation.","From the guide: The crack is about 548 feet long, zigzagging and forking across the entire Turbine Hall floor.","From the guide: A crack 548 feet (167 meters) long, running the full length of the floor of the Turbine Hall at Tate Modern in London, by Colombian artist Doris Salcedo. It begins as a hairline and widens and deepens, with chain-link fence embedded in its sides. It stands for the divisions that separate rich countries from immigrants and the colonized; when it was filled in afterward, a scar was left on purpose."],"others":{"0":"Stacked chairs are not Shibboleth.","2":"Not hair.","3":"Not thread."}}},{"n":496,"prompt":"What does Shibboleth address?","options":["Climate and floods","Mining and labor","Racism and exclusion","Sport and nation"],"answer":2,"topic":"248","tag":"No. 248, Shibboleth","after":"<figure class=\"fig fig-after\"><img class=\"photo\" src=\"/study/ap/ap-art-history/cb/248-1.jpg\" alt=\"Shibboleth, official photograph\" loading=\"lazy\"><figcaption>No. 248, Shibboleth<\/figcaption><\/figure>","ex":{"idea":"Borders divide people inside modern societies.","steps":["No. 248, <i>Shibboleth<\/i>: Doris Salcedo; 2007–2008 C.E.; Installation.","From the guide: The crack stands for borders, racism, immigration and colonial exclusion that divide the wealthy West from everyone else.","From the guide: Themes: racism, immigration, borders, colonial exclusion."],"others":{"0":"Not climate.","1":"Not mining.","3":"Not sport."}}},{"n":497,"prompt":"What forms define the MAXXI museum?","options":["Stacked boxes clad in titanium","A glass box raised on thin steel columns","A rotunda under a coffered dome","Curving, intersecting concrete galleries"],"answer":3,"topic":"249","tag":"No. 249, MAXXI National Museum of XXI Century Arts","after":"<figure class=\"fig fig-after\"><img class=\"photo\" src=\"/study/ap/ap-art-history/cb/249-1.jpg\" alt=\"MAXXI National Museum of XXI Century Arts, official photograph\" loading=\"lazy\"><figcaption>No. 249, MAXXI National Museum of XXI Century Arts<\/figcaption><\/figure>","ex":{"idea":"Paths cross and layer like streams.","steps":["No. 249, <i>MAXXI National Museum of XXI Century Arts<\/i>: Zaha Hadid; 2009 C.E.; Glass, steel, and cement.","From the guide: Italy’s national museum of twenty-first-century art and architecture in Rome, designed by Iraqi-British architect Zaha Hadid. Long, curving bands of concrete gallery bend, cross and stack over each other like streams or highways, with black staircases hanging in the open atrium and a glass roof filtering daylight. It rejects the idea of a museum as a set of neutral boxes and won the Stirling Prize in 2010.","From the guide: Built of concrete, glass and steel; curving walls of smooth, poured concrete define the galleries."],"others":{"0":"Titanium cladding is Gehry’s Bilbao.","1":"A glass box on thin columns is Mies.","2":"A rotunda under a coffered dome is the Pantheon."}}},{"n":498,"prompt":"What distinction did Zaha Hadid earn in 2004?","options":["First architect knighted in Italy","First woman to design in Rome","First architect to use computers","First woman to win the Pritzker"],"answer":3,"topic":"249","tag":"No. 249, MAXXI National Museum of XXI Century Arts","after":"<figure class=\"fig fig-after\"><img class=\"photo\" src=\"/study/ap/ap-art-history/cb/249-1.jpg\" alt=\"MAXXI National Museum of XXI Century Arts, official photograph\" loading=\"lazy\"><figcaption>No. 249, MAXXI National Museum of XXI Century Arts<\/figcaption><\/figure>","ex":{"idea":"The Pritzker is architecture’s highest prize.","steps":["No. 249, <i>MAXXI National Museum of XXI Century Arts<\/i>: Zaha Hadid; 2009 C.E.; Glass, steel, and cement.","From the guide: If asked the architect → Zaha Hadid, first woman to win the Pritzker Prize (2004).","From the guide: In 2004 she became the first woman to win the Pritzker Prize, architecture’s highest honor."],"others":{"0":"Not a knighthood.","1":"Not first in Rome.","2":"Not first to use computers."}}},{"n":499,"prompt":"How were the sunflower seeds in Kui Hua Zi made?","options":["They were stamped out by machines","Each was hand-painted","They were real seeds dipped in glaze","They were 3D-printed in a factory"],"answer":1,"topic":"250","tag":"No. 250, Kui Hua Zi (Sunflower Seeds)","after":"<figure class=\"fig fig-after\"><img class=\"photo\" src=\"/study/ap/ap-art-history/cb/250-1.jpg\" alt=\"Kui Hua Zi (Sunflower Seeds), official photograph\" loading=\"lazy\"><figcaption>No. 250, Kui Hua Zi (Sunflower Seeds)<\/figcaption><\/figure>","ex":{"idea":"About 1,600 Jingdezhen artisans made 100 million seeds.","steps":["No. 250, <i>Kui Hua Zi (Sunflower Seeds)<\/i>: Ai Weiwei; 2010–2011 C.E.; Sculpted and painted porcelain.","From the guide: An installation of about 100 million porcelain sunflower seeds, each one sculpted and hand-painted by artisans in Jingdezhen, China, then spread across the floor of the Turbine Hall at Tate Modern. They look mass-produced but are all handmade. Ai Weiwei, a Chinese artist and government critic, links the seeds to Mao-era propaganda, shared snacks in hard times, and the labor behind ‘Made in China’.","From the guide: Ai Weiwei’s ‘kui hua zi’ = sunflower seeds, 2010–2011: one hundred million seeds, one for every ‘sunflower’ who turned to Mao."],"others":{"0":"Not machine-made.","2":"Not real seeds.","3":"Not 3D-printed."}}},{"n":500,"prompt":"Why were visitors stopped from walking on Kui Hua Zi?","options":["The floor began to crack","Ceramic dust was a health hazard","The seeds were being stolen by visitors","The seeds broke too easily"],"answer":1,"topic":"250","tag":"No. 250, Kui Hua Zi (Sunflower Seeds)","after":"<figure class=\"fig fig-after\"><img class=\"photo\" src=\"/study/ap/ap-art-history/cb/250-1.jpg\" alt=\"Kui Hua Zi (Sunflower Seeds), official photograph\" loading=\"lazy\"><figcaption>No. 250, Kui Hua Zi (Sunflower Seeds)<\/figcaption><\/figure>","ex":{"idea":"Visitors had first been invited to walk on them.","steps":["No. 250, <i>Kui Hua Zi (Sunflower Seeds)<\/i>: Ai Weiwei; 2010–2011 C.E.; Sculpted and painted porcelain.","From the guide: Visitors were first invited to walk on the seeds, but this was stopped within days because of porcelain dust, a health hazard.","From the guide: Ai Weiwei’s ‘kui hua zi’ = sunflower seeds, 2010–2011: one hundred million seeds, one for every ‘sunflower’ who turned to Mao."],"others":{"0":"The floor did not crack.","2":"Theft was not the reason.","3":"Breakage was not the reason."}}}],"fr":[]}</script>
+<script>
+(function(){
+"use strict";
+var DATA = JSON.parse(document.getElementById("data").textContent);
+var META = DATA.meta, MC = DATA.mc, FR = DATA.fr || [], TOP = DATA.topics || {}, SEC = DATA.sections || {}, STIM = DATA.stims || {}, BY = {};
+MC.forEach(function(q){ BY[q.n] = q; });
+var KEY = META.key, FKEY = META.fkey || META.key + ".fr", HAS_FR = FR.length > 0;
+
+function load(k, d){ try{ var v = localStorage.getItem(k); return v ? JSON.parse(v) : d; }catch(e){ return d; } }
+function save(k, v){ try{ localStorage.setItem(k, JSON.stringify(v)); }catch(e){} }
+function esc(s){ return String(s).replace(/[&<>"]/g, function(c){ return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]; }); }
+function shuffle(a){ a = a.slice(); for (var i = a.length - 1; i > 0; i--){ var j = Math.floor(Math.random() * (i + 1)); var t = a[i]; a[i] = a[j]; a[j] = t; } return a; }
+function range(n){ var a = []; for (var i = 0; i < n; i++) a.push(i); return a; }
+
+var S = load(KEY, null);
+if (!S || !S.phase || !S.order || S.order.some(function(n){ return !BY[n]; })) S = { phase: "setup", mode: "practice", shuffleQ: false, shuffleC: false, order: [], copt: {}, ans: {}, pos: 0, full: null };
+var confirmFinish = false;
+var mcEl = document.getElementById("mc");
+
+function start(nums){
+  var list = nums || MC.map(function(q){ return q.n; });
+  S.order = S.shuffleQ ? shuffle(list) : list.slice();
+  S.copt = {};
+  S.order.forEach(function(n){
+    var q = BY[n], idx = range(q.options.length);
+    S.copt[n] = (S.shuffleC && !q.fixed) ? shuffle(idx) : idx;
+  });
+  S.ans = {}; S.pos = 0; S.phase = "run"; confirmFinish = false;
+  save(KEY, S); render(); focusTop();
+}
+function focusTop(){ var t = document.querySelector(".tabs") || document.querySelector(".title"); if (t && t.getBoundingClientRect().top < 0) t.scrollIntoView(); }
+
+function stats(){
+  var right = 0, done = 0;
+  S.order.forEach(function(n){ if (n in S.ans){ done++; if (S.ans[n] === BY[n].answer) right++; } });
+  return { right: right, done: done, total: S.order.length };
+}
+function topicShort(t){ return (META.topicPrefix || "") + t; }
+function topicLabel(t){ return topicShort(t) + ", " + TOP[t].name; }
+function guideLink(t, short){
+  var g = TOP[t], txt = short ? g.name : topicLabel(t);
+  var href = g.url ? g.url : (META.guide && g.page ? META.guide + "#page=" + g.page : "");
+  return href ? '<a href="' + href + '">' + txt + "</a>" : txt;
+}
+function topicLinks(ts){
+  ts = ts.filter(function(t){ return TOP[t]; });
+  if (!ts.length || !(META.guide || TOP[ts[0]].url)) return "";
+  return '<p class="links">Review ' + ts.map(function(t){ return guideLink(t); }).join(" &middot; ") + " in " + META.guideName + "</p>";
+}
+function explain(q, picked){
+  var e = q.ex, h = '<div class="why"><p>' + e.idea + "</p>";
+  if (e.steps.length) h += '<ol class="steps">' + e.steps.map(function(s){ return "<li>" + s + "</li>"; }).join("") + "</ol>";
+  var rest = range(q.options.length).filter(function(i){ return i !== q.answer; });
+  if (typeof picked === "number" && picked !== q.answer) rest = [picked].concat(rest.filter(function(i){ return i !== picked; }));
+  h += '<p class="why-h sc">Why not the others</p><ul class="others">' + rest.map(function(i){
+    return "<li>" + quoted(q, i) + (i === picked ? '<span class="tag">your answer</span>' : "") + " &mdash; " + e.others[i] + "</li>";
+  }).join("") + "</ul></div>";
+  return h;
+}
+function quoted(q, i){ return q.labels ? q.labels[i] : "&ldquo;" + q.options[i] + "&rdquo;"; }
+function table(q){ return q.table ? '<div class="bt-wrap">' + q.table + "</div>" : ""; }
+function stim(q){
+  var s = q.stim && STIM[q.stim]; if (!s) return "";
+  var html = s.html.split(' data-q="' + q.n + '"').join(' data-q="' + q.n + '" data-cur')
+    .replace(/data-qs="([^"]*)"/g, function(m, l){ return (" " + l + " ").indexOf(" " + q.n + " ") >= 0 ? m + " data-cur" : m; });
+  return '<div class="stim' + (s.cls ? " " + s.cls : "") + '">' + (s.title ? '<p class="stim-h sc">' + s.title + "</p>" : "") + html + "</div>";
+}
+function scrollStim(root){
+  root.querySelectorAll(".stim").forEach(function(box){ var c = box.querySelector("[data-cur]"); if (c && box.scrollHeight > box.clientHeight) box.scrollTop = Math.max(0, c.offsetTop - box.clientHeight / 3); });
+}
+function promptHtml(q){
+  return stim(q) + (q.fig || "") + '<div class="q-prompt"><p>' + q.prompt + "</p>" + (q.ask || META.ask ? '<p class="q-ask">' + (q.ask || META.ask) + "</p>" : "") + "</div>" + table(q);
+}
+
+function renderSetup(){
+  mcEl.innerHTML =
+    '<div class="setup">' +
+      '<h2>How do you want to take it?</h2>' +
+      '<div class="choice-row">' +
+        '<button type="button" class="choice" data-mode="practice" aria-pressed="' + (S.mode === "practice") + '"><b>Practice</b><span>See the answer and why after each question</span></button>' +
+        '<button type="button" class="choice" data-mode="exam" aria-pressed="' + (S.mode === "exam") + '"><b>Exam</b><span>Answer everything, then see your score</span></button>' +
+      '</div>' +
+      '<div class="checks">' +
+        '<label><input type="checkbox" id="opt-sq"' + (S.shuffleQ ? " checked" : "") + '> Shuffle questions</label>' +
+        '<label><input type="checkbox" id="opt-sc"' + (S.shuffleC ? " checked" : "") + '> Shuffle answer choices</label>' +
+      '</div>' +
+      '<div class="setup-actions"><button type="button" class="btn btn--solid btn--lg" id="go">Start' + (HAS_FR ? " multiple choice" : "") + '</button></div>' +
+      '<p class="note">' + META.setupNote + " Keyboard: 1&ndash;" + Math.max.apply(null, MC.map(function(q){ return q.options.length; })) + " to answer, &larr; &rarr; to move, Enter for next.</p>" +
+    '</div>';
+  mcEl.querySelectorAll(".choice").forEach(function(b){ b.onclick = function(){ S.mode = b.dataset.mode; render(); }; });
+  document.getElementById("opt-sq").onchange = function(e){ S.shuffleQ = e.target.checked; };
+  document.getElementById("opt-sc").onchange = function(e){ S.shuffleC = e.target.checked; };
+  document.getElementById("go").onclick = function(){ start(); };
+}
+
+function renderRun(){
+  var n = S.order[S.pos], q = BY[n], st = stats(), practice = S.mode === "practice";
+  var picked = (n in S.ans) ? S.ans[n] : null, locked = practice && picked !== null;
+  var nav = S.order.map(function(m, i){
+    var c = [];
+    if (m in S.ans){ if (practice) c.push(S.ans[m] === BY[m].answer ? "is-right" : "is-wrong"); else c.push("is-answered"); }
+    if (i === S.pos) c.push("is-current");
+    return '<button type="button" class="' + c.join(" ") + '" data-go="' + i + '" aria-label="Question ' + (i + 1) + '"' + (i === S.pos ? ' aria-current="step"' : "") + ">" + (i + 1) + "</button>";
+  }).join("");
+  var opts = S.copt[n].map(function(oi, k){
+    var cls = ["opt"], mark = "";
+    if (locked){
+      if (oi === q.answer){ cls.push("is-right"); mark = oi === picked ? "&check; your answer" : "&check; correct"; }
+      else if (oi === picked){ cls.push("is-wrong"); mark = "&cross; your answer"; }
+      else cls.push("is-dim");
+    } else if (oi === picked) cls.push("is-picked");
+    return '<li><button type="button" class="' + cls.join(" ") + '" data-opt="' + oi + '"' + (locked ? " disabled" : "") + '><span class="kbd">' + (k + 1) + "</span><span>" + q.options[oi] + '</span><span class="mark">' + mark + "</span></button></li>";
+  }).join("");
+  var fb = "";
+  if (locked){
+    var ok = picked === q.answer, ans = quoted(q, q.answer);
+    fb = '<div class="fb' + (ok ? "" : " is-wrong") + '"><p class="verdict" role="status">' + (ok ? "Correct." : "Not quite. The answer is " + ans + (/[.?!](&rdquo;)?$/.test(ans) ? "" : ".")) + "</p>" + explain(q, picked) + (q.after || "") + topicLinks([q.topic]) + "</div>";
+  }
+  var last = S.pos === S.order.length - 1, allDone = st.done === st.total;
+  var nextBtn = last
+    ? '<button type="button" class="btn btn--solid" id="finish">' + (practice ? "See results" : "Finish test") + "</button>"
+    : '<button type="button" class="btn btn--solid" id="next">Next &rarr;</button>';
+  var finishEarly = (!last && !practice) ? '<button type="button" class="btn" id="finish">Finish test</button>' : (!last && practice && allDone ? '<button type="button" class="btn" id="finish">See results</button>' : "");
+  var conf = "";
+  if (confirmFinish){
+    var left = st.total - st.done;
+    conf = '<div class="confirm"><p>' + left + " question" + (left === 1 ? " is" : "s are") + " unanswered and will be marked wrong. Finish anyway?</p>" +
+      '<button type="button" class="btn" id="conf-no">Keep going</button><button type="button" class="btn btn--solid" id="conf-yes">Finish</button></div>';
+  }
+  var eyebrow = "Question " + q.n + (SEC[q.sec] ? " &middot; " + SEC[q.sec] : "") + (q.tag ? " &middot; " + q.tag : (q.topic ? " &middot; " + topicShort(q.topic) : ""));
+  mcEl.innerHTML =
+    '<div class="bar"><span>Question ' + (S.pos + 1) + " of " + st.total + " &middot; " + (practice ? "Practice" : "Exam") + " mode</span><span>" +
+      (practice ? st.right + " correct of " + st.done + " answered" : st.done + " of " + st.total + " answered") + "</span></div>" +
+    '<div class="track"><span style="width:' + (st.done / st.total * 100) + '%"></span></div>' +
+    '<nav class="nav" aria-label="Questions">' + nav + "</nav>" +
+    '<article class="q">' +
+      '<p class="q-eyebrow sc">' + eyebrow + "</p>" +
+      promptHtml(q) +
+      '<ol class="opts">' + opts + "</ol>" + fb +
+      '<div class="step"><button type="button" class="btn" id="prev"' + (S.pos === 0 ? " disabled" : "") + '>&larr; Back</button><span class="step-right">' + finishEarly + nextBtn + "</span></div>" +
+      conf +
+    "</article>" +
+    '<p class="keys"><span class="kbd">1</span>&ndash;<span class="kbd">' + q.options.length + '</span> answer &nbsp; <span class="kbd">&larr;</span> <span class="kbd">&rarr;</span> move &nbsp; <span class="kbd">Enter</span> next</p>' +
+    '<p class="restart-line"><a href="#" id="restart">Start over</a> <span class="muted">&middot; progress is saved in this browser</span></p>';
+
+  scrollStim(mcEl);
+  mcEl.querySelectorAll("[data-go]").forEach(function(b){ b.onclick = function(){ go(+b.dataset.go); }; });
+  mcEl.querySelectorAll("[data-opt]").forEach(function(b){ b.onclick = function(){ pick(+b.dataset.opt); }; });
+  bind("prev", function(){ go(S.pos - 1); });
+  bind("next", function(){ go(S.pos + 1); });
+  bind("finish", finish);
+  bind("conf-no", function(){ confirmFinish = false; render(); });
+  bind("conf-yes", function(){ confirmFinish = false; showResults(); });
+  bind("restart", function(e){ e.preventDefault(); S.phase = "setup"; save(KEY, S); render(); });
+}
+function bind(id, fn){ var el = document.getElementById(id); if (el) el.onclick = fn; }
+
+function pick(oi){
+  var n = S.order[S.pos];
+  if (S.mode === "practice" && (n in S.ans)) return;
+  S.ans[n] = oi; save(KEY, S); render();
+  if (S.mode === "practice"){ var fb = mcEl.querySelector(".fb"); if (fb && fb.getBoundingClientRect().bottom > innerHeight) fb.scrollIntoView({ block: "nearest" }); }
+}
+function go(i){
+  if (i < 0 || i >= S.order.length) return;
+  S.pos = i; confirmFinish = false; save(KEY, S); render();
+  var q = mcEl.querySelector(".q"); if (q && q.getBoundingClientRect().top < 0) q.scrollIntoView();
+}
+function finish(){
+  var st = stats();
+  if (st.done < st.total && !confirmFinish){ confirmFinish = true; render(); var c = mcEl.querySelector(".confirm"); if (c) c.scrollIntoView({ block: "nearest" }); return; }
+  showResults();
+}
+function showResults(){
+  S.phase = "results";
+  if (S.order.length === MC.length) S.full = stats().right;
+  save(KEY, S); render(); if (HAS_FR) renderFR(); focusTop();
+}
+
+/* composite score (only when the document defines one) */
+function frTotal(){
+  var t = 0;
+  for (var i = 0; i < FR.length; i++){ var s = frScore(FR[i]); if (s === null) return null; t += s; }
+  return t;
+}
+function frMax(){ return FR.reduce(function(a, f){ return a + frItemMax(f); }, 0); }
+function compositeHtml(){
+  var C = META.composite;
+  if (!C || !HAS_FR) return "";
+  var mc = (typeof S.full === "number") ? S.full : null, fr = frTotal(), fm = frMax(), mm = MC.length;
+  if (mc === null && fr === null) return "";
+  var lines = [];
+  if (mc === null) lines.push("Free response: <b>" + fr + " / " + fm + "</b>. Take the full multiple-choice part to get your composite score.");
+  else if (fr === null) lines.push("Multiple choice: <b>" + mc + " / " + mm + "</b>. Write and mark every free-response question to get your composite score.");
+  else {
+    var c = Math.round(C.mcWeight * mc / mm + C.frWeight * fr / fm), band = "";
+    for (var i = 0; i < C.bands.length; i++){ if (c >= C.bands[i][0]){ band = C.bands[i][1]; break; } }
+    lines.push("Composite score: <b>" + c + " / " + (C.mcWeight + C.frWeight) + "</b> &nbsp;<span class=\"muted\">= " + C.mcWeight + " &times; " + mc + "/" + mm + " + " + C.frWeight + " &times; " + fr + "/" + fm + "</span>");
+    if (band) lines.push(band);
+  }
+  return '<div class="composite" role="status">' + lines.map(function(l){ return "<p>" + l + "</p>"; }).join("") + "</div>";
+}
+function targetHtml(st){
+  var T = META.target, B = META.bands, h = "";
+  if (st.total !== MC.length) return "";
+  if (T) h += '<p class="target">' + T.label + ": " + T.mc + " / " + MC.length + " &middot; " + (st.right >= T.mc ? "met" : (T.mc - st.right) + " short") + "</p>";
+  if (B) for (var i = 0; i < B.length; i++){ if (st.right >= B[i][0]){ h += '<p class="target">' + B[i][1] + "</p>"; break; } }
+  return h;
+}
+
+var resFilter = "all";
+function renderResults(){
+  var st = stats(), pct = Math.round(st.right / st.total * 100), fullRun = st.total === MC.length;
+  var missed = S.order.filter(function(n){ return S.ans[n] !== BY[n].answer; });
+  var rows = S.order.map(function(n, i){
+    var q = BY[n], a = S.ans[n], ok = a === q.answer;
+    if (resFilter === "missed" && ok) return "";
+    return '<li><details><summary><span class="res-n">' + (i + 1) + '.</span><span class="' + (ok ? "res-ok" : "res-bad") + '" aria-label="' + (ok ? "correct" : "wrong") + '">' + (ok ? "&check;" : "&cross;") + '</span><span class="res-sum">' + q.prompt + "</span></summary>" +
+      '<div class="res-body">' + stim(q) + (q.fig || "") + table(q) + '<p><span class="sc">Your answer:</span> ' + (a === undefined ? "<i>skipped</i>" : q.options[a]) + "</p>" +
+      (ok ? "" : '<p><span class="sc">Correct:</span> ' + q.options[q.answer] + "</p>") +
+      explain(q, a) + (q.after || "") + topicLinks([q.topic]) + "</div></details></li>";
+  }).join("");
+  var tally = {};
+  S.order.forEach(function(n){ var t = BY[n].topic; if (!t) return; tally[t] = tally[t] || { right: 0, total: 0 }; tally[t].total++; if (S.ans[n] === BY[n].answer) tally[t].right++; });
+  var trows = Object.keys(TOP).filter(function(t){ return tally[t]; }).map(function(t){
+    var x = tally[t], miss = x.total - x.right;
+    return "<tr><th scope=\"row\">" + topicShort(t) + "</th><td>" + x.right + " / " + x.total + "</td><td>" + guideLink(t, true) +
+      ((META.flag ? x.right < META.flag.below * x.total : miss >= 2) ? ' <span class="flag">&middot; ' + (META.flag ? META.flag.text : "reread this section") + "</span>" : "") + "</td></tr>";
+  }).join("");
+  mcEl.innerHTML =
+    '<div class="results">' +
+      '<div class="score"><p class="score-big">' + st.right + " / " + st.total + "</p><p>" + pct + "% correct" + (fullRun ? "" : " &middot; retry of missed questions") + "</p>" + targetHtml(st) + "</div>" +
+      '<div class="res-actions">' +
+        (missed.length ? '<button type="button" class="btn btn--solid" id="retry">Retry the ' + missed.length + " missed</button>" : "") +
+        '<button type="button" class="btn" id="again">Take the full test again</button>' +
+        (HAS_FR ? '<button type="button" class="btn" id="to-fr">Go to free response</button>' : "") +
+      "</div>" +
+      compositeHtml() +
+      (trows ? '<div class="topics"><h2>' + (META.byTopic || "By topic") + '</h2><table class="bt"><thead><tr><th scope="col">' + (META.topicCol || "Topic") + '</th><th scope="col">Correct</th><th scope="col">' + (META.guideCol || "Guide section") + "</th></tr></thead><tbody>" + trows + "</tbody></table>" +
+        (META.topicNote ? '<p class="note" style="margin-top:6px">' + META.topicNote + "</p>" : "") + "</div>" : "") +
+      '<div class="res-filter"><h2>Review</h2><span><label><input type="checkbox" id="only-missed"' + (resFilter === "missed" ? " checked" : "") + "> Show missed only</label></span></div>" +
+      '<ul class="res-list">' + (rows || '<li><p class="note" style="padding:12px 0">Nothing missed.</p></li>') + "</ul>" +
+    "</div>";
+  bind("retry", function(){ start(missed); });
+  bind("again", function(){ S.phase = "setup"; save(KEY, S); render(); });
+  bind("to-fr", function(){ setTab("fr"); });
+  document.getElementById("only-missed").onchange = function(e){ resFilter = e.target.checked ? "missed" : "all"; render(); };
+}
+
+function render(){
+  if (S.phase === "run" && S.order.length) renderRun();
+  else if (S.phase === "results" && S.order.length) renderResults();
+  else { S.phase = "setup"; renderSetup(); }
+}
+
+/* free response: "epi" parts (E/P/I -> 0-4 per question) or "points" parts (0..max each) */
+var frEl = document.getElementById("fr"), F = load(FKEY, null);
+if (!F || typeof F !== "object") F = {};
+F.drafts = F.drafts || {}; F.marks = F.marks || {}; F.open = F.open || {};
+var LABELS = { 4: "Complete", 3: "Substantial", 2: "Developing", 1: "Minimal", 0: "" };
+function frItemMax(f){ return f.mode === "points" ? f.parts.reduce(function(a, p){ return a + p.max; }, 0) : 4; }
+function frScore(f){
+  if (f.mode === "points"){
+    var t = 0;
+    for (var j = 0; j < f.parts.length; j++){ var v = F.marks[f.n + f.parts[j].label]; if (v === undefined || v === "") return null; t += +v; }
+    return t;
+  }
+  var e = 0, p = 0;
+  for (var i = 0; i < f.parts.length; i++){
+    var m = F.marks[f.n + f.parts[i].label];
+    if (!m) return null;
+    if (m === "E") e++; else if (m === "P") p++;
+  }
+  if (e === 3) return 4;
+  if (e === 2 && p === 1) return 3;
+  if ((e === 2 && p === 0) || (e === 1 && p >= 1) || p === 3) return 2;
+  if ((e === 1 && p === 0) || (e === 0 && p === 2)) return 1;
+  return 0;
+}
+function words(t){ var m = t.trim().match(/\S+/g); return m ? m.length : 0; }
+var SCALE = '<details class="scale"><summary>How part scores convert to 0&ndash;4</summary><table class="bt"><thead><tr><th scope="col">Score</th><th scope="col">Label</th><th scope="col">Part scores (three parts, each E, P, or I)</th></tr></thead><tbody>' +
+  "<tr><td>4</td><td>Complete</td><td>three parts E</td></tr>" +
+  "<tr><td>3</td><td>Substantial</td><td>two parts E and one part P</td></tr>" +
+  "<tr><td>2</td><td>Developing</td><td>two E and no P; or one E and one or two P; or three P</td></tr>" +
+  "<tr><td>1</td><td>Minimal</td><td>one E and no P; or no E and two P</td></tr>" +
+  "<tr><td>0</td><td></td><td>anything less</td></tr></tbody></table></details>";
+function frScoreHtml(f){
+  var s = frScore(f), mx = frItemMax(f);
+  if (s === null) return '<span class="muted">Mark every part to score this question.</span>';
+  return "Score: <b>" + s + " / " + mx + "</b>" + (f.mode !== "points" && LABELS[s] ? " &middot; " + LABELS[s] : "");
+}
+function markButtons(f, p, id, m){
+  var vals = f.mode === "points" ? range(p.max + 1).map(String) : ["E", "P", "I"];
+  return vals.map(function(x){ return '<button type="button" data-mark="' + id + '" data-f="' + f.n + '" data-v="' + x + '" aria-pressed="' + (m === x) + '">' + x + "</button>"; }).join("");
+}
+function renderFR(){
+  if (!HAS_FR) return;
+  frEl.innerHTML = '<p class="fr-intro">' + META.frIntro + "</p>" +
+    FR.map(function(f){
+      var open = !!F.open[f.n];
+      var parts = f.parts.map(function(p){
+        var id = f.n + p.label, d = F.drafts[id] || "", m = (F.marks[id] === undefined ? "" : String(F.marks[id]));
+        var crit = f.mode === "points"
+          ? '<div class="crit-pts">' + p.rubric + "</div>"
+          : '<dl class="crit"><dt>E</dt><dd>if the response ' + p.e + "</dd><dt>P</dt><dd>if " + p.p + "</dd></dl>";
+        return '<div class="part"><p class="part-prompt"><b>(' + p.label + ")</b>" + p.prompt + "</p>" +
+          '<label class="sc" for="fr-' + id + '">Your answer to (' + p.label + ")</label>" +
+          '<textarea id="fr-' + id + '" data-fr="' + id + '" spellcheck="true">' + esc(d) + "</textarea>" +
+          '<p class="part-meta" id="wc-' + id + '">' + words(d) + " words &middot; saved in this browser</p>" +
+          '<div class="sol"' + (open ? "" : " hidden") + ' data-sol="' + f.n + '"><h3>Model solution (' + p.label + ")</h3><div>" + p.solution + "</div>" + crit +
+            '<div class="mark-row"><span>Your mark for (' + p.label + ")" + (f.mode === "points" ? ", out of " + p.max : "") + ':</span><span class="seg" role="group" aria-label="Mark for part ' + p.label + '">' + markButtons(f, p, id, m) + "</span></div></div></div>";
+      }).join("");
+      return '<article class="fr"><h2>Question ' + f.n + "<small>" + f.head + "</small></h2>" +
+        (f.stim ? stim(f) : "") + '<div class="fr-stem">' + f.stem + "</div>" + parts +
+        '<div class="fr-actions"><span class="fr-score" id="score-' + f.n + '">' + (open ? frScoreHtml(f) : "") + "</span>" +
+          '<button type="button" class="btn" data-open="' + f.n + '" aria-expanded="' + open + '">' + (open ? "Hide model solution" : "Show model solution and scoring") + "</button></div>" +
+        (open ? (f.mode === "points" ? "" : SCALE) + topicLinks(f.guide || []) : "") +
+        "</article>";
+    }).join("") + '<div id="fr-composite">' + compositeHtml() + "</div>";
+  frEl.querySelectorAll("textarea").forEach(function(t){
+    t.oninput = function(){ F.drafts[t.dataset.fr] = t.value; save(FKEY, F); document.getElementById("wc-" + t.dataset.fr).innerHTML = words(t.value) + " words &middot; saved in this browser"; };
+  });
+  frEl.querySelectorAll("[data-open]").forEach(function(b){
+    b.onclick = function(){ var n = b.dataset.open; F.open[n] = !F.open[n]; save(FKEY, F); renderFR(); var a = document.getElementById("score-" + n); if (a) a.closest(".fr").querySelector(".part").scrollIntoView({ block: "nearest" }); };
+  });
+  frEl.querySelectorAll("[data-mark]").forEach(function(b){
+    b.onclick = function(){
+      var id = b.dataset.mark; F.marks[id] = F.marks[id] === b.dataset.v ? "" : b.dataset.v; save(FKEY, F);
+      b.parentNode.querySelectorAll("button").forEach(function(x){ x.setAttribute("aria-pressed", String(F.marks[id] === x.dataset.v)); });
+      var f = FR.filter(function(x){ return String(x.n) === b.dataset.f; })[0];
+      document.getElementById("score-" + f.n).innerHTML = frScoreHtml(f);
+      document.getElementById("fr-composite").innerHTML = compositeHtml();
+      if (S.phase === "results") render();
+    };
+  });
+}
+
+/* tabs (only when there is a free-response part) */
+function setTab(t){
+  if (!HAS_FR) return;
+  var mc = t === "mc";
+  document.getElementById("tab-mc").setAttribute("aria-selected", String(mc));
+  document.getElementById("tab-fr").setAttribute("aria-selected", String(!mc));
+  mcEl.hidden = !mc; frEl.hidden = mc;
+  try{ history.replaceState(null, "", mc ? location.pathname : "#free-response"); }catch(e){}
+  focusTop();
+}
+if (HAS_FR){
+  document.getElementById("tab-mc").onclick = function(){ setTab("mc"); };
+  document.getElementById("tab-fr").onclick = function(){ setTab("fr"); };
+}
+
+/* keyboard */
+document.addEventListener("keydown", function(e){
+  if (e.metaKey || e.ctrlKey || e.altKey) return;
+  var tag = (e.target.tagName || "").toLowerCase();
+  if (tag === "textarea" || tag === "input") return;
+  if (mcEl.hidden || S.phase !== "run") return;
+  var n = S.order[S.pos], q = BY[n];
+  if (/^[1-9]$/.test(e.key)){ var k = +e.key - 1; if (k < q.options.length){ e.preventDefault(); pick(S.copt[n][k]); } }
+  else if (e.key === "ArrowRight"){ e.preventDefault(); go(S.pos + 1); }
+  else if (e.key === "ArrowLeft"){ e.preventDefault(); go(S.pos - 1); }
+  else if (e.key === "Enter" && tag !== "button" && tag !== "a"){ e.preventDefault(); if (S.pos < S.order.length - 1) go(S.pos + 1); else finish(); }
+});
+
+/* theme */
+var root = document.documentElement, tb = document.getElementById("theme-btn");
+function syncTheme(){ var dark = root.getAttribute("data-theme") === "dark"; tb.textContent = dark ? "Light mode" : "Dark mode"; tb.setAttribute("aria-pressed", String(dark)); }
+tb.onclick = function(){ var dark = root.getAttribute("data-theme") !== "dark"; root.setAttribute("data-theme", dark ? "dark" : "light"); try{ localStorage.setItem("apah.theme", dark ? "dark" : "light"); }catch(e){} syncTheme(); };
+syncTheme();
+
+render(); renderFR();
+if (HAS_FR && location.hash === "#free-response") setTab("fr");
+})();
+</script>
+</body>
+</html>

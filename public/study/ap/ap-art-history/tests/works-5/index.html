@@ -1,0 +1,645 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light">
+<script>try{document.documentElement.setAttribute("data-theme",localStorage.getItem("apah.theme")==="dark"?"dark":"light")}catch(e){document.documentElement.setAttribute("data-theme","light")}</script>
+<title>APAH 250 Practice 5: Indigenous Americas</title>
+<meta name="description" content="AP Art History practice on the required works, Indigenous Americas: 28 questions, two per work, each explained with the guide&#x27;s facts and why every wrong choice is wrong.">
+<link rel="icon" href="/favicon.ico" sizes="48x48" type="image/x-icon">
+<link rel="icon" href="/icon.svg" sizes="any" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-icon.png" sizes="180x180">
+<link rel="preload" href="/study/ap/ap-art-history/fonts/LM-regular.woff2" as="font" type="font/woff2" crossorigin>
+
+<style>
+@font-face{font-family:"Latin Modern";font-style:normal;font-weight:400;font-display:swap;src:url("/study/ap/ap-art-history/fonts/LM-regular.woff2") format("woff2")}
+@font-face{font-family:"Latin Modern";font-style:italic;font-weight:400;font-display:swap;src:url("/study/ap/ap-art-history/fonts/LM-italic.woff2") format("woff2")}
+@font-face{font-family:"Latin Modern";font-style:normal;font-weight:600 700;font-display:swap;src:url("/study/ap/ap-art-history/fonts/LM-bold.woff2") format("woff2")}
+@font-face{font-family:"Latin Modern";font-style:italic;font-weight:600 700;font-display:swap;src:url("/study/ap/ap-art-history/fonts/LM-bold-italic.woff2") format("woff2")}
+@font-face{font-family:"Latin Modern Mono";font-style:normal;font-weight:400 500;font-display:swap;src:url("/study/ap/ap-art-history/fonts/LM-mono.woff2") format("woff2")}
+@font-face{font-family:"Latin Modern Mono";font-style:normal;font-weight:600 700;font-display:swap;src:url("/study/ap/ap-art-history/fonts/LM-mono-bold.woff2") format("woff2")}
+
+:root{--bg:#fff;--fg:#000;--muted:#4a4a4a;--line:#c9c9c9;--plate:#f5f5f3;--hl:#fbe9a6;--link:#00008b;--ok:#1d5e20;--bad:#9b1c1c;
+  --serif:"Latin Modern","Computer Modern Serif","CMU Serif",Georgia,serif;--mono:"Latin Modern Mono","SFMono-Regular",Menlo,Consolas,monospace;
+  --gutter:clamp(16px,4vw,40px);color-scheme:light}
+:root[data-theme=dark]{--bg:#111110;--fg:#ecebe6;--muted:#a3a29c;--line:#34342f;--plate:#1b1b19;--hl:#4d4320;--link:#9db4ff;--ok:#8fd394;--bad:#ff9b9b;color-scheme:dark}
+*{box-sizing:border-box}
+html{background:var(--bg);scroll-padding-top:16px}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--serif);font-size:17px;line-height:1.5;font-kerning:normal;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+button,input,textarea{font:inherit;color:inherit}
+button{cursor:pointer}
+button:disabled{cursor:default}
+a{color:var(--link);text-underline-offset:3px;text-decoration-thickness:.5px}
+:focus-visible{outline:2px solid var(--link);outline-offset:2px}
+[hidden]{display:none!important}
+.sc{font-variant:small-caps;text-transform:lowercase;letter-spacing:.04em}
+.muted{color:var(--muted)}
+.katex{font-size:1.04em;text-rendering:auto}
+.katex-display{margin:.7em 0;overflow-x:auto;overflow-y:hidden;padding:2px 0}
+
+.runhead{display:flex;flex-wrap:wrap;justify-content:space-between;gap:4px 16px;max-width:1480px;margin:0 auto;padding:14px var(--gutter) 6px;font-size:14px;font-style:italic;color:var(--muted)}
+.runhead a{text-decoration:none}
+.runhead a:hover{text-decoration:underline}
+.runhead-actions{display:flex;flex-wrap:wrap;gap:4px 18px}
+.theme-btn{background:none;border:0;padding:0;font:inherit;font-style:italic;color:var(--link)}
+.theme-btn:hover{text-decoration:underline}
+.rule{max-width:1480px;margin:0 auto;padding-inline:var(--gutter)}
+.rule hr{margin:0;border:0;border-top:.5px solid var(--fg)}
+
+.wrap{max-width:860px;margin:0 auto;padding:0 var(--gutter) 80px}
+.title{text-align:center;padding:34px 0 22px}
+.title h1{margin:0;text-wrap:balance;font-size:clamp(32px,6vw,46px);line-height:1.1;font-weight:700}
+.title .sub{margin:8px 0 0;font-size:18px;font-variant:small-caps;letter-spacing:.03em}
+.title .meta{margin:4px 0 0;font-style:italic;color:var(--muted)}
+
+.tabs{display:flex;justify-content:center;gap:0;margin:0 0 26px;border-bottom:.5px solid var(--fg)}
+.tab{background:none;border:0;border-bottom:2.5px solid transparent;padding:8px 18px;margin-bottom:-1px;font-size:17px;color:var(--muted)}
+.tab[aria-selected=true]{color:var(--fg);border-bottom-color:var(--fg);font-weight:700}
+.tab:hover{color:var(--fg)}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:40px;padding:0 16px;border:1px solid var(--fg);background:var(--bg);font-family:var(--mono);font-size:14.5px;white-space:nowrap}
+.btn:hover:not(:disabled){background:var(--plate)}
+.btn:disabled{opacity:.35}
+.btn--solid{background:var(--fg);color:var(--bg)}
+.btn--solid:hover:not(:disabled){background:var(--fg);opacity:.85}
+.btn--lg{min-height:48px;font-size:15.5px;padding:0 22px}
+.kbd{display:inline-grid;place-items:center;min-width:22px;height:22px;padding:0 4px;border:1px solid currentColor;font-family:var(--mono);font-size:12px;opacity:.8}
+
+/* booktabs tables */
+.bt{border-collapse:collapse;margin:0 auto;font-variant-numeric:tabular-nums}
+.bt th,.bt td{padding:4px 12px;text-align:center;font-weight:400}
+.bt th[scope=row],.bt thead th:first-child{text-align:left}
+.bt thead tr{border-top:1px solid var(--fg);border-bottom:.5px solid var(--fg)}
+.bt tbody tr:last-child{border-bottom:1px solid var(--fg)}
+.bt-wrap{overflow-x:auto;margin:0 0 16px}
+
+/* setup */
+.setup{border-bottom:1.5px solid var(--fg);padding:4px 0 22px;display:grid;gap:18px}
+.setup h2,.results h2,.fr h2{margin:0;font-size:20px}
+.choice-row{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.choice{display:flex;flex-direction:column;align-items:flex-start;gap:2px;padding:12px 14px;border:1px solid var(--fg);background:var(--bg);text-align:left}
+.choice b{font-size:17px}
+.choice span{font-size:14.5px;font-style:italic;color:var(--muted)}
+.choice[aria-pressed=true]{background:var(--fg);color:var(--bg)}
+.choice[aria-pressed=true] span{color:var(--bg);opacity:.8}
+.checks{display:flex;flex-wrap:wrap;gap:8px 22px}
+.checks label{display:inline-flex;align-items:center;gap:8px;cursor:pointer}
+.checks input{width:17px;height:17px;margin:0;accent-color:var(--fg)}
+.setup-actions{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.note{margin:0;font-size:15px;color:var(--muted);font-style:italic}
+
+/* run */
+.bar{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:4px 16px;font-size:15px;color:var(--muted)}
+.track{height:3px;background:var(--line);margin:8px 0 14px}
+.track span{display:block;height:100%;background:var(--fg);transition:width .2s ease}
+.nav{display:grid;grid-template-columns:repeat(auto-fill,minmax(34px,1fr));gap:5px;margin:0 0 22px}
+.nav button{height:32px;padding:0;border:1px solid var(--line);background:var(--bg);font-family:var(--serif);font-size:14px;font-variant-numeric:tabular-nums}
+.nav button:hover{border-color:var(--fg)}
+.nav .is-answered{background:var(--plate);border-color:var(--fg)}
+.nav .is-right{background:var(--fg);color:var(--bg);border-color:var(--fg)}
+.nav .is-wrong{border:1.5px dashed var(--bad);color:var(--bad)}
+.nav .is-current{outline:2px solid var(--fg);outline-offset:1px}
+.q{border-top:1.5px solid var(--fg);padding-top:16px}
+.q-eyebrow{margin:0 0 6px;font-size:14px;color:var(--muted)}
+.q-prompt{margin:0 0 14px;font-size:20px;line-height:1.45;font-weight:400}
+.opts{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.opt{display:flex;align-items:center;gap:12px;width:100%;min-height:52px;padding:10px 14px;border:1px solid var(--fg);background:var(--bg);text-align:left;font-size:16.5px;line-height:1.4}
+.opt:hover:not(:disabled){background:var(--plate)}
+.opt .kbd{flex:none}
+.opt .mark{margin-left:auto;padding-left:6px;font-family:var(--mono);font-size:14px;white-space:nowrap}
+.opt.is-picked{border-width:2px;padding:9px 13px;background:var(--plate)}
+.opt.is-right{background:var(--fg);color:var(--bg);border-color:var(--fg)}
+.opt.is-wrong{border:1.5px dashed var(--bad);color:var(--bad);text-decoration:line-through;text-decoration-thickness:1px}
+.opt.is-wrong .mark,.opt.is-wrong .kbd{text-decoration:none}
+.opt.is-dim{opacity:.5}
+.fb{margin:14px 0 0;padding:12px 16px;border:.5px solid var(--fg);border-left:3px solid var(--ok)}
+.fb.is-wrong{border-left-color:var(--bad)}
+.fb p{margin:0}
+.fb .verdict{font-weight:700;margin-bottom:4px}
+.why p{margin:0 0 6px}
+.steps{margin:2px 0 8px;padding-left:22px}
+.steps li{margin:4px 0;padding-left:2px}
+.why .why-h{margin:10px 0 2px;font-size:14.5px;color:var(--muted)}
+.others{margin:0 0 4px;padding-left:20px}
+.others li{margin:5px 0}
+.others .tag{margin-left:6px;font-family:var(--mono);font-size:12.5px;color:var(--bad);white-space:nowrap}
+.links{margin-top:6px;font-size:15px}
+.step{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:10px;margin-top:20px}
+.step-right{display:flex;flex-wrap:wrap;gap:8px}
+.confirm{margin-top:14px;padding:12px 16px;border:1px solid var(--fg);display:flex;flex-wrap:wrap;align-items:center;gap:10px}
+.confirm p{margin:0;flex:1 1 220px}
+.keys{margin:18px 0 0;font-size:13.5px;color:var(--muted);text-align:center}
+.restart-line{margin:10px 0 0;font-size:14.5px;text-align:center}
+
+/* results */
+.results{padding-top:4px}
+.score{text-align:center;padding:10px 0 18px}
+.score-big{margin:0;font-size:clamp(48px,10vw,72px);font-weight:700;line-height:1;font-variant-numeric:tabular-nums}
+.score p{margin:6px 0 0}
+.res-actions{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin:0 0 22px}
+.res-filter{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:6px;border-bottom:1.5px solid var(--fg);padding-bottom:6px}
+.res-list{list-style:none;margin:0;padding:0}
+.res-list>li{border-bottom:.5px solid var(--line)}
+.res-list>li:last-child{border-bottom:1.5px solid var(--fg)}
+.res-list details{padding:10px 0}
+.res-list summary{display:grid;grid-template-columns:34px 22px minmax(0,1fr);gap:8px;cursor:pointer;list-style:none}
+.res-list summary::-webkit-details-marker{display:none}
+.res-n{font-weight:700;font-variant-numeric:tabular-nums}
+.res-ok{color:var(--ok);font-weight:700}
+.res-bad{color:var(--bad);font-weight:700}
+.res-body{padding:8px 0 4px 64px;font-size:15.5px}
+.res-body p{margin:0 0 4px}
+.res-body .bt-wrap{margin:4px 0 8px}
+.topics{margin:0 0 26px}
+.topics h2{margin:0 0 8px}
+.topics .bt{margin:0;width:100%}
+.topics .bt td:last-child,.topics .bt th:last-child{text-align:left}
+.topics .flag{color:var(--bad);font-style:italic}
+.composite{margin:0 0 26px;padding:12px 16px;border:.5px solid var(--fg);border-left:3px solid var(--fg)}
+.composite p{margin:0}
+.composite p+p{margin-top:4px}
+
+/* free response */
+.fr-intro{margin:0 0 6px;font-style:italic;color:var(--muted)}
+.fr{border-top:1.5px solid var(--fg);padding:18px 0 26px}
+.fr h2 small{font-weight:400;font-style:italic;color:var(--muted);font-size:15px;margin-left:6px}
+.fr-stem{margin:10px 0 6px;text-align:justify;hyphens:auto;-webkit-hyphens:auto}
+.part{margin:18px 0 0}
+.part-prompt{margin:0 0 8px}
+.part-prompt b{margin-right:4px}
+.part textarea{width:100%;min-height:150px;padding:12px 14px;border:1px solid var(--fg);border-radius:0;background:var(--bg);font-family:var(--serif);font-size:16.5px;line-height:1.55;resize:vertical}
+.part-meta{margin-top:4px;font-size:14px;color:var(--muted)}
+.sol{margin-top:12px;padding:12px 18px;border:.5px solid var(--fg)}
+.sol h3{margin:0 0 4px;font-size:15px}
+.sol p{margin:0 0 10px}
+.sol .crit{display:grid;grid-template-columns:28px minmax(0,1fr);gap:2px 8px;margin:0 0 10px;font-size:15.5px}
+.sol .crit dt{font-weight:700}
+.sol .crit dd{margin:0}
+.mark-row{display:flex;flex-wrap:wrap;align-items:center;gap:8px;font-size:15px}
+.seg{display:inline-flex}
+.seg button{min-width:44px;min-height:36px;padding:0 10px;border:1px solid var(--fg);background:var(--bg);font-family:var(--mono);font-size:14px}
+.seg button+button{border-left:0}
+.seg button[aria-pressed=true]{background:var(--fg);color:var(--bg)}
+.fr-actions{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:10px;margin-top:16px}
+.fr-score{font-size:16px}
+.fr-score b{font-variant-numeric:tabular-nums}
+.scale{margin-top:14px}
+.scale summary{cursor:pointer;font-size:15px;color:var(--muted);font-style:italic}
+.scale .bt{margin:8px 0 0}
+.scale .bt td:last-child,.scale .bt th:last-child{text-align:left}
+.foot{margin-top:40px;padding-top:12px;border-top:.5px solid var(--line);font-size:14px;color:var(--muted)}
+
+@media (max-width:640px){
+  .runhead-title{display:none}
+  .runhead-actions{width:100%;justify-content:space-between}
+  .title{padding:22px 0 16px}
+  .choice-row{grid-template-columns:1fr}
+  .q-prompt{font-size:18.5px}
+  .res-body{padding-left:0}
+  .keys{display:none}
+  .fr-stem{text-align:left}
+  .bt th,.bt td{padding:4px 7px}
+  .sol{padding:10px 12px}
+  .katex-display>.katex{font-size:.94em}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+@media print{.runhead,.rule,.tabs,.nav,.step,.keys,.restart-line,.res-actions{display:none!important}}
+/* generic quiz additions */
+.q-prompt p{margin:0}
+.q-prompt p+p{margin-top:8px}
+.q-ask{margin:10px 0 0!important;font-size:16px;font-style:italic;color:var(--muted)}
+.blank{display:inline-block;width:3.4em;height:1em;margin:0 .12em;border-bottom:1.5px solid currentColor;vertical-align:-.12em}
+.stim{position:relative;margin:0 0 16px;padding:12px 16px;border:.5px solid var(--fg);background:var(--plate);font-size:16.5px;line-height:1.55;max-height:60vh;overflow:auto}
+.stim-h{margin:0 0 6px!important;font-size:14px;color:var(--muted)}
+.stim p{margin:0 0 8px}
+.stim p:last-child{margin-bottom:0}
+u.ul{text-decoration-thickness:1px;text-underline-offset:3px}
+.qn{display:inline-block;min-width:1.4em;padding:0 .2em;margin:0 .15em;border:.5px solid var(--fg);font:600 11.5px/1.4 system-ui,-apple-system,sans-serif;text-align:center;vertical-align:.12em;font-variant-numeric:tabular-nums}
+.stim .qn[data-cur]{background:var(--fg);color:var(--bg)}
+.stim u[data-cur]{background:var(--hl);box-shadow:0 0 0 2px var(--hl)}
+.stim .ln{display:inline-block;min-width:1.3em;padding:0 .25em;margin-right:.25em;border:.5px solid var(--line);color:var(--muted);font:500 11px/1.4 system-ui,-apple-system,sans-serif;text-align:center;vertical-align:.12em;font-variant-numeric:tabular-nums}
+.stim .ln[data-cur]{background:var(--hl);color:var(--fg);border-color:var(--fg)}
+.stim-intro{font-style:italic;color:var(--muted);font-size:15px}
+.stim-sub{margin-top:12px!important}
+.stim-note{font-size:15px;color:var(--muted)}
+.fig .figcap{margin:0 0 6px;font-size:15px}
+.stim.free{max-height:none;overflow:visible}
+.bt th[colspan]{text-align:center}
+.fig-after{margin:12px 0 4px}
+.fig-after img{max-width:min(100%,420px);max-height:340px;width:auto;object-fit:contain}
+.stim .figcap{text-align:center;font-size:15px;margin:10px 0 4px}
+.stim .fig{margin:6px 0 10px}
+.stim .bt-wrap{margin:0 0 10px}
+.fig-img,.opt-img{max-width:100%;height:auto;background:#fff}
+.opt-img{display:block;max-width:140px}
+:root[data-theme=dark] .fig-img,:root[data-theme=dark] .opt-img{filter:invert(.92) hue-rotate(180deg)}
+.fig{margin:0 0 14px;text-align:center}
+.fig img{max-width:100%;height:auto;background:#fff}
+:root[data-theme=dark] .fig img{filter:invert(.92) hue-rotate(180deg)}
+.fig figcaption{font-size:14px;color:var(--muted);font-style:italic}
+.target{margin:4px 0 0;font-style:italic}
+.res-sum{display:block}
+.opt>span:nth-child(2){flex:1 1 auto;min-width:0;overflow-wrap:anywhere;-webkit-hyphens:auto;hyphens:auto}
+@media (max-width:640px){.opt .mark{white-space:normal;text-align:right;max-width:6.2em;line-height:1.25}}
+.sol>div{margin:0 0 10px}
+.crit-pts{margin:0 0 10px;font-size:15.5px}
+.crit-pts p{margin:0 0 4px}
+.crit-pts ul{margin:0 0 4px;padding-left:20px}
+</style>
+</head>
+<body>
+<div class="runhead"><span class="runhead-title">AP Art History &middot; The 250 required works &middot; Practice</span><span class="runhead-actions"><a href="/study/#ap-art-history">&larr;&nbsp;Study Library</a><a href="/study/ap/ap-art-history/apah-250-every-work-explained.pdf">PDF version</a><button type="button" class="theme-btn" id="theme-btn">Dark mode</button></span></div>
+<div class="rule"><hr></div>
+
+<main class="wrap">
+  <header class="title">
+    <h1>Indigenous Americas</h1>
+    <p class="sub">APAH 250 &middot; Content area 5 of 10</p>
+    <p class="meta">28 questions (Nos. 305&ndash;332) &middot; two per work &middot; works 153&ndash;166</p>
+  </header>
+
+  <section id="mc"></section>
+  <section id="fr" role="tabpanel" aria-labelledby="tab-fr" hidden></section>
+
+  <p class="foot">From <a href="/study/ap/ap-art-history/apah-250-every-work-explained.pdf"><i>APAH 250: Every Required Work, Explained</i></a> (PDF), Section 12. Answers and reasons are the guide&rsquo;s own key; the explanations add the work&rsquo;s identification, the relevant facts from its entry, and why each wrong choice is wrong. Photographs as on this site&rsquo;s APAH page. Your answers are saved only in this browser.</p>
+</main>
+
+<script id="data" type="application/json">{"meta":{"key":"study.apah-works.5.v1","setupNote":"Content areas: <a href=\"/study/ap/ap-art-history/tests/works-1/\">1<\/a> &middot; <a href=\"/study/ap/ap-art-history/tests/works-2/\">2<\/a> &middot; <a href=\"/study/ap/ap-art-history/tests/works-3/\">3<\/a> &middot; <a href=\"/study/ap/ap-art-history/tests/works-4/\">4<\/a> &middot; <b>5<\/b> &middot; <a href=\"/study/ap/ap-art-history/tests/works-6/\">6<\/a> &middot; <a href=\"/study/ap/ap-art-history/tests/works-7/\">7<\/a> &middot; <a href=\"/study/ap/ap-art-history/tests/works-8/\">8<\/a> &middot; <a href=\"/study/ap/ap-art-history/tests/works-9/\">9<\/a> &middot; <a href=\"/study/ap/ap-art-history/tests/works-10/\">10<\/a>. Each answer shows the work&rsquo;s official photograph.","topicPrefix":"No. ","topicCol":"Work","guideCol":"Entry in the guide","byTopic":"By work","topicNote":"Two misses on one work: reread its entry in the guide.","guide":"/study/ap/ap-art-history/apah-250-every-work-explained.pdf","guideName":"the guide"},"topics":{"153":{"name":"Chavín de Huántar","page":353},"154":{"name":"Mesa Verde cliff dwellings","page":356},"155":{"name":"Yaxchilán","page":358},"156":{"name":"Great Serpent Mound","page":361},"157":{"name":"Templo Mayor (Main Temple)","page":363},"158":{"name":"Ruler’s feather headdress (probably of Motecuhzoma II)","page":365},"159":{"name":"City of Cusco","page":368},"160":{"name":"Maize cobs","page":370},"161":{"name":"City of Machu Picchu","page":372},"162":{"name":"All-T’oqapu tunic","page":374},"163":{"name":"Bandolier bag","page":377},"164":{"name":"Transformation mask","page":379},"165":{"name":"Painted elk hide","page":381},"166":{"name":"Black-on-black ceramic vessel","page":383}},"sections":{},"stims":{},"mc":[{"n":305,"prompt":"Where does the Lanzón stand at Chavín de Huántar?","options":["Beside the Black and White Portal of the New Temple","In the sunken circular plaza where pilgrims gathered","In a cramped cross-shaped chamber deep inside","On top of the U-shaped temple, facing the rising sun"],"answer":2,"topic":"153","tag":"No. 153, Chavín de Huántar","after":"<figure class=\"fig fig-after\"><img class=\"photo\" src=\"/study/ap/ap-art-history/cb/153-1.jpg\" alt=\"Chavín de Huántar, official photograph\" loading=\"lazy\"><figcaption>No. 153, Chavín de Huántar<\/figcaption><\/figure>","ex":{"idea":"Only priests reached it through dark passages.","steps":["No. 153, <i>Chavín de Huántar<\/i>: Chavín; northern highlands, Peru; 900–200 B.C.E.; Stone (architectural complex); granite (Lanzón and sculpture); hammered gold.","From the guide: If asked where the Lanzón is → still in place, in a cramped cruciform chamber deep in the Old Temple. Nobody could walk around it or see it whole.","From the guide: The Lanzón (Spanish for “lance”) is a granite shaft about 4.5 m (15 ft) tall set in a cruciform (cross-shaped) chamber where galleries meet. Its top passes through the ceiling, so it was built in place and never moved."],"others":{"0":"The Black and White Portal is on the outside of the New Temple; the Lanzón is hidden deep inside.","1":"The sunken circular plaza is open to the sky; the Lanzón stands in a dark interior gallery.","3":"It stands inside the Old Temple, not on top."}}},{"n":306,"prompt":"What do the tenon heads on Chavín’s walls show?","options":["Ancestors of the ruling line","Captured enemy warriors","Gods of the four directions","A shaman becoming a jaguar"],"answer":3,"topic":"153","tag":"No. 153, Chavín de Huántar","after":"<figure class=\"fig fig-after\"><img class=\"photo\" src=\"/study/ap/ap-art-history/cb/153-1.jpg\" alt=\"Chavín de Huántar, official photograph\" loading=\"lazy\"><figcaption>No. 153, Chavín de Huántar<\/figcaption><\/figure>","ex":{"idea":"Faces grow more feline, with mucus from hallucinogens.","steps":["No. 153, <i>Chavín de Huántar<\/i>: Chavín; northern highlands, Peru; 900–200 B.C.E.; Stone (architectural complex); granite (Lanzón and sculpture); hammered gold.","From the guide: The tenon heads show shamanic transformation: a priest becoming a jaguar through ritual and drugs.","From the guide: Tenon heads (stone heads with a long peg on the back, set into the outer walls) show a human face changing step by step into a snarling jaguar."],"others":{"0":"They show transformation, not a royal line.","1":"They are not enemy trophies.","2":"They are not direction gods."}}},{"n":307,"prompt":"What is the sipapu in a kiva?","options":["A roof opening used as the way in and out of the room","A bench where elders sat during councils","A fire pit used to cook ceremonial meals","A floor hole marking the place of emergence"],"answer":3,"topic":"154","tag":"No. 154, Mesa Verde cliff dwellings","after":"<figure class=\"fig fig-after\"><img class=\"photo\" src=\"/study/ap/ap-art-history/cb/154-1.jpg\" alt=\"Mesa Verde cliff dwellings, official photograph\" loading=\"lazy\"><figcaption>No. 154, Mesa Verde cliff dwellings<\/figcaption><\/figure>","ex":{"idea":"It symbolizes where ancestors emerged from the underworld.","steps":["No. 154, <i>Mesa Verde cliff dwellings<\/i>: Ancestral Puebloan (Anasazi); Montezuma County, Colorado; 450–1300 C.E.; Sandstone.","From the guide: The sipapu stands for the place of emergence, where Pueblo ancestors climbed up into this world from the one below.","From the guide: A kiva is a round, partly underground room entered by ladder through the roof, with a fire pit, an air shaft, a bench and a sipapu (a small hole in the floor)."],"others":{"0":"The roof opening is the entrance, not the sipapu.","1":"The bench is not the sipapu.","2":"The fire pit is separate from the sipapu."}}},{"n":308,"prompt":"Why did Ancestral Puebloans build in south-facing alcoves at Mesa Verde?","options":["Winter sun warmed them; overhangs shaded summer","The alcoves held springs that supplied fresh water","Spanish soldiers forced them to move off the mesa","The rock there was soft enough to carve out entire rooms"],"answer":0,"topic":"154","tag":"No. 154, Mesa Verde cliff dwellings","after":"<figure class=\"fig fig-after\"><img class=\"photo\" src=\"/study/ap/ap-art-history/cb/154-1.jpg\" alt=\"Mesa Verde cliff dwellings, official photograph\" loading=\"lazy\"><figcaption>No. 154, Mesa Verde cliff dwellings<\/figcaption><\/figure>","ex":{"idea":"The cliffs also gave defense and shelter from weather.","steps":["No. 154, <i>Mesa Verde cliff dwellings<\/i>: Ancestral Puebloan (Anasazi); Montezuma County, Colorado; 450–1300 C.E.; Sandstone.","From the guide: If asked how architecture responds to the environment → south-facing alcoves for winter sun and summer shade, the overhang for shelter, the cliff for defense.","From the guide: The south-facing alcoves caught the low winter sun but were shaded from the high summer sun, a form of passive solar design (climate control without machines)."],"others":{"1":"Water was not the main reason; the sun and shade were.","2":"The Spanish never reached Mesa Verde’s occupants; they left around 1300.","3":"Rooms were built of stone and mortar in the alcoves, not carved out of the rock."}}},{"n":309,"prompt":"What does Lintel 25 at Yaxchilán show?","options":["Bird Jaguar IV playing the ballgame with a bound captive","Shield Jaguar crowning his son as the next ruler","A procession of nobles bringing tribute to the king","Lady Xok conjuring a serpent after bloodletting"],"answer":3,"topic":"155","tag":"No. 155, Yaxchilán","after":"<figure class=\"fig fig-after\"><img class=\"photo\" src=\"/study/ap/ap-art-history/cb/155-1.jpg\" alt=\"Yaxchilán, official photograph\" loading=\"lazy\"><figcaption>No. 155, Yaxchilán<\/figcaption><\/figure>","ex":{"idea":"A warrior ancestor emerges from the serpent’s mouth.","steps":["No. 155, <i>Yaxchilán<\/i>: Maya; Chiapas, Mexico; 725 C.E.; Limestone (architectural complex).","From the guide: If asked what Lintel 25 shows → Lady Xook’s vision of a serpent from which an ancestorwarrior emerges, after bloodletting.","From the guide: Lintel 25 is limestone carved in low relief (a shallow raised design), about 1.2 m (4 ft) tall. Lady Xook kneels at lower right holding a bowl of bloodletting tools and gazes at a rearing vision serpent."],"others":{"0":"A ballgame with a captive appears on Structure 33’s steps, not Lintel 25.","1":"No crowning scene.","2":"No tribute procession."}}},{"n":310,"prompt":"Why did Bird Jaguar IV build Structure 33?","options":["To serve as an astronomical observatory","To strengthen a disputed claim to the throne","To mark the burial place of his mother","To celebrate a peace treaty with Tikal"],"answer":1,"topic":"155","tag":"No. 155, Yaxchilán","after":"<figure class=\"fig fig-after\"><img class=\"photo\" src=\"/study/ap/ap-art-history/cb/155-1.jpg\" alt=\"Yaxchilán, official photograph\" loading=\"lazy\"><figcaption>No. 155, Yaxchilán<\/figcaption><\/figure>","ex":{"idea":"Images and texts publicly recorded his lineage.","steps":["No. 155, <i>Yaxchilán<\/i>: Maya; Chiapas, Mexico; 725 C.E.; Limestone (architectural complex).","From the guide: Bird Jaguar IV built Structures 33 and 40 to legitimize his reign, since his claim to the throne was disputed after a ten-year gap following his father’s death.","From the guide: His successor, Bird Jaguar IV, was the son of a different wife, Lady Ik’ Skull. He took power in 752 and filled Structures 33 and 40 with images of his parents to stress his lineage."],"others":{"0":"Not an observatory.","2":"Not his mother’s tomb.","3":"Not a treaty with Tikal."}}},{"n":311,"prompt":"What is notable about Great Serpent Mound?","options":["Its head aligns with the summer solstice sunset","It is best seen from inside an earthen hall","It covers the burials of a Mississippian chief","It was built of stone blocks laid without mortar"],"answer":0,"topic":"156","tag":"No. 156, Great Serpent Mound","after":"<figure class=\"fig fig-after\"><img class=\"photo\" src=\"/study/ap/ap-art-history/cb/156-1.jpg\" alt=\"Great Serpent Mound, official photograph\" loading=\"lazy\"><figcaption>No. 156, Great Serpent Mound<\/figcaption><\/figure>","ex":{"idea":"It is an eﬀigy mound with no burials inside it.","steps":["No. 156, <i>Great Serpent Mound<\/i>: Mississippian (Eastern Woodlands); Adams County, southern Ohio; c. 1070 C.E.; Earthwork/eﬀigy mound.","From the guide: Great Serpent Mound is a giant earthen sculpture of a snake, about a quarter mile long, on a ridge in southern Ohio. It holds no burials, so it was a ceremonial monument rather than a tomb. Its head lines up with the sunset on the summer solstice, and scholars still argue about who built it and when.","From the guide: If asked about astronomy → the head is aligned with the summer solstice sunset."],"others":{"1":"It is an open-air earthwork, not seen from inside a building.","2":"It covers no burials.","3":"It is built of earth, not stone blocks."}}},{"n":312,"prompt":"What is uncertain about Great Serpent Mound?","options":["Its date","Its material","Its location","Its shape"],"answer":0,"topic":"156","tag":"No. 156, Great Serpent Mound","after":"<figure class=\"fig fig-after\"><img class=\"photo\" src=\"/study/ap/ap-art-history/cb/156-1.jpg\" alt=\"Great Serpent Mound, official photograph\" loading=\"lazy\"><figcaption>No. 156, Great Serpent Mound<\/figcaption><\/figure>","ex":{"idea":"Evidence points to both the Adena period and about 1070 CE.","steps":["No. 156, <i>Great Serpent Mound<\/i>: Mississippian (Eastern Woodlands); Adams County, southern Ohio; c. 1070 C.E.; Earthwork/eﬀigy mound.","From the guide: Great Serpent Mound is a giant earthen sculpture of a snake, about a quarter mile long, on a ridge in southern Ohio. It holds no burials, so it was a ceremonial monument rather than a tomb. Its head lines up with the sunset on the summer solstice, and scholars still argue about who built it and when.","From the guide: If asked what an eﬀigy mound is → an earthwork in the shape of an animal; this is the largest known serpent eﬀigy in the world."],"others":{"1":"Its material, earth, is known.","2":"Its location, Ohio, is known.","3":"Its serpent shape is known."}}},{"n":313,"prompt":"Which gods had shrines on top of the Templo Mayor?","options":["Tonatiuh and Coyolxauhqui","Inti and the moon goddess","Quetzalcoatl and Coatlicue","Huitzilopochtli and Tlaloc"],"answer":3,"topic":"157","tag":"No. 157, Templo Mayor (Main Temple)","after":"<figure class=\"fig fig-after\"><img class=\"photo\" src=\"/study/ap/ap-art-history/cb/157-1.jpg\" alt=\"Templo Mayor (Main Temple), official photograph\" loading=\"lazy\"><figcaption>No. 157, Templo Mayor (Main Temple)<\/figcaption><\/figure>","ex":{"idea":"War and tribute on one side, rain and agriculture on the other.","steps":["No. 157, <i>Templo Mayor (Main Temple)<\/i>: Mexica (Aztec); Tenochtitlan (modern Mexico City); 1375–1520 C.E.; Stone (temple); volcanic stone (Coyolxauhqui Stone); jadeite (Olmec-style mask);.","From the guide: The Templo Mayor was the main temple-pyramid at the center of Tenochtitlan, the Aztec (Mexica) capital that is now Mexico City. Two shrines sat on top, one for the war and sun god Huitzilopochtli and one for the rain god Tlaloc. The Spanish destroyed it after 1521, and it was rediscovered in 1978 when electrical workers hit a huge carved stone of the goddess Coyolxauhqui.","From the guide: If asked whom the two shrines honored → Huitzilopochtli (sun and war) and Tlaloc (rain and agriculture)."],"others":{"0":"Coyolxauhqui’s stone lay at the base, not in a shrine on top; Tonatiuh is the sun god.","1":"Inti is the Inka sun god.","2":"Coatlicue was Huitzilopochtli’s mother, not one of the two shrine gods."}}},{"n":314,"prompt":"Why was the Coyolxauhqui Stone placed at the base of Huitzilopochtli’s stairs?","options":["It marked the center of the Aztec calendar","Victims thrown down the stairs re-enacted her death","Pilgrims touched it before climbing up to pray at the shrines","It was an Olmec heirloom buried as an offering"],"answer":1,"topic":"157","tag":"No. 157, Templo Mayor (Main Temple)","after":"<figure class=\"fig fig-after\"><img class=\"photo\" src=\"/study/ap/ap-art-history/cb/157-1.jpg\" alt=\"Templo Mayor (Main Temple), official photograph\" loading=\"lazy\"><figcaption>No. 157, Templo Mayor (Main Temple)<\/figcaption><\/figure>","ex":{"idea":"Its 1978 discovery launched the excavation of the temple.","steps":["No. 157, <i>Templo Mayor (Main Temple)<\/i>: Mexica (Aztec); Tenochtitlan (modern Mexico City); 1375–1520 C.E.; Stone (temple); volcanic stone (Coyolxauhqui Stone); jadeite (Olmec-style mask);.","From the guide: The Coyolxauhqui Stone lay at the foot of Huitzilopochtli’s stairs, so sacrificed captives thrown down the steps reenacted the myth.","From the guide: If asked how architecture reenacts myth → the pyramid as Coatepec, with the Coyolxauhqui Stone at the foot of the stairs."],"others":{"0":"That is the Sun Stone, a different monument.","2":"Pilgrims did not touch it; it lay at the foot of the stairs.","3":"Olmec heirlooms were found among the offerings, but this stone is Mexica."}}},{"n":315,"prompt":"How did the Mexica value quetzal feathers?","options":["As common trade goods","Less than cacao beans","More highly than gold","As food for nobles"],"answer":2,"topic":"158","tag":"No. 158, Ruler’s feather headdress (probably of Motecuhzoma II)","after":"<figure class=\"fig fig-after\"><img class=\"photo\" src=\"/study/ap/ap-art-history/cb/158-1.jpg\" alt=\"Ruler’s feather headdress (probably of Motecuhzoma II), official photograph\" loading=\"lazy\"><figcaption>No. 158, Ruler’s feather headdress (probably of Motecuhzoma II)<\/figcaption><\/figure>","ex":{"idea":"Specialist amanteca made regalia from tribute feathers.","steps":["No. 158, <i>Ruler’s feather headdress (probably of Motecuhzoma II)<\/i>: Mexica (Aztec); 1428–1520 C.E.; Feathers (quetzal and cotinga) and gold.","From the guide: If asked about value systems → the Mexica valued quetzal feathers above gold; the Spanish melted down gold but kept this as a curiosity.","From the guide: Quetzal feathers were worth more than gold to the Mexica; their green suggested water, young maize, fertility and preciousness."],"others":{"0":"Quetzal feathers were luxury goods, not common trade items.","1":"They were valued above cacao and even gold.","3":"They were worn, not eaten."}}},{"n":316,"prompt":"What is the controversy over the feather headdress today?","options":["Scholars recently proved that it is a modern fake","Spain claims it as war booty","It was stolen from a museum in 1990","Mexico has asked Austria to return it"],"answer":3,"topic":"158","tag":"No. 158, Ruler’s feather headdress (probably of Motecuhzoma II)","after":"<figure class=\"fig fig-after\"><img class=\"photo\" src=\"/study/ap/ap-art-history/cb/158-1.jpg\" alt=\"Ruler’s feather headdress (probably of Motecuhzoma II), official photograph\" loading=\"lazy\"><figcaption>No. 158, Ruler’s feather headdress (probably of Motecuhzoma II)<\/figcaption><\/figure>","ex":{"idea":"Austria says it is too fragile to travel from Vienna.","steps":["No. 158, <i>Ruler’s feather headdress (probably of Motecuhzoma II)<\/i>: Mexica (Aztec); 1428–1520 C.E.; Feathers (quetzal and cotinga) and gold.","From the guide: Mexico has asked for its return for decades. Austria, citing the joint study, says vibration during transport would damage it. A replica is shown in Mexico City’s National Museum of Anthropology. On the exam.","From the guide: This is a huge fan-shaped headdress of green quetzal feathers, smaller blue, pink and brown feathers, and gold plaques, made by Aztec (Mexica) feather-workers before the Spanish conquest. It is one of very few Aztec featherworks to survive. Tradition links it to the emperor Motecuhzoma II, but that is not proven, and it is now in Vienna, where Mexico has asked for its return."],"others":{"0":"It is authentic.","1":"It is in Vienna, not Spain.","2":"It was not stolen."}}},{"n":317,"prompt":"What makes Inka masonry in Cusco earthquake-resistant?","options":["Iron clamps hidden inside each of the blocks","Mortarless fitted stones and sloping walls","Timber frames buried inside the stone walls","Thick layers of lime mortar between each course of stone"],"answer":1,"topic":"159","tag":"No. 159, City of Cusco","after":"<figure class=\"fig fig-after\"><img class=\"photo\" src=\"/study/ap/ap-art-history/cb/159-1.jpg\" alt=\"City of Cusco, official photograph\" loading=\"lazy\"><figcaption>No. 159, City of Cusco<\/figcaption><\/figure>","ex":{"idea":"Battered walls and trapezoidal openings add stability.","steps":["No. 159, <i>City of Cusco<\/i>: Inka; central highlands, Peru; c. 1440 C.E.; convent added 1550–1650 C.E.; Andesite.","From the guide: If asked about Inka masonry → mortarless ashlar, battered walls, trapezoidal openings, earthquake resistance.","From the guide: Gray walls of smooth, tightly fitted stones with no mortar, leaning slightly inward, with trapezoid-shaped doors and niches. Or a curved Inka wall beneath a colonial church, or terraces of enormous many-sided boulders in zigzag lines."],"others":{"0":"No iron clamps.","2":"No timber frames.","3":"No mortar; the stones fit tightly on their own."}}},{"n":318,"prompt":"What was built on top of the Qorikancha after the conquest?","options":["A market hall for the city","A Spanish governor’s palace","A Dominican church and convent","A fortress for royal troops"],"answer":2,"topic":"159","tag":"No. 159, City of Cusco","after":"<figure class=\"fig fig-after\"><img class=\"photo\" src=\"/study/ap/ap-art-history/cb/159-1.jpg\" alt=\"City of Cusco, official photograph\" loading=\"lazy\"><figcaption>No. 159, City of Cusco<\/figcaption><\/figure>","ex":{"idea":"In later earthquakes the colonial parts fell while Inka walls stood.","steps":["No. 159, <i>City of Cusco<\/i>: Inka; central highlands, Peru; c. 1440 C.E.; convent added 1550–1650 C.E.; Andesite.","From the guide: Cusco was the capital of the Inka Empire, rebuilt around 1440 by the ruler Pachacuti as the “navel of the world.” The College Board grouping includes the Qorikancha (the main sun temple), the Spanish church and convent of Santo Domingo built right on top of it, and the giant zigzag walls of Saqsa Waman above the city. Inka stonework here is so precise that blocks fit together without mortar and have outlasted major earthquakes.","From the guide: Cusco = the Inka “navel.” Spanish church on top, Inka walls underneath, and when earthquakes hit, the top fell while the bottom held."],"others":{"0":"Not a market.","1":"Not the governor’s palace.","3":"Not a fortress."}}},{"n":319,"prompt":"How were the Inka maize cobs made?","options":["Woven gold thread on cloth","Hammered sheets of gold and silver","Carved jadeite with turquoise inlay","Cast bronze with painted husks"],"answer":1,"topic":"160","tag":"No. 160, Maize cobs","after":"<figure class=\"fig fig-after\"><img class=\"photo\" src=\"/study/ap/ap-art-history/cb/160-1.jpg\" alt=\"Maize cobs, official photograph\" loading=\"lazy\"><figcaption>No. 160, Maize cobs<\/figcaption><\/figure>","ex":{"idea":"Repoussé shapes metal from behind.","steps":["No. 160, <i>Maize cobs<\/i>: Inka; c. 1440–1533 C.E.; Sheet metal/repoussé, metal alloys.","From the guide: These are life-size ears of corn made from thin hammered sheets of silver and gold alloys by Inka metalworkers. Maize was the Inka staple and was sacred, and objects like this probably stood in the golden garden of the Qorikancha, the sun temple in Cusco. The Spanish melted down almost all Inka gold and silver, so the few survivors are rare.","From the guide: If asked about technique → repoussé on sheet metal (hammered from the back)."],"others":{"0":"Not woven thread.","2":"Not jadeite.","3":"Not cast bronze."}}},{"n":320,"prompt":"Why do so few Inka gold objects survive?","options":["They were buried with Inka rulers","Earthquakes destroyed the royal treasury","They were traded away to Mexico","The Spanish melted most of them down"],"answer":3,"topic":"160","tag":"No. 160, Maize cobs","after":"<figure class=\"fig fig-after\"><img class=\"photo\" src=\"/study/ap/ap-art-history/cb/160-1.jpg\" alt=\"Maize cobs, official photograph\" loading=\"lazy\"><figcaption>No. 160, Maize cobs<\/figcaption><\/figure>","ex":{"idea":"Gold was the ‘sweat of the sun’ to the Inka.","steps":["No. 160, <i>Maize cobs<\/i>: Inka; c. 1440–1533 C.E.; Sheet metal/repoussé, metal alloys.","From the guide: These are life-size ears of corn made from thin hammered sheets of silver and gold alloys by Inka metalworkers. Maize was the Inka staple and was sacred, and objects like this probably stood in the golden garden of the Qorikancha, the sun temple in Cusco. The Spanish melted down almost all Inka gold and silver, so the few survivors are rare.","From the guide: If asked why so few survive → the Spanish melted Inka gold and silver, including Atahualpa’s ransom."],"others":{"0":"Burial did not destroy them.","1":"Earthquakes are not the reason.","2":"They were not traded to Mexico."}}},{"n":321,"prompt":"What is notable about the Sacred Rock at Machu Picchu?","options":["It holds a window aligned to the June solstice sunrise","Its outline mirrors the mountain behind it","It is carved with Pachacuti’s portrait","It was moved from Cusco on log rollers"],"answer":1,"topic":"161","tag":"No. 161, City of Machu Picchu","after":"<figure class=\"fig fig-after\"><img class=\"photo\" src=\"/study/ap/ap-art-history/cb/161-1.jpg\" alt=\"City of Machu Picchu, official photograph\" loading=\"lazy\"><figcaption>No. 161, City of Machu Picchu<\/figcaption><\/figure>","ex":{"idea":"The architecture honors the sacred peaks.","steps":["No. 161, <i>City of Machu Picchu<\/i>: Inka; central highlands, Peru; c. 1450–1540 C.E.; Granite (architectural complex).","From the guide: The Sacred Rock is a large flat stone whose outline echoes the mountain behind it.","From the guide: Machu Picchu is a royal estate built by the Inka around 1450 on a mountain ridge high above the Urubamba River in Peru, probably for the emperor Pachacuti. It mixes temples, houses, plazas and farming terraces, all shaped to fit and echo the surrounding peaks. The Spanish never found it, so it survived largely intact."],"others":{"0":"A solstice window belongs to the Torreón (Temple of the Sun), not the Sacred Rock.","2":"No portrait.","3":"It was not moved."}}},{"n":322,"prompt":"Why did Machu Picchu escape Spanish destruction?","options":["It was hidden under jungle ash","It was defended by an Inka army","The Inka disguised it as a farm","The Spanish never found it"],"answer":3,"topic":"161","tag":"No. 161, City of Machu Picchu","after":"<figure class=\"fig fig-after\"><img class=\"photo\" src=\"/study/ap/ap-art-history/cb/161-1.jpg\" alt=\"City of Machu Picchu, official photograph\" loading=\"lazy\"><figcaption>No. 161, City of Machu Picchu<\/figcaption><\/figure>","ex":{"idea":"Hiram Bingham publicized it in 1911.","steps":["No. 161, <i>City of Machu Picchu<\/i>: Inka; central highlands, Peru; c. 1450–1540 C.E.; Granite (architectural complex).","From the guide: Machu Picchu means “old peak.” Pachacuti’s mountain getaway in the clouds, c. 1450, which the Spanish never found.","From the guide: Machu Picchu is a royal estate built by the Inka around 1450 on a mountain ridge high above the Urubamba River in Peru, probably for the emperor Pachacuti. It mixes temples, houses, plazas and farming terraces, all shaped to fit and echo the surrounding peaks. The Spanish never found it, so it survived largely intact."],"others":{"0":"No ash covered it.","1":"No army defended it.","2":"It was not disguised."}}},{"n":323,"prompt":"What are t’oqapu?","options":["Small squares with geometric designs","Feather bundles attached to the hem","Knotted cords used to record numbers","Gold plaques sewn on royal clothing"],"answer":0,"topic":"162","tag":"No. 162, All-T’oqapu tunic","after":"<figure class=\"fig fig-after\"><img class=\"photo\" src=\"/study/ap/ap-art-history/cb/162-1.jpg\" alt=\"All-T’oqapu tunic, official photograph\" loading=\"lazy\"><figcaption>No. 162, All-T’oqapu tunic<\/figcaption><\/figure>","ex":{"idea":"They may stand for peoples, places or institutions.","steps":["No. 162, <i>All-T’oqapu tunic<\/i>: Inka; 1450–1540 C.E.; Camelid fiber and cotton.","From the guide: If asked what t’oqapu are → small squares of geometric design that probably signified identities, places or oﬀices.","From the guide: The whole surface is a grid of t’oqapu: small squares, each holding a geometric motif such as steps, checkerboards, diagonals or interlocking keys."],"others":{"1":"Not feathers.","2":"Knotted cords are quipu.","3":"Not gold plaques."}}},{"n":324,"prompt":"What did the Inka value above gold?","options":["Feathers","Fine cloth","Silver","Jade"],"answer":1,"topic":"162","tag":"No. 162, All-T’oqapu tunic","after":"<figure class=\"fig fig-after\"><img class=\"photo\" src=\"/study/ap/ap-art-history/cb/162-1.jpg\" alt=\"All-T’oqapu tunic, official photograph\" loading=\"lazy\"><figcaption>No. 162, All-T’oqapu tunic<\/figcaption><\/figure>","ex":{"idea":"Textiles were gifts, offerings and state wealth.","steps":["No. 162, <i>All-T’oqapu tunic<\/i>: Inka; 1450–1540 C.E.; Camelid fiber and cotton.","From the guide: This is a sleeveless Inka tunic covered completely in small squares of geometric pattern called t’oqapu. Most Inka tunics repeat one standard design, but this one packs in many different ones, which is why scholars think it was made for the emperor himself. To the Inka, fine cloth was more precious than gold.","From the guide: If asked about Inka values → cloth outranked gold."],"others":{"0":"Feathers were prized, but cloth was valued more.","2":"Silver was valued less than fine cloth.","3":"Jade was not Inka wealth; it was prized in Mesoamerica."}}},{"n":325,"prompt":"Which materials in the Lenape bandolier bag came from European trade?","options":["Shell beads and bone","Glass beads and wool cloth","Porcupine quills and dyes","Deer hide and sinew thread"],"answer":1,"topic":"163","tag":"No. 163, Bandolier bag","after":"<figure class=\"fig fig-after\"><img class=\"photo\" src=\"/study/ap/ap-art-history/cb/163-1.jpg\" alt=\"Bandolier bag, official photograph\" loading=\"lazy\"><figcaption>No. 163, Bandolier bag<\/figcaption><\/figure>","ex":{"idea":"Beadwork replaced earlier quillwork.","steps":["No. 163, <i>Bandolier bag<\/i>: Lenape (Delaware tribe, Eastern Woodlands); c. 1850 C.E.; Beadwork on leather.","From the guide: A bandolier bag is a large beaded pouch with a wide strap worn diagonally across the chest. This one was made by a Lenape (Delaware) woman around 1850, using glass beads that came through trade with Europeans. Men wore such bags as formal dress and status symbols, often more for show than for carrying things.","From the guide: Made by women, who controlled beadwork; beading largely replaced earlier porcupinequillwork (embroidery with flattened, dyed quills) once glass beads were plentiful."],"others":{"0":"Shell beads and bone are local materials.","2":"Porcupine quills are local.","3":"Hide and sinew are local."}}},{"n":326,"prompt":"What was the main purpose of a bandolier bag?","options":["Displaying the wearer’s status","Recording family history","Storing medicine for healers","Carrying gunpowder and ammunition in battle"],"answer":0,"topic":"163","tag":"No. 163, Bandolier bag","after":"<figure class=\"fig fig-after\"><img class=\"photo\" src=\"/study/ap/ap-art-history/cb/163-1.jpg\" alt=\"Bandolier bag, official photograph\" loading=\"lazy\"><figcaption>No. 163, Bandolier bag<\/figcaption><\/figure>","ex":{"idea":"Pouches were often too small to be useful.","steps":["No. 163, <i>Bandolier bag<\/i>: Lenape (Delaware tribe, Eastern Woodlands); c. 1850 C.E.; Beadwork on leather.","From the guide: A bandolier bag is a large beaded pouch with a wide strap worn diagonally across the chest. This one was made by a Lenape (Delaware) woman around 1850, using glass beads that came through trade with Europeans. Men wore such bags as formal dress and status symbols, often more for show than for carrying things.","From the guide: The pouch is often small or even sealed, so display mattered more than storage."],"others":{"1":"It records no history.","2":"Not a medicine bag.","3":"The pouches were often too small for ammunition."}}},{"n":327,"prompt":"How does the Kwakwaka’wakw mask transform?","options":["Strings open an animal face to show a human one","Feathers fall away as the dancer spins in place","The dancer swaps masks behind a cedar screen","Paint washes off in the rain to reveal a new face"],"answer":0,"topic":"164","tag":"No. 164, Transformation mask","after":"<figure class=\"fig fig-after\"><img class=\"photo\" src=\"/study/ap/ap-art-history/cb/164-1.jpg\" alt=\"Transformation mask, official photograph\" loading=\"lazy\"><figcaption>No. 164, Transformation mask<\/figcaption><\/figure>","ex":{"idea":"It happens in firelight during potlatch ceremonies.","steps":["No. 164, <i>Transformation mask<\/i>: Kwakwaka’wakw; Northwest coast of Canada; Late 19th century C.E.; Wood, paint, and string.","From the guide: This carved and painted wooden mask opens up during a dance: the dancer pulls strings, and an animal or bird face splits apart to reveal a human face inside. Made by the Kwakwaka’wakw of British Columbia, Canada, in the late 1800s, it dramatized a family’s story of an ancestor who changed between animal and human. Its history is tied to Canada’s 1884–1951 ban on the potlatch.","From the guide: Two views of one wooden mask: closed, a bird or animal head with a long beak or snout; open, the outer panels swung out like doors to show a human face, all painted with black, red, white and blue-green ovals and U-shapes."],"others":{"1":"No falling feathers.","2":"One mask opens; masks are not swapped.","3":"No washing paint."}}},{"n":328,"prompt":"What did the Canadian government ban from 1884 to 1951?","options":["Fishing rights","The potlatch","Totem carving","Native schools"],"answer":1,"topic":"164","tag":"No. 164, Transformation mask","after":"<figure class=\"fig fig-after\"><img class=\"photo\" src=\"/study/ap/ap-art-history/cb/164-1.jpg\" alt=\"Transformation mask, official photograph\" loading=\"lazy\"><figcaption>No. 164, Transformation mask<\/figcaption><\/figure>","ex":{"idea":"Masks were confiscated; many have since been repatriated.","steps":["No. 164, <i>Transformation mask<\/i>: Kwakwaka’wakw; Northwest coast of Canada; Late 19th century C.E.; Wood, paint, and string.","From the guide: If asked about colonial suppression → potlatch ban 1884–1951, seizures in 1921, later repatriation.","From the guide: Canada banned the potlatch from 1884 to 1951 to force assimilation. After Chief Dan Cranmer’s large potlatch in 1921, oﬀicials arrested participants and seized hundreds of masks and regalia."],"others":{"0":"Fishing rights were not the ban.","2":"Carving was not banned.","3":"Schools were not banned (residential schools were imposed)."}}},{"n":329,"prompt":"What ceremony is at the center of the painted elk hide?","options":["The Sun Dance","The Ghost Dance","A powwow","A potlatch"],"answer":0,"topic":"165","tag":"No. 165, Painted elk hide","after":"<figure class=\"fig fig-after\"><img class=\"photo\" src=\"/study/ap/ap-art-history/cb/165-1.jpg\" alt=\"Painted elk hide, official photograph\" loading=\"lazy\"><figcaption>No. 165, Painted elk hide<\/figcaption><\/figure>","ex":{"idea":"The U.S. government was suppressing it at the time.","steps":["No. 165, <i>Painted elk hide<\/i>: Attributed to Cotsiogo (Cadzi Cody), Eastern Shoshone; Wind River Reserva-; c. 1890–1900 C.E.; Painted elk hide.","From the guide: This is an elk hide painted around 1890–1900 by Cotsiogo (Cadzi Cody), an Eastern Shoshone artist on the Wind River Reservation in Wyoming. The center shows a ceremonial dance around a buffalo head between two poles, and the edges show a buffalo hunt. By then the buffalo were nearly gone and the Sun Dance was outlawed, and Cotsiogo sold hides like this to tourists.","From the guide: The Sun Dance was the most important Plains religious ceremony, a time of prayer, sacrifice and renewal; the buffalo head on the pole honored the buffalo."],"others":{"1":"The Ghost Dance is a different 1890s movement.","2":"A powwow is not the scene.","3":"The potlatch is Northwest Coast, not Plains."}}},{"n":330,"prompt":"Who was the painted elk hide made for?","options":["A Sun Dance altar","Tourists and collectors","A mission church","A chief’s burial"],"answer":1,"topic":"165","tag":"No. 165, Painted elk hide","after":"<figure class=\"fig fig-after\"><img class=\"photo\" src=\"/study/ap/ap-art-history/cb/165-1.jpg\" alt=\"Painted elk hide, official photograph\" loading=\"lazy\"><figcaption>No. 165, Painted elk hide<\/figcaption><\/figure>","ex":{"idea":"It preserved memory while earning income on the reservation.","steps":["No. 165, <i>Painted elk hide<\/i>: Attributed to Cotsiogo (Cadzi Cody), Eastern Shoshone; Wind River Reserva-; c. 1890–1900 C.E.; Painted elk hide.","From the guide: This is an elk hide painted around 1890–1900 by Cotsiogo (Cadzi Cody), an Eastern Shoshone artist on the Wind River Reservation in Wyoming. The center shows a ceremonial dance around a buffalo head between two poles, and the edges show a buffalo hunt. By then the buffalo were nearly gone and the Sun Dance was outlawed, and Cotsiogo sold hides like this to tourists.","From the guide: Made for sale to tourists and collectors visiting the reservation, providing income in the hard reservation economy."],"others":{"0":"Not an altar.","2":"Not a church.","3":"Not a burial."}}},{"n":331,"prompt":"How did the Martínezes create two blacks on one pot?","options":["Black glaze fired twice in an electric kiln","Two different clays layered on a wheel","Matte painted designs on a polished surface","Charcoal rubbed into lines cut in the clay"],"answer":2,"topic":"166","tag":"No. 166, Black-on-black ceramic vessel","after":"<figure class=\"fig fig-after\"><img class=\"photo\" src=\"/study/ap/ap-art-history/cb/166-1.jpg\" alt=\"Black-on-black ceramic vessel, official photograph\" loading=\"lazy\"><figcaption>No. 166, Black-on-black ceramic vessel<\/figcaption><\/figure>","ex":{"idea":"A smothered (reduction) firing turned the clay black.","steps":["No. 166, <i>Black-on-black ceramic vessel<\/i>: Maria Martínez and Julian Martínez, Tewa, Puebloan; San Ildefonso Pueblo,; c. mid-20th century C.E.; Blackware ceramic.","From the guide: This is a hand-built clay pot from San Ildefonso Pueblo in New Mexico, shaped and polished by Maria Martínez and painted by her husband Julian. Its design shows only as dull black on shiny black, the result of polishing and a smoky firing that turns the clay black. The Martínezes revived ancient Pueblo pottery methods and turned them into signed, collectible art that supported their community.","From the guide: Reduction firing: after an outdoor firing, the pots were smothered with powdered manure, cutting off oxygen so that carbon turned the whole pot black."],"others":{"0":"They used no glaze or electric kiln.","1":"One clay was used.","3":"Lines were not cut and rubbed."}}},{"n":332,"prompt":"Who formed and polished the black-on-black pots?","options":["Edgar Lee Hewett","Julian Martínez","Maria Martínez","Their eldest son"],"answer":2,"topic":"166","tag":"No. 166, Black-on-black ceramic vessel","after":"<figure class=\"fig fig-after\"><img class=\"photo\" src=\"/study/ap/ap-art-history/cb/166-1.jpg\" alt=\"Black-on-black ceramic vessel, official photograph\" loading=\"lazy\"><figcaption>No. 166, Black-on-black ceramic vessel<\/figcaption><\/figure>","ex":{"idea":"Julian painted the designs.","steps":["No. 166, <i>Black-on-black ceramic vessel<\/i>: Maria Martínez and Julian Martínez, Tewa, Puebloan; San Ildefonso Pueblo,; c. mid-20th century C.E.; Blackware ceramic.","From the guide: Maria Martínez (about 1887–1980) was Tewa, from San Ildefonso Pueblo; Julian Martínez painted her pots until his death in 1943.","From the guide: This is a hand-built clay pot from San Ildefonso Pueblo in New Mexico, shaped and polished by Maria Martínez and painted by her husband Julian. Its design shows only as dull black on shiny black, the result of polishing and a smoky firing that turns the clay black. The Martínezes revived ancient Pueblo pottery methods and turned them into signed, collectible art that supported their community."],"others":{"0":"Hewett was an archaeologist who encouraged them.","1":"Julian painted the designs.","3":"Their son continued later; Maria formed the pots."}}}],"fr":[]}</script>
+<script>
+(function(){
+"use strict";
+var DATA = JSON.parse(document.getElementById("data").textContent);
+var META = DATA.meta, MC = DATA.mc, FR = DATA.fr || [], TOP = DATA.topics || {}, SEC = DATA.sections || {}, STIM = DATA.stims || {}, BY = {};
+MC.forEach(function(q){ BY[q.n] = q; });
+var KEY = META.key, FKEY = META.fkey || META.key + ".fr", HAS_FR = FR.length > 0;
+
+function load(k, d){ try{ var v = localStorage.getItem(k); return v ? JSON.parse(v) : d; }catch(e){ return d; } }
+function save(k, v){ try{ localStorage.setItem(k, JSON.stringify(v)); }catch(e){} }
+function esc(s){ return String(s).replace(/[&<>"]/g, function(c){ return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]; }); }
+function shuffle(a){ a = a.slice(); for (var i = a.length - 1; i > 0; i--){ var j = Math.floor(Math.random() * (i + 1)); var t = a[i]; a[i] = a[j]; a[j] = t; } return a; }
+function range(n){ var a = []; for (var i = 0; i < n; i++) a.push(i); return a; }
+
+var S = load(KEY, null);
+if (!S || !S.phase || !S.order || S.order.some(function(n){ return !BY[n]; })) S = { phase: "setup", mode: "practice", shuffleQ: false, shuffleC: false, order: [], copt: {}, ans: {}, pos: 0, full: null };
+var confirmFinish = false;
+var mcEl = document.getElementById("mc");
+
+function start(nums){
+  var list = nums || MC.map(function(q){ return q.n; });
+  S.order = S.shuffleQ ? shuffle(list) : list.slice();
+  S.copt = {};
+  S.order.forEach(function(n){
+    var q = BY[n], idx = range(q.options.length);
+    S.copt[n] = (S.shuffleC && !q.fixed) ? shuffle(idx) : idx;
+  });
+  S.ans = {}; S.pos = 0; S.phase = "run"; confirmFinish = false;
+  save(KEY, S); render(); focusTop();
+}
+function focusTop(){ var t = document.querySelector(".tabs") || document.querySelector(".title"); if (t && t.getBoundingClientRect().top < 0) t.scrollIntoView(); }
+
+function stats(){
+  var right = 0, done = 0;
+  S.order.forEach(function(n){ if (n in S.ans){ done++; if (S.ans[n] === BY[n].answer) right++; } });
+  return { right: right, done: done, total: S.order.length };
+}
+function topicShort(t){ return (META.topicPrefix || "") + t; }
+function topicLabel(t){ return topicShort(t) + ", " + TOP[t].name; }
+function guideLink(t, short){
+  var g = TOP[t], txt = short ? g.name : topicLabel(t);
+  var href = g.url ? g.url : (META.guide && g.page ? META.guide + "#page=" + g.page : "");
+  return href ? '<a href="' + href + '">' + txt + "</a>" : txt;
+}
+function topicLinks(ts){
+  ts = ts.filter(function(t){ return TOP[t]; });
+  if (!ts.length || !(META.guide || TOP[ts[0]].url)) return "";
+  return '<p class="links">Review ' + ts.map(function(t){ return guideLink(t); }).join(" &middot; ") + " in " + META.guideName + "</p>";
+}
+function explain(q, picked){
+  var e = q.ex, h = '<div class="why"><p>' + e.idea + "</p>";
+  if (e.steps.length) h += '<ol class="steps">' + e.steps.map(function(s){ return "<li>" + s + "</li>"; }).join("") + "</ol>";
+  var rest = range(q.options.length).filter(function(i){ return i !== q.answer; });
+  if (typeof picked === "number" && picked !== q.answer) rest = [picked].concat(rest.filter(function(i){ return i !== picked; }));
+  h += '<p class="why-h sc">Why not the others</p><ul class="others">' + rest.map(function(i){
+    return "<li>" + quoted(q, i) + (i === picked ? '<span class="tag">your answer</span>' : "") + " &mdash; " + e.others[i] + "</li>";
+  }).join("") + "</ul></div>";
+  return h;
+}
+function quoted(q, i){ return q.labels ? q.labels[i] : "&ldquo;" + q.options[i] + "&rdquo;"; }
+function table(q){ return q.table ? '<div class="bt-wrap">' + q.table + "</div>" : ""; }
+function stim(q){
+  var s = q.stim && STIM[q.stim]; if (!s) return "";
+  var html = s.html.split(' data-q="' + q.n + '"').join(' data-q="' + q.n + '" data-cur')
+    .replace(/data-qs="([^"]*)"/g, function(m, l){ return (" " + l + " ").indexOf(" " + q.n + " ") >= 0 ? m + " data-cur" : m; });
+  return '<div class="stim' + (s.cls ? " " + s.cls : "") + '">' + (s.title ? '<p class="stim-h sc">' + s.title + "</p>" : "") + html + "</div>";
+}
+function scrollStim(root){
+  root.querySelectorAll(".stim").forEach(function(box){ var c = box.querySelector("[data-cur]"); if (c && box.scrollHeight > box.clientHeight) box.scrollTop = Math.max(0, c.offsetTop - box.clientHeight / 3); });
+}
+function promptHtml(q){
+  return stim(q) + (q.fig || "") + '<div class="q-prompt"><p>' + q.prompt + "</p>" + (q.ask || META.ask ? '<p class="q-ask">' + (q.ask || META.ask) + "</p>" : "") + "</div>" + table(q);
+}
+
+function renderSetup(){
+  mcEl.innerHTML =
+    '<div class="setup">' +
+      '<h2>How do you want to take it?</h2>' +
+      '<div class="choice-row">' +
+        '<button type="button" class="choice" data-mode="practice" aria-pressed="' + (S.mode === "practice") + '"><b>Practice</b><span>See the answer and why after each question</span></button>' +
+        '<button type="button" class="choice" data-mode="exam" aria-pressed="' + (S.mode === "exam") + '"><b>Exam</b><span>Answer everything, then see your score</span></button>' +
+      '</div>' +
+      '<div class="checks">' +
+        '<label><input type="checkbox" id="opt-sq"' + (S.shuffleQ ? " checked" : "") + '> Shuffle questions</label>' +
+        '<label><input type="checkbox" id="opt-sc"' + (S.shuffleC ? " checked" : "") + '> Shuffle answer choices</label>' +
+      '</div>' +
+      '<div class="setup-actions"><button type="button" class="btn btn--solid btn--lg" id="go">Start' + (HAS_FR ? " multiple choice" : "") + '</button></div>' +
+      '<p class="note">' + META.setupNote + " Keyboard: 1&ndash;" + Math.max.apply(null, MC.map(function(q){ return q.options.length; })) + " to answer, &larr; &rarr; to move, Enter for next.</p>" +
+    '</div>';
+  mcEl.querySelectorAll(".choice").forEach(function(b){ b.onclick = function(){ S.mode = b.dataset.mode; render(); }; });
+  document.getElementById("opt-sq").onchange = function(e){ S.shuffleQ = e.target.checked; };
+  document.getElementById("opt-sc").onchange = function(e){ S.shuffleC = e.target.checked; };
+  document.getElementById("go").onclick = function(){ start(); };
+}
+
+function renderRun(){
+  var n = S.order[S.pos], q = BY[n], st = stats(), practice = S.mode === "practice";
+  var picked = (n in S.ans) ? S.ans[n] : null, locked = practice && picked !== null;
+  var nav = S.order.map(function(m, i){
+    var c = [];
+    if (m in S.ans){ if (practice) c.push(S.ans[m] === BY[m].answer ? "is-right" : "is-wrong"); else c.push("is-answered"); }
+    if (i === S.pos) c.push("is-current");
+    return '<button type="button" class="' + c.join(" ") + '" data-go="' + i + '" aria-label="Question ' + (i + 1) + '"' + (i === S.pos ? ' aria-current="step"' : "") + ">" + (i + 1) + "</button>";
+  }).join("");
+  var opts = S.copt[n].map(function(oi, k){
+    var cls = ["opt"], mark = "";
+    if (locked){
+      if (oi === q.answer){ cls.push("is-right"); mark = oi === picked ? "&check; your answer" : "&check; correct"; }
+      else if (oi === picked){ cls.push("is-wrong"); mark = "&cross; your answer"; }
+      else cls.push("is-dim");
+    } else if (oi === picked) cls.push("is-picked");
+    return '<li><button type="button" class="' + cls.join(" ") + '" data-opt="' + oi + '"' + (locked ? " disabled" : "") + '><span class="kbd">' + (k + 1) + "</span><span>" + q.options[oi] + '</span><span class="mark">' + mark + "</span></button></li>";
+  }).join("");
+  var fb = "";
+  if (locked){
+    var ok = picked === q.answer, ans = quoted(q, q.answer);
+    fb = '<div class="fb' + (ok ? "" : " is-wrong") + '"><p class="verdict" role="status">' + (ok ? "Correct." : "Not quite. The answer is " + ans + (/[.?!](&rdquo;)?$/.test(ans) ? "" : ".")) + "</p>" + explain(q, picked) + (q.after || "") + topicLinks([q.topic]) + "</div>";
+  }
+  var last = S.pos === S.order.length - 1, allDone = st.done === st.total;
+  var nextBtn = last
+    ? '<button type="button" class="btn btn--solid" id="finish">' + (practice ? "See results" : "Finish test") + "</button>"
+    : '<button type="button" class="btn btn--solid" id="next">Next &rarr;</button>';
+  var finishEarly = (!last && !practice) ? '<button type="button" class="btn" id="finish">Finish test</button>' : (!last && practice && allDone ? '<button type="button" class="btn" id="finish">See results</button>' : "");
+  var conf = "";
+  if (confirmFinish){
+    var left = st.total - st.done;
+    conf = '<div class="confirm"><p>' + left + " question" + (left === 1 ? " is" : "s are") + " unanswered and will be marked wrong. Finish anyway?</p>" +
+      '<button type="button" class="btn" id="conf-no">Keep going</button><button type="button" class="btn btn--solid" id="conf-yes">Finish</button></div>';
+  }
+  var eyebrow = "Question " + q.n + (SEC[q.sec] ? " &middot; " + SEC[q.sec] : "") + (q.tag ? " &middot; " + q.tag : (q.topic ? " &middot; " + topicShort(q.topic) : ""));
+  mcEl.innerHTML =
+    '<div class="bar"><span>Question ' + (S.pos + 1) + " of " + st.total + " &middot; " + (practice ? "Practice" : "Exam") + " mode</span><span>" +
+      (practice ? st.right + " correct of " + st.done + " answered" : st.done + " of " + st.total + " answered") + "</span></div>" +
+    '<div class="track"><span style="width:' + (st.done / st.total * 100) + '%"></span></div>' +
+    '<nav class="nav" aria-label="Questions">' + nav + "</nav>" +
+    '<article class="q">' +
+      '<p class="q-eyebrow sc">' + eyebrow + "</p>" +
+      promptHtml(q) +
+      '<ol class="opts">' + opts + "</ol>" + fb +
+      '<div class="step"><button type="button" class="btn" id="prev"' + (S.pos === 0 ? " disabled" : "") + '>&larr; Back</button><span class="step-right">' + finishEarly + nextBtn + "</span></div>" +
+      conf +
+    "</article>" +
+    '<p class="keys"><span class="kbd">1</span>&ndash;<span class="kbd">' + q.options.length + '</span> answer &nbsp; <span class="kbd">&larr;</span> <span class="kbd">&rarr;</span> move &nbsp; <span class="kbd">Enter</span> next</p>' +
+    '<p class="restart-line"><a href="#" id="restart">Start over</a> <span class="muted">&middot; progress is saved in this browser</span></p>';
+
+  scrollStim(mcEl);
+  mcEl.querySelectorAll("[data-go]").forEach(function(b){ b.onclick = function(){ go(+b.dataset.go); }; });
+  mcEl.querySelectorAll("[data-opt]").forEach(function(b){ b.onclick = function(){ pick(+b.dataset.opt); }; });
+  bind("prev", function(){ go(S.pos - 1); });
+  bind("next", function(){ go(S.pos + 1); });
+  bind("finish", finish);
+  bind("conf-no", function(){ confirmFinish = false; render(); });
+  bind("conf-yes", function(){ confirmFinish = false; showResults(); });
+  bind("restart", function(e){ e.preventDefault(); S.phase = "setup"; save(KEY, S); render(); });
+}
+function bind(id, fn){ var el = document.getElementById(id); if (el) el.onclick = fn; }
+
+function pick(oi){
+  var n = S.order[S.pos];
+  if (S.mode === "practice" && (n in S.ans)) return;
+  S.ans[n] = oi; save(KEY, S); render();
+  if (S.mode === "practice"){ var fb = mcEl.querySelector(".fb"); if (fb && fb.getBoundingClientRect().bottom > innerHeight) fb.scrollIntoView({ block: "nearest" }); }
+}
+function go(i){
+  if (i < 0 || i >= S.order.length) return;
+  S.pos = i; confirmFinish = false; save(KEY, S); render();
+  var q = mcEl.querySelector(".q"); if (q && q.getBoundingClientRect().top < 0) q.scrollIntoView();
+}
+function finish(){
+  var st = stats();
+  if (st.done < st.total && !confirmFinish){ confirmFinish = true; render(); var c = mcEl.querySelector(".confirm"); if (c) c.scrollIntoView({ block: "nearest" }); return; }
+  showResults();
+}
+function showResults(){
+  S.phase = "results";
+  if (S.order.length === MC.length) S.full = stats().right;
+  save(KEY, S); render(); if (HAS_FR) renderFR(); focusTop();
+}
+
+/* composite score (only when the document defines one) */
+function frTotal(){
+  var t = 0;
+  for (var i = 0; i < FR.length; i++){ var s = frScore(FR[i]); if (s === null) return null; t += s; }
+  return t;
+}
+function frMax(){ return FR.reduce(function(a, f){ return a + frItemMax(f); }, 0); }
+function compositeHtml(){
+  var C = META.composite;
+  if (!C || !HAS_FR) return "";
+  var mc = (typeof S.full === "number") ? S.full : null, fr = frTotal(), fm = frMax(), mm = MC.length;
+  if (mc === null && fr === null) return "";
+  var lines = [];
+  if (mc === null) lines.push("Free response: <b>" + fr + " / " + fm + "</b>. Take the full multiple-choice part to get your composite score.");
+  else if (fr === null) lines.push("Multiple choice: <b>" + mc + " / " + mm + "</b>. Write and mark every free-response question to get your composite score.");
+  else {
+    var c = Math.round(C.mcWeight * mc / mm + C.frWeight * fr / fm), band = "";
+    for (var i = 0; i < C.bands.length; i++){ if (c >= C.bands[i][0]){ band = C.bands[i][1]; break; } }
+    lines.push("Composite score: <b>" + c + " / " + (C.mcWeight + C.frWeight) + "</b> &nbsp;<span class=\"muted\">= " + C.mcWeight + " &times; " + mc + "/" + mm + " + " + C.frWeight + " &times; " + fr + "/" + fm + "</span>");
+    if (band) lines.push(band);
+  }
+  return '<div class="composite" role="status">' + lines.map(function(l){ return "<p>" + l + "</p>"; }).join("") + "</div>";
+}
+function targetHtml(st){
+  var T = META.target, B = META.bands, h = "";
+  if (st.total !== MC.length) return "";
+  if (T) h += '<p class="target">' + T.label + ": " + T.mc + " / " + MC.length + " &middot; " + (st.right >= T.mc ? "met" : (T.mc - st.right) + " short") + "</p>";
+  if (B) for (var i = 0; i < B.length; i++){ if (st.right >= B[i][0]){ h += '<p class="target">' + B[i][1] + "</p>"; break; } }
+  return h;
+}
+
+var resFilter = "all";
+function renderResults(){
+  var st = stats(), pct = Math.round(st.right / st.total * 100), fullRun = st.total === MC.length;
+  var missed = S.order.filter(function(n){ return S.ans[n] !== BY[n].answer; });
+  var rows = S.order.map(function(n, i){
+    var q = BY[n], a = S.ans[n], ok = a === q.answer;
+    if (resFilter === "missed" && ok) return "";
+    return '<li><details><summary><span class="res-n">' + (i + 1) + '.</span><span class="' + (ok ? "res-ok" : "res-bad") + '" aria-label="' + (ok ? "correct" : "wrong") + '">' + (ok ? "&check;" : "&cross;") + '</span><span class="res-sum">' + q.prompt + "</span></summary>" +
+      '<div class="res-body">' + stim(q) + (q.fig || "") + table(q) + '<p><span class="sc">Your answer:</span> ' + (a === undefined ? "<i>skipped</i>" : q.options[a]) + "</p>" +
+      (ok ? "" : '<p><span class="sc">Correct:</span> ' + q.options[q.answer] + "</p>") +
+      explain(q, a) + (q.after || "") + topicLinks([q.topic]) + "</div></details></li>";
+  }).join("");
+  var tally = {};
+  S.order.forEach(function(n){ var t = BY[n].topic; if (!t) return; tally[t] = tally[t] || { right: 0, total: 0 }; tally[t].total++; if (S.ans[n] === BY[n].answer) tally[t].right++; });
+  var trows = Object.keys(TOP).filter(function(t){ return tally[t]; }).map(function(t){
+    var x = tally[t], miss = x.total - x.right;
+    return "<tr><th scope=\"row\">" + topicShort(t) + "</th><td>" + x.right + " / " + x.total + "</td><td>" + guideLink(t, true) +
+      ((META.flag ? x.right < META.flag.below * x.total : miss >= 2) ? ' <span class="flag">&middot; ' + (META.flag ? META.flag.text : "reread this section") + "</span>" : "") + "</td></tr>";
+  }).join("");
+  mcEl.innerHTML =
+    '<div class="results">' +
+      '<div class="score"><p class="score-big">' + st.right + " / " + st.total + "</p><p>" + pct + "% correct" + (fullRun ? "" : " &middot; retry of missed questions") + "</p>" + targetHtml(st) + "</div>" +
+      '<div class="res-actions">' +
+        (missed.length ? '<button type="button" class="btn btn--solid" id="retry">Retry the ' + missed.length + " missed</button>" : "") +
+        '<button type="button" class="btn" id="again">Take the full test again</button>' +
+        (HAS_FR ? '<button type="button" class="btn" id="to-fr">Go to free response</button>' : "") +
+      "</div>" +
+      compositeHtml() +
+      (trows ? '<div class="topics"><h2>' + (META.byTopic || "By topic") + '</h2><table class="bt"><thead><tr><th scope="col">' + (META.topicCol || "Topic") + '</th><th scope="col">Correct</th><th scope="col">' + (META.guideCol || "Guide section") + "</th></tr></thead><tbody>" + trows + "</tbody></table>" +
+        (META.topicNote ? '<p class="note" style="margin-top:6px">' + META.topicNote + "</p>" : "") + "</div>" : "") +
+      '<div class="res-filter"><h2>Review</h2><span><label><input type="checkbox" id="only-missed"' + (resFilter === "missed" ? " checked" : "") + "> Show missed only</label></span></div>" +
+      '<ul class="res-list">' + (rows || '<li><p class="note" style="padding:12px 0">Nothing missed.</p></li>') + "</ul>" +
+    "</div>";
+  bind("retry", function(){ start(missed); });
+  bind("again", function(){ S.phase = "setup"; save(KEY, S); render(); });
+  bind("to-fr", function(){ setTab("fr"); });
+  document.getElementById("only-missed").onchange = function(e){ resFilter = e.target.checked ? "missed" : "all"; render(); };
+}
+
+function render(){
+  if (S.phase === "run" && S.order.length) renderRun();
+  else if (S.phase === "results" && S.order.length) renderResults();
+  else { S.phase = "setup"; renderSetup(); }
+}
+
+/* free response: "epi" parts (E/P/I -> 0-4 per question) or "points" parts (0..max each) */
+var frEl = document.getElementById("fr"), F = load(FKEY, null);
+if (!F || typeof F !== "object") F = {};
+F.drafts = F.drafts || {}; F.marks = F.marks || {}; F.open = F.open || {};
+var LABELS = { 4: "Complete", 3: "Substantial", 2: "Developing", 1: "Minimal", 0: "" };
+function frItemMax(f){ return f.mode === "points" ? f.parts.reduce(function(a, p){ return a + p.max; }, 0) : 4; }
+function frScore(f){
+  if (f.mode === "points"){
+    var t = 0;
+    for (var j = 0; j < f.parts.length; j++){ var v = F.marks[f.n + f.parts[j].label]; if (v === undefined || v === "") return null; t += +v; }
+    return t;
+  }
+  var e = 0, p = 0;
+  for (var i = 0; i < f.parts.length; i++){
+    var m = F.marks[f.n + f.parts[i].label];
+    if (!m) return null;
+    if (m === "E") e++; else if (m === "P") p++;
+  }
+  if (e === 3) return 4;
+  if (e === 2 && p === 1) return 3;
+  if ((e === 2 && p === 0) || (e === 1 && p >= 1) || p === 3) return 2;
+  if ((e === 1 && p === 0) || (e === 0 && p === 2)) return 1;
+  return 0;
+}
+function words(t){ var m = t.trim().match(/\S+/g); return m ? m.length : 0; }
+var SCALE = '<details class="scale"><summary>How part scores convert to 0&ndash;4</summary><table class="bt"><thead><tr><th scope="col">Score</th><th scope="col">Label</th><th scope="col">Part scores (three parts, each E, P, or I)</th></tr></thead><tbody>' +
+  "<tr><td>4</td><td>Complete</td><td>three parts E</td></tr>" +
+  "<tr><td>3</td><td>Substantial</td><td>two parts E and one part P</td></tr>" +
+  "<tr><td>2</td><td>Developing</td><td>two E and no P; or one E and one or two P; or three P</td></tr>" +
+  "<tr><td>1</td><td>Minimal</td><td>one E and no P; or no E and two P</td></tr>" +
+  "<tr><td>0</td><td></td><td>anything less</td></tr></tbody></table></details>";
+function frScoreHtml(f){
+  var s = frScore(f), mx = frItemMax(f);
+  if (s === null) return '<span class="muted">Mark every part to score this question.</span>';
+  return "Score: <b>" + s + " / " + mx + "</b>" + (f.mode !== "points" && LABELS[s] ? " &middot; " + LABELS[s] : "");
+}
+function markButtons(f, p, id, m){
+  var vals = f.mode === "points" ? range(p.max + 1).map(String) : ["E", "P", "I"];
+  return vals.map(function(x){ return '<button type="button" data-mark="' + id + '" data-f="' + f.n + '" data-v="' + x + '" aria-pressed="' + (m === x) + '">' + x + "</button>"; }).join("");
+}
+function renderFR(){
+  if (!HAS_FR) return;
+  frEl.innerHTML = '<p class="fr-intro">' + META.frIntro + "</p>" +
+    FR.map(function(f){
+      var open = !!F.open[f.n];
+      var parts = f.parts.map(function(p){
+        var id = f.n + p.label, d = F.drafts[id] || "", m = (F.marks[id] === undefined ? "" : String(F.marks[id]));
+        var crit = f.mode === "points"
+          ? '<div class="crit-pts">' + p.rubric + "</div>"
+          : '<dl class="crit"><dt>E</dt><dd>if the response ' + p.e + "</dd><dt>P</dt><dd>if " + p.p + "</dd></dl>";
+        return '<div class="part"><p class="part-prompt"><b>(' + p.label + ")</b>" + p.prompt + "</p>" +
+          '<label class="sc" for="fr-' + id + '">Your answer to (' + p.label + ")</label>" +
+          '<textarea id="fr-' + id + '" data-fr="' + id + '" spellcheck="true">' + esc(d) + "</textarea>" +
+          '<p class="part-meta" id="wc-' + id + '">' + words(d) + " words &middot; saved in this browser</p>" +
+          '<div class="sol"' + (open ? "" : " hidden") + ' data-sol="' + f.n + '"><h3>Model solution (' + p.label + ")</h3><div>" + p.solution + "</div>" + crit +
+            '<div class="mark-row"><span>Your mark for (' + p.label + ")" + (f.mode === "points" ? ", out of " + p.max : "") + ':</span><span class="seg" role="group" aria-label="Mark for part ' + p.label + '">' + markButtons(f, p, id, m) + "</span></div></div></div>";
+      }).join("");
+      return '<article class="fr"><h2>Question ' + f.n + "<small>" + f.head + "</small></h2>" +
+        (f.stim ? stim(f) : "") + '<div class="fr-stem">' + f.stem + "</div>" + parts +
+        '<div class="fr-actions"><span class="fr-score" id="score-' + f.n + '">' + (open ? frScoreHtml(f) : "") + "</span>" +
+          '<button type="button" class="btn" data-open="' + f.n + '" aria-expanded="' + open + '">' + (open ? "Hide model solution" : "Show model solution and scoring") + "</button></div>" +
+        (open ? (f.mode === "points" ? "" : SCALE) + topicLinks(f.guide || []) : "") +
+        "</article>";
+    }).join("") + '<div id="fr-composite">' + compositeHtml() + "</div>";
+  frEl.querySelectorAll("textarea").forEach(function(t){
+    t.oninput = function(){ F.drafts[t.dataset.fr] = t.value; save(FKEY, F); document.getElementById("wc-" + t.dataset.fr).innerHTML = words(t.value) + " words &middot; saved in this browser"; };
+  });
+  frEl.querySelectorAll("[data-open]").forEach(function(b){
+    b.onclick = function(){ var n = b.dataset.open; F.open[n] = !F.open[n]; save(FKEY, F); renderFR(); var a = document.getElementById("score-" + n); if (a) a.closest(".fr").querySelector(".part").scrollIntoView({ block: "nearest" }); };
+  });
+  frEl.querySelectorAll("[data-mark]").forEach(function(b){
+    b.onclick = function(){
+      var id = b.dataset.mark; F.marks[id] = F.marks[id] === b.dataset.v ? "" : b.dataset.v; save(FKEY, F);
+      b.parentNode.querySelectorAll("button").forEach(function(x){ x.setAttribute("aria-pressed", String(F.marks[id] === x.dataset.v)); });
+      var f = FR.filter(function(x){ return String(x.n) === b.dataset.f; })[0];
+      document.getElementById("score-" + f.n).innerHTML = frScoreHtml(f);
+      document.getElementById("fr-composite").innerHTML = compositeHtml();
+      if (S.phase === "results") render();
+    };
+  });
+}
+
+/* tabs (only when there is a free-response part) */
+function setTab(t){
+  if (!HAS_FR) return;
+  var mc = t === "mc";
+  document.getElementById("tab-mc").setAttribute("aria-selected", String(mc));
+  document.getElementById("tab-fr").setAttribute("aria-selected", String(!mc));
+  mcEl.hidden = !mc; frEl.hidden = mc;
+  try{ history.replaceState(null, "", mc ? location.pathname : "#free-response"); }catch(e){}
+  focusTop();
+}
+if (HAS_FR){
+  document.getElementById("tab-mc").onclick = function(){ setTab("mc"); };
+  document.getElementById("tab-fr").onclick = function(){ setTab("fr"); };
+}
+
+/* keyboard */
+document.addEventListener("keydown", function(e){
+  if (e.metaKey || e.ctrlKey || e.altKey) return;
+  var tag = (e.target.tagName || "").toLowerCase();
+  if (tag === "textarea" || tag === "input") return;
+  if (mcEl.hidden || S.phase !== "run") return;
+  var n = S.order[S.pos], q = BY[n];
+  if (/^[1-9]$/.test(e.key)){ var k = +e.key - 1; if (k < q.options.length){ e.preventDefault(); pick(S.copt[n][k]); } }
+  else if (e.key === "ArrowRight"){ e.preventDefault(); go(S.pos + 1); }
+  else if (e.key === "ArrowLeft"){ e.preventDefault(); go(S.pos - 1); }
+  else if (e.key === "Enter" && tag !== "button" && tag !== "a"){ e.preventDefault(); if (S.pos < S.order.length - 1) go(S.pos + 1); else finish(); }
+});
+
+/* theme */
+var root = document.documentElement, tb = document.getElementById("theme-btn");
+function syncTheme(){ var dark = root.getAttribute("data-theme") === "dark"; tb.textContent = dark ? "Light mode" : "Dark mode"; tb.setAttribute("aria-pressed", String(dark)); }
+tb.onclick = function(){ var dark = root.getAttribute("data-theme") !== "dark"; root.setAttribute("data-theme", dark ? "dark" : "light"); try{ localStorage.setItem("apah.theme", dark ? "dark" : "light"); }catch(e){} syncTheme(); };
+syncTheme();
+
+render(); renderFR();
+if (HAS_FR && location.hash === "#free-response") setTab("fr");
+})();
+</script>
+</body>
+</html>
