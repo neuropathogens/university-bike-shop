@@ -177,10 +177,9 @@ a{color:var(--link);text-underline-offset:3px;text-decoration-thickness:.5px}
 .sol .crit dt{font-weight:700}
 .sol .crit dd{margin:0}
 .mark-row{display:flex;flex-wrap:wrap;align-items:center;gap:8px;font-size:15px}
-.seg{display:inline-flex}
-.seg button{min-width:44px;min-height:36px;padding:0 10px;border:1px solid var(--fg);background:var(--bg);font-family:var(--mono);font-size:14px}
-.seg button+button{border-left:0}
-.seg button[aria-pressed=true]{background:var(--fg);color:var(--bg)}
+.seg{display:inline-flex;flex-wrap:wrap;max-width:100%;padding:1px 0 0 1px}
+.seg button{margin:-1px 0 0 -1px;min-width:44px;min-height:36px;padding:0 10px;border:1px solid var(--fg);background:var(--bg);font-family:var(--mono);font-size:14px}
+.seg button[aria-pressed=true]{position:relative;background:var(--fg);color:var(--bg)}
 .fr-actions{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:10px;margin-top:16px}
 .fr-score{font-size:16px}
 .fr-score b{font-variant-numeric:tabular-nums}
@@ -223,9 +222,12 @@ u.ul{text-decoration-thickness:1px;text-underline-offset:3px}
 .stim-intro{font-style:italic;color:var(--muted);font-size:15px}
 .stim-sub{margin-top:12px!important}
 .stim-note{font-size:15px;color:var(--muted)}
+.tool{margin:0 0 10px;padding:6px 0 6px 12px;border-left:3px solid var(--muted);font-size:15px;color:var(--muted)}
 .fig .figcap{margin:0 0 6px;font-size:15px}
 .stim.free{max-height:none;overflow:visible}
 .bt th[colspan]{text-align:center}
+.fig-after{margin:12px 0 4px}
+.fig-after img{max-width:min(100%,420px);max-height:340px;width:auto;object-fit:contain}
 .stim .figcap{text-align:center;font-size:15px;margin:10px 0 4px}
 .stim .fig{margin:6px 0 10px}
 .stim .bt-wrap{margin:0 0 10px}
@@ -380,7 +382,7 @@ function renderRun(){
   var fb = "";
   if (locked){
     var ok = picked === q.answer, ans = quoted(q, q.answer);
-    fb = '<div class="fb' + (ok ? "" : " is-wrong") + '"><p class="verdict" role="status">' + (ok ? "Correct." : "Not quite. The answer is " + ans + (/[.?!](&rdquo;)?$/.test(ans) ? "" : ".")) + "</p>" + explain(q, picked) + topicLinks([q.topic]) + "</div>";
+    fb = '<div class="fb' + (ok ? "" : " is-wrong") + '"><p class="verdict" role="status">' + (ok ? "Correct." : "Not quite. The answer is " + ans + (/[.?!](&rdquo;)?$/.test(ans) ? "" : ".")) + "</p>" + explain(q, picked) + (q.after || "") + topicLinks([q.topic]) + "</div>";
   }
   var last = S.pos === S.order.length - 1, allDone = st.done === st.total;
   var nextBtn = last
@@ -450,8 +452,18 @@ function frTotal(){
   return t;
 }
 function frMax(){ return FR.reduce(function(a, f){ return a + frItemMax(f); }, 0); }
+function frOnlyTotal(){  /* free-response-only quizzes: running total of the marked questions */
+  var done = 0, got = 0, of = 0;
+  FR.forEach(function(f){ var s = frScore(f); if (s !== null){ done++; got += s; of += frItemMax(f); } });
+  if (!done) return "";
+  var line = done === FR.length
+    ? "Total: <b>" + got + " / " + of + "</b> (" + Math.round(got / of * 100) + "%)"
+    : "Marked so far: <b>" + got + " / " + of + "</b> on " + done + " of " + FR.length + " questions &middot; " + frMax() + " points in all";
+  return '<div class="composite" role="status"><p>' + line + "</p></div>";
+}
 function compositeHtml(){
   var C = META.composite;
+  if (HAS_FR && !MC.length) return frOnlyTotal();
   if (!C || !HAS_FR) return "";
   var mc = (typeof S.full === "number") ? S.full : null, fr = frTotal(), fm = frMax(), mm = MC.length;
   if (mc === null && fr === null) return "";
@@ -484,7 +496,7 @@ function renderResults(){
     return '<li><details><summary><span class="res-n">' + (i + 1) + '.</span><span class="' + (ok ? "res-ok" : "res-bad") + '" aria-label="' + (ok ? "correct" : "wrong") + '">' + (ok ? "&check;" : "&cross;") + '</span><span class="res-sum">' + q.prompt + "</span></summary>" +
       '<div class="res-body">' + stim(q) + (q.fig || "") + table(q) + '<p><span class="sc">Your answer:</span> ' + (a === undefined ? "<i>skipped</i>" : q.options[a]) + "</p>" +
       (ok ? "" : '<p><span class="sc">Correct:</span> ' + q.options[q.answer] + "</p>") +
-      explain(q, a) + topicLinks([q.topic]) + "</div></details></li>";
+      explain(q, a) + (q.after || "") + topicLinks([q.topic]) + "</div></details></li>";
   }).join("");
   var tally = {};
   S.order.forEach(function(n){ var t = BY[n].topic; if (!t) return; tally[t] = tally[t] || { right: 0, total: 0 }; tally[t].total++; if (S.ans[n] === BY[n].answer) tally[t].right++; });
@@ -576,7 +588,7 @@ function renderFR(){
           '<div class="sol"' + (open ? "" : " hidden") + ' data-sol="' + f.n + '"><h3>Model solution (' + p.label + ")</h3><div>" + p.solution + "</div>" + crit +
             '<div class="mark-row"><span>Your mark for (' + p.label + ")" + (f.mode === "points" ? ", out of " + p.max : "") + ':</span><span class="seg" role="group" aria-label="Mark for part ' + p.label + '">' + markButtons(f, p, id, m) + "</span></div></div></div>";
       }).join("");
-      return '<article class="fr"><h2>Question ' + f.n + "<small>" + f.head + "</small></h2>" +
+      return '<article class="fr"><h2>' + (META.frWord || "Question") + " " + f.n + "<small>" + f.head + "</small></h2>" +
         (f.stim ? stim(f) : "") + '<div class="fr-stem">' + f.stem + "</div>" + parts +
         '<div class="fr-actions"><span class="fr-score" id="score-' + f.n + '">' + (open ? frScoreHtml(f) : "") + "</span>" +
           '<button type="button" class="btn" data-open="' + f.n + '" aria-expanded="' + open + '">' + (open ? "Hide model solution" : "Show model solution and scoring") + "</button></div>" +
@@ -637,6 +649,7 @@ syncTheme();
 
 render(); renderFR();
 if (HAS_FR && location.hash === "#free-response") setTab("fr");
+if (HAS_FR && !MC.length){ var tabsEl = document.querySelector(".tabs"); if (tabsEl) tabsEl.hidden = true; mcEl.hidden = true; frEl.hidden = false; }
 })();
 </script>
 </body>
