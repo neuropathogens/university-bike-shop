@@ -654,7 +654,7 @@ B_FR = [
              pts_part("f", "A classmate says that because $[\\ce{NO2}]$ halves in the first 200 s, it will halve again by $t = 400$ s. Do you agree or disagree? Justify your answer.", 1,
                       "Disagree: for a second-order reaction $t_{1/2} = 1/(k[\\ce{NO2}]_0)$, so the next half-life is twice as long, 400 s; $[\\ce{NO2}]$ reaches 0.002&thinsp;50 M at 600 s, not 400 s."),
              pts_part("g(i)", "A proposed mechanism is shown.<br>Step 1: $\\ce{NO2 + NO2 -> NO3 + NO}$ (slow)<br>Step 2: $\\ce{NO3 -> NO + O2}$ (fast)<br>Show that the steps add up to the overall equation.", 1,
-                      "$\\ce{2NO2 + NO3 -> NO3 + 2NO + O2}$; cancel $\\ce{NO3}$ to get $\\ce{2NO2 -> 2NO + O2}$."),
+                      "$\\ce{2NO2 + NO3}$ $\\ce{->}$ $\\ce{NO3 + 2NO + O2}$; cancel $\\ce{NO3}$ to get $\\ce{2NO2 -> 2NO + O2}$."),
              pts_part("g(ii)", "Identify the intermediate.", 1, "$\\ce{NO3}$: made in Step 1, used up in Step 2."),
              pts_part("g(iii)", "Is the mechanism consistent with the order you found in part (c)? Justify your answer.", 1,
                       "Yes: the slow Step 1 is elementary and bimolecular in $\\ce{NO2}$, so rate $= k[\\ce{NO2}]^2$, second order, matching (c)."),
