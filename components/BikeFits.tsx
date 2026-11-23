@@ -9,8 +9,8 @@ export default function BikeFits() {
         program.
       </p>
       <p>
-        This take approximately 1.5 hours, and costs just $99. We will start
-        by analyzing form, drag, and other details.
+        This takes approximately 1.5 hours, and is free while we test V3,
+        $99 after. We will start by analyzing form, drag, and other details.
       </p>
       <p>
         We first will take physical measurements before moving onto

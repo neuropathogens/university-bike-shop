@@ -11,8 +11,9 @@ export default function Hero() {
       </p>
       <p>
         We sell quality used bikes at student-friendly prices, and our
-        workshop handles repairs, tune-ups, and $99 bike fits. We are
-        appointment only, located in Crescent Park, Palo Alto.
+        workshop handles repairs, tune-ups, and bike fits (free while we test
+        V3, $99 after). We are appointment only, located in Crescent Park,
+        Palo Alto.
       </p>
       <nav className={styles.links} aria-label="Popular pages">
         <Link href="/inventory">Current inventory</Link>

@@ -19,7 +19,7 @@ export default function Sponsorships() {
       </ul>
       <p>We also volunteered at:</p>
       <ul>
-        <li>Paly Back to School Bike Repair Events</li>
+        <li>PAUSD Back to School Bike Repair Events</li>
       </ul>
     </section>
   );

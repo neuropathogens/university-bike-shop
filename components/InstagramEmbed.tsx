@@ -7,10 +7,12 @@ export default function InstagramEmbed({
   url,
   media = 4 / 3,
   extra = 310,
+  account = "universitybikes",
 }: {
   url: string;
   media?: number;
   extra?: number;
+  account?: string;
 }) {
   const match = url.match(/instagram\.com\/(p|reel)\/([\w-]+)/);
   if (!match) return null;
@@ -26,7 +28,7 @@ export default function InstagramEmbed({
     >
       <iframe
         src={`${permalink}embed/captioned/`}
-        title="Instagram post from @universitybikes"
+        title={`Instagram post from @${account}`}
         loading="lazy"
         scrolling="no"
         allowFullScreen
