@@ -1,0 +1,682 @@
+## 2.1
+accompany|v.|to go along with; to occur together with
+adjust|v.|to alter slightly to fit or improve; to adapt
+allocate|v.|to distribute for a particular purpose
+alter|v.|to change
+animate|v./adj.|to bring to life or energize; alive
+behalf|n.|(on behalf of) as a representative of or in the interest of
+coalition|n.|an alliance of groups for joint action
+compound|v./n./adj.|to make worse or combine; a mixture; made of parts
+consent|n./v.|permission; to agree
+consistent|adj.|unchanging over time; compatible with
+console|v./n.|to comfort in grief; a control panel
+consolidate|v.|to combine into a whole; to make stronger
+consolidation|n.|the act of combining or strengthening
+construct|v./n.|to build; an idea or theory
+derive|v.|to obtain from a source; to originate
+emerge|v.|to come into view or become known
+facilitate|v.|to make easier
+induce|v.|to persuade or bring about; to reason from particulars
+ongoing|adj.|continuing; still in progress
+premise|n.|a statement assumed as the basis of an argument
+proceed|v.|to continue; to go forward
+prohibit|v.|to forbid by authority
+prospect|n./v.|a likelihood of a future event; to search for minerals
+pursue|v.|to follow; to strive for
+relax|v.|to become less tense; to make less strict
+transform|v.|to change markedly in form or nature
+transition|n.|a change from one state to another
+undertake|v.|to commit to; to begin a task
+valid|adj.|well-founded; legally binding
+welfare|n.|health and well-being; public aid
+## 2.2
+adapt|v.|to modify to suit new conditions
+adequate|adj.|sufficient; satisfactory but not exceptional
+adverse|adj.|harmful; unfavorable
+assure|v.|to tell confidently to remove doubt; to guarantee
+boundless|adj.|without limits
+brochure|n.|a small informational booklet
+colleague|n.|a fellow worker
+concentrate|v./n.|to focus; to gather in one place; a dense form of a substance
+conclude|v.|to bring to an end; to arrive at a judgment
+decline|v./n.|to refuse politely; to decrease; a decrease
+definite|adj.|clearly stated or decided; certain
+determination|n.|firmness of purpose; the act of deciding
+ethnic|adj.|relating to a group sharing culture or ancestry
+eventual|adj.|happening at the end of a process
+explicit|adj.|stated clearly and directly
+illustrate|v.|to explain by example; to add pictures
+interpret|v.|to explain the meaning of; to translate
+investigate|v.|to examine systematically
+liberal|adj.|open to new ideas; generous; broadly interpreted
+margin|n.|an edge; an amount by which something is won or lost
+occupy|v.|to fill or take up; to reside in; to seize control of
+precise|adj.|exact and accurate
+recover|v.|to regain; to return to health
+resolve|v./n.|to settle or decide firmly; firm determination
+restore|v.|to bring back to an original state
+retrieve|v.|to get back; to bring back
+severe|adj.|very great or intense; strict; plain in style
+sublime|adj.|of awe-inspiring excellence or beauty
+sufficient|adj.|enough
+tradition|n.|a custom passed down over generations
+## 2.3
+attitude|n.|a settled way of thinking or feeling
+chronicle|n./v.|a historical record in time order; to record events
+communicate|v.|to share information
+comprise|v.|to consist of; to make up
+considerable|adj.|notably large in size or amount
+diagnosis|n.|the identification of a problem or illness
+duration|n.|the length of time something lasts
+emphasis|n.|special importance or stress
+encounter|n./v.|an unexpected meeting; to meet or face
+equip|v.|to supply with what is needed
+ethic|n.|a set of moral principles
+execute|v.|to carry out; to put to death
+implication|n.|a suggested conclusion; involvement in a crime
+incentive|n.|something that motivates
+intermediate|adj.|in between; mid-level
+isolate|v.|to set apart from others
+minimize|v.|to reduce to the smallest amount; to downplay
+offset|v./n.|to counterbalance; something that counterbalances
+orient|v.|to position or align; to familiarize oneself
+parallel|adj./n.|side by side; similar; a comparable case
+partial|adj.|incomplete; biased in favor of; fond of
+psychology|n.|the science of mind and behavior
+refine|v.|to purify; to improve by small changes
+regulate|v.|to control by rules; to adjust
+restrict|v.|to limit
+revolution|n.|a forcible overthrow; a dramatic change; one full rotation
+somewhat|adv.|to a moderate extent
+statute|n.|a written law
+survive|v.|to continue to live or exist
+trek|n./v.|a long, difficult journey
+## 2.4
+apparent|adj.|clearly visible; seeming real but not necessarily so
+circumstance|n.|a condition or fact affecting a situation
+cite|v.|to quote as evidence; to mention
+clause|n.|a section of a legal document; a grammatical unit with a verb
+constraint|n.|a limitation or restriction
+coordinate|v./n.|to organize parts to work together; a location value
+detect|v.|to discover or notice
+dispatch|v./n.|to send off; to deal with quickly; speed
+excerpt|n.|a short extract from a text
+expose|v.|to uncover; to make vulnerable
+globe|n.|the earth; a sphere
+hence|adv.|for this reason; from now
+interval|n.|a space of time or distance between
+lecture|n./v.|an educational talk; to scold at length
+logic|n.|reasoning according to valid principles
+mutual|adj.|shared or felt by both sides
+peripheral|adj.|on the edge; of secondary importance
+pose|v.|to present (a problem); to pretend to be; to model
+practitioner|n.|one who actively practices a profession
+preliminary|adj./n.|coming before the main part
+reject|v.|to refuse to accept
+scenario|n.|a possible sequence of events
+spectrum|n.|a full range between extremes
+substantial|adj.|large in amount; solid and real
+substitute|n./v.|a replacement; to put in place of another
+temporary|adj.|lasting a limited time
+transmit|v.|to send or pass on
+visible|adj.|able to be seen
+voluntary|adj.|done by choice; unpaid
+warrant|v./n.|to justify; an official authorization
+## 2.5
+alloy|n.|a metal made by combining two or more metals
+appreciate|v.|to value; to recognize fully; to increase in value
+assumption|n.|something taken for granted; the act of taking on
+assurance|n.|a confident promise; self-confidence
+breach|n./v.|a violation; a gap; to break through
+bulk|n.|the greater part; large size
+commence|v.|to begin
+complement|n./v.|something that completes; to enhance by combining
+conform|v.|to comply with rules; to be similar to
+decade|n.|a period of ten years
+doctrine|n.|a set of beliefs taught by a group
+enforce|v.|to compel observance of a law
+franchise|n.|the right to vote; a license to sell a company's goods
+furthermore|adv.|in addition (adds a supporting point)
+fusion|n.|the joining of things into one
+imply|v.|to suggest without stating
+initiate|v./n.|to begin; to admit into a group; a new member
+insight|n.|deep understanding
+interact|v.|to act on one another
+invoke|v.|to call on for support; to cite as authority
+nevertheless|adv.|in spite of that (signals contrast)
+offensive|adj./n.|insulting; aggressive; an attack
+peerless|adj.|without equal
+rely|v.|to depend on
+reverse|v./n./adj.|to turn back or undo; the opposite
+sanction|n./v.|official permission; a penalty; to approve (note: can mean both)
+transit|n.|movement from place to place; public transport
+trigger|v./n.|to set off; a cause
+utilize|v.|to make practical use of
+validate|v.|to confirm or make legally valid
+## 2.6
+addiction|n.|a compulsive dependence
+aggregate|n./adj./v.|a total formed of parts; to combine
+alias|n.|a false or assumed name
+assert|v.|to state confidently
+clarify|v.|to make clear
+collapse|v./n.|to fall down; to fail suddenly
+confusion|n.|lack of understanding; disorder
+consequent|adj.|following as a result
+crucial|adj.|decisively important
+devote|v.|to give time or effort to
+distinct|adj.|clearly different; clearly perceptible
+eclipse|n./v.|blocking of one celestial body by another; to overshadow
+evolve|v.|to develop gradually
+exotic|adj.|from a foreign place; strikingly unusual
+genealogy|n.|the study or line of family descent
+hypothesis|n.|a proposed explanation to be tested
+inspect|v.|to examine closely
+intense|adj.|extreme in degree
+mortality|n.|the state of being subject to death; death rate
+notable|adj.|worthy of attention
+partition|n./v.|a division; to divide
+proportion|n.|a part in relation to the whole; balance
+prototype|n.|a first model from which others are developed
+radical|adj./n.|fundamental; favoring extreme change
+rally|v./n.|to gather for a cause; to recover; a mass meeting
+simulate|v.|to imitate the conditions of
+synthesis|n.|combination of parts into a whole
+terminate|v.|to end
+termination|n.|an ending
+undergo|v.|to experience (something difficult or a change)
+## 2.7
+accommodate|v.|to provide room for; to adapt to the needs of
+accumulate|v.|to gather over time
+adjacent|adj.|next to
+cant|n./v.|hypocritical moral talk; jargon; a tilt; to tilt
+caption|n.|a title or explanation beneath an image
+commodity|n.|a raw material or product that is bought and sold
+denote|v.|to indicate; to be a sign of
+enormous|adj.|very large
+epic|n./adj.|a long heroic poem; grand in scale
+finite|adj.|having limits
+impair|v.|to weaken or damage
+incidence|n.|the rate of occurrence
+inclusive|adj.|including all; not excluding any group
+indigenous|adj.|native to a place
+injure|v.|to harm
+integral|adj.|essential to completeness
+levy|v./n.|to impose (a tax); a tax
+maximize|v.|to make as large as possible
+minimal|adj.|of the least possible amount
+notion|n.|an idea or belief
+overlap|v./n.|to extend over partly; a shared area
+passport|n.|an official travel document; a means of access
+rational|adj.|based on reason
+regime|n.|a government, especially authoritarian; a system
+reside|v.|to live in a place; to be present in
+sphere|n.|a round solid; a field of activity
+suspend|v.|to hang; to halt temporarily
+therapeutic|adj.|healing; relating to treatment
+underlie|v.|to be the basis of
+violate|v.|to break (a rule); to disrespect
+## 2.8
+accelerate|v.|to increase speed
+arbitrary|adj.|based on random choice rather than reason
+assemble|v.|to gather; to fit together
+attain|v.|to achieve
+beneficiary|n.|one who benefits, especially from a will
+colonial|adj.|relating to a colony or colonialism
+comparable|adj.|able to be compared; similar
+compress|v.|to press together; to condense
+contrary|adj./n.|opposite in nature or direction
+depict|v.|to portray
+disclose|v.|to reveal
+distinction|n.|a difference; excellence
+dominate|v.|to control; to be the most important
+evident|adj.|clearly seen or understood
+feasible|adj.|possible to do
+gravity|n.|the force of attraction; seriousness
+hierarchy|n.|a ranking system
+identical|adj.|exactly the same
+meditation|n.|focused contemplation
+neutral|adj.|not taking sides
+norm|n.|a standard or typical pattern
+nutrient|n.|a substance providing nourishment
+passive|adj.|accepting without resistance; inactive
+perceive|v.|to become aware of; to regard
+precede|v.|to come before
+provincial|adj.|of a province; narrow-minded and unsophisticated
+rant|v./n.|to speak angrily at length
+react|v.|to respond
+subsidiary|adj./n.|secondary; a company controlled by another
+viable|adj.|capable of working or surviving
+## 2.9
+acclaim|n./v.|enthusiastic praise
+affinity|n.|a natural liking or similarity
+affirm|v.|to state as true; to support
+append|v.|to add to the end
+badger|v.|to pester repeatedly
+beneficial|adj.|helpful
+bias|n.|prejudice for or against
+cease|v.|to stop
+collaborate|v.|to work jointly
+constituent|n./adj.|a component; a voter represented by an official
+consume|v.|to eat or use up; to absorb fully
+conviction|n.|a firm belief; a guilty verdict
+deprecate|v.|to express disapproval of; to belittle
+discrepancy|n.|a difference between things that should match
+disseminate|v.|to spread widely
+endorse|v.|to approve publicly
+immune|adj.|protected; exempt
+justify|v.|to show to be right
+narrative|n.|a story or account
+negligence|n.|failure to take proper care
+persist|v.|to continue firmly
+predominant|adj.|most common or influential
+presume|v.|to suppose; to dare to act improperly
+profound|adj.|very great; deeply insightful
+provisional|adj.|temporary; for the time being
+sage|n./adj.|a wise person; wise
+susceptible|adj.|likely to be affected
+thesis|n.|a central argument
+unify|v.|to unite
+volatile|adj.|unstable; likely to change suddenly
+## 2.10
+aspire|v.|to aim for ambitiously
+asylum|n.|protection granted to refugees; a refuge
+avid|adj.|eager and enthusiastic
+confer|v.|to grant; to consult together
+constrain|v.|to restrict
+detach|v.|to separate
+differentiate|v.|to distinguish between
+dissent|n./v.|disagreement with an official view
+efficacy|n.|the ability to produce a desired effect
+forthcoming|adj.|about to happen; willing to share information
+illuminate|v.|to light up; to clarify
+implicit|adj.|implied, not stated; absolute (implicit trust)
+inherent|adj.|existing as a natural part
+intervene|v.|to come between to change an outcome
+intrinsic|adj.|belonging naturally; essential
+malicious|adj.|intending harm
+manipulate|v.|to handle skillfully; to control deviously
+nonetheless|adv.|in spite of that (signals contrast)
+notorious|adj.|famous for something bad
+oblique|adj.|slanting; indirect
+paramount|adj.|of supreme importance
+proliferation|n.|rapid increase in number
+prolong|v.|to extend in duration
+renovate|v.|to restore to good condition
+resign|v.|to quit a position; (resign oneself) to accept reluctantly
+straightforward|adj.|simple; honest and direct
+subsidy|n.|financial support from a government
+symmetry|n.|balanced proportions
+tentative|adj.|uncertain; not final
+waive|v.|to give up a right or requirement
+## 2.11
+ample|adj.|more than enough
+anomaly|n.|something that deviates from the norm
+artifact|n.|a human-made object of historical interest
+autonomous|adj.|self-governing; independent
+compensate|v.|to make up for; to pay
+confine|v.|to restrict within limits
+converge|v.|to come together
+converse|v./n.|to talk; the opposite
+cosmic|adj.|relating to the universe; vast
+culinary|adj.|relating to cooking
+depress|v.|to make sad; to push down; to reduce activity
+devise|v.|to plan or invent
+displace|v.|to move from its place; to replace
+empirical|adj.|based on observation or experiment
+esteem|n./v.|respect and admiration
+expedite|v.|to speed up
+hamper|v.|to hinder
+inhibit|v.|to restrain or prevent
+justification|n.|a reason showing something is right
+manifest|v./adj.|to show clearly; obvious
+maxim|n.|a short statement of a general truth
+migrate|v.|to move from one region to another
+mock|v./adj.|to ridicule; imitation
+motive|n.|a reason for acting
+paradigm|n.|a model or typical pattern; a framework of thought
+proximity|n.|nearness
+restraint|n.|self-control; a limitation
+rue|v.|to regret bitterly
+subjective|adj.|based on personal feelings
+successor|n.|one who follows another in a role
+## 2.12
+augment|v.|to increase
+authenticate|v.|to prove genuine
+coincidence|n.|a chance occurrence of events together
+concede|v.|to admit reluctantly; to surrender
+conceive|v.|to imagine; to form an idea
+concurrent|adj.|existing at the same time
+degradation|n.|deterioration; humiliation
+discrete|adj.|separate and distinct
+dispose|v.|to get rid of; to incline
+dissertation|n.|a long academic paper
+emulate|v.|to imitate in order to equal
+endure|v.|to tolerate; to last
+gale|n.|a very strong wind; an outburst
+hardy|adj.|robust; able to endure
+ideology|n.|a system of ideas
+incline|v./n.|to tend toward; a slope
+instruct|v.|to teach; to direct
+intangible|adj.|not physical; hard to define
+itinerary|n.|a planned route
+likewise|adv.|similarly (signals similarity)
+muse|v./n.|to ponder; a source of inspiration
+prey|n./v.|an animal hunted; to hunt or exploit
+proponent|n.|a supporter
+revoke|v.|to cancel officially
+secular|adj.|not religious
+severity|n.|seriousness; harshness
+singular|adj.|unique; exceptional; only one
+strut|v./n.|to walk proudly; a supporting rod
+transient|adj.|lasting briefly
+trivial|adj.|unimportant
+## 2.13
+accolade|n.|an award or expression of praise
+awe|n.|reverential wonder
+carp|v.|to complain about trivial things
+censor|v./n.|to suppress objectionable content
+concur|v.|to agree
+confrontation|n.|a hostile meeting or clash
+contention|n.|an assertion in an argument; heated disagreement
+enumerate|v.|to list one by one
+equate|v.|to consider as equal
+ethereal|adj.|delicate and light; heavenly
+fabricate|v.|to invent falsely; to construct
+homogeneous|adj.|of the same kind throughout
+incumbent|n./adj.|current officeholder; obligatory
+infer|v.|to conclude from evidence
+ironic|adj.|contrary to what is expected; saying the opposite of what is meant
+lament|v./n.|to express grief
+lethal|adj.|deadly
+paradox|n.|a seemingly contradictory but possibly true statement
+perpetual|adj.|never ending
+predecessor|n.|one who held a role before
+pristine|adj.|in original, unspoiled condition
+propagate|v.|to spread; to breed
+prudent|adj.|wise and cautious
+ratify|v.|to approve formally
+recession|n.|a decline in economic activity; a withdrawal
+repertoire|n.|a set of skills or works one can perform
+serenity|n.|calmness
+sever|v.|to cut off
+veneer|n.|a thin surface layer; a deceptive outward appearance
+vie|v.|to compete
+## 2.14
+amplify|v.|to increase in strength or detail
+captivate|v.|to attract and hold attention
+contingent|adj./n.|dependent on conditions; a group of representatives
+contradict|v.|to assert the opposite of
+demolition|n.|the destruction of a structure
+deter|v.|to discourage
+discern|v.|to perceive or recognize
+disclaim|v.|to deny responsibility for
+disparity|n.|a great difference
+eclectic|adj.|drawn from diverse sources
+elicit|v.|to draw out a response
+frantic|adj.|wild with fear or anxiety
+fraudulent|adj.|obtained by deception
+fugitive|n./adj.|one who flees; fleeting
+idiom|n.|an expression whose meaning is not literal; a style
+imbalance|n.|lack of proportion
+inconsistency|n.|lack of agreement or regularity
+intimidate|v.|to frighten into compliance
+nostalgia|n.|sentimental longing for the past
+nurture|v./n.|to care for and encourage growth
+perennial|adj.|lasting a long time; recurring
+pervasive|adj.|spread throughout
+pore|n./v.|a tiny opening; (pore over) to study closely
+saturate|v.|to soak thoroughly
+surpass|v.|to exceed
+terrestrial|adj.|relating to the earth or land
+trough|n.|a long container for feed; a low point
+turbulence|n.|violent disturbance; unrest
+ubiquitous|adj.|found everywhere
+underscore|v.|to emphasize
+## 2.15
+adversary|n.|an opponent
+anarchy|n.|absence of government; disorder
+apprenticeship|n.|a period of learning a trade under a master
+chaotic|adj.|in complete disorder
+climax|n.|the most intense point
+coincide|v.|to occur at the same time; to agree
+consequential|adj.|important; following as a result
+convene|v.|to come together for a meeting
+exemplary|adj.|serving as a desirable model
+forgo|v.|to do without
+humane|adj.|compassionate
+implicate|v.|to show to be involved in a crime
+intermittent|adj.|stopping and starting
+latent|adj.|present but not yet active
+marshal|v./n.|to arrange or gather; an officer
+opaque|adj.|not transparent; hard to understand
+parody|n./v.|a humorous imitation
+prologue|n.|an introductory section
+promulgate|v.|to make widely known; to proclaim a law
+prone|adj.|likely to; lying face down
+reputable|adj.|well regarded
+restrain|v.|to hold back
+satire|n.|humor used to criticize
+skeptical|adj.|doubtful
+stereotype|n./v.|an oversimplified fixed image of a group
+subpoena|n./v.|a legal order to appear in court
+titanic|adj.|enormous in size or power
+unprecedented|adj.|never done or known before
+utopia|n.|an imagined perfect place
+vanguard|n.|the forefront of a movement
+## 2.16
+agile|adj.|able to move quickly and easily; mentally quick
+alleviate|v.|to make less severe
+betray|v.|to be disloyal to; to reveal unintentionally
+boycott|v./n.|to refuse to deal with as a protest
+commemorate|v.|to honor the memory of
+covert|adj.|secret
+devious|adj.|sneaky; indirect
+disperse|v.|to scatter
+dissolution|n.|the ending of an organization or agreement; decay
+distill|v.|to purify; to extract the essence of
+glossy|adj.|shiny; superficially attractive
+heed|v./n.|to pay attention to
+invert|v.|to turn upside down or reverse
+linger|v.|to stay longer than necessary
+paragon|n.|a model of excellence
+pastoral|adj.|relating to rural life; relating to spiritual care
+permeable|adj.|allowing liquids or gases to pass through
+precedent|n.|an earlier event used as a guide
+problematic|adj.|presenting a problem
+purge|v./n.|to remove (unwanted people or things)
+recurrent|adj.|happening repeatedly
+reiterate|v.|to repeat for emphasis
+relic|n.|an object surviving from the past
+remnant|n.|a small remaining part
+renegade|n.|one who deserts a cause
+sect|n.|a subgroup with distinct beliefs
+stringent|adj.|strict
+superficial|adj.|on the surface only; shallow
+supersede|v.|to replace
+vantage|n.|a position giving a good view or advantage
+## 2.17
+ambulatory|adj.|able to walk; relating to walking
+analogous|adj.|comparable in certain respects
+analogy|n.|a comparison showing similarity
+ancillary|adj.|supplementary; auxiliary
+anecdote|n.|a short personal story
+anomalous|adj.|deviating from the norm
+aria|n.|a solo song in an opera
+artisan|n.|a skilled craftsperson
+authoritarian|adj.|demanding strict obedience
+bland|adj.|lacking flavor or interest
+cessation|n.|a stopping
+deplete|v.|to use up
+distort|v.|to twist out of shape; to misrepresent
+energize|v.|to give energy to
+erode|v.|to wear away gradually
+exhaustive|adj.|thorough and complete
+galvanize|v.|to shock or excite into action
+inadvertent|adj.|unintentional
+jabber|v.|to talk rapidly and unintelligibly
+jargon|n.|specialized language of a group
+mural|n.|a painting on a wall
+obsess|v.|to preoccupy continually
+pivot|n./v.|a central point; to turn
+plethora|n.|an excess
+recount|v.|to tell; to count again
+rhetoric|n.|the art of persuasion; showy but insincere language
+sinister|adj.|threatening evil
+stipulate|v.|to demand as part of an agreement
+subordinate|adj./n.|lower in rank
+tense|adj./v./n.|tight; anxious; a verb form
+## 2.18
+affix|v.|to attach
+avert|v.|to prevent; to turn away
+babble|v./n.|to talk foolishly or rapidly
+bestow|v.|to give as an honor
+boon|n.|a blessing or benefit
+bustle|v./n.|to move busily
+cliché|n.|an overused expression
+coda|n.|a concluding section
+compendium|n.|a concise but comprehensive collection
+confound|v.|to confuse; to prove wrong
+craven|adj.|cowardly
+cumbersome|adj.|bulky and awkward
+diverge|v.|to separate and go different ways
+elucidate|v.|to make clear
+emanate|v.|to come out from a source
+exemplify|v.|to be a typical example of
+ferment|v./n.|to undergo chemical breakdown; agitation or unrest
+fluctuate|v.|to rise and fall irregularly
+fluency|n.|ease and skill in expression
+indict|v.|to formally accuse
+ingenious|adj.|clever and inventive
+nocturnal|adj.|active at night
+perpetrate|v.|to commit (a crime)
+pique|v./n.|to stimulate (interest); irritation
+rectify|v.|to correct
+respiration|n.|breathing
+shackle|n./v.|a chain; to restrain
+submissive|adj.|meekly obedient
+tedious|adj.|boring and long
+wary|adj.|cautious
+## 2.19
+antidote|n.|a remedy that counteracts poison or a problem
+apprehension|n.|anxiety; understanding; arrest
+ascendant|adj.|rising in power
+autopsy|n.|an examination of a body after death
+aversion|n.|a strong dislike
+calamity|n.|a disaster
+curtail|v.|to cut short or reduce
+cynical|adj.|distrustful of others' motives
+delineate|v.|to describe precisely; to outline
+discredit|v.|to damage the reputation or credibility of
+dispel|v.|to drive away (doubt or fear)
+dissipate|v.|to disperse; to waste
+divergent|adj.|differing; moving apart
+innovate|v.|to introduce new methods
+jeopardize|v.|to put at risk
+lofty|adj.|high; noble; haughty
+misrepresent|v.|to give a false account of
+negate|v.|to nullify; to deny
+pathological|adj.|relating to disease; compulsive
+potency|n.|power or strength
+resilient|adj.|able to recover quickly
+resonant|adj.|deep and echoing; evoking feelings
+savory|adj.|salty or spicy rather than sweet; morally acceptable
+subside|v.|to become less intense; to sink
+temperament|n.|a person's nature
+thrifty|adj.|careful with money
+unearth|v.|to dig up; to discover
+vertigo|n.|dizziness
+vigor|n.|physical or mental strength
+wane|v.|to decrease
+## 2.20
+brittle|adj.|hard but easily broken
+caricature|n./v.|an exaggerated portrayal
+clique|n.|an exclusive small group
+coercion|n.|persuasion by force or threat
+commensurate|adj.|proportionate
+cull|v.|to select; to remove (weak animals)
+decipher|v.|to decode
+dogma|n.|beliefs held as unquestionably true
+dupe|v./n.|to deceive; a victim of deception
+ebb|v./n.|to recede; to decline
+fawn|v./n.|to flatter excessively; a young deer
+flattery|n.|excessive praise
+impart|v.|to give or communicate
+impeccable|adj.|flawless
+intrepid|adj.|fearless
+libel|n.|a false published statement damaging reputation
+perpetuate|v.|to cause to continue
+peruse|v.|to read carefully (often misused for "skim")
+predetermine|v.|to decide in advance
+reciprocate|v.|to respond in kind
+relinquish|v.|to give up
+relish|v./n.|to enjoy greatly
+renounce|v.|to formally give up
+repel|v.|to drive back; to disgust
+rift|n.|a crack; a break in relations
+savor|v.|to enjoy fully
+secrete|v.|to produce and release (a substance); to hide
+shimmer|v./n.|to shine with a wavering light
+spurious|adj.|false; not genuine
+unravel|v.|to undo; to solve; to fall apart
+## 2.21
+adversity|n.|difficulty or misfortune
+allude|v.|to refer indirectly
+apathy|n.|lack of interest
+calligraphy|n.|decorative handwriting
+colossal|adj.|huge
+corrosive|adj.|gradually destructive
+daunt|v.|to intimidate
+deduce|v.|to conclude by reasoning
+delusion|n.|a false belief
+detrimental|adj.|harmful
+diligent|adj.|hardworking and careful
+dormant|adj.|inactive but able to become active
+foresight|n.|the ability to predict and plan
+impede|v.|to obstruct
+incarcerate|v.|to imprison
+innate|adj.|inborn
+irrational|adj.|not logical
+loathe|v.|to hate
+luminous|adj.|glowing; brilliant
+lurk|v.|to remain hidden
+monumental|adj.|great in importance or size
+obnoxious|adj.|extremely unpleasant
+preamble|n.|an introduction
+rancid|adj.|spoiled
+repress|v.|to restrain; to suppress
+serendipity|n.|happy accident
+sporadic|adj.|occurring irregularly
+subdue|v.|to overcome; to quiet
+thwart|v.|to prevent from succeeding
+travail|n.|painful effort
+## 2.22
+abate|v.|to lessen
+arrogance|n.|exaggerated self-importance
+bourgeois|adj./n.|middle-class; conventional and materialistic
+conspicuous|adj.|easily noticed
+contentious|adj.|causing argument
+cryptic|adj.|mysterious
+disparate|adj.|fundamentally different
+dissident|n./adj.|one who opposes official policy
+endemic|adj.|native to or regularly found in a place
+exalt|v.|to praise highly; to elevate
+hackneyed|adj.|overused
+incite|v.|to provoke
+inert|adj.|inactive
+infraction|n.|a violation
+legislate|v.|to make laws
+levee|n.|an embankment against flooding
+lucrative|adj.|profitable
+meek|adj.|quiet and submissive
+overt|adj.|open and obvious
+parable|n.|a moral story
+podium|n.|a raised platform
+porous|adj.|full of tiny holes
+rejuvenate|v.|to make young or fresh again
+replenish|v.|to refill
+ruthless|adj.|without mercy
+scamp|n.|a mischievous person
+stigma|n.|a mark of disgrace
+stint|n./v.|a period of work; to be stingy
+tranquil|adj.|calm
+whimsical|adj.|playfully fanciful

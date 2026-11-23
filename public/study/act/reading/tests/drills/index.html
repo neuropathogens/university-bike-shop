@@ -1,0 +1,656 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light">
+<script>try{document.documentElement.setAttribute("data-theme",localStorage.getItem("apah.theme")==="dark"?"dark":"light")}catch(e){document.documentElement.setAttribute("data-theme","light")}</script>
+<title>ACT Reading Drills: The Eleven Rules</title>
+<meta name="description" content="ACT Reading Volume 1 drills: 37 questions on eleven short passages, one drill per rule, each with a worked explanation of the evidence and the traps.">
+<link rel="icon" href="/favicon.ico" sizes="48x48" type="image/x-icon">
+<link rel="icon" href="/icon.svg" sizes="any" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-icon.png" sizes="180x180">
+<link rel="preload" href="/study/ap/ap-art-history/fonts/LM-regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/study/katex/katex.min.css">
+<style>
+@font-face{font-family:"Latin Modern";font-style:normal;font-weight:400;font-display:swap;src:url("/study/ap/ap-art-history/fonts/LM-regular.woff2") format("woff2")}
+@font-face{font-family:"Latin Modern";font-style:italic;font-weight:400;font-display:swap;src:url("/study/ap/ap-art-history/fonts/LM-italic.woff2") format("woff2")}
+@font-face{font-family:"Latin Modern";font-style:normal;font-weight:600 700;font-display:swap;src:url("/study/ap/ap-art-history/fonts/LM-bold.woff2") format("woff2")}
+@font-face{font-family:"Latin Modern";font-style:italic;font-weight:600 700;font-display:swap;src:url("/study/ap/ap-art-history/fonts/LM-bold-italic.woff2") format("woff2")}
+@font-face{font-family:"Latin Modern Mono";font-style:normal;font-weight:400 500;font-display:swap;src:url("/study/ap/ap-art-history/fonts/LM-mono.woff2") format("woff2")}
+@font-face{font-family:"Latin Modern Mono";font-style:normal;font-weight:600 700;font-display:swap;src:url("/study/ap/ap-art-history/fonts/LM-mono-bold.woff2") format("woff2")}
+
+:root{--bg:#fff;--fg:#000;--muted:#4a4a4a;--line:#c9c9c9;--plate:#f5f5f3;--hl:#fbe9a6;--link:#00008b;--ok:#1d5e20;--bad:#9b1c1c;
+  --serif:"Latin Modern","Computer Modern Serif","CMU Serif",Georgia,serif;--mono:"Latin Modern Mono","SFMono-Regular",Menlo,Consolas,monospace;
+  --gutter:clamp(16px,4vw,40px);color-scheme:light}
+:root[data-theme=dark]{--bg:#111110;--fg:#ecebe6;--muted:#a3a29c;--line:#34342f;--plate:#1b1b19;--hl:#4d4320;--link:#9db4ff;--ok:#8fd394;--bad:#ff9b9b;color-scheme:dark}
+*{box-sizing:border-box}
+html{background:var(--bg);scroll-padding-top:16px}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--serif);font-size:17px;line-height:1.5;font-kerning:normal;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+button,input,textarea{font:inherit;color:inherit}
+button{cursor:pointer}
+button:disabled{cursor:default}
+a{color:var(--link);text-underline-offset:3px;text-decoration-thickness:.5px}
+:focus-visible{outline:2px solid var(--link);outline-offset:2px}
+[hidden]{display:none!important}
+.sc{font-variant:small-caps;text-transform:lowercase;letter-spacing:.04em}
+.muted{color:var(--muted)}
+.katex{font-size:1.04em;text-rendering:auto}
+.katex-display{margin:.7em 0;overflow-x:auto;overflow-y:hidden;padding:2px 0}
+
+.runhead{display:flex;flex-wrap:wrap;justify-content:space-between;gap:4px 16px;max-width:1480px;margin:0 auto;padding:14px var(--gutter) 6px;font-size:14px;font-style:italic;color:var(--muted)}
+.runhead a{text-decoration:none}
+.runhead a:hover{text-decoration:underline}
+.runhead-actions{display:flex;flex-wrap:wrap;gap:4px 18px}
+.theme-btn{background:none;border:0;padding:0;font:inherit;font-style:italic;color:var(--link)}
+.theme-btn:hover{text-decoration:underline}
+.rule{max-width:1480px;margin:0 auto;padding-inline:var(--gutter)}
+.rule hr{margin:0;border:0;border-top:.5px solid var(--fg)}
+
+.wrap{max-width:860px;margin:0 auto;padding:0 var(--gutter) 80px}
+.title{text-align:center;padding:34px 0 22px}
+.title h1{margin:0;text-wrap:balance;font-size:clamp(32px,6vw,46px);line-height:1.1;font-weight:700}
+.title .sub{margin:8px 0 0;font-size:18px;font-variant:small-caps;letter-spacing:.03em}
+.title .meta{margin:4px 0 0;font-style:italic;color:var(--muted)}
+
+.tabs{display:flex;justify-content:center;gap:0;margin:0 0 26px;border-bottom:.5px solid var(--fg)}
+.tab{background:none;border:0;border-bottom:2.5px solid transparent;padding:8px 18px;margin-bottom:-1px;font-size:17px;color:var(--muted)}
+.tab[aria-selected=true]{color:var(--fg);border-bottom-color:var(--fg);font-weight:700}
+.tab:hover{color:var(--fg)}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:40px;padding:0 16px;border:1px solid var(--fg);background:var(--bg);font-family:var(--mono);font-size:14.5px;white-space:nowrap}
+.btn:hover:not(:disabled){background:var(--plate)}
+.btn:disabled{opacity:.35}
+.btn--solid{background:var(--fg);color:var(--bg)}
+.btn--solid:hover:not(:disabled){background:var(--fg);opacity:.85}
+.btn--lg{min-height:48px;font-size:15.5px;padding:0 22px}
+.kbd{display:inline-grid;place-items:center;min-width:22px;height:22px;padding:0 4px;border:1px solid currentColor;font-family:var(--mono);font-size:12px;opacity:.8}
+
+/* booktabs tables */
+.bt{border-collapse:collapse;margin:0 auto;font-variant-numeric:tabular-nums}
+.bt th,.bt td{padding:4px 12px;text-align:center;font-weight:400}
+.bt th[scope=row],.bt thead th:first-child{text-align:left}
+.bt thead tr{border-top:1px solid var(--fg);border-bottom:.5px solid var(--fg)}
+.bt tbody tr:last-child{border-bottom:1px solid var(--fg)}
+.bt-wrap{overflow-x:auto;margin:0 0 16px}
+
+/* setup */
+.setup{border-bottom:1.5px solid var(--fg);padding:4px 0 22px;display:grid;gap:18px}
+.setup h2,.results h2,.fr h2{margin:0;font-size:20px}
+.choice-row{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.choice{display:flex;flex-direction:column;align-items:flex-start;gap:2px;padding:12px 14px;border:1px solid var(--fg);background:var(--bg);text-align:left}
+.choice b{font-size:17px}
+.choice span{font-size:14.5px;font-style:italic;color:var(--muted)}
+.choice[aria-pressed=true]{background:var(--fg);color:var(--bg)}
+.choice[aria-pressed=true] span{color:var(--bg);opacity:.8}
+.checks{display:flex;flex-wrap:wrap;gap:8px 22px}
+.checks label{display:inline-flex;align-items:center;gap:8px;cursor:pointer}
+.checks input{width:17px;height:17px;margin:0;accent-color:var(--fg)}
+.setup-actions{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.note{margin:0;font-size:15px;color:var(--muted);font-style:italic}
+
+/* run */
+.bar{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:4px 16px;font-size:15px;color:var(--muted)}
+.track{height:3px;background:var(--line);margin:8px 0 14px}
+.track span{display:block;height:100%;background:var(--fg);transition:width .2s ease}
+.nav{display:grid;grid-template-columns:repeat(auto-fill,minmax(34px,1fr));gap:5px;margin:0 0 22px}
+.nav button{height:32px;padding:0;border:1px solid var(--line);background:var(--bg);font-family:var(--serif);font-size:14px;font-variant-numeric:tabular-nums}
+.nav button:hover{border-color:var(--fg)}
+.nav .is-answered{background:var(--plate);border-color:var(--fg)}
+.nav .is-right{background:var(--fg);color:var(--bg);border-color:var(--fg)}
+.nav .is-wrong{border:1.5px dashed var(--bad);color:var(--bad)}
+.nav .is-current{outline:2px solid var(--fg);outline-offset:1px}
+.q{border-top:1.5px solid var(--fg);padding-top:16px}
+.q-eyebrow{margin:0 0 6px;font-size:14px;color:var(--muted)}
+.q-prompt{margin:0 0 14px;font-size:20px;line-height:1.45;font-weight:400}
+.opts{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.opt{display:flex;align-items:center;gap:12px;width:100%;min-height:52px;padding:10px 14px;border:1px solid var(--fg);background:var(--bg);text-align:left;font-size:16.5px;line-height:1.4}
+.opt:hover:not(:disabled){background:var(--plate)}
+.opt .kbd{flex:none}
+.opt .mark{margin-left:auto;padding-left:6px;font-family:var(--mono);font-size:14px;white-space:nowrap}
+.opt.is-picked{border-width:2px;padding:9px 13px;background:var(--plate)}
+.opt.is-right{background:var(--fg);color:var(--bg);border-color:var(--fg)}
+.opt.is-wrong{border:1.5px dashed var(--bad);color:var(--bad);text-decoration:line-through;text-decoration-thickness:1px}
+.opt.is-wrong .mark,.opt.is-wrong .kbd{text-decoration:none}
+.opt.is-dim{opacity:.5}
+.fb{margin:14px 0 0;padding:12px 16px;border:.5px solid var(--fg);border-left:3px solid var(--ok)}
+.fb.is-wrong{border-left-color:var(--bad)}
+.fb p{margin:0}
+.fb .verdict{font-weight:700;margin-bottom:4px}
+.why p{margin:0 0 6px}
+.steps{margin:2px 0 8px;padding-left:22px}
+.steps li{margin:4px 0;padding-left:2px}
+.why .why-h{margin:10px 0 2px;font-size:14.5px;color:var(--muted)}
+.others{margin:0 0 4px;padding-left:20px}
+.others li{margin:5px 0}
+.others .tag{margin-left:6px;font-family:var(--mono);font-size:12.5px;color:var(--bad);white-space:nowrap}
+.links{margin-top:6px;font-size:15px}
+.step{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:10px;margin-top:20px}
+.step-right{display:flex;flex-wrap:wrap;gap:8px}
+.confirm{margin-top:14px;padding:12px 16px;border:1px solid var(--fg);display:flex;flex-wrap:wrap;align-items:center;gap:10px}
+.confirm p{margin:0;flex:1 1 220px}
+.keys{margin:18px 0 0;font-size:13.5px;color:var(--muted);text-align:center}
+.restart-line{margin:10px 0 0;font-size:14.5px;text-align:center}
+
+/* results */
+.results{padding-top:4px}
+.score{text-align:center;padding:10px 0 18px}
+.score-big{margin:0;font-size:clamp(48px,10vw,72px);font-weight:700;line-height:1;font-variant-numeric:tabular-nums}
+.score p{margin:6px 0 0}
+.res-actions{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin:0 0 22px}
+.res-filter{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:6px;border-bottom:1.5px solid var(--fg);padding-bottom:6px}
+.res-list{list-style:none;margin:0;padding:0}
+.res-list>li{border-bottom:.5px solid var(--line)}
+.res-list>li:last-child{border-bottom:1.5px solid var(--fg)}
+.res-list details{padding:10px 0}
+.res-list summary{display:grid;grid-template-columns:34px 22px minmax(0,1fr);gap:8px;cursor:pointer;list-style:none}
+.res-list summary::-webkit-details-marker{display:none}
+.res-n{font-weight:700;font-variant-numeric:tabular-nums}
+.res-ok{color:var(--ok);font-weight:700}
+.res-bad{color:var(--bad);font-weight:700}
+.res-body{padding:8px 0 4px 64px;font-size:15.5px}
+.res-body p{margin:0 0 4px}
+.res-body .bt-wrap{margin:4px 0 8px}
+.topics{margin:0 0 26px}
+.topics h2{margin:0 0 8px}
+.topics .bt{margin:0;width:100%}
+.topics .bt td:last-child,.topics .bt th:last-child{text-align:left}
+.topics .flag{color:var(--bad);font-style:italic}
+.composite{margin:0 0 26px;padding:12px 16px;border:.5px solid var(--fg);border-left:3px solid var(--fg)}
+.composite p{margin:0}
+.composite p+p{margin-top:4px}
+
+/* free response */
+.fr-intro{margin:0 0 6px;font-style:italic;color:var(--muted)}
+.fr{border-top:1.5px solid var(--fg);padding:18px 0 26px}
+.fr h2 small{font-weight:400;font-style:italic;color:var(--muted);font-size:15px;margin-left:6px}
+.fr-stem{margin:10px 0 6px;text-align:justify;hyphens:auto;-webkit-hyphens:auto}
+.part{margin:18px 0 0}
+.part-prompt{margin:0 0 8px}
+.part-prompt b{margin-right:4px}
+.part textarea{width:100%;min-height:150px;padding:12px 14px;border:1px solid var(--fg);border-radius:0;background:var(--bg);font-family:var(--serif);font-size:16.5px;line-height:1.55;resize:vertical}
+.part-meta{margin-top:4px;font-size:14px;color:var(--muted)}
+.sol{margin-top:12px;padding:12px 18px;border:.5px solid var(--fg)}
+.sol h3{margin:0 0 4px;font-size:15px}
+.sol p{margin:0 0 10px}
+.sol .crit{display:grid;grid-template-columns:28px minmax(0,1fr);gap:2px 8px;margin:0 0 10px;font-size:15.5px}
+.sol .crit dt{font-weight:700}
+.sol .crit dd{margin:0}
+.mark-row{display:flex;flex-wrap:wrap;align-items:center;gap:8px;font-size:15px}
+.seg{display:inline-flex;flex-wrap:wrap;max-width:100%;padding:1px 0 0 1px}
+.seg button{margin:-1px 0 0 -1px;min-width:44px;min-height:36px;padding:0 10px;border:1px solid var(--fg);background:var(--bg);font-family:var(--mono);font-size:14px}
+.seg button[aria-pressed=true]{position:relative;background:var(--fg);color:var(--bg)}
+.fr-actions{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:10px;margin-top:16px}
+.fr-score{font-size:16px}
+.fr-score b{font-variant-numeric:tabular-nums}
+.scale{margin-top:14px}
+.scale summary{cursor:pointer;font-size:15px;color:var(--muted);font-style:italic}
+.scale .bt{margin:8px 0 0}
+.scale .bt td:last-child,.scale .bt th:last-child{text-align:left}
+.foot{margin-top:40px;padding-top:12px;border-top:.5px solid var(--line);font-size:14px;color:var(--muted)}
+
+@media (max-width:640px){
+  .runhead-title{display:none}
+  .runhead-actions{width:100%;justify-content:space-between}
+  .title{padding:22px 0 16px}
+  .choice-row{grid-template-columns:1fr}
+  .q-prompt{font-size:18.5px}
+  .res-body{padding-left:0}
+  .keys{display:none}
+  .fr-stem{text-align:left}
+  .bt th,.bt td{padding:4px 7px}
+  .sol{padding:10px 12px}
+  .katex-display>.katex{font-size:.94em}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+@media print{.runhead,.rule,.tabs,.nav,.step,.keys,.restart-line,.res-actions{display:none!important}}
+/* generic quiz additions */
+.q-prompt p{margin:0}
+.q-prompt p+p{margin-top:8px}
+.q-ask{margin:10px 0 0!important;font-size:16px;font-style:italic;color:var(--muted)}
+.blank{display:inline-block;width:3.4em;height:1em;margin:0 .12em;border-bottom:1.5px solid currentColor;vertical-align:-.12em}
+.stim{position:relative;margin:0 0 16px;padding:12px 16px;border:.5px solid var(--fg);background:var(--plate);font-size:16.5px;line-height:1.55;max-height:60vh;overflow:auto}
+.stim-h{margin:0 0 6px!important;font-size:14px;color:var(--muted)}
+.stim p{margin:0 0 8px}
+.stim p:last-child{margin-bottom:0}
+u.ul{text-decoration-thickness:1px;text-underline-offset:3px}
+.qn{display:inline-block;min-width:1.4em;padding:0 .2em;margin:0 .15em;border:.5px solid var(--fg);font:600 11.5px/1.4 system-ui,-apple-system,sans-serif;text-align:center;vertical-align:.12em;font-variant-numeric:tabular-nums}
+.stim .qn[data-cur]{background:var(--fg);color:var(--bg)}
+.stim u[data-cur]{background:var(--hl);box-shadow:0 0 0 2px var(--hl)}
+.stim .ln{display:inline-block;min-width:1.3em;padding:0 .25em;margin-right:.25em;border:.5px solid var(--line);color:var(--muted);font:500 11px/1.4 system-ui,-apple-system,sans-serif;text-align:center;vertical-align:.12em;font-variant-numeric:tabular-nums}
+.stim .ln[data-cur]{background:var(--hl);color:var(--fg);border-color:var(--fg)}
+.stim-intro{font-style:italic;color:var(--muted);font-size:15px}
+.stim-sub{margin-top:12px!important}
+.stim-note{font-size:15px;color:var(--muted)}
+.tool{margin:0 0 10px;padding:6px 0 6px 12px;border-left:3px solid var(--muted);font-size:15px;color:var(--muted)}
+.fig .figcap{margin:0 0 6px;font-size:15px}
+.stim.free{max-height:none;overflow:visible}
+.bt th[colspan]{text-align:center}
+.fig-after{margin:12px 0 4px}
+.fig-after img{max-width:min(100%,420px);max-height:340px;width:auto;object-fit:contain}
+.stim .figcap{text-align:center;font-size:15px;margin:10px 0 4px}
+.stim .fig{margin:6px 0 10px}
+.stim .bt-wrap{margin:0 0 10px}
+.fig-img,.opt-img{max-width:100%;height:auto;background:#fff}
+.opt-img{display:block;max-width:140px}
+:root[data-theme=dark] .fig-img,:root[data-theme=dark] .opt-img{filter:invert(.92) hue-rotate(180deg)}
+.fig{margin:0 0 14px;text-align:center}
+.fig img{max-width:100%;height:auto;background:#fff}
+:root[data-theme=dark] .fig img{filter:invert(.92) hue-rotate(180deg)}
+.fig figcaption{font-size:14px;color:var(--muted);font-style:italic}
+.target{margin:4px 0 0;font-style:italic}
+.res-sum{display:block}
+.opt>span:nth-child(2){flex:1 1 auto;min-width:0;overflow-wrap:anywhere;-webkit-hyphens:auto;hyphens:auto}
+@media (max-width:640px){.opt .mark{white-space:normal;text-align:right;max-width:6.2em;line-height:1.25}}
+.sol>div{margin:0 0 10px}
+.crit-pts{margin:0 0 10px;font-size:15.5px}
+.crit-pts p{margin:0 0 4px}
+.crit-pts ul{margin:0 0 4px;padding-left:20px}
+</style>
+</head>
+<body>
+<div class="runhead"><span class="runhead-title">ACT Reading &middot; The Eleven Rules: Drills</span><span class="runhead-actions"><a href="/study/#act-reading">&larr;&nbsp;Study Library</a><a href="/study/act/reading/act-reading-1-study-guide.pdf">PDF version</a><button type="button" class="theme-btn" id="theme-btn">Dark mode</button></span></div>
+<div class="rule"><hr></div>
+
+<main class="wrap">
+  <header class="title">
+    <h1>The Eleven Rules: <span style="white-space:nowrap">Drills</span></h1>
+    <p class="sub">ACT Reading &middot; Volume 1</p>
+    <p class="meta">37 questions &middot; eleven drills, one per rule</p>
+  </header>
+
+  <section id="mc"></section>
+  <section id="fr" role="tabpanel" aria-labelledby="tab-fr" hidden></section>
+
+  <p class="foot">From <a href="/study/act/reading/act-reading-1-study-guide.pdf"><i>ACT Reading, Volume 1</i></a> (PDF). Answers and rule tags are the volume&rsquo;s own key; the explanations expand on it with the method, the evidence in the passage, and why each wrong choice is wrong. Boxed numbers in a passage are the printed line numbers the questions cite. Your answers are saved only in this browser.</p>
+</main>
+
+<script id="data" type="application/json">{"meta":{"key":"study.act-reading.drills.v1","setupNote":"Read each passage once, actively, before its questions. Boxed numbers in the passage are the line numbers the questions cite.","topicPrefix":"Rule ","topicCol":"Rule","guideCol":"In the study guide","byTopic":"By rule","topicNote":"Two or more misses on one rule: reread that rule in the study guide, then redo its drill.","guide":"/study/act/reading/act-reading-1-study-guide.pdf","guideName":"the study guide"},"topics":{"1":{"name":"Stated details","page":7},"2":{"name":"Inference","page":8},"3":{"name":"Central ideas, themes, and summaries","page":9},"4":{"name":"Relationships: cause, sequence, comparison","page":10},"5":{"name":"Word meaning in context","page":11},"6":{"name":"Word choice, tone, and connotation","page":12},"7":{"name":"Text structure and the function of parts","page":13},"8":{"name":"Purpose and point of view","page":14},"9":{"name":"Arguments: claims, evidence, reasoning","page":15},"10":{"name":"Synthesis across paired passages","page":16},"11":{"name":"Integrating text with charts and tables (VQI)","page":17}},"sections":{"1":"Drill 1: Social science","2":"Drill 2: Literary narrative","3":"Drill 3: Humanities","4":"Drill 4: Natural science","5":"Drill 5: Social science","6":"Drill 6: Humanities (memoir)","7":"Drill 7: Social science","8":"Drill 8: Natural science","9":"Drill 9: Social science","10":"Drill 10: Paired passages","11":"Drill 11: Social science (with table)"},"stims":{"u1":{"title":"Drill 1 &middot; Social science","html":"<p class=\"stim-intro\">This passage is original and describes a fictional town.<\/p><p>When the Marlow Falls Public Library added a shelf of lendable tools in 2019, the head librarian, Dana Ruiz, expected the drills and ladders to be the most popular items. They were not. In the program’s first year, the most frequently borrowed item was a soil-testing kit, followed by a sewing machine and a set of folding tables. Ruiz attributes the pattern to cost and frequency: people who drill holes do so often enough to buy a drill, she argues, while a gardener might test soil once a season and a family might need twelve folding tables once a year. The library now chooses new items by surveying patrons about what they would use “rarely but urgently.” Late fees, which the library eliminated for books in 2021, still apply to tools, a policy Ruiz defends on the grounds that a missing tile saw, unlike a missing novel, can delay another family’s repair.<\/p>"},"u2":{"title":"Drill 2 &middot; Literary narrative","html":"<p class=\"stim-intro\">This passage is an original story.<\/p><p>Ellis had rehearsed the speech on the bus, twice, and once more in the elevator, so that by the time he reached the fourth floor the words had worn smooth as coins. He knocked. His sister opened the door holding a dish towel, and for a moment neither of them said anything at all. Behind her, the apartment looked exactly as he had imagined it would—the same faded rug their mother had refused to throw out, the same crooked lamp—except that the walls, which in his imagination had been bare, were covered with his own drawings from childhood, framed.<\/p><p>“You’re early,” she said. He had meant to begin with an apology. Instead he heard himself ask where she had found the one of the lighthouse, and she laughed, and stepped aside to let him in.<\/p>"},"u3":{"title":"Drill 3 &middot; Humanities","html":"<p class=\"stim-intro\">This passage is original.<\/p><p>For most of the twentieth century, museums treated the backs of paintings as storage space—a place for inventory numbers, shipping labels, and the occasional pencil note from a framer. Conservators now treat them as documents. A customs stamp can reveal when a painting crossed a border; a dealer’s label can fill a gap in its ownership history; a sketch on the reverse of a canvas can show what an artist abandoned before beginning the work on the front.<\/p><p>This shift has practical consequences. When a painting is relined—backed with a new canvas to strengthen it—the old reverse is often covered permanently. Some museums now photograph every reverse before such treatment, and a few have begun displaying selected paintings in freestanding cases so that visitors can walk around them. The back of a painting, once the least looked-at part of the object, is becoming part of what the museum shows.<\/p>"},"u4":{"title":"Drill 4 &middot; Natural science","html":"<p class=\"stim-intro\">This passage is original.<\/p><p>Each spring, the snowpack on a mountain range acts as a reservoir, releasing water gradually as it melts. In recent decades, warmer winters in many western ranges have caused more precipitation to fall as rain rather than snow. Rain runs off immediately, so rivers fed by these ranges now peak earlier in the year—sometimes in March rather than June—and carry less water in late summer, when farms and cities need it most.<\/p><p>Dust compounds the problem. When wind deposits dust from dry lowlands onto the snow, the darkened surface absorbs more sunlight and melts sooner, in some basins by several weeks. Dust can therefore shift the timing of runoff even in a year when total snowfall is normal. By contrast, a cool spring with heavy late-season storms can delay melt and partly offset both effects, though such springs have become less common.<\/p>"},"u5":{"title":"Drill 5 &middot; Social science","html":"<p class=\"stim-intro\">This passage is original and describes a fictional town.<\/p><p>The town council’s plan to reopen the old rail depot as a market drew a <span class=\"ln\" data-qs=\"14\" aria-label=\"line 1\">1<\/span>cool reception at first. Residents worried about parking, about noise, about the cost. But the council’s chair, who had spent thirty years running a hardware store on Main Street, understood that objections are often a form of attention, and attention can be <span class=\"ln\" data-qs=\"15\" aria-label=\"line 4\">4<\/span>cultivated. She held six open meetings in the depot itself, let residents walk the platform, and posted every estimate—including the unflattering ones—on the town website. By the time the council voted, the plan’s most vocal critics had become its most <span class=\"ln\" data-qs=\"16\" aria-label=\"line 7\">7<\/span>exacting supporters, pressing for details on vendor fees and weekend hours rather than whether the market should exist at all.<\/p>"},"u6":{"title":"Drill 6 &middot; Humanities (memoir)","html":"<p class=\"stim-intro\">This passage is original.<\/p><p>My grandfather’s workshop was not so much organized as <span class=\"ln\" data-qs=\"17\" aria-label=\"line 1\">1<\/span>negotiated. Every jar of screws, every coil of wire, had arrived at its place through some long-forgotten compromise between convenience and memory, and he could find anything in it in the dark. After he died, my aunt hired a company to <span class=\"ln\" data-qs=\"18\" aria-label=\"line 4\">4<\/span>“clear the space.” They were efficient. In an afternoon they reduced fifty years of negotiation to a swept concrete floor and four tidy contractor bags. I don’t blame them; it was the job she asked for. <span class=\"ln\" data-qs=\"19\" aria-label=\"line 6\">6<\/span>But I have never since heard the word <i>efficient<\/i> without hearing, beneath it, the faint scrape of a broom.<\/p>"},"u7":{"title":"Drill 7 &middot; Social science","html":"<p class=\"stim-intro\">This passage is original; the experiment described is a well-known study in behavioral economics.<\/p><p>Economists long assumed that people value a dollar saved the same as a dollar earned, no matter the circumstances. Shoppers suggest otherwise.<\/p><p>In one well-known experiment, people were asked whether they would drive across town to save &#36;5 on a &#36;15 calculator. Most said yes. Asked whether they would make the same drive to save &#36;5 on a &#36;125 jacket, most said no. <span class=\"ln\" data-qs=\"21\" aria-label=\"line 5\">5<\/span>The savings were identical; only the comparison point had changed.<\/p><p>Findings like this helped launch behavioral economics, a field that treats such inconsistencies not as random errors but as predictable patterns. Its practical influence is now wide: retirement plans that enroll workers automatically, cafeterias that place fruit at eye level, and utility bills that compare a household’s energy use with its neighbors’ all draw on the idea that the way a choice is framed shapes the choice people make.<\/p>"},"u8":{"title":"Drill 8 &middot; Natural science","html":"<p class=\"stim-intro\">This passage is original.<\/p><p>It has become fashionable to describe the octopus as an alien intelligence—a mind that evolved along a path so separate from ours that understanding it may be impossible. The description is vivid, and it is not entirely wrong; the last common ancestor of octopuses and humans was probably a simple wormlike creature that lived more than 500 million years ago. But the “alien” label can excuse a kind of laziness. Octopuses solve problems, recognize individual people, and appear to play, and each of these behaviors can be studied with the same patient methods researchers use on <span class=\"ln\" data-qs=\"25\" aria-label=\"line 7\">7<\/span>crows and chimpanzees. Calling a mind alien is a way of declaring the investigation finished before it has properly begun.<\/p>"},"u9":{"title":"Drill 9 &middot; Social science","html":"<p class=\"stim-intro\">This passage is original and describes a fictional city.<\/p><p>Cities that want more people to bicycle usually start by painting lanes. <span class=\"ln\" data-qs=\"28\" aria-label=\"line 1\">1<\/span>Paint is cheap, fast, and visible, and it lets officials point to new miles of “bike infrastructure” at the end of a budget year. But paint does not change who rides. Surveys in many cities have found that most residents say they would cycle more if they felt safe, and that a painted line beside fast traffic does not make them feel safe. When the city of Lindgren replaced four miles of painted lanes with lanes separated from traffic by curbs, ridership on those streets roughly tripled within two years, while ridership on comparable painted-lane streets barely changed. Separated lanes cost more per mile. A city that builds fewer miles of them, however, may get more riders for its money than a city that paints many miles no one uses.<\/p>"},"u10":{"title":"Drill 10 &middot; Paired passages","html":"<p class=\"stim-intro\">Both passages are original.<\/p><p class=\"stim-sub\"><b>Passage A<\/b><\/p><p>The research on homework in the early grades is remarkably consistent: for young children, the link between time spent on homework and achievement is weak, and sometimes nonexistent. What homework reliably produces at that age is conflict—over the kitchen table, at the end of a long day, between tired children and tired parents. An eight-year-old’s evening has better uses: reading for pleasure, playing outside, sleeping. Schools that have dropped homework in the elementary grades report few complaints once families adjust. The burden of proof belongs to those who would keep it.<\/p><p class=\"stim-sub\"><b>Passage B<\/b><\/p><p>Critics of elementary homework are right about one thing: piles of worksheets do young children no good. But the case against homework usually measures it only by test scores, and test scores were never its main purpose in the early grades. Ten or fifteen minutes of practice teaches a child to start a task without being told and to finish it without being watched—habits that matter enormously later on. It also gives parents a nightly window into what their child is learning. The answer to bad homework is better homework, and less of it, not none at all.<\/p>"},"u11":{"title":"Drill 11 &middot; Social science (with table)","html":"<p class=\"stim-intro\">This passage and its data are original and describe a fictional library system.<\/p><p>Libraries are often described as losing ground to screens. The Halvorsen County Library’s figures complicate that story. In-person visits fell sharply in 2022, when branches operated on reduced hours, and have since recovered most—but not all—of the lost ground. Print checkouts have declined steadily. Yet e-book loans have grown so quickly that total circulation, print and digital combined, is now higher than it was a decade ago. The library’s director argues that the building’s role is shifting from warehouse to meeting place: fewer people come in to borrow a book, but more come in to use a study room, attend a class, or get help with a form.<\/p>"}},"mc":[{"n":1,"prompt":"According to the passage, the most frequently borrowed item in the program’s first year was:","options":["a drill.","a sewing machine.","a soil-testing kit.","a set of folding tables."],"answer":2,"sec":"1","topic":"1","stim":"u1","ex":{"idea":"Detail questions: the answer is stated in the passage. Find the sentence, then match the choice to it word for word.","steps":["Locate “most frequently borrowed”: “the most frequently borrowed item was a soil-testing kit, followed by a sewing machine and a set of folding tables.”","The passage states it directly: the soil-testing kit."],"others":{"0":"drills are what Ruiz <i>expected<\/i> to be popular; the passage says “They were not.”","1":"the sewing machine came second (“followed by”).","3":"the folding tables came third."}}},{"n":2,"prompt":"The passage states that Ruiz explains the borrowing pattern in terms of:","options":["how much items cost and how often people need them.","how heavily the library advertised each item.","how heavy or difficult to carry each item is.","the ages of the patrons who borrowed most often."],"answer":0,"sec":"1","topic":"1","stim":"u1","ex":{"idea":"Find the sentence that explains the pattern and paraphrase it; the right answer restates it.","steps":["“Ruiz attributes the pattern to cost and frequency.”","She explains: people who drill often buy a drill; a gardener tests soil once a season. That is cost and how often an item is needed."],"others":{"1":"advertising is never mentioned.","2":"weight or ease of carrying is never mentioned.","3":"patron ages are never mentioned."}}},{"n":3,"prompt":"According to the passage, the library still charges late fees for tools because:","options":["tools are more expensive to replace than books.","a late tool can hold up another patron’s project.","the fees pay for new items on the tool shelf.","patrons asked the library to keep the fees."],"answer":1,"sec":"1","topic":"1","stim":"u1","ex":{"idea":"Trap to watch for: a choice that is plausible in real life but never stated. The answer must come from the passage.","steps":["The passage gives Ruiz’s reason: “a missing tile saw, unlike a missing novel, can delay another family’s repair.”","Paraphrase: a late tool can hold up another patron’s project."],"others":{"0":"plausible in real life, but the passage never mentions replacement cost.","2":"the passage never says what the fees pay for.","3":"patrons were surveyed about what to stock, not about fees."}}},{"n":4,"prompt":"It can most reasonably be inferred that Ellis and his sister:","options":["had been out of contact, with some unresolved tension between them.","had lived together in the apartment until recently.","were meeting for the first time as adults.","disagreed about whether to keep their mother’s rug."],"answer":0,"sec":"2","topic":"2","stim":"u2","ex":{"idea":"Inference: the answer is not stated but must follow from several clues taken together, not from outside assumptions.","steps":["Clues: Ellis rehearsed a speech three times, planned to “begin with an apology,” and neither spoke at first when the door opened.","A rehearsed apology and an awkward silence point to time apart and something unresolved between them."],"others":{"1":"contradicted: he is visiting her apartment and had to imagine what it looked like.","2":"contradicted: they share a mother and he has childhood drawings on her walls.","3":"over-reads one detail; the rug is their mother’s, and no disagreement is described."}}},{"n":5,"prompt":"The detail that the sister’s walls were covered with Ellis’s framed childhood drawings most strongly suggests that she:","options":["was preparing to sell the drawings.","resented Ellis for leaving the drawings behind.","had recently taken up framing as a hobby.","had continued to value her connection to Ellis."],"answer":3,"sec":"2","topic":"2","stim":"u2","ex":{"idea":"For “suggests” questions, ask what the detail most directly shows about the character. Prefer the modest reading the text supports.","steps":["The sister framed Ellis’s childhood drawings and covered her walls with them.","Keeping and displaying them shows she still valued her connection to him, even during their time apart."],"others":{"0":"nothing suggests a sale; she hung them on her own walls.","1":"framing and displaying the drawings is the opposite of resentment.","2":"nothing mentions a framing hobby; the point is whose drawings they are."}}},{"n":6,"prompt":"Ellis’s question about the lighthouse drawing, in place of the apology he had planned, suggests that:","options":["he no longer believed he owed his sister an apology.","the meeting took a warmer, less rehearsed turn than he expected.","he had forgotten his speech because he was nervous.","his sister had asked him not to apologize."],"answer":1,"sec":"2","topic":"2","stim":"u2","ex":{"idea":"When a character departs from a plan, ask what the change shows about the moment, not about the character’s whole outlook.","steps":["He meant to begin with an apology; instead he asked a spontaneous question about the lighthouse drawing.","She laughed and let him in: the meeting became warmer and less scripted than he expected."],"others":{"0":"over-reaches: skipping the apology at that moment does not mean he no longer feels sorry.","2":"the passage says he “heard himself ask,” which suggests a spontaneous response, not nervous forgetting.","3":"she never asks him not to apologize."}}},{"n":7,"prompt":"Which of the following best states the main idea of the passage?","options":["Relining damages paintings and should be abandoned by museums.","Customs stamps are the most reliable source of a painting’s ownership history.","Museums have come to value the backs of paintings as historical records, which has changed how they treat and display them.","Artists frequently abandoned sketches on the backs of their canvases."],"answer":2,"sec":"3","topic":"3","stim":"u3","ex":{"idea":"Main idea: the answer must cover the whole passage, every paragraph, not just one detail.","steps":["Paragraph 1: museums now treat the backs of paintings as historical documents.","Paragraph 2: this shift changes how they treat (photograph before relining) and display (freestanding cases) paintings. Only C covers both."],"others":{"0":"the passage never says relining should be abandoned.","1":"customs stamps are one example among several, and “most reliable” is never claimed.","3":"a single detail from paragraph 1, not the main idea."}}},{"n":8,"prompt":"The main idea of the second paragraph is that:","options":["relining is the best way to strengthen an old painting.","visitors prefer freestanding cases to traditional wall displays.","photographs of a painting’s reverse can replace the original.","the new view of paintings’ backs has led to changes in museum practice."],"answer":3,"sec":"3","topic":"3","stim":"u3","ex":{"idea":"A paragraph’s main idea is often in its first sentence; the rest supports it.","steps":["Paragraph 2 opens: “This shift has practical consequences.”","It then lists them: photographing reverses, freestanding display cases. The main idea is that the new view changed museum practice."],"others":{"0":"the passage describes relining but never ranks it as the best method.","1":"visitor preference is never measured.","2":"photographs are taken before treatment; they do not replace the original."}}},{"n":9,"prompt":"Which summary of the passage is most accurate?","options":["Once overlooked, the backs of paintings are now studied for the history they record, and some museums preserve and even exhibit them.","Museums have stopped relining paintings because the process covers important labels.","Conservators first learned to read customs stamps in the early twentieth century.","Most museum visitors now prefer to see the backs of paintings."],"answer":0,"sec":"3","topic":"3","stim":"u3","ex":{"idea":"A good summary is accurate and complete: it covers every paragraph and adds nothing the passage does not say.","steps":["Paragraph 1: backs were overlooked, now studied as records. Paragraph 2: some museums photograph and even exhibit them.","A states both without exaggerating."],"others":{"1":"“stopped relining” is too strong; museums photograph before relining.","2":"wrong time: for most of the twentieth century the backs were treated as storage.","3":"visitor preference is never measured."}}},{"n":10,"prompt":"According to the passage, rivers fed by these mountain ranges now peak earlier in the year because:","options":["farms and cities withdraw more water in the spring.","more precipitation falls as rain, which runs off immediately.","late-season storms have become more common.","dust reduces the total amount of snowfall."],"answer":1,"sec":"4","topic":"4","stim":"u4","ex":{"idea":"Cause–effect questions: trace the chain in the passage step by step and pick the link that answers “because.”","steps":["Chain: warmer winters → more precipitation as rain → rain runs off immediately → rivers peak earlier.","So the cause is more rain, which runs off right away."],"others":{"0":"the passage mentions farms and cities needing water in late summer, not withdrawing more in spring.","2":"reverses the text: cool springs with late storms “have become less common.”","3":"dust changes the timing of melt, not the amount of snowfall (“even in a year when total snowfall is normal”)."}}},{"n":11,"prompt":"According to the passage, dust on snow speeds melting because it:","options":["adds weight that compresses the snowpack.","reduces the amount of snow that falls.","carries warm air from the lowlands.","darkens the surface so that it absorbs more sunlight."],"answer":3,"sec":"4","topic":"4","stim":"u4","ex":{"idea":"Match the mechanism the passage states; reject mechanisms it never mentions.","steps":["“the darkened surface absorbs more sunlight and melts sooner.”","So dust speeds melting by darkening the surface."],"others":{"0":"weight is never mentioned.","1":"dust does not reduce snowfall.","2":"warm air is never mentioned; dust comes from dry lowlands but the mechanism is sunlight."}}},{"n":12,"prompt":"The passage indicates that, compared with dust deposits, a cool spring with heavy late-season storms:","options":["has the opposite effect on the timing of snowmelt.","has a larger effect on total snowfall.","occurs more often than it used to.","affects only rivers in dry lowlands."],"answer":0,"sec":"4","topic":"4","stim":"u4","ex":{"idea":"Comparison questions: signal words such as “By contrast” tell you the relationship.","steps":["“By contrast, a cool spring with heavy late-season storms can delay melt.”","Dust makes melt come sooner; a cool spring makes it come later. The effects on timing are opposite."],"others":{"1":"the passage never compares effects on total snowfall.","2":"reverses the text: such springs “have become less common.”","3":"the dry lowlands are where dust comes from; nothing limits the storms’ effect to them."}}},{"n":13,"prompt":"Which sequence of events is consistent with the passage?","options":["Dust falls <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>→<\/mo><\/mrow><annotation encoding=\"application/x-tex\">\\rightarrow<\/annotation><\/semantics><\/math><\/span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.3669em;\"><\/span><span class=\"mrel\">→<\/span><\/span><\/span><\/span> snowfall increases <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>→<\/mo><\/mrow><annotation encoding=\"application/x-tex\">\\rightarrow<\/annotation><\/semantics><\/math><\/span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.3669em;\"><\/span><span class=\"mrel\">→<\/span><\/span><\/span><\/span> rivers peak later","Late-summer water shortages <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>→<\/mo><\/mrow><annotation encoding=\"application/x-tex\">\\rightarrow<\/annotation><\/semantics><\/math><\/span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.3669em;\"><\/span><span class=\"mrel\">→<\/span><\/span><\/span><\/span> warmer winters <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>→<\/mo><\/mrow><annotation encoding=\"application/x-tex\">\\rightarrow<\/annotation><\/semantics><\/math><\/span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.3669em;\"><\/span><span class=\"mrel\">→<\/span><\/span><\/span><\/span> more rain","Warmer winters <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>→<\/mo><\/mrow><annotation encoding=\"application/x-tex\">\\rightarrow<\/annotation><\/semantics><\/math><\/span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.3669em;\"><\/span><span class=\"mrel\">→<\/span><\/span><\/span><\/span> more rain and less snow <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>→<\/mo><\/mrow><annotation encoding=\"application/x-tex\">\\rightarrow<\/annotation><\/semantics><\/math><\/span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.3669em;\"><\/span><span class=\"mrel\">→<\/span><\/span><\/span><\/span> earlier river peaks <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>→<\/mo><\/mrow><annotation encoding=\"application/x-tex\">\\rightarrow<\/annotation><\/semantics><\/math><\/span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.3669em;\"><\/span><span class=\"mrel\">→<\/span><\/span><\/span><\/span> less late-summer flow","Earlier river peaks <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>→<\/mo><\/mrow><annotation encoding=\"application/x-tex\">\\rightarrow<\/annotation><\/semantics><\/math><\/span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.3669em;\"><\/span><span class=\"mrel\">→<\/span><\/span><\/span><\/span> more snow <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>→<\/mo><\/mrow><annotation encoding=\"application/x-tex\">\\rightarrow<\/annotation><\/semantics><\/math><\/span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.3669em;\"><\/span><span class=\"mrel\">→<\/span><\/span><\/span><\/span> cooler springs"],"answer":2,"sec":"4","topic":"4","stim":"u4","ex":{"idea":"Sequence questions: causes come before effects. Check each arrow against the passage.","steps":["Paragraph 1: warmer winters → more rain, less snow → rivers peak earlier → less water in late summer.","C follows that order exactly."],"others":{"0":"dust speeds melt; it does not increase snowfall or make rivers peak later.","1":"puts the effect (late-summer shortages) before its causes.","3":"reverses cause and effect, and “more snow” contradicts the passage."}}},{"n":14,"prompt":"As it is used in <span style=\"white-space:nowrap\">line 1<\/span>, the word <i>cool<\/i> most nearly means:","options":["fashionable.","unenthusiastic.","slightly cold.","composed."],"answer":1,"sec":"5","topic":"5","stim":"u5","ex":{"idea":"Word in context: cover the word, read the sentence and its neighbors, and predict a substitute before looking at the choices.","steps":["Next sentence: “Residents worried about parking, about noise, about the cost.”","A reception full of worries is lukewarm: “unenthusiastic.”"],"others":{"0":"the slang meaning of “cool”; it does not fit a worried reception.","2":"the literal temperature meaning.","3":"“composed” describes a calm person, not a reaction to a plan."}}},{"n":15,"prompt":"As it is used in <span style=\"white-space:nowrap\">line 4<\/span>, the word <i>cultivated<\/i> most nearly means:","options":["farmed.","refined.","developed.","tolerated."],"answer":2,"sec":"5","topic":"5","stim":"u5","ex":{"idea":"Predict from context: what did the chair do to the residents’ attention?","steps":["She held open meetings, let residents walk the platform, and posted every estimate: she grew their attention into support.","“Cultivated” here means developed."],"others":{"0":"the farming meaning; nothing is planted.","1":"the “cultivated taste” meaning (sophisticated) does not fit attention being grown.","3":"she did more than tolerate attention; she encouraged it."}}},{"n":16,"prompt":"As it is used in <span style=\"white-space:nowrap\">line 7<\/span>, the word <i>exacting<\/i> most nearly means:","options":["punishing.","vengeful.","reluctant.","demanding and attentive to detail."],"answer":3,"sec":"5","topic":"5","stim":"u5","ex":{"idea":"Use the sentence’s own explanation: what the supporters did defines the word.","steps":["They were “pressing for details on vendor fees and weekend hours.”","So “exacting” means demanding and attentive to detail."],"others":{"0":"nothing suggests punishment.","1":"plays on “exact revenge,” a different sense of the word.","2":"they had become supporters, so they were not reluctant."}}},{"n":17,"prompt":"The author describes the workshop as “negotiated” (<span style=\"white-space:nowrap\">line 1<\/span>) primarily to suggest that its arrangement:","options":["developed gradually through the grandfather’s many small decisions.","was the subject of arguments between family members.","was too disorganized to be useful.","was planned by a professional organizer."],"answer":0,"sec":"6","topic":"6","stim":"u6","ex":{"idea":"When an author uses a surprising word, the next sentence usually explains it.","steps":["Next sentence: every jar and coil “had arrived at its place through some long-forgotten compromise between convenience and memory.”","“Negotiated” means the arrangement grew out of many small decisions over time."],"others":{"1":"takes “negotiated” literally; no family arguments are described.","2":"he could find anything in it in the dark, so it was useful.","3":"a professional organizer is the opposite of an arrangement built up over fifty years."}}},{"n":18,"prompt":"The author places “clear the space” (<span style=\"white-space:nowrap\">line 4<\/span>) in quotation marks most likely to:","options":["indicate that the phrase is a legal term.","accuse the aunt of being dishonest.","signal that the words belong to someone else and convey the author’s distance from their impersonal tone.","emphasize the author’s full agreement with the decision."],"answer":2,"sec":"6","topic":"6","stim":"u6","ex":{"idea":"Quotation marks around ordinary words often mark them as someone else’s language and signal the author’s distance from it.","steps":["“clear the space” is the company’s (or aunt’s) businesslike phrase for erasing fifty years of the workshop.","The quotation marks show the words are not the author’s and convey distance from their impersonal tone."],"others":{"0":"nothing marks it as a legal term.","1":"too harsh: the author says “I don’t blame them.”","3":"the closing image of the broom shows regret, not full agreement."}}},{"n":19,"prompt":"The tone of the final sentence (<span style=\"white-space:nowrap\">line 6<\/span>) is best described as:","options":["bitterly accusatory.","cheerfully nostalgic.","detached and clinical.","quietly rueful."],"answer":3,"sec":"6","topic":"6","stim":"u6","ex":{"idea":"Tone questions: choose the word that fits all the evidence; reject choices that are too strong or that miss the feeling.","steps":["The author does not blame anyone (“I don’t blame them”) but still hears “the faint scrape of a broom” behind the word “efficient.”","Quiet regret without accusation: “quietly rueful.”"],"others":{"0":"too strong; the author explicitly does not blame them.","1":"misses the sense of loss; nothing is cheerful.","2":"misses the feeling; the image is personal and emotional."}}},{"n":20,"prompt":"The second paragraph functions mainly to:","options":["introduce a counterargument to the passage’s main claim.","provide an example that illustrates the claim made in the first paragraph.","explain the history of behavioral economics.","show that shoppers’ decisions are random."],"answer":1,"sec":"7","topic":"7","stim":"u7","ex":{"idea":"Function questions ask what a part does for the passage: introduce, illustrate, contrast, or conclude.","steps":["Paragraph 1 claims that shoppers contradict the economists’ assumption.","Paragraph 2 gives the calculator-and-jacket experiment, an example that illustrates that claim."],"others":{"0":"the example supports the claim; it does not argue against it.","2":"the history of the field comes in paragraph 3.","3":"the passage says such choices are predictable patterns, not random."}}},{"n":21,"prompt":"The sentence in <span style=\"white-space:nowrap\">line 5<\/span> serves mainly to:","options":["clarify what makes the shoppers’ responses inconsistent.","suggest that the experiment was poorly designed.","introduce the field of behavioral economics.","argue that the jacket was overpriced."],"answer":0,"sec":"7","topic":"7","stim":"u7","ex":{"idea":"Ask what the sentence adds that the passage would be missing without it.","steps":["Before it: most would drive to save &#36;5 on a calculator but not on a jacket.","“The savings were identical; only the comparison point had changed” spells out why the answers are inconsistent."],"others":{"1":"nothing criticizes the experiment’s design.","2":"the field is introduced in the next paragraph.","3":"the jacket’s price is not judged."}}},{"n":22,"prompt":"Which of the following best describes the overall structure of the passage?","options":["Two theories are compared, and one is rejected.","A personal anecdote is followed by a general rule.","A traditional assumption is stated, challenged with evidence, and connected to a broader field and its applications.","A problem is described, and several solutions are ranked."],"answer":2,"sec":"7","topic":"7","stim":"u7","ex":{"idea":"Overall structure: label each paragraph’s job, then find the choice that matches the sequence.","steps":["¶1: a traditional assumption (a dollar is a dollar). ¶2: evidence that challenges it (the experiment). ¶3: the broader field and its applications.","C matches all three steps."],"others":{"0":"only one view is challenged; no two theories are compared.","1":"there is no personal anecdote; the experiment is a study.","3":"no problem is solved and no solutions are ranked."}}},{"n":23,"prompt":"The author’s main purpose in the passage is to:","options":["prove that octopuses are more intelligent than crows.","explain the evolutionary history of octopuses.","defend the description of octopuses as alien intelligences.","argue that calling octopus minds “alien” discourages the careful study they deserve."],"answer":3,"sec":"8","topic":"8","stim":"u8","ex":{"idea":"Purpose: look for the pivot (“But…”) and the final sentence; they usually state what the author is arguing.","steps":["Pivot: “But the ‘alien’ label can excuse a kind of laziness.” Final sentence: calling a mind alien declares the investigation finished too early.","Purpose: argue that the label discourages the careful study octopuses deserve."],"others":{"0":"the author never ranks octopuses against crows.","1":"evolutionary history is one supporting detail, not the goal.","2":"reverses the purpose: the author criticizes the description."}}},{"n":24,"prompt":"The author’s attitude toward the “alien intelligence” description is best described as:","options":["wholly approving.","partly accepting but ultimately critical.","indifferent.","openly contemptuous."],"answer":1,"sec":"8","topic":"8","stim":"u8","ex":{"idea":"Attitude questions: account for every signal, both praise and criticism.","steps":["Partial acceptance: “vivid” and “not entirely wrong.”","Then criticism: it “can excuse a kind of laziness.” Overall: partly accepting but ultimately critical."],"others":{"0":"ignores the criticism.","2":"the author clearly cares; the passage argues a position.","3":"too extreme: the author grants that the description is “not entirely wrong.”"}}},{"n":25,"prompt":"The author mentions crows and chimpanzees (<span style=\"white-space:nowrap\">line 7<\/span>) primarily to:","options":["suggest that octopus behavior can be studied with established methods.","argue that octopuses are closely related to birds and primates.","show that octopuses are less intelligent than other animals.","introduce a new topic for the rest of the passage."],"answer":0,"sec":"8","topic":"8","stim":"u8","ex":{"idea":"Purpose of a detail: ask how the detail helps the author’s argument.","steps":["The author says octopus behaviors “can be studied with the same patient methods researchers use on crows and chimpanzees.”","Mentioning them shows that established methods already exist and could apply to octopuses."],"others":{"1":"the passage says octopuses and humans share only a distant wormlike ancestor; no close relation is claimed.","2":"no intelligence ranking is made.","3":"the passage stays on octopuses; no new topic follows."}}},{"n":26,"prompt":"The author’s main claim is that:","options":["painted lanes are dangerous and should be removed.","surveys of residents are unreliable.","separated lanes may increase ridership more cost-effectively than painted lanes.","cities should stop funding bicycle infrastructure."],"answer":2,"sec":"9","topic":"9","stim":"u9","ex":{"idea":"Find the claim first: it is the arguable conclusion the evidence supports, often in the last sentence.","steps":["Final sentence: a city that builds fewer miles of separated lanes “may get more riders for its money” than one that paints many miles.","That is the claim: separated lanes may increase ridership more cost-effectively."],"others":{"0":"too extreme: the author never calls paint dangerous or says to remove it.","1":"the author uses surveys as support; they are never called unreliable.","3":"the author wants better infrastructure, not less funding."}}},{"n":27,"prompt":"Which evidence does the author use most directly to support the main claim?","options":["Paint is cheap and fast to apply.","Ridership on Lindgren’s separated-lane streets rose far more than on comparable painted-lane streets.","Officials can point to new miles of lanes at the end of a budget year.","Separated lanes cost more per mile."],"answer":1,"sec":"9","topic":"9","stim":"u9","ex":{"idea":"Evidence must connect directly to the specific claim: here, more riders per dollar from separated lanes.","steps":["The Lindgren comparison: ridership tripled on separated-lane streets but barely changed on comparable painted-lane streets.","That is the direct evidence that separated lanes get more riders."],"others":{"0":"explains why paint is appealing; it does not support the claim.","2":"also explains paint’s appeal to officials.","3":"a cost that cuts against separated lanes; the author concedes it."}}},{"n":28,"prompt":"The statement in <span style=\"white-space:nowrap\">line 1<\/span> (“Paint is cheap, fast, and visible”) functions in the argument as:","options":["the author’s main recommendation.","evidence that painted lanes increase ridership.","a statistic from a resident survey.","an acknowledgment of why the approach the author criticizes is appealing."],"answer":3,"sec":"9","topic":"9","stim":"u9","ex":{"idea":"Role of a statement: is it the claim, evidence, a concession, or a counterargument?","steps":["“Paint is cheap, fast, and visible” grants the strengths of the approach the author goes on to criticize.","The next sentence pivots: “But paint does not change who rides.” So it is a concession."],"others":{"0":"the author recommends separated lanes, not paint.","1":"it says nothing about ridership; the passage says paint does not change who rides.","2":"it is not a survey statistic."}}},{"n":29,"prompt":"Which of the following, if true, would most weaken the author’s argument?","options":["During the same two years, a new university campus opened along the separated-lane streets and attracted thousands of students.","Parents in Lindgren say they are more willing to let children ride on separated lanes.","Surveys in other cities also found that safety concerns keep residents from cycling.","Lindgren installed its painted lanes before it installed its separated lanes."],"answer":0,"sec":"9","topic":"9","stim":"u9","ex":{"idea":"To weaken an argument, attack the link between evidence and conclusion, often with another cause (a confound).","steps":["The argument: separated lanes caused ridership on those streets to triple.","A new campus along the same streets during the same two years is another possible cause of the jump, which weakens the link."],"others":{"1":"strengthens the safety argument.","2":"strengthens the survey evidence.","3":"irrelevant: the order of installation does not explain the ridership difference."}}},{"n":30,"prompt":"The author of Passage B would most likely respond to Passage A’s claim that homework has little link to achievement in the early grades by:","options":["disputing the research Passage A describes.","agreeing that homework should be eliminated.","arguing that achievement is not the main purpose of homework at that age.","claiming that test scores rise where homework is assigned."],"answer":2,"sec":"10","topic":"10","stim":"u10","ex":{"idea":"Response questions: use what the responding author actually says about the other’s kind of argument.","steps":["Passage B: the case against homework “measures it only by test scores, and test scores were never its main purpose in the early grades.”","So B would answer A’s achievement point by saying achievement is not homework’s main purpose at that age."],"others":{"0":"B never disputes the research; it changes what should be measured.","1":"B explicitly rejects eliminating homework (“not none at all”).","3":"B makes no claim that test scores rise."}}},{"n":31,"prompt":"Both authors would most likely agree that:","options":["large amounts of homework do not benefit young children.","homework teaches young children independence.","schools should eliminate homework in the elementary grades.","parents should help with homework every night."],"answer":0,"sec":"10","topic":"10","stim":"u10","ex":{"idea":"Agreement questions: the answer must be supported by both passages, not just one.","steps":["A opposes homework for young children. B concedes “piles of worksheets do young children no good” and wants “less of it.”","Both agree that large amounts do not help young children."],"others":{"1":"only Passage B makes this claim.","2":"only Passage A would agree; B rejects “none at all.”","3":"neither says parents should help every night; B mentions parents seeing what children learn."}}},{"n":32,"prompt":"Which choice best describes the relationship between the two passages?","options":["Passage B provides data that support Passage A’s conclusion.","Passage B concedes a point made in Passage A but argues for a different conclusion.","Passage A responds directly to arguments made in Passage B.","Both passages summarize research without taking a position."],"answer":1,"sec":"10","topic":"10","stim":"u10","ex":{"idea":"Relationship questions: state in one sentence how B treats A, then match.","steps":["B opens by conceding (“Critics… are right about one thing”) and then argues for better, lighter homework instead of none.","So B concedes a point but reaches a different conclusion."],"others":{"0":"B argues against A’s conclusion, not for it.","2":"reversed: B responds to the kind of argument A makes, not the other way around.","3":"both take clear positions."}}},{"n":33,"prompt":"Passage A evaluates homework mainly by its effects on ____, whereas Passage B emphasizes its effects on ____.","options":["cost; student enjoyment","teacher workload; test scores","long-term careers; class size","achievement and family time; work habits and parents’ insight"],"answer":3,"sec":"10","topic":"10","stim":"u10","ex":{"idea":"Two-blank contrast questions: each half must fit its own passage. Check both.","steps":["A judges homework by achievement and by family time (conflict at the kitchen table, better uses of the evening).","B judges it by work habits (starting and finishing tasks) and parents’ insight into learning."],"others":{"0":"neither passage discusses cost or enjoyment as its main measure.","1":"teacher workload is never discussed, and B rejects test scores as the main measure.","2":"neither discusses careers or class size."}}},{"n":34,"prompt":"According to Table 1, e-book loans in 2025 were approximately how many times their 2016 level?","options":["2","4","6","200"],"answer":1,"sec":"11","topic":"11","fig":"<div class=\"fig\"><p class=\"figcap\"><b>Table 1.<\/b> Halvorsen County Library activity (in thousands)<\/p><div class=\"bt-wrap\"><table class=\"bt\"><thead><tr><th scope=\"col\"><b>Year<\/b><\/th><th scope=\"col\"><b>In-person visits<\/b><\/th><th scope=\"col\"><b>Print checkouts<\/b><\/th><th scope=\"col\"><b>E-book loans<\/b><\/th><\/tr><\/thead><tbody><tr><th scope=\"row\">2016<\/th><td>410<\/td><td>520<\/td><td>60<\/td><\/tr><tr><th scope=\"row\">2019<\/th><td>395<\/td><td>480<\/td><td>120<\/td><\/tr><tr><th scope=\"row\">2022<\/th><td>250<\/td><td>400<\/td><td>230<\/td><\/tr><tr><th scope=\"row\">2025<\/th><td>370<\/td><td>360<\/td><td>260<\/td><\/tr><\/tbody><\/table><\/div><\/div>","stim":"u11","ex":{"idea":"Data-only questions: read the units and the rows, then compute. “How many times” means divide, not subtract.","steps":["E-book loans: 60 thousand in 2016, 260 thousand in 2025.","<span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>260<\/mn><mo>÷<\/mo><mn>60<\/mn><mo>≈<\/mo><mn>4.3<\/mn><\/mrow><annotation encoding=\"application/x-tex\">260 \\div 60 \\approx 4.3<\/annotation><\/semantics><\/math><\/span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7278em;vertical-align:-0.0833em;\"><\/span><span class=\"mord\">260<\/span><span class=\"mspace\" style=\"margin-right:0.2222em;\"><\/span><span class=\"mbin\">÷<\/span><span class=\"mspace\" style=\"margin-right:0.2222em;\"><\/span><\/span><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em;\"><\/span><span class=\"mord\">60<\/span><span class=\"mspace\" style=\"margin-right:0.2778em;\"><\/span><span class=\"mrel\">≈<\/span><span class=\"mspace\" style=\"margin-right:0.2778em;\"><\/span><\/span><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em;\"><\/span><span class=\"mord\">4.3<\/span><\/span><\/span><\/span>, about 4 times."],"others":{"0":"would be about 120, the 2019 level.","2":"would be 360 thousand.","3":"the difference in thousands (260 − 60), not the ratio."}}},{"n":35,"prompt":"Based on Table 1, in which year was combined print and e-book circulation highest?","options":["2016","2019","2022","2025"],"answer":2,"sec":"11","topic":"11","fig":"<div class=\"fig\"><p class=\"figcap\"><b>Table 1.<\/b> Halvorsen County Library activity (in thousands)<\/p><div class=\"bt-wrap\"><table class=\"bt\"><thead><tr><th scope=\"col\"><b>Year<\/b><\/th><th scope=\"col\"><b>In-person visits<\/b><\/th><th scope=\"col\"><b>Print checkouts<\/b><\/th><th scope=\"col\"><b>E-book loans<\/b><\/th><\/tr><\/thead><tbody><tr><th scope=\"row\">2016<\/th><td>410<\/td><td>520<\/td><td>60<\/td><\/tr><tr><th scope=\"row\">2019<\/th><td>395<\/td><td>480<\/td><td>120<\/td><\/tr><tr><th scope=\"row\">2022<\/th><td>250<\/td><td>400<\/td><td>230<\/td><\/tr><tr><th scope=\"row\">2025<\/th><td>370<\/td><td>360<\/td><td>260<\/td><\/tr><\/tbody><\/table><\/div><\/div>","stim":"u11","ex":{"idea":"Add the right columns for every year before comparing. Do not assume the latest year is the highest.","steps":["Print + e-book: 2016: 520 + 60 = 580; 2019: 480 + 120 = 600; 2022: 400 + 230 = 630; 2025: 360 + 260 = 620.","The peak is 2022."],"others":{"0":"580, the lowest total.","1":"600, lower than 2022.","3":"620: the most-recent-year trap; 2022 is higher."}}},{"n":36,"prompt":"The data in Table 1 most directly support which statement from the passage?","options":["“In-person visits …have since recovered most—but not all—of the lost ground.”","“more come in to use a study room, attend a class, or get help with a form.”","“the building’s role is shifting from warehouse to meeting place.”","“Libraries are often described as losing ground to screens.”"],"answer":0,"sec":"11","topic":"11","fig":"<div class=\"fig\"><p class=\"figcap\"><b>Table 1.<\/b> Halvorsen County Library activity (in thousands)<\/p><div class=\"bt-wrap\"><table class=\"bt\"><thead><tr><th scope=\"col\"><b>Year<\/b><\/th><th scope=\"col\"><b>In-person visits<\/b><\/th><th scope=\"col\"><b>Print checkouts<\/b><\/th><th scope=\"col\"><b>E-book loans<\/b><\/th><\/tr><\/thead><tbody><tr><th scope=\"row\">2016<\/th><td>410<\/td><td>520<\/td><td>60<\/td><\/tr><tr><th scope=\"row\">2019<\/th><td>395<\/td><td>480<\/td><td>120<\/td><\/tr><tr><th scope=\"row\">2022<\/th><td>250<\/td><td>400<\/td><td>230<\/td><\/tr><tr><th scope=\"row\">2025<\/th><td>370<\/td><td>360<\/td><td>260<\/td><\/tr><\/tbody><\/table><\/div><\/div>","stim":"u11","ex":{"idea":"Text–data integration: the table must actually show the statement, not merely be consistent with it.","steps":["In-person visits: 395 (2019) → 250 (2022) → 370 (2025).","370 is below 395, so visits recovered most but not all of the loss, exactly what the quoted sentence says."],"others":{"1":"the table does not measure study rooms, classes, or forms.","2":"an interpretation the table does not measure.","3":"describes what others say, not what the library’s data show."}}},{"n":37,"prompt":"Which additional data would best help evaluate the director’s argument that the library building is becoming a meeting place?","options":["The number of e-book titles in the catalog each year","The county’s population in 2016","The price the library pays for e-book licenses","Yearly class attendance and study-room bookings"],"answer":3,"sec":"11","topic":"11","fig":"<div class=\"fig\"><p class=\"figcap\"><b>Table 1.<\/b> Halvorsen County Library activity (in thousands)<\/p><div class=\"bt-wrap\"><table class=\"bt\"><thead><tr><th scope=\"col\"><b>Year<\/b><\/th><th scope=\"col\"><b>In-person visits<\/b><\/th><th scope=\"col\"><b>Print checkouts<\/b><\/th><th scope=\"col\"><b>E-book loans<\/b><\/th><\/tr><\/thead><tbody><tr><th scope=\"row\">2016<\/th><td>410<\/td><td>520<\/td><td>60<\/td><\/tr><tr><th scope=\"row\">2019<\/th><td>395<\/td><td>480<\/td><td>120<\/td><\/tr><tr><th scope=\"row\">2022<\/th><td>250<\/td><td>400<\/td><td>230<\/td><\/tr><tr><th scope=\"row\">2025<\/th><td>370<\/td><td>360<\/td><td>260<\/td><\/tr><\/tbody><\/table><\/div><\/div>","stim":"u11","ex":{"idea":"To evaluate a claim, pick data that measure the claim’s own terms.","steps":["The director’s claim: the building is becoming a meeting place.","Class attendance and study-room bookings measure meeting-place uses directly."],"others":{"0":"catalog size says nothing about how the building is used.","1":"a single year’s population says nothing about building use.","2":"license prices say nothing about building use."}}}],"fr":[]}</script>
+<script>
+(function(){
+"use strict";
+var DATA = JSON.parse(document.getElementById("data").textContent);
+var META = DATA.meta, MC = DATA.mc, FR = DATA.fr || [], TOP = DATA.topics || {}, SEC = DATA.sections || {}, STIM = DATA.stims || {}, BY = {};
+MC.forEach(function(q){ BY[q.n] = q; });
+var KEY = META.key, FKEY = META.fkey || META.key + ".fr", HAS_FR = FR.length > 0;
+
+function load(k, d){ try{ var v = localStorage.getItem(k); return v ? JSON.parse(v) : d; }catch(e){ return d; } }
+function save(k, v){ try{ localStorage.setItem(k, JSON.stringify(v)); }catch(e){} }
+function esc(s){ return String(s).replace(/[&<>"]/g, function(c){ return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]; }); }
+function shuffle(a){ a = a.slice(); for (var i = a.length - 1; i > 0; i--){ var j = Math.floor(Math.random() * (i + 1)); var t = a[i]; a[i] = a[j]; a[j] = t; } return a; }
+function range(n){ var a = []; for (var i = 0; i < n; i++) a.push(i); return a; }
+
+var S = load(KEY, null);
+if (!S || !S.phase || !S.order || S.order.some(function(n){ return !BY[n]; })) S = { phase: "setup", mode: "practice", shuffleQ: false, shuffleC: false, order: [], copt: {}, ans: {}, pos: 0, full: null };
+var confirmFinish = false;
+var mcEl = document.getElementById("mc");
+
+function start(nums){
+  var list = nums || MC.map(function(q){ return q.n; });
+  S.order = S.shuffleQ ? shuffle(list) : list.slice();
+  S.copt = {};
+  S.order.forEach(function(n){
+    var q = BY[n], idx = range(q.options.length);
+    S.copt[n] = (S.shuffleC && !q.fixed) ? shuffle(idx) : idx;
+  });
+  S.ans = {}; S.pos = 0; S.phase = "run"; confirmFinish = false;
+  save(KEY, S); render(); focusTop();
+}
+function focusTop(){ var t = document.querySelector(".tabs") || document.querySelector(".title"); if (t && t.getBoundingClientRect().top < 0) t.scrollIntoView(); }
+
+function stats(){
+  var right = 0, done = 0;
+  S.order.forEach(function(n){ if (n in S.ans){ done++; if (S.ans[n] === BY[n].answer) right++; } });
+  return { right: right, done: done, total: S.order.length };
+}
+function topicShort(t){ return (META.topicPrefix || "") + t; }
+function topicLabel(t){ return topicShort(t) + ", " + TOP[t].name; }
+function guideLink(t, short){
+  var g = TOP[t], txt = short ? g.name : topicLabel(t);
+  var href = g.url ? g.url : (META.guide && g.page ? META.guide + "#page=" + g.page : "");
+  return href ? '<a href="' + href + '">' + txt + "</a>" : txt;
+}
+function topicLinks(ts){
+  ts = ts.filter(function(t){ return TOP[t]; });
+  if (!ts.length || !(META.guide || TOP[ts[0]].url)) return "";
+  return '<p class="links">Review ' + ts.map(function(t){ return guideLink(t); }).join(" &middot; ") + " in " + META.guideName + "</p>";
+}
+function explain(q, picked){
+  var e = q.ex, h = '<div class="why"><p>' + e.idea + "</p>";
+  if (e.steps.length) h += '<ol class="steps">' + e.steps.map(function(s){ return "<li>" + s + "</li>"; }).join("") + "</ol>";
+  var rest = range(q.options.length).filter(function(i){ return i !== q.answer; });
+  if (typeof picked === "number" && picked !== q.answer) rest = [picked].concat(rest.filter(function(i){ return i !== picked; }));
+  h += '<p class="why-h sc">Why not the others</p><ul class="others">' + rest.map(function(i){
+    return "<li>" + quoted(q, i) + (i === picked ? '<span class="tag">your answer</span>' : "") + " &mdash; " + e.others[i] + "</li>";
+  }).join("") + "</ul></div>";
+  return h;
+}
+function quoted(q, i){ return q.labels ? q.labels[i] : "&ldquo;" + q.options[i] + "&rdquo;"; }
+function table(q){ return q.table ? '<div class="bt-wrap">' + q.table + "</div>" : ""; }
+function stim(q){
+  var s = q.stim && STIM[q.stim]; if (!s) return "";
+  var html = s.html.split(' data-q="' + q.n + '"').join(' data-q="' + q.n + '" data-cur')
+    .replace(/data-qs="([^"]*)"/g, function(m, l){ return (" " + l + " ").indexOf(" " + q.n + " ") >= 0 ? m + " data-cur" : m; });
+  return '<div class="stim' + (s.cls ? " " + s.cls : "") + '">' + (s.title ? '<p class="stim-h sc">' + s.title + "</p>" : "") + html + "</div>";
+}
+function scrollStim(root){
+  root.querySelectorAll(".stim").forEach(function(box){ var c = box.querySelector("[data-cur]"); if (c && box.scrollHeight > box.clientHeight) box.scrollTop = Math.max(0, c.offsetTop - box.clientHeight / 3); });
+}
+function promptHtml(q){
+  return stim(q) + (q.fig || "") + '<div class="q-prompt"><p>' + q.prompt + "</p>" + (q.ask || META.ask ? '<p class="q-ask">' + (q.ask || META.ask) + "</p>" : "") + "</div>" + table(q);
+}
+
+function renderSetup(){
+  mcEl.innerHTML =
+    '<div class="setup">' +
+      '<h2>How do you want to take it?</h2>' +
+      '<div class="choice-row">' +
+        '<button type="button" class="choice" data-mode="practice" aria-pressed="' + (S.mode === "practice") + '"><b>Practice</b><span>See the answer and why after each question</span></button>' +
+        '<button type="button" class="choice" data-mode="exam" aria-pressed="' + (S.mode === "exam") + '"><b>Exam</b><span>Answer everything, then see your score</span></button>' +
+      '</div>' +
+      '<div class="checks">' +
+        '<label><input type="checkbox" id="opt-sq"' + (S.shuffleQ ? " checked" : "") + '> Shuffle questions</label>' +
+        '<label><input type="checkbox" id="opt-sc"' + (S.shuffleC ? " checked" : "") + '> Shuffle answer choices</label>' +
+      '</div>' +
+      '<div class="setup-actions"><button type="button" class="btn btn--solid btn--lg" id="go">Start' + (HAS_FR ? " multiple choice" : "") + '</button></div>' +
+      '<p class="note">' + META.setupNote + " Keyboard: 1&ndash;" + Math.max.apply(null, MC.map(function(q){ return q.options.length; })) + " to answer, &larr; &rarr; to move, Enter for next.</p>" +
+    '</div>';
+  mcEl.querySelectorAll(".choice").forEach(function(b){ b.onclick = function(){ S.mode = b.dataset.mode; render(); }; });
+  document.getElementById("opt-sq").onchange = function(e){ S.shuffleQ = e.target.checked; };
+  document.getElementById("opt-sc").onchange = function(e){ S.shuffleC = e.target.checked; };
+  document.getElementById("go").onclick = function(){ start(); };
+}
+
+function renderRun(){
+  var n = S.order[S.pos], q = BY[n], st = stats(), practice = S.mode === "practice";
+  var picked = (n in S.ans) ? S.ans[n] : null, locked = practice && picked !== null;
+  var nav = S.order.map(function(m, i){
+    var c = [];
+    if (m in S.ans){ if (practice) c.push(S.ans[m] === BY[m].answer ? "is-right" : "is-wrong"); else c.push("is-answered"); }
+    if (i === S.pos) c.push("is-current");
+    return '<button type="button" class="' + c.join(" ") + '" data-go="' + i + '" aria-label="Question ' + (i + 1) + '"' + (i === S.pos ? ' aria-current="step"' : "") + ">" + (i + 1) + "</button>";
+  }).join("");
+  var opts = S.copt[n].map(function(oi, k){
+    var cls = ["opt"], mark = "";
+    if (locked){
+      if (oi === q.answer){ cls.push("is-right"); mark = oi === picked ? "&check; your answer" : "&check; correct"; }
+      else if (oi === picked){ cls.push("is-wrong"); mark = "&cross; your answer"; }
+      else cls.push("is-dim");
+    } else if (oi === picked) cls.push("is-picked");
+    return '<li><button type="button" class="' + cls.join(" ") + '" data-opt="' + oi + '"' + (locked ? " disabled" : "") + '><span class="kbd">' + (k + 1) + "</span><span>" + q.options[oi] + '</span><span class="mark">' + mark + "</span></button></li>";
+  }).join("");
+  var fb = "";
+  if (locked){
+    var ok = picked === q.answer, ans = quoted(q, q.answer);
+    fb = '<div class="fb' + (ok ? "" : " is-wrong") + '"><p class="verdict" role="status">' + (ok ? "Correct." : "Not quite. The answer is " + ans + (/[.?!](&rdquo;)?$/.test(ans) ? "" : ".")) + "</p>" + explain(q, picked) + (q.after || "") + topicLinks([q.topic]) + "</div>";
+  }
+  var last = S.pos === S.order.length - 1, allDone = st.done === st.total;
+  var nextBtn = last
+    ? '<button type="button" class="btn btn--solid" id="finish">' + (practice ? "See results" : "Finish test") + "</button>"
+    : '<button type="button" class="btn btn--solid" id="next">Next &rarr;</button>';
+  var finishEarly = (!last && !practice) ? '<button type="button" class="btn" id="finish">Finish test</button>' : (!last && practice && allDone ? '<button type="button" class="btn" id="finish">See results</button>' : "");
+  var conf = "";
+  if (confirmFinish){
+    var left = st.total - st.done;
+    conf = '<div class="confirm"><p>' + left + " question" + (left === 1 ? " is" : "s are") + " unanswered and will be marked wrong. Finish anyway?</p>" +
+      '<button type="button" class="btn" id="conf-no">Keep going</button><button type="button" class="btn btn--solid" id="conf-yes">Finish</button></div>';
+  }
+  var eyebrow = "Question " + q.n + (SEC[q.sec] ? " &middot; " + SEC[q.sec] : "") + (q.tag ? " &middot; " + q.tag : (q.topic ? " &middot; " + topicShort(q.topic) : ""));
+  mcEl.innerHTML =
+    '<div class="bar"><span>Question ' + (S.pos + 1) + " of " + st.total + " &middot; " + (practice ? "Practice" : "Exam") + " mode</span><span>" +
+      (practice ? st.right + " correct of " + st.done + " answered" : st.done + " of " + st.total + " answered") + "</span></div>" +
+    '<div class="track"><span style="width:' + (st.done / st.total * 100) + '%"></span></div>' +
+    '<nav class="nav" aria-label="Questions">' + nav + "</nav>" +
+    '<article class="q">' +
+      '<p class="q-eyebrow sc">' + eyebrow + "</p>" +
+      promptHtml(q) +
+      '<ol class="opts">' + opts + "</ol>" + fb +
+      '<div class="step"><button type="button" class="btn" id="prev"' + (S.pos === 0 ? " disabled" : "") + '>&larr; Back</button><span class="step-right">' + finishEarly + nextBtn + "</span></div>" +
+      conf +
+    "</article>" +
+    '<p class="keys"><span class="kbd">1</span>&ndash;<span class="kbd">' + q.options.length + '</span> answer &nbsp; <span class="kbd">&larr;</span> <span class="kbd">&rarr;</span> move &nbsp; <span class="kbd">Enter</span> next</p>' +
+    '<p class="restart-line"><a href="#" id="restart">Start over</a> <span class="muted">&middot; progress is saved in this browser</span></p>';
+
+  scrollStim(mcEl);
+  mcEl.querySelectorAll("[data-go]").forEach(function(b){ b.onclick = function(){ go(+b.dataset.go); }; });
+  mcEl.querySelectorAll("[data-opt]").forEach(function(b){ b.onclick = function(){ pick(+b.dataset.opt); }; });
+  bind("prev", function(){ go(S.pos - 1); });
+  bind("next", function(){ go(S.pos + 1); });
+  bind("finish", finish);
+  bind("conf-no", function(){ confirmFinish = false; render(); });
+  bind("conf-yes", function(){ confirmFinish = false; showResults(); });
+  bind("restart", function(e){ e.preventDefault(); S.phase = "setup"; save(KEY, S); render(); });
+}
+function bind(id, fn){ var el = document.getElementById(id); if (el) el.onclick = fn; }
+
+function pick(oi){
+  var n = S.order[S.pos];
+  if (S.mode === "practice" && (n in S.ans)) return;
+  S.ans[n] = oi; save(KEY, S); render();
+  if (S.mode === "practice"){ var fb = mcEl.querySelector(".fb"); if (fb && fb.getBoundingClientRect().bottom > innerHeight) fb.scrollIntoView({ block: "nearest" }); }
+}
+function go(i){
+  if (i < 0 || i >= S.order.length) return;
+  S.pos = i; confirmFinish = false; save(KEY, S); render();
+  var q = mcEl.querySelector(".q"); if (q && q.getBoundingClientRect().top < 0) q.scrollIntoView();
+}
+function finish(){
+  var st = stats();
+  if (st.done < st.total && !confirmFinish){ confirmFinish = true; render(); var c = mcEl.querySelector(".confirm"); if (c) c.scrollIntoView({ block: "nearest" }); return; }
+  showResults();
+}
+function showResults(){
+  S.phase = "results";
+  if (S.order.length === MC.length) S.full = stats().right;
+  save(KEY, S); render(); if (HAS_FR) renderFR(); focusTop();
+}
+
+/* composite score (only when the document defines one) */
+function frTotal(){
+  var t = 0;
+  for (var i = 0; i < FR.length; i++){ var s = frScore(FR[i]); if (s === null) return null; t += s; }
+  return t;
+}
+function frMax(){ return FR.reduce(function(a, f){ return a + frItemMax(f); }, 0); }
+function frOnlyTotal(){  /* free-response-only quizzes: running total of the marked questions */
+  var done = 0, got = 0, of = 0;
+  FR.forEach(function(f){ var s = frScore(f); if (s !== null){ done++; got += s; of += frItemMax(f); } });
+  if (!done) return "";
+  var line = done === FR.length
+    ? "Total: <b>" + got + " / " + of + "</b> (" + Math.round(got / of * 100) + "%)"
+    : "Marked so far: <b>" + got + " / " + of + "</b> on " + done + " of " + FR.length + " questions &middot; " + frMax() + " points in all";
+  return '<div class="composite" role="status"><p>' + line + "</p></div>";
+}
+function compositeHtml(){
+  var C = META.composite;
+  if (HAS_FR && !MC.length) return frOnlyTotal();
+  if (!C || !HAS_FR) return "";
+  var mc = (typeof S.full === "number") ? S.full : null, fr = frTotal(), fm = frMax(), mm = MC.length;
+  if (mc === null && fr === null) return "";
+  var lines = [];
+  if (mc === null) lines.push("Free response: <b>" + fr + " / " + fm + "</b>. Take the full multiple-choice part to get your composite score.");
+  else if (fr === null) lines.push("Multiple choice: <b>" + mc + " / " + mm + "</b>. Write and mark every free-response question to get your composite score.");
+  else {
+    var c = Math.round(C.mcWeight * mc / mm + C.frWeight * fr / fm), band = "";
+    for (var i = 0; i < C.bands.length; i++){ if (c >= C.bands[i][0]){ band = C.bands[i][1]; break; } }
+    lines.push("Composite score: <b>" + c + " / " + (C.mcWeight + C.frWeight) + "</b> &nbsp;<span class=\"muted\">= " + C.mcWeight + " &times; " + mc + "/" + mm + " + " + C.frWeight + " &times; " + fr + "/" + fm + "</span>");
+    if (band) lines.push(band);
+  }
+  return '<div class="composite" role="status">' + lines.map(function(l){ return "<p>" + l + "</p>"; }).join("") + "</div>";
+}
+function targetHtml(st){
+  var T = META.target, B = META.bands, h = "";
+  if (st.total !== MC.length) return "";
+  if (T) h += '<p class="target">' + T.label + ": " + T.mc + " / " + MC.length + " &middot; " + (st.right >= T.mc ? "met" : (T.mc - st.right) + " short") + "</p>";
+  if (B) for (var i = 0; i < B.length; i++){ if (st.right >= B[i][0]){ h += '<p class="target">' + B[i][1] + "</p>"; break; } }
+  return h;
+}
+
+var resFilter = "all";
+function renderResults(){
+  var st = stats(), pct = Math.round(st.right / st.total * 100), fullRun = st.total === MC.length;
+  var missed = S.order.filter(function(n){ return S.ans[n] !== BY[n].answer; });
+  var rows = S.order.map(function(n, i){
+    var q = BY[n], a = S.ans[n], ok = a === q.answer;
+    if (resFilter === "missed" && ok) return "";
+    return '<li><details><summary><span class="res-n">' + (i + 1) + '.</span><span class="' + (ok ? "res-ok" : "res-bad") + '" aria-label="' + (ok ? "correct" : "wrong") + '">' + (ok ? "&check;" : "&cross;") + '</span><span class="res-sum">' + q.prompt + "</span></summary>" +
+      '<div class="res-body">' + stim(q) + (q.fig || "") + table(q) + '<p><span class="sc">Your answer:</span> ' + (a === undefined ? "<i>skipped</i>" : q.options[a]) + "</p>" +
+      (ok ? "" : '<p><span class="sc">Correct:</span> ' + q.options[q.answer] + "</p>") +
+      explain(q, a) + (q.after || "") + topicLinks([q.topic]) + "</div></details></li>";
+  }).join("");
+  var tally = {};
+  S.order.forEach(function(n){ var t = BY[n].topic; if (!t) return; tally[t] = tally[t] || { right: 0, total: 0 }; tally[t].total++; if (S.ans[n] === BY[n].answer) tally[t].right++; });
+  var trows = Object.keys(TOP).filter(function(t){ return tally[t]; }).map(function(t){
+    var x = tally[t], miss = x.total - x.right;
+    return "<tr><th scope=\"row\">" + topicShort(t) + "</th><td>" + x.right + " / " + x.total + "</td><td>" + guideLink(t, true) +
+      ((META.flag ? x.right < META.flag.below * x.total : miss >= 2) ? ' <span class="flag">&middot; ' + (META.flag ? META.flag.text : "reread this section") + "</span>" : "") + "</td></tr>";
+  }).join("");
+  mcEl.innerHTML =
+    '<div class="results">' +
+      '<div class="score"><p class="score-big">' + st.right + " / " + st.total + "</p><p>" + pct + "% correct" + (fullRun ? "" : " &middot; retry of missed questions") + "</p>" + targetHtml(st) + "</div>" +
+      '<div class="res-actions">' +
+        (missed.length ? '<button type="button" class="btn btn--solid" id="retry">Retry the ' + missed.length + " missed</button>" : "") +
+        '<button type="button" class="btn" id="again">Take the full test again</button>' +
+        (HAS_FR ? '<button type="button" class="btn" id="to-fr">Go to free response</button>' : "") +
+      "</div>" +
+      compositeHtml() +
+      (trows ? '<div class="topics"><h2>' + (META.byTopic || "By topic") + '</h2><table class="bt"><thead><tr><th scope="col">' + (META.topicCol || "Topic") + '</th><th scope="col">Correct</th><th scope="col">' + (META.guideCol || "Guide section") + "</th></tr></thead><tbody>" + trows + "</tbody></table>" +
+        (META.topicNote ? '<p class="note" style="margin-top:6px">' + META.topicNote + "</p>" : "") + "</div>" : "") +
+      '<div class="res-filter"><h2>Review</h2><span><label><input type="checkbox" id="only-missed"' + (resFilter === "missed" ? " checked" : "") + "> Show missed only</label></span></div>" +
+      '<ul class="res-list">' + (rows || '<li><p class="note" style="padding:12px 0">Nothing missed.</p></li>') + "</ul>" +
+    "</div>";
+  bind("retry", function(){ start(missed); });
+  bind("again", function(){ S.phase = "setup"; save(KEY, S); render(); });
+  bind("to-fr", function(){ setTab("fr"); });
+  document.getElementById("only-missed").onchange = function(e){ resFilter = e.target.checked ? "missed" : "all"; render(); };
+}
+
+function render(){
+  if (S.phase === "run" && S.order.length) renderRun();
+  else if (S.phase === "results" && S.order.length) renderResults();
+  else { S.phase = "setup"; renderSetup(); }
+}
+
+/* free response: "epi" parts (E/P/I -> 0-4 per question) or "points" parts (0..max each) */
+var frEl = document.getElementById("fr"), F = load(FKEY, null);
+if (!F || typeof F !== "object") F = {};
+F.drafts = F.drafts || {}; F.marks = F.marks || {}; F.open = F.open || {};
+var LABELS = { 4: "Complete", 3: "Substantial", 2: "Developing", 1: "Minimal", 0: "" };
+function frItemMax(f){ return f.mode === "points" ? f.parts.reduce(function(a, p){ return a + p.max; }, 0) : 4; }
+function frScore(f){
+  if (f.mode === "points"){
+    var t = 0;
+    for (var j = 0; j < f.parts.length; j++){ var v = F.marks[f.n + f.parts[j].label]; if (v === undefined || v === "") return null; t += +v; }
+    return t;
+  }
+  var e = 0, p = 0;
+  for (var i = 0; i < f.parts.length; i++){
+    var m = F.marks[f.n + f.parts[i].label];
+    if (!m) return null;
+    if (m === "E") e++; else if (m === "P") p++;
+  }
+  if (e === 3) return 4;
+  if (e === 2 && p === 1) return 3;
+  if ((e === 2 && p === 0) || (e === 1 && p >= 1) || p === 3) return 2;
+  if ((e === 1 && p === 0) || (e === 0 && p === 2)) return 1;
+  return 0;
+}
+function words(t){ var m = t.trim().match(/\S+/g); return m ? m.length : 0; }
+var SCALE = '<details class="scale"><summary>How part scores convert to 0&ndash;4</summary><table class="bt"><thead><tr><th scope="col">Score</th><th scope="col">Label</th><th scope="col">Part scores (three parts, each E, P, or I)</th></tr></thead><tbody>' +
+  "<tr><td>4</td><td>Complete</td><td>three parts E</td></tr>" +
+  "<tr><td>3</td><td>Substantial</td><td>two parts E and one part P</td></tr>" +
+  "<tr><td>2</td><td>Developing</td><td>two E and no P; or one E and one or two P; or three P</td></tr>" +
+  "<tr><td>1</td><td>Minimal</td><td>one E and no P; or no E and two P</td></tr>" +
+  "<tr><td>0</td><td></td><td>anything less</td></tr></tbody></table></details>";
+function frScoreHtml(f){
+  var s = frScore(f), mx = frItemMax(f);
+  if (s === null) return '<span class="muted">Mark every part to score this question.</span>';
+  return "Score: <b>" + s + " / " + mx + "</b>" + (f.mode !== "points" && LABELS[s] ? " &middot; " + LABELS[s] : "");
+}
+function markButtons(f, p, id, m){
+  var vals = f.mode === "points" ? range(p.max + 1).map(String) : ["E", "P", "I"];
+  return vals.map(function(x){ return '<button type="button" data-mark="' + id + '" data-f="' + f.n + '" data-v="' + x + '" aria-pressed="' + (m === x) + '">' + x + "</button>"; }).join("");
+}
+function renderFR(){
+  if (!HAS_FR) return;
+  frEl.innerHTML = '<p class="fr-intro">' + META.frIntro + "</p>" +
+    FR.map(function(f){
+      var open = !!F.open[f.n];
+      var parts = f.parts.map(function(p){
+        var id = f.n + p.label, d = F.drafts[id] || "", m = (F.marks[id] === undefined ? "" : String(F.marks[id]));
+        var crit = f.mode === "points"
+          ? '<div class="crit-pts">' + p.rubric + "</div>"
+          : '<dl class="crit"><dt>E</dt><dd>if the response ' + p.e + "</dd><dt>P</dt><dd>if " + p.p + "</dd></dl>";
+        return '<div class="part"><p class="part-prompt"><b>(' + p.label + ")</b>" + p.prompt + "</p>" +
+          '<label class="sc" for="fr-' + id + '">Your answer to (' + p.label + ")</label>" +
+          '<textarea id="fr-' + id + '" data-fr="' + id + '" spellcheck="true">' + esc(d) + "</textarea>" +
+          '<p class="part-meta" id="wc-' + id + '">' + words(d) + " words &middot; saved in this browser</p>" +
+          '<div class="sol"' + (open ? "" : " hidden") + ' data-sol="' + f.n + '"><h3>Model solution (' + p.label + ")</h3><div>" + p.solution + "</div>" + crit +
+            '<div class="mark-row"><span>Your mark for (' + p.label + ")" + (f.mode === "points" ? ", out of " + p.max : "") + ':</span><span class="seg" role="group" aria-label="Mark for part ' + p.label + '">' + markButtons(f, p, id, m) + "</span></div></div></div>";
+      }).join("");
+      return '<article class="fr"><h2>' + (META.frWord || "Question") + " " + f.n + "<small>" + f.head + "</small></h2>" +
+        (f.stim ? stim(f) : "") + '<div class="fr-stem">' + f.stem + "</div>" + parts +
+        '<div class="fr-actions"><span class="fr-score" id="score-' + f.n + '">' + (open ? frScoreHtml(f) : "") + "</span>" +
+          '<button type="button" class="btn" data-open="' + f.n + '" aria-expanded="' + open + '">' + (open ? "Hide model solution" : "Show model solution and scoring") + "</button></div>" +
+        (open ? (f.mode === "points" ? "" : SCALE) + topicLinks(f.guide || []) : "") +
+        "</article>";
+    }).join("") + '<div id="fr-composite">' + compositeHtml() + "</div>";
+  frEl.querySelectorAll("textarea").forEach(function(t){
+    t.oninput = function(){ F.drafts[t.dataset.fr] = t.value; save(FKEY, F); document.getElementById("wc-" + t.dataset.fr).innerHTML = words(t.value) + " words &middot; saved in this browser"; };
+  });
+  frEl.querySelectorAll("[data-open]").forEach(function(b){
+    b.onclick = function(){ var n = b.dataset.open; F.open[n] = !F.open[n]; save(FKEY, F); renderFR(); var a = document.getElementById("score-" + n); if (a) a.closest(".fr").querySelector(".part").scrollIntoView({ block: "nearest" }); };
+  });
+  frEl.querySelectorAll("[data-mark]").forEach(function(b){
+    b.onclick = function(){
+      var id = b.dataset.mark; F.marks[id] = F.marks[id] === b.dataset.v ? "" : b.dataset.v; save(FKEY, F);
+      b.parentNode.querySelectorAll("button").forEach(function(x){ x.setAttribute("aria-pressed", String(F.marks[id] === x.dataset.v)); });
+      var f = FR.filter(function(x){ return String(x.n) === b.dataset.f; })[0];
+      document.getElementById("score-" + f.n).innerHTML = frScoreHtml(f);
+      document.getElementById("fr-composite").innerHTML = compositeHtml();
+      if (S.phase === "results") render();
+    };
+  });
+}
+
+/* tabs (only when there is a free-response part) */
+function setTab(t){
+  if (!HAS_FR) return;
+  var mc = t === "mc";
+  document.getElementById("tab-mc").setAttribute("aria-selected", String(mc));
+  document.getElementById("tab-fr").setAttribute("aria-selected", String(!mc));
+  mcEl.hidden = !mc; frEl.hidden = mc;
+  try{ history.replaceState(null, "", mc ? location.pathname : "#free-response"); }catch(e){}
+  focusTop();
+}
+if (HAS_FR){
+  document.getElementById("tab-mc").onclick = function(){ setTab("mc"); };
+  document.getElementById("tab-fr").onclick = function(){ setTab("fr"); };
+}
+
+/* keyboard */
+document.addEventListener("keydown", function(e){
+  if (e.metaKey || e.ctrlKey || e.altKey) return;
+  var tag = (e.target.tagName || "").toLowerCase();
+  if (tag === "textarea" || tag === "input") return;
+  if (mcEl.hidden || S.phase !== "run") return;
+  var n = S.order[S.pos], q = BY[n];
+  if (/^[1-9]$/.test(e.key)){ var k = +e.key - 1; if (k < q.options.length){ e.preventDefault(); pick(S.copt[n][k]); } }
+  else if (e.key === "ArrowRight"){ e.preventDefault(); go(S.pos + 1); }
+  else if (e.key === "ArrowLeft"){ e.preventDefault(); go(S.pos - 1); }
+  else if (e.key === "Enter" && tag !== "button" && tag !== "a"){ e.preventDefault(); if (S.pos < S.order.length - 1) go(S.pos + 1); else finish(); }
+});
+
+/* theme */
+var root = document.documentElement, tb = document.getElementById("theme-btn");
+function syncTheme(){ var dark = root.getAttribute("data-theme") === "dark"; tb.textContent = dark ? "Light mode" : "Dark mode"; tb.setAttribute("aria-pressed", String(dark)); }
+tb.onclick = function(){ var dark = root.getAttribute("data-theme") !== "dark"; root.setAttribute("data-theme", dark ? "dark" : "light"); try{ localStorage.setItem("apah.theme", dark ? "dark" : "light"); }catch(e){} syncTheme(); };
+syncTheme();
+
+render(); renderFR();
+if (HAS_FR && location.hash === "#free-response") setTab("fr");
+if (HAS_FR && !MC.length){ var tabsEl = document.querySelector(".tabs"); if (tabsEl) tabsEl.hidden = true; mcEl.hidden = true; frEl.hidden = false; }
+})();
+</script>
+</body>
+</html>

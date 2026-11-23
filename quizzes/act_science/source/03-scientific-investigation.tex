@@ -1,0 +1,322 @@
+\documentclass[11pt]{article}
+\usepackage{act-sci}
+\settitle{Scientific Investigation}
+\setsubtitle{Part 3 of 6 \textperiodcentered{} Reporting category: 17--31\% of the section}
+\settarget{$\geq$ 20 correct}
+\settime{30 min}
+
+\begin{document}
+\maketitleblock
+
+\begin{abstract}
+Scientific Investigation (SI) questions ask how an experiment was built rather than what it found: which variable was changed, which was held constant, why a step was included, how two experiments differ, which tool or method gives a better measurement, and what new trial would test a new question. On the enhanced ACT the category covers about 7--12 of the 40 questions and now includes engineering-design passages, where prototypes are judged against criteria and constraints. SI questions live almost entirely in the \emph{procedure} paragraphs that most students skim. This guide gives seven rules for reading those paragraphs like a lab designer, with a worked example and a trap for each, followed by drills on five original passages.
+\end{abstract}
+
+\scoringline
+
+\tableofcontents
+\clearpage
+
+%% =====================================================================
+\section{Rule SI-1: Sort every quantity into changed, measured, or fixed}
+
+\begin{rulebox}{SI-1}{Independent, dependent, controlled}
+\begin{itemize}
+\item \textbf{Independent variable:} what the experimenter \emph{deliberately changed}. Look for ``varied,'' ``was set to,'' ``different,'' or a value that differs between trials. It is usually the first table column or the $x$-axis.
+\item \textbf{Dependent variable:} what was \emph{measured} as the outcome. It fills the results column or the $y$-axis.
+\item \textbf{Controlled variables:} everything kept \emph{the same} in every trial of that experiment, so that only the independent variable could cause a difference.
+\end{itemize}
+A quantity can be controlled in one experiment and independent in the next. Always answer for the experiment the question names.
+\end{rulebox}
+
+\begin{workedex}
+``In Experiment 1, trays were kept at 10, 15, 20, or \SI{25}{\celsius}; each received \SI{10}{\milli\litre} of water daily.'' Temperature differs between trays, so it is independent. Water volume is identical, so it is controlled. Percent germination is what was counted, so it is dependent.
+\end{workedex}
+
+\section{Rule SI-2: A control group is a baseline, not a constant}
+
+\begin{rulebox}{SI-2}{Control group vs.\ controlled variable}
+A \textbf{control group} receives \emph{none} (or the standard level) of the treatment, so the effect of the treatment can be measured against it. A \textbf{controlled variable} is a condition held constant. ACT asks about both, and the wrong answers mix them up.\\
+Typical purpose of a control: ``to show what happens \emph{without} the factor being tested.'' Typical purpose of controlling a variable: ``so that any difference in results is due \emph{only} to the independent variable.''
+\end{rulebox}
+
+\trap{``To increase the sample size'' and ``to test a second hypothesis'' are the usual wrong reasons given for a control group. A control group exists to provide something to compare against.}
+
+\passage{Radish seed germination}
+\textbf{Experiment 1.} Four trays each held 50 radish seeds on moist paper. Trays were kept in darkness at 10, 15, 20, or \SI{25}{\celsius} and received \SI{10}{\milli\litre} of water daily. After 7 days the percent of seeds that had germinated was recorded (Table 1).
+
+\textbf{Experiment 2.} Four more trays of 50 seeds were kept in darkness at \SI{20}{\celsius} for 7 days but received 0, 5, 10, or \SI{20}{\milli\litre} of water daily (Table 2).
+
+\begin{minipage}[t]{0.48\linewidth}
+\figlabel{Table 1}
+\datatable{c c}{Temperature (\si{\celsius}) & Germinated (\%)\\\midrule 10 & 22\\ 15 & 58\\ 20 & 86\\ 25 & 90\\}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.48\linewidth}
+\figlabel{Table 2}
+\datatable{c c}{Water per day (mL) & Germinated (\%)\\\midrule 0 & \phantom{0}0\\ 5 & 64\\ 10 & 86\\ 20 & 40\\}
+\end{minipage}
+\passageend
+
+\begin{q}{1}{SI-1}{Temperature is the only condition that differs among the four trays in Experiment 1.}
+In Experiment 1, the independent variable was:
+\choices{temperature.}{percent of seeds germinated.}{volume of water added daily.}{number of seeds per tray.}
+\end{q}
+
+\begin{q}{3}{SI-1}{Water volume was \SI{10}{\milli\litre} for every tray in Experiment 1 and 0--\SI{20}{\milli\litre} in Experiment 2. Temperature does the reverse (varied in 1, fixed at 20 in 2).}
+Which of the following was held constant in Experiment 1 but varied in Experiment 2?
+\choices{Temperature}{Number of seeds per tray}{Volume of water added daily}{Amount of light}
+\end{q}
+
+\begin{q}{2}{SI-1}{Both tables report percent germinated as the outcome.}
+The dependent variable in \emph{both} experiments was:
+\choices{temperature.}{percent of seeds germinated.}{volume of water added daily.}{number of days.}
+\end{q}
+
+\begin{q}{4}{SI-2}{The 0 mL tray shows what happens without water, giving a baseline to compare the watered trays against.}
+The main purpose of the tray that received \SI{0}{\milli\litre} of water in Experiment 2 was to:
+\choices{increase the number of seeds tested.}{test the effect of temperature on germination.}{keep the temperature of the trays constant.}{show the germination that occurs without added water.}
+\end{q}
+
+\begin{q}{3}{SI-6}{With 50 seeds, one unusual seed changes the result by only 2\%; with 1 seed, one unusual seed decides the whole result.}
+The students used 50 seeds per tray rather than 1 seed per tray most likely in order to:
+\choices{keep the temperature constant.}{make each tray dry out faster.}{reduce the effect of individual seed differences on the results.}{ensure that every seed germinated.}
+\end{q}
+
+%% =====================================================================
+\section{Rule SI-3: Every step has a job --- name it}
+
+\begin{rulebox}{SI-3}{Why was this step included?}
+Procedures contain steps that look unnecessary. Each one either \emph{reduces error} or \emph{isolates the variable}. The common ones:
+\begin{itemize}
+\item Repeating trials and averaging $\to$ reduces \emph{random} error.
+\item Timing 10 cycles and dividing by 10 $\to$ shrinks reaction-time error per cycle.
+\item Taring or calibrating an instrument $\to$ removes \emph{systematic} error.
+\item Rinsing or drying equipment between trials $\to$ prevents contamination or dilution.
+\item Waiting before measuring $\to$ lets the system reach a steady state (temperature, equilibrium).
+\item Keeping a sealed or dark container $\to$ removes an outside variable (evaporation, light).
+\end{itemize}
+\end{rulebox}
+
+\section{Rule SI-4: Diff the experiments before reading the questions}
+
+\begin{rulebox}{SI-4}{Make a one-line diff for each experiment}
+For a multi-experiment passage, write one line in the margin per experiment: \emph{what varied} and \emph{what was fixed at what value}. Questions such as ``Experiments 1 and 2 differed in that\ldots'' or ``Which trial appears in both experiments?'' then take five seconds.
+\end{rulebox}
+
+\begin{workedex}
+Exp.\ 1: vary $L$ (mass 100 g, angle \ang{10}). Exp.\ 2: vary $m$ ($L=50$ cm, \ang{10}). Exp.\ 3: vary angle ($L=50$ cm, 100 g). The condition 50 cm / 100 g / \ang{10} sits inside all three, which is why its period (\SI{1.42}{\second}) appears three times.
+\end{workedex}
+
+\passage{Pendulum period}
+Students tied a metal bob to a string, pulled it to a starting angle, released it, and timed 10 complete swings with a stopwatch. The period (time for one swing) was found by dividing that time by 10.
+
+\textbf{Experiment 1.} Bob mass \SI{100}{\gram}, starting angle \ang{10}, string length varied.\\
+\textbf{Experiment 2.} String length \SI{50}{\centi\metre}, starting angle \ang{10}, bob mass varied.\\
+\textbf{Experiment 3.} String length \SI{50}{\centi\metre}, bob mass \SI{100}{\gram}, starting angle varied.
+
+\figlabel{Table 3}
+\datatable{c c @{\hspace{2em}} c c @{\hspace{2em}} c c}{%
+\multicolumn{2}{c}{Experiment 1} & \multicolumn{2}{c}{Experiment 2} & \multicolumn{2}{c}{Experiment 3}\\
+\cmidrule(r{1.5em}){1-2}\cmidrule(r{1.5em}){3-4}\cmidrule{5-6}
+Length (cm) & Period (s) & Mass (g) & Period (s) & Angle & Period (s)\\\midrule
+25 & 1.00 & 50 & 1.42 & \ang{5} & 1.42\\
+50 & 1.42 & 100 & 1.42 & \ang{10} & 1.42\\
+100 & 2.01 & 200 & 1.41 & \ang{15} & 1.43\\
+150 & 2.46 & 400 & 1.42 & \ang{20} & 1.43\\}
+\passageend
+
+\begin{q}{2}{SI-4}{Experiment 1 kept mass at 100 g; Experiment 2 varied it from 50 to 400 g.}
+Which of the following was held constant in Experiment 1 but varied in Experiment 2?
+\choices{String length}{Bob mass}{Starting angle}{Number of swings timed}
+\end{q}
+
+\begin{q}{1}{SI-3}{A reaction-time error of about 0.2 s is spread over 10 swings, so each period is off by only about 0.02 s.}
+The students timed 10 swings and divided by 10, rather than timing a single swing, most likely to:
+\choices{reduce the effect of reaction-time error on each period.}{increase the period of the pendulum.}{keep the starting angle constant.}{make the bob's mass irrelevant.}
+\end{q}
+
+\begin{q}{2}{SI-4}{50 cm appears in Exp.\ 1 (with 100 g, \ang{10}), 100 g in Exp.\ 2 (with 50 cm, \ang{10}), and \ang{10} in Exp.\ 3 (with 50 cm, 100 g).}
+Which set of conditions was tested in all three experiments?
+\choices{25 cm, 100 g, \ang{10}}{50 cm, 100 g, \ang{10}}{50 cm, 200 g, \ang{10}}{50 cm, 100 g, \ang{20}}
+\end{q}
+
+\begin{q}{3}{SI-5}{Only length changed the period. Table 3: 100 cm gives 2.01 s. Changing mass or angle leaves it near 1.42 s.}
+The students want a pendulum with a period of about \SI{2.0}{\second}. Starting from the 50 cm, 100 g, \ang{10} setup, they should:
+\choices{increase the mass to 400 g.}{increase the starting angle to \ang{20}.}{increase the length to 100 cm.}{decrease the length to 25 cm.}
+\end{q}
+
+%% =====================================================================
+\section{Rule SI-5: To test something new, change exactly one thing}
+
+\begin{rulebox}{SI-5}{Designing the next trial}
+The correct design for ``Which experiment would test whether $Z$ affects $Y$?'' does all four:
+\begin{enumerate}
+\item varies \textbf{$Z$}, and only $Z$;
+\item holds every other condition at a value already used in the passage;
+\item measures \textbf{$Y$} the same way as before;
+\item includes a baseline level of $Z$ and, ideally, more than one other level.
+\end{enumerate}
+Eliminate any choice that changes two things at once or measures a different outcome.
+\end{rulebox}
+
+\trap{The most tempting wrong design changes the right variable \emph{and} one other (``use a nylon string and a heavier bob''). If two things change, you cannot tell which caused the result.}
+
+\begin{q}{4}{SI-5}{Only the string material changes; length, mass, angle and timing method match earlier trials.}
+The students want to know whether string material affects the period. Which experiment would best test this?
+\choices{Use a 50 cm cotton string with a 100 g bob and a 50 cm nylon string with a 200 g bob, each released from \ang{10}.}{Use a 50 cm nylon string and vary the starting angle from \ang{5} to \ang{20}.}{Use a 50 cm cotton string and a 100 cm nylon string, each with a 100 g bob released from \ang{10}.}{Use 50 cm strings of cotton, nylon and wire, each with a 100 g bob released from \ang{10}.}
+\end{q}
+
+%% =====================================================================
+\section{Rule SI-6: Know your error and your tools}
+
+\begin{rulebox}{SI-6}{Accuracy, precision, random and systematic error}
+\begin{itemize}
+\item \textbf{Precision:} how close repeated measurements are to \emph{each other} (small spread).
+\item \textbf{Accuracy:} how close a measurement is to the \emph{true or accepted} value.
+\item \textbf{Random error:} scatters results both high and low; reduced by repeating and averaging.
+\item \textbf{Systematic error:} shifts every result in the \emph{same} direction (an untared balance, a mis-zeroed ruler); averaging does \emph{not} fix it.
+\item \textbf{Tool resolution:} an instrument marked every \SI{1}{\milli\litre} cannot reliably report \SI{0.01}{\milli\litre}. Smaller increments mean more precise readings. Read a meniscus at its bottom, at eye level.
+\end{itemize}
+\end{rulebox}
+
+\passage{Density of a metal sample}
+Students measured the density of identical cubes of an unknown metal by two methods. Density $=$ mass $\div$ volume. Mass was found on an electronic balance that reads to \SI{0.01}{\gram} in both methods.
+
+\textbf{Method 1.} Volume was found by water displacement in a \SI{100}{\milli\litre} graduated cylinder marked every \SI{1}{\milli\litre}.\\
+\textbf{Method 2.} Volume was calculated from the cube's edge length, measured with calipers that read to \SI{0.01}{\centi\metre}.
+
+Each method was repeated five times (Table 4). The accepted density of the metal is \SI{7.87}{\gram\per\centi\metre\cubed}.
+
+\figlabel{Table 4}
+\datatable{l c c c c c c}{& \multicolumn{5}{c}{Density (\si{\gram\per\centi\metre\cubed})} &\\\cmidrule(lr){2-6}
+ & Trial 1 & Trial 2 & Trial 3 & Trial 4 & Trial 5 & Average\\\midrule
+Method 1 & 7.6 & 8.3 & 7.9 & 8.1 & 7.8 & 7.94\\
+Method 2 & 7.88 & 7.90 & 7.89 & 7.91 & 7.87 & 7.89\\}
+\passageend
+
+\begin{q}{2}{SI-6}{Method 2 ranges from 7.87 to 7.91 (spread 0.04); Method 1 ranges from 7.6 to 8.3 (spread 0.7). Smaller spread means higher precision.}
+Which method was more precise, and why?
+\choices{Method 1, because its average was higher.}{Method 2, because its five values were closer to one another.}{Method 1, because one of its values matched the accepted value most closely.}{Method 2, because it used a balance.}
+\end{q}
+
+\begin{q}{4}{SI-6}{Finer markings shrink the reading uncertainty of the volume, which is the weak step in Method 1. The balance already reads to 0.01 g.}
+Which change would most likely improve the precision of Method 1?
+\choices{Using a balance that reads to \SI{0.1}{\gram}}{Using a \SI{250}{\milli\litre} beaker in place of the graduated cylinder}{Using warmer water}{Using a \SI{25}{\milli\litre} graduated cylinder marked every \SI{0.1}{\milli\litre}}
+\end{q}
+
+\begin{q}{1}{SI-6}{An extra 0.50 g is added to every mass, so mass $\div$ volume comes out high every time. A consistent one-way shift is a systematic error.}
+Suppose the balance had not been zeroed and read \SI{0.50}{\gram} too high in every trial. Compared with the true values, the calculated densities would have been:
+\choices{too high in every trial.}{too low in every trial.}{too high in some trials and too low in others.}{unaffected, because the error was the same in every trial.}
+\end{q}
+
+\begin{q}{3}{SI-6}{Accuracy compares the result with the accepted 7.87: Method 2 averages 7.89 (0.02 off); Method 1 averages 7.94 (0.07 off).}
+Whose \emph{average} was more accurate?
+\choices{Method 1, because it was off by 0.02.}{Method 1, because its trials spread more widely.}{Method 2, because it was off by 0.02.}{Method 2, because it was off by 0.07.}
+\end{q}
+
+\begin{q}{2}{SI-3}{Averaging several trials lets random highs and lows partly cancel; it cannot remove systematic error.}
+The students repeated each method five times and averaged the results mainly to reduce the effect of:
+\choices{systematic error in the balance.}{random error in individual measurements.}{the size of the cube.}{the accepted density.}
+\end{q}
+
+%% =====================================================================
+\section{Drill: designing and critiquing a study}
+
+\passage{Caffeine and \textit{Daphnia} heart rate}
+\textit{Daphnia} are small, transparent crustaceans whose hearts can be watched under a microscope.
+
+\textbf{Study 1.} Groups of 10 \textit{Daphnia} were placed in water containing 0, 0.5, 1.0, or \SI{2.0}{\milli\gram\per\milli\litre} of caffeine, all at \SI{20}{\celsius}. After 5 minutes, each animal's heartbeats were counted for 15 seconds and the count was multiplied by 4. Group averages are in Table 5.
+
+\textbf{Study 2.} Groups of 10 \textit{Daphnia} in water with no caffeine were held at 15, 20, or \SI{25}{\celsius}, and heart rate was measured as in Study 1 (Table 6).
+
+\begin{minipage}[t]{0.48\linewidth}
+\figlabel{Table 5}
+\datatable{c c}{Caffeine (mg/mL) & Heart rate (beats/min)\\\midrule 0 & 240\\ 0.5 & 262\\ 1.0 & 281\\ 2.0 & 305\\}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.48\linewidth}
+\figlabel{Table 6}
+\datatable{c c}{Temperature (\si{\celsius}) & Heart rate (beats/min)\\\midrule 15 & 190\\ 20 & 240\\ 25 & 290\\}
+\end{minipage}
+\passageend
+
+\begin{q}{3}{SI-1}{Temperature was \SI{20}{\celsius} for every group in Study 1; caffeine varied and heart rate was measured.}
+Which of the following was a controlled variable in Study 1?
+\choicesgrid{Caffeine concentration}{Heart rate}{Water temperature}{Number of beats counted}
+\end{q}
+
+\begin{q}{4}{SI-5}{Testing whether caffeine's effect depends on temperature requires every caffeine level at every temperature, so the two factors can be compared across all combinations.}
+A researcher wants to know whether the effect of caffeine on heart rate depends on temperature. Which study would best answer this?
+\choices{Repeat Study 1 at \SI{20}{\celsius} with 20 \textit{Daphnia} per group.}{Repeat Study 2 using \SI{2.0}{\milli\gram\per\milli\litre} caffeine at every temperature.}{Test 0 mg/mL caffeine at \SI{15}{\celsius} and \SI{2.0}{\milli\gram\per\milli\litre} caffeine at \SI{25}{\celsius}.}{Test each caffeine concentration (0--\SI{2.0}{\milli\gram\per\milli\litre}) at each temperature (15, 20, \SI{25}{\celsius}).}
+\end{q}
+
+\begin{q}{1}{SI-3}{Multiplying a 15 s count by 4 gives beats per minute only if the heart beats at the same rate for the rest of the minute.}
+Counting beats for 15 seconds and multiplying by 4 assumes that:
+\choices{each animal's heart rate stayed constant over that minute.}{caffeine had no effect on heart rate.}{all 10 animals had the same heart rate.}{temperature did not affect heart rate.}
+\end{q}
+
+\begin{q}{2}{SI-6}{Table 6 shows warmer water raises heart rate (\SI{20}{\celsius} $\to$ 240, \SI{25}{\celsius} $\to$ 290). Warm water would push the 2.0 mg/mL result up, making caffeine look stronger than it is.}
+Suppose the water for the \SI{2.0}{\milli\gram\per\milli\litre} group in Study 1 had accidentally warmed to \SI{25}{\celsius}. The measured heart rate for that group would most likely have been:
+\choices{lower than it would have been at \SI{20}{\celsius}, underestimating the effect of caffeine.}{higher than it would have been at \SI{20}{\celsius}, overestimating the effect of caffeine.}{the same as at \SI{20}{\celsius}, because temperature was not the independent variable.}{the same as the 0 mg/mL group.}
+\end{q}
+
+%% =====================================================================
+\section{Rule SI-7: Engineering design --- constraints first, then trade-offs}
+
+\begin{rulebox}{SI-7}{Criteria, constraints, prototypes, iteration}
+Engineering-design passages, new on the enhanced ACT, describe a problem, the \textbf{criteria} a solution must meet (performance targets), the \textbf{constraints} it must respect (cost, size, materials, time), and test results for several \textbf{prototypes}.
+\begin{enumerate}
+\item Turn every requirement into a pass/fail check and mark each prototype ($\checkmark$ / $\times$).
+\item A design ``meets the requirements'' only if it passes \emph{every} check.
+\item Improvements usually involve \textbf{trade-offs}: a change that helps one criterion often hurts another.
+\item The next step in the design cycle is to change one feature of the best prototype and retest.
+\end{enumerate}
+\end{rulebox}
+
+\passage{Low-cost water filter}
+A class designed gravity-fed filters to clean muddy water. A filter is acceptable only if it (1) removes at least 90\% of turbidity (cloudiness), (2) has a flow rate of at least 50 mL/min, and (3) costs no more than \$5.00 in materials. Table 7 shows test results.
+
+\figlabel{Table 7}
+\datatable{c l c c c}{Prototype & Layers (top to bottom) & Turbidity removed (\%) & Flow rate (mL/min) & Cost (\$)\\\midrule
+1 & sand & 78 & 120 & 1.50\\
+2 & sand, charcoal & 92 & 45 & 3.00\\
+3 & gravel, sand, charcoal & 95 & 60 & 4.50\\
+4 & gravel, sand, charcoal, cloth & 97 & 30 & 6.50\\}
+\passageend
+
+\begin{q}{3}{SI-7}{Checks: P1 fails turbidity (78\%); P2 fails flow (45); P3 passes all three (95\%, 60, \$4.50); P4 fails flow and cost.}
+Which prototype(s) met all three requirements?
+\choicesgrid{Prototype 2 only}{Prototypes 2 and 3 only}{Prototype 3 only}{Prototypes 3 and 4 only}
+\end{q}
+
+\begin{q}{2}{SI-7}{P2 $\to$ P3 adds a gravel layer: turbidity removal rises (92 $\to$ 95) and flow rises (45 $\to$ 60), at \$1.50 more cost.}
+Comparing Prototypes 2 and 3, adding a top layer of gravel:
+\choices{increased turbidity removal but decreased flow rate.}{increased both turbidity removal and flow rate.}{decreased both turbidity removal and flow rate.}{decreased cost.}
+\end{q}
+
+\begin{q}{4}{SI-7}{At \$4.00, P3 (\$4.50) and P4 fail on cost; P1 fails turbidity; P2 fails flow. No prototype passes.}
+If the cost limit were lowered to \$4.00, which prototype(s) would meet all requirements?
+\choicesgrid{Prototype 1 only}{Prototype 2 only}{Prototype 3 only}{None of the prototypes}
+\end{q}
+
+\begin{q}{1}{SI-7}{Table 7 shows a single test of clean filters. A household filter must keep working over repeated uses, which has not been tested.}
+Before recommending Prototype 3 for household use, which additional test would be most important?
+\choices{Measuring turbidity removal and flow rate after the filter has been used many times}{Testing Prototype 1 with more sand}{Measuring the color of the gravel}{Repeating the cost calculation for Prototype 4}
+\end{q}
+
+\vspace{2ex}
+\subsection*{Self-diagnosis}
+\small
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+\toprule
+If you missed\ldots & Do this next\\\midrule
+SI-1 / SI-2 & Underline ``varied'' and ``held constant'' in every procedure. Label IV/DV/C in the margin.\\
+SI-3 & For each odd-looking step, finish the sentence ``This reduces\ldots'' or ``This isolates\ldots''.\\
+SI-4 & Write the one-line diff for every experiment before you touch a question.\\
+SI-5 & Count how many things each design changes. Keep only the one that changes exactly one.\\
+SI-6 & Precision $=$ spread; accuracy $=$ distance from true. Same-direction error $=$ systematic.\\
+SI-7 & Make the $\checkmark/\times$ grid. ``Meets requirements'' means every box is $\checkmark$.\\
+\bottomrule
+\end{tabularx}
+
+\makekey
+\end{document}

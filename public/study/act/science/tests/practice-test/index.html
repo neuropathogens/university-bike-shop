@@ -1,0 +1,656 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light">
+<script>try{document.documentElement.setAttribute("data-theme",localStorage.getItem("apah.theme")==="dark"?"dark":"light")}catch(e){document.documentElement.setAttribute("data-theme","light")}</script>
+<title>ACT Science Full-Length Practice Test</title>
+<meta name="description" content="ACT Science full-length practice test: seven passages and 40 questions, with a worked explanation for every answer and a score by reporting category.">
+<link rel="icon" href="/favicon.ico" sizes="48x48" type="image/x-icon">
+<link rel="icon" href="/icon.svg" sizes="any" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-icon.png" sizes="180x180">
+<link rel="preload" href="/study/ap/ap-art-history/fonts/LM-regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/study/katex/katex.min.css">
+<style>
+@font-face{font-family:"Latin Modern";font-style:normal;font-weight:400;font-display:swap;src:url("/study/ap/ap-art-history/fonts/LM-regular.woff2") format("woff2")}
+@font-face{font-family:"Latin Modern";font-style:italic;font-weight:400;font-display:swap;src:url("/study/ap/ap-art-history/fonts/LM-italic.woff2") format("woff2")}
+@font-face{font-family:"Latin Modern";font-style:normal;font-weight:600 700;font-display:swap;src:url("/study/ap/ap-art-history/fonts/LM-bold.woff2") format("woff2")}
+@font-face{font-family:"Latin Modern";font-style:italic;font-weight:600 700;font-display:swap;src:url("/study/ap/ap-art-history/fonts/LM-bold-italic.woff2") format("woff2")}
+@font-face{font-family:"Latin Modern Mono";font-style:normal;font-weight:400 500;font-display:swap;src:url("/study/ap/ap-art-history/fonts/LM-mono.woff2") format("woff2")}
+@font-face{font-family:"Latin Modern Mono";font-style:normal;font-weight:600 700;font-display:swap;src:url("/study/ap/ap-art-history/fonts/LM-mono-bold.woff2") format("woff2")}
+
+:root{--bg:#fff;--fg:#000;--muted:#4a4a4a;--line:#c9c9c9;--plate:#f5f5f3;--hl:#fbe9a6;--link:#00008b;--ok:#1d5e20;--bad:#9b1c1c;
+  --serif:"Latin Modern","Computer Modern Serif","CMU Serif",Georgia,serif;--mono:"Latin Modern Mono","SFMono-Regular",Menlo,Consolas,monospace;
+  --gutter:clamp(16px,4vw,40px);color-scheme:light}
+:root[data-theme=dark]{--bg:#111110;--fg:#ecebe6;--muted:#a3a29c;--line:#34342f;--plate:#1b1b19;--hl:#4d4320;--link:#9db4ff;--ok:#8fd394;--bad:#ff9b9b;color-scheme:dark}
+*{box-sizing:border-box}
+html{background:var(--bg);scroll-padding-top:16px}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--serif);font-size:17px;line-height:1.5;font-kerning:normal;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+button,input,textarea{font:inherit;color:inherit}
+button{cursor:pointer}
+button:disabled{cursor:default}
+a{color:var(--link);text-underline-offset:3px;text-decoration-thickness:.5px}
+:focus-visible{outline:2px solid var(--link);outline-offset:2px}
+[hidden]{display:none!important}
+.sc{font-variant:small-caps;text-transform:lowercase;letter-spacing:.04em}
+.muted{color:var(--muted)}
+.katex{font-size:1.04em;text-rendering:auto}
+.katex-display{margin:.7em 0;overflow-x:auto;overflow-y:hidden;padding:2px 0}
+
+.runhead{display:flex;flex-wrap:wrap;justify-content:space-between;gap:4px 16px;max-width:1480px;margin:0 auto;padding:14px var(--gutter) 6px;font-size:14px;font-style:italic;color:var(--muted)}
+.runhead a{text-decoration:none}
+.runhead a:hover{text-decoration:underline}
+.runhead-actions{display:flex;flex-wrap:wrap;gap:4px 18px}
+.theme-btn{background:none;border:0;padding:0;font:inherit;font-style:italic;color:var(--link)}
+.theme-btn:hover{text-decoration:underline}
+.rule{max-width:1480px;margin:0 auto;padding-inline:var(--gutter)}
+.rule hr{margin:0;border:0;border-top:.5px solid var(--fg)}
+
+.wrap{max-width:860px;margin:0 auto;padding:0 var(--gutter) 80px}
+.title{text-align:center;padding:34px 0 22px}
+.title h1{margin:0;text-wrap:balance;font-size:clamp(32px,6vw,46px);line-height:1.1;font-weight:700}
+.title .sub{margin:8px 0 0;font-size:18px;font-variant:small-caps;letter-spacing:.03em}
+.title .meta{margin:4px 0 0;font-style:italic;color:var(--muted)}
+
+.tabs{display:flex;justify-content:center;gap:0;margin:0 0 26px;border-bottom:.5px solid var(--fg)}
+.tab{background:none;border:0;border-bottom:2.5px solid transparent;padding:8px 18px;margin-bottom:-1px;font-size:17px;color:var(--muted)}
+.tab[aria-selected=true]{color:var(--fg);border-bottom-color:var(--fg);font-weight:700}
+.tab:hover{color:var(--fg)}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:40px;padding:0 16px;border:1px solid var(--fg);background:var(--bg);font-family:var(--mono);font-size:14.5px;white-space:nowrap}
+.btn:hover:not(:disabled){background:var(--plate)}
+.btn:disabled{opacity:.35}
+.btn--solid{background:var(--fg);color:var(--bg)}
+.btn--solid:hover:not(:disabled){background:var(--fg);opacity:.85}
+.btn--lg{min-height:48px;font-size:15.5px;padding:0 22px}
+.kbd{display:inline-grid;place-items:center;min-width:22px;height:22px;padding:0 4px;border:1px solid currentColor;font-family:var(--mono);font-size:12px;opacity:.8}
+
+/* booktabs tables */
+.bt{border-collapse:collapse;margin:0 auto;font-variant-numeric:tabular-nums}
+.bt th,.bt td{padding:4px 12px;text-align:center;font-weight:400}
+.bt th[scope=row],.bt thead th:first-child{text-align:left}
+.bt thead tr{border-top:1px solid var(--fg);border-bottom:.5px solid var(--fg)}
+.bt tbody tr:last-child{border-bottom:1px solid var(--fg)}
+.bt-wrap{overflow-x:auto;margin:0 0 16px}
+
+/* setup */
+.setup{border-bottom:1.5px solid var(--fg);padding:4px 0 22px;display:grid;gap:18px}
+.setup h2,.results h2,.fr h2{margin:0;font-size:20px}
+.choice-row{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.choice{display:flex;flex-direction:column;align-items:flex-start;gap:2px;padding:12px 14px;border:1px solid var(--fg);background:var(--bg);text-align:left}
+.choice b{font-size:17px}
+.choice span{font-size:14.5px;font-style:italic;color:var(--muted)}
+.choice[aria-pressed=true]{background:var(--fg);color:var(--bg)}
+.choice[aria-pressed=true] span{color:var(--bg);opacity:.8}
+.checks{display:flex;flex-wrap:wrap;gap:8px 22px}
+.checks label{display:inline-flex;align-items:center;gap:8px;cursor:pointer}
+.checks input{width:17px;height:17px;margin:0;accent-color:var(--fg)}
+.setup-actions{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.note{margin:0;font-size:15px;color:var(--muted);font-style:italic}
+
+/* run */
+.bar{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:4px 16px;font-size:15px;color:var(--muted)}
+.track{height:3px;background:var(--line);margin:8px 0 14px}
+.track span{display:block;height:100%;background:var(--fg);transition:width .2s ease}
+.nav{display:grid;grid-template-columns:repeat(auto-fill,minmax(34px,1fr));gap:5px;margin:0 0 22px}
+.nav button{height:32px;padding:0;border:1px solid var(--line);background:var(--bg);font-family:var(--serif);font-size:14px;font-variant-numeric:tabular-nums}
+.nav button:hover{border-color:var(--fg)}
+.nav .is-answered{background:var(--plate);border-color:var(--fg)}
+.nav .is-right{background:var(--fg);color:var(--bg);border-color:var(--fg)}
+.nav .is-wrong{border:1.5px dashed var(--bad);color:var(--bad)}
+.nav .is-current{outline:2px solid var(--fg);outline-offset:1px}
+.q{border-top:1.5px solid var(--fg);padding-top:16px}
+.q-eyebrow{margin:0 0 6px;font-size:14px;color:var(--muted)}
+.q-prompt{margin:0 0 14px;font-size:20px;line-height:1.45;font-weight:400}
+.opts{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.opt{display:flex;align-items:center;gap:12px;width:100%;min-height:52px;padding:10px 14px;border:1px solid var(--fg);background:var(--bg);text-align:left;font-size:16.5px;line-height:1.4}
+.opt:hover:not(:disabled){background:var(--plate)}
+.opt .kbd{flex:none}
+.opt .mark{margin-left:auto;padding-left:6px;font-family:var(--mono);font-size:14px;white-space:nowrap}
+.opt.is-picked{border-width:2px;padding:9px 13px;background:var(--plate)}
+.opt.is-right{background:var(--fg);color:var(--bg);border-color:var(--fg)}
+.opt.is-wrong{border:1.5px dashed var(--bad);color:var(--bad);text-decoration:line-through;text-decoration-thickness:1px}
+.opt.is-wrong .mark,.opt.is-wrong .kbd{text-decoration:none}
+.opt.is-dim{opacity:.5}
+.fb{margin:14px 0 0;padding:12px 16px;border:.5px solid var(--fg);border-left:3px solid var(--ok)}
+.fb.is-wrong{border-left-color:var(--bad)}
+.fb p{margin:0}
+.fb .verdict{font-weight:700;margin-bottom:4px}
+.why p{margin:0 0 6px}
+.steps{margin:2px 0 8px;padding-left:22px}
+.steps li{margin:4px 0;padding-left:2px}
+.why .why-h{margin:10px 0 2px;font-size:14.5px;color:var(--muted)}
+.others{margin:0 0 4px;padding-left:20px}
+.others li{margin:5px 0}
+.others .tag{margin-left:6px;font-family:var(--mono);font-size:12.5px;color:var(--bad);white-space:nowrap}
+.links{margin-top:6px;font-size:15px}
+.step{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:10px;margin-top:20px}
+.step-right{display:flex;flex-wrap:wrap;gap:8px}
+.confirm{margin-top:14px;padding:12px 16px;border:1px solid var(--fg);display:flex;flex-wrap:wrap;align-items:center;gap:10px}
+.confirm p{margin:0;flex:1 1 220px}
+.keys{margin:18px 0 0;font-size:13.5px;color:var(--muted);text-align:center}
+.restart-line{margin:10px 0 0;font-size:14.5px;text-align:center}
+
+/* results */
+.results{padding-top:4px}
+.score{text-align:center;padding:10px 0 18px}
+.score-big{margin:0;font-size:clamp(48px,10vw,72px);font-weight:700;line-height:1;font-variant-numeric:tabular-nums}
+.score p{margin:6px 0 0}
+.res-actions{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin:0 0 22px}
+.res-filter{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:6px;border-bottom:1.5px solid var(--fg);padding-bottom:6px}
+.res-list{list-style:none;margin:0;padding:0}
+.res-list>li{border-bottom:.5px solid var(--line)}
+.res-list>li:last-child{border-bottom:1.5px solid var(--fg)}
+.res-list details{padding:10px 0}
+.res-list summary{display:grid;grid-template-columns:34px 22px minmax(0,1fr);gap:8px;cursor:pointer;list-style:none}
+.res-list summary::-webkit-details-marker{display:none}
+.res-n{font-weight:700;font-variant-numeric:tabular-nums}
+.res-ok{color:var(--ok);font-weight:700}
+.res-bad{color:var(--bad);font-weight:700}
+.res-body{padding:8px 0 4px 64px;font-size:15.5px}
+.res-body p{margin:0 0 4px}
+.res-body .bt-wrap{margin:4px 0 8px}
+.topics{margin:0 0 26px}
+.topics h2{margin:0 0 8px}
+.topics .bt{margin:0;width:100%}
+.topics .bt td:last-child,.topics .bt th:last-child{text-align:left}
+.topics .flag{color:var(--bad);font-style:italic}
+.composite{margin:0 0 26px;padding:12px 16px;border:.5px solid var(--fg);border-left:3px solid var(--fg)}
+.composite p{margin:0}
+.composite p+p{margin-top:4px}
+
+/* free response */
+.fr-intro{margin:0 0 6px;font-style:italic;color:var(--muted)}
+.fr{border-top:1.5px solid var(--fg);padding:18px 0 26px}
+.fr h2 small{font-weight:400;font-style:italic;color:var(--muted);font-size:15px;margin-left:6px}
+.fr-stem{margin:10px 0 6px;text-align:justify;hyphens:auto;-webkit-hyphens:auto}
+.part{margin:18px 0 0}
+.part-prompt{margin:0 0 8px}
+.part-prompt b{margin-right:4px}
+.part textarea{width:100%;min-height:150px;padding:12px 14px;border:1px solid var(--fg);border-radius:0;background:var(--bg);font-family:var(--serif);font-size:16.5px;line-height:1.55;resize:vertical}
+.part-meta{margin-top:4px;font-size:14px;color:var(--muted)}
+.sol{margin-top:12px;padding:12px 18px;border:.5px solid var(--fg)}
+.sol h3{margin:0 0 4px;font-size:15px}
+.sol p{margin:0 0 10px}
+.sol .crit{display:grid;grid-template-columns:28px minmax(0,1fr);gap:2px 8px;margin:0 0 10px;font-size:15.5px}
+.sol .crit dt{font-weight:700}
+.sol .crit dd{margin:0}
+.mark-row{display:flex;flex-wrap:wrap;align-items:center;gap:8px;font-size:15px}
+.seg{display:inline-flex;flex-wrap:wrap;max-width:100%;padding:1px 0 0 1px}
+.seg button{margin:-1px 0 0 -1px;min-width:44px;min-height:36px;padding:0 10px;border:1px solid var(--fg);background:var(--bg);font-family:var(--mono);font-size:14px}
+.seg button[aria-pressed=true]{position:relative;background:var(--fg);color:var(--bg)}
+.fr-actions{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:10px;margin-top:16px}
+.fr-score{font-size:16px}
+.fr-score b{font-variant-numeric:tabular-nums}
+.scale{margin-top:14px}
+.scale summary{cursor:pointer;font-size:15px;color:var(--muted);font-style:italic}
+.scale .bt{margin:8px 0 0}
+.scale .bt td:last-child,.scale .bt th:last-child{text-align:left}
+.foot{margin-top:40px;padding-top:12px;border-top:.5px solid var(--line);font-size:14px;color:var(--muted)}
+
+@media (max-width:640px){
+  .runhead-title{display:none}
+  .runhead-actions{width:100%;justify-content:space-between}
+  .title{padding:22px 0 16px}
+  .choice-row{grid-template-columns:1fr}
+  .q-prompt{font-size:18.5px}
+  .res-body{padding-left:0}
+  .keys{display:none}
+  .fr-stem{text-align:left}
+  .bt th,.bt td{padding:4px 7px}
+  .sol{padding:10px 12px}
+  .katex-display>.katex{font-size:.94em}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+@media print{.runhead,.rule,.tabs,.nav,.step,.keys,.restart-line,.res-actions{display:none!important}}
+/* generic quiz additions */
+.q-prompt p{margin:0}
+.q-prompt p+p{margin-top:8px}
+.q-ask{margin:10px 0 0!important;font-size:16px;font-style:italic;color:var(--muted)}
+.blank{display:inline-block;width:3.4em;height:1em;margin:0 .12em;border-bottom:1.5px solid currentColor;vertical-align:-.12em}
+.stim{position:relative;margin:0 0 16px;padding:12px 16px;border:.5px solid var(--fg);background:var(--plate);font-size:16.5px;line-height:1.55;max-height:60vh;overflow:auto}
+.stim-h{margin:0 0 6px!important;font-size:14px;color:var(--muted)}
+.stim p{margin:0 0 8px}
+.stim p:last-child{margin-bottom:0}
+u.ul{text-decoration-thickness:1px;text-underline-offset:3px}
+.qn{display:inline-block;min-width:1.4em;padding:0 .2em;margin:0 .15em;border:.5px solid var(--fg);font:600 11.5px/1.4 system-ui,-apple-system,sans-serif;text-align:center;vertical-align:.12em;font-variant-numeric:tabular-nums}
+.stim .qn[data-cur]{background:var(--fg);color:var(--bg)}
+.stim u[data-cur]{background:var(--hl);box-shadow:0 0 0 2px var(--hl)}
+.stim .ln{display:inline-block;min-width:1.3em;padding:0 .25em;margin-right:.25em;border:.5px solid var(--line);color:var(--muted);font:500 11px/1.4 system-ui,-apple-system,sans-serif;text-align:center;vertical-align:.12em;font-variant-numeric:tabular-nums}
+.stim .ln[data-cur]{background:var(--hl);color:var(--fg);border-color:var(--fg)}
+.stim-intro{font-style:italic;color:var(--muted);font-size:15px}
+.stim-sub{margin-top:12px!important}
+.stim-note{font-size:15px;color:var(--muted)}
+.tool{margin:0 0 10px;padding:6px 0 6px 12px;border-left:3px solid var(--muted);font-size:15px;color:var(--muted)}
+.fig .figcap{margin:0 0 6px;font-size:15px}
+.stim.free{max-height:none;overflow:visible}
+.bt th[colspan]{text-align:center}
+.fig-after{margin:12px 0 4px}
+.fig-after img{max-width:min(100%,420px);max-height:340px;width:auto;object-fit:contain}
+.stim .figcap{text-align:center;font-size:15px;margin:10px 0 4px}
+.stim .fig{margin:6px 0 10px}
+.stim .bt-wrap{margin:0 0 10px}
+.fig-img,.opt-img{max-width:100%;height:auto;background:#fff}
+.opt-img{display:block;max-width:140px}
+:root[data-theme=dark] .fig-img,:root[data-theme=dark] .opt-img{filter:invert(.92) hue-rotate(180deg)}
+.fig{margin:0 0 14px;text-align:center}
+.fig img{max-width:100%;height:auto;background:#fff}
+:root[data-theme=dark] .fig img{filter:invert(.92) hue-rotate(180deg)}
+.fig figcaption{font-size:14px;color:var(--muted);font-style:italic}
+.target{margin:4px 0 0;font-style:italic}
+.res-sum{display:block}
+.opt>span:nth-child(2){flex:1 1 auto;min-width:0;overflow-wrap:anywhere;-webkit-hyphens:auto;hyphens:auto}
+@media (max-width:640px){.opt .mark{white-space:normal;text-align:right;max-width:6.2em;line-height:1.25}}
+.sol>div{margin:0 0 10px}
+.crit-pts{margin:0 0 10px;font-size:15.5px}
+.crit-pts p{margin:0 0 4px}
+.crit-pts ul{margin:0 0 4px;padding-left:20px}
+</style>
+</head>
+<body>
+<div class="runhead"><span class="runhead-title">ACT Science &middot; Full-Length Practice Test</span><span class="runhead-actions"><a href="/study/#act-science">&larr;&nbsp;Study Library</a><a href="/study/act/science/act-science-06-full-practice-test.pdf">PDF version</a><button type="button" class="theme-btn" id="theme-btn">Dark mode</button></span></div>
+<div class="rule"><hr></div>
+
+<main class="wrap">
+  <header class="title">
+    <h1>Full-Length <span style="white-space:nowrap">Practice Test</span></h1>
+    <p class="sub">ACT Science &middot; Part 6 of 6</p>
+    <p class="meta">40 questions &middot; target 32 correct &middot; 40 min</p>
+  </header>
+
+  <section id="mc"></section>
+  <section id="fr" role="tabpanel" aria-labelledby="tab-fr" hidden></section>
+
+  <p class="foot">From <a href="/study/act/science/act-science-06-full-practice-test.pdf"><i>ACT Science Part 6: Full-Length Practice Test</i></a> (PDF). Answers and rule tags are the part&rsquo;s own key; the explanations expand on it with the rule, the reading of the data, and why each wrong choice is wrong. Figures are taken from the PDF. Your answers are saved only in this browser.</p>
+</main>
+
+<script id="data" type="application/json">{"meta":{"key":"study.act-science.practice-test.v1","setupNote":"Set a 40-minute timer and use Exam mode for a real simulation. No calculator. Answer every question: there is no penalty for guessing.","topicPrefix":"Part ","topicCol":"Review","guideCol":"Reporting category","byTopic":"By reporting category","topicNote":"A category below 70% correct is the next part to reread; then redo the items you missed.","guide":"/study/act/science/act-science-01-format-and-strategy.pdf","guideName":"its part of the series","target":{"label":"Target","mc":32},"flag":{"below":0.7,"text":"below 70%: review this part"}},"topics":{"2":{"name":"Interpretation of Data","page":1,"url":"/study/act/science/act-science-02-interpretation-of-data.pdf"},"3":{"name":"Scientific Investigation","page":1,"url":"/study/act/science/act-science-03-scientific-investigation.pdf"},"4":{"name":"Evaluation of Models, Inferences &amp; Experimental Results","page":1,"url":"/study/act/science/act-science-04-evaluation-of-models.pdf"}},"sections":{"1":"Passage I: Soil temperature","2":"Passage II: Magnesium and acid","3":"Passage III: Bouncing balls","4":"Passage IV: Designing a small wind turbine","5":"Passage V: Formation of the Hawaiian Islands (conflicting viewpoints)","6":"Passage VI: Antibiotics and bacterial growth","7":"Passage VII: Ocean chemistry and shells"},"stims":{"p1":{"title":"Passage I &middot; Soil temperature","html":"<p>Soil warms and cools each day as sunlight strikes the surface. A scientist buried temperature probes at several depths in a bare field and recorded soil temperature every 4 hours for one day (Figure 1). She also calculated each depth’s <i>daily range<\/i>, the difference between its highest and lowest temperature that day (Figure 2).<\/p><div class=\"fig\"><img class=\"fig-img\" src=\"/study/act/science/tests/fig/p6-soil-temperature.png\" alt=\"Line graph of soil temperature against time of day, 0 to 24 h, at three depths. Surface: 12 °C at 0 h, 9 at 4 h, 30 at 12 h, 27 at 16 h, back to 12 at 24 h. 10 cm: about 14 to 16 early, peaking at 24 near 16 h. 50 cm: flat at about 17.\" width=\"491\" height=\"285\" loading=\"lazy\"><\/div><p class=\"figcap\"><b>Figure 1<\/b><\/p><div class=\"fig\"><img class=\"fig-img\" src=\"/study/act/science/tests/fig/p6-daily-range.png\" alt=\"Line graph of daily temperature range against depth: 21 °C at 0 cm, 15 at 5, 10 at 10, 5 at 20, 2 at 30, 0.5 at 50 cm.\" width=\"435\" height=\"227\" loading=\"lazy\"><\/div><p class=\"figcap\"><b>Figure 2<\/b><\/p>","cls":"free"},"p2":{"title":"Passage II &middot; Magnesium and acid","html":"<p>When magnesium (Mg) metal is placed in hydrochloric acid (HCl), it reacts and dissolves, releasing hydrogen gas: <span class=\"katex-display\"><span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mrow><mi mathvariant=\"normal\">M<\/mi><mi mathvariant=\"normal\">g<\/mi><\/mrow><mrow><\/mrow><mo>+<\/mo><mrow><\/mrow><mn>2<\/mn><mtext> <\/mtext><mrow><mi mathvariant=\"normal\">H<\/mi><mi mathvariant=\"normal\">C<\/mi><mi mathvariant=\"normal\">l<\/mi><\/mrow><mover><mo stretchy=\"true\" minsize=\"3.0em\">→<\/mo><mpadded width=\"+0.6em\" lspace=\"0.3em\"><mrow><\/mrow><\/mpadded><\/mover><mrow><mi mathvariant=\"normal\">M<\/mi><mi mathvariant=\"normal\">g<\/mi><mi mathvariant=\"normal\">C<\/mi><mi mathvariant=\"normal\">l<\/mi><\/mrow><msub><mpadded width=\"0px\"><mphantom><mi>X<\/mi><\/mphantom><\/mpadded><mpadded height=\"0px\"><mn>2<\/mn><\/mpadded><\/msub><mrow><\/mrow><mo>+<\/mo><mrow><\/mrow><mi mathvariant=\"normal\">H<\/mi><msub><mpadded width=\"0px\"><mphantom><mi>X<\/mi><\/mphantom><\/mpadded><mpadded height=\"0px\"><mn>2<\/mn><\/mpadded><\/msub><\/mrow><annotation encoding=\"application/x-tex\">\\ce{Mg + 2HCl -&gt; MgCl2 + H2}<\/annotation><\/semantics><\/math><\/span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8889em;vertical-align:-0.1944em;\"><\/span><span class=\"mord\"><span class=\"mord\"><span class=\"mord mathrm\" style=\"margin-right:0.01389em;\">Mg<\/span><\/span><span class=\"mord\"><\/span><span class=\"mspace\" style=\"margin-right:0.2222em;\"><\/span><span class=\"mbin\">+<\/span><span class=\"mspace\" style=\"margin-right:0.2222em;\"><\/span><span class=\"mord\"><\/span><span class=\"mord\">2<\/span><span class=\"mspace\" style=\"margin-right:0.1667em;\"><\/span><span class=\"mord\"><span class=\"mord mathrm\">HCl<\/span><\/span><span class=\"mspace\" style=\"margin-right:0.2778em;\"><\/span><span class=\"mrel x-arrow\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.622em;\"><span style=\"top:-3.144em;\"><span class=\"pstrut\" style=\"height:2.522em;\"><\/span><span class=\"sizing reset-size6 size3 mtight x-arrow-pad\"><span class=\"mord mtight\"><\/span><\/span><\/span><span class=\"svg-align\" style=\"top:-2.511em;\"><span class=\"pstrut\" style=\"height:2.522em;\"><\/span><span class=\"hide-tail\" style=\"height:0.522em;min-width:1.469em;\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"400em\" height=\"0.522em\" viewBox=\"0 0 400000 522\" preserveAspectRatio=\"xMaxYMin slice\"><path d=\"M0 241v40h399891c-47.3 35.3-84 78-110 128\n-16.7 32-27.7 63.7-33 95 0 1.3-.2 2.7-.5 4-.3 1.3-.5 2.3-.5 3 0 7.3 6.7 11 20\n 11 8 0 13.2-.8 15.5-2.5 2.3-1.7 4.2-5.5 5.5-11.5 2-13.3 5.7-27 11-41 14.7-44.7\n 39-84.5 73-119.5s73.7-60.2 119-75.5c6-2 9-5.7 9-11s-3-9-9-11c-45.3-15.3-85\n-40.5-119-75.5s-58.3-74.8-73-119.5c-4.7-14-8.3-27.3-11-40-1.3-6.7-3.2-10.8-5.5\n-12.5-2.3-1.7-7.5-2.5-15.5-2.5-14 0-21 3.7-21 11 0 2 2 10.3 6 25 20.7 83.3 67\n 151.7 139 205zm0 0v40h399900v-40z\"/><\/svg><\/span><\/span><\/span><span class=\"vlist-s\">​<\/span><\/span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.011em;\"><span><\/span><\/span><\/span><\/span><\/span><span class=\"mspace\" style=\"margin-right:0.2778em;\"><\/span><span class=\"mord\"><span class=\"mord mathrm\">MgCl<\/span><\/span><span class=\"mord\"><span class=\"mord\"><span class=\"mord rlap\"><span class=\"inner\"><span class=\"mord\" style=\"color:transparent;\"><span class=\"mord mathnormal\" style=\"margin-right:0.07847em;color:transparent;\">X<\/span><\/span><\/span><span class=\"fix\"><\/span><\/span><\/span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:-0.15em;\"><span style=\"top:-2.55em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"><\/span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0em;\"><span style=\"top:-2.7em;\"><span class=\"pstrut\" style=\"height:2.7em;\"><\/span><span><span class=\"mord mtight\"><span class=\"mord mtight\">2<\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><span class=\"vlist-s\">​<\/span><\/span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span><\/span><\/span><\/span><\/span><\/span><\/span><span class=\"mord\"><\/span><span class=\"mspace\" style=\"margin-right:0.2222em;\"><\/span><span class=\"mbin\">+<\/span><span class=\"mspace\" style=\"margin-right:0.2222em;\"><\/span><span class=\"mord\"><\/span><span class=\"mord mathrm\">H<\/span><span class=\"mord\"><span class=\"mord\"><span class=\"mord rlap\"><span class=\"inner\"><span class=\"mord\" style=\"color:transparent;\"><span class=\"mord mathnormal\" style=\"margin-right:0.07847em;color:transparent;\">X<\/span><\/span><\/span><span class=\"fix\"><\/span><\/span><\/span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:-0.15em;\"><span style=\"top:-2.55em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"><\/span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0em;\"><span style=\"top:-2.7em;\"><span class=\"pstrut\" style=\"height:2.7em;\"><\/span><span><span class=\"mord mtight\"><span class=\"mord mtight\">2<\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><span class=\"vlist-s\">​<\/span><\/span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span> In each trial below, students placed 0.10&#8239;g of Mg into 50&#8239;mL of HCl and recorded the time needed for all the Mg to dissolve.<\/p><p><b>Experiment 1.<\/b> Mg ribbon was used at 25&#8239;°C with four HCl concentrations (Table 1).<br> <b>Experiment 2.<\/b> Mg ribbon was used with 1.0&#8239;M HCl at four temperatures (Table 2).<br> <b>Experiment 3.<\/b> 1.0&#8239;M HCl at 25&#8239;°C was used with Mg ribbon and with Mg powder (Table 3).<\/p><p class=\"figcap\"><b>Table 1<\/b><\/p><div class=\"bt-wrap\"><table class=\"bt\"><thead><tr><th scope=\"col\">HCl (M)<\/th><th scope=\"col\">Time (s)<\/th><\/tr><\/thead><tbody><tr><td>0.5<\/td><td>240<\/td><\/tr><tr><td>1.0<\/td><td>120<\/td><\/tr><tr><td>1.5<\/td><td>80<\/td><\/tr><tr><td>2.0<\/td><td>60<\/td><\/tr><\/tbody><\/table><\/div><p class=\"figcap\"><b>Table 2<\/b><\/p><div class=\"bt-wrap\"><table class=\"bt\"><thead><tr><th scope=\"col\">Temp. (°C)<\/th><th scope=\"col\">Time (s)<\/th><\/tr><\/thead><tbody><tr><td>15<\/td><td>210<\/td><\/tr><tr><td>25<\/td><td>120<\/td><\/tr><tr><td>35<\/td><td>66<\/td><\/tr><tr><td>45<\/td><td>37<\/td><\/tr><\/tbody><\/table><\/div><p class=\"figcap\"><b>Table 3<\/b><\/p><div class=\"bt-wrap\"><table class=\"bt\"><thead><tr><th scope=\"col\">Form of Mg<\/th><th scope=\"col\">Time (s)<\/th><\/tr><\/thead><tbody><tr><td>ribbon<\/td><td>120<\/td><\/tr><tr><td>powder<\/td><td>35<\/td><\/tr><\/tbody><\/table><\/div>","cls":"free"},"p3":{"title":"Passage III &middot; Bouncing balls","html":"<p>Students dropped three balls (A, B and C) onto a concrete floor from several heights and measured the height of the first bounce (the rebound height). All Figure 3 trials were done at 20&#8239;°C. The students then dropped Ball A from 100&#8239;cm after storing it at different temperatures, and recorded the <i>rebound fraction<\/i> (rebound height <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>÷<\/mo><\/mrow><annotation encoding=\"application/x-tex\">\\div<\/annotation><\/semantics><\/math><\/span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6667em;vertical-align:-0.0833em;\"><\/span><span class=\"mord\">÷<\/span><\/span><\/span><\/span> drop height) in Table 4.<\/p><p><\/p><div class=\"fig\"><img class=\"fig-img\" src=\"/study/act/science/tests/fig/p6-rebound.png\" alt=\"Line graph of rebound height against drop height, 25 to 100 cm, for three balls. Ball A: 20, 40, 60, 80. Ball B: about 14, 28, 41, 55. Ball C: about 8, 15, 23, 30.\" width=\"403\" height=\"253\" loading=\"lazy\"><\/div><p class=\"figcap\"><b>Figure 3<\/b><\/p><p class=\"figcap\"><b>Table 4 (Ball A)<\/b><\/p><div class=\"bt-wrap\"><table class=\"bt\"><thead><tr><th scope=\"col\">Temp. (°C)<\/th><th scope=\"col\">Rebound fraction<\/th><\/tr><\/thead><tbody><tr><td><span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>−<\/mo><mn>10<\/mn><\/mrow><annotation encoding=\"application/x-tex\">-10<\/annotation><\/semantics><\/math><\/span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7278em;vertical-align:-0.0833em;\"><\/span><span class=\"mord\">−<\/span><span class=\"mord\">10<\/span><\/span><\/span><\/span><\/td><td>0.45<\/td><\/tr><tr><td>0<\/td><td>0.60<\/td><\/tr><tr><td>20<\/td><td>0.80<\/td><\/tr><tr><td>40<\/td><td>0.85<\/td><\/tr><\/tbody><\/table><\/div>","cls":"free"},"p4":{"title":"Passage IV &middot; Designing a small wind turbine","html":"<p>An engineering class built a small wind turbine whose rotor turns a generator. They tested rotors in a wind tunnel and recorded the generator’s output voltage. Their design goal was an output of <i>at least<\/i> 2.5&#8239;V at a wind speed of 5&#8239;m/s, using <i>no more than 4 blades<\/i> (because of material limits). The <i>pitch angle<\/i> is the angle at which each blade is tilted relative to the plane of rotation.<\/p><p><b>Test 1.<\/b> A 3-blade rotor was tested at a wind speed of 5&#8239;m/s with four pitch angles.<br> <b>Test 2.<\/b> Rotors with different numbers of blades were tested at a pitch angle of 30° and 5&#8239;m/s.<br> <b>Test 3.<\/b> The 3-blade, 30° rotor was tested at five wind speeds.<\/p><p class=\"figcap\"><b>Table 5: Test 1<\/b><\/p><div class=\"bt-wrap\"><table class=\"bt\"><thead><tr><th scope=\"col\">Pitch angle<\/th><th scope=\"col\">Voltage (V)<\/th><\/tr><\/thead><tbody><tr><td>10°<\/td><td>1.2<\/td><\/tr><tr><td>20°<\/td><td>2.1<\/td><\/tr><tr><td>30°<\/td><td>2.4<\/td><\/tr><tr><td>40°<\/td><td>1.6<\/td><\/tr><\/tbody><\/table><\/div><p class=\"figcap\"><b>Table 6: Test 2<\/b><\/p><div class=\"bt-wrap\"><table class=\"bt\"><thead><tr><th scope=\"col\">Blades<\/th><th scope=\"col\">Voltage (V)<\/th><\/tr><\/thead><tbody><tr><td>2<\/td><td>1.8<\/td><\/tr><tr><td>3<\/td><td>2.4<\/td><\/tr><tr><td>4<\/td><td>2.6<\/td><\/tr><tr><td>6<\/td><td>2.2<\/td><\/tr><\/tbody><\/table><\/div><p class=\"figcap\"><b>Table 7: Test 3<\/b><\/p><div class=\"bt-wrap\"><table class=\"bt\"><thead><tr><th scope=\"col\">Wind (m/s)<\/th><th scope=\"col\">Voltage (V)<\/th><\/tr><\/thead><tbody><tr><td>2<\/td><td>0.4<\/td><\/tr><tr><td>3<\/td><td>1.0<\/td><\/tr><tr><td>4<\/td><td>1.7<\/td><\/tr><tr><td>5<\/td><td>2.4<\/td><\/tr><tr><td>6<\/td><td>3.1<\/td><\/tr><\/tbody><\/table><\/div>","cls":"free"},"p5":{"title":"Passage V &middot; Formation of the Hawaiian Islands (conflicting viewpoints)","html":"<p>The Hawaiian Islands are volcanic and lie in a chain running northwest to southeast across the Pacific Plate. Active volcanoes occur only on the southeastern island, Hawai‘i. Table 8 lists the approximate age of the oldest volcanic rock on four islands and each island’s distance northwest of the active volcano Kīlauea.<\/p><p class=\"figcap\"><b>Table 8<\/b><\/p><div class=\"bt-wrap\"><table class=\"bt\"><thead><tr><th scope=\"col\">Island<\/th><th scope=\"col\">Age of oldest rock (million years)<\/th><th scope=\"col\">Distance NW of Kīlauea (km)<\/th><\/tr><\/thead><tbody><tr><td>Hawai‘i<\/td><td>0.4<\/td><td>50<\/td><\/tr><tr><td>Maui<\/td><td>1.3<\/td><td>150<\/td><\/tr><tr><td>O‘ahu<\/td><td>3.0<\/td><td>300<\/td><\/tr><tr><td>Kaua‘i<\/td><td>5.1<\/td><td>500<\/td><\/tr><\/tbody><\/table><\/div><p><b>Hypothesis 1.<\/b> A narrow column of hot rock, a <i>plume<\/i>, rises from deep in the mantle and stays in a fixed position. The Pacific Plate moves northwest over the plume at a nearly steady rate. Magma from the plume builds a volcano on the part of the plate above it; as the plate carries that volcano away, it becomes inactive and a new volcano forms over the plume. This produces a chain whose ages increase steadily with distance from the plume. Because the magma comes from the deep mantle, Hawaiian lava should have the chemical signature of deep-mantle rock, such as a high ratio of helium-3 to helium-4.<\/p><p><b>Hypothesis 2.<\/b> There is no deep plume. Stresses in the Pacific Plate opened a long crack that has slowly extended toward the southeast. Magma from the <i>shallow<\/i> upper mantle rises through the newest part of the crack, so volcanoes form along the crack in the order it opened, and the oldest islands lie at the northwest end. Because the magma is shallow, Hawaiian lava should chemically resemble lava from mid-ocean ridges, which has a low helium-3 to helium-4 ratio.<\/p>","cls":"free"},"p6":{"title":"Passage VI &middot; Antibiotics and bacterial growth","html":"<p>To test antibiotics, researchers spread bacteria evenly over agar plates and placed small paper disks soaked in antibiotic on the surface. After incubation, a clear <i>zone of inhibition<\/i>, where no bacteria grew, appeared around effective disks. A larger zone indicates greater effectiveness. All plates were incubated at 37&#8239;°C for 24&#8239;h.<\/p><p><b>Study 1.<\/b> <i>E. coli<\/i> plates received disks with 10&#8239;µg of Antibiotic X, Y, or Z, or a disk soaked in sterile water.<br> <b>Study 2.<\/b> <i>E. coli<\/i> plates received disks with different amounts of Antibiotic Z.<br> <b>Study 3.<\/b> Plates of three bacterial species received disks with 10&#8239;µg of Antibiotic X.<\/p><p class=\"figcap\"><b>Table 9: Study 1<\/b><\/p><div class=\"bt-wrap\"><table class=\"bt\"><thead><tr><th scope=\"col\">Disk<\/th><th scope=\"col\">Zone (mm)<\/th><\/tr><\/thead><tbody><tr><td>water<\/td><td>0<\/td><\/tr><tr><td>X<\/td><td>18<\/td><\/tr><tr><td>Y<\/td><td>9<\/td><\/tr><tr><td>Z<\/td><td>24<\/td><\/tr><\/tbody><\/table><\/div><p class=\"figcap\"><b>Table 10: Study 2<\/b><\/p><div class=\"bt-wrap\"><table class=\"bt\"><thead><tr><th scope=\"col\">Z (µg)<\/th><th scope=\"col\">Zone (mm)<\/th><\/tr><\/thead><tbody><tr><td>2.5<\/td><td>12<\/td><\/tr><tr><td>5<\/td><td>18<\/td><\/tr><tr><td>10<\/td><td>24<\/td><\/tr><tr><td>20<\/td><td>27<\/td><\/tr><\/tbody><\/table><\/div><p class=\"figcap\"><b>Table 11: Study 3<\/b><\/p><div class=\"bt-wrap\"><table class=\"bt\"><thead><tr><th scope=\"col\">Species<\/th><th scope=\"col\">Zone (mm)<\/th><\/tr><\/thead><tbody><tr><td><i>E. coli<\/i><\/td><td>18<\/td><\/tr><tr><td><i>S. aureus<\/i><\/td><td>25<\/td><\/tr><tr><td><i>P. aeruginosa<\/i><\/td><td>0<\/td><\/tr><\/tbody><\/table><\/div>","cls":"free"},"p7":{"title":"Passage VII &middot; Ocean chemistry and shells","html":"<p>Some of the carbon dioxide (CO<span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mrow><\/mrow><mn>2<\/mn><\/msub><\/mrow><annotation encoding=\"application/x-tex\">_2<\/annotation><\/semantics><\/math><\/span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4511em;vertical-align:-0.15em;\"><\/span><span class=\"mord\"><span><\/span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"><\/span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2<\/span><\/span><\/span><\/span><span class=\"vlist-s\">​<\/span><\/span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span>) added to the atmosphere dissolves in seawater and lowers its pH. Figure 4 shows the average atmospheric CO<span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mrow><\/mrow><mn>2<\/mn><\/msub><\/mrow><annotation encoding=\"application/x-tex\">_2<\/annotation><\/semantics><\/math><\/span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4511em;vertical-align:-0.15em;\"><\/span><span class=\"mord\"><span><\/span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"><\/span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2<\/span><\/span><\/span><\/span><span class=\"vlist-s\">​<\/span><\/span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span> concentration and the average pH of surface seawater at an open-ocean station from 1990 to 2020 (approximate values). In a separate laboratory study, juvenile marine snails of one species were raised for 60 days in seawater adjusted to different pH values, and their average shell mass was measured (Table 12).<\/p><p><\/p><div class=\"fig\"><img class=\"fig-img\" src=\"/study/act/science/tests/fig/p6-co2-ph.png\" alt=\"Graph from 1990 to 2020 with two vertical axes. Atmospheric CO₂ (solid, left axis) rises from about 354 to 413 ppm; seawater pH (dashed, right axis) falls from about 8.11 to 8.05.\" width=\"454\" height=\"240\" loading=\"lazy\"><\/div><p class=\"figcap\"><b>Figure 4<\/b><\/p><p class=\"figcap\"><b>Table 12<\/b><\/p><div class=\"bt-wrap\"><table class=\"bt\"><thead><tr><th scope=\"col\">Seawater pH<\/th><th scope=\"col\">Shell mass (mg)<\/th><\/tr><\/thead><tbody><tr><td>8.2<\/td><td>52<\/td><\/tr><tr><td>8.1<\/td><td>50<\/td><\/tr><tr><td>8.0<\/td><td>46<\/td><\/tr><tr><td>7.9<\/td><td>40<\/td><\/tr><tr><td>7.8<\/td><td>33<\/td><\/tr><\/tbody><\/table><\/div>","cls":"free"}},"mc":[{"n":1,"prompt":"According to Figure 1, the surface temperature at 12 h was closest to:","options":["17&#8239;°C","20&#8239;°C","27&#8239;°C","30&#8239;°C"],"answer":3,"sec":"1","topic":"2","tag":"ID-1","stim":"p1","ex":{"idea":"Read the frame, then trace up from the x-value to the named curve and across (Rule ID-1).","steps":["Figure 1, surface curve (solid, circles), at 12 h.","It reads 30 °C, the day’s peak."],"others":{"0":"the 50 cm temperature, which stays near 17 °C all day.","1":"the 10 cm value at 12 h.","2":"the surface value at 16 h."}}},{"n":2,"prompt":"According to Figure 2, as depth increases, the daily range of soil temperature:","options":["increases only.","decreases only.","increases and then decreases.","remains constant."],"answer":1,"sec":"1","topic":"2","tag":"ID-2","stim":"p1","ex":{"idea":"Name the trend across every point (Rule ID-2).","steps":["Figure 2: 21, 15, 10, 5, 2, 0.5 °C as depth goes from 0 to 50 cm.","It falls at every step: decreases only."],"others":{"0":"the range never rises.","2":"there is no rise at all.","3":"it changes from 21 °C to 0.5 °C."}}},{"n":3,"prompt":"According to Figure 1, the temperature at 10 cm reached its maximum at approximately:","options":["4 h","12 h","16 h","20 h"],"answer":2,"sec":"1","topic":"2","tag":"ID-1","stim":"p1","ex":{"idea":"Find a maximum by scanning the named curve for its highest point (Rule ID-1).","steps":["The 10 cm curve (dashed, squares) peaks at about 24 °C.","That peak is at 16 h, four hours after the surface peak."],"others":{"0":"near the 10 cm curve’s lowest point.","1":"the surface peaks at 12 h; the 10 cm curve is still rising (20 °C).","3":"the 10 cm curve has fallen to 20 °C by then."}}},{"n":4,"prompt":"Based on Figure 2, the daily range at a depth of 40 cm would most likely be closest to:","options":["0.1&#8239;°C","1&#8239;°C","3&#8239;°C","5&#8239;°C"],"answer":1,"sec":"1","topic":"2","tag":"ID-3","stim":"p1","ex":{"idea":"Interpolate between the two nearest measured depths (Rule ID-3).","steps":["40 cm lies between 30 cm (2 °C) and 50 cm (0.5 °C).","A value between 0.5 and 2: about 1 °C."],"others":{"0":"below the 50 cm value of 0.5 °C, though 40 cm is shallower.","2":"above the 30 cm value of 2 °C, though 40 cm is deeper.","3":"the range at 20 cm."}}},{"n":5,"prompt":"By how much did the surface temperature increase from 4 h to 12 h?","options":["9&#8239;°C","15&#8239;°C","21&#8239;°C","30&#8239;°C"],"answer":2,"sec":"1","topic":"2","tag":"ID-5","stim":"p1","ex":{"idea":"A change is later reading minus earlier reading (Rule ID-5).","steps":["Surface: 9 °C at 4 h, 30 °C at 12 h.","30 − 9 = 21 °C."],"others":{"0":"the 4 h temperature, not the change.","1":"does not follow from 9 and 30.","3":"the 12 h temperature, not the change."}}},{"n":6,"prompt":"A burrowing animal that needs a nearly constant temperature all day would do best at which depth?","options":["50 cm","10 cm","5 cm","Surface"],"answer":0,"sec":"1","topic":"4","tag":"EM-2","stim":"p1","ex":{"idea":"Apply the data to a new goal: “nearly constant temperature” means the smallest daily range (Rule EM-2).","steps":["Figure 1: the 50 cm line is flat near 17 °C. Figure 2: its daily range is only about 0.5 °C.","The deepest depth, 50 cm, is the steadiest."],"others":{"1":"10 cm swings from about 14 to 24 °C.","2":"5 cm has a daily range of about 15 °C.","3":"the surface swings by 21 °C."}}},{"n":7,"prompt":"In Experiment 2, the independent variable was:","options":["temperature.","HCl concentration.","time for the Mg to dissolve.","mass of Mg."],"answer":0,"sec":"2","topic":"3","tag":"SI-1","stim":"p2","ex":{"idea":"The independent variable is the one deliberately changed within that experiment (Rule SI-1).","steps":["Experiment 2: Mg ribbon in 1.0 M HCl at 15, 25, 35, 45 °C.","Only temperature changes, so it is the independent variable."],"others":{"1":"fixed at 1.0 M in Experiment 2 (it varied in Experiment 1).","2":"the dissolving time was measured: the dependent variable.","3":"0.10 g in every trial."}}},{"n":8,"prompt":"According to Table 1, as HCl concentration increased, the time for the Mg to dissolve:","options":["increased only.","decreased only.","increased and then decreased.","remained constant."],"answer":1,"sec":"2","topic":"2","tag":"ID-2","stim":"p2","ex":{"idea":"Name the trend by checking each step (Rule ID-2).","steps":["Table 1: 240, 120, 80, 60 s as HCl goes from 0.5 to 2.0 M.","The time falls at every step: decreased only."],"others":{"0":"the time never rises.","2":"there is no rise.","3":"the time changes from 240 to 60 s."}}},{"n":9,"prompt":"If Experiment 2 had included a trial at 30&#8239;°C, the time for the Mg to dissolve would most likely have been:","options":["less than 37 s.","between 37 s and 66 s.","between 66 s and 120 s.","greater than 120 s."],"answer":2,"sec":"2","topic":"2","tag":"ID-3","stim":"p2","ex":{"idea":"Interpolate: 30 °C lies between two tested temperatures (Rule ID-3).","steps":["Table 2: 120 s at 25 °C, 66 s at 35 °C.","30 °C should fall between: between 66 s and 120 s."],"others":{"0":"faster than at 45 °C; 30 °C is cooler.","1":"the range for 35–45 °C.","3":"slower than at 25 °C, though 30 °C is warmer."}}},{"n":10,"prompt":"The students used 0.10&#8239;g of Mg in every trial most likely to ensure that:","options":["the reaction would produce no hydrogen gas.","the HCl concentration stayed constant.","the reaction would happen at 25&#8239;°C.","differences in dissolving time were not caused by different amounts of Mg."],"answer":3,"sec":"2","topic":"3","tag":"SI-3","stim":"p2","ex":{"idea":"Holding a quantity constant removes it as a possible cause of differences (Rule SI-3).","steps":["If the Mg mass varied, more metal would take longer to dissolve regardless of the variable under test.","Fixing it at 0.10 g means time differences come from concentration, temperature, or form."],"others":{"0":"the reaction always releases hydrogen; mass doesn’t prevent it.","1":"acid concentration was set by the solution, not by the Mg mass.","2":"temperature was set separately (and varied in Experiment 2)."}}},{"n":11,"prompt":"Do the results of Experiment 3 support the hypothesis that increasing the surface area of Mg increases the rate of reaction?","options":["Yes; the powder dissolved in less time than the ribbon.","Yes; the ribbon dissolved in less time than the powder.","No; the powder dissolved in more time than the ribbon.","No; both forms used the same HCl concentration."],"answer":0,"sec":"2","topic":"4","tag":"EM-1","stim":"p2","ex":{"idea":"Decide yes or no from the data, then check that the reason is true and relevant (Rule EM-1).","steps":["Powder has far more surface area than ribbon. Table 3: powder 35 s, ribbon 120 s, under the same conditions.","More surface area → faster reaction: Yes."],"others":{"1":"false: the ribbon took longer (120 s vs. 35 s).","2":"false: the powder took less time.","3":"true, but that is what makes the comparison fair, not a reason to reject the hypothesis."}}},{"n":12,"prompt":"The students want to know whether the <i>type<\/i> of acid affects dissolving time. Which experiment would best test this?","options":["Use 0.10&#8239;g of Mg ribbon in 1.0&#8239;M HCl at 15, 25, and 35&#8239;°C.","Use 0.10&#8239;g of Mg ribbon in 50&#8239;mL of three different 1.0&#8239;M acids at 25&#8239;°C.","Use Mg ribbon in 1.0&#8239;M HCl and Mg powder in a different 1.0&#8239;M acid at 25&#8239;°C.","Use 0.10&#8239;g of Mg ribbon in HCl at four concentrations at 25&#8239;°C."],"answer":1,"sec":"2","topic":"3","tag":"SI-5","stim":"p2","ex":{"idea":"To test one factor, change only that factor (Rule SI-5).","steps":["The question is acid type.","G changes only the acid, keeping Mg mass and form, acid volume and concentration, and temperature as in the tested condition."],"others":{"0":"varies temperature, and uses only HCl.","2":"changes acid type and Mg form together, so their effects can’t be separated.","3":"varies concentration, and uses only HCl."}}},{"n":13,"prompt":"According to Figure 3, when Ball B was dropped from 75 cm, its rebound height was closest to:","options":["23 cm","41 cm","55 cm","60 cm"],"answer":1,"sec":"3","topic":"2","tag":"ID-1","stim":"p3","ex":{"idea":"Match the series by its legend symbol, then trace (Rule ID-1).","steps":["Ball B is the dashed line with squares.","At a 75 cm drop it rebounds to about 41 cm."],"others":{"0":"Ball C at 75 cm.","2":"Ball B at 100 cm.","3":"Ball A at 75 cm."}}},{"n":14,"prompt":"If the trend in Figure 3 continues, Ball C dropped from 150 cm at 20&#8239;°C would rebound to about:","options":["15 cm","30 cm","45 cm","60 cm"],"answer":2,"sec":"3","topic":"2","tag":"ID-3","stim":"p3","ex":{"idea":"Extrapolate along the trend; a straight line through the origin keeps the same ratio (Rule ID-3).","steps":["Ball C rebounds about 0.3 of its drop height (30 cm from 100 cm).","At 150 cm: 0.3 × 150 = 45 cm."],"others":{"0":"Ball C’s rebound at 50 cm, smaller than at 100 cm.","1":"Ball C’s rebound at 100 cm; the trend keeps rising.","3":"would be a 0.4 fraction, more than Ball C shows."}}},{"n":15,"prompt":"At 20&#8239;°C, Ball A’s rebound height was what percent of its drop height?","options":["30%","55%","70%","80%"],"answer":3,"sec":"3","topic":"2","tag":"ID-5","stim":"p3","ex":{"idea":"Percent = part ÷ whole × 100 (Rule ID-5).","steps":["Ball A: 80 cm rebound from a 100 cm drop (also 20/25, 40/50, 60/75).","80 ÷ 100 = 0.80 = 80%."],"others":{"0":"Ball C’s percent.","1":"Ball B’s percent.","2":"does not match any ball."}}},{"n":16,"prompt":"According to Table 4, as the temperature of Ball A increased, its rebound fraction:","options":["increased only.","decreased only.","increased and then decreased.","remained constant."],"answer":0,"sec":"3","topic":"2","tag":"ID-2","stim":"p3","ex":{"idea":"Check each step of the trend (Rule ID-2).","steps":["Table 4: 0.45, 0.60, 0.80, 0.85 as temperature rises from −10 to 40 °C.","It rises at every step: increased only."],"others":{"1":"it never falls.","2":"it never falls.","3":"it changes from 0.45 to 0.85."}}},{"n":17,"prompt":"Based on Table 4, if Ball A were stored at 0&#8239;°C and dropped from 100 cm, its rebound height would most likely be about:","options":["45 cm","60 cm","80 cm","85 cm"],"answer":1,"sec":"3","topic":"4","tag":"EM-2","stim":"p3","ex":{"idea":"Use the table to predict: rebound height = fraction × drop height (Rule EM-2).","steps":["Table 4: at 0 °C the rebound fraction is 0.60.","0.60 × 100 cm = 60 cm."],"others":{"0":"the fraction at −10 °C applied to 100 cm.","2":"the 20 °C result from Figure 3.","3":"the 40 °C result."}}},{"n":18,"prompt":"Which of the following was held constant in Test 2?","options":["Number of blades","Output voltage","Pitch angle","Rotor material cost"],"answer":2,"sec":"4","topic":"3","tag":"SI-1","stim":"p4","ex":{"idea":"Constants are the settings shared by every trial in a test (Rule SI-1).","steps":["Test 2: every rotor at 30° pitch and 5 m/s; only the number of blades changed.","So pitch angle was held constant."],"others":{"0":"the number of blades was what Test 2 varied.","1":"voltage was measured, the dependent variable.","3":"cost was not measured or controlled in Test 2."}}},{"n":19,"prompt":"According to Test 1, as pitch angle increased from 10° to 40°, voltage:","options":["increased only.","decreased only.","increased and then decreased.","decreased and then increased."],"answer":2,"sec":"4","topic":"2","tag":"ID-2","stim":"p4","ex":{"idea":"Check every step to name the trend (Rule ID-2).","steps":["Table 5: 1.2, 2.1, 2.4 V (10° to 30°), then 1.6 V at 40°.","Voltage rises and then falls."],"others":{"0":"voltage falls after 30°.","1":"voltage rises from 10° to 30°.","3":"the order is reversed."}}},{"n":20,"prompt":"Which rotor tested met the design goal?","options":["3 blades, 30°","4 blades, 30°","6 blades, 30°","3 blades, 20°"],"answer":1,"sec":"4","topic":"3","tag":"SI-7","stim":"p4","ex":{"idea":"Engineering design: test each option against every constraint (Rule SI-7).","steps":["Goal: ≥ 2.5 V at 5 m/s with ≤ 4 blades.","4 blades at 30°: 2.6 V. It passes both."],"others":{"0":"2.4 V, just under 2.5 V.","2":"2.2 V, and 6 blades breaks the 4-blade limit.","3":"2.1 V."}}},{"n":21,"prompt":"Which variable was varied in Test 3 but held constant in Tests 1 and 2?","options":["Pitch angle","Number of blades","Output voltage","Wind speed"],"answer":3,"sec":"4","topic":"3","tag":"SI-4","stim":"p4","ex":{"idea":"Diff the tests: what changes in one and stays fixed in the others (Rule SI-4).","steps":["Tests 1 and 2 were both run at 5 m/s.","Test 3 varied wind speed from 2 to 6 m/s."],"others":{"0":"pitch varied in Test 1.","1":"blade number varied in Test 2.","2":"voltage was measured in every test."}}},{"n":22,"prompt":"Based on Test 3, at a wind speed of 4.5&#8239;m/s the 3-blade, 30° rotor would most likely produce about:","options":["1.0&#8239;V","1.4&#8239;V","2.0&#8239;V","2.7&#8239;V"],"answer":2,"sec":"4","topic":"2","tag":"ID-3","stim":"p4","ex":{"idea":"Interpolate between neighboring values (Rule ID-3).","steps":["Table 7: 1.7 V at 4 m/s and 2.4 V at 5 m/s.","4.5 m/s is halfway: about 2.0 V."],"others":{"0":"the voltage at 3 m/s.","1":"below the 4 m/s value of 1.7 V.","3":"above the 5 m/s value of 2.4 V."}}},{"n":23,"prompt":"The class suspects the best pitch angle may be different for a 4-blade rotor. Which test should they run next?","options":["Test a 4-blade rotor at 5&#8239;m/s with pitch angles of 10°, 20°, 30°, and 40°.","Test 2-, 3-, 4- and 6-blade rotors at 30° and 6&#8239;m/s.","Test a 4-blade rotor at 30° with wind speeds from 2 to 6&#8239;m/s.","Test a 3-blade rotor at 25° and a 4-blade rotor at 35°, both at 5&#8239;m/s."],"answer":0,"sec":"4","topic":"3","tag":"SI-5","stim":"p4","ex":{"idea":"To find the best setting of one variable for a design, vary only that variable (Rule SI-5).","steps":["The question is the best pitch for a 4-blade rotor.","Keep 4 blades and 5 m/s, and vary only the pitch angle."],"others":{"1":"varies blade number at one pitch, so it can’t find the best pitch.","2":"varies wind speed at one pitch.","3":"changes blades and pitch together and tests only one pitch each."}}},{"n":24,"prompt":"According to Hypothesis 1, islands farther northwest are older because:","options":["a crack in the plate opened first at its northwest end.","the Pacific Plate has carried them northwest away from a fixed plume.","the plume has moved northwest beneath a stationary plate.","northwestern islands formed from shallow-mantle magma."],"answer":1,"sec":"5","topic":"4","tag":"EM-3","stim":"p5","ex":{"idea":"Summarize each hypothesis in one line, in its own terms (Rule EM-3).","steps":["Hypothesis 1: a fixed plume, with the plate moving northwest over it.","Volcanoes carried northwest go extinct, so islands farther northwest are older."],"others":{"0":"Hypothesis 2’s crack.","2":"reverses Hypothesis 1: the plume is fixed and the plate moves.","3":"Hypothesis 2’s shallow magma."}}},{"n":25,"prompt":"Supporters of both hypotheses would agree that:","options":["a deep-mantle plume lies beneath Hawai‘i.","the Hawaiian magma comes from the shallow mantle.","the Pacific Plate is not moving.","Kaua‘i is older than Hawai‘i."],"answer":3,"sec":"5","topic":"4","tag":"EM-4","stim":"p5","ex":{"idea":"Agreement: facts in the introduction that both hypotheses explain (Rule EM-4).","steps":["Table 8: Kaua‘i’s oldest rock is 5.1 million years old; Hawai‘i’s is 0.4.","Both hypotheses explain why northwestern islands are older, so both accept that Kaua‘i is older."],"others":{"0":"only Hypothesis 1 has a plume.","1":"only Hypothesis 2 has shallow magma.","2":"Hypothesis 1 needs the plate to move northwest."}}},{"n":26,"prompt":"Suppose lava from Kīlauea is found to have a helium-3 to helium-4 ratio much higher than that of mid-ocean ridge lava. This finding would:","options":["support Hypothesis 1 and weaken Hypothesis 2.","support Hypothesis 2 and weaken Hypothesis 1.","support both hypotheses.","weaken both hypotheses."],"answer":0,"sec":"5","topic":"4","tag":"EM-5","stim":"p5","ex":{"idea":"New evidence supports the model that predicted it (Rule EM-5).","steps":["Hypothesis 1 predicts a high helium-3/helium-4 ratio (deep mantle). Hypothesis 2 predicts a low, ridge-like ratio.","A much higher ratio than ridge lava fits Hypothesis 1 and contradicts Hypothesis 2."],"others":{"1":"reversed.","2":"the hypotheses make opposite predictions, so one result can’t support both.","3":"the finding matches Hypothesis 1’s prediction."}}},{"n":27,"prompt":"According to Hypothesis 1, the next new island in the chain will most likely form:","options":["northwest of Kaua‘i.","between Maui and O‘ahu.","southeast of Hawai‘i.","directly on top of O‘ahu."],"answer":2,"sec":"5","topic":"4","tag":"EM-2","stim":"p5","ex":{"idea":"Apply the model to predict: follow its own mechanism (Rule EM-2).","steps":["Hypothesis 1: the plate moves northwest over a fixed plume.","The next volcano forms where the plate now sits over the plume: southeast of the youngest island, Hawai‘i."],"others":{"0":"the northwest end has the oldest islands, carried away from the plume.","1":"that part of the plate has already passed over the plume.","3":"O‘ahu has been carried 300 km away from the plume."}}},{"n":28,"prompt":"If Hypothesis 1 is correct, the Pacific Plate has moved at an average rate closest to:","options":["0.1 cm/yr","1 cm/yr","10 cm/yr","100 cm/yr"],"answer":2,"sec":"5","topic":"4","tag":"EM-2","stim":"p5","ex":{"idea":"Rate = distance ÷ time. Convert units before dividing.","steps":["Kaua‘i: 500 km in about 5 million years. 500 km = 5 × 10⁷ cm.","5 × 10⁷ cm ÷ 5 × 10⁶ yr = 10 cm/yr."],"others":{"0":"off by a factor of 100.","1":"off by a factor of 10.","3":"off by a factor of 10 in the other direction."}}},{"n":29,"prompt":"Which finding, if true, would most directly weaken Hypothesis 1 but <i>not<\/i> Hypothesis 2?","options":["The islands’ ages increase steadily toward the northwest.","Hawaiian lava has a low helium-3 to helium-4 ratio.","No crack has been detected in the Pacific Plate near Hawai‘i.","The deep-mantle heat source beneath Hawai‘i has shifted several hundred kilometers over the past 5 million years."],"answer":3,"sec":"5","topic":"4","tag":"EM-5","stim":"p5","ex":{"idea":"Weaken one model but not the other: attack an assumption only the first relies on (Rule EM-5).","steps":["Hypothesis 1 requires the plume to stay in a fixed position.","A heat source that shifted hundreds of kilometers contradicts that; Hypothesis 2 has no plume, so it is unaffected."],"others":{"0":"both hypotheses predict older islands to the northwest.","1":"this would also count against Hypothesis 1 (which predicts a high ratio), but it supports Hypothesis 2 rather than leaving it untouched; the key prefers D, which attacks Hypothesis 1’s fixed-plume assumption and has no bearing on Hypothesis 2.","2":"weakens Hypothesis 2, which relies on a crack."}}},{"n":30,"prompt":"The main purpose of the disk soaked in sterile water in Study 1 was to:","options":["test a fourth antibiotic.","increase the number of disks per plate.","keep the incubation temperature constant.","show whether a disk without antibiotic produced a zone of inhibition."],"answer":3,"sec":"6","topic":"3","tag":"SI-2","stim":"p6","ex":{"idea":"A control shows what happens without the factor being tested (Rule SI-2).","steps":["The water disk has no antibiotic.","Its 0 mm zone shows the disk and procedure alone do not clear bacteria: the baseline."],"others":{"0":"water is not an antibiotic.","1":"its purpose is comparison, not more disks.","2":"incubation temperature was set separately (37 °C)."}}},{"n":31,"prompt":"Based on Study 1, which antibiotic was most effective against <i>E. coli<\/i>?","options":["Antibiotic X","Antibiotic Y","Antibiotic Z","All were equally effective."],"answer":2,"sec":"6","topic":"2","tag":"ID-1","stim":"p6","ex":{"idea":"Larger zone = more effective; compare the zones at the same dose (Rule ID-1).","steps":["Study 1 at 10 µg: X 18 mm, Y 9 mm, Z 24 mm.","Z has the largest zone."],"others":{"0":"18 mm, smaller than Z’s 24.","1":"9 mm, the smallest of the three.","3":"the zones differ (9 to 24 mm)."}}},{"n":32,"prompt":"According to Study 2, as the amount of Antibiotic Z increased, the zone of inhibition:","options":["increased only.","decreased only.","increased and then decreased.","remained constant."],"answer":0,"sec":"6","topic":"2","tag":"ID-2","stim":"p6","ex":{"idea":"Check every step (Rule ID-2).","steps":["Table 10: 12, 18, 24, 27 mm as Z goes from 2.5 to 20 µg.","It grows at every step: increased only."],"others":{"1":"the zone never shrinks.","2":"the zone never shrinks.","3":"the zone changes from 12 to 27 mm."}}},{"n":33,"prompt":"Studies 1 and 3 differed in that:","options":["Study 1 used several bacterial species, while Study 3 used only <i>E. coli<\/i>.","Study 1 varied the antibiotic, while Study 3 varied the bacterial species.","Study 1 varied the amount of antibiotic, while Study 3 did not.","Study 1 was incubated at a different temperature than Study 3."],"answer":1,"sec":"6","topic":"3","tag":"SI-4","stim":"p6","ex":{"idea":"Diff the studies: what each one varies (Rule SI-4).","steps":["Study 1: one species (E. coli), several antibiotics.","Study 3: one antibiotic (X), several species."],"others":{"0":"reversed.","2":"Study 2 varied the amount; Study 1 used 10 µg throughout.","3":"all plates were incubated at 37 °C."}}},{"n":34,"prompt":"A student concludes that Antibiotic X is effective against all bacteria. Is this conclusion supported by Study 3?","options":["Yes; X produced a zone with <i>E. coli<\/i>.","Yes; X produced its largest zone with <i>S. aureus<\/i>.","No; X produced a larger zone with <i>S. aureus<\/i> than with <i>E. coli<\/i>.","No; X produced no zone with <i>P. aeruginosa<\/i>."],"answer":3,"sec":"6","topic":"4","tag":"EM-6","stim":"p6","ex":{"idea":"A conclusion about “all” is disproved by a single counterexample (Rule EM-6).","steps":["Table 11: X gave no zone (0 mm) with P. aeruginosa.","So X is not effective against every species tested: No, for that reason."],"others":{"0":"one species is not all bacteria.","1":"a large zone with one species doesn’t show effectiveness against all.","2":"true, but a bigger zone with one species doesn’t contradict the claim; the 0 mm zone does."}}},{"n":35,"prompt":"All plates were incubated at 37&#8239;°C for 24&#8239;h most likely so that:","options":["differences in zone size were not caused by differences in growth conditions.","the antibiotics would evaporate.","the bacteria would stop growing.","the zones would all be the same size."],"answer":0,"sec":"6","topic":"3","tag":"SI-3","stim":"p6","ex":{"idea":"Every step has a job; identical conditions keep comparisons fair (Rule SI-3).","steps":["If plates grew at different temperatures or times, zone sizes would differ for reasons other than the antibiotic.","Same incubation means differences come from the antibiotic or species tested."],"others":{"1":"nothing suggests the antibiotics should evaporate.","2":"the bacteria need to grow to show a zone.","3":"the zones are expected to differ; that is what is measured."}}},{"n":36,"prompt":"According to Figure 4, as atmospheric CO<span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mrow><\/mrow><mn>2<\/mn><\/msub><\/mrow><annotation encoding=\"application/x-tex\">_2<\/annotation><\/semantics><\/math><\/span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4511em;vertical-align:-0.15em;\"><\/span><span class=\"mord\"><span><\/span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"><\/span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2<\/span><\/span><\/span><\/span><span class=\"vlist-s\">​<\/span><\/span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span> increased from 1990 to 2020, seawater pH:","options":["increased only.","decreased only.","increased and then decreased.","remained constant."],"answer":1,"sec":"7","topic":"2","tag":"ID-2","stim":"p7","ex":{"idea":"Read each series against its own axis (Rule ID-2).","steps":["CO₂ (solid line, left axis) rises from about 354 to 413 ppm.","pH (dashed line, right axis) falls at every point from about 8.11 to 8.05: decreased only."],"others":{"0":"pH falls.","2":"pH never rises.","3":"pH changes from about 8.11 to 8.05."}}},{"n":37,"prompt":"According to Table 12, the average shell mass at pH 7.9 was:","options":["33 mg","40 mg","46 mg","50 mg"],"answer":1,"sec":"7","topic":"2","tag":"ID-1","stim":"p7","ex":{"idea":"Read the named row (Rule ID-1).","steps":["Table 12, pH 7.9 row.","Shell mass: 40 mg."],"others":{"0":"the mass at pH 7.8.","2":"the mass at pH 8.0.","3":"the mass at pH 8.1."}}},{"n":38,"prompt":"If the snails were raised at pH 7.95, their average shell mass would most likely be:","options":["less than 33 mg.","between 33 mg and 40 mg.","between 40 mg and 46 mg.","greater than 50 mg."],"answer":2,"sec":"7","topic":"4","tag":"EM-2","stim":"p7","ex":{"idea":"Predict by bracketing between neighbors (Rule EM-2).","steps":["pH 7.95 lies between 8.0 (46 mg) and 7.9 (40 mg).","So the mass should be between 40 and 46 mg."],"others":{"0":"below the lowest value (pH 7.8).","1":"the range for pH 7.8–7.9.","3":"above the pH 8.1 value."}}},{"n":39,"prompt":"Do the data in Table 12 support the hypothesis that lower seawater pH reduces the shell mass of this snail species?","options":["Yes; shell mass decreased each time pH was lowered.","Yes; atmospheric CO<span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mrow><\/mrow><mn>2<\/mn><\/msub><\/mrow><annotation encoding=\"application/x-tex\">_2<\/annotation><\/semantics><\/math><\/span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4511em;vertical-align:-0.15em;\"><\/span><span class=\"mord\"><span><\/span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"><\/span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2<\/span><\/span><\/span><\/span><span class=\"vlist-s\">​<\/span><\/span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span> increased from 1990 to 2020.","No; shell mass increased each time pH was lowered.","No; the snails were raised for only 60 days."],"answer":0,"sec":"7","topic":"4","tag":"EM-1","stim":"p7","ex":{"idea":"Hypothesis questions: yes or no from the data, then a true and relevant reason (Rule EM-1).","steps":["Table 12: 52, 50, 46, 40, 33 mg as pH falls from 8.2 to 7.8.","Shell mass falls at every lower pH: Yes."],"others":{"1":"true, but it is about the atmosphere, not shell mass.","2":"false: shell mass decreased.","3":"true, but a 60-day study can still support the hypothesis for that period."}}},{"n":40,"prompt":"A student claims that, based on Table 12, <i>all<\/i> marine snail species will lose shell mass as ocean pH declines. This claim is:","options":["supported, because shell mass decreased at every lower pH.","supported, because Figure 4 shows ocean pH is falling.","not supported, because shell mass increased at lower pH.","not supported, because only one species was tested."],"answer":3,"sec":"7","topic":"4","tag":"EM-6","stim":"p7","ex":{"idea":"A conclusion can only reach as far as the data: what was tested (Rule EM-6).","steps":["Table 12 tests one snail species in a laboratory.","A claim about all marine snails goes beyond that: not supported."],"others":{"0":"true for this species, but it does not extend to all species.","1":"Figure 4 says nothing about snails.","2":"false: shell mass decreased."}}}],"fr":[]}</script>
+<script>
+(function(){
+"use strict";
+var DATA = JSON.parse(document.getElementById("data").textContent);
+var META = DATA.meta, MC = DATA.mc, FR = DATA.fr || [], TOP = DATA.topics || {}, SEC = DATA.sections || {}, STIM = DATA.stims || {}, BY = {};
+MC.forEach(function(q){ BY[q.n] = q; });
+var KEY = META.key, FKEY = META.fkey || META.key + ".fr", HAS_FR = FR.length > 0;
+
+function load(k, d){ try{ var v = localStorage.getItem(k); return v ? JSON.parse(v) : d; }catch(e){ return d; } }
+function save(k, v){ try{ localStorage.setItem(k, JSON.stringify(v)); }catch(e){} }
+function esc(s){ return String(s).replace(/[&<>"]/g, function(c){ return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]; }); }
+function shuffle(a){ a = a.slice(); for (var i = a.length - 1; i > 0; i--){ var j = Math.floor(Math.random() * (i + 1)); var t = a[i]; a[i] = a[j]; a[j] = t; } return a; }
+function range(n){ var a = []; for (var i = 0; i < n; i++) a.push(i); return a; }
+
+var S = load(KEY, null);
+if (!S || !S.phase || !S.order || S.order.some(function(n){ return !BY[n]; })) S = { phase: "setup", mode: "practice", shuffleQ: false, shuffleC: false, order: [], copt: {}, ans: {}, pos: 0, full: null };
+var confirmFinish = false;
+var mcEl = document.getElementById("mc");
+
+function start(nums){
+  var list = nums || MC.map(function(q){ return q.n; });
+  S.order = S.shuffleQ ? shuffle(list) : list.slice();
+  S.copt = {};
+  S.order.forEach(function(n){
+    var q = BY[n], idx = range(q.options.length);
+    S.copt[n] = (S.shuffleC && !q.fixed) ? shuffle(idx) : idx;
+  });
+  S.ans = {}; S.pos = 0; S.phase = "run"; confirmFinish = false;
+  save(KEY, S); render(); focusTop();
+}
+function focusTop(){ var t = document.querySelector(".tabs") || document.querySelector(".title"); if (t && t.getBoundingClientRect().top < 0) t.scrollIntoView(); }
+
+function stats(){
+  var right = 0, done = 0;
+  S.order.forEach(function(n){ if (n in S.ans){ done++; if (S.ans[n] === BY[n].answer) right++; } });
+  return { right: right, done: done, total: S.order.length };
+}
+function topicShort(t){ return (META.topicPrefix || "") + t; }
+function topicLabel(t){ return topicShort(t) + ", " + TOP[t].name; }
+function guideLink(t, short){
+  var g = TOP[t], txt = short ? g.name : topicLabel(t);
+  var href = g.url ? g.url : (META.guide && g.page ? META.guide + "#page=" + g.page : "");
+  return href ? '<a href="' + href + '">' + txt + "</a>" : txt;
+}
+function topicLinks(ts){
+  ts = ts.filter(function(t){ return TOP[t]; });
+  if (!ts.length || !(META.guide || TOP[ts[0]].url)) return "";
+  return '<p class="links">Review ' + ts.map(function(t){ return guideLink(t); }).join(" &middot; ") + " in " + META.guideName + "</p>";
+}
+function explain(q, picked){
+  var e = q.ex, h = '<div class="why"><p>' + e.idea + "</p>";
+  if (e.steps.length) h += '<ol class="steps">' + e.steps.map(function(s){ return "<li>" + s + "</li>"; }).join("") + "</ol>";
+  var rest = range(q.options.length).filter(function(i){ return i !== q.answer; });
+  if (typeof picked === "number" && picked !== q.answer) rest = [picked].concat(rest.filter(function(i){ return i !== picked; }));
+  h += '<p class="why-h sc">Why not the others</p><ul class="others">' + rest.map(function(i){
+    return "<li>" + quoted(q, i) + (i === picked ? '<span class="tag">your answer</span>' : "") + " &mdash; " + e.others[i] + "</li>";
+  }).join("") + "</ul></div>";
+  return h;
+}
+function quoted(q, i){ return q.labels ? q.labels[i] : "&ldquo;" + q.options[i] + "&rdquo;"; }
+function table(q){ return q.table ? '<div class="bt-wrap">' + q.table + "</div>" : ""; }
+function stim(q){
+  var s = q.stim && STIM[q.stim]; if (!s) return "";
+  var html = s.html.split(' data-q="' + q.n + '"').join(' data-q="' + q.n + '" data-cur')
+    .replace(/data-qs="([^"]*)"/g, function(m, l){ return (" " + l + " ").indexOf(" " + q.n + " ") >= 0 ? m + " data-cur" : m; });
+  return '<div class="stim' + (s.cls ? " " + s.cls : "") + '">' + (s.title ? '<p class="stim-h sc">' + s.title + "</p>" : "") + html + "</div>";
+}
+function scrollStim(root){
+  root.querySelectorAll(".stim").forEach(function(box){ var c = box.querySelector("[data-cur]"); if (c && box.scrollHeight > box.clientHeight) box.scrollTop = Math.max(0, c.offsetTop - box.clientHeight / 3); });
+}
+function promptHtml(q){
+  return stim(q) + (q.fig || "") + '<div class="q-prompt"><p>' + q.prompt + "</p>" + (q.ask || META.ask ? '<p class="q-ask">' + (q.ask || META.ask) + "</p>" : "") + "</div>" + table(q);
+}
+
+function renderSetup(){
+  mcEl.innerHTML =
+    '<div class="setup">' +
+      '<h2>How do you want to take it?</h2>' +
+      '<div class="choice-row">' +
+        '<button type="button" class="choice" data-mode="practice" aria-pressed="' + (S.mode === "practice") + '"><b>Practice</b><span>See the answer and why after each question</span></button>' +
+        '<button type="button" class="choice" data-mode="exam" aria-pressed="' + (S.mode === "exam") + '"><b>Exam</b><span>Answer everything, then see your score</span></button>' +
+      '</div>' +
+      '<div class="checks">' +
+        '<label><input type="checkbox" id="opt-sq"' + (S.shuffleQ ? " checked" : "") + '> Shuffle questions</label>' +
+        '<label><input type="checkbox" id="opt-sc"' + (S.shuffleC ? " checked" : "") + '> Shuffle answer choices</label>' +
+      '</div>' +
+      '<div class="setup-actions"><button type="button" class="btn btn--solid btn--lg" id="go">Start' + (HAS_FR ? " multiple choice" : "") + '</button></div>' +
+      '<p class="note">' + META.setupNote + " Keyboard: 1&ndash;" + Math.max.apply(null, MC.map(function(q){ return q.options.length; })) + " to answer, &larr; &rarr; to move, Enter for next.</p>" +
+    '</div>';
+  mcEl.querySelectorAll(".choice").forEach(function(b){ b.onclick = function(){ S.mode = b.dataset.mode; render(); }; });
+  document.getElementById("opt-sq").onchange = function(e){ S.shuffleQ = e.target.checked; };
+  document.getElementById("opt-sc").onchange = function(e){ S.shuffleC = e.target.checked; };
+  document.getElementById("go").onclick = function(){ start(); };
+}
+
+function renderRun(){
+  var n = S.order[S.pos], q = BY[n], st = stats(), practice = S.mode === "practice";
+  var picked = (n in S.ans) ? S.ans[n] : null, locked = practice && picked !== null;
+  var nav = S.order.map(function(m, i){
+    var c = [];
+    if (m in S.ans){ if (practice) c.push(S.ans[m] === BY[m].answer ? "is-right" : "is-wrong"); else c.push("is-answered"); }
+    if (i === S.pos) c.push("is-current");
+    return '<button type="button" class="' + c.join(" ") + '" data-go="' + i + '" aria-label="Question ' + (i + 1) + '"' + (i === S.pos ? ' aria-current="step"' : "") + ">" + (i + 1) + "</button>";
+  }).join("");
+  var opts = S.copt[n].map(function(oi, k){
+    var cls = ["opt"], mark = "";
+    if (locked){
+      if (oi === q.answer){ cls.push("is-right"); mark = oi === picked ? "&check; your answer" : "&check; correct"; }
+      else if (oi === picked){ cls.push("is-wrong"); mark = "&cross; your answer"; }
+      else cls.push("is-dim");
+    } else if (oi === picked) cls.push("is-picked");
+    return '<li><button type="button" class="' + cls.join(" ") + '" data-opt="' + oi + '"' + (locked ? " disabled" : "") + '><span class="kbd">' + (k + 1) + "</span><span>" + q.options[oi] + '</span><span class="mark">' + mark + "</span></button></li>";
+  }).join("");
+  var fb = "";
+  if (locked){
+    var ok = picked === q.answer, ans = quoted(q, q.answer);
+    fb = '<div class="fb' + (ok ? "" : " is-wrong") + '"><p class="verdict" role="status">' + (ok ? "Correct." : "Not quite. The answer is " + ans + (/[.?!](&rdquo;)?$/.test(ans) ? "" : ".")) + "</p>" + explain(q, picked) + (q.after || "") + topicLinks([q.topic]) + "</div>";
+  }
+  var last = S.pos === S.order.length - 1, allDone = st.done === st.total;
+  var nextBtn = last
+    ? '<button type="button" class="btn btn--solid" id="finish">' + (practice ? "See results" : "Finish test") + "</button>"
+    : '<button type="button" class="btn btn--solid" id="next">Next &rarr;</button>';
+  var finishEarly = (!last && !practice) ? '<button type="button" class="btn" id="finish">Finish test</button>' : (!last && practice && allDone ? '<button type="button" class="btn" id="finish">See results</button>' : "");
+  var conf = "";
+  if (confirmFinish){
+    var left = st.total - st.done;
+    conf = '<div class="confirm"><p>' + left + " question" + (left === 1 ? " is" : "s are") + " unanswered and will be marked wrong. Finish anyway?</p>" +
+      '<button type="button" class="btn" id="conf-no">Keep going</button><button type="button" class="btn btn--solid" id="conf-yes">Finish</button></div>';
+  }
+  var eyebrow = "Question " + q.n + (SEC[q.sec] ? " &middot; " + SEC[q.sec] : "") + (q.tag ? " &middot; " + q.tag : (q.topic ? " &middot; " + topicShort(q.topic) : ""));
+  mcEl.innerHTML =
+    '<div class="bar"><span>Question ' + (S.pos + 1) + " of " + st.total + " &middot; " + (practice ? "Practice" : "Exam") + " mode</span><span>" +
+      (practice ? st.right + " correct of " + st.done + " answered" : st.done + " of " + st.total + " answered") + "</span></div>" +
+    '<div class="track"><span style="width:' + (st.done / st.total * 100) + '%"></span></div>' +
+    '<nav class="nav" aria-label="Questions">' + nav + "</nav>" +
+    '<article class="q">' +
+      '<p class="q-eyebrow sc">' + eyebrow + "</p>" +
+      promptHtml(q) +
+      '<ol class="opts">' + opts + "</ol>" + fb +
+      '<div class="step"><button type="button" class="btn" id="prev"' + (S.pos === 0 ? " disabled" : "") + '>&larr; Back</button><span class="step-right">' + finishEarly + nextBtn + "</span></div>" +
+      conf +
+    "</article>" +
+    '<p class="keys"><span class="kbd">1</span>&ndash;<span class="kbd">' + q.options.length + '</span> answer &nbsp; <span class="kbd">&larr;</span> <span class="kbd">&rarr;</span> move &nbsp; <span class="kbd">Enter</span> next</p>' +
+    '<p class="restart-line"><a href="#" id="restart">Start over</a> <span class="muted">&middot; progress is saved in this browser</span></p>';
+
+  scrollStim(mcEl);
+  mcEl.querySelectorAll("[data-go]").forEach(function(b){ b.onclick = function(){ go(+b.dataset.go); }; });
+  mcEl.querySelectorAll("[data-opt]").forEach(function(b){ b.onclick = function(){ pick(+b.dataset.opt); }; });
+  bind("prev", function(){ go(S.pos - 1); });
+  bind("next", function(){ go(S.pos + 1); });
+  bind("finish", finish);
+  bind("conf-no", function(){ confirmFinish = false; render(); });
+  bind("conf-yes", function(){ confirmFinish = false; showResults(); });
+  bind("restart", function(e){ e.preventDefault(); S.phase = "setup"; save(KEY, S); render(); });
+}
+function bind(id, fn){ var el = document.getElementById(id); if (el) el.onclick = fn; }
+
+function pick(oi){
+  var n = S.order[S.pos];
+  if (S.mode === "practice" && (n in S.ans)) return;
+  S.ans[n] = oi; save(KEY, S); render();
+  if (S.mode === "practice"){ var fb = mcEl.querySelector(".fb"); if (fb && fb.getBoundingClientRect().bottom > innerHeight) fb.scrollIntoView({ block: "nearest" }); }
+}
+function go(i){
+  if (i < 0 || i >= S.order.length) return;
+  S.pos = i; confirmFinish = false; save(KEY, S); render();
+  var q = mcEl.querySelector(".q"); if (q && q.getBoundingClientRect().top < 0) q.scrollIntoView();
+}
+function finish(){
+  var st = stats();
+  if (st.done < st.total && !confirmFinish){ confirmFinish = true; render(); var c = mcEl.querySelector(".confirm"); if (c) c.scrollIntoView({ block: "nearest" }); return; }
+  showResults();
+}
+function showResults(){
+  S.phase = "results";
+  if (S.order.length === MC.length) S.full = stats().right;
+  save(KEY, S); render(); if (HAS_FR) renderFR(); focusTop();
+}
+
+/* composite score (only when the document defines one) */
+function frTotal(){
+  var t = 0;
+  for (var i = 0; i < FR.length; i++){ var s = frScore(FR[i]); if (s === null) return null; t += s; }
+  return t;
+}
+function frMax(){ return FR.reduce(function(a, f){ return a + frItemMax(f); }, 0); }
+function frOnlyTotal(){  /* free-response-only quizzes: running total of the marked questions */
+  var done = 0, got = 0, of = 0;
+  FR.forEach(function(f){ var s = frScore(f); if (s !== null){ done++; got += s; of += frItemMax(f); } });
+  if (!done) return "";
+  var line = done === FR.length
+    ? "Total: <b>" + got + " / " + of + "</b> (" + Math.round(got / of * 100) + "%)"
+    : "Marked so far: <b>" + got + " / " + of + "</b> on " + done + " of " + FR.length + " questions &middot; " + frMax() + " points in all";
+  return '<div class="composite" role="status"><p>' + line + "</p></div>";
+}
+function compositeHtml(){
+  var C = META.composite;
+  if (HAS_FR && !MC.length) return frOnlyTotal();
+  if (!C || !HAS_FR) return "";
+  var mc = (typeof S.full === "number") ? S.full : null, fr = frTotal(), fm = frMax(), mm = MC.length;
+  if (mc === null && fr === null) return "";
+  var lines = [];
+  if (mc === null) lines.push("Free response: <b>" + fr + " / " + fm + "</b>. Take the full multiple-choice part to get your composite score.");
+  else if (fr === null) lines.push("Multiple choice: <b>" + mc + " / " + mm + "</b>. Write and mark every free-response question to get your composite score.");
+  else {
+    var c = Math.round(C.mcWeight * mc / mm + C.frWeight * fr / fm), band = "";
+    for (var i = 0; i < C.bands.length; i++){ if (c >= C.bands[i][0]){ band = C.bands[i][1]; break; } }
+    lines.push("Composite score: <b>" + c + " / " + (C.mcWeight + C.frWeight) + "</b> &nbsp;<span class=\"muted\">= " + C.mcWeight + " &times; " + mc + "/" + mm + " + " + C.frWeight + " &times; " + fr + "/" + fm + "</span>");
+    if (band) lines.push(band);
+  }
+  return '<div class="composite" role="status">' + lines.map(function(l){ return "<p>" + l + "</p>"; }).join("") + "</div>";
+}
+function targetHtml(st){
+  var T = META.target, B = META.bands, h = "";
+  if (st.total !== MC.length) return "";
+  if (T) h += '<p class="target">' + T.label + ": " + T.mc + " / " + MC.length + " &middot; " + (st.right >= T.mc ? "met" : (T.mc - st.right) + " short") + "</p>";
+  if (B) for (var i = 0; i < B.length; i++){ if (st.right >= B[i][0]){ h += '<p class="target">' + B[i][1] + "</p>"; break; } }
+  return h;
+}
+
+var resFilter = "all";
+function renderResults(){
+  var st = stats(), pct = Math.round(st.right / st.total * 100), fullRun = st.total === MC.length;
+  var missed = S.order.filter(function(n){ return S.ans[n] !== BY[n].answer; });
+  var rows = S.order.map(function(n, i){
+    var q = BY[n], a = S.ans[n], ok = a === q.answer;
+    if (resFilter === "missed" && ok) return "";
+    return '<li><details><summary><span class="res-n">' + (i + 1) + '.</span><span class="' + (ok ? "res-ok" : "res-bad") + '" aria-label="' + (ok ? "correct" : "wrong") + '">' + (ok ? "&check;" : "&cross;") + '</span><span class="res-sum">' + q.prompt + "</span></summary>" +
+      '<div class="res-body">' + stim(q) + (q.fig || "") + table(q) + '<p><span class="sc">Your answer:</span> ' + (a === undefined ? "<i>skipped</i>" : q.options[a]) + "</p>" +
+      (ok ? "" : '<p><span class="sc">Correct:</span> ' + q.options[q.answer] + "</p>") +
+      explain(q, a) + (q.after || "") + topicLinks([q.topic]) + "</div></details></li>";
+  }).join("");
+  var tally = {};
+  S.order.forEach(function(n){ var t = BY[n].topic; if (!t) return; tally[t] = tally[t] || { right: 0, total: 0 }; tally[t].total++; if (S.ans[n] === BY[n].answer) tally[t].right++; });
+  var trows = Object.keys(TOP).filter(function(t){ return tally[t]; }).map(function(t){
+    var x = tally[t], miss = x.total - x.right;
+    return "<tr><th scope=\"row\">" + topicShort(t) + "</th><td>" + x.right + " / " + x.total + "</td><td>" + guideLink(t, true) +
+      ((META.flag ? x.right < META.flag.below * x.total : miss >= 2) ? ' <span class="flag">&middot; ' + (META.flag ? META.flag.text : "reread this section") + "</span>" : "") + "</td></tr>";
+  }).join("");
+  mcEl.innerHTML =
+    '<div class="results">' +
+      '<div class="score"><p class="score-big">' + st.right + " / " + st.total + "</p><p>" + pct + "% correct" + (fullRun ? "" : " &middot; retry of missed questions") + "</p>" + targetHtml(st) + "</div>" +
+      '<div class="res-actions">' +
+        (missed.length ? '<button type="button" class="btn btn--solid" id="retry">Retry the ' + missed.length + " missed</button>" : "") +
+        '<button type="button" class="btn" id="again">Take the full test again</button>' +
+        (HAS_FR ? '<button type="button" class="btn" id="to-fr">Go to free response</button>' : "") +
+      "</div>" +
+      compositeHtml() +
+      (trows ? '<div class="topics"><h2>' + (META.byTopic || "By topic") + '</h2><table class="bt"><thead><tr><th scope="col">' + (META.topicCol || "Topic") + '</th><th scope="col">Correct</th><th scope="col">' + (META.guideCol || "Guide section") + "</th></tr></thead><tbody>" + trows + "</tbody></table>" +
+        (META.topicNote ? '<p class="note" style="margin-top:6px">' + META.topicNote + "</p>" : "") + "</div>" : "") +
+      '<div class="res-filter"><h2>Review</h2><span><label><input type="checkbox" id="only-missed"' + (resFilter === "missed" ? " checked" : "") + "> Show missed only</label></span></div>" +
+      '<ul class="res-list">' + (rows || '<li><p class="note" style="padding:12px 0">Nothing missed.</p></li>') + "</ul>" +
+    "</div>";
+  bind("retry", function(){ start(missed); });
+  bind("again", function(){ S.phase = "setup"; save(KEY, S); render(); });
+  bind("to-fr", function(){ setTab("fr"); });
+  document.getElementById("only-missed").onchange = function(e){ resFilter = e.target.checked ? "missed" : "all"; render(); };
+}
+
+function render(){
+  if (S.phase === "run" && S.order.length) renderRun();
+  else if (S.phase === "results" && S.order.length) renderResults();
+  else { S.phase = "setup"; renderSetup(); }
+}
+
+/* free response: "epi" parts (E/P/I -> 0-4 per question) or "points" parts (0..max each) */
+var frEl = document.getElementById("fr"), F = load(FKEY, null);
+if (!F || typeof F !== "object") F = {};
+F.drafts = F.drafts || {}; F.marks = F.marks || {}; F.open = F.open || {};
+var LABELS = { 4: "Complete", 3: "Substantial", 2: "Developing", 1: "Minimal", 0: "" };
+function frItemMax(f){ return f.mode === "points" ? f.parts.reduce(function(a, p){ return a + p.max; }, 0) : 4; }
+function frScore(f){
+  if (f.mode === "points"){
+    var t = 0;
+    for (var j = 0; j < f.parts.length; j++){ var v = F.marks[f.n + f.parts[j].label]; if (v === undefined || v === "") return null; t += +v; }
+    return t;
+  }
+  var e = 0, p = 0;
+  for (var i = 0; i < f.parts.length; i++){
+    var m = F.marks[f.n + f.parts[i].label];
+    if (!m) return null;
+    if (m === "E") e++; else if (m === "P") p++;
+  }
+  if (e === 3) return 4;
+  if (e === 2 && p === 1) return 3;
+  if ((e === 2 && p === 0) || (e === 1 && p >= 1) || p === 3) return 2;
+  if ((e === 1 && p === 0) || (e === 0 && p === 2)) return 1;
+  return 0;
+}
+function words(t){ var m = t.trim().match(/\S+/g); return m ? m.length : 0; }
+var SCALE = '<details class="scale"><summary>How part scores convert to 0&ndash;4</summary><table class="bt"><thead><tr><th scope="col">Score</th><th scope="col">Label</th><th scope="col">Part scores (three parts, each E, P, or I)</th></tr></thead><tbody>' +
+  "<tr><td>4</td><td>Complete</td><td>three parts E</td></tr>" +
+  "<tr><td>3</td><td>Substantial</td><td>two parts E and one part P</td></tr>" +
+  "<tr><td>2</td><td>Developing</td><td>two E and no P; or one E and one or two P; or three P</td></tr>" +
+  "<tr><td>1</td><td>Minimal</td><td>one E and no P; or no E and two P</td></tr>" +
+  "<tr><td>0</td><td></td><td>anything less</td></tr></tbody></table></details>";
+function frScoreHtml(f){
+  var s = frScore(f), mx = frItemMax(f);
+  if (s === null) return '<span class="muted">Mark every part to score this question.</span>';
+  return "Score: <b>" + s + " / " + mx + "</b>" + (f.mode !== "points" && LABELS[s] ? " &middot; " + LABELS[s] : "");
+}
+function markButtons(f, p, id, m){
+  var vals = f.mode === "points" ? range(p.max + 1).map(String) : ["E", "P", "I"];
+  return vals.map(function(x){ return '<button type="button" data-mark="' + id + '" data-f="' + f.n + '" data-v="' + x + '" aria-pressed="' + (m === x) + '">' + x + "</button>"; }).join("");
+}
+function renderFR(){
+  if (!HAS_FR) return;
+  frEl.innerHTML = '<p class="fr-intro">' + META.frIntro + "</p>" +
+    FR.map(function(f){
+      var open = !!F.open[f.n];
+      var parts = f.parts.map(function(p){
+        var id = f.n + p.label, d = F.drafts[id] || "", m = (F.marks[id] === undefined ? "" : String(F.marks[id]));
+        var crit = f.mode === "points"
+          ? '<div class="crit-pts">' + p.rubric + "</div>"
+          : '<dl class="crit"><dt>E</dt><dd>if the response ' + p.e + "</dd><dt>P</dt><dd>if " + p.p + "</dd></dl>";
+        return '<div class="part"><p class="part-prompt"><b>(' + p.label + ")</b>" + p.prompt + "</p>" +
+          '<label class="sc" for="fr-' + id + '">Your answer to (' + p.label + ")</label>" +
+          '<textarea id="fr-' + id + '" data-fr="' + id + '" spellcheck="true">' + esc(d) + "</textarea>" +
+          '<p class="part-meta" id="wc-' + id + '">' + words(d) + " words &middot; saved in this browser</p>" +
+          '<div class="sol"' + (open ? "" : " hidden") + ' data-sol="' + f.n + '"><h3>Model solution (' + p.label + ")</h3><div>" + p.solution + "</div>" + crit +
+            '<div class="mark-row"><span>Your mark for (' + p.label + ")" + (f.mode === "points" ? ", out of " + p.max : "") + ':</span><span class="seg" role="group" aria-label="Mark for part ' + p.label + '">' + markButtons(f, p, id, m) + "</span></div></div></div>";
+      }).join("");
+      return '<article class="fr"><h2>' + (META.frWord || "Question") + " " + f.n + "<small>" + f.head + "</small></h2>" +
+        (f.stim ? stim(f) : "") + '<div class="fr-stem">' + f.stem + "</div>" + parts +
+        '<div class="fr-actions"><span class="fr-score" id="score-' + f.n + '">' + (open ? frScoreHtml(f) : "") + "</span>" +
+          '<button type="button" class="btn" data-open="' + f.n + '" aria-expanded="' + open + '">' + (open ? "Hide model solution" : "Show model solution and scoring") + "</button></div>" +
+        (open ? (f.mode === "points" ? "" : SCALE) + topicLinks(f.guide || []) : "") +
+        "</article>";
+    }).join("") + '<div id="fr-composite">' + compositeHtml() + "</div>";
+  frEl.querySelectorAll("textarea").forEach(function(t){
+    t.oninput = function(){ F.drafts[t.dataset.fr] = t.value; save(FKEY, F); document.getElementById("wc-" + t.dataset.fr).innerHTML = words(t.value) + " words &middot; saved in this browser"; };
+  });
+  frEl.querySelectorAll("[data-open]").forEach(function(b){
+    b.onclick = function(){ var n = b.dataset.open; F.open[n] = !F.open[n]; save(FKEY, F); renderFR(); var a = document.getElementById("score-" + n); if (a) a.closest(".fr").querySelector(".part").scrollIntoView({ block: "nearest" }); };
+  });
+  frEl.querySelectorAll("[data-mark]").forEach(function(b){
+    b.onclick = function(){
+      var id = b.dataset.mark; F.marks[id] = F.marks[id] === b.dataset.v ? "" : b.dataset.v; save(FKEY, F);
+      b.parentNode.querySelectorAll("button").forEach(function(x){ x.setAttribute("aria-pressed", String(F.marks[id] === x.dataset.v)); });
+      var f = FR.filter(function(x){ return String(x.n) === b.dataset.f; })[0];
+      document.getElementById("score-" + f.n).innerHTML = frScoreHtml(f);
+      document.getElementById("fr-composite").innerHTML = compositeHtml();
+      if (S.phase === "results") render();
+    };
+  });
+}
+
+/* tabs (only when there is a free-response part) */
+function setTab(t){
+  if (!HAS_FR) return;
+  var mc = t === "mc";
+  document.getElementById("tab-mc").setAttribute("aria-selected", String(mc));
+  document.getElementById("tab-fr").setAttribute("aria-selected", String(!mc));
+  mcEl.hidden = !mc; frEl.hidden = mc;
+  try{ history.replaceState(null, "", mc ? location.pathname : "#free-response"); }catch(e){}
+  focusTop();
+}
+if (HAS_FR){
+  document.getElementById("tab-mc").onclick = function(){ setTab("mc"); };
+  document.getElementById("tab-fr").onclick = function(){ setTab("fr"); };
+}
+
+/* keyboard */
+document.addEventListener("keydown", function(e){
+  if (e.metaKey || e.ctrlKey || e.altKey) return;
+  var tag = (e.target.tagName || "").toLowerCase();
+  if (tag === "textarea" || tag === "input") return;
+  if (mcEl.hidden || S.phase !== "run") return;
+  var n = S.order[S.pos], q = BY[n];
+  if (/^[1-9]$/.test(e.key)){ var k = +e.key - 1; if (k < q.options.length){ e.preventDefault(); pick(S.copt[n][k]); } }
+  else if (e.key === "ArrowRight"){ e.preventDefault(); go(S.pos + 1); }
+  else if (e.key === "ArrowLeft"){ e.preventDefault(); go(S.pos - 1); }
+  else if (e.key === "Enter" && tag !== "button" && tag !== "a"){ e.preventDefault(); if (S.pos < S.order.length - 1) go(S.pos + 1); else finish(); }
+});
+
+/* theme */
+var root = document.documentElement, tb = document.getElementById("theme-btn");
+function syncTheme(){ var dark = root.getAttribute("data-theme") === "dark"; tb.textContent = dark ? "Light mode" : "Dark mode"; tb.setAttribute("aria-pressed", String(dark)); }
+tb.onclick = function(){ var dark = root.getAttribute("data-theme") !== "dark"; root.setAttribute("data-theme", dark ? "dark" : "light"); try{ localStorage.setItem("apah.theme", dark ? "dark" : "light"); }catch(e){} syncTheme(); };
+syncTheme();
+
+render(); renderFR();
+if (HAS_FR && location.hash === "#free-response") setTab("fr");
+if (HAS_FR && !MC.length){ var tabsEl = document.querySelector(".tabs"); if (tabsEl) tabsEl.hidden = true; mcEl.hidden = true; frEl.hidden = false; }
+})();
+</script>
+</body>
+</html>

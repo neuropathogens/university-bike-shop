@@ -26,9 +26,7 @@ PUBLIC = ROOT / "public"
 OUT = PUBLIC / "directory" / "index.html"
 
 # Pages that exist but are deliberately left off the directory (direct link only).
-HIDDEN = {
-    "/study/ap/ap-art-history/tests/5/",
-}
+HIDDEN = set()
 
 DOWNLOAD_EXT = (".pdf", ".zip", ".tar.gz", ".stl", ".stl.gz", ".step", ".3mf")
 
@@ -54,6 +52,21 @@ def stl_part(slug, name):
                   desc=name, anchor=f"/secret/climbing/holds/stl/#{slug}")
 
 
+def quiz_folder(prefix, anchor):
+    """The interactive quizzes under public<prefix>tests/ (built by quizzes/build.py), as one folder."""
+    import re as _re
+    base = PUBLIC / prefix.strip("/") / "tests"
+    if not base.is_dir():
+        return []
+    def natural(s):
+        return [int(x) if x.isdigit() else x for x in _re.split(r"(\d+)", s)]
+    pages = []
+    for d in sorted((d for d in base.iterdir() if (d / "index.html").exists()), key=lambda d: natural(d.name)):
+        m = _re.search(r"<title>([^<]*)</title>", (d / "index.html").read_text(errors="ignore"))
+        pages.append(page(f"{prefix}tests/{d.name}/", m.group(1) if m else d.name, "Interactive quiz with explanations.", "unlisted"))
+    return [folder(f"{prefix}tests/", pages, desc="Quizzes", anchor=anchor)]
+
+
 TREE = page("/", "Home", "The shop, what it sells, and how to book an appointment.", "nav", [
     page("/inventory", "Inventory", "Used road, gravel, triathlon and mountain bikes for sale.", "nav"),
     page("/sell-your-bike", "Sell Your Bike", "Consignment for a 10% commission.", "nav"),
@@ -62,6 +75,7 @@ TREE = page("/", "Home", "The shop, what it sells, and how to book an appointmen
     page("/summer-camp", "Summer Camp", "The free five-day summer bike camp: photos and write-up.", "nav"),
     page("/events", "Events", "Past camps, community repair days and partnerships, with Instagram embeds.", "nav"),
     page("/projects", "Projects", "Bike-fit software, the open-source bikeparts library and the 3D-printable MTB launch.", "nav"),
+    page("/reviews", "Reviews", "Facebook Marketplace seller ratings and Instagram Rider Spotlight posters.", "nav"),
     page("/sponsorships", "Sponsorships", "Paly Cycling Club, Stanford Cycling and school repair events.", "nav"),
     page("/about-us", "About Us", "The student team behind the shop.", "nav"),
     page("/location-hours", "Location & Hours", "Appointment-only workshop in Crescent Park, Palo Alto.", "nav"),
@@ -70,31 +84,33 @@ TREE = page("/", "Home", "The shop, what it sells, and how to book an appointmen
 
     page("/study/", "Study Library", "Index of every study PDF, with page counts and sizes.", "unlisted", [
         folder("/study/act/", [
-            folder("/study/act/english/", files=files("study/act/english", "PDFs"), anchor="/study/#act-english"),
-            folder("/study/act/math/", files=files("study/act/math", "PDFs"), anchor="/study/#act-math"),
-            folder("/study/act/reading/", files=files("study/act/reading", "PDFs"), anchor="/study/#act-reading"),
-            folder("/study/act/science/", files=files("study/act/science", "PDFs"), anchor="/study/#act-science"),
+            folder("/study/act/english/", quiz_folder("/study/act/english/", "/study/#act-english"), files=files("study/act/english", "PDFs"), anchor="/study/#act-english"),
+            folder("/study/act/math/", quiz_folder("/study/act/math/", "/study/#act-math"), files=files("study/act/math", "PDFs"), anchor="/study/#act-math"),
+            folder("/study/act/reading/", quiz_folder("/study/act/reading/", "/study/#act-reading"), files=files("study/act/reading", "PDFs"), anchor="/study/#act-reading"),
+            folder("/study/act/science/", quiz_folder("/study/act/science/", "/study/#act-science"), files=files("study/act/science", "PDFs"), anchor="/study/#act-science"),
         ], desc="ACT", anchor="/study/#act"),
         folder("/study/sat/", [
-            folder("/study/sat/conventions/", files=files("study/sat/conventions", "PDFs"),
+            folder("/study/sat/conventions/", quiz_folder("/study/sat/conventions/", "/study/#sat-conventions"), files=files("study/sat/conventions", "PDFs"),
                    desc="Standard English Conventions", anchor="/study/#sat-conventions"),
-            folder("/study/sat/vocabulary/", files=files("study/sat/vocabulary", "PDFs"),
+            folder("/study/sat/vocabulary/", quiz_folder("/study/sat/vocabulary/", "/study/#sat-vocabulary"), files=files("study/sat/vocabulary", "PDFs"),
                    desc="Vocabulary", anchor="/study/#sat-vocabulary"),
         ], desc="SAT", anchor="/study/#sat"),
         folder("/study/math/", [
-            folder("/study/math/linear-algebra/", files=files("study/math/linear-algebra", "PDFs"), anchor="/study/#linear-algebra"),
-            folder("/study/math/multivariable-calculus/", files=files("study/math/multivariable-calculus", "PDFs"), anchor="/study/#multivariable-calculus"),
-            folder("/study/math/real-analysis/", files=files("study/math/real-analysis", "PDFs"), anchor="/study/#real-analysis"),
-            folder("/study/math/differential-equations/", files=files("study/math/differential-equations", "PDFs"), anchor="/study/#differential-equations"),
+            folder("/study/math/linear-algebra/", quiz_folder("/study/math/linear-algebra/", "/study/#linear-algebra"), files=files("study/math/linear-algebra", "PDFs"), anchor="/study/#linear-algebra"),
+            folder("/study/math/multivariable-calculus/", quiz_folder("/study/math/multivariable-calculus/", "/study/#multivariable-calculus"), files=files("study/math/multivariable-calculus", "PDFs"), anchor="/study/#multivariable-calculus"),
+            folder("/study/math/real-analysis/", quiz_folder("/study/math/real-analysis/", "/study/#real-analysis"), files=files("study/math/real-analysis", "PDFs"), anchor="/study/#real-analysis"),
+            folder("/study/math/differential-equations/", quiz_folder("/study/math/differential-equations/", "/study/#differential-equations"), files=files("study/math/differential-equations", "PDFs"), anchor="/study/#differential-equations"),
         ], desc="College math", anchor="/study/#math"),
         folder("/study/ap/", [
             page("/study/ap/ap-art-history/", "APAH 250",
                  "All 250 AP Art History works: browse, flashcards and quizzes.", "unlisted",
+                 quiz_folder("/study/ap/ap-art-history/", "/study/#ap-art-history"),
                  files=files("study/ap/ap-art-history", "PDFs", anchor="/study/#ap-art-history"),
                  note="Each work has a deep link, #w1 to #w250 (e.g. #w12)."),
             folder("/study/ap/ap-chemistry/", [
                 folder("/study/ap/ap-chemistry/unit-5/", files=files("study/ap/ap-chemistry/unit-5", "PDFs"),
                        desc="Unit 5, Kinetics", anchor="/study/#ap-chemistry"),
+                *quiz_folder("/study/ap/ap-chemistry/", "/study/#ap-chemistry"),
             ], desc="AP Chemistry", anchor="/study/#ap-chemistry"),
             folder("/study/ap/ap-economics/", [
                 folder("/study/ap/ap-economics/macro/", files=files("study/ap/ap-economics/macro", "PDFs"),
@@ -106,11 +122,12 @@ TREE = page("/", "Home", "The shop, what it sells, and how to book an appointmen
                 page("/study/ap/ap-english-literature/xyz-essay/", "The XYZ Essay",
                      "AP English Literature essay guide: thesis, quote units, scoring guide, Gatsby planning kit.", "unlisted"),
             ], desc="AP English Literature", anchor="/study/#ap-english-literature"),
-            folder("/study/ap/ap-psychology/", files=files("study/ap/ap-psychology", "PDFs"),
+            folder("/study/ap/ap-psychology/", quiz_folder("/study/ap/ap-psychology/", "/study/#ap-psychology"), files=files("study/ap/ap-psychology", "PDFs"),
                    desc="AP Psychology, Part 0 and Units 1–5", anchor="/study/#ap-psychology"),
             folder("/study/ap/ap-statistics/", [
                 folder("/study/ap/ap-statistics/unit-6/", files=files("study/ap/ap-statistics/unit-6", "PDFs"),
                        desc="Unit 6, Sampling Distributions", anchor="/study/#ap-statistics"),
+                *quiz_folder("/study/ap/ap-statistics/", "/study/#ap-statistics"),
             ], desc="AP Statistics", anchor="/study/#ap-statistics"),
         ], desc="AP", anchor="/study/#ap"),
     ]),

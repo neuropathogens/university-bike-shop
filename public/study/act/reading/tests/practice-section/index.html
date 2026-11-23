@@ -1,0 +1,656 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light">
+<script>try{document.documentElement.setAttribute("data-theme",localStorage.getItem("apah.theme")==="dark"?"dark":"light")}catch(e){document.documentElement.setAttribute("data-theme","light")}</script>
+<title>ACT Reading Full-Length Practice Section</title>
+<meta name="description" content="ACT Reading full-length practice section: four passages and 36 questions, with a worked explanation for every answer and a tally by rule.">
+<link rel="icon" href="/favicon.ico" sizes="48x48" type="image/x-icon">
+<link rel="icon" href="/icon.svg" sizes="any" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-icon.png" sizes="180x180">
+<link rel="preload" href="/study/ap/ap-art-history/fonts/LM-regular.woff2" as="font" type="font/woff2" crossorigin>
+
+<style>
+@font-face{font-family:"Latin Modern";font-style:normal;font-weight:400;font-display:swap;src:url("/study/ap/ap-art-history/fonts/LM-regular.woff2") format("woff2")}
+@font-face{font-family:"Latin Modern";font-style:italic;font-weight:400;font-display:swap;src:url("/study/ap/ap-art-history/fonts/LM-italic.woff2") format("woff2")}
+@font-face{font-family:"Latin Modern";font-style:normal;font-weight:600 700;font-display:swap;src:url("/study/ap/ap-art-history/fonts/LM-bold.woff2") format("woff2")}
+@font-face{font-family:"Latin Modern";font-style:italic;font-weight:600 700;font-display:swap;src:url("/study/ap/ap-art-history/fonts/LM-bold-italic.woff2") format("woff2")}
+@font-face{font-family:"Latin Modern Mono";font-style:normal;font-weight:400 500;font-display:swap;src:url("/study/ap/ap-art-history/fonts/LM-mono.woff2") format("woff2")}
+@font-face{font-family:"Latin Modern Mono";font-style:normal;font-weight:600 700;font-display:swap;src:url("/study/ap/ap-art-history/fonts/LM-mono-bold.woff2") format("woff2")}
+
+:root{--bg:#fff;--fg:#000;--muted:#4a4a4a;--line:#c9c9c9;--plate:#f5f5f3;--hl:#fbe9a6;--link:#00008b;--ok:#1d5e20;--bad:#9b1c1c;
+  --serif:"Latin Modern","Computer Modern Serif","CMU Serif",Georgia,serif;--mono:"Latin Modern Mono","SFMono-Regular",Menlo,Consolas,monospace;
+  --gutter:clamp(16px,4vw,40px);color-scheme:light}
+:root[data-theme=dark]{--bg:#111110;--fg:#ecebe6;--muted:#a3a29c;--line:#34342f;--plate:#1b1b19;--hl:#4d4320;--link:#9db4ff;--ok:#8fd394;--bad:#ff9b9b;color-scheme:dark}
+*{box-sizing:border-box}
+html{background:var(--bg);scroll-padding-top:16px}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--serif);font-size:17px;line-height:1.5;font-kerning:normal;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+button,input,textarea{font:inherit;color:inherit}
+button{cursor:pointer}
+button:disabled{cursor:default}
+a{color:var(--link);text-underline-offset:3px;text-decoration-thickness:.5px}
+:focus-visible{outline:2px solid var(--link);outline-offset:2px}
+[hidden]{display:none!important}
+.sc{font-variant:small-caps;text-transform:lowercase;letter-spacing:.04em}
+.muted{color:var(--muted)}
+.katex{font-size:1.04em;text-rendering:auto}
+.katex-display{margin:.7em 0;overflow-x:auto;overflow-y:hidden;padding:2px 0}
+
+.runhead{display:flex;flex-wrap:wrap;justify-content:space-between;gap:4px 16px;max-width:1480px;margin:0 auto;padding:14px var(--gutter) 6px;font-size:14px;font-style:italic;color:var(--muted)}
+.runhead a{text-decoration:none}
+.runhead a:hover{text-decoration:underline}
+.runhead-actions{display:flex;flex-wrap:wrap;gap:4px 18px}
+.theme-btn{background:none;border:0;padding:0;font:inherit;font-style:italic;color:var(--link)}
+.theme-btn:hover{text-decoration:underline}
+.rule{max-width:1480px;margin:0 auto;padding-inline:var(--gutter)}
+.rule hr{margin:0;border:0;border-top:.5px solid var(--fg)}
+
+.wrap{max-width:860px;margin:0 auto;padding:0 var(--gutter) 80px}
+.title{text-align:center;padding:34px 0 22px}
+.title h1{margin:0;text-wrap:balance;font-size:clamp(32px,6vw,46px);line-height:1.1;font-weight:700}
+.title .sub{margin:8px 0 0;font-size:18px;font-variant:small-caps;letter-spacing:.03em}
+.title .meta{margin:4px 0 0;font-style:italic;color:var(--muted)}
+
+.tabs{display:flex;justify-content:center;gap:0;margin:0 0 26px;border-bottom:.5px solid var(--fg)}
+.tab{background:none;border:0;border-bottom:2.5px solid transparent;padding:8px 18px;margin-bottom:-1px;font-size:17px;color:var(--muted)}
+.tab[aria-selected=true]{color:var(--fg);border-bottom-color:var(--fg);font-weight:700}
+.tab:hover{color:var(--fg)}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:40px;padding:0 16px;border:1px solid var(--fg);background:var(--bg);font-family:var(--mono);font-size:14.5px;white-space:nowrap}
+.btn:hover:not(:disabled){background:var(--plate)}
+.btn:disabled{opacity:.35}
+.btn--solid{background:var(--fg);color:var(--bg)}
+.btn--solid:hover:not(:disabled){background:var(--fg);opacity:.85}
+.btn--lg{min-height:48px;font-size:15.5px;padding:0 22px}
+.kbd{display:inline-grid;place-items:center;min-width:22px;height:22px;padding:0 4px;border:1px solid currentColor;font-family:var(--mono);font-size:12px;opacity:.8}
+
+/* booktabs tables */
+.bt{border-collapse:collapse;margin:0 auto;font-variant-numeric:tabular-nums}
+.bt th,.bt td{padding:4px 12px;text-align:center;font-weight:400}
+.bt th[scope=row],.bt thead th:first-child{text-align:left}
+.bt thead tr{border-top:1px solid var(--fg);border-bottom:.5px solid var(--fg)}
+.bt tbody tr:last-child{border-bottom:1px solid var(--fg)}
+.bt-wrap{overflow-x:auto;margin:0 0 16px}
+
+/* setup */
+.setup{border-bottom:1.5px solid var(--fg);padding:4px 0 22px;display:grid;gap:18px}
+.setup h2,.results h2,.fr h2{margin:0;font-size:20px}
+.choice-row{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.choice{display:flex;flex-direction:column;align-items:flex-start;gap:2px;padding:12px 14px;border:1px solid var(--fg);background:var(--bg);text-align:left}
+.choice b{font-size:17px}
+.choice span{font-size:14.5px;font-style:italic;color:var(--muted)}
+.choice[aria-pressed=true]{background:var(--fg);color:var(--bg)}
+.choice[aria-pressed=true] span{color:var(--bg);opacity:.8}
+.checks{display:flex;flex-wrap:wrap;gap:8px 22px}
+.checks label{display:inline-flex;align-items:center;gap:8px;cursor:pointer}
+.checks input{width:17px;height:17px;margin:0;accent-color:var(--fg)}
+.setup-actions{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.note{margin:0;font-size:15px;color:var(--muted);font-style:italic}
+
+/* run */
+.bar{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:4px 16px;font-size:15px;color:var(--muted)}
+.track{height:3px;background:var(--line);margin:8px 0 14px}
+.track span{display:block;height:100%;background:var(--fg);transition:width .2s ease}
+.nav{display:grid;grid-template-columns:repeat(auto-fill,minmax(34px,1fr));gap:5px;margin:0 0 22px}
+.nav button{height:32px;padding:0;border:1px solid var(--line);background:var(--bg);font-family:var(--serif);font-size:14px;font-variant-numeric:tabular-nums}
+.nav button:hover{border-color:var(--fg)}
+.nav .is-answered{background:var(--plate);border-color:var(--fg)}
+.nav .is-right{background:var(--fg);color:var(--bg);border-color:var(--fg)}
+.nav .is-wrong{border:1.5px dashed var(--bad);color:var(--bad)}
+.nav .is-current{outline:2px solid var(--fg);outline-offset:1px}
+.q{border-top:1.5px solid var(--fg);padding-top:16px}
+.q-eyebrow{margin:0 0 6px;font-size:14px;color:var(--muted)}
+.q-prompt{margin:0 0 14px;font-size:20px;line-height:1.45;font-weight:400}
+.opts{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.opt{display:flex;align-items:center;gap:12px;width:100%;min-height:52px;padding:10px 14px;border:1px solid var(--fg);background:var(--bg);text-align:left;font-size:16.5px;line-height:1.4}
+.opt:hover:not(:disabled){background:var(--plate)}
+.opt .kbd{flex:none}
+.opt .mark{margin-left:auto;padding-left:6px;font-family:var(--mono);font-size:14px;white-space:nowrap}
+.opt.is-picked{border-width:2px;padding:9px 13px;background:var(--plate)}
+.opt.is-right{background:var(--fg);color:var(--bg);border-color:var(--fg)}
+.opt.is-wrong{border:1.5px dashed var(--bad);color:var(--bad);text-decoration:line-through;text-decoration-thickness:1px}
+.opt.is-wrong .mark,.opt.is-wrong .kbd{text-decoration:none}
+.opt.is-dim{opacity:.5}
+.fb{margin:14px 0 0;padding:12px 16px;border:.5px solid var(--fg);border-left:3px solid var(--ok)}
+.fb.is-wrong{border-left-color:var(--bad)}
+.fb p{margin:0}
+.fb .verdict{font-weight:700;margin-bottom:4px}
+.why p{margin:0 0 6px}
+.steps{margin:2px 0 8px;padding-left:22px}
+.steps li{margin:4px 0;padding-left:2px}
+.why .why-h{margin:10px 0 2px;font-size:14.5px;color:var(--muted)}
+.others{margin:0 0 4px;padding-left:20px}
+.others li{margin:5px 0}
+.others .tag{margin-left:6px;font-family:var(--mono);font-size:12.5px;color:var(--bad);white-space:nowrap}
+.links{margin-top:6px;font-size:15px}
+.step{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:10px;margin-top:20px}
+.step-right{display:flex;flex-wrap:wrap;gap:8px}
+.confirm{margin-top:14px;padding:12px 16px;border:1px solid var(--fg);display:flex;flex-wrap:wrap;align-items:center;gap:10px}
+.confirm p{margin:0;flex:1 1 220px}
+.keys{margin:18px 0 0;font-size:13.5px;color:var(--muted);text-align:center}
+.restart-line{margin:10px 0 0;font-size:14.5px;text-align:center}
+
+/* results */
+.results{padding-top:4px}
+.score{text-align:center;padding:10px 0 18px}
+.score-big{margin:0;font-size:clamp(48px,10vw,72px);font-weight:700;line-height:1;font-variant-numeric:tabular-nums}
+.score p{margin:6px 0 0}
+.res-actions{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin:0 0 22px}
+.res-filter{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:6px;border-bottom:1.5px solid var(--fg);padding-bottom:6px}
+.res-list{list-style:none;margin:0;padding:0}
+.res-list>li{border-bottom:.5px solid var(--line)}
+.res-list>li:last-child{border-bottom:1.5px solid var(--fg)}
+.res-list details{padding:10px 0}
+.res-list summary{display:grid;grid-template-columns:34px 22px minmax(0,1fr);gap:8px;cursor:pointer;list-style:none}
+.res-list summary::-webkit-details-marker{display:none}
+.res-n{font-weight:700;font-variant-numeric:tabular-nums}
+.res-ok{color:var(--ok);font-weight:700}
+.res-bad{color:var(--bad);font-weight:700}
+.res-body{padding:8px 0 4px 64px;font-size:15.5px}
+.res-body p{margin:0 0 4px}
+.res-body .bt-wrap{margin:4px 0 8px}
+.topics{margin:0 0 26px}
+.topics h2{margin:0 0 8px}
+.topics .bt{margin:0;width:100%}
+.topics .bt td:last-child,.topics .bt th:last-child{text-align:left}
+.topics .flag{color:var(--bad);font-style:italic}
+.composite{margin:0 0 26px;padding:12px 16px;border:.5px solid var(--fg);border-left:3px solid var(--fg)}
+.composite p{margin:0}
+.composite p+p{margin-top:4px}
+
+/* free response */
+.fr-intro{margin:0 0 6px;font-style:italic;color:var(--muted)}
+.fr{border-top:1.5px solid var(--fg);padding:18px 0 26px}
+.fr h2 small{font-weight:400;font-style:italic;color:var(--muted);font-size:15px;margin-left:6px}
+.fr-stem{margin:10px 0 6px;text-align:justify;hyphens:auto;-webkit-hyphens:auto}
+.part{margin:18px 0 0}
+.part-prompt{margin:0 0 8px}
+.part-prompt b{margin-right:4px}
+.part textarea{width:100%;min-height:150px;padding:12px 14px;border:1px solid var(--fg);border-radius:0;background:var(--bg);font-family:var(--serif);font-size:16.5px;line-height:1.55;resize:vertical}
+.part-meta{margin-top:4px;font-size:14px;color:var(--muted)}
+.sol{margin-top:12px;padding:12px 18px;border:.5px solid var(--fg)}
+.sol h3{margin:0 0 4px;font-size:15px}
+.sol p{margin:0 0 10px}
+.sol .crit{display:grid;grid-template-columns:28px minmax(0,1fr);gap:2px 8px;margin:0 0 10px;font-size:15.5px}
+.sol .crit dt{font-weight:700}
+.sol .crit dd{margin:0}
+.mark-row{display:flex;flex-wrap:wrap;align-items:center;gap:8px;font-size:15px}
+.seg{display:inline-flex;flex-wrap:wrap;max-width:100%;padding:1px 0 0 1px}
+.seg button{margin:-1px 0 0 -1px;min-width:44px;min-height:36px;padding:0 10px;border:1px solid var(--fg);background:var(--bg);font-family:var(--mono);font-size:14px}
+.seg button[aria-pressed=true]{position:relative;background:var(--fg);color:var(--bg)}
+.fr-actions{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:10px;margin-top:16px}
+.fr-score{font-size:16px}
+.fr-score b{font-variant-numeric:tabular-nums}
+.scale{margin-top:14px}
+.scale summary{cursor:pointer;font-size:15px;color:var(--muted);font-style:italic}
+.scale .bt{margin:8px 0 0}
+.scale .bt td:last-child,.scale .bt th:last-child{text-align:left}
+.foot{margin-top:40px;padding-top:12px;border-top:.5px solid var(--line);font-size:14px;color:var(--muted)}
+
+@media (max-width:640px){
+  .runhead-title{display:none}
+  .runhead-actions{width:100%;justify-content:space-between}
+  .title{padding:22px 0 16px}
+  .choice-row{grid-template-columns:1fr}
+  .q-prompt{font-size:18.5px}
+  .res-body{padding-left:0}
+  .keys{display:none}
+  .fr-stem{text-align:left}
+  .bt th,.bt td{padding:4px 7px}
+  .sol{padding:10px 12px}
+  .katex-display>.katex{font-size:.94em}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+@media print{.runhead,.rule,.tabs,.nav,.step,.keys,.restart-line,.res-actions{display:none!important}}
+/* generic quiz additions */
+.q-prompt p{margin:0}
+.q-prompt p+p{margin-top:8px}
+.q-ask{margin:10px 0 0!important;font-size:16px;font-style:italic;color:var(--muted)}
+.blank{display:inline-block;width:3.4em;height:1em;margin:0 .12em;border-bottom:1.5px solid currentColor;vertical-align:-.12em}
+.stim{position:relative;margin:0 0 16px;padding:12px 16px;border:.5px solid var(--fg);background:var(--plate);font-size:16.5px;line-height:1.55;max-height:60vh;overflow:auto}
+.stim-h{margin:0 0 6px!important;font-size:14px;color:var(--muted)}
+.stim p{margin:0 0 8px}
+.stim p:last-child{margin-bottom:0}
+u.ul{text-decoration-thickness:1px;text-underline-offset:3px}
+.qn{display:inline-block;min-width:1.4em;padding:0 .2em;margin:0 .15em;border:.5px solid var(--fg);font:600 11.5px/1.4 system-ui,-apple-system,sans-serif;text-align:center;vertical-align:.12em;font-variant-numeric:tabular-nums}
+.stim .qn[data-cur]{background:var(--fg);color:var(--bg)}
+.stim u[data-cur]{background:var(--hl);box-shadow:0 0 0 2px var(--hl)}
+.stim .ln{display:inline-block;min-width:1.3em;padding:0 .25em;margin-right:.25em;border:.5px solid var(--line);color:var(--muted);font:500 11px/1.4 system-ui,-apple-system,sans-serif;text-align:center;vertical-align:.12em;font-variant-numeric:tabular-nums}
+.stim .ln[data-cur]{background:var(--hl);color:var(--fg);border-color:var(--fg)}
+.stim-intro{font-style:italic;color:var(--muted);font-size:15px}
+.stim-sub{margin-top:12px!important}
+.stim-note{font-size:15px;color:var(--muted)}
+.tool{margin:0 0 10px;padding:6px 0 6px 12px;border-left:3px solid var(--muted);font-size:15px;color:var(--muted)}
+.fig .figcap{margin:0 0 6px;font-size:15px}
+.stim.free{max-height:none;overflow:visible}
+.bt th[colspan]{text-align:center}
+.fig-after{margin:12px 0 4px}
+.fig-after img{max-width:min(100%,420px);max-height:340px;width:auto;object-fit:contain}
+.stim .figcap{text-align:center;font-size:15px;margin:10px 0 4px}
+.stim .fig{margin:6px 0 10px}
+.stim .bt-wrap{margin:0 0 10px}
+.fig-img,.opt-img{max-width:100%;height:auto;background:#fff}
+.opt-img{display:block;max-width:140px}
+:root[data-theme=dark] .fig-img,:root[data-theme=dark] .opt-img{filter:invert(.92) hue-rotate(180deg)}
+.fig{margin:0 0 14px;text-align:center}
+.fig img{max-width:100%;height:auto;background:#fff}
+:root[data-theme=dark] .fig img{filter:invert(.92) hue-rotate(180deg)}
+.fig figcaption{font-size:14px;color:var(--muted);font-style:italic}
+.target{margin:4px 0 0;font-style:italic}
+.res-sum{display:block}
+.opt>span:nth-child(2){flex:1 1 auto;min-width:0;overflow-wrap:anywhere;-webkit-hyphens:auto;hyphens:auto}
+@media (max-width:640px){.opt .mark{white-space:normal;text-align:right;max-width:6.2em;line-height:1.25}}
+.sol>div{margin:0 0 10px}
+.crit-pts{margin:0 0 10px;font-size:15.5px}
+.crit-pts p{margin:0 0 4px}
+.crit-pts ul{margin:0 0 4px;padding-left:20px}
+</style>
+</head>
+<body>
+<div class="runhead"><span class="runhead-title">ACT Reading &middot; Full-Length Practice Section</span><span class="runhead-actions"><a href="/study/#act-reading">&larr;&nbsp;Study Library</a><a href="/study/act/reading/act-reading-2-practice-section.pdf">PDF version</a><button type="button" class="theme-btn" id="theme-btn">Dark mode</button></span></div>
+<div class="rule"><hr></div>
+
+<main class="wrap">
+  <header class="title">
+    <h1>Full-Length <span style="white-space:nowrap">Practice Section</span></h1>
+    <p class="sub">ACT Reading &middot; Volume 2</p>
+    <p class="meta">36 questions &middot; 40 minutes &middot; four passage units</p>
+  </header>
+
+  <section id="mc"></section>
+  <section id="fr" role="tabpanel" aria-labelledby="tab-fr" hidden></section>
+
+  <p class="foot">From <a href="/study/act/reading/act-reading-2-practice-section.pdf"><i>ACT Reading, Volume 2</i></a> (PDF). Answers and rule tags are the volume&rsquo;s own key; the explanations expand on it with the method, the evidence in the passage, and why each wrong choice is wrong. Boxed numbers in a passage are the printed line numbers the questions cite. Your answers are saved only in this browser.</p>
+</main>
+
+<script id="data" type="application/json">{"meta":{"key":"study.act-reading.practice-section.v1","setupNote":"Set a 40-minute timer and use Exam mode for a real simulation: about 10 minutes per passage unit. Boxed numbers in a passage are the line numbers the questions cite.","topicPrefix":"Rule ","topicCol":"Rule","guideCol":"In the study guide","byTopic":"By rule","topicNote":"Log every miss by rule; two or more on one rule means rereading that rule in the study guide.","guide":"/study/act/reading/act-reading-1-study-guide.pdf","guideName":"the study guide"},"topics":{"1":{"name":"Stated details","page":7,"url":"/study/act/reading/act-reading-1-study-guide.pdf#page=7"},"2":{"name":"Inference","page":8,"url":"/study/act/reading/act-reading-1-study-guide.pdf#page=8"},"3":{"name":"Central ideas, themes, and summaries","page":9,"url":"/study/act/reading/act-reading-1-study-guide.pdf#page=9"},"4":{"name":"Relationships: cause, sequence, comparison","page":10,"url":"/study/act/reading/act-reading-1-study-guide.pdf#page=10"},"5":{"name":"Word meaning in context","page":11,"url":"/study/act/reading/act-reading-1-study-guide.pdf#page=11"},"6":{"name":"Word choice, tone, and connotation","page":12,"url":"/study/act/reading/act-reading-1-study-guide.pdf#page=12"},"7":{"name":"Text structure and the function of parts","page":13,"url":"/study/act/reading/act-reading-1-study-guide.pdf#page=13"},"8":{"name":"Purpose and point of view","page":14,"url":"/study/act/reading/act-reading-1-study-guide.pdf#page=14"},"9":{"name":"Arguments: claims, evidence, reasoning","page":15,"url":"/study/act/reading/act-reading-1-study-guide.pdf#page=15"},"10":{"name":"Synthesis across paired passages","page":16,"url":"/study/act/reading/act-reading-1-study-guide.pdf#page=16"},"11":{"name":"Integrating text with charts and tables (VQI)","page":17,"url":"/study/act/reading/act-reading-1-study-guide.pdf#page=17"}},"sections":{"1":"Passage I: Literary narrative","2":"Passage II: Social science","3":"Passage III: Humanities","4":"Passage IV: Natural science"},"stims":{"u1":{"title":"Passage I &middot; Literary narrative","html":"<p class=\"stim-intro\">This passage is an original short story. The narrator recalls a summer spent assisting a parent who tuned pianos.<\/p><p>The summer I turned sixteen, my father decided I was old enough to carry his case. It was a narrow leather thing, scuffed pale at the corners, and it held everything he believed a piano might need: tuning hammer, rubber mutes, a felt strip as long as my arm, a tin of graphite, and a tuning fork he never once used in my presence but would not leave home without. “In case the world goes out of tune,” he said, when I asked, and I rolled my eyes in the way that sixteen-year-olds are permitted to.<\/p><p>I had imagined the job would be about music. It was mostly about waiting. We waited in front halls while dogs were shut in back rooms. We waited while lids were cleared of photographs and plants and, once, an entire collection of ceramic owls. And when the piano was finally bare, my father waited again—sitting on the bench with his hands in his lap, not touching anything, just looking at the instrument as if it had something to tell him and he did not want to interrupt.<\/p><p><span class=\"ln\" data-qs=\"3\" aria-label=\"line 12\">12<\/span>“Why don’t you just start?” I asked him at the third house.<\/p><p>“I did,” he said.<span class=\"ln\" data-qs=\"3\" aria-label=\"line 13\">13<\/span><\/p><p>The owners were always the same and never the same. There was the retired dentist whose baby grand had been his late wife’s and who stood in the doorway the whole hour as if guarding it. There was a family whose upright had been dragged across three states and whose six-year-old played the same four bars of a march so many times that I began to hear them in my sleep. There was Mrs.&nbsp;Okafor, who apologized for the state of her spinet before we had even set down the case, and then apologized for apologizing.<\/p><p><span class=\"ln\" data-qs=\"\" aria-label=\"line 20\">20<\/span>My father spoke very little to any of them. He asked how long they had owned the piano, who played it, and whether it lived near a window or a radiator. Then he listened—to the piano, I assumed. He would strike a key, hold it, and tilt his head, and the room would go so quiet that I could hear the refrigerator two rooms away. Then he would set the hammer on a pin and turn it a distance too small for me to see.<\/p><p><span class=\"ln\" data-qs=\"\" aria-label=\"line 25\">25<\/span>It was at Mrs.&nbsp;Okafor’s that I began to understand what I had been watching. Halfway through the job, she brought us lemonade and stayed, hovering by the bookcase, and my father—who had said perhaps twenty words that whole morning—asked her whether she played. Not much anymore, she said. Her daughter had taken lessons; the daughter lived in Lagos now, and the piano was mostly furniture. My father nodded and went back to work. But a few minutes later, without looking up, he asked what her daughter used to play, and when she named a piece, he played the opening of it, softly, testing the middle octaves. <span class=\"ln\" data-qs=\"4\" aria-label=\"line 31\">31<\/span>Mrs.&nbsp;Okafor laughed and put her hand over her mouth. Then she sat down in the armchair by the window and did not apologize again for the rest of the hour.<\/p><p>In the car I said, “You didn’t need to play that. The middle was already fine.”<\/p><p>“The piano was fine,” he agreed.<span class=\"ln\" data-qs=\"8\" aria-label=\"line 34\">34<\/span><\/p><p>I spent the rest of the summer trying to hear what he heard. I learned to set a mute and to recognize the slow wobble that meant two strings were nearly but not quite agreeing. I never learned to hear what he heard in the rooms themselves: the dentist’s grief, the family’s exhaustion, the particular note of loneliness that made a person apologize to strangers for her furniture. My father, I think, would have said there was no difference. A piano under strain and a person under strain both pull slightly away from <span class=\"ln\" data-qs=\"6\" aria-label=\"line 40\">40<\/span>true, and the work in both cases is the same: patience, attention, and a turn of the hand so small that no one watching would call it work at all.<\/p><p><span class=\"ln\" data-qs=\"\" aria-label=\"line 42\">42<\/span>I carry my own case now, though what is in it has nothing to do with pianos. The tuning fork is in there. I have never used it. I don’t intend to leave home without it.<span class=\"ln\" data-qs=\"\" aria-label=\"line 43\">43<\/span><\/p>"},"u2":{"title":"Passage II &middot; Social science","html":"<p class=\"stim-intro\">Passage A is written from the perspective of a rural school superintendent. Passage B is written from the perspective of an education economist. Both passages are original.<\/p><p class=\"stim-sub\"><b>Passage A<\/b><\/p><p>When our district moved to a four-day week six years ago, the decision was not ideological. <span class=\"ln\" data-qs=\"10\" aria-label=\"line 1\">1<\/span>It was arithmetic. We serve a county larger than some states, our buses travel more than a thousand miles a day, and for three straight years we had ended spring with teaching positions we could not fill. Closing on Fridays trimmed transportation, utility, and substitute costs. The savings were modest—families who expected a windfall were disappointed—but they were real, and in a budget like ours, modest is not trivial.<\/p><p><span class=\"ln\" data-qs=\"\" aria-label=\"line 7\">7<\/span>The larger effect was one no spreadsheet predicted. The first year after the switch, applications for open positions nearly doubled. Teachers told us, sometimes in their interviews, that a three-day weekend was worth more to them than the raise we could not afford to offer. Our attrition fell. For a rural district, a stable faculty is not a perk; it is the precondition for everything else.<\/p><p>Critics point to studies showing small declines in test scores in some four-day districts, and I take those studies seriously. But averages conceal choices. Districts that simply compressed five days of instruction into four, adding forty minutes to the end of an already long day, have reason to worry. Districts that rebuilt the schedule—protecting morning time for core subjects, using Fridays for tutoring and enrichment for students who want it—tell a different story. The four-day week is not a reform in itself. It is a frame, and <span class=\"ln\" data-qs=\"\" aria-label=\"line 16\">16<\/span>what matters is what a district builds inside it.<\/p><p class=\"stim-sub\"><b>Passage B<\/b><\/p><p>The case for the four-day school week is usually made by the adults who work in schools, and it is easy to see why. A three-day weekend is an attractive benefit, and in places where recruiting teachers is a <span class=\"ln\" data-qs=\"14\" aria-label=\"line 19\">19<\/span>perennial crisis, it may be the only benefit a district can offer. But a school calendar is not only a staffing policy. It is also, for millions of families, a child-care arrangement, a meal program, and the most reliable source of structure in a child’s week.<\/p><p><span class=\"ln\" data-qs=\"\" aria-label=\"line 22\">22<\/span>Consider what happens on the fifth day. For a family with two working parents, Friday becomes a problem to be solved—by a grandparent, an older sibling, a paid program, or, too often, by no one. The district’s savings on buses and heating do not vanish; they are partly transferred to households, and they fall hardest on the households least able to absorb them. Students who relied on school breakfast and lunch lose a fifth of those meals.<span class=\"ln\" data-qs=\"\" aria-label=\"line 26\">26<\/span><\/p><p>Nor is the academic picture as reassuring as advocates suggest. The research is still young, and results vary, but the more careful recent studies tend to find that, on average, students in four-day districts learn somewhat less over time than similar students in five-day districts—and that the gap is larger where instructional hours were cut. Some districts have done better than average, and I would like to know how. <span class=\"ln\" data-qs=\"\" aria-label=\"line 31\">31<\/span>But a policy should be judged by what it typically produces, not by what its best practitioners achieve.<\/p><p class=\"stim-note\"><i>Questions 10–12 ask about Passage A. Questions 13–15 ask about Passage B. Questions 16–18 ask about both passages.<\/i><\/p>"},"u3":{"title":"Passage III &middot; Humanities","html":"<p class=\"stim-intro\">This passage is an original essay on the history of architectural restoration.<\/p><p>In April 2019, as the spire of Notre-Dame de Paris collapsed into the burning nave, millions of people watched something fall that was, strictly speaking, not medieval. <span class=\"ln\" data-qs=\"\" aria-label=\"line 2\">2<\/span>The spire had been designed in the 1850s by the architect Eugène Viollet-le-Duc to replace a thirteenth-century predecessor that had been taken down, in poor condition, in the 1780s. Few of the mourners knew this, and I am not sure it would have mattered to them if they had. The spire was part of what Notre-Dame looked like.<\/p><p>Viollet-le-Duc was the most influential restorer of his century, and he was unusually <span class=\"ln\" data-qs=\"22\" aria-label=\"line 7\">7<\/span>candid about what he was doing. “To restore a building,” he wrote, “is not to maintain it, repair it, or rebuild it; it is to reestablish it in a complete state that may never have existed at any given moment.” For him, a restorer was something like a translator who understood the original author better than the author had understood himself. Where the medieval builders had left a cathedral unfinished, or where later centuries had altered it, the restorer’s job was to supply the building the original logic implied. He applied this principle at Notre-Dame, at the walled city of Carcassonne, and at dozens of other sites, and the France that tourists photograph today is in no small part his invention.<\/p><p>Across the Channel, the critic John Ruskin regarded this as vandalism dressed in scholarship. Restoration, he wrote in 1849, “means the most total destruction which a building can suffer.” A building’s value, for Ruskin, lay not only in its design but in the marks of the particular hands that made it and the particular centuries that weathered it. A carved stone recut by a nineteenth-century mason was not the old stone improved; it was a new stone telling a lie. His advice was blunt: take care of old buildings—prop them, patch their roofs, keep the water out—and when they can no longer be saved, let them go. Ruskin’s follower William Morris later founded the Society for the Protection of Ancient Buildings on this principle, and its members cheerfully adopted the nickname “Anti-Scrape.”<\/p><p><span class=\"ln\" data-qs=\"23\" aria-label=\"line 24\">24<\/span>I used to think Ruskin was simply right. There is something unsettling about a restoration that erases the evidence of time in order to produce a building more perfect than any that ever stood. But standing in Carcassonne a few years ago—among walls and towers that are, in their present form, largely Viollet-le-Duc’s—I found I could not quite summon the outrage I had brought with me. The place was moving. Children ran along the ramparts. Whatever it was, it was not a lie anyone there felt they were being told.<span class=\"ln\" data-qs=\"23\" aria-label=\"line 29\">29<\/span><\/p><p><span class=\"ln\" data-qs=\"\" aria-label=\"line 30\">30<\/span>The truth, I have come to believe, is that the two men were answering different questions. Ruskin asked what a building <i>is<\/i>: an object, a piece of evidence, a document of the past that, like any document, is falsified by revision. Viollet-le-Duc asked what a building is <i>for<\/i>. A cathedral is not only an artifact but a place where people gather, and a ruin cannot do that. Most modern preservation codes try to split the difference. They encourage repair over replacement, require new work to be distinguishable on close inspection, and demand that every intervention be recorded—<span class=\"ln\" data-qs=\"26\" aria-label=\"line 35\">35<\/span>Ruskin’s conscience, in other words, applied to Viollet-le-Duc’s ambition.<\/p><p>The decision to rebuild Notre-Dame’s spire exactly as Viollet-le-Duc designed it, rather than replace it with something new, was therefore a stranger choice than it first appeared. It was a faithful copy of an object that was itself a confident invention. I don’t think that makes it wrong. It may only mean that a building, after enough centuries, becomes a record of its restorations as much as of its builders—and that the restorer’s work, too, eventually becomes something worth preserving.<\/p>"},"u4":{"title":"Passage IV &middot; Natural science","html":"<p class=\"stim-intro\">This passage is original. Figure&nbsp;1 presents illustrative data of the kind reported in studies of urban birdsong.<\/p><p>Anyone who has tried to hold a conversation beside a busy road knows the instinct: you speak louder, and without quite meaning to, you raise the pitch of your voice. Many songbirds do the same. Over the past two decades, researchers in cities on several continents have found that birds living near heavy traffic tend to sing louder, and often higher, than members of the same species in quieter places.<\/p><p><span class=\"ln\" data-qs=\"\" aria-label=\"line 6\">6<\/span>The explanation begins with the physics of noise. The rumble of engines and tires is concentrated at low frequencies, below about 2 kilohertz (kHz). A bird whose song includes low notes risks having those notes masked—drowned out—by traffic, so that a rival or a potential mate a few dozen meters away simply cannot hear them. Raising the lowest notes of a song, even slightly, lifts them out of the noisiest part of the spectrum. Biologists measure this shift using a song’s minimum frequency: the pitch of its lowest note.<\/p><p><span class=\"ln\" data-qs=\"\" aria-label=\"line 12\">12<\/span>What has been harder to determine is how quickly the shift happens. If urban birds sing higher because, over many generations, birds with naturally higher voices have survived and reproduced more successfully, the change should be slow and largely fixed. If instead individual birds adjust their songs in response to the noise they hear, the change could occur within a single season—and should reverse when the noise goes away.<span class=\"ln\" data-qs=\"\" aria-label=\"line 16\">16<\/span><\/p><p><span class=\"ln\" data-qs=\"32\" aria-label=\"line 17\">17<\/span>In the spring of 2020, an unplanned experiment offered a test. As lockdowns emptied roads around the world, traffic noise in many cities fell to levels not heard in decades. Researchers who had been recording birds before the shutdowns returned to the same sites and recorded them again.<\/p><p>Figure 1 summarizes results of the kind such studies have reported, from a survey of one species at sites grouped by their typical traffic noise before the shutdown. At the quietest sites, birds’ minimum song frequency barely changed between the two years. <span class=\"ln\" data-qs=\"\" aria-label=\"line 22\">22<\/span>At the noisiest sites, the drop was large: with the roads quiet, birds sang lower notes than they had the year before. The pattern is hard to explain by evolution alone, which could not have operated over a single year. It strongly suggests that individual birds were adjusting their songs to their acoustic surroundings.<\/p><p><span class=\"ln\" data-qs=\"33\" aria-label=\"line 26\">26<\/span>Singing higher solves one problem but may create another. In several species, females appear to prefer males whose songs include lower notes, possibly because low notes are harder to produce and so signal a larger or healthier singer. A male who raises his pitch to be heard may therefore be heard as a less attractive mate. Some researchers also suspect that singing louder and higher costs energy, though this has proved difficult to measure in wild birds.<span class=\"ln\" data-qs=\"33\" aria-label=\"line 30\">30<\/span><\/p><p>For city planners, the findings carry a practical message. Noise is not merely an annoyance to people; it changes how animals communicate, and those changes may affect which species can live in a city at all. Quieter road surfaces, lower speed limits, and roadside plantings are usually justified by their benefits to human residents. The birds may be an additional reason to adopt them.<\/p>"}},"mc":[{"n":1,"prompt":"Which of the following best describes the main idea of the passage?","options":["A teenager reluctantly learns a trade and eventually decides to make it a career.","A narrator recalls gradually recognizing that the father’s work involved attending to people as closely as to instruments.","A father teaches his child the technical steps of piano tuning over one summer.","A narrator describes how a series of customers changed the father’s attitude toward his job."],"answer":1,"sec":"1","topic":"3","stim":"u1","ex":{"idea":"Main idea of a narrative: follow how the narrator’s understanding changes, especially at the turning point and the ending.","steps":["The turning point is at Mrs. Okafor’s (line 25): “I began to understand what I had been watching.”","The ending (lines 40–43) says a piano and a person under strain need the same patient attention. The narrator gradually saw that the father attended to people as closely as to pianos."],"others":{"0":"contradicted: the narrator’s case now “has nothing to do with pianos.”","2":"too narrow: technical steps are background; the passage is about what the narrator came to understand.","3":"invents a change in the father; it is the narrator whose view changes."}}},{"n":2,"prompt":"According to the passage, the father’s case contained all of the following EXCEPT:","options":["a tin of graphite.","rubber mutes.","a felt strip.","a metronome."],"answer":3,"sec":"1","topic":"1","stim":"u1","ex":{"idea":"EXCEPT questions: check each choice against the passage and eliminate the three that appear. The answer is the one never mentioned.","steps":["Paragraph 1 lists the case’s contents: tuning hammer, rubber mutes, a felt strip, a tin of graphite, and a tuning fork.","Graphite, mutes, and felt are all there. A metronome is never mentioned."],"others":{"0":"listed: “a tin of graphite.”","1":"listed: “rubber mutes.”","2":"listed: “a felt strip as long as my arm.”"}}},{"n":3,"prompt":"The exchange in <span style=\"white-space:nowrap\">lines 12&ndash;13<\/span> primarily serves to:","options":["show that the father considered his silent observation to be part of the work.","suggest that the father was annoyed by the narrator’s impatience.","reveal that the narrator had confused one house with another.","indicate that the father had tuned the piano before the narrator arrived."],"answer":0,"sec":"1","topic":"7","stim":"u1","ex":{"idea":"Function of a detail: ask what the exchange reveals that the passage needs.","steps":["The narrator asks, “Why don’t you just start?” The father answers, “I did” (lines 12–13).","What looked like waiting (sitting and looking) was, to him, already part of the work."],"others":{"1":"his reply is calm; nothing suggests annoyance.","2":"no confusion between houses is suggested.","3":"the narrator was with him; “I did” refers to the looking, not an earlier tuning."}}},{"n":4,"prompt":"It can reasonably be inferred that Mrs.&nbsp;Okafor laughed and put her hand over her mouth (<span style=\"white-space:nowrap\">line 31<\/span>) because she:","options":["was embarrassed that her piano was so badly out of tune.","recognized the music as the piece her daughter used to play.","thought the father’s playing was technically clumsy.","was surprised that the father had stopped working to rest."],"answer":1,"sec":"1","topic":"2","stim":"u1","ex":{"idea":"Inference: link the action to what happened just before it.","steps":["Right before she laughs (line 31), the father plays the opening of the piece her daughter used to play.","Laughing and covering her mouth is a moment of surprised recognition: she recognized the piece."],"others":{"0":"the father says the piano was fine; embarrassment does not fit.","2":"nothing suggests she judged his playing.","3":"he was testing the middle octaves, not resting."}}},{"n":5,"prompt":"According to the passage, the questions the father usually asked owners concerned:","options":["the piano’s history, who played it, and where it stood in the house.","the owners’ musical training and favorite composers.","the price the owners had paid for the piano.","whether the owners planned to sell the piano."],"answer":0,"sec":"1","topic":"1","stim":"u1","ex":{"idea":"Stated detail: find the sentence and match it.","steps":["“He asked how long they had owned the piano, who played it, and whether it lived near a window or a radiator” (line 20).","That is the piano’s history, who played it, and where it stood."],"others":{"1":"musical training and composers are never mentioned.","2":"price is never mentioned.","3":"selling is never mentioned."}}},{"n":6,"prompt":"As it is used in <span style=\"white-space:nowrap\">line 40<\/span>, the word <i>true<\/i> most nearly means:","options":["honest.","loyal.","factual.","proper alignment."],"answer":3,"sec":"1","topic":"5","stim":"u1","ex":{"idea":"Word in context: the sentence’s own image defines the word; ignore the most common meaning.","steps":["Strings “nearly but not quite agreeing” and a person under strain both “pull slightly away from true” (line 40).","“True” here is the alignment of a tuned string, as in a wheel being true: proper alignment."],"others":{"0":"the common meaning (truthful) does not fit a string pulling away from it.","1":"“loyal” (true to someone) is another everyday meaning that does not fit.","2":"“factual” does not describe a string’s pitch."}}},{"n":7,"prompt":"The passage is told from the point of view of a narrator who is:","options":["a teenager describing events as they happen.","an adult looking back on an experience from adolescence.","an outside observer who reports the father’s private thoughts.","the father, remembering his first summer as a tuner."],"answer":1,"sec":"1","topic":"8","stim":"u1","ex":{"idea":"Point of view: look for time signals that place the narrator.","steps":["“The summer I turned sixteen” looks back, and “I carry my own case now” (line 42) places the narrator in the present as an adult.","So: an adult looking back on adolescence."],"others":{"0":"the events are recalled from years later, not told as they happen.","2":"the narrator is the father’s child and a character in the story, not an outside observer, and never reports the father’s private thoughts.","3":"the father is a character; the narrator is his child."}}},{"n":8,"prompt":"The father’s reply in <span style=\"white-space:nowrap\">line 34<\/span> most strongly suggests that he:","options":["believed the narrator had misheard the middle octaves.","had played the piece mainly to test the narrator’s ear.","agreed the piano needed no more work but had played for a different reason.","regretted having taken longer than necessary on the job."],"answer":2,"sec":"1","topic":"2","stim":"u1","ex":{"idea":"Inference from dialogue: notice which word the speaker stresses.","steps":["The narrator says the middle octaves were already fine. The father agrees: “The <i>piano<\/i> was fine” (line 34).","The stress implies the piano needed nothing, but someone else did: he played for Mrs. Okafor."],"others":{"0":"he agrees with the narrator about the piano; there is no mishearing.","1":"the music was the daughter’s piece, played for Mrs. Okafor, not an ear test.","3":"nothing suggests regret about time."}}},{"n":9,"prompt":"Which quotation from the passage best supports the claim that the narrator came to value the father’s way of working?","options":["“I rolled my eyes in the way that sixteen-year-olds are permitted to”","“It was mostly about waiting.”","“The tuning fork is in there. I have never used it. I don’t intend to leave home without it.”","“the room would go so quiet that I could hear the refrigerator two rooms away”"],"answer":2,"sec":"1","topic":"9","stim":"u1","ex":{"idea":"Evidence questions: the right quotation must support the specific claim, here that the narrator came to value the father’s way of working.","steps":["The ending: the narrator carries the father’s tuning fork, never uses it, and won’t leave home without it, just as the father did.","Adopting his habit shows the narrator came to value his way of working."],"others":{"0":"shows the narrator’s early dismissiveness, the opposite.","1":"describes the job, not the narrator’s later view of it.","3":"describes the father’s work, not how the narrator came to regard it."}}},{"n":10,"prompt":"In Passage A, the statement “It was arithmetic” (<span style=\"white-space:nowrap\">line 1<\/span>) primarily serves to:","options":["emphasize that the district’s decision was driven by practical constraints rather than beliefs.","suggest that the decision was made mainly by the district’s math teachers.","admit that the district miscalculated the savings.","criticize districts that adopted the policy for ideological reasons."],"answer":0,"sec":"2","topic":"6","stim":"u2","ex":{"idea":"Word choice / function: a short, blunt sentence after a contrast usually sets up the author’s point.","steps":["“the decision was not ideological. It was arithmetic.” (line 1)","The contrast says the decision came from budget and staffing numbers, practical constraints, not beliefs."],"others":{"1":"takes “arithmetic” literally; math teachers are not mentioned.","2":"the savings were “modest” but “real”; nothing was miscalculated.","3":"no other districts are criticized for ideology."}}},{"n":11,"prompt":"According to Passage A, which outcome of the four-day week was unexpected?","options":["Lower transportation costs","A sharp rise in applications for teaching positions","Disappointment among some families","Higher test scores"],"answer":1,"sec":"2","topic":"1","stim":"u2","ex":{"idea":"Stated detail: find the word that matches “unexpected” in the passage.","steps":["“The larger effect was one no spreadsheet predicted. The first year after the switch, applications for open positions nearly doubled” (line 7).","“no spreadsheet predicted” = unexpected: the rise in applications."],"others":{"0":"cost savings were the expected reason for the switch.","2":"family disappointment is mentioned, but not as the unexpected outcome.","3":"the author concedes some districts saw small declines; higher scores are never claimed."}}},{"n":12,"prompt":"The author of Passage A suggests that the difference between four-day districts that saw test-score declines and those that did not is mainly related to:","options":["the size of each district’s budget.","whether teachers received raises.","how far students traveled to school.","how each district structured instruction within the four-day week."],"answer":3,"sec":"2","topic":"4","stim":"u2","ex":{"idea":"Relationships: find the contrast the author draws between two groups.","steps":["Paragraph 3: districts that “simply compressed five days of instruction into four” vs. districts that “rebuilt the schedule.”","The difference is how instruction was structured within the four days."],"others":{"0":"budget size is not the contrast drawn.","1":"raises are mentioned only in the recruiting paragraph.","2":"travel distance is never linked to test scores."}}},{"n":13,"prompt":"The main point of the second paragraph of Passage B is that the four-day week:","options":["shifts some costs and burdens from the district onto families.","relies most heavily on grandparents for Friday child care.","requires schools to expand meal programs to Fridays.","saves districts more money than its advocates admit."],"answer":0,"sec":"2","topic":"3","stim":"u2","ex":{"idea":"Paragraph main idea: state what the whole paragraph argues, not one example inside it.","steps":["Passage B’s second paragraph (lines 22–26): Friday becomes a problem for families; the district’s savings “are partly transferred to households”; students lose meals.","Main point: costs and burdens shift from the district to families."],"others":{"1":"grandparents are one of several examples, not the main point.","2":"the paragraph says students lose meals, not that schools must expand programs.","3":"the paragraph never argues the savings are larger than admitted."}}},{"n":14,"prompt":"As it is used in <span style=\"white-space:nowrap\">line 19<\/span>, the word <i>perennial<\/i> most nearly means:","options":["seasonal.","growing.","occasional.","recurring."],"answer":3,"sec":"2","topic":"5","stim":"u2","ex":{"idea":"Word in context: predict the meaning from the phrase, then beware the botanical trap.","steps":["“a perennial crisis” in recruiting teachers (line 19): a crisis that keeps coming back.","So “perennial” means recurring."],"others":{"0":"the plant sense (seasonal) is the trap; perennial plants actually return every year.","1":"“growing” comes from plants too, not from the context.","2":"“occasional” is close to the opposite of a constant, returning crisis."}}},{"n":15,"prompt":"In the last sentence of Passage B, the author reasons that a policy should be evaluated according to:","options":["the results achieved by the most successful districts.","its typical outcomes rather than its best cases.","the preferences of the teachers it affects.","how recently it was adopted."],"answer":1,"sec":"2","topic":"9","stim":"u2","ex":{"idea":"Evaluating reasoning: find the principle the author states and restate it.","steps":["Line 31: a policy “should be judged by what it typically produces, not by what its best practitioners achieve.”","Typical outcomes, not best cases."],"others":{"0":"the reverse of what the author says.","2":"teacher preference is what the author warns against relying on.","3":"how recent a policy is never comes up as a standard."}}},{"n":16,"prompt":"Both authors would most likely agree that the four-day week:","options":["reliably improves student achievement.","produces substantial savings for districts.","can help districts attract teachers.","should include tutoring on Fridays."],"answer":2,"sec":"2","topic":"10","stim":"u2","ex":{"idea":"Agreement across passages: the answer must be accepted by both authors.","steps":["Passage A: applications nearly doubled. Passage B: a three-day weekend is “attractive” and may be “the only benefit a district can offer” for recruiting.","Both accept that the policy can help attract teachers."],"others":{"0":"Passage B says students learn somewhat less on average; A only says some districts avoid declines.","1":"A calls the savings “modest,” and B says they are partly shifted to families.","3":"only Passage A mentions Friday tutoring."}}},{"n":17,"prompt":"How would the author of Passage B most likely respond to the claim in Passage A that “what matters is what a district builds inside it”?","options":["By agreeing that outcomes depend entirely on district choices, so the policy should be adopted widely","By arguing that test scores do not measure student learning","By granting that some districts do better than average while insisting that the policy be judged by its typical results","By pointing out that rural districts cannot afford Friday tutoring"],"answer":2,"sec":"2","topic":"10","stim":"u2","ex":{"idea":"Response questions: use the responding author’s own stated principle.","steps":["A’s claim: what matters is what a district builds inside the four-day frame (line 16).","B grants that “Some districts have done better than average” but insists a policy be judged by typical results. That is the response."],"others":{"0":"B does not agree that outcomes depend entirely on choices, and opposes wide adoption.","1":"B relies on learning studies; it never dismisses test scores as a measure.","3":"B never discusses the cost of Friday tutoring."}}},{"n":18,"prompt":"Compared with Passage A, Passage B places greater emphasis on the four-day week’s:","options":["effects on families outside of school hours.","effects on teacher recruitment.","strategies for building an effective schedule.","personal significance to a district leader."],"answer":0,"sec":"2","topic":"10","stim":"u2","ex":{"idea":"Contrast questions: find what one passage covers at length that the other barely mentions.","steps":["Passage B’s second paragraph is all about the fifth day: child care, meals, household costs.","Passage A focuses on budget, staffing, and schedule design. So B emphasizes effects on families outside school hours."],"others":{"1":"recruitment is Passage A’s emphasis.","2":"schedule-building strategies are Passage A’s emphasis.","3":"Passage A, written by a superintendent, is the personal one."}}},{"n":19,"prompt":"The main purpose of the passage is to:","options":["argue that Viollet-le-Duc’s restorations should be undone.","explore two opposing views of restoration and suggest that each addresses a different concern.","trace the history of Notre-Dame from its construction to the 2019 fire.","explain the technical methods used to rebuild medieval spires."],"answer":1,"sec":"3","topic":"8","stim":"u3","ex":{"idea":"Purpose of an essay: look at what the author does overall, especially where the essay lands.","steps":["The essay sets Viollet-le-Duc’s view against Ruskin’s and concludes they “were answering different questions” (line 30).","So the purpose is to explore two opposing views and show each addresses a different concern."],"others":{"0":"the author grows more sympathetic to Viollet-le-Duc and accepts the spire’s rebuilding.","2":"Notre-Dame frames the essay, but its full history is not traced.","3":"no technical methods are explained."}}},{"n":20,"prompt":"According to the passage, the spire that collapsed in 2019 was:","options":["built in the thirteenth century.","taken down in the 1780s.","designed in the 1850s to replace an earlier spire.","modeled on a tower at Carcassonne."],"answer":2,"sec":"3","topic":"1","stim":"u3","ex":{"idea":"Detail questions with several dates: match the detail to the right object.","steps":["Line 2: the spire “had been designed in the 1850s… to replace a thirteenth-century predecessor that had been taken down… in the 1780s.”","The collapsed spire is the 1850s design that replaced an earlier one."],"others":{"0":"the thirteenth century describes the earlier spire.","1":"the 1780s is when the earlier spire was taken down.","3":"Carcassonne is another Viollet-le-Duc site; the spire was not modeled on it."}}},{"n":21,"prompt":"Based on the passage, Viollet-le-Duc would most likely approve of a restorer who:","options":["completes a building according to the design its original builders seemed to intend, even if that state never existed.","limits work to patching roofs and keeping out water.","leaves later alterations untouched so their history remains visible.","allows a building to fall into ruin rather than alter it."],"answer":0,"sec":"3","topic":"2","stim":"u3","ex":{"idea":"Inference about a person’s views: apply the principle the passage attributes to them.","steps":["Viollet-le-Duc: restoration reestablishes “a complete state that may never have existed,” supplying what “the original logic implied.”","He would approve of completing a building to its intended design, even if that state never existed."],"others":{"1":"Ruskin’s advice (prop, patch, keep the water out).","2":"Viollet-le-Duc corrected later alterations; leaving them visible is closer to Ruskin.","3":"Ruskin’s “let them go” position."}}},{"n":22,"prompt":"As it is used in <span style=\"white-space:nowrap\">line 7<\/span>, the word <i>candid<\/i> most nearly means:","options":["informal.","frank.","generous.","careless."],"answer":1,"sec":"3","topic":"5","stim":"u3","ex":{"idea":"Word in context: use what the person actually did to define the word.","steps":["“unusually candid about what he was doing” (line 7), then he openly says restoration creates “a complete state that may never have existed.”","He was frank."],"others":{"0":"the “candid photo” sense (informal) does not fit.","2":"“generous” has no support in the sentence.","3":"“careless” contradicts his deliberate, stated principle."}}},{"n":23,"prompt":"The fourth paragraph (<span style=\"white-space:nowrap\">lines 24&ndash;29<\/span>) primarily serves to:","options":["provide a personal experience that complicates the author’s earlier agreement with Ruskin.","offer evidence that Carcassonne’s walls are authentically medieval.","describe the author’s first encounter with Viollet-le-Duc’s writing.","show that tourists are unaware of Carcassonne’s history."],"answer":0,"sec":"3","topic":"7","stim":"u3","ex":{"idea":"Function of a paragraph: track what it does to the argument so far.","steps":["Lines 24–29: “I used to think Ruskin was simply right… But standing in Carcassonne…” the author could not summon the outrage.","A personal experience complicates the earlier agreement with Ruskin."],"others":{"1":"the paragraph says Carcassonne’s walls are “largely Viollet-le-Duc’s,” not authentically medieval.","2":"it describes a visit to Carcassonne, not reading his writing.","3":"the point is the author’s reaction, not tourists’ ignorance."}}},{"n":24,"prompt":"According to the passage, modern preservation codes typically do all of the following EXCEPT:","options":["favor repair over replacement.","require new work to be distinguishable on close inspection.","require every intervention to be recorded.","require restorers to return buildings to their original appearance."],"answer":3,"sec":"3","topic":"1","stim":"u3","ex":{"idea":"EXCEPT questions: eliminate the three the passage lists.","steps":["The codes “encourage repair over replacement,” “require new work to be distinguishable on close inspection,” and “demand that every intervention be recorded.”","Returning buildings to an original appearance is never listed."],"others":{"0":"listed: “encourage repair over replacement.”","1":"listed: “require new work to be distinguishable.”","2":"listed: “every intervention be recorded.”"}}},{"n":25,"prompt":"The author’s attitude toward the decision to rebuild the spire as Viollet-le-Duc designed it is best described as:","options":["bitter disapproval.","enthusiastic celebration.","complete indifference.","thoughtful acceptance tempered by a sense of irony."],"answer":3,"sec":"3","topic":"8","stim":"u3","ex":{"idea":"Attitude: weigh both the reservations and the conclusion.","steps":["Irony: rebuilding was “a stranger choice than it first appeared,” “a faithful copy of an object that was itself a confident invention.”","Acceptance: “I don’t think that makes it wrong.” So: thoughtful acceptance tempered by irony."],"others":{"0":"the author says it is not wrong.","1":"the tone is reflective, not enthusiastic.","2":"the author thinks hard about it, so not indifferent."}}},{"n":26,"prompt":"The phrase “Ruskin’s conscience … applied to Viollet-le-Duc’s ambition” (<span style=\"white-space:nowrap\">line 35<\/span>) suggests that modern preservation codes:","options":["reject both men’s ideas.","adopt Ruskin’s view that ruined buildings should be let go.","combine Ruskin’s concern for honesty and record-keeping with Viollet-le-Duc’s willingness to intervene.","favor ambitious reconstruction over repair."],"answer":2,"sec":"3","topic":"4","stim":"u3","ex":{"idea":"Read a summarizing phrase by matching each half to what it refers to.","steps":["“Ruskin’s conscience” = honesty and record-keeping (distinguishable new work, recorded interventions).","“Viollet-le-Duc’s ambition” = willingness to intervene. The codes combine both (line 35)."],"others":{"0":"the codes draw on both men, not reject both.","1":"the codes encourage repair; they do not let buildings go.","3":"the codes favor repair over replacement."}}},{"n":27,"prompt":"Which of the following, if true, would most directly support Ruskin’s position as described in the passage?","options":["Visitors report enjoying restored sites more than unrestored ones.","Buildings that are not restored attract fewer visitors.","Viollet-le-Duc based his designs on extensive study of medieval methods.","Scholars studying a restored cathedral cannot tell which carvings are medieval and which were recut in the 1800s."],"answer":3,"sec":"3","topic":"9","stim":"u3","ex":{"idea":"Strengthen a position: choose the fact that directly supports the stated reasoning.","steps":["Ruskin: a building’s value lies in the marks of the particular hands that made it; a recut stone is “a new stone telling a lie.”","If scholars cannot tell medieval carvings from 1800s recuts, that evidence of the original hands is lost, which is exactly his complaint."],"others":{"0":"supports restoration’s value for use and enjoyment, Viollet-le-Duc’s side.","1":"also supports restoring for use.","2":"defends Viollet-le-Duc’s scholarship."}}},{"n":28,"prompt":"The passage is primarily concerned with:","options":["the history of noise regulation in cities.","why female songbirds prefer low-pitched songs.","methods for recording birdsong in urban areas.","how traffic noise affects birdsong and what a natural experiment revealed about how quickly birds respond."],"answer":3,"sec":"4","topic":"3","fig":"<figure class=\"fig\"><svg viewBox=\"0 0 660 380\" width=\"660\" height=\"380\" role=\"img\" style=\"max-width:100%;height:auto;font-family:var(--serif);font-size:14px\" aria-label=\"Bar chart. Minimum song frequency in kilohertz, spring 2019 versus spring 2020: quiet sites 2.9 and 2.8; moderate sites 3.2 and 3.0; loud sites 3.6 and 3.1.\"><line x1=\"78\" x2=\"628\" y1=\"300.0\" y2=\"300.0\" style=\"stroke:var(--line);stroke-width:1.2\"/><text x=\"68\" y=\"305.0\" text-anchor=\"end\" style=\"fill:var(--fg)\">0<\/text><line x1=\"78\" x2=\"628\" y1=\"245.2\" y2=\"245.2\" style=\"stroke:var(--line);stroke-width:1\"/><text x=\"68\" y=\"250.2\" text-anchor=\"end\" style=\"fill:var(--fg)\">1<\/text><line x1=\"78\" x2=\"628\" y1=\"190.5\" y2=\"190.5\" style=\"stroke:var(--line);stroke-width:1\"/><text x=\"68\" y=\"195.5\" text-anchor=\"end\" style=\"fill:var(--fg)\">2<\/text><line x1=\"78\" x2=\"628\" y1=\"135.7\" y2=\"135.7\" style=\"stroke:var(--line);stroke-width:1\"/><text x=\"68\" y=\"140.7\" text-anchor=\"end\" style=\"fill:var(--fg)\">3<\/text><line x1=\"78\" x2=\"628\" y1=\"81.0\" y2=\"81.0\" style=\"stroke:var(--line);stroke-width:1\"/><text x=\"68\" y=\"86.0\" text-anchor=\"end\" style=\"fill:var(--fg)\">4<\/text><text transform=\"translate(26 185) rotate(-90)\" text-anchor=\"middle\" style=\"fill:var(--fg)\">Minimum song frequency (kHz)<\/text><rect x=\"135.7\" y=\"141.2\" width=\"32\" height=\"158.8\" style=\"fill:var(--fg)\"/><text x=\"151.7\" y=\"135.2\" text-anchor=\"middle\" style=\"fill:var(--fg);font-size:12.5px\">2.9<\/text><rect x=\"171.7\" y=\"146.7\" width=\"32\" height=\"153.3\" style=\"fill:var(--line);stroke:var(--fg);stroke-width:1\"/><text x=\"187.7\" y=\"140.7\" text-anchor=\"middle\" style=\"fill:var(--fg);font-size:12.5px\">2.8<\/text><text x=\"169.7\" y=\"322\" text-anchor=\"middle\" style=\"fill:var(--fg)\">Quiet<\/text><text x=\"169.7\" y=\"340\" text-anchor=\"middle\" style=\"fill:var(--fg)\">(below 45 dB)<\/text><rect x=\"319.0\" y=\"124.8\" width=\"32\" height=\"175.2\" style=\"fill:var(--fg)\"/><text x=\"335.0\" y=\"118.8\" text-anchor=\"middle\" style=\"fill:var(--fg);font-size:12.5px\">3.2<\/text><rect x=\"355.0\" y=\"135.7\" width=\"32\" height=\"164.3\" style=\"fill:var(--line);stroke:var(--fg);stroke-width:1\"/><text x=\"371.0\" y=\"129.7\" text-anchor=\"middle\" style=\"fill:var(--fg);font-size:12.5px\">3.0<\/text><text x=\"353.0\" y=\"322\" text-anchor=\"middle\" style=\"fill:var(--fg)\">Moderate<\/text><text x=\"353.0\" y=\"340\" text-anchor=\"middle\" style=\"fill:var(--fg)\">(45&ndash;55 dB)<\/text><rect x=\"502.3\" y=\"102.9\" width=\"32\" height=\"197.1\" style=\"fill:var(--fg)\"/><text x=\"518.3\" y=\"96.9\" text-anchor=\"middle\" style=\"fill:var(--fg);font-size:12.5px\">3.6<\/text><rect x=\"538.3\" y=\"130.2\" width=\"32\" height=\"169.8\" style=\"fill:var(--line);stroke:var(--fg);stroke-width:1\"/><text x=\"554.3\" y=\"124.2\" text-anchor=\"middle\" style=\"fill:var(--fg);font-size:12.5px\">3.1<\/text><text x=\"536.3\" y=\"322\" text-anchor=\"middle\" style=\"fill:var(--fg)\">Loud<\/text><text x=\"536.3\" y=\"340\" text-anchor=\"middle\" style=\"fill:var(--fg)\">(above 55 dB)<\/text><text x=\"353\" y=\"370\" text-anchor=\"middle\" style=\"fill:var(--fg)\">Site&rsquo;s typical traffic noise in 2019<\/text><rect x=\"150\" y=\"18\" width=\"14\" height=\"14\" style=\"fill:var(--fg)\"/><text x=\"170\" y=\"30\" style=\"fill:var(--fg)\">Spring 2019 (normal traffic)<\/text><rect x=\"372\" y=\"18\" width=\"14\" height=\"14\" style=\"fill:var(--line);stroke:var(--fg);stroke-width:1\"/><text x=\"392\" y=\"30\" style=\"fill:var(--fg)\">Spring 2020 (reduced traffic)<\/text><\/svg><figcaption><b>Figure 1.<\/b> Average minimum song frequency of one songbird species at sites grouped by typical traffic noise in 2019, recorded in spring 2019 and spring 2020. Data are illustrative.<\/figcaption><\/figure>","stim":"u4","ex":{"idea":"Central idea: the answer covers the passage’s whole arc, not one paragraph.","steps":["The passage explains why traffic noise raises song pitch, then uses the 2020 lockdowns to test how quickly birds adjust.","D covers both."],"others":{"0":"noise regulation appears only in the final paragraph’s suggestions.","1":"female preference is one paragraph’s detail.","2":"recording methods are not described."}}},{"n":29,"prompt":"According to the passage, the sound of traffic is concentrated:","options":["above about 4 kHz.","at the same frequencies as birds’ highest notes.","at frequencies below about 2 kHz.","mainly during the spring."],"answer":2,"sec":"4","topic":"1","fig":"<figure class=\"fig\"><svg viewBox=\"0 0 660 380\" width=\"660\" height=\"380\" role=\"img\" style=\"max-width:100%;height:auto;font-family:var(--serif);font-size:14px\" aria-label=\"Bar chart. Minimum song frequency in kilohertz, spring 2019 versus spring 2020: quiet sites 2.9 and 2.8; moderate sites 3.2 and 3.0; loud sites 3.6 and 3.1.\"><line x1=\"78\" x2=\"628\" y1=\"300.0\" y2=\"300.0\" style=\"stroke:var(--line);stroke-width:1.2\"/><text x=\"68\" y=\"305.0\" text-anchor=\"end\" style=\"fill:var(--fg)\">0<\/text><line x1=\"78\" x2=\"628\" y1=\"245.2\" y2=\"245.2\" style=\"stroke:var(--line);stroke-width:1\"/><text x=\"68\" y=\"250.2\" text-anchor=\"end\" style=\"fill:var(--fg)\">1<\/text><line x1=\"78\" x2=\"628\" y1=\"190.5\" y2=\"190.5\" style=\"stroke:var(--line);stroke-width:1\"/><text x=\"68\" y=\"195.5\" text-anchor=\"end\" style=\"fill:var(--fg)\">2<\/text><line x1=\"78\" x2=\"628\" y1=\"135.7\" y2=\"135.7\" style=\"stroke:var(--line);stroke-width:1\"/><text x=\"68\" y=\"140.7\" text-anchor=\"end\" style=\"fill:var(--fg)\">3<\/text><line x1=\"78\" x2=\"628\" y1=\"81.0\" y2=\"81.0\" style=\"stroke:var(--line);stroke-width:1\"/><text x=\"68\" y=\"86.0\" text-anchor=\"end\" style=\"fill:var(--fg)\">4<\/text><text transform=\"translate(26 185) rotate(-90)\" text-anchor=\"middle\" style=\"fill:var(--fg)\">Minimum song frequency (kHz)<\/text><rect x=\"135.7\" y=\"141.2\" width=\"32\" height=\"158.8\" style=\"fill:var(--fg)\"/><text x=\"151.7\" y=\"135.2\" text-anchor=\"middle\" style=\"fill:var(--fg);font-size:12.5px\">2.9<\/text><rect x=\"171.7\" y=\"146.7\" width=\"32\" height=\"153.3\" style=\"fill:var(--line);stroke:var(--fg);stroke-width:1\"/><text x=\"187.7\" y=\"140.7\" text-anchor=\"middle\" style=\"fill:var(--fg);font-size:12.5px\">2.8<\/text><text x=\"169.7\" y=\"322\" text-anchor=\"middle\" style=\"fill:var(--fg)\">Quiet<\/text><text x=\"169.7\" y=\"340\" text-anchor=\"middle\" style=\"fill:var(--fg)\">(below 45 dB)<\/text><rect x=\"319.0\" y=\"124.8\" width=\"32\" height=\"175.2\" style=\"fill:var(--fg)\"/><text x=\"335.0\" y=\"118.8\" text-anchor=\"middle\" style=\"fill:var(--fg);font-size:12.5px\">3.2<\/text><rect x=\"355.0\" y=\"135.7\" width=\"32\" height=\"164.3\" style=\"fill:var(--line);stroke:var(--fg);stroke-width:1\"/><text x=\"371.0\" y=\"129.7\" text-anchor=\"middle\" style=\"fill:var(--fg);font-size:12.5px\">3.0<\/text><text x=\"353.0\" y=\"322\" text-anchor=\"middle\" style=\"fill:var(--fg)\">Moderate<\/text><text x=\"353.0\" y=\"340\" text-anchor=\"middle\" style=\"fill:var(--fg)\">(45&ndash;55 dB)<\/text><rect x=\"502.3\" y=\"102.9\" width=\"32\" height=\"197.1\" style=\"fill:var(--fg)\"/><text x=\"518.3\" y=\"96.9\" text-anchor=\"middle\" style=\"fill:var(--fg);font-size:12.5px\">3.6<\/text><rect x=\"538.3\" y=\"130.2\" width=\"32\" height=\"169.8\" style=\"fill:var(--line);stroke:var(--fg);stroke-width:1\"/><text x=\"554.3\" y=\"124.2\" text-anchor=\"middle\" style=\"fill:var(--fg);font-size:12.5px\">3.1<\/text><text x=\"536.3\" y=\"322\" text-anchor=\"middle\" style=\"fill:var(--fg)\">Loud<\/text><text x=\"536.3\" y=\"340\" text-anchor=\"middle\" style=\"fill:var(--fg)\">(above 55 dB)<\/text><text x=\"353\" y=\"370\" text-anchor=\"middle\" style=\"fill:var(--fg)\">Site&rsquo;s typical traffic noise in 2019<\/text><rect x=\"150\" y=\"18\" width=\"14\" height=\"14\" style=\"fill:var(--fg)\"/><text x=\"170\" y=\"30\" style=\"fill:var(--fg)\">Spring 2019 (normal traffic)<\/text><rect x=\"372\" y=\"18\" width=\"14\" height=\"14\" style=\"fill:var(--line);stroke:var(--fg);stroke-width:1\"/><text x=\"392\" y=\"30\" style=\"fill:var(--fg)\">Spring 2020 (reduced traffic)<\/text><\/svg><figcaption><b>Figure 1.<\/b> Average minimum song frequency of one songbird species at sites grouped by typical traffic noise in 2019, recorded in spring 2019 and spring 2020. Data are illustrative.<\/figcaption><\/figure>","stim":"u4","ex":{"idea":"Stated detail: find the number in the passage.","steps":["“The rumble of engines and tires is concentrated at low frequencies, below about 2 kilohertz” (line 6).","So: below about 2 kHz."],"others":{"0":"the opposite end of the spectrum.","1":"traffic is low; birds raise their notes to get away from it.","3":"the passage describes frequency, not a season."}}},{"n":30,"prompt":"According to the passage, raising the lowest notes of a song helps a bird because it:","options":["makes the song more attractive to females.","moves those notes out of the frequency range where traffic noise is strongest.","reduces the energy the bird spends singing.","lets the song travel farther in quiet areas."],"answer":1,"sec":"4","topic":"4","fig":"<figure class=\"fig\"><svg viewBox=\"0 0 660 380\" width=\"660\" height=\"380\" role=\"img\" style=\"max-width:100%;height:auto;font-family:var(--serif);font-size:14px\" aria-label=\"Bar chart. Minimum song frequency in kilohertz, spring 2019 versus spring 2020: quiet sites 2.9 and 2.8; moderate sites 3.2 and 3.0; loud sites 3.6 and 3.1.\"><line x1=\"78\" x2=\"628\" y1=\"300.0\" y2=\"300.0\" style=\"stroke:var(--line);stroke-width:1.2\"/><text x=\"68\" y=\"305.0\" text-anchor=\"end\" style=\"fill:var(--fg)\">0<\/text><line x1=\"78\" x2=\"628\" y1=\"245.2\" y2=\"245.2\" style=\"stroke:var(--line);stroke-width:1\"/><text x=\"68\" y=\"250.2\" text-anchor=\"end\" style=\"fill:var(--fg)\">1<\/text><line x1=\"78\" x2=\"628\" y1=\"190.5\" y2=\"190.5\" style=\"stroke:var(--line);stroke-width:1\"/><text x=\"68\" y=\"195.5\" text-anchor=\"end\" style=\"fill:var(--fg)\">2<\/text><line x1=\"78\" x2=\"628\" y1=\"135.7\" y2=\"135.7\" style=\"stroke:var(--line);stroke-width:1\"/><text x=\"68\" y=\"140.7\" text-anchor=\"end\" style=\"fill:var(--fg)\">3<\/text><line x1=\"78\" x2=\"628\" y1=\"81.0\" y2=\"81.0\" style=\"stroke:var(--line);stroke-width:1\"/><text x=\"68\" y=\"86.0\" text-anchor=\"end\" style=\"fill:var(--fg)\">4<\/text><text transform=\"translate(26 185) rotate(-90)\" text-anchor=\"middle\" style=\"fill:var(--fg)\">Minimum song frequency (kHz)<\/text><rect x=\"135.7\" y=\"141.2\" width=\"32\" height=\"158.8\" style=\"fill:var(--fg)\"/><text x=\"151.7\" y=\"135.2\" text-anchor=\"middle\" style=\"fill:var(--fg);font-size:12.5px\">2.9<\/text><rect x=\"171.7\" y=\"146.7\" width=\"32\" height=\"153.3\" style=\"fill:var(--line);stroke:var(--fg);stroke-width:1\"/><text x=\"187.7\" y=\"140.7\" text-anchor=\"middle\" style=\"fill:var(--fg);font-size:12.5px\">2.8<\/text><text x=\"169.7\" y=\"322\" text-anchor=\"middle\" style=\"fill:var(--fg)\">Quiet<\/text><text x=\"169.7\" y=\"340\" text-anchor=\"middle\" style=\"fill:var(--fg)\">(below 45 dB)<\/text><rect x=\"319.0\" y=\"124.8\" width=\"32\" height=\"175.2\" style=\"fill:var(--fg)\"/><text x=\"335.0\" y=\"118.8\" text-anchor=\"middle\" style=\"fill:var(--fg);font-size:12.5px\">3.2<\/text><rect x=\"355.0\" y=\"135.7\" width=\"32\" height=\"164.3\" style=\"fill:var(--line);stroke:var(--fg);stroke-width:1\"/><text x=\"371.0\" y=\"129.7\" text-anchor=\"middle\" style=\"fill:var(--fg);font-size:12.5px\">3.0<\/text><text x=\"353.0\" y=\"322\" text-anchor=\"middle\" style=\"fill:var(--fg)\">Moderate<\/text><text x=\"353.0\" y=\"340\" text-anchor=\"middle\" style=\"fill:var(--fg)\">(45&ndash;55 dB)<\/text><rect x=\"502.3\" y=\"102.9\" width=\"32\" height=\"197.1\" style=\"fill:var(--fg)\"/><text x=\"518.3\" y=\"96.9\" text-anchor=\"middle\" style=\"fill:var(--fg);font-size:12.5px\">3.6<\/text><rect x=\"538.3\" y=\"130.2\" width=\"32\" height=\"169.8\" style=\"fill:var(--line);stroke:var(--fg);stroke-width:1\"/><text x=\"554.3\" y=\"124.2\" text-anchor=\"middle\" style=\"fill:var(--fg);font-size:12.5px\">3.1<\/text><text x=\"536.3\" y=\"322\" text-anchor=\"middle\" style=\"fill:var(--fg)\">Loud<\/text><text x=\"536.3\" y=\"340\" text-anchor=\"middle\" style=\"fill:var(--fg)\">(above 55 dB)<\/text><text x=\"353\" y=\"370\" text-anchor=\"middle\" style=\"fill:var(--fg)\">Site&rsquo;s typical traffic noise in 2019<\/text><rect x=\"150\" y=\"18\" width=\"14\" height=\"14\" style=\"fill:var(--fg)\"/><text x=\"170\" y=\"30\" style=\"fill:var(--fg)\">Spring 2019 (normal traffic)<\/text><rect x=\"372\" y=\"18\" width=\"14\" height=\"14\" style=\"fill:var(--line);stroke:var(--fg);stroke-width:1\"/><text x=\"392\" y=\"30\" style=\"fill:var(--fg)\">Spring 2020 (reduced traffic)<\/text><\/svg><figcaption><b>Figure 1.<\/b> Average minimum song frequency of one songbird species at sites grouped by typical traffic noise in 2019, recorded in spring 2019 and spring 2020. Data are illustrative.<\/figcaption><\/figure>","stim":"u4","ex":{"idea":"Cause–effect: find the stated benefit.","steps":["“Raising the lowest notes of a song… lifts them out of the noisiest part of the spectrum.”","It moves those notes out of the range where traffic is loudest."],"others":{"0":"the opposite: paragraph 6 says higher songs may be less attractive to females.","2":"paragraph 6 suspects singing higher costs more energy, not less.","3":"the benefit is being heard over traffic, not in quiet areas."}}},{"n":31,"prompt":"According to the third paragraph, if individual birds adjust their songs in response to noise, then the change in their songs:","options":["should be slow and largely fixed.","should appear only in young birds.","should make songs louder but not higher.","could occur within a single season and should reverse when the noise disappears."],"answer":3,"sec":"4","topic":"4","fig":"<figure class=\"fig\"><svg viewBox=\"0 0 660 380\" width=\"660\" height=\"380\" role=\"img\" style=\"max-width:100%;height:auto;font-family:var(--serif);font-size:14px\" aria-label=\"Bar chart. Minimum song frequency in kilohertz, spring 2019 versus spring 2020: quiet sites 2.9 and 2.8; moderate sites 3.2 and 3.0; loud sites 3.6 and 3.1.\"><line x1=\"78\" x2=\"628\" y1=\"300.0\" y2=\"300.0\" style=\"stroke:var(--line);stroke-width:1.2\"/><text x=\"68\" y=\"305.0\" text-anchor=\"end\" style=\"fill:var(--fg)\">0<\/text><line x1=\"78\" x2=\"628\" y1=\"245.2\" y2=\"245.2\" style=\"stroke:var(--line);stroke-width:1\"/><text x=\"68\" y=\"250.2\" text-anchor=\"end\" style=\"fill:var(--fg)\">1<\/text><line x1=\"78\" x2=\"628\" y1=\"190.5\" y2=\"190.5\" style=\"stroke:var(--line);stroke-width:1\"/><text x=\"68\" y=\"195.5\" text-anchor=\"end\" style=\"fill:var(--fg)\">2<\/text><line x1=\"78\" x2=\"628\" y1=\"135.7\" y2=\"135.7\" style=\"stroke:var(--line);stroke-width:1\"/><text x=\"68\" y=\"140.7\" text-anchor=\"end\" style=\"fill:var(--fg)\">3<\/text><line x1=\"78\" x2=\"628\" y1=\"81.0\" y2=\"81.0\" style=\"stroke:var(--line);stroke-width:1\"/><text x=\"68\" y=\"86.0\" text-anchor=\"end\" style=\"fill:var(--fg)\">4<\/text><text transform=\"translate(26 185) rotate(-90)\" text-anchor=\"middle\" style=\"fill:var(--fg)\">Minimum song frequency (kHz)<\/text><rect x=\"135.7\" y=\"141.2\" width=\"32\" height=\"158.8\" style=\"fill:var(--fg)\"/><text x=\"151.7\" y=\"135.2\" text-anchor=\"middle\" style=\"fill:var(--fg);font-size:12.5px\">2.9<\/text><rect x=\"171.7\" y=\"146.7\" width=\"32\" height=\"153.3\" style=\"fill:var(--line);stroke:var(--fg);stroke-width:1\"/><text x=\"187.7\" y=\"140.7\" text-anchor=\"middle\" style=\"fill:var(--fg);font-size:12.5px\">2.8<\/text><text x=\"169.7\" y=\"322\" text-anchor=\"middle\" style=\"fill:var(--fg)\">Quiet<\/text><text x=\"169.7\" y=\"340\" text-anchor=\"middle\" style=\"fill:var(--fg)\">(below 45 dB)<\/text><rect x=\"319.0\" y=\"124.8\" width=\"32\" height=\"175.2\" style=\"fill:var(--fg)\"/><text x=\"335.0\" y=\"118.8\" text-anchor=\"middle\" style=\"fill:var(--fg);font-size:12.5px\">3.2<\/text><rect x=\"355.0\" y=\"135.7\" width=\"32\" height=\"164.3\" style=\"fill:var(--line);stroke:var(--fg);stroke-width:1\"/><text x=\"371.0\" y=\"129.7\" text-anchor=\"middle\" style=\"fill:var(--fg);font-size:12.5px\">3.0<\/text><text x=\"353.0\" y=\"322\" text-anchor=\"middle\" style=\"fill:var(--fg)\">Moderate<\/text><text x=\"353.0\" y=\"340\" text-anchor=\"middle\" style=\"fill:var(--fg)\">(45&ndash;55 dB)<\/text><rect x=\"502.3\" y=\"102.9\" width=\"32\" height=\"197.1\" style=\"fill:var(--fg)\"/><text x=\"518.3\" y=\"96.9\" text-anchor=\"middle\" style=\"fill:var(--fg);font-size:12.5px\">3.6<\/text><rect x=\"538.3\" y=\"130.2\" width=\"32\" height=\"169.8\" style=\"fill:var(--line);stroke:var(--fg);stroke-width:1\"/><text x=\"554.3\" y=\"124.2\" text-anchor=\"middle\" style=\"fill:var(--fg);font-size:12.5px\">3.1<\/text><text x=\"536.3\" y=\"322\" text-anchor=\"middle\" style=\"fill:var(--fg)\">Loud<\/text><text x=\"536.3\" y=\"340\" text-anchor=\"middle\" style=\"fill:var(--fg)\">(above 55 dB)<\/text><text x=\"353\" y=\"370\" text-anchor=\"middle\" style=\"fill:var(--fg)\">Site&rsquo;s typical traffic noise in 2019<\/text><rect x=\"150\" y=\"18\" width=\"14\" height=\"14\" style=\"fill:var(--fg)\"/><text x=\"170\" y=\"30\" style=\"fill:var(--fg)\">Spring 2019 (normal traffic)<\/text><rect x=\"372\" y=\"18\" width=\"14\" height=\"14\" style=\"fill:var(--line);stroke:var(--fg);stroke-width:1\"/><text x=\"392\" y=\"30\" style=\"fill:var(--fg)\">Spring 2020 (reduced traffic)<\/text><\/svg><figcaption><b>Figure 1.<\/b> Average minimum song frequency of one songbird species at sites grouped by typical traffic noise in 2019, recorded in spring 2019 and spring 2020. Data are illustrative.<\/figcaption><\/figure>","stim":"u4","ex":{"idea":"Hypothesis questions: match each prediction to its own hypothesis.","steps":["Lines 12–16 give two hypotheses. Evolution: slow and largely fixed. Individual adjustment: “could occur within a single season—and should reverse when the noise goes away.”","The question asks about individual adjustment."],"others":{"0":"the prediction of the evolutionary hypothesis.","1":"age is never mentioned.","2":"the passage links adjustment to pitch as well as loudness."}}},{"n":32,"prompt":"The author describes the 2020 lockdowns as “an unplanned experiment” (<span style=\"white-space:nowrap\">line 17<\/span>) primarily to indicate that:","options":["traffic noise was reduced by circumstance rather than by researchers, yet the change still allowed the hypotheses to be tested.","researchers had failed to design their studies carefully.","the results of the 2020 recordings are unreliable.","cities should deliberately repeat the lockdowns."],"answer":0,"sec":"4","topic":"6","fig":"<figure class=\"fig\"><svg viewBox=\"0 0 660 380\" width=\"660\" height=\"380\" role=\"img\" style=\"max-width:100%;height:auto;font-family:var(--serif);font-size:14px\" aria-label=\"Bar chart. Minimum song frequency in kilohertz, spring 2019 versus spring 2020: quiet sites 2.9 and 2.8; moderate sites 3.2 and 3.0; loud sites 3.6 and 3.1.\"><line x1=\"78\" x2=\"628\" y1=\"300.0\" y2=\"300.0\" style=\"stroke:var(--line);stroke-width:1.2\"/><text x=\"68\" y=\"305.0\" text-anchor=\"end\" style=\"fill:var(--fg)\">0<\/text><line x1=\"78\" x2=\"628\" y1=\"245.2\" y2=\"245.2\" style=\"stroke:var(--line);stroke-width:1\"/><text x=\"68\" y=\"250.2\" text-anchor=\"end\" style=\"fill:var(--fg)\">1<\/text><line x1=\"78\" x2=\"628\" y1=\"190.5\" y2=\"190.5\" style=\"stroke:var(--line);stroke-width:1\"/><text x=\"68\" y=\"195.5\" text-anchor=\"end\" style=\"fill:var(--fg)\">2<\/text><line x1=\"78\" x2=\"628\" y1=\"135.7\" y2=\"135.7\" style=\"stroke:var(--line);stroke-width:1\"/><text x=\"68\" y=\"140.7\" text-anchor=\"end\" style=\"fill:var(--fg)\">3<\/text><line x1=\"78\" x2=\"628\" y1=\"81.0\" y2=\"81.0\" style=\"stroke:var(--line);stroke-width:1\"/><text x=\"68\" y=\"86.0\" text-anchor=\"end\" style=\"fill:var(--fg)\">4<\/text><text transform=\"translate(26 185) rotate(-90)\" text-anchor=\"middle\" style=\"fill:var(--fg)\">Minimum song frequency (kHz)<\/text><rect x=\"135.7\" y=\"141.2\" width=\"32\" height=\"158.8\" style=\"fill:var(--fg)\"/><text x=\"151.7\" y=\"135.2\" text-anchor=\"middle\" style=\"fill:var(--fg);font-size:12.5px\">2.9<\/text><rect x=\"171.7\" y=\"146.7\" width=\"32\" height=\"153.3\" style=\"fill:var(--line);stroke:var(--fg);stroke-width:1\"/><text x=\"187.7\" y=\"140.7\" text-anchor=\"middle\" style=\"fill:var(--fg);font-size:12.5px\">2.8<\/text><text x=\"169.7\" y=\"322\" text-anchor=\"middle\" style=\"fill:var(--fg)\">Quiet<\/text><text x=\"169.7\" y=\"340\" text-anchor=\"middle\" style=\"fill:var(--fg)\">(below 45 dB)<\/text><rect x=\"319.0\" y=\"124.8\" width=\"32\" height=\"175.2\" style=\"fill:var(--fg)\"/><text x=\"335.0\" y=\"118.8\" text-anchor=\"middle\" style=\"fill:var(--fg);font-size:12.5px\">3.2<\/text><rect x=\"355.0\" y=\"135.7\" width=\"32\" height=\"164.3\" style=\"fill:var(--line);stroke:var(--fg);stroke-width:1\"/><text x=\"371.0\" y=\"129.7\" text-anchor=\"middle\" style=\"fill:var(--fg);font-size:12.5px\">3.0<\/text><text x=\"353.0\" y=\"322\" text-anchor=\"middle\" style=\"fill:var(--fg)\">Moderate<\/text><text x=\"353.0\" y=\"340\" text-anchor=\"middle\" style=\"fill:var(--fg)\">(45&ndash;55 dB)<\/text><rect x=\"502.3\" y=\"102.9\" width=\"32\" height=\"197.1\" style=\"fill:var(--fg)\"/><text x=\"518.3\" y=\"96.9\" text-anchor=\"middle\" style=\"fill:var(--fg);font-size:12.5px\">3.6<\/text><rect x=\"538.3\" y=\"130.2\" width=\"32\" height=\"169.8\" style=\"fill:var(--line);stroke:var(--fg);stroke-width:1\"/><text x=\"554.3\" y=\"124.2\" text-anchor=\"middle\" style=\"fill:var(--fg);font-size:12.5px\">3.1<\/text><text x=\"536.3\" y=\"322\" text-anchor=\"middle\" style=\"fill:var(--fg)\">Loud<\/text><text x=\"536.3\" y=\"340\" text-anchor=\"middle\" style=\"fill:var(--fg)\">(above 55 dB)<\/text><text x=\"353\" y=\"370\" text-anchor=\"middle\" style=\"fill:var(--fg)\">Site&rsquo;s typical traffic noise in 2019<\/text><rect x=\"150\" y=\"18\" width=\"14\" height=\"14\" style=\"fill:var(--fg)\"/><text x=\"170\" y=\"30\" style=\"fill:var(--fg)\">Spring 2019 (normal traffic)<\/text><rect x=\"372\" y=\"18\" width=\"14\" height=\"14\" style=\"fill:var(--line);stroke:var(--fg);stroke-width:1\"/><text x=\"392\" y=\"30\" style=\"fill:var(--fg)\">Spring 2020 (reduced traffic)<\/text><\/svg><figcaption><b>Figure 1.<\/b> Average minimum song frequency of one songbird species at sites grouped by typical traffic noise in 2019, recorded in spring 2019 and spring 2020. Data are illustrative.<\/figcaption><\/figure>","stim":"u4","ex":{"idea":"Word choice: each word in a phrase can carry meaning; read both halves.","steps":["“Unplanned”: no researcher caused the lockdowns. “Experiment”: they still created the test conditions (line 17).","Noise fell by circumstance, yet the hypotheses could be tested."],"others":{"1":"nothing criticizes the researchers.","2":"the passage treats the results as strong evidence.","3":"no one suggests repeating lockdowns."}}},{"n":33,"prompt":"The sixth paragraph (<span style=\"white-space:nowrap\">lines 26&ndash;30<\/span>) primarily serves to:","options":["refute the conclusion drawn from the 2020 recordings.","explain how researchers measure the energy cost of singing.","present a possible drawback of the adaptation described earlier.","introduce a second species for comparison."],"answer":2,"sec":"4","topic":"7","fig":"<figure class=\"fig\"><svg viewBox=\"0 0 660 380\" width=\"660\" height=\"380\" role=\"img\" style=\"max-width:100%;height:auto;font-family:var(--serif);font-size:14px\" aria-label=\"Bar chart. Minimum song frequency in kilohertz, spring 2019 versus spring 2020: quiet sites 2.9 and 2.8; moderate sites 3.2 and 3.0; loud sites 3.6 and 3.1.\"><line x1=\"78\" x2=\"628\" y1=\"300.0\" y2=\"300.0\" style=\"stroke:var(--line);stroke-width:1.2\"/><text x=\"68\" y=\"305.0\" text-anchor=\"end\" style=\"fill:var(--fg)\">0<\/text><line x1=\"78\" x2=\"628\" y1=\"245.2\" y2=\"245.2\" style=\"stroke:var(--line);stroke-width:1\"/><text x=\"68\" y=\"250.2\" text-anchor=\"end\" style=\"fill:var(--fg)\">1<\/text><line x1=\"78\" x2=\"628\" y1=\"190.5\" y2=\"190.5\" style=\"stroke:var(--line);stroke-width:1\"/><text x=\"68\" y=\"195.5\" text-anchor=\"end\" style=\"fill:var(--fg)\">2<\/text><line x1=\"78\" x2=\"628\" y1=\"135.7\" y2=\"135.7\" style=\"stroke:var(--line);stroke-width:1\"/><text x=\"68\" y=\"140.7\" text-anchor=\"end\" style=\"fill:var(--fg)\">3<\/text><line x1=\"78\" x2=\"628\" y1=\"81.0\" y2=\"81.0\" style=\"stroke:var(--line);stroke-width:1\"/><text x=\"68\" y=\"86.0\" text-anchor=\"end\" style=\"fill:var(--fg)\">4<\/text><text transform=\"translate(26 185) rotate(-90)\" text-anchor=\"middle\" style=\"fill:var(--fg)\">Minimum song frequency (kHz)<\/text><rect x=\"135.7\" y=\"141.2\" width=\"32\" height=\"158.8\" style=\"fill:var(--fg)\"/><text x=\"151.7\" y=\"135.2\" text-anchor=\"middle\" style=\"fill:var(--fg);font-size:12.5px\">2.9<\/text><rect x=\"171.7\" y=\"146.7\" width=\"32\" height=\"153.3\" style=\"fill:var(--line);stroke:var(--fg);stroke-width:1\"/><text x=\"187.7\" y=\"140.7\" text-anchor=\"middle\" style=\"fill:var(--fg);font-size:12.5px\">2.8<\/text><text x=\"169.7\" y=\"322\" text-anchor=\"middle\" style=\"fill:var(--fg)\">Quiet<\/text><text x=\"169.7\" y=\"340\" text-anchor=\"middle\" style=\"fill:var(--fg)\">(below 45 dB)<\/text><rect x=\"319.0\" y=\"124.8\" width=\"32\" height=\"175.2\" style=\"fill:var(--fg)\"/><text x=\"335.0\" y=\"118.8\" text-anchor=\"middle\" style=\"fill:var(--fg);font-size:12.5px\">3.2<\/text><rect x=\"355.0\" y=\"135.7\" width=\"32\" height=\"164.3\" style=\"fill:var(--line);stroke:var(--fg);stroke-width:1\"/><text x=\"371.0\" y=\"129.7\" text-anchor=\"middle\" style=\"fill:var(--fg);font-size:12.5px\">3.0<\/text><text x=\"353.0\" y=\"322\" text-anchor=\"middle\" style=\"fill:var(--fg)\">Moderate<\/text><text x=\"353.0\" y=\"340\" text-anchor=\"middle\" style=\"fill:var(--fg)\">(45&ndash;55 dB)<\/text><rect x=\"502.3\" y=\"102.9\" width=\"32\" height=\"197.1\" style=\"fill:var(--fg)\"/><text x=\"518.3\" y=\"96.9\" text-anchor=\"middle\" style=\"fill:var(--fg);font-size:12.5px\">3.6<\/text><rect x=\"538.3\" y=\"130.2\" width=\"32\" height=\"169.8\" style=\"fill:var(--line);stroke:var(--fg);stroke-width:1\"/><text x=\"554.3\" y=\"124.2\" text-anchor=\"middle\" style=\"fill:var(--fg);font-size:12.5px\">3.1<\/text><text x=\"536.3\" y=\"322\" text-anchor=\"middle\" style=\"fill:var(--fg)\">Loud<\/text><text x=\"536.3\" y=\"340\" text-anchor=\"middle\" style=\"fill:var(--fg)\">(above 55 dB)<\/text><text x=\"353\" y=\"370\" text-anchor=\"middle\" style=\"fill:var(--fg)\">Site&rsquo;s typical traffic noise in 2019<\/text><rect x=\"150\" y=\"18\" width=\"14\" height=\"14\" style=\"fill:var(--fg)\"/><text x=\"170\" y=\"30\" style=\"fill:var(--fg)\">Spring 2019 (normal traffic)<\/text><rect x=\"372\" y=\"18\" width=\"14\" height=\"14\" style=\"fill:var(--line);stroke:var(--fg);stroke-width:1\"/><text x=\"392\" y=\"30\" style=\"fill:var(--fg)\">Spring 2020 (reduced traffic)<\/text><\/svg><figcaption><b>Figure 1.<\/b> Average minimum song frequency of one songbird species at sites grouped by typical traffic noise in 2019, recorded in spring 2019 and spring 2020. Data are illustrative.<\/figcaption><\/figure>","stim":"u4","ex":{"idea":"Function of a paragraph: its first sentence often says what it does.","steps":["Line 26: “Singing higher solves one problem but may create another.”","The paragraph presents a possible drawback (less attractive songs, energy cost) of the adaptation."],"others":{"0":"it accepts the conclusion and adds a cost.","1":"it says energy cost “has proved difficult to measure,” not how it is measured.","3":"no second species is introduced."}}},{"n":34,"prompt":"According to Figure 1, from spring 2019 to spring 2020, the average minimum song frequency at the loud sites changed by approximately:","options":["0.1 kHz.","0.2 kHz.","0.5 kHz.","3.1 kHz."],"answer":2,"sec":"4","topic":"11","fig":"<figure class=\"fig\"><svg viewBox=\"0 0 660 380\" width=\"660\" height=\"380\" role=\"img\" style=\"max-width:100%;height:auto;font-family:var(--serif);font-size:14px\" aria-label=\"Bar chart. Minimum song frequency in kilohertz, spring 2019 versus spring 2020: quiet sites 2.9 and 2.8; moderate sites 3.2 and 3.0; loud sites 3.6 and 3.1.\"><line x1=\"78\" x2=\"628\" y1=\"300.0\" y2=\"300.0\" style=\"stroke:var(--line);stroke-width:1.2\"/><text x=\"68\" y=\"305.0\" text-anchor=\"end\" style=\"fill:var(--fg)\">0<\/text><line x1=\"78\" x2=\"628\" y1=\"245.2\" y2=\"245.2\" style=\"stroke:var(--line);stroke-width:1\"/><text x=\"68\" y=\"250.2\" text-anchor=\"end\" style=\"fill:var(--fg)\">1<\/text><line x1=\"78\" x2=\"628\" y1=\"190.5\" y2=\"190.5\" style=\"stroke:var(--line);stroke-width:1\"/><text x=\"68\" y=\"195.5\" text-anchor=\"end\" style=\"fill:var(--fg)\">2<\/text><line x1=\"78\" x2=\"628\" y1=\"135.7\" y2=\"135.7\" style=\"stroke:var(--line);stroke-width:1\"/><text x=\"68\" y=\"140.7\" text-anchor=\"end\" style=\"fill:var(--fg)\">3<\/text><line x1=\"78\" x2=\"628\" y1=\"81.0\" y2=\"81.0\" style=\"stroke:var(--line);stroke-width:1\"/><text x=\"68\" y=\"86.0\" text-anchor=\"end\" style=\"fill:var(--fg)\">4<\/text><text transform=\"translate(26 185) rotate(-90)\" text-anchor=\"middle\" style=\"fill:var(--fg)\">Minimum song frequency (kHz)<\/text><rect x=\"135.7\" y=\"141.2\" width=\"32\" height=\"158.8\" style=\"fill:var(--fg)\"/><text x=\"151.7\" y=\"135.2\" text-anchor=\"middle\" style=\"fill:var(--fg);font-size:12.5px\">2.9<\/text><rect x=\"171.7\" y=\"146.7\" width=\"32\" height=\"153.3\" style=\"fill:var(--line);stroke:var(--fg);stroke-width:1\"/><text x=\"187.7\" y=\"140.7\" text-anchor=\"middle\" style=\"fill:var(--fg);font-size:12.5px\">2.8<\/text><text x=\"169.7\" y=\"322\" text-anchor=\"middle\" style=\"fill:var(--fg)\">Quiet<\/text><text x=\"169.7\" y=\"340\" text-anchor=\"middle\" style=\"fill:var(--fg)\">(below 45 dB)<\/text><rect x=\"319.0\" y=\"124.8\" width=\"32\" height=\"175.2\" style=\"fill:var(--fg)\"/><text x=\"335.0\" y=\"118.8\" text-anchor=\"middle\" style=\"fill:var(--fg);font-size:12.5px\">3.2<\/text><rect x=\"355.0\" y=\"135.7\" width=\"32\" height=\"164.3\" style=\"fill:var(--line);stroke:var(--fg);stroke-width:1\"/><text x=\"371.0\" y=\"129.7\" text-anchor=\"middle\" style=\"fill:var(--fg);font-size:12.5px\">3.0<\/text><text x=\"353.0\" y=\"322\" text-anchor=\"middle\" style=\"fill:var(--fg)\">Moderate<\/text><text x=\"353.0\" y=\"340\" text-anchor=\"middle\" style=\"fill:var(--fg)\">(45&ndash;55 dB)<\/text><rect x=\"502.3\" y=\"102.9\" width=\"32\" height=\"197.1\" style=\"fill:var(--fg)\"/><text x=\"518.3\" y=\"96.9\" text-anchor=\"middle\" style=\"fill:var(--fg);font-size:12.5px\">3.6<\/text><rect x=\"538.3\" y=\"130.2\" width=\"32\" height=\"169.8\" style=\"fill:var(--line);stroke:var(--fg);stroke-width:1\"/><text x=\"554.3\" y=\"124.2\" text-anchor=\"middle\" style=\"fill:var(--fg);font-size:12.5px\">3.1<\/text><text x=\"536.3\" y=\"322\" text-anchor=\"middle\" style=\"fill:var(--fg)\">Loud<\/text><text x=\"536.3\" y=\"340\" text-anchor=\"middle\" style=\"fill:var(--fg)\">(above 55 dB)<\/text><text x=\"353\" y=\"370\" text-anchor=\"middle\" style=\"fill:var(--fg)\">Site&rsquo;s typical traffic noise in 2019<\/text><rect x=\"150\" y=\"18\" width=\"14\" height=\"14\" style=\"fill:var(--fg)\"/><text x=\"170\" y=\"30\" style=\"fill:var(--fg)\">Spring 2019 (normal traffic)<\/text><rect x=\"372\" y=\"18\" width=\"14\" height=\"14\" style=\"fill:var(--line);stroke:var(--fg);stroke-width:1\"/><text x=\"392\" y=\"30\" style=\"fill:var(--fg)\">Spring 2020 (reduced traffic)<\/text><\/svg><figcaption><b>Figure 1.<\/b> Average minimum song frequency of one songbird species at sites grouped by typical traffic noise in 2019, recorded in spring 2019 and spring 2020. Data are illustrative.<\/figcaption><\/figure>","stim":"u4","ex":{"idea":"Figure questions: read the right bars and compute the change, not the level.","steps":["Loud sites: 3.6 kHz in 2019 and 3.1 kHz in 2020.","Change: 3.6 − 3.1 = 0.5 kHz."],"others":{"0":"the change at the quiet sites (2.9 − 2.8).","1":"the change at the moderate sites (3.2 − 3.0).","3":"the 2020 level at loud sites, not the change."}}},{"n":35,"prompt":"The data in Figure 1 most directly support which statement from the passage?","options":["“females appear to prefer males whose songs include lower notes”","“At the noisiest sites, the drop was large”","“singing louder and higher costs energy”","“traffic noise in many cities fell to levels not heard in decades”"],"answer":1,"sec":"4","topic":"11","fig":"<figure class=\"fig\"><svg viewBox=\"0 0 660 380\" width=\"660\" height=\"380\" role=\"img\" style=\"max-width:100%;height:auto;font-family:var(--serif);font-size:14px\" aria-label=\"Bar chart. Minimum song frequency in kilohertz, spring 2019 versus spring 2020: quiet sites 2.9 and 2.8; moderate sites 3.2 and 3.0; loud sites 3.6 and 3.1.\"><line x1=\"78\" x2=\"628\" y1=\"300.0\" y2=\"300.0\" style=\"stroke:var(--line);stroke-width:1.2\"/><text x=\"68\" y=\"305.0\" text-anchor=\"end\" style=\"fill:var(--fg)\">0<\/text><line x1=\"78\" x2=\"628\" y1=\"245.2\" y2=\"245.2\" style=\"stroke:var(--line);stroke-width:1\"/><text x=\"68\" y=\"250.2\" text-anchor=\"end\" style=\"fill:var(--fg)\">1<\/text><line x1=\"78\" x2=\"628\" y1=\"190.5\" y2=\"190.5\" style=\"stroke:var(--line);stroke-width:1\"/><text x=\"68\" y=\"195.5\" text-anchor=\"end\" style=\"fill:var(--fg)\">2<\/text><line x1=\"78\" x2=\"628\" y1=\"135.7\" y2=\"135.7\" style=\"stroke:var(--line);stroke-width:1\"/><text x=\"68\" y=\"140.7\" text-anchor=\"end\" style=\"fill:var(--fg)\">3<\/text><line x1=\"78\" x2=\"628\" y1=\"81.0\" y2=\"81.0\" style=\"stroke:var(--line);stroke-width:1\"/><text x=\"68\" y=\"86.0\" text-anchor=\"end\" style=\"fill:var(--fg)\">4<\/text><text transform=\"translate(26 185) rotate(-90)\" text-anchor=\"middle\" style=\"fill:var(--fg)\">Minimum song frequency (kHz)<\/text><rect x=\"135.7\" y=\"141.2\" width=\"32\" height=\"158.8\" style=\"fill:var(--fg)\"/><text x=\"151.7\" y=\"135.2\" text-anchor=\"middle\" style=\"fill:var(--fg);font-size:12.5px\">2.9<\/text><rect x=\"171.7\" y=\"146.7\" width=\"32\" height=\"153.3\" style=\"fill:var(--line);stroke:var(--fg);stroke-width:1\"/><text x=\"187.7\" y=\"140.7\" text-anchor=\"middle\" style=\"fill:var(--fg);font-size:12.5px\">2.8<\/text><text x=\"169.7\" y=\"322\" text-anchor=\"middle\" style=\"fill:var(--fg)\">Quiet<\/text><text x=\"169.7\" y=\"340\" text-anchor=\"middle\" style=\"fill:var(--fg)\">(below 45 dB)<\/text><rect x=\"319.0\" y=\"124.8\" width=\"32\" height=\"175.2\" style=\"fill:var(--fg)\"/><text x=\"335.0\" y=\"118.8\" text-anchor=\"middle\" style=\"fill:var(--fg);font-size:12.5px\">3.2<\/text><rect x=\"355.0\" y=\"135.7\" width=\"32\" height=\"164.3\" style=\"fill:var(--line);stroke:var(--fg);stroke-width:1\"/><text x=\"371.0\" y=\"129.7\" text-anchor=\"middle\" style=\"fill:var(--fg);font-size:12.5px\">3.0<\/text><text x=\"353.0\" y=\"322\" text-anchor=\"middle\" style=\"fill:var(--fg)\">Moderate<\/text><text x=\"353.0\" y=\"340\" text-anchor=\"middle\" style=\"fill:var(--fg)\">(45&ndash;55 dB)<\/text><rect x=\"502.3\" y=\"102.9\" width=\"32\" height=\"197.1\" style=\"fill:var(--fg)\"/><text x=\"518.3\" y=\"96.9\" text-anchor=\"middle\" style=\"fill:var(--fg);font-size:12.5px\">3.6<\/text><rect x=\"538.3\" y=\"130.2\" width=\"32\" height=\"169.8\" style=\"fill:var(--line);stroke:var(--fg);stroke-width:1\"/><text x=\"554.3\" y=\"124.2\" text-anchor=\"middle\" style=\"fill:var(--fg);font-size:12.5px\">3.1<\/text><text x=\"536.3\" y=\"322\" text-anchor=\"middle\" style=\"fill:var(--fg)\">Loud<\/text><text x=\"536.3\" y=\"340\" text-anchor=\"middle\" style=\"fill:var(--fg)\">(above 55 dB)<\/text><text x=\"353\" y=\"370\" text-anchor=\"middle\" style=\"fill:var(--fg)\">Site&rsquo;s typical traffic noise in 2019<\/text><rect x=\"150\" y=\"18\" width=\"14\" height=\"14\" style=\"fill:var(--fg)\"/><text x=\"170\" y=\"30\" style=\"fill:var(--fg)\">Spring 2019 (normal traffic)<\/text><rect x=\"372\" y=\"18\" width=\"14\" height=\"14\" style=\"fill:var(--line);stroke:var(--fg);stroke-width:1\"/><text x=\"392\" y=\"30\" style=\"fill:var(--fg)\">Spring 2020 (reduced traffic)<\/text><\/svg><figcaption><b>Figure 1.<\/b> Average minimum song frequency of one songbird species at sites grouped by typical traffic noise in 2019, recorded in spring 2019 and spring 2020. Data are illustrative.<\/figcaption><\/figure>","stim":"u4","ex":{"idea":"Integration: the figure must show the statement directly, not merely be consistent with it.","steps":["The loud-site bars fall by 0.5 kHz, the largest drop in the figure.","That matches “At the noisiest sites, the drop was large” (line 22)."],"others":{"0":"the figure has no data on female preference.","2":"the figure has no data on energy.","3":"consistent with the passage, but the figure shows song frequency, not noise levels."}}},{"n":36,"prompt":"Based on the passage and Figure 1, the most likely reason that minimum song frequency barely changed at the quiet sites is that:","options":["birds there had little traffic noise to adjust to in either year.","birds there had evolved lower voices over many generations.","researchers recorded fewer birds at the quiet sites.","the quiet sites were not affected by the lockdowns."],"answer":0,"sec":"4","topic":"2","fig":"<figure class=\"fig\"><svg viewBox=\"0 0 660 380\" width=\"660\" height=\"380\" role=\"img\" style=\"max-width:100%;height:auto;font-family:var(--serif);font-size:14px\" aria-label=\"Bar chart. Minimum song frequency in kilohertz, spring 2019 versus spring 2020: quiet sites 2.9 and 2.8; moderate sites 3.2 and 3.0; loud sites 3.6 and 3.1.\"><line x1=\"78\" x2=\"628\" y1=\"300.0\" y2=\"300.0\" style=\"stroke:var(--line);stroke-width:1.2\"/><text x=\"68\" y=\"305.0\" text-anchor=\"end\" style=\"fill:var(--fg)\">0<\/text><line x1=\"78\" x2=\"628\" y1=\"245.2\" y2=\"245.2\" style=\"stroke:var(--line);stroke-width:1\"/><text x=\"68\" y=\"250.2\" text-anchor=\"end\" style=\"fill:var(--fg)\">1<\/text><line x1=\"78\" x2=\"628\" y1=\"190.5\" y2=\"190.5\" style=\"stroke:var(--line);stroke-width:1\"/><text x=\"68\" y=\"195.5\" text-anchor=\"end\" style=\"fill:var(--fg)\">2<\/text><line x1=\"78\" x2=\"628\" y1=\"135.7\" y2=\"135.7\" style=\"stroke:var(--line);stroke-width:1\"/><text x=\"68\" y=\"140.7\" text-anchor=\"end\" style=\"fill:var(--fg)\">3<\/text><line x1=\"78\" x2=\"628\" y1=\"81.0\" y2=\"81.0\" style=\"stroke:var(--line);stroke-width:1\"/><text x=\"68\" y=\"86.0\" text-anchor=\"end\" style=\"fill:var(--fg)\">4<\/text><text transform=\"translate(26 185) rotate(-90)\" text-anchor=\"middle\" style=\"fill:var(--fg)\">Minimum song frequency (kHz)<\/text><rect x=\"135.7\" y=\"141.2\" width=\"32\" height=\"158.8\" style=\"fill:var(--fg)\"/><text x=\"151.7\" y=\"135.2\" text-anchor=\"middle\" style=\"fill:var(--fg);font-size:12.5px\">2.9<\/text><rect x=\"171.7\" y=\"146.7\" width=\"32\" height=\"153.3\" style=\"fill:var(--line);stroke:var(--fg);stroke-width:1\"/><text x=\"187.7\" y=\"140.7\" text-anchor=\"middle\" style=\"fill:var(--fg);font-size:12.5px\">2.8<\/text><text x=\"169.7\" y=\"322\" text-anchor=\"middle\" style=\"fill:var(--fg)\">Quiet<\/text><text x=\"169.7\" y=\"340\" text-anchor=\"middle\" style=\"fill:var(--fg)\">(below 45 dB)<\/text><rect x=\"319.0\" y=\"124.8\" width=\"32\" height=\"175.2\" style=\"fill:var(--fg)\"/><text x=\"335.0\" y=\"118.8\" text-anchor=\"middle\" style=\"fill:var(--fg);font-size:12.5px\">3.2<\/text><rect x=\"355.0\" y=\"135.7\" width=\"32\" height=\"164.3\" style=\"fill:var(--line);stroke:var(--fg);stroke-width:1\"/><text x=\"371.0\" y=\"129.7\" text-anchor=\"middle\" style=\"fill:var(--fg);font-size:12.5px\">3.0<\/text><text x=\"353.0\" y=\"322\" text-anchor=\"middle\" style=\"fill:var(--fg)\">Moderate<\/text><text x=\"353.0\" y=\"340\" text-anchor=\"middle\" style=\"fill:var(--fg)\">(45&ndash;55 dB)<\/text><rect x=\"502.3\" y=\"102.9\" width=\"32\" height=\"197.1\" style=\"fill:var(--fg)\"/><text x=\"518.3\" y=\"96.9\" text-anchor=\"middle\" style=\"fill:var(--fg);font-size:12.5px\">3.6<\/text><rect x=\"538.3\" y=\"130.2\" width=\"32\" height=\"169.8\" style=\"fill:var(--line);stroke:var(--fg);stroke-width:1\"/><text x=\"554.3\" y=\"124.2\" text-anchor=\"middle\" style=\"fill:var(--fg);font-size:12.5px\">3.1<\/text><text x=\"536.3\" y=\"322\" text-anchor=\"middle\" style=\"fill:var(--fg)\">Loud<\/text><text x=\"536.3\" y=\"340\" text-anchor=\"middle\" style=\"fill:var(--fg)\">(above 55 dB)<\/text><text x=\"353\" y=\"370\" text-anchor=\"middle\" style=\"fill:var(--fg)\">Site&rsquo;s typical traffic noise in 2019<\/text><rect x=\"150\" y=\"18\" width=\"14\" height=\"14\" style=\"fill:var(--fg)\"/><text x=\"170\" y=\"30\" style=\"fill:var(--fg)\">Spring 2019 (normal traffic)<\/text><rect x=\"372\" y=\"18\" width=\"14\" height=\"14\" style=\"fill:var(--line);stroke:var(--fg);stroke-width:1\"/><text x=\"392\" y=\"30\" style=\"fill:var(--fg)\">Spring 2020 (reduced traffic)<\/text><\/svg><figcaption><b>Figure 1.<\/b> Average minimum song frequency of one songbird species at sites grouped by typical traffic noise in 2019, recorded in spring 2019 and spring 2020. Data are illustrative.<\/figcaption><\/figure>","stim":"u4","ex":{"idea":"Inference from text plus figure: apply the passage’s conclusion to the data.","steps":["The passage concludes that birds adjust their songs to the noise they hear.","Quiet sites had little traffic noise in either year, so there was little to adjust: 2.9 vs. 2.8 kHz."],"others":{"1":"contradicts the passage’s conclusion that the change was individual adjustment within a year.","2":"sample sizes are never mentioned.","3":"the lockdowns affected traffic everywhere; quiet sites simply had little noise to lose."}}}],"fr":[]}</script>
+<script>
+(function(){
+"use strict";
+var DATA = JSON.parse(document.getElementById("data").textContent);
+var META = DATA.meta, MC = DATA.mc, FR = DATA.fr || [], TOP = DATA.topics || {}, SEC = DATA.sections || {}, STIM = DATA.stims || {}, BY = {};
+MC.forEach(function(q){ BY[q.n] = q; });
+var KEY = META.key, FKEY = META.fkey || META.key + ".fr", HAS_FR = FR.length > 0;
+
+function load(k, d){ try{ var v = localStorage.getItem(k); return v ? JSON.parse(v) : d; }catch(e){ return d; } }
+function save(k, v){ try{ localStorage.setItem(k, JSON.stringify(v)); }catch(e){} }
+function esc(s){ return String(s).replace(/[&<>"]/g, function(c){ return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]; }); }
+function shuffle(a){ a = a.slice(); for (var i = a.length - 1; i > 0; i--){ var j = Math.floor(Math.random() * (i + 1)); var t = a[i]; a[i] = a[j]; a[j] = t; } return a; }
+function range(n){ var a = []; for (var i = 0; i < n; i++) a.push(i); return a; }
+
+var S = load(KEY, null);
+if (!S || !S.phase || !S.order || S.order.some(function(n){ return !BY[n]; })) S = { phase: "setup", mode: "practice", shuffleQ: false, shuffleC: false, order: [], copt: {}, ans: {}, pos: 0, full: null };
+var confirmFinish = false;
+var mcEl = document.getElementById("mc");
+
+function start(nums){
+  var list = nums || MC.map(function(q){ return q.n; });
+  S.order = S.shuffleQ ? shuffle(list) : list.slice();
+  S.copt = {};
+  S.order.forEach(function(n){
+    var q = BY[n], idx = range(q.options.length);
+    S.copt[n] = (S.shuffleC && !q.fixed) ? shuffle(idx) : idx;
+  });
+  S.ans = {}; S.pos = 0; S.phase = "run"; confirmFinish = false;
+  save(KEY, S); render(); focusTop();
+}
+function focusTop(){ var t = document.querySelector(".tabs") || document.querySelector(".title"); if (t && t.getBoundingClientRect().top < 0) t.scrollIntoView(); }
+
+function stats(){
+  var right = 0, done = 0;
+  S.order.forEach(function(n){ if (n in S.ans){ done++; if (S.ans[n] === BY[n].answer) right++; } });
+  return { right: right, done: done, total: S.order.length };
+}
+function topicShort(t){ return (META.topicPrefix || "") + t; }
+function topicLabel(t){ return topicShort(t) + ", " + TOP[t].name; }
+function guideLink(t, short){
+  var g = TOP[t], txt = short ? g.name : topicLabel(t);
+  var href = g.url ? g.url : (META.guide && g.page ? META.guide + "#page=" + g.page : "");
+  return href ? '<a href="' + href + '">' + txt + "</a>" : txt;
+}
+function topicLinks(ts){
+  ts = ts.filter(function(t){ return TOP[t]; });
+  if (!ts.length || !(META.guide || TOP[ts[0]].url)) return "";
+  return '<p class="links">Review ' + ts.map(function(t){ return guideLink(t); }).join(" &middot; ") + " in " + META.guideName + "</p>";
+}
+function explain(q, picked){
+  var e = q.ex, h = '<div class="why"><p>' + e.idea + "</p>";
+  if (e.steps.length) h += '<ol class="steps">' + e.steps.map(function(s){ return "<li>" + s + "</li>"; }).join("") + "</ol>";
+  var rest = range(q.options.length).filter(function(i){ return i !== q.answer; });
+  if (typeof picked === "number" && picked !== q.answer) rest = [picked].concat(rest.filter(function(i){ return i !== picked; }));
+  h += '<p class="why-h sc">Why not the others</p><ul class="others">' + rest.map(function(i){
+    return "<li>" + quoted(q, i) + (i === picked ? '<span class="tag">your answer</span>' : "") + " &mdash; " + e.others[i] + "</li>";
+  }).join("") + "</ul></div>";
+  return h;
+}
+function quoted(q, i){ return q.labels ? q.labels[i] : "&ldquo;" + q.options[i] + "&rdquo;"; }
+function table(q){ return q.table ? '<div class="bt-wrap">' + q.table + "</div>" : ""; }
+function stim(q){
+  var s = q.stim && STIM[q.stim]; if (!s) return "";
+  var html = s.html.split(' data-q="' + q.n + '"').join(' data-q="' + q.n + '" data-cur')
+    .replace(/data-qs="([^"]*)"/g, function(m, l){ return (" " + l + " ").indexOf(" " + q.n + " ") >= 0 ? m + " data-cur" : m; });
+  return '<div class="stim' + (s.cls ? " " + s.cls : "") + '">' + (s.title ? '<p class="stim-h sc">' + s.title + "</p>" : "") + html + "</div>";
+}
+function scrollStim(root){
+  root.querySelectorAll(".stim").forEach(function(box){ var c = box.querySelector("[data-cur]"); if (c && box.scrollHeight > box.clientHeight) box.scrollTop = Math.max(0, c.offsetTop - box.clientHeight / 3); });
+}
+function promptHtml(q){
+  return stim(q) + (q.fig || "") + '<div class="q-prompt"><p>' + q.prompt + "</p>" + (q.ask || META.ask ? '<p class="q-ask">' + (q.ask || META.ask) + "</p>" : "") + "</div>" + table(q);
+}
+
+function renderSetup(){
+  mcEl.innerHTML =
+    '<div class="setup">' +
+      '<h2>How do you want to take it?</h2>' +
+      '<div class="choice-row">' +
+        '<button type="button" class="choice" data-mode="practice" aria-pressed="' + (S.mode === "practice") + '"><b>Practice</b><span>See the answer and why after each question</span></button>' +
+        '<button type="button" class="choice" data-mode="exam" aria-pressed="' + (S.mode === "exam") + '"><b>Exam</b><span>Answer everything, then see your score</span></button>' +
+      '</div>' +
+      '<div class="checks">' +
+        '<label><input type="checkbox" id="opt-sq"' + (S.shuffleQ ? " checked" : "") + '> Shuffle questions</label>' +
+        '<label><input type="checkbox" id="opt-sc"' + (S.shuffleC ? " checked" : "") + '> Shuffle answer choices</label>' +
+      '</div>' +
+      '<div class="setup-actions"><button type="button" class="btn btn--solid btn--lg" id="go">Start' + (HAS_FR ? " multiple choice" : "") + '</button></div>' +
+      '<p class="note">' + META.setupNote + " Keyboard: 1&ndash;" + Math.max.apply(null, MC.map(function(q){ return q.options.length; })) + " to answer, &larr; &rarr; to move, Enter for next.</p>" +
+    '</div>';
+  mcEl.querySelectorAll(".choice").forEach(function(b){ b.onclick = function(){ S.mode = b.dataset.mode; render(); }; });
+  document.getElementById("opt-sq").onchange = function(e){ S.shuffleQ = e.target.checked; };
+  document.getElementById("opt-sc").onchange = function(e){ S.shuffleC = e.target.checked; };
+  document.getElementById("go").onclick = function(){ start(); };
+}
+
+function renderRun(){
+  var n = S.order[S.pos], q = BY[n], st = stats(), practice = S.mode === "practice";
+  var picked = (n in S.ans) ? S.ans[n] : null, locked = practice && picked !== null;
+  var nav = S.order.map(function(m, i){
+    var c = [];
+    if (m in S.ans){ if (practice) c.push(S.ans[m] === BY[m].answer ? "is-right" : "is-wrong"); else c.push("is-answered"); }
+    if (i === S.pos) c.push("is-current");
+    return '<button type="button" class="' + c.join(" ") + '" data-go="' + i + '" aria-label="Question ' + (i + 1) + '"' + (i === S.pos ? ' aria-current="step"' : "") + ">" + (i + 1) + "</button>";
+  }).join("");
+  var opts = S.copt[n].map(function(oi, k){
+    var cls = ["opt"], mark = "";
+    if (locked){
+      if (oi === q.answer){ cls.push("is-right"); mark = oi === picked ? "&check; your answer" : "&check; correct"; }
+      else if (oi === picked){ cls.push("is-wrong"); mark = "&cross; your answer"; }
+      else cls.push("is-dim");
+    } else if (oi === picked) cls.push("is-picked");
+    return '<li><button type="button" class="' + cls.join(" ") + '" data-opt="' + oi + '"' + (locked ? " disabled" : "") + '><span class="kbd">' + (k + 1) + "</span><span>" + q.options[oi] + '</span><span class="mark">' + mark + "</span></button></li>";
+  }).join("");
+  var fb = "";
+  if (locked){
+    var ok = picked === q.answer, ans = quoted(q, q.answer);
+    fb = '<div class="fb' + (ok ? "" : " is-wrong") + '"><p class="verdict" role="status">' + (ok ? "Correct." : "Not quite. The answer is " + ans + (/[.?!](&rdquo;)?$/.test(ans) ? "" : ".")) + "</p>" + explain(q, picked) + (q.after || "") + topicLinks([q.topic]) + "</div>";
+  }
+  var last = S.pos === S.order.length - 1, allDone = st.done === st.total;
+  var nextBtn = last
+    ? '<button type="button" class="btn btn--solid" id="finish">' + (practice ? "See results" : "Finish test") + "</button>"
+    : '<button type="button" class="btn btn--solid" id="next">Next &rarr;</button>';
+  var finishEarly = (!last && !practice) ? '<button type="button" class="btn" id="finish">Finish test</button>' : (!last && practice && allDone ? '<button type="button" class="btn" id="finish">See results</button>' : "");
+  var conf = "";
+  if (confirmFinish){
+    var left = st.total - st.done;
+    conf = '<div class="confirm"><p>' + left + " question" + (left === 1 ? " is" : "s are") + " unanswered and will be marked wrong. Finish anyway?</p>" +
+      '<button type="button" class="btn" id="conf-no">Keep going</button><button type="button" class="btn btn--solid" id="conf-yes">Finish</button></div>';
+  }
+  var eyebrow = "Question " + q.n + (SEC[q.sec] ? " &middot; " + SEC[q.sec] : "") + (q.tag ? " &middot; " + q.tag : (q.topic ? " &middot; " + topicShort(q.topic) : ""));
+  mcEl.innerHTML =
+    '<div class="bar"><span>Question ' + (S.pos + 1) + " of " + st.total + " &middot; " + (practice ? "Practice" : "Exam") + " mode</span><span>" +
+      (practice ? st.right + " correct of " + st.done + " answered" : st.done + " of " + st.total + " answered") + "</span></div>" +
+    '<div class="track"><span style="width:' + (st.done / st.total * 100) + '%"></span></div>' +
+    '<nav class="nav" aria-label="Questions">' + nav + "</nav>" +
+    '<article class="q">' +
+      '<p class="q-eyebrow sc">' + eyebrow + "</p>" +
+      promptHtml(q) +
+      '<ol class="opts">' + opts + "</ol>" + fb +
+      '<div class="step"><button type="button" class="btn" id="prev"' + (S.pos === 0 ? " disabled" : "") + '>&larr; Back</button><span class="step-right">' + finishEarly + nextBtn + "</span></div>" +
+      conf +
+    "</article>" +
+    '<p class="keys"><span class="kbd">1</span>&ndash;<span class="kbd">' + q.options.length + '</span> answer &nbsp; <span class="kbd">&larr;</span> <span class="kbd">&rarr;</span> move &nbsp; <span class="kbd">Enter</span> next</p>' +
+    '<p class="restart-line"><a href="#" id="restart">Start over</a> <span class="muted">&middot; progress is saved in this browser</span></p>';
+
+  scrollStim(mcEl);
+  mcEl.querySelectorAll("[data-go]").forEach(function(b){ b.onclick = function(){ go(+b.dataset.go); }; });
+  mcEl.querySelectorAll("[data-opt]").forEach(function(b){ b.onclick = function(){ pick(+b.dataset.opt); }; });
+  bind("prev", function(){ go(S.pos - 1); });
+  bind("next", function(){ go(S.pos + 1); });
+  bind("finish", finish);
+  bind("conf-no", function(){ confirmFinish = false; render(); });
+  bind("conf-yes", function(){ confirmFinish = false; showResults(); });
+  bind("restart", function(e){ e.preventDefault(); S.phase = "setup"; save(KEY, S); render(); });
+}
+function bind(id, fn){ var el = document.getElementById(id); if (el) el.onclick = fn; }
+
+function pick(oi){
+  var n = S.order[S.pos];
+  if (S.mode === "practice" && (n in S.ans)) return;
+  S.ans[n] = oi; save(KEY, S); render();
+  if (S.mode === "practice"){ var fb = mcEl.querySelector(".fb"); if (fb && fb.getBoundingClientRect().bottom > innerHeight) fb.scrollIntoView({ block: "nearest" }); }
+}
+function go(i){
+  if (i < 0 || i >= S.order.length) return;
+  S.pos = i; confirmFinish = false; save(KEY, S); render();
+  var q = mcEl.querySelector(".q"); if (q && q.getBoundingClientRect().top < 0) q.scrollIntoView();
+}
+function finish(){
+  var st = stats();
+  if (st.done < st.total && !confirmFinish){ confirmFinish = true; render(); var c = mcEl.querySelector(".confirm"); if (c) c.scrollIntoView({ block: "nearest" }); return; }
+  showResults();
+}
+function showResults(){
+  S.phase = "results";
+  if (S.order.length === MC.length) S.full = stats().right;
+  save(KEY, S); render(); if (HAS_FR) renderFR(); focusTop();
+}
+
+/* composite score (only when the document defines one) */
+function frTotal(){
+  var t = 0;
+  for (var i = 0; i < FR.length; i++){ var s = frScore(FR[i]); if (s === null) return null; t += s; }
+  return t;
+}
+function frMax(){ return FR.reduce(function(a, f){ return a + frItemMax(f); }, 0); }
+function frOnlyTotal(){  /* free-response-only quizzes: running total of the marked questions */
+  var done = 0, got = 0, of = 0;
+  FR.forEach(function(f){ var s = frScore(f); if (s !== null){ done++; got += s; of += frItemMax(f); } });
+  if (!done) return "";
+  var line = done === FR.length
+    ? "Total: <b>" + got + " / " + of + "</b> (" + Math.round(got / of * 100) + "%)"
+    : "Marked so far: <b>" + got + " / " + of + "</b> on " + done + " of " + FR.length + " questions &middot; " + frMax() + " points in all";
+  return '<div class="composite" role="status"><p>' + line + "</p></div>";
+}
+function compositeHtml(){
+  var C = META.composite;
+  if (HAS_FR && !MC.length) return frOnlyTotal();
+  if (!C || !HAS_FR) return "";
+  var mc = (typeof S.full === "number") ? S.full : null, fr = frTotal(), fm = frMax(), mm = MC.length;
+  if (mc === null && fr === null) return "";
+  var lines = [];
+  if (mc === null) lines.push("Free response: <b>" + fr + " / " + fm + "</b>. Take the full multiple-choice part to get your composite score.");
+  else if (fr === null) lines.push("Multiple choice: <b>" + mc + " / " + mm + "</b>. Write and mark every free-response question to get your composite score.");
+  else {
+    var c = Math.round(C.mcWeight * mc / mm + C.frWeight * fr / fm), band = "";
+    for (var i = 0; i < C.bands.length; i++){ if (c >= C.bands[i][0]){ band = C.bands[i][1]; break; } }
+    lines.push("Composite score: <b>" + c + " / " + (C.mcWeight + C.frWeight) + "</b> &nbsp;<span class=\"muted\">= " + C.mcWeight + " &times; " + mc + "/" + mm + " + " + C.frWeight + " &times; " + fr + "/" + fm + "</span>");
+    if (band) lines.push(band);
+  }
+  return '<div class="composite" role="status">' + lines.map(function(l){ return "<p>" + l + "</p>"; }).join("") + "</div>";
+}
+function targetHtml(st){
+  var T = META.target, B = META.bands, h = "";
+  if (st.total !== MC.length) return "";
+  if (T) h += '<p class="target">' + T.label + ": " + T.mc + " / " + MC.length + " &middot; " + (st.right >= T.mc ? "met" : (T.mc - st.right) + " short") + "</p>";
+  if (B) for (var i = 0; i < B.length; i++){ if (st.right >= B[i][0]){ h += '<p class="target">' + B[i][1] + "</p>"; break; } }
+  return h;
+}
+
+var resFilter = "all";
+function renderResults(){
+  var st = stats(), pct = Math.round(st.right / st.total * 100), fullRun = st.total === MC.length;
+  var missed = S.order.filter(function(n){ return S.ans[n] !== BY[n].answer; });
+  var rows = S.order.map(function(n, i){
+    var q = BY[n], a = S.ans[n], ok = a === q.answer;
+    if (resFilter === "missed" && ok) return "";
+    return '<li><details><summary><span class="res-n">' + (i + 1) + '.</span><span class="' + (ok ? "res-ok" : "res-bad") + '" aria-label="' + (ok ? "correct" : "wrong") + '">' + (ok ? "&check;" : "&cross;") + '</span><span class="res-sum">' + q.prompt + "</span></summary>" +
+      '<div class="res-body">' + stim(q) + (q.fig || "") + table(q) + '<p><span class="sc">Your answer:</span> ' + (a === undefined ? "<i>skipped</i>" : q.options[a]) + "</p>" +
+      (ok ? "" : '<p><span class="sc">Correct:</span> ' + q.options[q.answer] + "</p>") +
+      explain(q, a) + (q.after || "") + topicLinks([q.topic]) + "</div></details></li>";
+  }).join("");
+  var tally = {};
+  S.order.forEach(function(n){ var t = BY[n].topic; if (!t) return; tally[t] = tally[t] || { right: 0, total: 0 }; tally[t].total++; if (S.ans[n] === BY[n].answer) tally[t].right++; });
+  var trows = Object.keys(TOP).filter(function(t){ return tally[t]; }).map(function(t){
+    var x = tally[t], miss = x.total - x.right;
+    return "<tr><th scope=\"row\">" + topicShort(t) + "</th><td>" + x.right + " / " + x.total + "</td><td>" + guideLink(t, true) +
+      ((META.flag ? x.right < META.flag.below * x.total : miss >= 2) ? ' <span class="flag">&middot; ' + (META.flag ? META.flag.text : "reread this section") + "</span>" : "") + "</td></tr>";
+  }).join("");
+  mcEl.innerHTML =
+    '<div class="results">' +
+      '<div class="score"><p class="score-big">' + st.right + " / " + st.total + "</p><p>" + pct + "% correct" + (fullRun ? "" : " &middot; retry of missed questions") + "</p>" + targetHtml(st) + "</div>" +
+      '<div class="res-actions">' +
+        (missed.length ? '<button type="button" class="btn btn--solid" id="retry">Retry the ' + missed.length + " missed</button>" : "") +
+        '<button type="button" class="btn" id="again">Take the full test again</button>' +
+        (HAS_FR ? '<button type="button" class="btn" id="to-fr">Go to free response</button>' : "") +
+      "</div>" +
+      compositeHtml() +
+      (trows ? '<div class="topics"><h2>' + (META.byTopic || "By topic") + '</h2><table class="bt"><thead><tr><th scope="col">' + (META.topicCol || "Topic") + '</th><th scope="col">Correct</th><th scope="col">' + (META.guideCol || "Guide section") + "</th></tr></thead><tbody>" + trows + "</tbody></table>" +
+        (META.topicNote ? '<p class="note" style="margin-top:6px">' + META.topicNote + "</p>" : "") + "</div>" : "") +
+      '<div class="res-filter"><h2>Review</h2><span><label><input type="checkbox" id="only-missed"' + (resFilter === "missed" ? " checked" : "") + "> Show missed only</label></span></div>" +
+      '<ul class="res-list">' + (rows || '<li><p class="note" style="padding:12px 0">Nothing missed.</p></li>') + "</ul>" +
+    "</div>";
+  bind("retry", function(){ start(missed); });
+  bind("again", function(){ S.phase = "setup"; save(KEY, S); render(); });
+  bind("to-fr", function(){ setTab("fr"); });
+  document.getElementById("only-missed").onchange = function(e){ resFilter = e.target.checked ? "missed" : "all"; render(); };
+}
+
+function render(){
+  if (S.phase === "run" && S.order.length) renderRun();
+  else if (S.phase === "results" && S.order.length) renderResults();
+  else { S.phase = "setup"; renderSetup(); }
+}
+
+/* free response: "epi" parts (E/P/I -> 0-4 per question) or "points" parts (0..max each) */
+var frEl = document.getElementById("fr"), F = load(FKEY, null);
+if (!F || typeof F !== "object") F = {};
+F.drafts = F.drafts || {}; F.marks = F.marks || {}; F.open = F.open || {};
+var LABELS = { 4: "Complete", 3: "Substantial", 2: "Developing", 1: "Minimal", 0: "" };
+function frItemMax(f){ return f.mode === "points" ? f.parts.reduce(function(a, p){ return a + p.max; }, 0) : 4; }
+function frScore(f){
+  if (f.mode === "points"){
+    var t = 0;
+    for (var j = 0; j < f.parts.length; j++){ var v = F.marks[f.n + f.parts[j].label]; if (v === undefined || v === "") return null; t += +v; }
+    return t;
+  }
+  var e = 0, p = 0;
+  for (var i = 0; i < f.parts.length; i++){
+    var m = F.marks[f.n + f.parts[i].label];
+    if (!m) return null;
+    if (m === "E") e++; else if (m === "P") p++;
+  }
+  if (e === 3) return 4;
+  if (e === 2 && p === 1) return 3;
+  if ((e === 2 && p === 0) || (e === 1 && p >= 1) || p === 3) return 2;
+  if ((e === 1 && p === 0) || (e === 0 && p === 2)) return 1;
+  return 0;
+}
+function words(t){ var m = t.trim().match(/\S+/g); return m ? m.length : 0; }
+var SCALE = '<details class="scale"><summary>How part scores convert to 0&ndash;4</summary><table class="bt"><thead><tr><th scope="col">Score</th><th scope="col">Label</th><th scope="col">Part scores (three parts, each E, P, or I)</th></tr></thead><tbody>' +
+  "<tr><td>4</td><td>Complete</td><td>three parts E</td></tr>" +
+  "<tr><td>3</td><td>Substantial</td><td>two parts E and one part P</td></tr>" +
+  "<tr><td>2</td><td>Developing</td><td>two E and no P; or one E and one or two P; or three P</td></tr>" +
+  "<tr><td>1</td><td>Minimal</td><td>one E and no P; or no E and two P</td></tr>" +
+  "<tr><td>0</td><td></td><td>anything less</td></tr></tbody></table></details>";
+function frScoreHtml(f){
+  var s = frScore(f), mx = frItemMax(f);
+  if (s === null) return '<span class="muted">Mark every part to score this question.</span>';
+  return "Score: <b>" + s + " / " + mx + "</b>" + (f.mode !== "points" && LABELS[s] ? " &middot; " + LABELS[s] : "");
+}
+function markButtons(f, p, id, m){
+  var vals = f.mode === "points" ? range(p.max + 1).map(String) : ["E", "P", "I"];
+  return vals.map(function(x){ return '<button type="button" data-mark="' + id + '" data-f="' + f.n + '" data-v="' + x + '" aria-pressed="' + (m === x) + '">' + x + "</button>"; }).join("");
+}
+function renderFR(){
+  if (!HAS_FR) return;
+  frEl.innerHTML = '<p class="fr-intro">' + META.frIntro + "</p>" +
+    FR.map(function(f){
+      var open = !!F.open[f.n];
+      var parts = f.parts.map(function(p){
+        var id = f.n + p.label, d = F.drafts[id] || "", m = (F.marks[id] === undefined ? "" : String(F.marks[id]));
+        var crit = f.mode === "points"
+          ? '<div class="crit-pts">' + p.rubric + "</div>"
+          : '<dl class="crit"><dt>E</dt><dd>if the response ' + p.e + "</dd><dt>P</dt><dd>if " + p.p + "</dd></dl>";
+        return '<div class="part"><p class="part-prompt"><b>(' + p.label + ")</b>" + p.prompt + "</p>" +
+          '<label class="sc" for="fr-' + id + '">Your answer to (' + p.label + ")</label>" +
+          '<textarea id="fr-' + id + '" data-fr="' + id + '" spellcheck="true">' + esc(d) + "</textarea>" +
+          '<p class="part-meta" id="wc-' + id + '">' + words(d) + " words &middot; saved in this browser</p>" +
+          '<div class="sol"' + (open ? "" : " hidden") + ' data-sol="' + f.n + '"><h3>Model solution (' + p.label + ")</h3><div>" + p.solution + "</div>" + crit +
+            '<div class="mark-row"><span>Your mark for (' + p.label + ")" + (f.mode === "points" ? ", out of " + p.max : "") + ':</span><span class="seg" role="group" aria-label="Mark for part ' + p.label + '">' + markButtons(f, p, id, m) + "</span></div></div></div>";
+      }).join("");
+      return '<article class="fr"><h2>' + (META.frWord || "Question") + " " + f.n + "<small>" + f.head + "</small></h2>" +
+        (f.stim ? stim(f) : "") + '<div class="fr-stem">' + f.stem + "</div>" + parts +
+        '<div class="fr-actions"><span class="fr-score" id="score-' + f.n + '">' + (open ? frScoreHtml(f) : "") + "</span>" +
+          '<button type="button" class="btn" data-open="' + f.n + '" aria-expanded="' + open + '">' + (open ? "Hide model solution" : "Show model solution and scoring") + "</button></div>" +
+        (open ? (f.mode === "points" ? "" : SCALE) + topicLinks(f.guide || []) : "") +
+        "</article>";
+    }).join("") + '<div id="fr-composite">' + compositeHtml() + "</div>";
+  frEl.querySelectorAll("textarea").forEach(function(t){
+    t.oninput = function(){ F.drafts[t.dataset.fr] = t.value; save(FKEY, F); document.getElementById("wc-" + t.dataset.fr).innerHTML = words(t.value) + " words &middot; saved in this browser"; };
+  });
+  frEl.querySelectorAll("[data-open]").forEach(function(b){
+    b.onclick = function(){ var n = b.dataset.open; F.open[n] = !F.open[n]; save(FKEY, F); renderFR(); var a = document.getElementById("score-" + n); if (a) a.closest(".fr").querySelector(".part").scrollIntoView({ block: "nearest" }); };
+  });
+  frEl.querySelectorAll("[data-mark]").forEach(function(b){
+    b.onclick = function(){
+      var id = b.dataset.mark; F.marks[id] = F.marks[id] === b.dataset.v ? "" : b.dataset.v; save(FKEY, F);
+      b.parentNode.querySelectorAll("button").forEach(function(x){ x.setAttribute("aria-pressed", String(F.marks[id] === x.dataset.v)); });
+      var f = FR.filter(function(x){ return String(x.n) === b.dataset.f; })[0];
+      document.getElementById("score-" + f.n).innerHTML = frScoreHtml(f);
+      document.getElementById("fr-composite").innerHTML = compositeHtml();
+      if (S.phase === "results") render();
+    };
+  });
+}
+
+/* tabs (only when there is a free-response part) */
+function setTab(t){
+  if (!HAS_FR) return;
+  var mc = t === "mc";
+  document.getElementById("tab-mc").setAttribute("aria-selected", String(mc));
+  document.getElementById("tab-fr").setAttribute("aria-selected", String(!mc));
+  mcEl.hidden = !mc; frEl.hidden = mc;
+  try{ history.replaceState(null, "", mc ? location.pathname : "#free-response"); }catch(e){}
+  focusTop();
+}
+if (HAS_FR){
+  document.getElementById("tab-mc").onclick = function(){ setTab("mc"); };
+  document.getElementById("tab-fr").onclick = function(){ setTab("fr"); };
+}
+
+/* keyboard */
+document.addEventListener("keydown", function(e){
+  if (e.metaKey || e.ctrlKey || e.altKey) return;
+  var tag = (e.target.tagName || "").toLowerCase();
+  if (tag === "textarea" || tag === "input") return;
+  if (mcEl.hidden || S.phase !== "run") return;
+  var n = S.order[S.pos], q = BY[n];
+  if (/^[1-9]$/.test(e.key)){ var k = +e.key - 1; if (k < q.options.length){ e.preventDefault(); pick(S.copt[n][k]); } }
+  else if (e.key === "ArrowRight"){ e.preventDefault(); go(S.pos + 1); }
+  else if (e.key === "ArrowLeft"){ e.preventDefault(); go(S.pos - 1); }
+  else if (e.key === "Enter" && tag !== "button" && tag !== "a"){ e.preventDefault(); if (S.pos < S.order.length - 1) go(S.pos + 1); else finish(); }
+});
+
+/* theme */
+var root = document.documentElement, tb = document.getElementById("theme-btn");
+function syncTheme(){ var dark = root.getAttribute("data-theme") === "dark"; tb.textContent = dark ? "Light mode" : "Dark mode"; tb.setAttribute("aria-pressed", String(dark)); }
+tb.onclick = function(){ var dark = root.getAttribute("data-theme") !== "dark"; root.setAttribute("data-theme", dark ? "dark" : "light"); try{ localStorage.setItem("apah.theme", dark ? "dark" : "light"); }catch(e){} syncTheme(); };
+syncTheme();
+
+render(); renderFR();
+if (HAS_FR && location.hash === "#free-response") setTab("fr");
+if (HAS_FR && !MC.length){ var tabsEl = document.querySelector(".tabs"); if (tabsEl) tabsEl.hidden = true; mcEl.hidden = true; frEl.hidden = false; }
+})();
+</script>
+</body>
+</html>

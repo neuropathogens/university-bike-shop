@@ -1,0 +1,252 @@
+\documentclass[11pt]{article}
+\usepackage{act-sci}
+\settitle{Evaluation of Models, Inferences \& Experimental Results}
+\setsubtitle{Part 4 of 6 \textperiodcentered{} Reporting category: 22--36\% of the section}
+\settarget{$\geq$ 17 correct}
+\settime{30 min}
+
+\begin{document}
+\maketitleblock
+
+\begin{abstract}
+Evaluation of Models, Inferences \& Experimental Results (EMI) covers about 9--14 questions and contains most of the section's hardest items. Interpretation of Data asks what the data say; EMI asks what they \emph{mean}: whether a hypothesis is supported, what a model predicts for a new case, where two scientists agree or disagree, which new finding would strengthen or weaken a claim, and how far a conclusion can reach. Most of these questions come from the Conflicting Viewpoints passage, but research-summary passages contribute ``Does this support\ldots?'' and ``predict\ldots'' items as well. This guide gives six rules, each tied to one of these question types, and drills them on four original passages, including two conflicting-viewpoints sets.
+\end{abstract}
+
+\scoringline
+
+\tableofcontents
+\clearpage
+
+%% =====================================================================
+\section{Rule EM-1: Decide yes or no from the data, then audit the reason}
+
+\begin{rulebox}{EM-1}{The two-step ``Yes, because\ldots / No, because\ldots'' method}
+\begin{enumerate}
+\item Ignore the reasons. Check the claim against the data and decide \textbf{yes} or \textbf{no}. That eliminates two choices.
+\item Of the two that remain, keep the one whose reason is \textbf{(a) true according to the data} and \textbf{(b) actually relevant to the claim}.
+\end{enumerate}
+\end{rulebox}
+
+\trap{The best-disguised wrong answer gives the right verdict with a reason that is \emph{true but irrelevant}. ``No, because the hatch rate was 0\% at 0 g/L'' is a true statement, but it does not explain why ``increases as salinity increases'' fails.}
+
+\section{Rule EM-2: Predict by following the pattern}
+
+\begin{rulebox}{EM-2}{New conditions, same rules}
+To predict a result for a condition that was not tested:
+\begin{itemize}
+\item Find the tested conditions that bracket the new one and stay between their results (ID-3).
+\item If two variables change at once, apply each variable's pattern separately, starting from a condition that was actually tested.
+\item If the question says ``according to Scientist 2'' or ``based on the model,'' use \emph{that} model's logic, even if you think the model is wrong.
+\end{itemize}
+\end{rulebox}
+
+\passage{Brine shrimp hatching}
+Brine shrimp eggs hatch in salt water. Students placed 200 eggs in each of several containers and counted the percent that hatched within \SI{24}{\hour}.
+
+\textbf{Experiment 1.} All containers were at \SI{25}{\celsius}; salinity (grams of salt per liter of water) was varied.\\
+\textbf{Experiment 2.} All containers had a salinity of \SI{30}{\gram\per\litre}; temperature was varied.
+
+\begin{minipage}[t]{0.48\linewidth}
+\figlabel{Table 1: Experiment 1}
+\datatable{c c}{Salinity (g/L) & Hatched (\%)\\\midrule 0 & \phantom{0}0\\ 15 & 42\\ 30 & 78\\ 45 & 65\\ 60 & 20\\}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.48\linewidth}
+\figlabel{Table 2: Experiment 2}
+\datatable{c c}{Temperature (\si{\celsius}) & Hatched (\%)\\\midrule 20 & 52\\ 25 & 78\\ 30 & 88\\ 35 & 61\\}
+\end{minipage}
+\passageend
+
+\begin{q}{3}{EM-1}{Hatching rose from 0 to 78\% (0--30 g/L) but then fell to 65\% and 20\%, so the claim fails. The fourth choice is true but does not address the decrease.}
+A student hypothesized that the percent of eggs hatching increases as salinity increases from 0 g/L to 60 g/L. Do the results of Experiment 1 support this hypothesis?
+\choices{Yes; the percent hatched was highest at 60 g/L.}{Yes; the percent hatched increased from 0 g/L to 30 g/L.}{No; the percent hatched decreased as salinity increased above 30 g/L.}{No; no eggs hatched at 0 g/L.}
+\end{q}
+
+\begin{q}{3}{EM-2}{\SI{28}{\celsius} lies between 25 (78\%) and \SI{30}{\celsius} (88\%) at the same 30 g/L salinity.}
+If eggs were incubated at \SI{28}{\celsius} and a salinity of 30 g/L, the percent hatched would most likely be:
+\choices{less than 52\%.}{between 52\% and 78\%.}{between 78\% and 88\%.}{greater than 88\%.}
+\end{q}
+
+\begin{q}{2}{EM-2}{The best salinity tested was 30 g/L (Exp.\ 1) and the best temperature was \SI{30}{\celsius} (Exp.\ 2); that combination was measured directly at 88\%.}
+Based on both experiments, which conditions would most likely produce the highest percent hatched?
+\choicesgrid{15 g/L, \SI{20}{\celsius}}{30 g/L, \SI{30}{\celsius}}{45 g/L, \SI{35}{\celsius}}{60 g/L, \SI{25}{\celsius}}
+\end{q}
+
+\begin{q}{1}{EM-1}{At 30 g/L, raising temperature from 30 to \SI{35}{\celsius} dropped hatching from 88\% to 61\%. Both data points are in Table 2.}
+Do the results of Experiment 2 support the claim that, at 30 g/L, temperatures above \SI{30}{\celsius} reduce hatching?
+\choices{Yes; hatching fell from 88\% at \SI{30}{\celsius} to 61\% at \SI{35}{\celsius}.}{Yes; hatching was lowest at \SI{20}{\celsius}.}{No; hatching was higher at \SI{35}{\celsius} than at \SI{20}{\celsius}.}{No; temperature was held constant in Experiment 1.}
+\end{q}
+
+%% =====================================================================
+\section{Rule EM-6: A conclusion can only reach as far as the data}
+
+\begin{rulebox}{EM-6}{Scope, sample, and correlation}
+Before accepting any conclusion, ask three questions:
+\begin{enumerate}
+\item \textbf{Scope:} was it tested under the conditions the conclusion names? Results at \SI{25}{\celsius} say nothing certain about \SI{35}{\celsius}.
+\item \textbf{Cause:} was the factor \emph{manipulated} (experiment) or only \emph{observed} (survey)? Observations show association, not cause; a third variable may drive both.
+\item \textbf{Strength:} do \emph{all} the data points agree, or is there an exception?
+\end{enumerate}
+Answer choices containing ``proves,'' ``always,'' or ``for all'' are usually wrong.
+\end{rulebox}
+
+\begin{q}{4}{EM-6}{Experiment 1 tested every salinity at \SI{25}{\celsius} only. Whether 30 g/L stays best at other temperatures was never tested.}
+A student concludes from Experiment 1 that 30 g/L is the best salinity for hatching \emph{at any temperature}. Which statement best evaluates this conclusion?
+\choices{It is valid, because 30 g/L gave the highest hatching in Experiment 1.}{It is valid, because Experiment 2 also used 30 g/L.}{It is invalid, because 45 g/L gave higher hatching in Experiment 1.}{It is invalid, because Experiment 1 tested salinity at only one temperature.}
+\end{q}
+
+\passage{Lakeside housing and algae}
+Ecologists surveyed six lakes. For each, they recorded the number of houses per kilometer of shoreline, the concentration of dissolved phosphorus (a plant nutrient found in fertilizer and wastewater), and the concentration of chlorophyll, which indicates the amount of algae (Table 3). No conditions were changed by the researchers.
+
+\figlabel{Table 3}
+\datatable{c c c c}{Lake & Houses per km & Phosphorus (\si{\micro\gram\per\litre}) & Chlorophyll (\si{\micro\gram\per\litre})\\\midrule
+A & \phantom{0}2 & 10 & \phantom{0}3\\
+B & \phantom{0}5 & 14 & \phantom{0}5\\
+C & \phantom{0}8 & 22 & \phantom{0}9\\
+D & 12 & 30 & 14\\
+E & 15 & 24 & 10\\
+F & 20 & 45 & 22\\}
+\passageend
+
+\begin{q}{2}{EM-6}{Ordered by phosphorus (10, 14, 22, 24, 30, 45), chlorophyll rises every time. Ordered by houses, Lake E breaks the pattern (15 houses but only 10 \si{\micro\gram\per\litre}).}
+Chlorophyll concentration followed which variable \emph{most consistently} across all six lakes?
+\choices{Houses per km, because the lake with the most houses had the most chlorophyll}{Phosphorus, because chlorophyll was higher in every lake with more phosphorus}{Houses per km, because chlorophyll rose with every increase in houses}{Neither, because chlorophyll did not change}
+\end{q}
+
+\begin{q}{3}{EM-6}{This was a survey: nothing was manipulated, and Lake E shows that house count alone does not set algae level. The data show association, not cause.}
+A town official claims the survey proves that building more houses on any lake will increase its algae. Which statement best evaluates this claim?
+\choices{It is supported, because Lake F had the most houses and the most algae.}{It is supported, because all six lakes were surveyed.}{It is not supported, because the survey shows only an association, and Lake E does not fit the trend.}{It is not supported, because Lake A had the fewest houses.}
+\end{q}
+
+\begin{q}{1}{EM-2}{\SI{35}{\micro\gram\per\litre} lies between Lake D (30 $\to$ 14) and Lake F (45 $\to$ 22), so roughly 15--17.}
+If a seventh lake had a phosphorus concentration of \SI{35}{\micro\gram\per\litre}, its chlorophyll concentration would most likely be about:
+\choicesrow{\SI{17}{\micro\gram\per\litre}}{\SI{24}{\micro\gram\per\litre}}{\SI{30}{\micro\gram\per\litre}}{\SI{45}{\micro\gram\per\litre}}
+\end{q}
+
+%% =====================================================================
+\section{Rule EM-3: Summarise each viewpoint in one line}
+
+\begin{rulebox}{EM-3}{Conflicting viewpoints: read one, summarise, read the next}
+\begin{enumerate}
+\item Read the introduction: it contains the facts \emph{every} viewpoint accepts.
+\item Read Viewpoint 1 only, then write a 5--8 word summary of its central claim in the margin. Repeat for each viewpoint.
+\item Note the specific evidence each one cites and what it says the other side gets wrong.
+\item Answer ``according to Scientist 2'' questions from Scientist 2's paragraph \emph{only}. Do not use outside knowledge to decide who is right; ACT never asks which viewpoint is correct.
+\end{enumerate}
+\end{rulebox}
+
+\section{Rule EM-4: Agreement lives in the overlap}
+
+\begin{rulebox}{EM-4}{Who would agree with what}
+\begin{itemize}
+\item ``Both scientists would agree that\ldots'': the correct choice is stated or clearly implied by \emph{both}. Facts from the introduction are usually shared.
+\item ``Scientist 1, but not Scientist 2\ldots'': it must be in 1 and contradicted by (or absent from) 2.
+\item Make a quick grid: one row per answer choice, one column per scientist, \checkmark{} or $\times$.
+\end{itemize}
+\end{rulebox}
+
+\section{Rule EM-5: New evidence supports the model that predicted it}
+
+\begin{rulebox}{EM-5}{Strengthen and weaken}
+A new finding \textbf{strengthens} a viewpoint if that viewpoint predicts or explains it, and \textbf{weakens} a viewpoint that says it should not happen. Ask of each viewpoint: ``Would this scientist be surprised by this finding?'' Surprise means the finding weakens that viewpoint.
+\end{rulebox}
+
+\trap{A finding that is \emph{consistent} with a viewpoint is not the same as one that \emph{supports} it uniquely. If every viewpoint predicts the finding, it cannot distinguish between them.}
+
+\passage{Origin of the Moon (conflicting viewpoints)}
+Earth's iron core makes up about 30\% of its mass; the Moon's iron core makes up only about 2\% of its mass. Moon rocks contain far less water and other \emph{volatile} (easily vaporised) substances than Earth rocks. The ratios of oxygen isotopes (forms of oxygen with different masses) in Moon rocks are nearly identical to those in rocks from Earth's mantle. Three scientists explain how the Moon formed.
+
+\textbf{Scientist 1.} Early in Earth's history, a Mars-sized body struck Earth. The collision blasted material, mostly from the outer, rocky layers (mantle) of both bodies, into orbit, where it collected into the Moon. Because Earth's iron had already sunk to its core, little iron was ejected, which explains the Moon's small core. The heat of the impact vaporised volatiles, explaining the Moon's dryness. The isotope match exists because much of the Moon is made of Earth's own mantle.
+
+\textbf{Scientist 2.} Earth and the Moon formed side by side from the same disk of dust and rock orbiting the young Sun. Because they formed from the same material, their oxygen isotope ratios match. The growing Earth's stronger gravity pulled in most of the dense iron-rich material near it, leaving the Moon with a small core. No giant impact occurred.
+
+\textbf{Scientist 3.} The Moon formed in a different part of the solar system and was later captured by Earth's gravity when it passed close by. Bodies formed in different places have different compositions, which explains the Moon's low iron content. Oxygen isotope ratios are similar throughout the inner solar system, so the isotope match does not show that the Moon formed near Earth.
+\passageend
+
+\begin{q}{4}{EM-3}{Scientist 3: formed ``in a different part of the solar system'' and ``later captured.''}
+According to Scientist 3, the Moon:
+\choices{formed from material ejected from Earth's mantle.}{formed alongside Earth from the same disk of material.}{formed when two Mars-sized bodies collided.}{formed elsewhere and was later captured by Earth's gravity.}
+\end{q}
+
+\begin{q}{1}{EM-4}{Scientist 1: debris from the impact orbited Earth and collected into the Moon. Scientist 2: Moon formed beside Earth from the same disk. Scientist 3 has it forming elsewhere.}
+Scientists 1 and 2 would most likely agree that the Moon:
+\choices{formed from material that was near Earth.}{was produced by a giant impact.}{was captured by Earth's gravity.}{contains more iron than Earth, relative to its mass.}
+\end{q}
+
+\begin{q}{3}{EM-3}{Scientist 1: Earth's iron had already sunk to its core, so the ejected material was mostly iron-poor mantle.}
+According to Scientist 1, the Moon has a small iron core because:
+\choices{Earth's gravity pulled iron away from the forming Moon.}{the Moon formed in an iron-poor region of the solar system.}{the impact ejected mostly mantle material, since Earth's iron was already in its core.}{the impact vaporised the Moon's iron.}
+\end{q}
+
+\begin{q}{2}{EM-5}{Only Scientist 1 involves a violent, high-temperature event that would melt the young Moon's surface. Scientists 2 and 3 offer no heating event.}
+Suppose evidence showed that the young Moon's entire surface was once melted by an extremely high-temperature event. This finding would most directly support the viewpoint(s) of:
+\choices{Scientist 2 only.}{Scientist 1 only.}{Scientists 2 and 3 only.}{Scientists 1, 2 and 3.}
+\end{q}
+
+\begin{q}{3}{EM-5}{Scientist 3 says isotope ratios are similar throughout the inner solar system, so a very different ratio in Mars rocks contradicts that claim and removes Scientist 3's answer to the isotope match.}
+Suppose rocks from Mars were found to have oxygen isotope ratios very different from those of Earth. This finding would most \emph{weaken} the viewpoint of:
+\choicesrow{Scientist 1}{Scientist 2}{Scientist 3}{none of them}
+\end{q}
+
+\begin{q}{4}{EM-4}{The 30\% vs.\ 2\% iron figures are given in the introduction as fact; all three scientists accept them and offer explanations for them.}
+All three scientists would most likely agree that:
+\choices{a giant impact occurred early in Earth's history.}{the Moon formed in the same region as Earth.}{oxygen isotope ratios prove where the Moon formed.}{the Moon contains a smaller proportion of iron than Earth does.}
+\end{q}
+
+\begin{q}{1}{EM-5}{Scientists 1 and 2 both use the isotope match as evidence of shared Earth-region material. A mismatch would contradict both; Scientist 3 does not rely on the match.}
+Which finding, if true, would weaken the viewpoints of \emph{both} Scientists 1 and 2?
+\choices{Moon rocks have oxygen isotope ratios very different from Earth's mantle.}{Moon rocks contain almost no water.}{Earth's core is mostly iron.}{The Moon's core is small.}
+\end{q}
+
+%% =====================================================================
+\section{Drill: two students, one observation}
+
+\passage{Why does metal feel cold? (conflicting viewpoints)}
+A metal spoon and a wooden spoon have been lying on the same table in a room at \SI{22}{\celsius} for several hours. When a person touches them, the metal spoon feels much colder. Human skin is at about \SI{33}{\celsius}. Two students explain the observation.
+
+\textbf{Student 1.} The metal spoon really is colder than the wooden spoon. Metals naturally stay at a lower temperature than wood does, which is why metal objects always feel cold.
+
+\textbf{Student 2.} After hours in the same room, both spoons are at the room's temperature, \SI{22}{\celsius}. Metal is a much better conductor of heat than wood, so it carries heat away from the warmer hand much faster. The skin cools quickly where it touches metal, and the brain senses that rapid heat loss as ``cold.''
+\passageend
+
+\begin{q}{2}{EM-3}{Student 2 says both spoons are \SI{22}{\celsius}; the metal feels colder because it conducts heat away from the hand faster.}
+According to Student 2, the metal spoon feels colder because metal:
+\choices{is at a lower temperature than wood.}{conducts heat away from the hand faster than wood.}{conducts heat into the hand faster than wood.}{absorbs less heat from the room than wood.}
+\end{q}
+
+\begin{q}{4}{EM-5}{Equal temperatures are exactly what Student 2 predicts and contradict Student 1's claim that the metal is colder.}
+A thermometer placed against each spoon reads \SI{22}{\celsius} for both. This result:
+\choices{supports Student 1 only.}{supports both students.}{weakens both students.}{supports Student 2 and weakens Student 1.}
+\end{q}
+
+\begin{q}{3}{EM-2}{In Student 2's model heat flows from hot to cold, faster through metal. At \SI{50}{\celsius} both spoons are hotter than skin, so the metal delivers heat to the hand faster and feels hotter.}
+Suppose both spoons were heated to \SI{50}{\celsius}, above skin temperature. According to Student 2's explanation, which spoon would feel hotter?
+\choices{The wooden spoon, because wood holds heat longer}{Neither, because they are at the same temperature}{The metal spoon, because it conducts heat into the hand faster}{The wooden spoon, because metal always feels cold}
+\end{q}
+
+\begin{q}{1}{EM-4}{Both students accept the observation in the introduction: the metal feels colder. They disagree only about why.}
+Students 1 and 2 would both agree that:
+\choices{the metal spoon feels colder to the touch than the wooden spoon.}{the metal spoon is at a lower temperature than the wooden spoon.}{metal is a better conductor of heat than wood.}{both spoons are at \SI{22}{\celsius}.}
+\end{q}
+
+\begin{q}{2}{EM-5}{Student 2's model is about the \emph{rate} of heat flow. Comparing how fast a warm probe cools against each spoon measures that rate directly and tests Student 2's mechanism.}
+Which test would best determine whether metal removes heat from a warm object faster than wood, as Student 2 claims?
+\choices{Ask several people which spoon feels colder.}{Press a warm (\SI{33}{\celsius}) temperature probe against each spoon and compare how quickly the probe's temperature drops.}{Weigh both spoons.}{Leave both spoons in the room for a longer time.}
+\end{q}
+
+\vspace{2ex}
+\subsection*{Self-diagnosis}
+\small
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+\toprule
+If you missed\ldots & Do this next\\\midrule
+EM-1 & Cover the reasons. Decide yes/no first, then audit each remaining reason for truth \emph{and} relevance.\\
+EM-2 & Bracket the new condition with two tested ones; for model questions, say the model's rule out loud.\\
+EM-3 & Write the one-line summary for each viewpoint before any question. Quote it back.\\
+EM-4 & Build the \checkmark/$\times$ grid. Intro facts are shared by everyone.\\
+EM-5 & Ask ``Who would be surprised?'' Surprise $=$ weakens.\\
+EM-6 & Hunt for scope words (``any,'' ``always,'' ``proves'') and for survey vs.\ experiment.\\
+\bottomrule
+\end{tabularx}
+
+\makekey
+\end{document}

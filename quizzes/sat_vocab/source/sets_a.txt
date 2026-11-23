@@ -1,0 +1,497 @@
+=== 1|Foundations: Top-Frequency Words I|Lessons 1.1–1.5 vocabulary in SAT-style contexts; straightforward clue-and-contrast items.
+
+@ C
+Marine biologist Sylvia Earle spent decades arguing that the deep ocean deserved protection. Her early warnings were dismissed by many officials, but ______ surveys of declining fish populations confirmed her concerns, and several nations eventually expanded their marine reserves.
+* subsequent
+- hypothetical
+- occasional
+- superior
+> The surveys came after her warnings and confirmed them; "subsequent" (coming later) fits the time sequence. "Hypothetical" surveys could not confirm anything.
+
+@ C
+Because the new bridge design relied on a lightweight composite that had never been tested in freezing conditions, the engineers were ______ to approve it for the mountain route until further trials were completed.
+* hesitant
+- eager
+- obligated
+- inclined
+> The untested material gives a reason for caution and delay ("until further trials"), so the engineers were hesitant. "Eager" and "inclined" reverse the logic.
+
+@ C
+Historian Ibram X. Kendi notes that the pamphlet's author never stated his motives directly; instead, readers must ______ them from the examples he chose and the arguments he left out.
+* infer
+- conceal
+- impose
+- retain
+> Motives that are not stated must be worked out from evidence, which is what "infer" means. "Conceal" is what the author did, not the readers.
+
+@ C
+The committee's report was praised for being ______: in just four pages, it summarized three years of research without omitting any essential finding.
+* concise
+- elaborate
+- ambiguous
+- redundant
+> Four pages for three years of work, with nothing essential missing, describes brevity with completeness: "concise." "Elaborate" and "redundant" suggest the opposite.
+
+@ C
+Although the drought lasted only a single season, its effects were anything but ______; farmers in the region were still recovering from crop losses nearly a decade later.
+* temporary
+- severe
+- widespread
+- harmful
+> "Anything but X" plus effects lasting a decade means the effects were not short-lived. Only "temporary" sets up that contrast.
+
+@ C
+Early critics described the composer's work as noise, yet within a generation her techniques had become so ______ that film scores routinely borrowed them.
+* conventional
+- obscure
+- hostile
+- spontaneous
+> "Yet" signals a reversal from rejected to accepted; techniques that film scores routinely borrow have become standard, or conventional.
+
+@ C
+To ______ the risk of contaminating the samples, the lab technicians wore sterile gloves and worked inside a sealed cabinet.
+* mitigate
+- sustain
+- predict
+- anticipate
+> Gloves and a sealed cabinet reduce risk. "Mitigate" means to make less severe. "Anticipate" only means to expect it.
+
+@ C
+The novelist's characters rarely announce their feelings. Their emotions are ______, revealed through small gestures, such as a hand withdrawn from a table or a glance held a moment too long.
+* subtle
+- stark
+- candid
+- intricate
+> Emotions shown only through small gestures are understated and hard to notice: "subtle." "Candid" (frank) contradicts "rarely announce."
+
+@ C
+The city council voted to ______ the outdated zoning law, replacing it with rules that allowed housing to be built near transit stations.
+* repeal
+- endorse
+- extract
+- negotiate
+> Replacing a law means officially cancelling the old one: "repeal." "Endorse" would keep it.
+
+@ C
+Researchers found that the medication was effective only under certain conditions; its benefits were ______ on patients taking it with food.
+* dependent
+- superior
+- indispensable
+- predictable
+> "Only under certain conditions" means the benefits rely on a condition. The idiom is "dependent on." "Indispensable" would need "to."
+
+@ M
+Wildlife officials hope that the new corridor will foster contact between isolated groups of mountain lions, increasing genetic diversity in both populations.
+? As used in the text, what does the word "foster" most nearly mean?
+* encourage
+- adopt
+- raise as a guardian
+- shelter
+> The corridor promotes or encourages contact. The "foster care" senses (adopt, raise) don't fit a corridor's effect on contact.
+
+@ M
+The startup's founder admitted that the company had foundered after its second product failed to attract customers.
+? As used in the text, what does the word "foundered" most nearly mean?
+* failed
+- established
+- discovered
+- financed
+> "Founder" as a verb means to sink or collapse. The cause given (a product that attracted no customers) points to failure, not founding.
+
+@ M
+The museum's spare galleries, with their white walls and single benches, direct every visitor's attention to the paintings themselves.
+? As used in the text, what does the word "spare" most nearly mean?
+* minimal
+- extra
+- unused
+- generous
+> White walls and single benches describe a plain, lean style: "minimal." The common sense "extra" does not describe a room's design.
+
+@ M
+Because only two of the sixty respondents had any formal training, the survey's authors added a qualification to their conclusion, noting that the results might not apply to professionals.
+? As used in the text, what does the word "qualification" most nearly mean?
+* limiting condition
+- credential
+- certificate
+- ability
+> The authors limited how broadly their conclusion applies. That is a qualification in the sense of a reservation, not a credential.
+
+@ T
+In his review, the critic praised the band's ______ approach to the old folk songs, noting that they had kept the original melodies while adding bold new rhythms.
+* innovative
+- derivative
+- reckless
+- mediocre
+> The review praises the approach and says new rhythms were added, so a positive word for originality fits: "innovative." "Derivative" is negative and means unoriginal.
+
+@ T
+Some townspeople saw the new mayor's frankness as refreshing; others found her a little too ______, complaining that she shared her opinions of colleagues at public meetings.
+* candid
+- discreet
+- hesitant
+- diplomatic
+> Opponents saw her frankness as excessive, so the word must be close to "frank": "candid." "Discreet" and "diplomatic" are its opposites.
+
+@ T
+The scientist's tone in the letter is not angry but ______: she calmly acknowledges her rival's contributions before explaining, point by point, where his data fall short.
+* measured
+- hostile
+- sarcastic
+- indifferent
+> "Not angry," "calmly," and "point by point" describe a controlled, balanced tone: "measured." "Indifferent" is wrong because she clearly cares enough to argue.
+
+@ X
+The ancient city of Petra was carved directly into sandstone cliffs. ______, many of its buildings have survived earthquakes that destroyed freestanding structures elsewhere in the region.
+* As a result,
+- However,
+- Similarly,
+- For example,
+> Being carved into solid cliffs explains why the buildings survived, so a cause-effect transition fits.
+
+@ X
+Honeybees communicate the location of food through a "waggle dance." The angle of the dance indicates direction. ______, the length of each waggle run signals distance.
+* Similarly,
+- Nevertheless,
+- Therefore,
+- In contrast,
+> Angle encodes direction; length encodes distance. The second fact works the same way as the first, so "Similarly" fits. There is no contrast or cause.
+
+@ X
+Many people assume that deserts are always hot. ______, the Gobi Desert regularly records winter temperatures below −30°C.
+* In fact,
+- Likewise,
+- Consequently,
+- In addition,
+> The second sentence corrects the assumption with a striking counterexample; "In fact" introduces a correcting truth.
+
+=== 2|Foundations: Top-Frequency Words II|Lessons 1.6–1.10 vocabulary; adds secondary meanings and charge (positive/negative) traps.
+
+@ C
+The archaeologists could not ______ the age of the pottery fragments until the radiocarbon results arrived, so they labeled each piece "date unknown."
+* ascertain
+- disregard
+- foresee
+- denounce
+> They needed to find out the age for certain; until then it was unknown. "Ascertain" means to determine.
+
+@ C
+Although the new policy affected only a ______ number of students, about a dozen out of several thousand, it attracted weeks of news coverage.
+* negligible
+- myriad
+- prevalent
+- noteworthy
+> A dozen out of thousands is tiny, and "although" contrasts that small number with heavy coverage: "negligible."
+
+@ C
+Rather than choose between the two competing theories, the physicist sought to ______ them, arguing that both could be true at different scales.
+* reconcile
+- denounce
+- disguise
+- foresee
+> Showing that both theories hold at different scales makes them consistent with each other, which is what "reconcile" means.
+
+@ C
+Translator Edith Grossman argued that a good translation is never a mere ______ of the original; it must recreate the voice and rhythm of the source in a new language.
+* imitation
+- retraction
+- salvage
+- tenet
+> "Never a mere X ... must recreate" contrasts copying with creative rebuilding; "imitation" is the mere copy.
+
+@ C
+The documentary avoids taking sides. It presents the arguments of developers and conservationists with equal care, refusing to appear ______.
+* partisan
+- optimistic
+- ignorant
+- benign
+> A film that avoids taking sides refuses to look biased toward one camp: "partisan."
+
+@ C
+The bacteria proved remarkably ______: they survived boiling water, months without nutrients, and doses of radiation that would kill most organisms.
+* tenacious
+- placid
+- erroneous
+- uneven
+> Surviving extreme conditions shows that the bacteria hold on persistently: "tenacious."
+
+@ C
+The author's argument is difficult to follow because his key terms are ______; the word "freedom," for instance, seems to mean something different in every chapter.
+* ambiguous
+- lucid
+- eloquent
+- pragmatic
+> Terms whose meanings shift are open to multiple interpretations: "ambiguous." "Lucid" is the opposite.
+
+@ C
+Hoping to ______ public support for the new library, organizers held readings, invited local authors, and published letters from students who used the old one.
+* bolster
+- preclude
+- speculate
+- indulge
+> These activities aim to strengthen support: "bolster." "Preclude" would prevent support.
+
+@ C
+Some economists argue that sudden tax cuts can ______ inflation, worsening the very price increases that policymakers are trying to control.
+* exacerbate
+- eradicate
+- substantiate
+- condone
+> "Worsening" restates the blank, so the answer is "exacerbate" (make worse).
+
+@ C
+The biography is ______ in its research: the author consulted more than three hundred letters and checked every date against municipal records.
+* meticulous
+- mundane
+- dubious
+- ornate
+> Consulting hundreds of letters and checking every date shows extreme care with detail: "meticulous."
+
+@ M
+The quarterback's performance in the final game did much to vindicate the coach's controversial decision to start him over the veteran.
+? As used in the text, what does the word "vindicate" most nearly mean?
+* justify
+- punish
+- question
+- replace
+> A strong performance showed that the coach's choice was right. "Vindicate" means to justify or prove correct.
+
+@ M
+The senator's calm, reasonable tone in the debate belied the anger she had expressed in private memos.
+? As used in the text, what does the word "belied" most nearly mean?
+* disguised
+- confirmed
+- explained
+- exaggerated
+> Her calm tone gave a false impression that hid her private anger. "Belie" means to misrepresent or contradict, not to confirm.
+
+@ M
+Long hours at the telescope sharpened the astronomer's discernment, and she learned to tell a distant galaxy from a smudge on the lens at a glance.
+? As used in the text, what does the word "discernment" most nearly mean?
+* ability to judge precisely
+- sense of humor
+- level of patience
+- eyesight
+> Telling a galaxy from a smudge requires fine judgment. "Discernment" is perceptive judgment, not eyesight alone.
+
+@ M
+The committee will entertain proposals from any resident before deciding how to use the vacant lot.
+? As used in the text, what does the word "entertain" most nearly mean?
+* consider
+- amuse
+- host
+- perform
+> A committee that entertains proposals is willing to consider them, which is the secondary sense of the word.
+
+@ T
+The memoir's tone is often ______, as the author pokes fun at her own early failures as a chef, including a soufflé that "collapsed with dignity."
+* self-deprecating
+- arrogant
+- morbid
+- vindictive
+> Poking fun at one's own failures is self-deprecating humor. "Arrogant" is the opposite charge.
+
+@ T
+The reviewer called the film's ending ______, objecting that its last-minute rescue and tearful reunion had been designed to manipulate the audience's emotions.
+* sentimental
+- austere
+- understated
+- ambiguous
+> Objecting to an ending engineered to produce tears points to excessive emotion, a negative sense of "sentimental."
+
+@ T
+Far from being ______, the professor's comments in the margins were warm and encouraging. "Wonderful start," she wrote, "now push this idea further."
+* disparaging
+- supportive
+- insightful
+- lengthy
+> "Far from being X" plus warm, encouraging comments means X is the opposite of supportive: "disparaging."
+
+@ X
+Electric vehicles produce no tailpipe emissions. ______, the electricity used to charge them may come from coal-burning power plants.
+* However,
+- Therefore,
+- Likewise,
+- As a result,
+> The second sentence qualifies the first sentence's environmental advantage, so a contrast is needed.
+
+@ X
+The Mayan civilization developed a sophisticated calendar. ______, they tracked the movements of Venus with an error of only about two hours over five centuries.
+* For example,
+- On the other hand,
+- Instead,
+- Even so,
+> Tracking Venus precisely is a specific example of their calendrical sophistication.
+
+@ X
+The study included only 40 participants, all from a single university. ______, its findings should be treated as preliminary.
+* Thus,
+- Nonetheless,
+- Similarly,
+- By contrast,
+> The small, narrow sample is the reason to treat the findings cautiously, so a conclusion transition fits.
+
+=== 3|Foundations: Top-Frequency Words III|Lessons 1.11–1.15 vocabulary; the harder end of the top list.
+
+@ C
+The once-thriving railroad town became nearly ______ after the line closed; its population fell from four thousand to fewer than two hundred.
+* defunct
+- prolific
+- venerable
+- resolute
+> A town that lost almost all of its people has nearly ceased to function: "defunct."
+
+@ C
+Opponents of the plan called the proposed fees ______, arguing that they were so high that most small farmers would be unable to pay them.
+* prohibitive
+- negligible
+- gratuitous
+- curative
+> Fees so high that people cannot pay them effectively prevent participation: "prohibitive."
+
+@ C
+Despite repeated setbacks, the expedition team remained ______, and they set out again the following spring with better equipment and a new route.
+* undaunted
+- complacent
+- sullen
+- disgruntled
+> Setting out again after setbacks shows that they were not discouraged: "undaunted." "Despite" signals the contrast.
+
+@ C
+The chemist warned that the solvent was more ______ than it appeared: harmless in a single exposure, it caused lasting damage when inhaled over many months.
+* pernicious
+- innocuous
+- precipitous
+- tenuous
+> Harm that works gradually and subtly is "pernicious." "Innocuous" (harmless) is the false appearance being contrasted.
+
+@ C
+The poet's late work is famously ______; even scholars disagree about what the shortest lyrics mean, and some lines have no agreed interpretation at all.
+* inscrutable
+- laconic
+- strident
+- diminutive
+> Meaning that even experts cannot agree on is impossible to interpret: "inscrutable." "Laconic" describes brevity, not difficulty.
+
+@ C
+Rather than confront the board directly, the manager took a ______ approach, gathering quiet support from individual members before presenting her proposal.
+* circumspect
+- flagrant
+- impetuous
+- flippant
+> Avoiding direct confrontation and gathering support quietly is cautious and careful: "circumspect." "Impetuous" (rash) is its opposite.
+
+@ C
+The essay ______ two scenes, a crowded harvest festival and an empty field in winter, to show how the same village can feel welcoming and lonely.
+* juxtaposes
+- impugns
+- stymies
+- supplants
+> Placing two contrasting scenes side by side is "juxtaposing" them.
+
+@ C
+The diplomat's reply was ______: asked whether talks would continue, she said only, "We'll see."
+* terse
+- effusive
+- bombastic
+- loquacious
+> Two words in reply to a major question is brief to the point of curtness: "terse." The other three all mean wordy or gushing.
+
+@ C
+Because a gene's effect can be masked by its partner, a ______ trait may skip a generation before reappearing in grandchildren.
+* recessive
+- defunct
+- tangential
+- somber
+> In genetics, a trait that is masked when paired with a dominant gene is "recessive."
+
+@ C
+New evidence about the fire's cause led the investigators to ______ the night watchman, who had been blamed for leaving a lamp burning.
+* vindicate
+- usurp
+- censure
+- consecrate
+> Evidence about the real cause clears a person who was wrongly blamed: "vindicate." "Censure" would blame him further.
+
+@ M
+After decades of debate, the theory began to ossify into dogma, and few young researchers dared to question its assumptions.
+? As used in the text, what does the word "ossify" most nearly mean?
+* become rigid
+- grow stronger
+- turn into bone
+- become popular
+> Ideas that harden into unquestioned dogma have become fixed and inflexible. The literal sense, turning into bone, does not apply to ideas.
+
+@ M
+The essay is redolent of the author's childhood in coastal Maine, full of salt air, fog, and the clank of lobster traps.
+? As used in the text, what does the word "redolent" most nearly mean?
+* strongly suggestive
+- critical
+- forgetful
+- smelling sweet
+> The essay evokes or suggests her childhood. The literal sense, fragrant, does not fit an essay.
+
+@ M
+The novel's narrator is a cloying presence who repeatedly insists that every character is "simply wonderful."
+? As used in the text, what does the word "cloying" most nearly mean?
+* sickeningly sweet
+- deeply honest
+- frightening
+- forgettable
+> Excessive, insistent sweetness ("simply wonderful") becomes tiresome. "Cloying" means sickeningly sweet through excess.
+
+@ M
+The general's coup was an attempt to usurp the authority that the constitution granted only to elected officials.
+? As used in the text, what does the word "usurp" most nearly mean?
+* seize wrongfully
+- share equally
+- give up
+- strengthen
+> A coup takes power that the general is not entitled to. "Usurp" means to seize wrongfully.
+
+@ T
+Critics found the speech ______, complaining that its grand phrases, such as "a destiny written in the stars of history," contained little actual policy.
+* bombastic
+- trenchant
+- prosaic
+- laconic
+> Grand-sounding language with little substance is "bombastic." "Trenchant" would be a compliment.
+
+@ T
+The host was famous for her ______ gatherings, at which guests lingered past midnight trading stories and laughing.
+* convivial
+- somber
+- austere
+- decorous
+> Lingering, story-trading, and laughter describe lively, friendly company: "convivial."
+
+@ T
+Once a ______ critic of the museum, the columnist changed her tone entirely after its renovation, calling the new galleries "a gift to the city."
+* caustic
+- magnanimous
+- reticent
+- phlegmatic
+> "Changed her tone entirely" to praise means that she was formerly harsh. "Caustic" means sharply critical.
+
+@ X
+Octopuses can change color in milliseconds. ______, they appear to be colorblind, which has puzzled biologists for decades.
+* Paradoxically,
+- Accordingly,
+- For instance,
+- Moreover,
+> Color-changing animals that cannot see color is a seeming contradiction; "Paradoxically" signals it.
+
+@ X
+The first draft of the treaty was rejected by both sides. ______, a revised version that addressed water rights was signed within a year.
+* Eventually, however,
+- Therefore,
+- In other words,
+- Specifically,
+> The outcome reverses the rejection after time passes, so a later-time contrast fits.
+
+@ X
+Spiders produce several types of silk. Dragline silk is used for frames and safety lines; ______, capture silk, which is stretchy and sticky, is used to trap prey.
+* by comparison,
+- as a result,
+- in conclusion,
+- for this reason,
+> The sentence sets a second silk type beside the first, with different properties. "By comparison" introduces the parallel contrast.
