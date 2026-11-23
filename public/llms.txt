@@ -1,6 +1,6 @@
 # University Bike Shop
 
-> Student-run bike shop in Palo Alto, CA selling quality used road, gravel, triathlon/TT and mountain bikes at student-friendly prices. Repairs, tune-ups, $99 bike fits and bike consignment. Appointment only, located in Crescent Park, Palo Alto.
+> Student-run bike shop in Palo Alto, CA selling quality used road, gravel, triathlon/TT and mountain bikes at student-friendly prices. Repairs, tune-ups, bike fits (free while we test V3, $99 after) and bike consignment. Appointment only, located in Crescent Park, Palo Alto.
 
 ## What is University Bike Shop?
 
@@ -10,7 +10,7 @@ University Bike Shop (universitybikeshop.com) is a bike business run by local hi
 
 - Type: used bike sales, bike repair and service, bike fits, consignment
 - Location: Crescent Park, Palo Alto, CA (appointment only, no walk-in storefront)
-- Bike fits: $99, by appointment
+- Bike fits: free while we test V3, $99 after; by appointment
 - Consignment: sell your bike through the shop for a 10% commission
 - Summer camp: free 5-day bike camp with its own curriculum; every camper went home with a free bike
 - Team: student-run, including student mechanics and sales leads

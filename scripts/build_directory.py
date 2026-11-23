@@ -71,7 +71,7 @@ TREE = page("/", "Home", "The shop, what it sells, and how to book an appointmen
     page("/inventory", "Inventory", "Used road, gravel, triathlon and mountain bikes for sale.", "nav"),
     page("/sell-your-bike", "Sell Your Bike", "Consignment for a 10% commission.", "nav"),
     page("/service", "Service", "Tune-up and repair prices.", "nav"),
-    page("/bike-fits", "Bike Fits", "Camera-based bike fitting for $99.", "nav"),
+    page("/bike-fits", "Bike Fits", "Camera-based bike fitting, free while we test V3, $99 after.", "nav"),
     page("/summer-camp", "Summer Camp", "The free five-day summer bike camp: photos and write-up.", "nav"),
     page("/events", "Events", "Past camps, community repair days and partnerships, with Instagram embeds.", "nav"),
     page("/projects", "Projects", "Bike-fit software, the open-source bikeparts library and the 3D-printable MTB launch.", "nav"),

@@ -9,7 +9,7 @@ export default function Projects() {
       <h1>Projects</h1>
       <p className={styles.intro}>
         Beyond buying, fixing, and selling bikes, we build things: software,
-        open-source parts, and product launches.
+        open-source parts, product launches, and community programs.
       </p>
 
       <ol className={styles.list}>

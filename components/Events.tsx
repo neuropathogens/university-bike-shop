@@ -10,8 +10,8 @@ export default function Events() {
     <section id="events" className={styles.section}>
       <h1>Events</h1>
       <p className={styles.intro}>
-        Camps, repair days, partnerships, and community events University Bike
-        Shop has run or been part of.
+        Camps, repair days, partnerships, press, and community events
+        University Bike Shop has run or been part of.
       </p>
 
       {sorted.length === 0 ? (
@@ -49,6 +49,7 @@ export default function Events() {
                   url={event.instagram}
                   media={event.instagramSize?.media}
                   extra={event.instagramSize?.extra}
+                  account={event.instagramAccount}
                 />
               )}
             </li>
