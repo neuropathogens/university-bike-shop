@@ -111,7 +111,7 @@ def build(u, kind):
         z.update(title=f"{plain} Question Set", h1=f'Unit {u.n} <span style="white-space:nowrap">Question Set</span>', sub=h(u.title),
                  metaline=f"{len(mc)} multiple-choice (about {2 * len(mc)} min) &middot; 1 free response, {f.pts} points ({f.mins} min)",
                  setupNote="Allow about 2 minutes per question, the exam&rsquo;s pace. Keep the AP equation sheet and a calculator at hand.",
-                 desc=f"{plain} ({u.title}) question set: {len(mc)} exam-style multiple-choice questions with worked explanations, plus a {f.pts}-point {f.kind.lower()} free-response question with a scoring guide.",
+                 desc=f"{plain} ({u.title}) question set: {len(mc)} exam-style multiple-choice questions with worked explanations, plus {'an' if str(f.pts).startswith(('8', '11', '18')) else 'a'} {f.pts}-point {f.kind.lower()} free-response question with a scoring guide.",
                  fr=[dict(n=1, mode="points", kind=f.kind, mins=f.mins, head=f"{f.kind} &middot; {f.pts} points &middot; {f.mins} minutes",
                           guide=[], stem=stem_html(f.stem), parts=parts)],
                  frIntro=f"Allow {f.mins} minutes. Work each part on paper, then open the model solution and give yourself the points your answer earns.",
