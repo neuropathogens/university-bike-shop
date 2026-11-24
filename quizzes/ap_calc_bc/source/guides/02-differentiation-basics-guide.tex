@@ -1,0 +1,123 @@
+\documentclass{apcalc}
+\title{Unit 2: Differentiation: Definition and Fundamental Properties}
+\author{Paul Wang}
+\date{November 2026}
+\volume{Study Guide 2 of 10 (topics 2.1--2.10)}
+\shorttitle{Unit 2 --- Study Guide}
+\begin{document}
+\maketitle
+
+\begin{abstract}
+The derivative is a limit of difference quotients, and Unit 2 is where that limit turns into rules. The unit carries 5--10\% of the multiple-choice section, but its ideas run through every later unit: estimating a derivative from a table, deciding whether a piecewise function is differentiable, and writing a tangent line are standard free-response parts. This guide states the unit in twelve rules (R2.1--R2.12) across four sections, with a worked example for each idea. The \emph{Unit 2 Practice Set} uses the same section numbers.
+\end{abstract}
+\keywords{average rate of change, difference quotient, derivative, tangent line, differentiability, power rule, product rule, quotient rule, trigonometric derivatives.}
+
+\section*{Router}
+\begin{router}
+``average rate of change on $[a,b]$'' & $\dfrac{f(b)-f(a)}{b-a}$, no calculus & R2.1 \\
+$\lim_{h\to0}\frac{f(a+h)-f(a)}{h}$ or $\lim_{x\to a}\frac{f(x)-f(a)}{x-a}$ & it is $f'(a)$: name $f$ and $a$, then differentiate & R2.3 \\
+``estimate $f'(c)$'' from a table & difference quotient using the two closest values around $c$ & R2.4 \\
+corner, cusp, vertical tangent, jump & not differentiable there & R2.5 \\
+piecewise with constants, ``differentiable at $a$'' & match values \emph{and} slopes at $a$ & R2.6 \\
+tangent line at $x=a$ & $y=f(a)+f'(a)(x-a)$ & R2.9 \\
+product $uv$ or quotient $u/v$ & product or quotient rule (simplify first if easier) & R2.10--R2.11 \\
+$\tan$, $\sec$, $\csc$, $\cot$ & table of six trig derivatives & R2.12 \\
+\end{router}
+
+\section{Rates of change and the definition of the derivative (2.1--2.2)}
+
+\begin{rulebox}{R2.1}{Average rate of change}
+The average rate of change of $f$ on $[a,b]$ is $\dfrac{f(b)-f(a)}{b-a}$, the slope of the secant line. Units: output units per input unit. It needs only two function values; no derivative is involved.
+\end{rulebox}
+
+\begin{rulebox}{R2.2}{The derivative at a point}
+\[f'(a)=\lim_{h\to0}\frac{f(a+h)-f(a)}{h}=\lim_{x\to a}\frac{f(x)-f(a)}{x-a},\]
+when the limit exists. $f'(a)$ is the instantaneous rate of change and the slope of the tangent line at $(a,f(a))$. Notation: $f'(x)$, $\frac{dy}{dx}$, $y'$, $\frac{d}{dx}f(x)$.
+\end{rulebox}
+
+\begin{rulebox}{R2.3}{Recognizing a limit as a derivative}
+Match the limit to one of the two forms in R2.2. Read off $f$ and $a$, then differentiate with the rules: there is no need to evaluate the limit directly.
+\end{rulebox}
+
+\begin{example}{a limit that is a derivative}
+$\displaystyle\lim_{h\to0}\frac{\cos\left(\frac{\pi}{3}+h\right)-\frac12}{h}$ is $f'(\frac\pi3)$ for $f(x)=\cos x$, since $\cos\frac\pi3=\frac12$. So the limit is $-\sin\frac\pi3=-\frac{\sqrt3}{2}$. \answer{$-\frac{\sqrt3}{2}$.}
+\end{example}
+
+\section{Estimating derivatives and differentiability (2.3--2.4)}
+
+\begin{rulebox}{R2.4}{Estimating from tables and graphs}
+From a table, estimate $f'(c)$ with the difference quotient over the smallest interval containing $c$ (often symmetric: $\frac{f(c+k)-f(c-k)}{2k}$). Show the quotient: the scoring guide wants the numbers, not just the estimate. From a graph, $f'(c)$ is the slope of the tangent line; on a line segment it is the segment's slope.
+\end{rulebox}
+
+\begin{example}{table estimate}
+\begin{center}\small\begin{tabular}{|c|c|c|c|c|}\hline $t$ (min) & 0 & 4 & 10 & 12\\\hline $W(t)$ (\textdegree F) & 55 & 57 & 63 & 61\\\hline\end{tabular}\end{center}
+Estimate $W'(7)$: $\dfrac{W(10)-W(4)}{10-4}=\dfrac{63-57}{6}=1$ degree per minute. \answer{1\,\textdegree F/min.}
+\end{example}
+
+\begin{rulebox}{R2.5}{Differentiability and continuity}
+Differentiable at $a$ $\Rightarrow$ continuous at $a$. The converse is false. $f$ fails to be differentiable at a \textbf{discontinuity}, a \textbf{corner} (one-sided slopes differ, e.g.\ $|x|$ at 0), a \textbf{cusp} (e.g.\ $x^{2/3}$ at 0) or a \textbf{vertical tangent} (e.g.\ $x^{1/3}$ at 0).
+\end{rulebox}
+
+\begin{rulebox}{R2.6}{Differentiability of a piecewise function}
+At a junction $x=a$, $f$ is differentiable when (1) it is continuous at $a$ (pieces agree) and (2) the one-sided derivatives agree (derivatives of the pieces agree at $a$). Two unknown constants need both equations.
+\end{rulebox}
+
+\begin{example}{two constants}
+$f(x)=\begin{cases}ax^2+b,&x\le1\\ 3x+1,&x>1\end{cases}$ is differentiable at 1 when $a+b=4$ (values) and $2a=3$ (slopes). So $a=\frac32$, $b=\frac52$. \answer{$a=\tfrac32$, $b=\tfrac52$.}
+\end{example}
+
+\begin{trap}
+Equal one-sided \emph{derivative formulas} do not prove differentiability if the function jumps. $f(x)=x$ for $x<0$ and $x+1$ for $x\ge0$ has slope 1 on both sides but is not continuous at 0, so it is not differentiable there.
+\end{trap}
+
+\section{Basic derivative rules (2.5--2.7)}
+
+\begin{rulebox}{R2.7}{Power, constant multiple, sum}
+$\frac{d}{dx}x^n=nx^{n-1}$ for every real $n$; $\frac{d}{dx}c=0$; $(cf)'=cf'$; $(f\pm g)'=f'\pm g'$. Rewrite roots and reciprocals as powers first: $\frac{3}{\sqrt x}=3x^{-1/2}$, derivative $-\frac32x^{-3/2}$.
+\end{rulebox}
+
+\begin{rulebox}{R2.8}{Sine, cosine, exponential, logarithm}
+$\frac{d}{dx}\sin x=\cos x$, \ $\frac{d}{dx}\cos x=-\sin x$, \ $\frac{d}{dx}e^x=e^x$, \ $\frac{d}{dx}\ln x=\frac1x$ ($x>0$). Also $\frac{d}{dx}a^x=a^x\ln a$ and $\frac{d}{dx}\log_a x=\frac{1}{x\ln a}$.
+\end{rulebox}
+
+\begin{rulebox}{R2.9}{Tangent and normal lines}
+Tangent line at $x=a$: $y=f(a)+f'(a)(x-a)$. A horizontal tangent has $f'(a)=0$. The normal line is perpendicular: slope $-1/f'(a)$.
+\end{rulebox}
+
+\begin{example}{tangent line}
+$f(x)=x^3-2\sqrt x$ at $x=4$: $f(4)=64-4=60$, $f'(x)=3x^2-x^{-1/2}$, $f'(4)=48-\frac12=\frac{95}{2}$. \answer{$y=60+\frac{95}{2}(x-4)$.}
+\end{example}
+
+\section{Product and quotient rules (2.8--2.10)}
+
+\begin{rulebox}{R2.10}{Product rule}
+$(uv)'=u'v+uv'$. For three factors, $(uvw)'=u'vw+uv'w+uvw'$.
+\end{rulebox}
+
+\begin{rulebox}{R2.11}{Quotient rule}
+$\left(\dfrac{u}{v}\right)'=\dfrac{u'v-uv'}{v^2}$ (``low d-high minus high d-low, over low squared''). If the denominator is a constant or a single power, rewrite and use the power rule instead.
+\end{rulebox}
+
+\begin{rulebox}{R2.12}{The other trig derivatives}
+$\frac{d}{dx}\tan x=\sec^2x$, \ $\frac{d}{dx}\sec x=\sec x\tan x$, \ $\frac{d}{dx}\cot x=-\csc^2x$, \ $\frac{d}{dx}\csc x=-\csc x\cot x$. (The co-functions carry the minus signs.)
+\end{rulebox}
+
+\begin{example}{using values from a table}
+If $f(2)=3$, $f'(2)=-1$, $g(2)=4$, $g'(2)=5$ and $h=\frac{f}{g}$, then
+$h'(2)=\dfrac{f'(2)g(2)-f(2)g'(2)}{g(2)^2}=\dfrac{(-1)(4)-(3)(5)}{16}=-\dfrac{19}{16}$. \answer{$-\tfrac{19}{16}$.}
+\end{example}
+
+\begin{frqtip}
+When asked for a derivative ``at $x=a$'' from given values, write the rule with the numbers substituted before simplifying; that line earns the point even if arithmetic slips later.
+\end{frqtip}
+
+\section{Common errors}
+\begin{itemize}
+\item Using a derivative where the question asks for an \emph{average} rate of change (R2.1).
+\item Evaluating $\lim_{h\to0}\frac{f(a+h)-f(a)}{h}$ by brute force instead of recognizing $f'(a)$ (R2.3).
+\item Checking only slopes, not continuity, at a junction (R2.6).
+\item $(uv)'=u'v'$ or $(u/v)'=u'/v'$; the sign order in the quotient rule (R2.10--R2.11).
+\item $\frac{d}{dx}\cos x=\sin x$ (sign) and $\frac{d}{dx}\sec x=\tan^2 x$ (R2.8, R2.12).
+\end{itemize}
+
+\end{document}

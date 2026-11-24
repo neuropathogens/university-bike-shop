@@ -1,0 +1,141 @@
+\documentclass{apcalc}
+\title{Unit 10: Infinite Sequences and Series}
+\author{Paul Wang}
+\date{November 2026}
+\volume{Study Guide 10 of 10 (topics 10.1--10.15)}
+\shorttitle{Unit 10 --- Study Guide}
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Unit 10 is BC-only and, with Unit 6, the heaviest unit on the exam: 15--20\% of the multiple-choice section, and the last free-response question is a series question every year (a Taylor polynomial, an interval of convergence, and an error bound). The unit has two halves: deciding whether a series converges (eight tests, each with conditions the scoring guide checks) and representing functions by power series (Taylor polynomials, intervals of convergence, and the alternating series and Lagrange error bounds). This guide states the unit in fifteen rules (R10.1--R10.15) across eight sections, with a test router. The \emph{Unit 10 Practice Set} uses the same section numbers.
+\end{abstract}
+\keywords{sequence, partial sum, geometric series, $n$th term test, integral test, $p$-series, comparison tests, alternating series test, ratio test, absolute and conditional convergence, error bound, Taylor polynomial, radius and interval of convergence, Maclaurin series.}
+
+\section*{Router: which convergence test?}
+\begin{router}
+$\lim a_n\neq0$ (or does not exist) & diverges by the $n$th term test; check this first & R10.3 \\
+$\sum ar^n$ & geometric: converges iff $|r|<1$, sum $\frac{\text{first term}}{1-r}$ & R10.2 \\
+$\sum\frac{1}{n^p}$ & $p$-series: converges iff $p>1$ & R10.5 \\
+like a $p$-series or geometric series, positive terms & direct or limit comparison & R10.6 \\
+$f(n)$ positive, decreasing, easy to integrate (e.g.\ $\frac{1}{n\ln n}$) & integral test & R10.4 \\
+$(-1)^n b_n$ & alternating series test: $b_n$ decreasing to 0 & R10.7 \\
+factorials, $n$th powers like $3^n$, $n^n$ & ratio test & R10.8 \\
+power series $\sum c_n(x-a)^n$ & ratio test for the radius, then test both endpoints & R10.13 \\
+``bound the error'' of an alternating sum & first omitted term & R10.10 \\
+``bound the error'' of a Taylor polynomial & Lagrange: $\frac{\max|f^{(n+1)}|}{(n+1)!}|x-a|^{n+1}$ & R10.11 \\
+\end{router}
+
+\section{Sequences, series, and geometric series (10.1--10.2)}
+
+\begin{rulebox}{R10.1}{Sequences and series}
+A sequence $a_n$ converges if $\lim_{n\to\infty}a_n$ exists. A series $\sum a_n$ converges if its sequence of partial sums $S_n=a_1+\dots+a_n$ converges; its sum is $\lim S_n$. A convergent \emph{sequence} does not make the \emph{series} converge: $a_n=\frac1n\to0$ but $\sum\frac1n$ diverges.
+\end{rulebox}
+
+\begin{rulebox}{R10.2}{Geometric series}
+$\displaystyle\sum_{n=0}^{\infty}ar^n=a+ar+ar^2+\dots=\frac{a}{1-r}$ if $|r|<1$; it diverges if $|r|\ge1$. With another starting index, the sum is $\frac{\text{first term}}{1-r}$: $\sum_{n=2}^\infty\frac{3}{4^n}=\frac{3/16}{1-1/4}=\frac14$.
+\end{rulebox}
+
+\section{The $n$th term test, integral test, and $p$-series (10.3--10.5)}
+
+\begin{rulebox}{R10.3}{$n$th term test for divergence}
+If $\lim a_n\neq0$ (or the limit does not exist), $\sum a_n$ diverges. If $\lim a_n=0$, the test says nothing.
+\end{rulebox}
+
+\begin{rulebox}{R10.4}{Integral test}
+If $f$ is positive, continuous and decreasing for $x\ge k$ and $a_n=f(n)$, then $\sum_{n=k}^\infty a_n$ and $\int_k^\infty f(x)\,dx$ both converge or both diverge. State the three conditions. The integral's value is not the series' sum.
+\end{rulebox}
+
+\begin{rulebox}{R10.5}{$p$-series and the harmonic series}
+$\sum\frac{1}{n^p}$ converges iff $p>1$. The harmonic series $\sum\frac1n$ ($p=1$) diverges; the alternating harmonic series $\sum\frac{(-1)^{n+1}}{n}$ converges (to $\ln2$).
+\end{rulebox}
+
+\section{Comparison tests (10.6)}
+
+\begin{rulebox}{R10.6}{Direct and limit comparison}
+For positive terms. \textbf{Direct:} if $0\le a_n\le b_n$ and $\sum b_n$ converges, so does $\sum a_n$; if $a_n\ge b_n\ge0$ and $\sum b_n$ diverges, so does $\sum a_n$. \textbf{Limit:} if $\lim\frac{a_n}{b_n}=c$ with $0<c<\infty$, the two series behave alike. Compare with the dominant terms: $\frac{n+1}{n^3+5}$ behaves like $\frac{1}{n^2}$.
+\end{rulebox}
+
+\begin{example}{choosing the comparison}
+$\sum\frac{1}{3^n+n}$: $0<\frac{1}{3^n+n}<\frac{1}{3^n}$ and $\sum\frac{1}{3^n}$ is a convergent geometric series, so it converges by direct comparison. $\sum\frac{1}{\sqrt{n^2+1}}$: $\lim\frac{1/\sqrt{n^2+1}}{1/n}=1$ and $\sum\frac1n$ diverges, so it diverges by limit comparison.
+\end{example}
+
+\section{Alternating series, the ratio test, and absolute convergence (10.7--10.9)}
+
+\begin{rulebox}{R10.7}{Alternating series test (AST)}
+$\sum(-1)^nb_n$ with $b_n>0$ converges if $b_n$ is decreasing (eventually) and $\lim b_n=0$. Both conditions must be stated on the free response.
+\end{rulebox}
+
+\begin{rulebox}{R10.8}{Ratio test}
+Let $L=\lim_{n\to\infty}\left|\frac{a_{n+1}}{a_n}\right|$. $L<1$: converges absolutely. $L>1$ (or $\infty$): diverges. $L=1$: inconclusive (every $p$-series gives $L=1$). Useful facts: $\frac{(n+1)!}{n!}=n+1$; $\left(\frac{n}{n+1}\right)^n\to\frac1e$.
+\end{rulebox}
+
+\begin{rulebox}{R10.9}{Absolute and conditional convergence}
+If $\sum|a_n|$ converges, $\sum a_n$ converges \emph{absolutely} (and so converges). If $\sum a_n$ converges but $\sum|a_n|$ diverges, it converges \emph{conditionally}: e.g.\ $\sum\frac{(-1)^n}{\sqrt n}$.
+\end{rulebox}
+
+\section{Error bounds (10.10, 10.12)}
+
+\begin{rulebox}{R10.10}{Alternating series error bound}
+If $\sum(-1)^nb_n$ satisfies the AST with sum $S$, then $|S-S_n|\le b_{n+1}$: the error is at most the first omitted term (in absolute value), and the partial sum alternates above and below $S$.
+\end{rulebox}
+
+\begin{rulebox}{R10.11}{Lagrange error bound}
+If $P_n$ is the $n$th-degree Taylor polynomial for $f$ about $a$ and $|f^{(n+1)}(z)|\le M$ for all $z$ between $a$ and $x$, then $\displaystyle|f(x)-P_n(x)|\le\frac{M}{(n+1)!}|x-a|^{n+1}$. Name $M$ and justify it as a bound on the interval.
+\end{rulebox}
+
+\begin{example}{both error bounds for $\sin(0.2)$}
+$P_3(x)=x-\frac{x^3}{6}$ gives $\sin0.2\approx0.198667$. Lagrange: $|f^{(4)}|=|\sin z|\le1$, so the error is at most $\frac{1}{4!}(0.2)^4\approx6.7\times10^{-5}$. Alternating series bound (better): the first omitted term is $\frac{0.2^5}{120}\approx2.7\times10^{-6}$.
+\end{example}
+
+\section{Taylor polynomials (10.11)}
+
+\begin{rulebox}{R10.12}{Taylor polynomial}
+$P_n(x)=\displaystyle\sum_{k=0}^{n}\frac{f^{(k)}(a)}{k!}(x-a)^k=f(a)+f'(a)(x-a)+\frac{f''(a)}{2!}(x-a)^2+\cdots$. The coefficient of $(x-a)^k$ is $\frac{f^{(k)}(a)}{k!}$, so $f^{(k)}(a)=k!\times$(coefficient). $P_n$ matches $f$ and its first $n$ derivatives at $a$.
+\end{rulebox}
+
+\begin{example}{from a table of derivatives}
+$f(1)=2$, $f'(1)=-3$, $f''(1)=4$, $f'''(1)=12$. Third-degree Taylor polynomial about $x=1$: $P_3(x)=2-3(x-1)+\frac42(x-1)^2+\frac{12}{6}(x-1)^3=2-3(x-1)+2(x-1)^2+2(x-1)^3$.
+\end{example}
+
+\section{Radius and interval of convergence (10.13)}
+
+\begin{rulebox}{R10.13}{Power series}
+For $\sum c_n(x-a)^n$, apply the ratio test to the absolute value: convergence where $\lim\left|\frac{c_{n+1}}{c_n}\right||x-a|<1$. That gives the radius $R$ and the open interval $(a-R,a+R)$. Then test each endpoint separately (they are ordinary series, often a $p$-series or an alternating series). A power series converges absolutely inside its interval; differentiating or integrating term by term keeps $R$ but may change endpoint behavior.
+\end{rulebox}
+
+\begin{example}{interval of convergence}
+$\displaystyle\sum_{n=1}^\infty\frac{(x-2)^n}{n\,3^n}$: ratio $\frac{n}{n+1}\cdot\frac{|x-2|}{3}\to\frac{|x-2|}{3}<1$, so $-1<x<5$. At $x=5$: $\sum\frac1n$ diverges. At $x=-1$: $\sum\frac{(-1)^n}{n}$ converges (AST). \answer{$-1\le x<5$.}
+\end{example}
+
+\section{Taylor and Maclaurin series (10.14--10.15)}
+
+\begin{rulebox}{R10.14}{Series to know (about $x=0$)}
+\begin{tabular}{@{}lll@{}}
+$e^x=\sum\frac{x^n}{n!}=1+x+\frac{x^2}{2!}+\cdots$ & all $x$ \\
+$\sin x=\sum\frac{(-1)^nx^{2n+1}}{(2n+1)!}=x-\frac{x^3}{3!}+\frac{x^5}{5!}-\cdots$ & all $x$\\
+$\cos x=\sum\frac{(-1)^nx^{2n}}{(2n)!}=1-\frac{x^2}{2!}+\frac{x^4}{4!}-\cdots$ & all $x$\\
+$\frac{1}{1-x}=\sum x^n=1+x+x^2+\cdots$ & $|x|<1$\\
+$\ln(1+x)=\sum\frac{(-1)^{n+1}x^n}{n}=x-\frac{x^2}{2}+\frac{x^3}{3}-\cdots$ & $-1<x\le1$\\
+$\arctan x=\sum\frac{(-1)^nx^{2n+1}}{2n+1}=x-\frac{x^3}{3}+\frac{x^5}{5}-\cdots$ & $|x|\le1$\\
+\end{tabular}
+\end{rulebox}
+
+\begin{rulebox}{R10.15}{Building new series}
+Substitute: $e^{-x^2}=1-x^2+\frac{x^4}{2!}-\cdots$. Multiply by powers of $x$: $x\cos x=x-\frac{x^3}{2!}+\cdots$. Differentiate or integrate term by term: $\frac{1}{(1-x)^2}=\sum nx^{n-1}$; $\int_0^x\frac{dt}{1+t^2}=\arctan x$. A series can give a limit ($\frac{\sin x-x}{x^3}\to-\frac16$), a derivative value, or a definite integral.
+\end{rulebox}
+
+\begin{frqtip}
+The series question typically asks: (a) the first few terms and general term of a series built from a known one; (b) the interval of convergence, with both endpoints checked and named tests; (c) an error bound with the AST or Lagrange. Write the general term with $(-1)^n$ and the factorial in the right place, and say ``by the alternating series error bound, the error is less than the first omitted term''.
+\end{frqtip}
+
+\section{Common errors}
+\begin{itemize}
+\item Concluding convergence from $\lim a_n=0$ (R10.3).
+\item Applying the AST or comparison tests without stating their conditions (R10.6--R10.7).
+\item Forgetting to check the endpoints of an interval of convergence (R10.13).
+\item Using $f^{(k)}(a)$ as the coefficient instead of $\frac{f^{(k)}(a)}{k!}$ (R10.12).
+\item Using the $n$th term instead of the $(n+1)$st in an error bound (R10.10--R10.11).
+\end{itemize}
+
+\end{document}

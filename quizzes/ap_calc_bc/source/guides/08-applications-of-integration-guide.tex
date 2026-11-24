@@ -1,0 +1,125 @@
+\documentclass{apcalc}
+\title{Unit 8: Applications of Integration}
+\author{Paul Wang}
+\date{November 2026}
+\volume{Study Guide 8 of 10 (topics 8.1--8.13)}
+\shorttitle{Unit 8 --- Study Guide}
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Unit 8 turns the definite integral into averages, distances, amounts, areas, volumes and (in BC) arc lengths. It carries 5--10\% of the multiple-choice section and supplies at least one free-response question every year: an area-and-volume question on a region between two curves, and a rate question (``water enters at $E(t)$ and leaves at $L(t)$'') in the calculator part. The skill that earns the points is setting up the integral correctly: limits, integrand and, for volumes, the radius measured from the axis. This guide states the unit in eleven rules (R8.1--R8.11) across five sections. The \emph{Unit 8 Practice Set} uses the same section numbers.
+\end{abstract}
+\keywords{average value, displacement, total distance, net change, area between curves, cross sections, disc method, washer method, axis of revolution, arc length.}
+
+\section*{Router}
+\begin{router}
+``average value of $f$ on $[a,b]$'' & $\frac{1}{b-a}\int_a^bf$ (not the average rate of change) & R8.1 \\
+``total distance traveled'' & $\int_a^b|v(t)|\,dt$ & R8.2 \\
+``position at $t=b$'' & $x(a)+\int_a^bv(t)\,dt$ & R8.2 \\
+rate in and rate out & amount $=A_0+\int(\text{in}-\text{out})$; max where in $=$ out changes sign & R8.3 \\
+area between $y=f$ and $y=g$ & $\int(\text{top}-\text{bottom})\,dx$ or $\int(\text{right}-\text{left})\,dy$ & R8.4--R8.6 \\
+known cross sections & $\int A(x)\,dx$ with the side $s=$ top $-$ bottom & R8.7 \\
+revolve, region touches the axis & disc: $\pi\int R^2$ & R8.8 \\
+revolve, gap between region and axis & washer: $\pi\int(R^2-r^2)$ & R8.9 \\
+axis $y=k$ or $x=k$ & radius $=$ distance from the axis: $|k-y|$ or $|k-x|$ & R8.10 \\
+``length of the curve'' & $\int_a^b\sqrt{1+(f')^2}\,dx$ & R8.11 \\
+\end{router}
+
+\section{Average value (8.1)}
+
+\begin{rulebox}{R8.1}{Average value of a function}
+$f_{\text{avg}}=\dfrac{1}{b-a}\displaystyle\int_a^bf(x)\,dx$. By the Mean Value Theorem for integrals, a continuous $f$ equals its average value at least once on $[a,b]$. Do not confuse with the average \emph{rate of change} $\frac{f(b)-f(a)}{b-a}$; the average value of $f'$ equals the average rate of change of $f$.
+\end{rulebox}
+
+\section{Motion and accumulation in context (8.2--8.3)}
+
+\begin{rulebox}{R8.2}{Displacement, distance and position}
+Displacement on $[a,b]$: $\int_a^bv(t)\,dt$. Total distance: $\int_a^b|v(t)|\,dt$ (on the calculator directly, or split at the zeros of $v$ by hand). Position: $x(b)=x(a)+\int_a^bv(t)\,dt$. Similarly $v(b)=v(a)+\int_a^ba(t)\,dt$.
+\end{rulebox}
+
+\begin{example}{distance versus displacement}
+$v(t)=t^2-4t+3=(t-1)(t-3)$ on $[0,4]$. Displacement $\int_0^4v=\frac{64}{3}-32+12=\frac43$. Distance: $\int_0^1v-\int_1^3v+\int_3^4v=\frac43+\frac43+\frac43=4$. \answer{displacement $\frac43$, distance 4.}
+\end{example}
+
+\begin{rulebox}{R8.3}{Rates in, rates out}
+Amount at time $T$: $A(T)=A(0)+\int_0^T\big(\text{in}(t)-\text{out}(t)\big)\,dt$. The amount is increasing when in $>$ out. For an absolute maximum on $[0,T]$, find where $\text{in}-\text{out}$ changes sign, then compare the amounts at those times and at the endpoints (candidates test). Units: rate units times time units.
+\end{rulebox}
+
+\begin{frqtip}
+In Part A these questions are calculator active: store the functions, write the integral expression with limits, and give answers to three decimal places. ``$\int_0^{6}E(t)\,dt\approx 52.874$ gallons'' earns the point only if the integral is written down.
+\end{frqtip}
+
+\section{Area between curves (8.4--8.6)}
+
+\begin{rulebox}{R8.4}{Area with respect to $x$}
+$\displaystyle A=\int_a^b\big(\text{top}(x)-\text{bottom}(x)\big)\,dx$, with $a$, $b$ the $x$-values where the curves meet (or the given bounds).
+\end{rulebox}
+
+\begin{rulebox}{R8.5}{Area with respect to $y$}
+When the region is bounded on the left and right by functions of $y$ (for example $x=y^2$), use $\displaystyle A=\int_c^d\big(\text{right}(y)-\text{left}(y)\big)\,dy$.
+\end{rulebox}
+
+\begin{rulebox}{R8.6}{Curves that cross}
+If the curves cross inside $[a,b]$, split at each intersection so that each piece is top minus bottom, or integrate $|f-g|$ on the calculator.
+\end{rulebox}
+
+\begin{example}{area between a line and a parabola}
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[width=6cm,height=4.6cm,axis lines=middle,xmin=-0.5,xmax=3.5,ymin=-0.5,ymax=4.8,xtick={1,2,3},ytick={1,2,3,4},xlabel={$x$},ylabel={$y$},
+ every axis x label/.style={at={(ticklabel* cs:1)},anchor=west},every axis y label/.style={at={(ticklabel* cs:1)},anchor=south}]
+\addplot[name path=A,thick,domain=0:3]{2*x-0*x} node[pos=0.9,above left]{$y=2x$};
+\addplot[name path=B,thick,domain=0:3,samples=60]{x^2} ;
+\addplot[gray!35] fill between[of=A and B,soft clip={domain=0:2}];
+\node at (axis cs:2.9,4.2) {$y=x^2$};
+\end{axis}
+\end{tikzpicture}
+\end{center}
+Region $R$ between $y=2x$ and $y=x^2$: they meet at $x=0$ and $x=2$, the line on top. $A=\int_0^2(2x-x^2)\,dx=4-\frac83=\frac43$. \answer{$\frac43$.}
+\end{example}
+
+\section{Volumes (8.7--8.12)}
+
+\begin{rulebox}{R8.7}{Known cross sections}
+$V=\int_a^bA(x)\,dx$ where $A(x)$ is the area of the cross section perpendicular to the $x$-axis. With side (or diameter) $s(x)=\text{top}-\text{bottom}$: square $s^2$; semicircle $\frac\pi8s^2$; equilateral triangle $\frac{\sqrt3}{4}s^2$; isosceles right triangle with leg $s$: $\frac12s^2$; rectangle of height $h\cdot s$: $hs^2$.
+\end{rulebox}
+
+\begin{rulebox}{R8.8}{Disc method}
+Revolving a region that touches the axis: $V=\pi\int_a^bR(x)^2\,dx$, with $R$ the distance from the axis to the curve.
+\end{rulebox}
+
+\begin{rulebox}{R8.9}{Washer method}
+With a gap between the region and the axis: $V=\pi\int_a^b\big(R(x)^2-r(x)^2\big)\,dx$, outer radius $R$, inner radius $r$. Square each radius separately: $\pi\int(R-r)^2$ is wrong.
+\end{rulebox}
+
+\begin{rulebox}{R8.10}{Other axes}
+Measure radii from the axis. About $y=-1$: radius to the curve $y=f(x)$ is $f(x)-(-1)=f(x)+1$. About $y=k$ above the region: $k-f(x)$. About a vertical line $x=k$, integrate in $y$ with radii $|k-x(y)|$.
+\end{rulebox}
+
+\begin{example}{washer about a horizontal line}
+Revolve the region $R$ above about $y=-1$: outer radius $2x+1$, inner radius $x^2+1$.
+$V=\pi\int_0^2\big((2x+1)^2-(x^2+1)^2\big)\,dx=\pi\int_0^2(-x^4+2x^2+4x)\,dx=\pi\left(-\frac{32}{5}+\frac{16}{3}+8\right)=\frac{104\pi}{15}$. \answer{$\frac{104\pi}{15}$.}
+\end{example}
+
+\section{Arc length (8.13)}
+
+\begin{rulebox}{R8.11}{Arc length (BC)}
+For $y=f(x)$ on $[a,b]$ with $f'$ continuous: $L=\displaystyle\int_a^b\sqrt{1+\big(f'(x)\big)^2}\,dx$. For $x=g(y)$: $\int_c^d\sqrt{1+g'(y)^2}\,dy$. Most arc lengths need a calculator; set up the integral first. (Parametric arc length is in Unit 9.)
+\end{rulebox}
+
+\begin{example}{an exact arc length}
+$y=\frac23x^{3/2}$ on $[0,3]$: $y'=x^{1/2}$, $L=\int_0^3\sqrt{1+x}\,dx=\frac23\left[(1+x)^{3/2}\right]_0^3=\frac23(8-1)=\frac{14}{3}$.
+\end{example}
+
+\section{Common errors}
+\begin{itemize}
+\item Computing $\frac{f(b)-f(a)}{b-a}$ for an average value (R8.1).
+\item Reporting displacement when asked for distance (R8.2).
+\item Forgetting the initial amount, or using in $+$ out (R8.3).
+\item Bottom minus top, or not splitting at crossings (R8.4--R8.6).
+\item $\pi\int(R-r)^2$ instead of $\pi\int(R^2-r^2)$; radius measured from the $x$-axis when the axis is $y=k$ (R8.9--R8.10).
+\item Forgetting to square $f'$ in arc length (R8.11).
+\end{itemize}
+
+\end{document}

@@ -1,0 +1,139 @@
+\documentclass{apcalc}
+\title{Unit 1 Practice Set: Limits and Continuity}
+\author{Paul Wang}
+\date{November 2026}
+\volume{Practice Set 1 of 10 (topics 1.1–1.16)}
+\shorttitle{Unit 1 --- Practice Set}
+\begin{document}
+\maketitle
+\begin{abstract}
+Twelve exam-style multiple-choice questions on all sixteen Unit 1 topics, grouped by the sections of the Unit 1 Study Guide, and one nine-point free-response question on continuity, a removable discontinuity and the Intermediate Value Theorem. Items 1–10 are no-calculator; items marked [calculator] allow a graphing calculator. Write each answer in the blank beside the number. The key on the last pages gives an answers-only strip, a reason and rule for every item, and the free-response scoring guide.
+\end{abstract}
+\scoringline{12 MC \quad\blank\ / 9 FR}{Exam pace: about 2 minutes per multiple-choice item (24 min) and 15 minutes for the free response.}
+\section*{1\quad What a limit is}
+\begin{setrule}R1.1–R1.4. The limit ignores $f(a)$; the two-sided limit exists only when both one-sided limits agree. Substitute first when $f$ is continuous.\end{setrule}
+\begin{q}{1}
+The graph of $f$ is shown. Which statement is true?
+\begin{center}\includegraphics[width=0.45\linewidth]{figs/u1-q1.pdf}\end{center}
+\chtwo{$\lim_{x\to3}f(x)=1$}{$\lim_{x\to3}f(x)=3$}{$\lim_{x\to3}f(x)$ does not exist}{$f$ is continuous at $x=3$}
+\end{q}
+\begin{q}{2}
+The table gives values of $g$ near $x=2$. Which is the best estimate of $\lim_{x\to2}g(x)$?
+\begin{center}\small\renewcommand{\arraystretch}{1.35}\begin{tabular}{|c|c|c|c|c|c|c|}
+\hline
+$x$ & 1.9 & 1.99 & 1.999 & 2.001 & 2.01 & 2.1 \\ \hline
+$g(x)$ & 4.61 & 4.96 & 4.996 & 5.004 & 5.04 & 5.41 \\ \hline
+\end{tabular}\end{center}
+\chfour{$0$}{$2$}{$4.9$}{$5$}
+\end{q}
+\section*{2\quad Evaluating limits algebraically}
+\begin{setrule}R1.5–R1.6. $\tfrac00$ means simplify: factor, cancel, rationalize. $\frac{\sin u}{u}\to1$ and $\frac{1-\cos u}{u}\to0$ as $u\to0$.\end{setrule}
+\begin{q}{3}
+$\displaystyle\lim_{x\to2}\frac{x^2-4}{x^2+x-6}$ is
+\chfour{$0$}{$\dfrac{4}{5}$}{$1$}{nonexistent}
+\end{q}
+\begin{q}{4}
+$\displaystyle\lim_{x\to0}\frac{\sqrt{x+4}-2}{x}$ is
+\chfour{$-\dfrac14$}{$0$}{$\dfrac14$}{$\dfrac12$}
+\end{q}
+\begin{q}{5}
+$\displaystyle\lim_{x\to0}\frac{\sin 3x}{\tan 2x}$ is
+\chfour{$0$}{$\dfrac23$}{$1$}{$\dfrac32$}
+\end{q}
+\section*{3\quad The squeeze theorem}
+\begin{setrule}R1.7. If $g\le f\le h$ and $g,h\to L$, then $f\to L$.\end{setrule}
+\begin{q}{6}
+If $3-x^2\le f(x)\le 3+x^2$ for all $x$, then $\displaystyle\lim_{x\to0}f(x)$ is
+\chtwo{$0$}{$3$}{$6$}{impossible to determine}
+\end{q}
+\section*{4\quad Continuity and discontinuities}
+\begin{setrule}R1.8–R1.10. Continuous at $a$: $f(a)$ defined, limit exists, and they are equal. Hole, jump, or infinite discontinuity.\end{setrule}
+\begin{q}{7}
+For what value of $a$ is $f(x)=\begin{cases}ax+3,&x<2\\ x^2-a,&x\ge2\end{cases}$ continuous at $x=2$?
+\chfour{$-\dfrac13$}{$0$}{$\dfrac13$}{$1$}
+\end{q}
+\begin{q}{8}
+$h(x)=\dfrac{x^2-1}{x^2-3x+2}$ has
+\chone{vertical asymptotes at $x=1$ and $x=2$}{a removable discontinuity at $x=2$ and a vertical asymptote at $x=1$}{removable discontinuities at $x=1$ and $x=2$}{a removable discontinuity at $x=1$ and a vertical asymptote at $x=2$}
+\end{q}
+\section*{5\quad Infinite limits and limits at infinity}
+\begin{setrule}R1.11–R1.13. $\frac{c}{0}$ gives $\pm\infty$ (check signs). At $\pm\infty$ compare degrees; $\sqrt{x^2}=|x|$.\end{setrule}
+\begin{q}{9}
+$\displaystyle\lim_{x\to\infty}\frac{5x^3-x}{2-4x^3}$ is
+\chfour{$-\dfrac54$}{$0$}{$\dfrac52$}{$\infty$}
+\end{q}
+\begin{q}{10}
+$\displaystyle\lim_{x\to-\infty}\frac{\sqrt{9x^2+x}}{2x-1}$ is
+\chfour{$-\dfrac32$}{$0$}{$\dfrac32$}{$\dfrac92$}
+\end{q}
+\section*{6\quad The Intermediate Value Theorem}
+\begin{setrule}R1.14–R1.16. Continuous on $[a,b]$ and $k$ between $f(a)$ and $f(b)$ implies $f(c)=k$ for some $c$.\end{setrule}
+\begin{q}{11}
+$f$ is continuous on $[0,4]$ with values in the table. What is the least number of solutions $f(x)=1$ must have on $[0,4]$?\calcmark
+\begin{center}\small\renewcommand{\arraystretch}{1.35}\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+$x$ & 0 & 1 & 2 & 3 & 4 \\ \hline
+$f(x)$ & 3 & 0 & 4 & 5 & $-1$ \\ \hline
+\end{tabular}\end{center}
+\chfour{One}{Two}{Three}{Four}
+\end{q}
+\begin{q}{12}
+Let $f(x)=x^3-4x+2$. The IVT applied on which interval guarantees a zero of $f$ in $(1,2)$, and which value of $f$ makes it work?\calcmark
+\chone{$[1,2]$, since $f(1)=1$ and $f(2)=2$}{$[0,1]$, since $f(0)=2$ and $f(1)=-1$}{No interval works, since $f$ is not monotonic}{$[1,2]$, since $f(1)=-1$ and $f(2)=2$}
+\end{q}
+\clearpage\section*{Free response}
+Show all work. Justify every conclusion with calculus, and give decimal answers correct to three places.
+\begin{frq}{Question 1 --- Continuity and the IVT (9 points, no calculator)}
+Let $f$ be the function defined by $f(x)=\dfrac{x^2-x-6}{x-3}$ for $x\neq3$ and $f(3)=k$, where $k$ is a constant. Let $g(x)=x^3-2x-5$.
+\partlabel{a}Find $\lim_{x\to3}f(x)$. Show the work that leads to your answer.\workspace{1.6in}
+\partlabel{b}For what value of $k$ is $f$ continuous at $x=3$? Justify your answer using the definition of continuity.\workspace{1.6in}
+\partlabel{c}With the value of $k$ from part (b), is there a value $c$ in $[0,4]$ with $f(c)=g(c)$? Justify your answer.\workspace{1.6in}
+\partlabel{d}Find $\displaystyle\lim_{x\to\infty}\frac{g(x)}{2x^3+f(x)}$.\workspace{1.6in}
+\end{frq}
+\clearpage\section*{Answer key}
+\keystrip{\keyitem{1}{B}\keyitem{2}{D}\keyitem{3}{B}\keyitem{4}{C}\keyitem{5}{D}\keyitem{6}{B}\keyitem{7}{C}\keyitem{8}{D}\keyitem{9}{A}\keyitem{10}{A}\keyitem{11}{C}\keyitem{12}{D}}
+\vspace{4pt}
+\begin{keytable}
+\keysection{1. What a limit is}
+1 & B & Both one-sided limits are 3; the dot at height 1 is $f(3)$, not the limit. & R1.2\\
+2 & D & Values approach 5 from both sides. & R1.3\\
+\keysection{2. Evaluating limits algebraically}
+3 & B & $\frac{(x-2)(x+2)}{(x-2)(x+3)}=\frac{x+2}{x+3}\to\frac45$. & R1.5\\
+4 & C & Multiply by the conjugate: $\frac{1}{\sqrt{x+4}+2}\to\frac14$. & R1.5\\
+5 & D & $\frac{\sin3x}{3x}\cdot\frac{2x}{\sin2x}\cdot\cos2x\cdot\frac{3}{2}\to\frac32$. & R1.6\\
+\keysection{3. The squeeze theorem}
+6 & B & Both bounds tend to 3, so the squeeze theorem gives 3. & R1.7\\
+\keysection{4. Continuity and discontinuities}
+7 & C & $2a+3=4-a$ gives $a=\frac13$. & R1.10\\
+8 & D & $\frac{(x-1)(x+1)}{(x-1)(x-2)}$: the canceled factor is a hole, the surviving one an asymptote. & R1.9\\
+\keysection{5. Infinite limits and limits at infinity}
+9 & A & Equal degrees: ratio of leading coefficients $\frac{5}{-4}$. & R1.12\\
+10 & A & For $x<0$, $\sqrt{9x^2+x}=-x\sqrt{9+1/x}$; the ratio tends to $\frac{-3}{2}$. & R1.13\\
+\keysection{6. The Intermediate Value Theorem}
+11 & C & Values cross 1 on $(0,1)$, $(1,2)$ and $(3,4)$: at least three. & R1.16, \emph{calc}\\
+12 & D & $f$ is a polynomial (continuous) and changes sign on $[1,2]$: $-1<0<2$. & R1.15, \emph{calc}\\
+\end{keytable}
+\section*{Free-response scoring guide}
+\subsection*{Question 1: Continuity and the IVT (9 points)}
+\textbf{(a)} $\frac{x^2-x-6}{x-3}=\frac{(x-3)(x+2)}{x-3}=x+2$ for $x\neq3$, so $\lim_{x\to3}f(x)=3+2=5$.
+\begin{itemize}[leftmargin=1.6em,itemsep=0pt]
+\item 1 point: factors and cancels (or equivalent)
+\item 1 point: limit equals 5
+\end{itemize}
+\textbf{(b)} $k=5$. Then $f(3)=5$ is defined, $\lim_{x\to3}f(x)=5$ exists by part (a), and $\lim_{x\to3}f(x)=f(3)$, so $f$ is continuous at 3.
+\begin{itemize}[leftmargin=1.6em,itemsep=0pt]
+\item 1 point: $k=5$
+\item 1 point: justification names all three conditions: $f(3)$ defined, the limit exists, and they are equal
+\end{itemize}
+\textbf{(c)} Let $h(x)=f(x)-g(x)=(x+2)-(x^3-2x-5)$, which equals $x+2-x^3+2x+5$ for every $x$ once $k=5$. $h$ is a polynomial, so it is continuous on $[0,4]$. $h(0)=2-(-5)=7>0$ and $h(4)=6-51=-45<0$. Since $h(4)<0<h(0)$, the IVT gives $c$ in $(0,4)$ with $h(c)=0$, that is $f(c)=g(c)$.
+\begin{itemize}[leftmargin=1.6em,itemsep=0pt]
+\item 1 point: defines $h=f-g$ (or compares $f$ and $g$ at both endpoints)
+\item 1 point: $h(0)=7$ and $h(4)=-45$ (or equivalent values)
+\item 1 point: states that $h$ is continuous on $[0,4]$
+\item 1 point: applies the IVT to conclude yes
+\end{itemize}
+\textbf{(d)} $\frac{x^3-2x-5}{2x^3+x+2}$ has equal degrees, so the limit is $\frac12$.
+\begin{itemize}[leftmargin=1.6em,itemsep=0pt]
+\item 1 point: answer $\frac12$ with supporting work
+\end{itemize}
+\end{document}

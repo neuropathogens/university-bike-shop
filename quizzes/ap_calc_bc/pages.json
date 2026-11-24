@@ -1,0 +1,93 @@
+{
+ "ap-calc-bc-00-exam-guide.pdf": {
+  "1": 1,
+  "2": 1,
+  "3": 2,
+  "4": 2,
+  "5": 3,
+  "6": 4
+ },
+ "ap-calc-bc-01-limits-continuity-guide.pdf": {
+  "1": 2,
+  "2": 3,
+  "3": 3,
+  "4": 3,
+  "5": 4,
+  "6": 5,
+  "7": 5
+ },
+ "ap-calc-bc-02-differentiation-basics-guide.pdf": {
+  "1": 2,
+  "2": 2,
+  "3": 3,
+  "4": 3,
+  "5": 4
+ },
+ "ap-calc-bc-03-composite-implicit-inverse-guide.pdf": {
+  "1": 2,
+  "2": 2,
+  "3": 3,
+  "4": 3,
+  "5": 4
+ },
+ "ap-calc-bc-04-contextual-applications-guide.pdf": {
+  "1": 1,
+  "2": 2,
+  "3": 2,
+  "4": 3,
+  "5": 3
+ },
+ "ap-calc-bc-05-analytical-applications-guide.pdf": {
+  "1": 1,
+  "2": 2,
+  "3": 3,
+  "4": 3,
+  "5": 4,
+  "6": 4,
+  "7": 4
+ },
+ "ap-calc-bc-06-integration-accumulation-guide.pdf": {
+  "1": 2,
+  "2": 2,
+  "3": 3,
+  "4": 3,
+  "5": 4,
+  "6": 4,
+  "7": 5
+ },
+ "ap-calc-bc-07-differential-equations-guide.pdf": {
+  "1": 1,
+  "2": 2,
+  "3": 2,
+  "4": 3,
+  "5": 3,
+  "6": 4
+ },
+ "ap-calc-bc-08-applications-of-integration-guide.pdf": {
+  "1": 2,
+  "2": 2,
+  "3": 2,
+  "4": 3,
+  "5": 4,
+  "6": 4
+ },
+ "ap-calc-bc-09-parametric-polar-vector-guide.pdf": {
+  "1": 2,
+  "2": 2,
+  "3": 2,
+  "4": 3,
+  "5": 3,
+  "6": 4
+ },
+ "ap-calc-bc-10-series-guide.pdf": {
+  "1": 2,
+  "2": 2,
+  "3": 2,
+  "4": 3,
+  "5": 3,
+  "6": 3,
+  "7": 4,
+  "8": 4,
+  "9": 5
+ }
+}

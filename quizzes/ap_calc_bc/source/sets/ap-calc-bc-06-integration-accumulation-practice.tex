@@ -1,0 +1,165 @@
+\documentclass{apcalc}
+\title{Unit 6 Practice Set: Integration and Accumulation of Change}
+\author{Paul Wang}
+\date{November 2026}
+\volume{Practice Set 6 of 10 (topics 6.1–6.14)}
+\shorttitle{Unit 6 --- Practice Set}
+\begin{document}
+\maketitle
+\begin{abstract}
+Eighteen exam-style multiple-choice questions on Unit 6, grouped by the sections of the Unit 6 Study Guide, and one nine-point free-response question on an accumulation function defined by a graph. Items marked [calculator] allow a graphing calculator; the rest are no-calculator. Write each answer in the blank beside the number; the key on the last pages gives an answers-only strip, a reason and rule for every item, and the free-response scoring guide.
+\end{abstract}
+\scoringline{18 MC \quad\blank\ / 9 FR}{Exam pace: about 2 minutes per multiple-choice item (36 min) and 15 minutes for the free response.}
+\section*{1\quad Accumulation and Riemann sums}
+\begin{setrule}R6.1–R6.3. Multiply each height by its own width. Increasing: left sum under, right sum over. Concave up: trapezoid over.\end{setrule}
+\begin{q}{1}
+Water flows into a tank at rate $r(t)$ gallons per minute; selected values are in the table. Using a right Riemann sum with the three subintervals given by the table, the estimate of $\int_0^9 r(t)\,dt$ is
+\begin{center}\small\renewcommand{\arraystretch}{1.35}\begin{tabular}{|c|c|c|c|c|}
+\hline
+$t$ (min) & 0 & 3 & 5 & 9 \\ \hline
+$r(t)$ (gal/min) & 4 & 7 & 6 & 10 \\ \hline
+\end{tabular}\end{center}
+\chfour{$50$}{$61.5$}{$69$}{$73$}
+\end{q}
+\begin{q}{2}
+$f$ is increasing and concave down on $[0,4]$. Let $L$, $R$ and $T$ be the left, right and trapezoidal sums for $\int_0^4 f(x)\,dx$ with four equal subintervals, and $I$ the integral. Which ordering is correct?
+\chfour{$L<T<I<R$}{$L<I<T<R$}{$R<T<I<L$}{$T<L<I<R$}
+\end{q}
+\begin{q}{3}
+$\displaystyle\lim_{n\to\infty}\sum_{k=1}^{n}\left(1+\frac{2k}{n}\right)^3\frac{2}{n}$ is equal to
+\chfour{$\displaystyle\int_0^2x^3\,dx$}{$\displaystyle\int_1^3x^3\,dx$}{$\displaystyle\int_1^2x^3\,dx$}{$\displaystyle2\int_1^3x^3\,dx$}
+\end{q}
+\section*{2\quad Accumulation functions and the FTC}
+\begin{setrule}R6.4–R6.6. $\frac{d}{dx}\int_a^{u(x)}f(t)\,dt=f(u(x))u'(x)$. For $g=\int_a^xf$: $g'=f$, $g''=f'$, values are signed areas.\end{setrule}
+\begin{q}{4}
+$\dfrac{d}{dx}\displaystyle\int_0^{x^3}\sqrt{1+t^2}\,dt=$
+\chfour{$\sqrt{1+x^6}$}{$3x^2\sqrt{1+x^2}$}{$\sqrt{1+x^6}-1$}{$3x^2\sqrt{1+x^6}$}
+\end{q}
+\begin{q}{5}
+The graph of $f$ is shown. If $g(x)=\int_0^x f(t)\,dt$, then $g(5)=$
+\begin{center}\includegraphics[width=0.45\linewidth]{figs/u6-q5.pdf}\end{center}
+\chfour{$-1.5$}{$2.5$}{$4.5$}{$6.5$}
+\end{q}
+\begin{q}{6}
+For the same $g$, on which interval is $g$ both decreasing and concave down?
+\chfour{$(0,3)$}{$(5,7)$}{$(7,8)$}{$(3,5)$}
+\end{q}
+\begin{q}{7}
+If $\int_1^5 f(x)\,dx=8$ and $\int_3^5 f(x)\,dx=3$, then $\int_3^1\big(2f(x)+1\big)\,dx=$
+\chfour{$-12$}{$-11$}{$-10$}{$12$}
+\end{q}
+\section*{3\quad Antiderivatives and the FTC, part 2}
+\begin{setrule}R6.7–R6.8. $\int_a^bf=F(b)-F(a)$; amount at $b$ = amount at $a$ + $\int_a^b$ rate.\end{setrule}
+\begin{q}{8}
+A tank holds 50 liters at $t=0$. Water flows in at $r(t)=6t-t^2$ liters per hour for $0\le t\le3$. How many liters are in the tank at $t=3$?
+\chfour{$18$}{$59$}{$68$}{$86$}
+\end{q}
+\begin{q}{9}
+$\displaystyle\int_0^{\pi/2}(\sin x+2x)\,dx=$
+\chfour{$-1+\dfrac{\pi^2}{4}$}{$\dfrac{\pi^2}{4}$}{$1+\dfrac{\pi^2}{2}$}{$1+\dfrac{\pi^2}{4}$}
+\end{q}
+\begin{q}{10}
+$F'(x)=e^{-x^2}$ and $F(0)=1$. What is $F(2)$?\calcmark
+\chfour{$0.882$}{$1.018$}{$1.882$}{$3.000$}
+\end{q}
+\section*{4\quad Substitution and algebraic techniques}
+\begin{setrule}R6.9–R6.10. Substitute $u$ and change the limits; divide improper fractions; complete the square for arctan.\end{setrule}
+\begin{q}{11}
+$\displaystyle\int_0^1\frac{x}{x^2+1}\,dx=$
+\chfour{$\dfrac{\pi}{4}$}{$\dfrac12\ln2$}{$\ln2$}{$2\ln2$}
+\end{q}
+\begin{q}{12}
+$\displaystyle\int_0^{\pi/2}\sin^3x\cos x\,dx=$
+\chfour{$-\dfrac14$}{$\dfrac14$}{$\dfrac13$}{$\dfrac{\pi^4}{64}$}
+\end{q}
+\begin{q}{13}
+$\displaystyle\int\frac{dx}{x^2+6x+10}=$
+\chtwo{$\ln(x^2+6x+10)+C$}{$\dfrac12\arctan\dfrac{x+3}{2}+C$}{$\arctan(x+3)+C$}{$-\dfrac{1}{x+3}+C$}
+\end{q}
+\section*{5\quad Integration by parts and partial fractions}
+\begin{setrule}R6.11–R6.12. $\int u\,dv=uv-\int v\,du$ (LIATE). Distinct linear factors: $\frac{A}{x-a}+\frac{B}{x-b}$.\end{setrule}
+\begin{q}{14}
+$\displaystyle\int xe^{2x}\,dx=$
+\chtwo{$\dfrac{x}{2}e^{2x}-\dfrac14e^{2x}+C$}{$xe^{2x}-e^{2x}+C$}{$\dfrac{x}{2}e^{2x}+\dfrac14e^{2x}+C$}{$\dfrac{x^2}{4}e^{2x}+C$}
+\end{q}
+\begin{q}{15}
+$\displaystyle\int_1^e\ln x\,dx=$
+\chfour{$0$}{$1$}{$e-1$}{$e$}
+\end{q}
+\begin{q}{16}
+$\displaystyle\int\frac{x+7}{(x-1)(x+3)}\,dx=$
+\chtwo{$2\ln|x-1|-\ln|x+3|+C$}{$2\ln|x-1|+\ln|x+3|+C$}{$-\ln|x-1|+2\ln|x+3|+C$}{$\ln|x^2+2x-3|+C$}
+\end{q}
+\section*{6\quad Improper integrals and choosing a technique}
+\begin{setrule}R6.13–R6.14. Improper integrals are limits; $\int_1^\infty x^{-p}dx$ converges iff $p>1$, $\int_0^1x^{-p}dx$ iff $p<1$.\end{setrule}
+\begin{q}{17}
+$\displaystyle\int_2^\infty\frac{dx}{x(\ln x)^2}$ is
+\chfour{$\ln2$}{$\dfrac{1}{2\ln2}$}{$\dfrac{1}{\ln2}$}{divergent}
+\end{q}
+\begin{q}{18}
+Which of the following improper integrals converge? $$\text{I. }\int_1^\infty\frac{dx}{\sqrt x}\qquad\text{II. }\int_0^1\frac{dx}{\sqrt x}\qquad\text{III. }\int_0^\infty e^{-x}\,dx$$
+\chfour{I only}{II only}{II and III only}{I, II and III}
+\end{q}
+\clearpage\section*{Free response}
+Show all work. Justify every conclusion with calculus, and give decimal answers correct to three places.
+\begin{frq}{Question 1 --- An accumulation function from a graph (9 points, no calculator)}
+The graph of a continuous function $f$ on $[-2,6]$ consists of two line segments and a semicircle, as shown. Let $g(x)=3+\int_0^x f(t)\,dt$.
+\begin{center}\includegraphics[width=0.55\linewidth]{figs/u6-fr.pdf}\end{center}
+\partlabel{a}Find $g(-2)$ and $g(4)$.\workspace{1.6in}
+\partlabel{b}Find the $x$-coordinate of each relative extremum of $g$ on $(-2,6)$ and classify it. Justify your answers.\workspace{1.6in}
+\partlabel{c}Find the absolute maximum value of $g$ on $[-2,6]$. Justify your answer.\workspace{1.6in}
+\partlabel{d}Find the $x$-coordinate of each point of inflection of the graph of $g$ on $(-2,6)$. Justify your answer.\workspace{1.6in}
+\end{frq}
+\clearpage\section*{Answer key}
+\keystrip{\keyitem{1}{D}\keyitem{2}{A}\keyitem{3}{B}\keyitem{4}{D}\keyitem{5}{B}\keyitem{6}{D}\keyitem{7}{A}\keyitem{8}{C}\keyitem{9}{D}\keyitem{10}{C}\keyitem{11}{B}\keyitem{12}{B}\keyitem{13}{C}\keyitem{14}{A}\keyitem{15}{B}\keyitem{16}{A}\keyitem{17}{C}\keyitem{18}{C}}
+\vspace{4pt}
+\begin{keytable}
+\keysection{1. Accumulation and Riemann sums}
+1 & D & $7(3)+6(2)+10(4)=73$. & R6.2\\
+2 & A & Increasing: $L<I<R$. Concave down: $T<I$. And $T=\frac{L+R}{2}>L$. & R6.2\\
+3 & B & $\Delta x=\frac2n$, $x_k=1+\frac{2k}{n}$ runs from 1 to 3. & R6.3\\
+\keysection{2. Accumulation functions and the FTC}
+4 & D & $f(u)u'=\sqrt{1+x^6}\cdot3x^2$. & R6.4\\
+5 & B & Area $4.5$ above, minus $2$ below on $[3,5]$. & R6.5\\
+6 & D & $g'=f<0$ on $(3,8)$; $g''=f'<0$ on $(0,5)$. & R6.5\\
+7 & A & $\int_1^3f=5$; reversed and doubled: $-10$; plus $\int_3^1 1\,dx=-2$. & R6.6\\
+\keysection{3. Antiderivatives and the FTC, part 2}
+8 & C & $50+\int_0^3(6t-t^2)\,dt=50+18$. & R6.7\\
+9 & D & $[-\cos x+x^2]_0^{\pi/2}=(0+\frac{\pi^2}{4})-(-1)$. & R6.8\\
+10 & C & $F(2)=1+\int_0^2e^{-x^2}dx\approx1+0.882$. & R6.7, \emph{calc}\\
+\keysection{4. Substitution and algebraic techniques}
+11 & B & $u=x^2+1$: $\frac12\int_1^2\frac{du}{u}=\frac12\ln2$. & R6.9\\
+12 & B & $u=\sin x$: $\int_0^1u^3\,du=\frac14$. & R6.9\\
+13 & C & $x^2+6x+10=(x+3)^2+1$. & R6.10\\
+\keysection{5. Integration by parts and partial fractions}
+14 & A & Parts: $u=x$, $dv=e^{2x}dx$, $v=\frac12e^{2x}$. & R6.11\\
+15 & B & $[x\ln x-x]_1^e=(e-e)-(0-1)=1$. & R6.11\\
+16 & A & $A=\frac{8}{4}=2$, $B=\frac{4}{-4}=-1$. & R6.12\\
+\keysection{6. Improper integrals and choosing a technique}
+17 & C & $u=\ln x$: $\int_{\ln2}^\infty u^{-2}du=\frac{1}{\ln2}$. & R6.13\\
+18 & C & II is $p=\frac12<1$ near 0 (value 2); III equals 1; I is $p=\frac12\le1$ at infinity. & R6.13\\
+\end{keytable}
+\section*{Free-response scoring guide}
+\subsection*{Question 1: An accumulation function from a graph (9 points)}
+\textbf{(a)} $g(-2)=3+\int_0^{-2}f=3-\int_{-2}^0f=3-2=1$ (triangle of area 2). $g(4)=3+\int_0^4f=3-2\pi$ (semicircle of radius 2 below the axis, area $2\pi$).
+\begin{itemize}[leftmargin=1.6em,itemsep=0pt]
+\item 1 point: $g(-2)=1$
+\item 1 point: $g(4)=3-2\pi$
+\end{itemize}
+\textbf{(b)} $g'(x)=f(x)$. $f>0$ on $(-2,0)$ and $f<0$ on $(0,4)$: relative maximum at $x=0$. $f<0$ on $(0,4)$ and $f>0$ on $(4,6)$: relative minimum at $x=4$.
+\begin{itemize}[leftmargin=1.6em,itemsep=0pt]
+\item 1 point: relative maximum at $x=0$ because $g'=f$ changes from positive to negative
+\item 1 point: relative minimum at $x=4$ because $g'=f$ changes from negative to positive
+\end{itemize}
+\textbf{(c)} Candidates: endpoints and critical points $x=0,4$. $g(-2)=1$, $g(0)=3$, $g(4)=3-2\pi\approx-3.28$, $g(6)=3-2\pi+2=5-2\pi\approx-1.28$. The absolute maximum value is $g(0)=3$.
+\begin{itemize}[leftmargin=1.6em,itemsep=0pt]
+\item 1 point: considers the candidates $x=-2,0,4,6$
+\item 1 point: $g(6)=5-2\pi$ and the other values
+\item 1 point: absolute maximum 3 at $x=0$, with the comparison
+\end{itemize}
+\textbf{(d)} $g''=f'$. $f$ decreases on $(-2,2)$ and increases on $(2,6)$, so $g''$ changes sign only at $x=2$: the only inflection point.
+\begin{itemize}[leftmargin=1.6em,itemsep=0pt]
+\item 1 point: $x=2$
+\item 1 point: reason: $g''=f'$ changes sign ($f$ changes from decreasing to increasing) at $x=2$
+\end{itemize}
+\end{document}

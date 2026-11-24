@@ -49,3 +49,6 @@ next-env.d.ts
 
 # python
 __pycache__/
+
+# AP Calculus BC LaTeX build output
+/quizzes/ap_calc_bc/source/build/
