@@ -1,0 +1,660 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light">
+<script>try{document.documentElement.setAttribute("data-theme",localStorage.getItem("apah.theme")==="dark"?"dark":"light")}catch(e){document.documentElement.setAttribute("data-theme","light")}</script>
+<title>AP Literature Unit 1 Question Set: Prose Fiction</title>
+<meta name="description" content="AP English Literature Unit 1 question set (prose fiction): 24 exam-style multiple-choice questions on public-domain passages with in-depth explanations, plus a full Prose Fiction Analysis essay with a 6-point scoring guide and model response.">
+<link rel="icon" href="/favicon.ico" sizes="48x48" type="image/x-icon">
+<link rel="icon" href="/icon.svg" sizes="any" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-icon.png" sizes="180x180">
+<link rel="preload" href="/study/ap/ap-art-history/fonts/LM-regular.woff2" as="font" type="font/woff2" crossorigin>
+
+<style>
+@font-face{font-family:"Latin Modern";font-style:normal;font-weight:400;font-display:swap;src:url("/study/ap/ap-art-history/fonts/LM-regular.woff2") format("woff2")}
+@font-face{font-family:"Latin Modern";font-style:italic;font-weight:400;font-display:swap;src:url("/study/ap/ap-art-history/fonts/LM-italic.woff2") format("woff2")}
+@font-face{font-family:"Latin Modern";font-style:normal;font-weight:600 700;font-display:swap;src:url("/study/ap/ap-art-history/fonts/LM-bold.woff2") format("woff2")}
+@font-face{font-family:"Latin Modern";font-style:italic;font-weight:600 700;font-display:swap;src:url("/study/ap/ap-art-history/fonts/LM-bold-italic.woff2") format("woff2")}
+@font-face{font-family:"Latin Modern Mono";font-style:normal;font-weight:400 500;font-display:swap;src:url("/study/ap/ap-art-history/fonts/LM-mono.woff2") format("woff2")}
+@font-face{font-family:"Latin Modern Mono";font-style:normal;font-weight:600 700;font-display:swap;src:url("/study/ap/ap-art-history/fonts/LM-mono-bold.woff2") format("woff2")}
+
+:root{--bg:#fff;--fg:#000;--muted:#4a4a4a;--line:#c9c9c9;--plate:#f5f5f3;--hl:#fbe9a6;--link:#00008b;--ok:#1d5e20;--bad:#9b1c1c;
+  --serif:"Latin Modern","Computer Modern Serif","CMU Serif",Georgia,serif;--mono:"Latin Modern Mono","SFMono-Regular",Menlo,Consolas,monospace;
+  --gutter:clamp(16px,4vw,40px);color-scheme:light}
+:root[data-theme=dark]{--bg:#111110;--fg:#ecebe6;--muted:#a3a29c;--line:#34342f;--plate:#1b1b19;--hl:#4d4320;--link:#9db4ff;--ok:#8fd394;--bad:#ff9b9b;color-scheme:dark}
+*{box-sizing:border-box}
+html{background:var(--bg);scroll-padding-top:16px}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--serif);font-size:17px;line-height:1.5;font-kerning:normal;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+button,input,textarea{font:inherit;color:inherit}
+button{cursor:pointer}
+button:disabled{cursor:default}
+a{color:var(--link);text-underline-offset:3px;text-decoration-thickness:.5px}
+:focus-visible{outline:2px solid var(--link);outline-offset:2px}
+[hidden]{display:none!important}
+.sc{font-variant:small-caps;text-transform:lowercase;letter-spacing:.04em}
+.muted{color:var(--muted)}
+.katex{font-size:1.04em;text-rendering:auto}
+.katex-display{margin:.7em 0;overflow-x:auto;overflow-y:hidden;padding:2px 0}
+
+.runhead{display:flex;flex-wrap:wrap;justify-content:space-between;gap:4px 16px;max-width:1480px;margin:0 auto;padding:14px var(--gutter) 6px;font-size:14px;font-style:italic;color:var(--muted)}
+.runhead a{text-decoration:none}
+.runhead a:hover{text-decoration:underline}
+.runhead-actions{display:flex;flex-wrap:wrap;gap:4px 18px}
+.theme-btn{background:none;border:0;padding:0;font:inherit;font-style:italic;color:var(--link)}
+.theme-btn:hover{text-decoration:underline}
+.rule{max-width:1480px;margin:0 auto;padding-inline:var(--gutter)}
+.rule hr{margin:0;border:0;border-top:.5px solid var(--fg)}
+
+.wrap{max-width:860px;margin:0 auto;padding:0 var(--gutter) 80px}
+.title{text-align:center;padding:34px 0 22px}
+.title h1{margin:0;text-wrap:balance;font-size:clamp(32px,6vw,46px);line-height:1.1;font-weight:700}
+.title .sub{margin:8px 0 0;font-size:18px;font-variant:small-caps;letter-spacing:.03em}
+.title .meta{margin:4px 0 0;font-style:italic;color:var(--muted)}
+
+.tabs{display:flex;justify-content:center;gap:0;margin:0 0 26px;border-bottom:.5px solid var(--fg)}
+.tab{background:none;border:0;border-bottom:2.5px solid transparent;padding:8px 18px;margin-bottom:-1px;font-size:17px;color:var(--muted)}
+.tab[aria-selected=true]{color:var(--fg);border-bottom-color:var(--fg);font-weight:700}
+.tab:hover{color:var(--fg)}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:40px;padding:0 16px;border:1px solid var(--fg);background:var(--bg);font-family:var(--mono);font-size:14.5px;white-space:nowrap}
+.btn:hover:not(:disabled){background:var(--plate)}
+.btn:disabled{opacity:.35}
+.btn--solid{background:var(--fg);color:var(--bg)}
+.btn--solid:hover:not(:disabled){background:var(--fg);opacity:.85}
+.btn--lg{min-height:48px;font-size:15.5px;padding:0 22px}
+.kbd{display:inline-grid;place-items:center;min-width:22px;height:22px;padding:0 4px;border:1px solid currentColor;font-family:var(--mono);font-size:12px;opacity:.8}
+
+/* booktabs tables */
+.bt{border-collapse:collapse;margin:0 auto;font-variant-numeric:tabular-nums}
+.bt th,.bt td{padding:4px 12px;text-align:center;font-weight:400}
+.bt th[scope=row],.bt thead th:first-child{text-align:left}
+.bt thead tr{border-top:1px solid var(--fg);border-bottom:.5px solid var(--fg)}
+.bt tbody tr:last-child{border-bottom:1px solid var(--fg)}
+.bt-wrap{overflow-x:auto;margin:0 0 16px}
+
+/* setup */
+.setup{border-bottom:1.5px solid var(--fg);padding:4px 0 22px;display:grid;gap:18px}
+.setup h2,.results h2,.fr h2{margin:0;font-size:20px}
+.choice-row{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.choice{display:flex;flex-direction:column;align-items:flex-start;gap:2px;padding:12px 14px;border:1px solid var(--fg);background:var(--bg);text-align:left}
+.choice b{font-size:17px}
+.choice span{font-size:14.5px;font-style:italic;color:var(--muted)}
+.choice[aria-pressed=true]{background:var(--fg);color:var(--bg)}
+.choice[aria-pressed=true] span{color:var(--bg);opacity:.8}
+.checks{display:flex;flex-wrap:wrap;gap:8px 22px}
+.checks label{display:inline-flex;align-items:center;gap:8px;cursor:pointer}
+.checks input{width:17px;height:17px;margin:0;accent-color:var(--fg)}
+.setup-actions{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.note{margin:0;font-size:15px;color:var(--muted);font-style:italic}
+
+/* run */
+.bar{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:4px 16px;font-size:15px;color:var(--muted)}
+.track{height:3px;background:var(--line);margin:8px 0 14px}
+.track span{display:block;height:100%;background:var(--fg);transition:width .2s ease}
+.nav{display:grid;grid-template-columns:repeat(auto-fill,minmax(34px,1fr));gap:5px;margin:0 0 22px}
+.nav button{height:32px;padding:0;border:1px solid var(--line);background:var(--bg);font-family:var(--serif);font-size:14px;font-variant-numeric:tabular-nums}
+.nav button:hover{border-color:var(--fg)}
+.nav .is-answered{background:var(--plate);border-color:var(--fg)}
+.nav .is-right{background:var(--fg);color:var(--bg);border-color:var(--fg)}
+.nav .is-wrong{border:1.5px dashed var(--bad);color:var(--bad)}
+.nav .is-current{outline:2px solid var(--fg);outline-offset:1px}
+.q{border-top:1.5px solid var(--fg);padding-top:16px}
+.q-eyebrow{margin:0 0 6px;font-size:14px;color:var(--muted)}
+.q-prompt{margin:0 0 14px;font-size:20px;line-height:1.45;font-weight:400}
+.opts{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.opt{display:flex;align-items:center;gap:12px;width:100%;min-height:52px;padding:10px 14px;border:1px solid var(--fg);background:var(--bg);text-align:left;font-size:16.5px;line-height:1.4}
+.opt:hover:not(:disabled){background:var(--plate)}
+.opt .kbd{flex:none}
+.opt .mark{margin-left:auto;padding-left:6px;font-family:var(--mono);font-size:14px;white-space:nowrap}
+.opt.is-picked{border-width:2px;padding:9px 13px;background:var(--plate)}
+.opt.is-right{background:var(--fg);color:var(--bg);border-color:var(--fg)}
+.opt.is-wrong{border:1.5px dashed var(--bad);color:var(--bad);text-decoration:line-through;text-decoration-thickness:1px}
+.opt.is-wrong .mark,.opt.is-wrong .kbd{text-decoration:none}
+.opt.is-dim{opacity:.5}
+.fb{margin:14px 0 0;padding:12px 16px;border:.5px solid var(--fg);border-left:3px solid var(--ok)}
+.fb.is-wrong{border-left-color:var(--bad)}
+.fb p{margin:0}
+.fb .verdict{font-weight:700;margin-bottom:4px}
+.why p{margin:0 0 6px}
+.steps{margin:2px 0 8px;padding-left:22px}
+.steps li{margin:4px 0;padding-left:2px}
+.why .why-h{margin:10px 0 2px;font-size:14.5px;color:var(--muted)}
+.others{margin:0 0 4px;padding-left:20px}
+.others li{margin:5px 0}
+.others .tag{margin-left:6px;font-family:var(--mono);font-size:12.5px;color:var(--bad);white-space:nowrap}
+.links{margin-top:6px;font-size:15px}
+.step{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:10px;margin-top:20px}
+.step-right{display:flex;flex-wrap:wrap;gap:8px}
+.confirm{margin-top:14px;padding:12px 16px;border:1px solid var(--fg);display:flex;flex-wrap:wrap;align-items:center;gap:10px}
+.confirm p{margin:0;flex:1 1 220px}
+.keys{margin:18px 0 0;font-size:13.5px;color:var(--muted);text-align:center}
+.restart-line{margin:10px 0 0;font-size:14.5px;text-align:center}
+
+/* results */
+.results{padding-top:4px}
+.score{text-align:center;padding:10px 0 18px}
+.score-big{margin:0;font-size:clamp(48px,10vw,72px);font-weight:700;line-height:1;font-variant-numeric:tabular-nums}
+.score p{margin:6px 0 0}
+.res-actions{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin:0 0 22px}
+.res-filter{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:6px;border-bottom:1.5px solid var(--fg);padding-bottom:6px}
+.res-list{list-style:none;margin:0;padding:0}
+.res-list>li{border-bottom:.5px solid var(--line)}
+.res-list>li:last-child{border-bottom:1.5px solid var(--fg)}
+.res-list details{padding:10px 0}
+.res-list summary{display:grid;grid-template-columns:34px 22px minmax(0,1fr);gap:8px;cursor:pointer;list-style:none}
+.res-list summary::-webkit-details-marker{display:none}
+.res-n{font-weight:700;font-variant-numeric:tabular-nums}
+.res-ok{color:var(--ok);font-weight:700}
+.res-bad{color:var(--bad);font-weight:700}
+.res-body{padding:8px 0 4px 64px;font-size:15.5px}
+.res-body p{margin:0 0 4px}
+.res-body .bt-wrap{margin:4px 0 8px}
+.topics{margin:0 0 26px}
+.topics h2{margin:0 0 8px}
+.topics .bt{margin:0;width:100%}
+.topics .bt td:last-child,.topics .bt th:last-child{text-align:left}
+.topics .flag{color:var(--bad);font-style:italic}
+.composite{margin:0 0 26px;padding:12px 16px;border:.5px solid var(--fg);border-left:3px solid var(--fg)}
+.composite p{margin:0}
+.composite p+p{margin-top:4px}
+
+/* free response */
+.fr-intro{margin:0 0 6px;font-style:italic;color:var(--muted)}
+.fr{border-top:1.5px solid var(--fg);padding:18px 0 26px}
+.fr h2 small{font-weight:400;font-style:italic;color:var(--muted);font-size:15px;margin-left:6px}
+.fr-stem{margin:10px 0 6px;text-align:justify;hyphens:auto;-webkit-hyphens:auto}
+.part{margin:18px 0 0}
+.part-prompt{margin:0 0 8px}
+.part-prompt b{margin-right:4px}
+.part textarea{width:100%;min-height:150px;padding:12px 14px;border:1px solid var(--fg);border-radius:0;background:var(--bg);font-family:var(--serif);font-size:16.5px;line-height:1.55;resize:vertical}
+.part-meta{margin-top:4px;font-size:14px;color:var(--muted)}
+.sol{margin-top:12px;padding:12px 18px;border:.5px solid var(--fg)}
+.sol h3{margin:0 0 4px;font-size:15px}
+.sol p{margin:0 0 10px}
+.sol .crit{display:grid;grid-template-columns:28px minmax(0,1fr);gap:2px 8px;margin:0 0 10px;font-size:15.5px}
+.sol .crit dt{font-weight:700}
+.sol .crit dd{margin:0}
+.mark-row{display:flex;flex-wrap:wrap;align-items:center;gap:8px;font-size:15px}
+.seg{display:inline-flex;flex-wrap:wrap;max-width:100%;padding:1px 0 0 1px}
+.seg button{margin:-1px 0 0 -1px;min-width:44px;min-height:36px;padding:0 10px;border:1px solid var(--fg);background:var(--bg);font-family:var(--mono);font-size:14px}
+.seg button[aria-pressed=true]{position:relative;background:var(--fg);color:var(--bg)}
+.fr-actions{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:10px;margin-top:16px}
+.fr-score{font-size:16px}
+.fr-score b{font-variant-numeric:tabular-nums}
+.scale{margin-top:14px}
+.scale summary{cursor:pointer;font-size:15px;color:var(--muted);font-style:italic}
+.scale .bt{margin:8px 0 0}
+.scale .bt td:last-child,.scale .bt th:last-child{text-align:left}
+.foot{margin-top:40px;padding-top:12px;border-top:.5px solid var(--line);font-size:14px;color:var(--muted)}
+
+@media (max-width:640px){
+  .runhead-title{display:none}
+  .runhead-actions{width:100%;justify-content:space-between}
+  .title{padding:22px 0 16px}
+  .choice-row{grid-template-columns:1fr}
+  .q-prompt{font-size:18.5px}
+  .res-body{padding-left:0}
+  .keys{display:none}
+  .fr-stem{text-align:left}
+  .bt th,.bt td{padding:4px 7px}
+  .sol{padding:10px 12px}
+  .katex-display>.katex{font-size:.94em}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+@media print{.runhead,.rule,.tabs,.nav,.step,.keys,.restart-line,.res-actions{display:none!important}}
+/* generic quiz additions */
+.q-prompt p{margin:0}
+.q-prompt p+p{margin-top:8px}
+.q-ask{margin:10px 0 0!important;font-size:16px;font-style:italic;color:var(--muted)}
+.blank{display:inline-block;width:3.4em;height:1em;margin:0 .12em;border-bottom:1.5px solid currentColor;vertical-align:-.12em}
+.stim{position:relative;margin:0 0 16px;padding:12px 16px;border:.5px solid var(--fg);background:var(--plate);font-size:16.5px;line-height:1.55;max-height:60vh;overflow:auto}
+.stim-h{margin:0 0 6px!important;font-size:14px;color:var(--muted)}
+.stim p{margin:0 0 8px}
+.stim p:last-child{margin-bottom:0}
+u.ul{text-decoration-thickness:1px;text-underline-offset:3px}
+.qn{display:inline-block;min-width:1.4em;padding:0 .2em;margin:0 .15em;border:.5px solid var(--fg);font:600 11.5px/1.4 system-ui,-apple-system,sans-serif;text-align:center;vertical-align:.12em;font-variant-numeric:tabular-nums}
+.stim .qn[data-cur]{background:var(--fg);color:var(--bg)}
+.stim u[data-cur]{background:var(--hl);box-shadow:0 0 0 2px var(--hl)}
+.stim .ln{display:inline-block;min-width:1.3em;padding:0 .25em;margin-right:.25em;border:.5px solid var(--line);color:var(--muted);font:500 11px/1.4 system-ui,-apple-system,sans-serif;text-align:center;vertical-align:.12em;font-variant-numeric:tabular-nums}
+.stim .ln[data-cur]{background:var(--hl);color:var(--fg);border-color:var(--fg)}
+.stim-intro{font-style:italic;color:var(--muted);font-size:15px}
+.stim-sub{margin-top:12px!important}
+.stim-note{font-size:15px;color:var(--muted)}
+.tool{margin:0 0 10px;padding:6px 0 6px 12px;border-left:3px solid var(--muted);font-size:15px;color:var(--muted)}
+.fig .figcap{margin:0 0 6px;font-size:15px}
+.stim.free{max-height:none;overflow:visible}
+.bt th[colspan]{text-align:center}
+.fig-after{margin:12px 0 4px}
+.fig-after img{max-width:min(100%,420px);max-height:340px;width:auto;object-fit:contain}
+.stim .figcap{text-align:center;font-size:15px;margin:10px 0 4px}
+.stim .fig{margin:6px 0 10px}
+.stim .bt-wrap{margin:0 0 10px}
+.fig-img,.opt-img{max-width:100%;height:auto;background:#fff}
+.opt-img{display:block;max-width:140px}
+:root[data-theme=dark] .fig-img,:root[data-theme=dark] .opt-img{filter:invert(.92) hue-rotate(180deg)}
+.fig{margin:0 0 14px;text-align:center}
+.fig img{max-width:100%;height:auto;background:#fff}
+:root[data-theme=dark] .fig img{filter:invert(.92) hue-rotate(180deg)}
+.fig figcaption{font-size:14px;color:var(--muted);font-style:italic}
+.target{margin:4px 0 0;font-style:italic}
+.res-sum{display:block}
+.opt>span:nth-child(2){flex:1 1 auto;min-width:0;overflow-wrap:anywhere;-webkit-hyphens:auto;hyphens:auto}
+@media (max-width:640px){.opt .mark{white-space:normal;text-align:right;max-width:6.2em;line-height:1.25}}
+.sol>div{margin:0 0 10px}
+.crit-pts{margin:0 0 10px;font-size:15.5px}
+.crit-pts p{margin:0 0 4px}
+.crit-pts ul{margin:0 0 4px;padding-left:20px}
+</style>
+</head>
+<body>
+<div class="runhead"><span class="runhead-title">AP English Literature &middot; Unit 1: Prose Fiction &middot; Question Set</span><span class="runhead-actions"><a href="/study/#ap-english-literature">&larr;&nbsp;Study Library</a><a href="/study/ap/ap-english-literature/ap-lit-01-prose-fiction-questions.pdf">PDF version</a><button type="button" class="theme-btn" id="theme-btn">Dark mode</button></span></div>
+<div class="rule"><hr></div>
+
+<main class="wrap">
+  <header class="title">
+    <h1>Unit 1 <span style="white-space:nowrap">Question Set</span></h1>
+    <p class="sub">Prose Fiction</p>
+    <p class="meta">24 multiple-choice (about 26 min) &middot; 1 essay, Prose Fiction Analysis (40 min)</p>
+  </header>
+  <div class="tabs" role="tablist">
+    <button type="button" class="tab" role="tab" id="tab-mc" aria-controls="mc" aria-selected="true">Multiple choice</button>
+    <button type="button" class="tab" role="tab" id="tab-fr" aria-controls="fr" aria-selected="false">Free response</button>
+  </div>
+
+  <section id="mc" role="tabpanel" aria-labelledby="tab-mc"></section>
+  <section id="fr" role="tabpanel" aria-labelledby="tab-fr" hidden></section>
+
+  <p class="foot">From <a href="/study/ap/ap-english-literature/ap-lit-01-prose-fiction-questions.pdf"><i>Unit 1: Prose Fiction: Question Set</i></a> (PDF). Answers and rule tags are the document&rsquo;s own key; the explanations expand on it with the reasoning from the text and why each wrong choice is wrong. All passages are in the public domain. Topic links open the matching section of <a href="/study/ap/ap-english-literature/ap-lit-01-prose-fiction-guide.pdf">the guide</a>. Your answers are saved only in this browser.</p>
+</main>
+
+<script id="data" type="application/json">{"meta":{"key":"study.ap-lit.unit-1.v1","setupNote":"Allow about 65 seconds per question, including reading. The passage stays above each question, and the paragraph or line the question cites is highlighted.","topicPrefix":"","topicCol":"Topic","guideCol":"Guide section","byTopic":"By topic","topicNote":"Two or more misses on one topic: reread that section of the guide.","guide":"/study/ap/ap-english-literature/ap-lit-01-prose-fiction-guide.pdf","guideName":"the <i>Unit 1 guide<\/i>","target":{"label":"Target","mc":17},"frIntro":"Allow 40 minutes. Write the essay, then open the model response and scoring guide and give yourself 0&ndash;6: Row A thesis (0&ndash;1), Row B evidence and commentary (0&ndash;4), Row C sophistication (0&ndash;1).","frWord":"Question"},"topics":{"1.1":{"name":"Character","page":1},"1.2":{"name":"Setting","page":2},"1.3":{"name":"Plot and structure","page":3},"1.4":{"name":"The narrator","page":3},"1.5":{"name":"Word choice, imagery, and symbols","page":5},"1.6":{"name":"Comparison and irony","page":6},"1.7":{"name":"Literary argument: claims and evidence","page":6}},"sections":{"1":"Passage 1: James Joyce, “Araby”","2":"Passage 2: Kate Chopin, <i>The Awakening<\/i>"},"stims":{"t1":{"title":"Passage 1 &middot; James Joyce, “Araby”","html":"<p class=\"stim-intro\">The following passage is the opening of “Araby,” a short story by James Joyce published in 1914 in the collection <i>Dubliners<\/i>.<\/p><p><span class=\"ln\" data-qs=\"2\">1<\/span> North Richmond Street, being blind, was a quiet street except at the hour when the Christian Brothers’ School set the boys free. An uninhabited house of two storeys stood at the blind end, detached from its neighbours in a square ground. The other houses of the street, conscious of decent lives within them, gazed at one another with brown imperturbable faces.<\/p><p><span class=\"ln\" data-qs=\"3 4 5\">2<\/span> The former tenant of our house, a priest, had died in the back drawing-room. Air, musty from having been long enclosed, hung in all the rooms, and the waste room behind the kitchen was littered with old useless papers. Among these I found a few paper-covered books, the pages of which were curled and damp: <i>The Abbot<\/i>, by Walter Scott, <i>The Devout Communicant<\/i> and <i>The Memoirs of Vidocq<\/i>. I liked the last best because its leaves were yellow. The wild garden behind the house contained a central apple-tree and a few straggling bushes under one of which I found the late tenant’s rusty bicycle-pump. He had been a very charitable priest; in his will he had left all his money to institutions and the furniture of his house to his sister.<\/p><p><span class=\"ln\" data-qs=\"6 7\">3<\/span> When the short days of winter came dusk fell before we had well eaten our dinners. When we met in the street the houses had grown sombre. The space of sky above us was the colour of ever-changing violet and towards it the lamps of the street lifted their feeble lanterns. The cold air stung us and we played till our bodies glowed. Our shouts echoed in the silent street. The career of our play brought us through the dark muddy lanes behind the houses where we ran the gauntlet of the rough tribes from the cottages, to the back doors of the dark dripping gardens where odours arose from the ashpits, to the dark odorous stables where a coachman smoothed and combed the horse or shook music from the buckled harness. When we returned to the street light from the kitchen windows had filled the areas. If my uncle was seen turning the corner we hid in the shadow until we had seen him safely housed. Or if Mangan’s sister came out on the doorstep to call her brother in to his tea we watched her from our shadow peer up and down the street. We waited to see whether she would remain or go in and, if she remained, we left our shadow and walked up to Mangan’s steps resignedly. She was waiting for us, her figure defined by the light from the half-opened door. Her brother always teased her before he obeyed and I stood by the railings looking at her. Her dress swung as she moved her body and the soft rope of her hair tossed from side to side.<\/p><p><span class=\"ln\" data-qs=\"8 9\">4<\/span> Every morning I lay on the floor in the front parlour watching her door. The blind was pulled down to within an inch of the sash so that I could not be seen. When she came out on the doorstep my heart leaped. I ran to the hall, seized my books and followed her. I kept her brown figure always in my eye and, when we came near the point at which our ways diverged, I quickened my pace and passed her. This happened morning after morning. I had never spoken to her, except for a few casual words, and yet her name was like a summons to all my foolish blood.<\/p><p><span class=\"ln\" data-qs=\"10 11\">5<\/span> Her image accompanied me even in places the most hostile to romance. On Saturday evenings when my aunt went marketing I had to go to carry some of the parcels. We walked through the flaring streets, jostled by drunken men and bargaining women, amid the curses of labourers, the shrill litanies of shop-boys who stood on guard by the barrels of pigs’ cheeks, the nasal chanting of street-singers, who sang a come-all-you about O’Donovan Rossa, or a ballad about the troubles in our native land. These noises converged in a single sensation of life for me: I imagined that I bore my chalice safely through a throng of foes. Her name sprang to my lips at moments in strange prayers and praises which I myself did not understand. My eyes were often full of tears (I could not tell why) and at times a flood from my heart seemed to pour itself out into my bosom. I thought little of the future. I did not know whether I would ever speak to her or not or, if I spoke to her, how I could tell her of my confused adoration. But my body was like a harp and her words and gestures were like fingers running upon the wires.<\/p>"},"t2":{"title":"Passage 2 &middot; Kate Chopin, <i>The Awakening<\/i>","html":"<p class=\"stim-intro\">The following passage is a complete chapter (Chapter VI) of <i>The Awakening<\/i>, a novel by Kate Chopin published in 1899. Edna Pontellier, twenty-eight and married, is spending the summer at a resort on the Louisiana coast, where a young man, Robert, has asked her to go to the beach with him.<\/p><p><span class=\"ln\" data-qs=\"14\">1<\/span> Edna Pontellier could not have told why, wishing to go to the beach with Robert, she should in the first place have declined, and in the second place have followed in obedience to one of the two contradictory impulses which impelled her.<\/p><p><span class=\"ln\" data-qs=\"15\">2<\/span> A certain light was beginning to dawn dimly within her,—the light which, showing the way, forbids it.<\/p><p><span class=\"ln\">3<\/span> At that early period it served but to bewilder her. It moved her to dreams, to thoughtfulness, to the shadowy anguish which had overcome her the midnight when she had abandoned herself to tears.<\/p><p><span class=\"ln\" data-qs=\"17 18\">4<\/span> In short, Mrs. Pontellier was beginning to realize her position in the universe as a human being, and to recognize her relations as an individual to the world within and about her. This may seem like a ponderous weight of wisdom to descend upon the soul of a young woman of twenty-eight—perhaps more wisdom than the Holy Ghost is usually pleased to vouchsafe to any woman.<\/p><p><span class=\"ln\" data-qs=\"19 20 22\">5<\/span> But the beginning of things, of a world especially, is necessarily vague, tangled, chaotic, and exceedingly disturbing. How few of us ever emerge from such beginning! How many souls perish in its tumult!<\/p><p><span class=\"ln\" data-qs=\"21 22\">6<\/span> The voice of the sea is seductive; never ceasing, whispering, clamoring, murmuring, inviting the soul to wander for a spell in abysses of solitude; to lose itself in mazes of inward contemplation.<\/p><p><span class=\"ln\">7<\/span> The voice of the sea speaks to the soul. The touch of the sea is sensuous, enfolding the body in its soft, close embrace.<\/p>"},"t3":{"title":"Katherine Mansfield, “Miss Brill” (1920), excerpt","html":"<p><span class=\"ln\">1<\/span> Oh, how fascinating it was! How she enjoyed it! How she loved sitting here, watching it all! It was like a play. It was exactly like a play. Who could believe the sky at the back wasn’t painted? But it wasn’t till a little brown dog trotted on solemn and then slowly trotted off, like a little “theatre” dog, a little dog that had been drugged, that Miss Brill discovered what it was that made it so exciting. They were all on the stage. They weren’t only the audience, not only looking on; they were acting. Even she had a part and came every Sunday. No doubt somebody would have noticed if she hadn’t been there; she was part of the performance after all. How strange she’d never thought of it like that before! And yet it explained why she made such a point of starting from home at just the same time each week—so as not to be late for the performance—and it also explained why she had quite a queer, shy feeling at telling her English pupils how she spent her Sunday afternoons. No wonder! Miss Brill nearly laughed out loud. She was on the stage. She thought of the old invalid gentleman to whom she read the newspaper four afternoons a week while he slept in the garden. She had got quite used to the frail head on the cotton pillow, the hollowed eyes, the open mouth and the high pinched nose. If he’d been dead she mightn’t have noticed for weeks; she wouldn’t have minded. But suddenly he knew he was having the paper read to him by an actress! “An actress!” The old head lifted; two points of light quivered in the old eyes. “An actress—are ye?” And Miss Brill smoothed the newspaper as though it were the manuscript of her part and said gently; “Yes, I have been an actress for a long time.”<\/p><p><span class=\"ln\">2<\/span> The band had been having a rest. Now they started again. And what they played was warm, sunny, yet there was just a faint chill—a something, what was it?—not sadness—no, not sadness—a something that made you want to sing. The tune lifted, lifted, the light shone; and it seemed to Miss Brill that in another moment all of them, all the whole company, would begin singing. The young ones, the laughing ones who were moving together, they would begin, and the men’s voices, very resolute and brave, would join them. And then she too, she too, and the others on the benches—they would come in with a kind of accompaniment—something low, that scarcely rose or fell, something so beautiful—moving… And Miss Brill’s eyes filled with tears and she looked smiling at all the other members of the company. Yes, we understand, we understand, she thought—though what they understood she didn’t know.<\/p><p><span class=\"ln\">3<\/span> Just at that moment a boy and girl came and sat down where the old couple had been. They were beautifully dressed; they were in love. The hero and heroine, of course, just arrived from his father’s yacht. And still soundlessly singing, still with that trembling smile, Miss Brill prepared to listen.<\/p><p><span class=\"ln\">4<\/span> “No, not now,” said the girl. “Not here, I can’t.”<\/p><p><span class=\"ln\">5<\/span> “But why? Because of that stupid old thing at the end there?” asked the boy. “Why does she come here at all—who wants her? Why doesn’t she keep her silly old mug at home?”<\/p><p><span class=\"ln\">6<\/span> “It’s her fu-ur which is so funny,” giggled the girl. “It’s exactly like a fried whiting.”<\/p><p><span class=\"ln\">7<\/span> “Ah, be off with you!” said the boy in an angry whisper. Then: “Tell me, ma petite chère—”<\/p><p><span class=\"ln\">8<\/span> “No, not here,” said the girl. “Not yet.”<\/p><p><span class=\"ln\">9<\/span> On her way home she usually bought a slice of honey-cake at the baker’s. It was her Sunday treat. Sometimes there was an almond in her slice, sometimes not. It made a great difference. If there was an almond it was like carrying home a tiny present—a surprise—something that might very well not have been there. She hurried on the almond Sundays and struck the match for the kettle in quite a dashing way.<\/p><p><span class=\"ln\">10<\/span> But to-day she passed the baker’s by, climbed the stairs, went into the little dark room—her room like a cupboard—and sat down on the red eiderdown. She sat there for a long time. The box that the fur came out of was on the bed. She unclasped the necklet quickly; quickly, without looking, laid it inside. But when she put the lid on she thought she heard something crying.<\/p>","cls":"free"}},"mc":[{"n":1,"prompt":"The narrator of the passage is best described as","options":["a boy reporting events as they happen to him","an adult recalling his boyhood infatuation and at moments judging it","an omniscient narrator who moves among the children’s thoughts","a neighbor observing the boy from across the street"],"answer":1,"sec":"1","topic":"1.4","tag":"1.4 Retrospective narrator","stim":"t1","ex":{"idea":"“Araby” is a retrospective first-person narration: a grown man tells of his boyhood, and his adult vocabulary and judgments show through.","steps":["Everything is in the past tense, and the style (“imperturbable,” “converged in a single sensation of life”) is not a child’s.","He judges as he recalls: “my foolish blood,” “my confused adoration,” “I could not tell why.”"],"others":{"0":"the past tense and the adult diction rule out a boy narrating as events happen.","2":"the narrator is “I” and knows only his own feelings; he can only watch the girl from the shadow.","3":"the narrator is the boy himself, grown up (“I lay on the floor,” “my heart leaped”)."}}},{"n":2,"prompt":"In the first sentence of paragraph 1, the word “blind” most nearly suggests a street that","options":["is too dark to see at night","is unknown to visitors","is dangerous to the children","has no way through, hinting at lives that lead nowhere"],"answer":3,"sec":"1","topic":"1.5","tag":"1.5 Connotation","stim":"t1","ex":{"idea":"A “blind” street is a dead end; in a story about frustrated longing, the word also suggests a life that leads nowhere and cannot see.","steps":["Literally: the street is closed at one end (“the blind end”).","Figuratively: the respectable, inward-looking street offers no outlet, which is exactly the boy’s situation."],"others":{"0":"the street is dark in winter, but “blind” here is the term for a dead end, repeated in “the blind end.”","1":"nothing suggests the street is hidden from outsiders.","2":"the street is “quiet”; the danger is in the lanes behind it, later."}}},{"n":3,"prompt":"The details in paragraph 2 (the musty air, the “old useless papers,” the damp books, the rusty bicycle-pump) chiefly create an atmosphere of","options":["decay and neglect left behind by the past","scholarly richness that inspires the boy","comfortable domestic order","suspense about a crime"],"answer":0,"sec":"1","topic":"1.2","tag":"1.2 Atmosphere","stim":"t1","ex":{"idea":"Atmosphere is the mood created by setting: here musty, damp, rusted, and abandoned.","steps":["Air “long enclosed,” “old useless papers,” books “curled and damp,” a “rusty bicycle-pump.”","Everything left by the dead priest is decaying, an atmosphere that weighs on the house the boy lives in."],"others":{"1":"the books are damp and the papers “useless”; the boy likes one only because its pages are yellow.","2":"an untended “wild garden” and a littered waste room are disorder, not comfort.","3":"nothing hints at a crime; the priest simply died."}}},{"n":4,"prompt":"The narrator’s comment that he liked <i>The Memoirs of Vidocq<\/i> best “because its leaves were yellow” (paragraph 2) suggests that as a boy he","options":["was a careful student of history","disliked the priest who owned the books","was drawn to things by their aura rather than their substance","knew the books were valuable"],"answer":2,"sec":"1","topic":"1.1","tag":"1.1 Indirect characterization","stim":"t1","ex":{"idea":"Indirect characterization: the boy prefers a book because of how its pages look, not what it says.","steps":["He chooses the memoirs “because its leaves were yellow.”","That romantic attraction to surfaces and atmosphere anticipates how he idealizes the girl he barely knows."],"others":{"0":"a careful student would choose by content; he chooses by color.","1":"nothing shows dislike; the narrator only reports what the priest left.","3":"he values the book for its yellow pages, not its worth."}}},{"n":5,"prompt":"The last sentence of paragraph 2 (“He had been a very charitable priest …”) is best read as","options":["sincere praise that the narrator expects readers to share","a foreshadowing of the boy’s own career in the church","quietly ironic, since the priest’s “charity” went to institutions while his sister received only furniture","a direct quotation of the priest’s will"],"answer":2,"sec":"1","topic":"1.6","tag":"1.6 Irony","stim":"t1","ex":{"idea":"Verbal irony: the narrator calls the priest “very charitable” and then gives a detail that undercuts the label.","steps":["His money went to institutions; his own sister got only the furniture.","Set against the musty, neglected house, “charitable” sounds like the public reputation, not the private reality: a dry, ironic note typical of Dubliners."],"others":{"0":"the deadpan placement of the will after the rusty pump invites doubt rather than admiration.","1":"nothing suggests the boy will join the church.","3":"there are no quotation marks; it is the narrator’s summary."}}},{"n":6,"prompt":"The long sentence beginning “The career of our play” (paragraph 3) is constructed chiefly to","options":["carry the reader through a sequence of places, imitating the boys’ run through the lanes","slow the narrative to a single motionless image","introduce the rough tribes as main characters","contrast the boys’ play with their schoolwork"],"answer":0,"sec":"1","topic":"1.5","tag":"1.5 Syntax","stim":"t1","ex":{"idea":"Syntax can imitate action: the sentence’s chain of “through … to … to …” moves the reader along the boys’ route.","steps":["“through the dark muddy lanes … to the back doors of the dark dripping gardens … to the dark odorous stables …”","One long cumulative sentence keeps going the way the game does, place after place."],"others":{"1":"the sentence moves quickly through many places; it does not freeze on one image.","2":"the “rough tribes” are a passing obstacle, never seen again in the passage.","3":"school is mentioned only in paragraph 1; this sentence is all play."}}},{"n":7,"prompt":"In paragraph 3, the boys watch Mangan’s sister “from our shadow” while her figure is “defined by the light from the half-opened door.” The contrast chiefly serves to","options":["show that the boys are afraid of the dark","reveal that Mangan’s sister is unaware of the boys","establish that the story takes place in summer","present her as an illuminated, almost idealized figure seen from the dark"],"answer":3,"sec":"1","topic":"1.5","tag":"1.5 Imagery","stim":"t1","ex":{"idea":"Light and dark imagery: the boys watch “from our shadow” while the girl is “defined by the light.”","steps":["The “dark” lanes, gardens, and stables set up a world of shadow.","Against it she appears framed in light, like an image on an altar, the first sign of how the boy idealizes her."],"others":{"0":"they play happily in the dark; they hide from the uncle, not from darkness.","1":"she is “waiting for us,” so she knows they are there.","2":"the passage says “the short days of winter.”"}}},{"n":8,"prompt":"In paragraph 4, the boy’s actions (lying on the floor to watch her door with the blind “pulled down to within an inch,” following her, and passing her) characterize him as","options":["confident and openly courting her","devoted but secretive and unable to approach her","indifferent to her except as a neighbor","resentful of her attention to others"],"answer":1,"sec":"1","topic":"1.1","tag":"1.1 Character","stim":"t1","ex":{"idea":"Characterization through action: he watches, follows, and passes her, but never approaches.","steps":["He hides behind the blind “so that I could not be seen,” then hurries to keep her in view.","He passes her “where our ways diverged”: devotion without contact."],"others":{"0":"he hides and has never spoken to her beyond a few casual words.","2":"“my heart leaped” and his daily routine show the opposite of indifference.","3":"nothing suggests resentment; his feeling is adoration."}}},{"n":9,"prompt":"The sentence “I had never spoken to her, except for a few casual words, and yet her name was like a summons to all my foolish blood” (paragraph 4) chiefly emphasizes","options":["the gap between the slightness of the relationship and the force of his feeling","that the girl has rejected him","that the narrator regrets speaking to her","the narrator’s skill as a speaker"],"answer":0,"sec":"1","topic":"1.5","tag":"1.5 Word choice","stim":"t1","ex":{"idea":"The sentence balances the slightness of the relationship against the force of his feeling.","steps":["“I had never spoken to her, except for a few casual words …”","“… and yet her name was like a summons to all my foolish blood.” The “and yet” measures the gap."],"others":{"1":"she cannot reject what she has never been offered; they have barely spoken.","2":"he regrets nothing about speaking; he has hardly spoken.","3":"the sentence says he has not spoken to her at all, beyond casual words."}}},{"n":10,"prompt":"In paragraph 5, the statement “I imagined that I bore my chalice safely through a throng of foes,” together with words such as “litanies” and “prayers and praises,” presents the boy’s love as","options":["a duty imposed on him by his aunt","a joke he shares with the shop-boys","a sacred quest, with the girl as an object of worship","a political cause like the ballads he hears"],"answer":2,"sec":"1","topic":"1.6","tag":"1.6 Allusion","stim":"t1","ex":{"idea":"Religious diction and allusion (chalice, litanies, prayers, praises) turn the boy’s love into worship and a knightly quest.","steps":["A chalice is the cup of the Mass, and carrying it “through a throng of foes” recalls the Grail romances.","The girl becomes something holy; a shopping trip becomes a sacred journey."],"others":{"0":"the aunt imposes the errand, but the chalice is the boy’s own private imagining.","1":"he “did not understand” his own prayers; nothing is shared or joking.","3":"the ballads about Irish troubles are part of the noise he moves through, not the meaning of his love."}}},{"n":11,"prompt":"The description of the Saturday markets in paragraph 5 chiefly serves to","options":["show that the boy enjoys shopping with his aunt","set the coarse, noisy city against the boy’s private, idealized devotion","introduce characters who will matter later in the story","explain the economic causes of the troubles in Ireland"],"answer":1,"sec":"1","topic":"1.2","tag":"1.2 Setting","stim":"t1","ex":{"idea":"Setting as contrast: the markets are “places the most hostile to romance.”","steps":["Drunken men, bargaining women, curses, shrill shop-boys, barrels of pigs’ cheeks.","His devotion is untouched by it; the coarse world sets off his private, idealized love."],"others":{"0":"he goes because he “had to” carry parcels.","2":"the market people are a crowd, not characters who return.","3":"the ballads are background noise; the passage offers no analysis of Irish history."}}},{"n":12,"prompt":"The final sentence of the passage (“my body was like a harp …”) suggests that the boy experiences his love as something","options":["he has carefully planned","that bores him","shared equally by the girl","that plays upon him from outside his control"],"answer":3,"sec":"1","topic":"1.6","tag":"1.6 Simile","stim":"t1","ex":{"idea":"In the simile, he is the harp and her words and gestures are the fingers: he is the instrument, played from outside.","steps":["A harp makes no music by itself.","His love is something done to him, beyond his control, which fits “I could not tell why.”"],"others":{"0":"the passage stresses confusion and impulse, not planning.","1":"the image is of intense feeling, not boredom.","2":"the girl does not know of his feelings; the image is one-sided."}}},{"n":13,"prompt":"Which claim about the passage as a whole is best supported?","options":["The adult narrator regards his boyhood devotion with both tenderness and gentle irony.","The narrator regrets that he never married Mangan’s sister.","The boy’s love is openly returned by the girl.","The neighborhood is presented as a place that encourages romance."],"answer":0,"sec":"1","topic":"1.7","tag":"1.7 Literary argument","stim":"t1","ex":{"idea":"The narration lovingly renders the boy’s devotion while the older voice marks it as foolish and confused: tenderness and gentle irony together.","steps":["Tenderness: the lyrical violet sky, the light at the door, the harp.","Irony: “foolish blood,” “confused adoration,” “I could not tell why,” “prayers … which I myself did not understand.”"],"others":{"1":"marriage is never mentioned; this goes beyond the text.","2":"they have barely spoken; she does not know.","3":"the street is “imperturbable” and the markets “hostile to romance.”"}}},{"n":14,"prompt":"In paragraph 1, the narrator’s statement that Edna “could not have told why” she acted as she did indicates that the narrator","options":["is Edna herself, speaking years later","knows nothing of Edna’s thoughts","understands Edna’s conflict more clearly than Edna can","doubts that Edna went to the beach at all"],"answer":2,"sec":"2","topic":"1.4","tag":"1.4 Omniscient narrator","stim":"t2","ex":{"idea":"The narrator can describe Edna’s “two contradictory impulses” even though Edna herself “could not have told why” she acted.","steps":["Edna cannot explain her refusal and her obedience.","The narrator names the conflict, standing above her understanding: an omniscient narrator."],"others":{"0":"the narration is in the third person (“her,” “Mrs. Pontellier”).","1":"the narrator reports her bewilderment, dreams, and anguish.","3":"the narrator states that she “followed.”"}}},{"n":15,"prompt":"The description of “the light which, showing the way, forbids it” (paragraph 2) suggests that Edna’s new awareness","options":["is a religious conversion that ends her doubts","reveals a possible path while also making clear that the path is prohibited","is the sunrise she sees from the beach","is a lesson Robert teaches her"],"answer":1,"sec":"2","topic":"1.6","tag":"1.6 Paradox","stim":"t2","ex":{"idea":"A paradox: the light “showing the way” also “forbids it.”","steps":["New awareness shows Edna another way to live.","The same awareness shows her that society forbids it, so the light both guides and blocks."],"others":{"0":"it “served but to bewilder her”; it ends nothing.","2":"the light is “within her,” figurative, not literal.","3":"the light dawns “within her”; Robert is only the occasion."}}},{"n":16,"prompt":"The chapter’s division into very short paragraphs, several of a single sentence, chiefly serves to","options":["speed up a sequence of physical actions","reproduce a conversation between Edna and Robert","list the events of a single day","isolate each stage of an emerging awareness and give it weight"],"answer":3,"sec":"2","topic":"1.3","tag":"1.3 Structure","stim":"t2","ex":{"idea":"Structure: many one- or two-sentence paragraphs give each step of the awakening its own space and weight.","steps":["Impulse → dawning light → bewilderment → realization → its danger → the sea.","Separated, each reads as a stage, and the white space slows the reader."],"others":{"0":"almost nothing physical happens in the chapter; it is inward.","1":"there is no dialogue in the chapter.","2":"the paragraphs trace a state of mind, not a day’s events."}}},{"n":17,"prompt":"The remark that this is “perhaps more wisdom than the Holy Ghost is usually pleased to vouchsafe to any woman” (paragraph 4) is best described as","options":["wry irony aimed at conventional assumptions about women","sincere religious reverence","the narrator’s contempt for Edna’s foolishness","a neutral report of Edna’s education"],"answer":0,"sec":"2","topic":"1.6","tag":"1.6 Verbal irony","stim":"t2","ex":{"idea":"Verbal irony: “more wisdom than the Holy Ghost is usually pleased to vouchsafe to any woman” mocks the assumption that women are not granted such insight.","steps":["The narrator has just treated Edna’s realization seriously.","The inflated religious phrasing exposes the condescension of the conventional view rather than endorsing it."],"others":{"1":"the tone is dry; “usually pleased to vouchsafe” is mock-solemn.","2":"the narrator treats her awakening as profound, not foolish.","3":"the phrasing is pointed and evaluative, not neutral."}}},{"n":18,"prompt":"The phrase “In short” at the start of paragraph 4 marks a shift from","options":["dialogue to description","figurative description of Edna’s state to the narrator’s plain summary of it","the present to a memory of Edna’s childhood","Edna’s perspective to Robert’s"],"answer":1,"sec":"2","topic":"1.3","tag":"1.3 Shift","stim":"t2","ex":{"idea":"“In short” signals a summary: the narrator translates the figurative “light” into plain terms.","steps":["Paragraphs 2–3: a light dawning, dreams, “shadowy anguish.”","Paragraph 4: “she was beginning to realize her position in the universe as a human being.”"],"others":{"0":"there is no dialogue in the chapter.","2":"paragraph 4 stays in the same summer; it does not go back to childhood.","3":"Robert is not mentioned after paragraph 1."}}},{"n":19,"prompt":"In paragraph 5, the exclamations “How few of us ever emerge from such beginning! How many souls perish in its tumult!” chiefly serve to","options":["reveal that Edna will drown later that day","quote Edna’s words to Robert","generalize from Edna’s experience to human experience, raising its stakes","mock readers who have never had such an experience"],"answer":2,"sec":"2","topic":"1.4","tag":"1.4 Narrator’s generalization","stim":"t2","ex":{"idea":"The narrator’s exclamations move from Edna to “us” and “souls,” widening the stakes.","steps":["“How few of us ever emerge …” includes the reader.","“How many souls perish …” makes the awakening a danger to anyone who undergoes it."],"others":{"0":"the lines are general, not a prediction about that day; nothing in the chapter reports a drowning.","1":"there are no quotation marks; it is the narrator speaking.","3":"“us” includes the narrator; the tone is sympathetic, not mocking."}}},{"n":20,"prompt":"The series “vague, tangled, chaotic, and exceedingly disturbing” (paragraph 5) is effective chiefly because it","options":["softens the description into comfort","describes the weather at the resort","contradicts the narrator’s earlier claims","accumulates difficulty, so the sentence enacts the disorder it describes"],"answer":3,"sec":"2","topic":"1.5","tag":"1.5 Diction","stim":"t2","ex":{"idea":"A series of adjectives, each heavier than the last, enacts the disorder it describes.","steps":["“vague, tangled, chaotic, and exceedingly disturbing.”","The list grows in force and length, so the sentence itself feels tangled."],"others":{"0":"each word is harsher than the last.","1":"the subject is “the beginning of things,” an inner state.","2":"it extends paragraph 3’s “bewilder” and “anguish.”"}}},{"n":21,"prompt":"In paragraph 6, the personification of the sea’s “voice” as “seductive … inviting the soul to wander” presents the sea as","options":["a threat of storms that Edna must avoid","a tempter calling Edna toward solitude and inward life","a symbol of her husband’s authority","a source of comic relief"],"answer":1,"sec":"2","topic":"1.6","tag":"1.6 Personification","stim":"t2","ex":{"idea":"Personification: the sea has a “seductive” voice “inviting the soul to wander … in abysses of solitude.”","steps":["“Seductive” and “inviting” make the sea a tempter.","What it offers is solitude and “inward contemplation,” the very thing Edna’s awakening seeks."],"others":{"0":"the sea “whispers” and “murmurs”; no storm is described.","2":"the sea calls her away from her social role, not toward her husband.","3":"the passage’s language here is lyrical and serious."}}},{"n":22,"prompt":"The movement from paragraph 5 to paragraph 6 is best described as a shift from","options":["abstract reflection on beginnings to sensuous description of the sea","a description of Robert to a description of Edna","dialogue to stage directions","the present tense to a flashback"],"answer":0,"sec":"2","topic":"1.3","tag":"1.3 Shift","stim":"t2","ex":{"idea":"Paragraph 5 generalizes about “the beginning of things”; paragraph 6 turns to the sea’s sounds and invitation.","steps":["Abstract: “vague, tangled, chaotic.”","Sensuous: “whispering, clamoring, murmuring.”"],"others":{"1":"neither paragraph describes Robert or Edna’s appearance.","2":"it is a novel; there is neither.","3":"the sea paragraphs are in the present tense and describe no past event."}}},{"n":23,"prompt":"The final paragraph, in which the sea first “speaks to the soul” and then enfolds “the body in its soft, close embrace,” suggests that Edna’s awakening is","options":["purely intellectual","a memory she wishes to forget","both spiritual and physical","entirely imagined by the narrator"],"answer":2,"sec":"2","topic":"1.5","tag":"1.5 Imagery","stim":"t2","ex":{"idea":"The final paragraph moves from soul to body: the sea “speaks to the soul,” then its “touch” enfolds “the body.”","steps":["“speaks to the soul” = spiritual awakening.","“sensuous, enfolding the body in its soft, close embrace” = physical awakening."],"others":{"0":"the closing words are about touch and the body.","1":"the paragraph is in the present tense and the awakening is just beginning.","3":"the narrator presents the awakening as real, if bewildering."}}},{"n":24,"prompt":"Which claim about the chapter is best supported by the text?","options":["The narrator disapproves of Edna’s growing thoughtfulness.","Edna fully understands her position by the end of the chapter.","The sea represents the safety of domestic life.","The narrator presents Edna’s awakening as both momentous and dangerous."],"answer":3,"sec":"2","topic":"1.7","tag":"1.7 Literary argument","stim":"t2","ex":{"idea":"The chapter treats the awakening as profound (“her position in the universe”) and perilous (“perish,” “abysses,” “mazes”).","steps":["Momentous: a new understanding of herself “as an individual.”","Dangerous: “How many souls perish in its tumult!”"],"others":{"0":"the irony in paragraph 4 is aimed at conventional views, not at Edna.","1":"the light “served but to bewilder her.”","2":"the sea invites the soul to “wander” and “lose itself,” away from domestic life."}}}],"fr":[{"n":2,"mode":"points","kind":"Prose Fiction Analysis","mins":40,"head":"Prose Fiction Analysis &middot; 6 points &middot; 40 minutes","guide":[],"stem":"<p>The following excerpt is from “Miss Brill,” a short story by Katherine Mansfield first published in 1920. Miss Brill, an Englishwoman who earns her living in France as a teacher and reader, is spending her customary Sunday afternoon in a public garden, where a band plays. Read the passage carefully. Then, in a well-written essay, analyze how Mansfield uses literary elements and techniques to convey the complexity of Miss Brill’s sense of belonging.<\/p><p>In your response you should do the following:<\/p><ul><li>Respond to the prompt with a thesis that presents a defensible interpretation.<\/li><li>Select and use evidence to support your line of reasoning.<\/li><li>Explain how the evidence supports your line of reasoning.<\/li><li>Use appropriate grammar and punctuation in communicating your argument.<\/li><\/ul>","parts":[{"label":"Essay","max":6,"prompt":"Write the full essay: thesis, body paragraphs, and a brief conclusion.","solution":"<p><b>A 6-point response, in outline.<\/b><\/p><p><b>Thesis.<\/b> Mansfield lets us feel Miss Brill’s Sunday communion from inside her own exclamations, then breaks it with a single overheard remark, revealing a sense of belonging that is vivid and sincere yet sustained entirely by her own imagination, so fragile that when it collapses she cannot even admit her own grief.<\/p><p><b>Body 1: the play.<\/b> The free indirect exclamations (“Oh, how fascinating it was!”) put us inside her delight, and the stage metaphor converts loneliness into membership: “Even she had a part.” Yet the metaphor exposes its own weakness. She assures herself that “No doubt somebody would have noticed” her absence, the hedge of someone who is not sure; and her indifference to the invalid gentleman, whom she “mightn’t have noticed” if he had died, is exactly the indifference the garden will soon show her.<\/p><p><b>Body 2: the music.<\/b> The second paragraph rises toward a chorus in which “all the whole company” will sing, but Mansfield plants a “faint chill” that Miss Brill keeps renaming (“not sadness—no, not sadness”). The repetition is denial, and the ironic coda, “though what they understood she didn’t know,” marks the gap between her feeling of understanding and any shared meaning.<\/p><p><b>Body 3: the fall.<\/b> She casts the couple as “hero and heroine,” so their dialogue arrives as the play’s real script, and in it she is “that stupid old thing.” Mansfield gives her no reply and no thoughts; the narration goes silent. The final paragraph’s quiet details (the skipped honey-cake, the “room like a cupboard”) shrink her world back to its true size, and the “crying” she hears from the fur’s box is her own grief, displaced onto the one companion she has.<\/p><p><b>Why it earns Row C.<\/b> The essay holds the tension throughout: the belonging is both genuine as feeling and false as fact, and the narration’s shift from her voice to silence enacts the shift.<\/p>","rubric":"<p><b>Scoring guide.<\/b> Score each row separately and add them: Row A 0&ndash;1, Row B 0&ndash;4, Row C 0&ndash;1.<\/p><p><b>A. Thesis (1).<\/b> <i>Earns the point(s):<\/i> A defensible interpretation of the <i>complexity<\/i> of her belonging, e.g., that the sense of belonging Miss Brill builds from watching others is real to her but rests on an illusion that one overheard remark is enough to destroy; or that she belongs to the scene only as a spectator who has cast herself as a performer.<br><i>Does not earn the point(s):<\/i> “Mansfield uses imagery, dialogue, and setting to show Miss Brill’s sense of belonging”; “Miss Brill is lonely”; a summary of the ending.<\/p><p><b>B. Evidence and commentary (4).<\/b> <i>Earns the point(s):<\/i> <b>4<\/b>: specific references from across the passage (the play metaphor and “Even she had a part”; the invalid gentleman, whom she would not miss if he died; the music’s “faint chill”; “we understand … though what they understood she didn’t know”; the couple as “hero and heroine”; “fried whiting”; the honey-cake almond; the “room like a cupboard”; the fur “crying”) with commentary that consistently explains how narration, imagery, structure, and dialogue build the interpretation. <b>3<\/b>: the same evidence, but only some of it is explained. <b>2<\/b>: some specific evidence with uneven, general, or partly mistaken commentary. <b>1<\/b>: summary of the story with little explanation.<br><i>Does not earn the point(s):<\/i> Quoting the couple’s insults and saying “this is mean”; retelling the plot paragraph by paragraph; naming “imagery” and “metaphor” without explaining what they do.<\/p><p><b>C. Sophistication (1).<\/b> <i>Earns the point(s):<\/i> Develops a tension through the whole essay, e.g., how free indirect narration lets readers share Miss Brill’s joy while seeing its self-deception; that the “performance” she imagines is true in a way she does not intend (she <i>is<\/i> acting, for herself); or how the displaced “crying” shows a grief she still cannot claim as her own.<br><i>Does not earn the point(s):<\/i> A final sentence about how “everyone wants to belong”; a single flourish without development.<\/p>"}],"stim":"t3"}]}</script>
+<script>
+(function(){
+"use strict";
+var DATA = JSON.parse(document.getElementById("data").textContent);
+var META = DATA.meta, MC = DATA.mc, FR = DATA.fr || [], TOP = DATA.topics || {}, SEC = DATA.sections || {}, STIM = DATA.stims || {}, BY = {};
+MC.forEach(function(q){ BY[q.n] = q; });
+var KEY = META.key, FKEY = META.fkey || META.key + ".fr", HAS_FR = FR.length > 0;
+
+function load(k, d){ try{ var v = localStorage.getItem(k); return v ? JSON.parse(v) : d; }catch(e){ return d; } }
+function save(k, v){ try{ localStorage.setItem(k, JSON.stringify(v)); }catch(e){} }
+function esc(s){ return String(s).replace(/[&<>"]/g, function(c){ return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]; }); }
+function shuffle(a){ a = a.slice(); for (var i = a.length - 1; i > 0; i--){ var j = Math.floor(Math.random() * (i + 1)); var t = a[i]; a[i] = a[j]; a[j] = t; } return a; }
+function range(n){ var a = []; for (var i = 0; i < n; i++) a.push(i); return a; }
+
+var S = load(KEY, null);
+if (!S || !S.phase || !S.order || S.order.some(function(n){ return !BY[n]; })) S = { phase: "setup", mode: "practice", shuffleQ: false, shuffleC: false, order: [], copt: {}, ans: {}, pos: 0, full: null };
+var confirmFinish = false;
+var mcEl = document.getElementById("mc");
+
+function start(nums){
+  var list = nums || MC.map(function(q){ return q.n; });
+  S.order = S.shuffleQ ? shuffle(list) : list.slice();
+  S.copt = {};
+  S.order.forEach(function(n){
+    var q = BY[n], idx = range(q.options.length);
+    S.copt[n] = (S.shuffleC && !q.fixed) ? shuffle(idx) : idx;
+  });
+  S.ans = {}; S.pos = 0; S.phase = "run"; confirmFinish = false;
+  save(KEY, S); render(); focusTop();
+}
+function focusTop(){ var t = document.querySelector(".tabs") || document.querySelector(".title"); if (t && t.getBoundingClientRect().top < 0) t.scrollIntoView(); }
+
+function stats(){
+  var right = 0, done = 0;
+  S.order.forEach(function(n){ if (n in S.ans){ done++; if (S.ans[n] === BY[n].answer) right++; } });
+  return { right: right, done: done, total: S.order.length };
+}
+function topicShort(t){ return (META.topicPrefix || "") + t; }
+function topicLabel(t){ return topicShort(t) + ", " + TOP[t].name; }
+function guideLink(t, short){
+  var g = TOP[t], txt = short ? g.name : topicLabel(t);
+  var href = g.url ? g.url : (META.guide && g.page ? META.guide + "#page=" + g.page : "");
+  return href ? '<a href="' + href + '">' + txt + "</a>" : txt;
+}
+function topicLinks(ts){
+  ts = ts.filter(function(t){ return TOP[t]; });
+  if (!ts.length || !(META.guide || TOP[ts[0]].url)) return "";
+  return '<p class="links">Review ' + ts.map(function(t){ return guideLink(t); }).join(" &middot; ") + " in " + META.guideName + "</p>";
+}
+function explain(q, picked){
+  var e = q.ex, h = '<div class="why"><p>' + e.idea + "</p>";
+  if (e.steps.length) h += '<ol class="steps">' + e.steps.map(function(s){ return "<li>" + s + "</li>"; }).join("") + "</ol>";
+  var rest = range(q.options.length).filter(function(i){ return i !== q.answer; });
+  if (typeof picked === "number" && picked !== q.answer) rest = [picked].concat(rest.filter(function(i){ return i !== picked; }));
+  h += '<p class="why-h sc">Why not the others</p><ul class="others">' + rest.map(function(i){
+    return "<li>" + quoted(q, i) + (i === picked ? '<span class="tag">your answer</span>' : "") + " &mdash; " + e.others[i] + "</li>";
+  }).join("") + "</ul></div>";
+  return h;
+}
+function quoted(q, i){ return q.labels ? q.labels[i] : "&ldquo;" + q.options[i] + "&rdquo;"; }
+function table(q){ return q.table ? '<div class="bt-wrap">' + q.table + "</div>" : ""; }
+function stim(q){
+  var s = q.stim && STIM[q.stim]; if (!s) return "";
+  var html = s.html.split(' data-q="' + q.n + '"').join(' data-q="' + q.n + '" data-cur')
+    .replace(/data-qs="([^"]*)"/g, function(m, l){ return (" " + l + " ").indexOf(" " + q.n + " ") >= 0 ? m + " data-cur" : m; });
+  return '<div class="stim' + (s.cls ? " " + s.cls : "") + '">' + (s.title ? '<p class="stim-h sc">' + s.title + "</p>" : "") + html + "</div>";
+}
+function scrollStim(root){
+  root.querySelectorAll(".stim").forEach(function(box){ var c = box.querySelector("[data-cur]"); if (c && box.scrollHeight > box.clientHeight) box.scrollTop = Math.max(0, c.offsetTop - box.clientHeight / 3); });
+}
+function promptHtml(q){
+  return stim(q) + (q.fig || "") + '<div class="q-prompt"><p>' + q.prompt + "</p>" + (q.ask || META.ask ? '<p class="q-ask">' + (q.ask || META.ask) + "</p>" : "") + "</div>" + table(q);
+}
+
+function renderSetup(){
+  mcEl.innerHTML =
+    '<div class="setup">' +
+      '<h2>How do you want to take it?</h2>' +
+      '<div class="choice-row">' +
+        '<button type="button" class="choice" data-mode="practice" aria-pressed="' + (S.mode === "practice") + '"><b>Practice</b><span>See the answer and why after each question</span></button>' +
+        '<button type="button" class="choice" data-mode="exam" aria-pressed="' + (S.mode === "exam") + '"><b>Exam</b><span>Answer everything, then see your score</span></button>' +
+      '</div>' +
+      '<div class="checks">' +
+        '<label><input type="checkbox" id="opt-sq"' + (S.shuffleQ ? " checked" : "") + '> Shuffle questions</label>' +
+        '<label><input type="checkbox" id="opt-sc"' + (S.shuffleC ? " checked" : "") + '> Shuffle answer choices</label>' +
+      '</div>' +
+      '<div class="setup-actions"><button type="button" class="btn btn--solid btn--lg" id="go">Start' + (HAS_FR ? " multiple choice" : "") + '</button></div>' +
+      '<p class="note">' + META.setupNote + " Keyboard: 1&ndash;" + Math.max.apply(null, MC.map(function(q){ return q.options.length; })) + " to answer, &larr; &rarr; to move, Enter for next.</p>" +
+    '</div>';
+  mcEl.querySelectorAll(".choice").forEach(function(b){ b.onclick = function(){ S.mode = b.dataset.mode; render(); }; });
+  document.getElementById("opt-sq").onchange = function(e){ S.shuffleQ = e.target.checked; };
+  document.getElementById("opt-sc").onchange = function(e){ S.shuffleC = e.target.checked; };
+  document.getElementById("go").onclick = function(){ start(); };
+}
+
+function renderRun(){
+  var n = S.order[S.pos], q = BY[n], st = stats(), practice = S.mode === "practice";
+  var picked = (n in S.ans) ? S.ans[n] : null, locked = practice && picked !== null;
+  var nav = S.order.map(function(m, i){
+    var c = [];
+    if (m in S.ans){ if (practice) c.push(S.ans[m] === BY[m].answer ? "is-right" : "is-wrong"); else c.push("is-answered"); }
+    if (i === S.pos) c.push("is-current");
+    return '<button type="button" class="' + c.join(" ") + '" data-go="' + i + '" aria-label="Question ' + (i + 1) + '"' + (i === S.pos ? ' aria-current="step"' : "") + ">" + (i + 1) + "</button>";
+  }).join("");
+  var opts = S.copt[n].map(function(oi, k){
+    var cls = ["opt"], mark = "";
+    if (locked){
+      if (oi === q.answer){ cls.push("is-right"); mark = oi === picked ? "&check; your answer" : "&check; correct"; }
+      else if (oi === picked){ cls.push("is-wrong"); mark = "&cross; your answer"; }
+      else cls.push("is-dim");
+    } else if (oi === picked) cls.push("is-picked");
+    return '<li><button type="button" class="' + cls.join(" ") + '" data-opt="' + oi + '"' + (locked ? " disabled" : "") + '><span class="kbd">' + (k + 1) + "</span><span>" + q.options[oi] + '</span><span class="mark">' + mark + "</span></button></li>";
+  }).join("");
+  var fb = "";
+  if (locked){
+    var ok = picked === q.answer, ans = quoted(q, q.answer);
+    fb = '<div class="fb' + (ok ? "" : " is-wrong") + '"><p class="verdict" role="status">' + (ok ? "Correct." : "Not quite. The answer is " + ans + (/[.?!](&rdquo;)?$/.test(ans) ? "" : ".")) + "</p>" + explain(q, picked) + (q.after || "") + topicLinks([q.topic]) + "</div>";
+  }
+  var last = S.pos === S.order.length - 1, allDone = st.done === st.total;
+  var nextBtn = last
+    ? '<button type="button" class="btn btn--solid" id="finish">' + (practice ? "See results" : "Finish test") + "</button>"
+    : '<button type="button" class="btn btn--solid" id="next">Next &rarr;</button>';
+  var finishEarly = (!last && !practice) ? '<button type="button" class="btn" id="finish">Finish test</button>' : (!last && practice && allDone ? '<button type="button" class="btn" id="finish">See results</button>' : "");
+  var conf = "";
+  if (confirmFinish){
+    var left = st.total - st.done;
+    conf = '<div class="confirm"><p>' + left + " question" + (left === 1 ? " is" : "s are") + " unanswered and will be marked wrong. Finish anyway?</p>" +
+      '<button type="button" class="btn" id="conf-no">Keep going</button><button type="button" class="btn btn--solid" id="conf-yes">Finish</button></div>';
+  }
+  var eyebrow = "Question " + q.n + (SEC[q.sec] ? " &middot; " + SEC[q.sec] : "") + (q.tag ? " &middot; " + q.tag : (q.topic ? " &middot; " + topicShort(q.topic) : ""));
+  mcEl.innerHTML =
+    '<div class="bar"><span>Question ' + (S.pos + 1) + " of " + st.total + " &middot; " + (practice ? "Practice" : "Exam") + " mode</span><span>" +
+      (practice ? st.right + " correct of " + st.done + " answered" : st.done + " of " + st.total + " answered") + "</span></div>" +
+    '<div class="track"><span style="width:' + (st.done / st.total * 100) + '%"></span></div>' +
+    '<nav class="nav" aria-label="Questions">' + nav + "</nav>" +
+    '<article class="q">' +
+      '<p class="q-eyebrow sc">' + eyebrow + "</p>" +
+      promptHtml(q) +
+      '<ol class="opts">' + opts + "</ol>" + fb +
+      '<div class="step"><button type="button" class="btn" id="prev"' + (S.pos === 0 ? " disabled" : "") + '>&larr; Back</button><span class="step-right">' + finishEarly + nextBtn + "</span></div>" +
+      conf +
+    "</article>" +
+    '<p class="keys"><span class="kbd">1</span>&ndash;<span class="kbd">' + q.options.length + '</span> answer &nbsp; <span class="kbd">&larr;</span> <span class="kbd">&rarr;</span> move &nbsp; <span class="kbd">Enter</span> next</p>' +
+    '<p class="restart-line"><a href="#" id="restart">Start over</a> <span class="muted">&middot; progress is saved in this browser</span></p>';
+
+  scrollStim(mcEl);
+  mcEl.querySelectorAll("[data-go]").forEach(function(b){ b.onclick = function(){ go(+b.dataset.go); }; });
+  mcEl.querySelectorAll("[data-opt]").forEach(function(b){ b.onclick = function(){ pick(+b.dataset.opt); }; });
+  bind("prev", function(){ go(S.pos - 1); });
+  bind("next", function(){ go(S.pos + 1); });
+  bind("finish", finish);
+  bind("conf-no", function(){ confirmFinish = false; render(); });
+  bind("conf-yes", function(){ confirmFinish = false; showResults(); });
+  bind("restart", function(e){ e.preventDefault(); S.phase = "setup"; save(KEY, S); render(); });
+}
+function bind(id, fn){ var el = document.getElementById(id); if (el) el.onclick = fn; }
+
+function pick(oi){
+  var n = S.order[S.pos];
+  if (S.mode === "practice" && (n in S.ans)) return;
+  S.ans[n] = oi; save(KEY, S); render();
+  if (S.mode === "practice"){ var fb = mcEl.querySelector(".fb"); if (fb && fb.getBoundingClientRect().bottom > innerHeight) fb.scrollIntoView({ block: "nearest" }); }
+}
+function go(i){
+  if (i < 0 || i >= S.order.length) return;
+  S.pos = i; confirmFinish = false; save(KEY, S); render();
+  var q = mcEl.querySelector(".q"); if (q && q.getBoundingClientRect().top < 0) q.scrollIntoView();
+}
+function finish(){
+  var st = stats();
+  if (st.done < st.total && !confirmFinish){ confirmFinish = true; render(); var c = mcEl.querySelector(".confirm"); if (c) c.scrollIntoView({ block: "nearest" }); return; }
+  showResults();
+}
+function showResults(){
+  S.phase = "results";
+  if (S.order.length === MC.length) S.full = stats().right;
+  save(KEY, S); render(); if (HAS_FR) renderFR(); focusTop();
+}
+
+/* composite score (only when the document defines one) */
+function frTotal(){
+  var t = 0;
+  for (var i = 0; i < FR.length; i++){ var s = frScore(FR[i]); if (s === null) return null; t += s; }
+  return t;
+}
+function frMax(){ return FR.reduce(function(a, f){ return a + frItemMax(f); }, 0); }
+function frOnlyTotal(){  /* free-response-only quizzes: running total of the marked questions */
+  var done = 0, got = 0, of = 0;
+  FR.forEach(function(f){ var s = frScore(f); if (s !== null){ done++; got += s; of += frItemMax(f); } });
+  if (!done) return "";
+  var line = done === FR.length
+    ? "Total: <b>" + got + " / " + of + "</b> (" + Math.round(got / of * 100) + "%)"
+    : "Marked so far: <b>" + got + " / " + of + "</b> on " + done + " of " + FR.length + " questions &middot; " + frMax() + " points in all";
+  return '<div class="composite" role="status"><p>' + line + "</p></div>";
+}
+function compositeHtml(){
+  var C = META.composite;
+  if (HAS_FR && !MC.length) return frOnlyTotal();
+  if (!C || !HAS_FR) return "";
+  var mc = (typeof S.full === "number") ? S.full : null, fr = frTotal(), fm = frMax(), mm = MC.length;
+  if (mc === null && fr === null) return "";
+  var lines = [];
+  if (mc === null) lines.push("Free response: <b>" + fr + " / " + fm + "</b>. Take the full multiple-choice part to get your composite score.");
+  else if (fr === null) lines.push("Multiple choice: <b>" + mc + " / " + mm + "</b>. Write and mark every free-response question to get your composite score.");
+  else {
+    var c = Math.round(C.mcWeight * mc / mm + C.frWeight * fr / fm), band = "";
+    for (var i = 0; i < C.bands.length; i++){ if (c >= C.bands[i][0]){ band = C.bands[i][1]; break; } }
+    lines.push("Composite score: <b>" + c + " / " + (C.mcWeight + C.frWeight) + "</b> &nbsp;<span class=\"muted\">= " + C.mcWeight + " &times; " + mc + "/" + mm + " + " + C.frWeight + " &times; " + fr + "/" + fm + "</span>");
+    if (band) lines.push(band);
+  }
+  return '<div class="composite" role="status">' + lines.map(function(l){ return "<p>" + l + "</p>"; }).join("") + "</div>";
+}
+function targetHtml(st){
+  var T = META.target, B = META.bands, h = "";
+  if (st.total !== MC.length) return "";
+  if (T) h += '<p class="target">' + T.label + ": " + T.mc + " / " + MC.length + " &middot; " + (st.right >= T.mc ? "met" : (T.mc - st.right) + " short") + "</p>";
+  if (B) for (var i = 0; i < B.length; i++){ if (st.right >= B[i][0]){ h += '<p class="target">' + B[i][1] + "</p>"; break; } }
+  return h;
+}
+
+var resFilter = "all";
+function renderResults(){
+  var st = stats(), pct = Math.round(st.right / st.total * 100), fullRun = st.total === MC.length;
+  var missed = S.order.filter(function(n){ return S.ans[n] !== BY[n].answer; });
+  var rows = S.order.map(function(n, i){
+    var q = BY[n], a = S.ans[n], ok = a === q.answer;
+    if (resFilter === "missed" && ok) return "";
+    return '<li><details><summary><span class="res-n">' + (i + 1) + '.</span><span class="' + (ok ? "res-ok" : "res-bad") + '" aria-label="' + (ok ? "correct" : "wrong") + '">' + (ok ? "&check;" : "&cross;") + '</span><span class="res-sum">' + q.prompt + "</span></summary>" +
+      '<div class="res-body">' + stim(q) + (q.fig || "") + table(q) + '<p><span class="sc">Your answer:</span> ' + (a === undefined ? "<i>skipped</i>" : q.options[a]) + "</p>" +
+      (ok ? "" : '<p><span class="sc">Correct:</span> ' + q.options[q.answer] + "</p>") +
+      explain(q, a) + (q.after || "") + topicLinks([q.topic]) + "</div></details></li>";
+  }).join("");
+  var tally = {};
+  S.order.forEach(function(n){ var t = BY[n].topic; if (!t) return; tally[t] = tally[t] || { right: 0, total: 0 }; tally[t].total++; if (S.ans[n] === BY[n].answer) tally[t].right++; });
+  var trows = Object.keys(TOP).filter(function(t){ return tally[t]; }).map(function(t){
+    var x = tally[t], miss = x.total - x.right;
+    return "<tr><th scope=\"row\">" + topicShort(t) + "</th><td>" + x.right + " / " + x.total + "</td><td>" + guideLink(t, true) +
+      ((META.flag ? x.right < META.flag.below * x.total : miss >= 2) ? ' <span class="flag">&middot; ' + (META.flag ? META.flag.text : "reread this section") + "</span>" : "") + "</td></tr>";
+  }).join("");
+  mcEl.innerHTML =
+    '<div class="results">' +
+      '<div class="score"><p class="score-big">' + st.right + " / " + st.total + "</p><p>" + pct + "% correct" + (fullRun ? "" : " &middot; retry of missed questions") + "</p>" + targetHtml(st) + "</div>" +
+      '<div class="res-actions">' +
+        (missed.length ? '<button type="button" class="btn btn--solid" id="retry">Retry the ' + missed.length + " missed</button>" : "") +
+        '<button type="button" class="btn" id="again">Take the full test again</button>' +
+        (HAS_FR ? '<button type="button" class="btn" id="to-fr">Go to free response</button>' : "") +
+      "</div>" +
+      compositeHtml() +
+      (trows ? '<div class="topics"><h2>' + (META.byTopic || "By topic") + '</h2><table class="bt"><thead><tr><th scope="col">' + (META.topicCol || "Topic") + '</th><th scope="col">Correct</th><th scope="col">' + (META.guideCol || "Guide section") + "</th></tr></thead><tbody>" + trows + "</tbody></table>" +
+        (META.topicNote ? '<p class="note" style="margin-top:6px">' + META.topicNote + "</p>" : "") + "</div>" : "") +
+      '<div class="res-filter"><h2>Review</h2><span><label><input type="checkbox" id="only-missed"' + (resFilter === "missed" ? " checked" : "") + "> Show missed only</label></span></div>" +
+      '<ul class="res-list">' + (rows || '<li><p class="note" style="padding:12px 0">Nothing missed.</p></li>') + "</ul>" +
+    "</div>";
+  bind("retry", function(){ start(missed); });
+  bind("again", function(){ S.phase = "setup"; save(KEY, S); render(); });
+  bind("to-fr", function(){ setTab("fr"); });
+  document.getElementById("only-missed").onchange = function(e){ resFilter = e.target.checked ? "missed" : "all"; render(); };
+}
+
+function render(){
+  if (S.phase === "run" && S.order.length) renderRun();
+  else if (S.phase === "results" && S.order.length) renderResults();
+  else { S.phase = "setup"; renderSetup(); }
+}
+
+/* free response: "epi" parts (E/P/I -> 0-4 per question) or "points" parts (0..max each) */
+var frEl = document.getElementById("fr"), F = load(FKEY, null);
+if (!F || typeof F !== "object") F = {};
+F.drafts = F.drafts || {}; F.marks = F.marks || {}; F.open = F.open || {};
+var LABELS = { 4: "Complete", 3: "Substantial", 2: "Developing", 1: "Minimal", 0: "" };
+function frItemMax(f){ return f.mode === "points" ? f.parts.reduce(function(a, p){ return a + p.max; }, 0) : 4; }
+function frScore(f){
+  if (f.mode === "points"){
+    var t = 0;
+    for (var j = 0; j < f.parts.length; j++){ var v = F.marks[f.n + f.parts[j].label]; if (v === undefined || v === "") return null; t += +v; }
+    return t;
+  }
+  var e = 0, p = 0;
+  for (var i = 0; i < f.parts.length; i++){
+    var m = F.marks[f.n + f.parts[i].label];
+    if (!m) return null;
+    if (m === "E") e++; else if (m === "P") p++;
+  }
+  if (e === 3) return 4;
+  if (e === 2 && p === 1) return 3;
+  if ((e === 2 && p === 0) || (e === 1 && p >= 1) || p === 3) return 2;
+  if ((e === 1 && p === 0) || (e === 0 && p === 2)) return 1;
+  return 0;
+}
+function words(t){ var m = t.trim().match(/\S+/g); return m ? m.length : 0; }
+var SCALE = '<details class="scale"><summary>How part scores convert to 0&ndash;4</summary><table class="bt"><thead><tr><th scope="col">Score</th><th scope="col">Label</th><th scope="col">Part scores (three parts, each E, P, or I)</th></tr></thead><tbody>' +
+  "<tr><td>4</td><td>Complete</td><td>three parts E</td></tr>" +
+  "<tr><td>3</td><td>Substantial</td><td>two parts E and one part P</td></tr>" +
+  "<tr><td>2</td><td>Developing</td><td>two E and no P; or one E and one or two P; or three P</td></tr>" +
+  "<tr><td>1</td><td>Minimal</td><td>one E and no P; or no E and two P</td></tr>" +
+  "<tr><td>0</td><td></td><td>anything less</td></tr></tbody></table></details>";
+function frScoreHtml(f){
+  var s = frScore(f), mx = frItemMax(f);
+  if (s === null) return '<span class="muted">Mark every part to score this question.</span>';
+  return "Score: <b>" + s + " / " + mx + "</b>" + (f.mode !== "points" && LABELS[s] ? " &middot; " + LABELS[s] : "");
+}
+function markButtons(f, p, id, m){
+  var vals = f.mode === "points" ? range(p.max + 1).map(String) : ["E", "P", "I"];
+  return vals.map(function(x){ return '<button type="button" data-mark="' + id + '" data-f="' + f.n + '" data-v="' + x + '" aria-pressed="' + (m === x) + '">' + x + "</button>"; }).join("");
+}
+function renderFR(){
+  if (!HAS_FR) return;
+  frEl.innerHTML = '<p class="fr-intro">' + META.frIntro + "</p>" +
+    FR.map(function(f){
+      var open = !!F.open[f.n];
+      var parts = f.parts.map(function(p){
+        var id = f.n + p.label, d = F.drafts[id] || "", m = (F.marks[id] === undefined ? "" : String(F.marks[id]));
+        var crit = f.mode === "points"
+          ? '<div class="crit-pts">' + p.rubric + "</div>"
+          : '<dl class="crit"><dt>E</dt><dd>if the response ' + p.e + "</dd><dt>P</dt><dd>if " + p.p + "</dd></dl>";
+        return '<div class="part"><p class="part-prompt"><b>(' + p.label + ")</b>" + p.prompt + "</p>" +
+          '<label class="sc" for="fr-' + id + '">Your answer to (' + p.label + ")</label>" +
+          '<textarea id="fr-' + id + '" data-fr="' + id + '" spellcheck="true">' + esc(d) + "</textarea>" +
+          '<p class="part-meta" id="wc-' + id + '">' + words(d) + " words &middot; saved in this browser</p>" +
+          '<div class="sol"' + (open ? "" : " hidden") + ' data-sol="' + f.n + '"><h3>Model solution (' + p.label + ")</h3><div>" + p.solution + "</div>" + crit +
+            '<div class="mark-row"><span>Your mark for (' + p.label + ")" + (f.mode === "points" ? ", out of " + p.max : "") + ':</span><span class="seg" role="group" aria-label="Mark for part ' + p.label + '">' + markButtons(f, p, id, m) + "</span></div></div></div>";
+      }).join("");
+      return '<article class="fr"><h2>' + (META.frWord || "Question") + " " + f.n + "<small>" + f.head + "</small></h2>" +
+        (f.stim ? stim(f) : "") + '<div class="fr-stem">' + f.stem + "</div>" + parts +
+        '<div class="fr-actions"><span class="fr-score" id="score-' + f.n + '">' + (open ? frScoreHtml(f) : "") + "</span>" +
+          '<button type="button" class="btn" data-open="' + f.n + '" aria-expanded="' + open + '">' + (open ? "Hide model solution" : "Show model solution and scoring") + "</button></div>" +
+        (open ? (f.mode === "points" ? "" : SCALE) + topicLinks(f.guide || []) : "") +
+        "</article>";
+    }).join("") + '<div id="fr-composite">' + compositeHtml() + "</div>";
+  frEl.querySelectorAll("textarea").forEach(function(t){
+    t.oninput = function(){ F.drafts[t.dataset.fr] = t.value; save(FKEY, F); document.getElementById("wc-" + t.dataset.fr).innerHTML = words(t.value) + " words &middot; saved in this browser"; };
+  });
+  frEl.querySelectorAll("[data-open]").forEach(function(b){
+    b.onclick = function(){ var n = b.dataset.open; F.open[n] = !F.open[n]; save(FKEY, F); renderFR(); var a = document.getElementById("score-" + n); if (a) a.closest(".fr").querySelector(".part").scrollIntoView({ block: "nearest" }); };
+  });
+  frEl.querySelectorAll("[data-mark]").forEach(function(b){
+    b.onclick = function(){
+      var id = b.dataset.mark; F.marks[id] = F.marks[id] === b.dataset.v ? "" : b.dataset.v; save(FKEY, F);
+      b.parentNode.querySelectorAll("button").forEach(function(x){ x.setAttribute("aria-pressed", String(F.marks[id] === x.dataset.v)); });
+      var f = FR.filter(function(x){ return String(x.n) === b.dataset.f; })[0];
+      document.getElementById("score-" + f.n).innerHTML = frScoreHtml(f);
+      document.getElementById("fr-composite").innerHTML = compositeHtml();
+      if (S.phase === "results") render();
+    };
+  });
+}
+
+/* tabs (only when there is a free-response part) */
+function setTab(t){
+  if (!HAS_FR) return;
+  var mc = t === "mc";
+  document.getElementById("tab-mc").setAttribute("aria-selected", String(mc));
+  document.getElementById("tab-fr").setAttribute("aria-selected", String(!mc));
+  mcEl.hidden = !mc; frEl.hidden = mc;
+  try{ history.replaceState(null, "", mc ? location.pathname : "#free-response"); }catch(e){}
+  focusTop();
+}
+if (HAS_FR){
+  document.getElementById("tab-mc").onclick = function(){ setTab("mc"); };
+  document.getElementById("tab-fr").onclick = function(){ setTab("fr"); };
+}
+
+/* keyboard */
+document.addEventListener("keydown", function(e){
+  if (e.metaKey || e.ctrlKey || e.altKey) return;
+  var tag = (e.target.tagName || "").toLowerCase();
+  if (tag === "textarea" || tag === "input") return;
+  if (mcEl.hidden || S.phase !== "run") return;
+  var n = S.order[S.pos], q = BY[n];
+  if (/^[1-9]$/.test(e.key)){ var k = +e.key - 1; if (k < q.options.length){ e.preventDefault(); pick(S.copt[n][k]); } }
+  else if (e.key === "ArrowRight"){ e.preventDefault(); go(S.pos + 1); }
+  else if (e.key === "ArrowLeft"){ e.preventDefault(); go(S.pos - 1); }
+  else if (e.key === "Enter" && tag !== "button" && tag !== "a"){ e.preventDefault(); if (S.pos < S.order.length - 1) go(S.pos + 1); else finish(); }
+});
+
+/* theme */
+var root = document.documentElement, tb = document.getElementById("theme-btn");
+function syncTheme(){ var dark = root.getAttribute("data-theme") === "dark"; tb.textContent = dark ? "Light mode" : "Dark mode"; tb.setAttribute("aria-pressed", String(dark)); }
+tb.onclick = function(){ var dark = root.getAttribute("data-theme") !== "dark"; root.setAttribute("data-theme", dark ? "dark" : "light"); try{ localStorage.setItem("apah.theme", dark ? "dark" : "light"); }catch(e){} syncTheme(); };
+syncTheme();
+
+render(); renderFR();
+if (HAS_FR && location.hash === "#free-response") setTab("fr");
+if (HAS_FR && !MC.length){ var tabsEl = document.querySelector(".tabs"); if (tabsEl) tabsEl.hidden = true; mcEl.hidden = true; frEl.hidden = false; }
+})();
+</script>
+</body>
+</html>
