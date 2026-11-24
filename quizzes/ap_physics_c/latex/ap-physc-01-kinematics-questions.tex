@@ -1,0 +1,102 @@
+\documentclass[11pt]{article}
+\usepackage{ap-physc}
+\course{AP Physics C: Mechanics}
+\headcourse{AP Physics C: Mechanics}
+\headpart{Unit 1 \textperiodcentered\ Question Set}
+\title{Unit 1: Kinematics: Question Set}
+\author{Paul Wang}
+\date{November 2026}
+\docpart{Unit 1 \textperiodcentered\ Question Set}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Exam-style practice on Unit 1 (topics 1.1--1.5), which is 10--15\% of the multiple-choice section. Section~1--3 hold 12 four-choice multiple-choice questions grouped by topic; most need a short calculation or a line of reasoning, as on the exam. The last page before the key is a full Mathematical Routines free-response question (10 points). All items are original and written for practice. Use the AP equation sheet and a calculator. Allow about 24 minutes for the multiple choice (the exam's pace is about 2 minutes per question) and 24 minutes for the free response. The answer key explains every item and names its topic; a scoring guide for the free response follows it.
+\end{abstract}
+
+\scoringline{MCQ: \blank\ / \qtotal \qquad FRQ: \blank\ / 10 \qquad Target: 8+ MCQ \qquad Pace: 2 min per MCQ}
+
+\section{Motion in one dimension (1.1--1.3)}
+
+\begin{q}{3}{1.2 Derivatives}{$v = dx/dt = 12t^2 - 12t$, so $v(2) = 48 - 24 = 24$ m/s.}
+A particle moves along the $x$-axis with $x(t) = 4t^3 - 6t^2 + 2$, in meters and seconds. What is its velocity at $t = 2$ s?
+\chh{$4$ m/s}{$10$ m/s}{$24$ m/s}{$36$ m/s}
+\end{q}
+\begin{q}{2}{1.2 Turning points}{At rest means $v = 0$: $12t^2 - 12t = 12t(t - 1) = 0$, so $t = 1.0$ s.}
+For the same particle, $x(t) = 4t^3 - 6t^2 + 2$, at what time $t > 0$ is it momentarily at rest?
+\chh{$0.50$ s}{$1.0$ s}{$1.5$ s}{$2.0$ s}
+\end{q}
+\begin{q}{1}{1.2 Integrating a(t)}{Integrate twice: $v = 3t^2$, $x = t^3$, so $x(2) = 8$ m. The constant-acceleration formulas do not apply.}
+An object starts from rest at the origin with $a(t) = 6t$ (SI units). What is its position at $t = 2$ s?
+\chh{$8$ m}{$12$ m}{$24$ m}{$48$ m}
+\end{q}
+\begin{q}{4}{1.2 Velocity-dependent acceleration}{Use $a = v\,dv/dx$: $v\,\frac{dv}{dx} = -kv$ gives $dv/dx = -k$, so $v$ drops linearly with distance and reaches zero after $x = v_0/k$.}
+A puck sliding on a rough surface has $a = -kv$, where $k$ is a positive constant, and initial speed $v_0$. How far does the puck travel in total?
+\ch{It travels infinitely far, because it never stops.}{$v_0^2/(2k)$}{$v_0/(2k)$}{$v_0/k$}
+\end{q}
+\begin{q}{3}{1.3 Distance from v-t}{The cart reverses at $t = 1.5$ s. Add the magnitudes of the areas on each side: $2.25 + 2.25 = 4.5$ m.}
+A cart's velocity is $v(t) = 3 - 2t$ (m/s) for $0 \le t \le 3$ s. What total distance does it travel in this interval?
+\chh{$0$ m}{$2.25$ m}{$4.5$ m}{$9.0$ m}
+\end{q}
+
+\section{Reference frames (1.4)}
+
+\begin{q}{2}{1.4 River crossing}{Aim upstream so the boat's eastward component cancels the current; the leftover northward component is $\sqrt{2.0^2 - 0.80^2} = 1.83$ m/s.}
+A river $60$ m wide flows east at $0.80$ m/s. A boat that moves at $2.0$ m/s relative to the water must land directly opposite its starting point. How long does the crossing take?
+\chh{$75$ s}{$33$ s}{$30$ s}{$28$ s}
+\end{q}
+\begin{q}{3}{1.4 Relative velocity in 2D}{$\vec v_{R/C} = \vec v_{R/G} - \vec v_{C/G}$: a downward 8.0 and a horizontal $-6.0$ are perpendicular, so the magnitude is $\sqrt{64 + 36} = 10$ m/s.}
+Rain falls straight down at $8.0$ m/s relative to the ground. A car drives through it at $6.0$ m/s. How fast does the rain move relative to the driver?
+\chh{$2.0$ m/s}{$8.0$ m/s}{$10$ m/s}{$14$ m/s}
+\end{q}
+\begin{q}{4}{1.4 Inertial frames}{Frames moving at constant velocity relative to each other measure the same acceleration, since $\vec a_{A/C} = \vec a_{A/B} + \vec a_{B/C}$ and $\vec a_{B/C} = 0$.}
+A ball is dropped inside a train car that moves at constant velocity. Compared with a person standing on the ground, the passenger and the person agree on the ball's
+\ch{velocity}{path shape}{displacement during the fall}{acceleration}
+\end{q}
+
+\section{Motion in two dimensions (1.5)}
+
+\begin{q}{2}{1.5 Horizontal launch}{The fall time comes from the vertical motion alone: $t = \sqrt{2h/g} = 2.02$ s; then $x = v_x t$.}
+A ball is thrown horizontally at $15$ m/s from the top of a $20$ m cliff. Ignoring air resistance ($g = 9.8\ \mathrm{m/s^2}$), how far from the base of the cliff does it land?
+\chh{$61$ m}{$30$ m}{$21$ m}{$20$ m}
+\end{q}
+\begin{q}{1}{1.5 Peak of a trajectory}{Only $v_y$ is zero at the peak; $v_x = v_0\cos 40^\circ$ never changes, and gravity acts throughout.}
+A projectile is launched at $40^\circ$ above level ground. At the highest point of its path, which is true? (Ignore air resistance.)
+\ch{Its velocity is horizontal and its acceleration is $g$ downward.}{Its velocity and acceleration are both zero.}{Its velocity is zero and its acceleration is $g$ downward.}{Its velocity is horizontal and its acceleration is zero.}
+\end{q}
+\begin{q}{1}{1.5 Maximum height}{Only the vertical component matters: $H = (v_0 \sin\theta)^2/(2g) = 10^2/19.6 = 5.1$ m.}
+A ball is kicked at $20$ m/s at $30^\circ$ above level ground. What is its maximum height? ($g = 9.8\ \mathrm{m/s^2}$)
+\chh{$5.1$ m}{$10$ m}{$15$ m}{$20$ m}
+\end{q}
+\begin{q}{3}{1.5 Vector calculus}{Differentiate each component: $\vec v = 6t\,\hat\imath + 4\,\hat\jmath$; at $t = 1$, speed $= \sqrt{36 + 16} = 7.2$ m/s.}
+A particle's position is $\vec r(t) = 3t^2\,\hat\imath + 4t\,\hat\jmath$ (meters, seconds). What is its speed at $t = 1$ s?
+\chh{$5.0$ m/s}{$6.0$ m/s}{$7.2$ m/s}{$10$ m/s}
+\end{q}
+
+\section{Free response}
+
+\begin{frq}{Question 1 \textperiodcentered\ Mathematical Routines \textperiodcentered\ 10 points \textperiodcentered\ 24 minutes}
+A particle moves along the $x$-axis. Its acceleration is $a(t) = 12 - 6t$, in m/s$^2$ with $t$ in seconds. At $t = 0$ the particle is at $x = 0$ and at rest.
+
+\begin{enumerate}[label=(\alph*),leftmargin=2em,itemsep=4pt]
+\item Derive an expression for the particle's velocity $v(t)$. \pts{2}
+\item Determine the particle's maximum speed for $0 \le t \le 4$ s and the time at which it occurs. \pts{2}
+\item The particle is momentarily at rest again at a time $t_1 > 0$. Calculate $t_1$ and the particle's position at that time. \pts{3}
+\item Calculate the particle's average velocity for $0 \le t \le 4$ s. Explain, with reference to the shape of the velocity--time graph, why this value is less than the maximum speed found in part (b). \pts{3}
+\end{enumerate}
+\end{frq}
+
+\makekey
+
+\subsection*{Free-response scoring guide (10 points)}
+\small
+Award each point only when the answer does what the model does. Points are independent unless a part says otherwise; a correct method with an answer carried forward from an earlier error earns the later points.
+\begin{scoring}
+(a) (2) & 1 pt: integrates $a(t)$ with respect to time. 1 pt: $v(t) = 12t - 3t^2$, with the constant of integration set to zero by $v(0) = 0$. & Using $v = at$ with $a$ treated as constant. \\
+(b) (2) & 1 pt: sets $a = dv/dt = 0$ (or reads the vertex of $v(t)$), giving $t = 2$ s. 1 pt: $v(2) = 24 - 12 = 12$ m/s. & Setting $v = 0$ instead of $a = 0$. \\
+(c) (3) & 1 pt: $12t - 3t^2 = 0 \Rightarrow t_1 = 4$ s. 1 pt: integrates $v(t)$ to get $x(t) = 6t^2 - t^3$. 1 pt: $x(4) = 96 - 64 = 32$ m. & Using $x = v_0 t + \tfrac12 a t^2$ with a single value of $a$. \\
+(d) (3) & 1 pt: $\bar v = \Delta x/\Delta t = 32/4 = 8$ m/s. 1 pt: the $v$--$t$ graph is a downward parabola that is zero at $t = 0$ and $t = 4$ s and peaks at 12 m/s at $t = 2$ s. 1 pt: the particle spends most of the interval moving slower than 12 m/s, so the area under the curve (32 m) is less than the rectangle $12 \times 4 = 48$ m; the average is the height of the rectangle with the same area as the curve. & Averaging the endpoint velocities, $(0 + 0)/2 = 0$, which works only for constant acceleration. \\
+\end{scoring}
+
+\end{document}

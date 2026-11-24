@@ -1,0 +1,100 @@
+\documentclass[11pt]{article}
+\usepackage{ap-physc}
+\course{AP Physics C: Mechanics}
+\headcourse{AP Physics C: Mechanics}
+\headpart{Unit 5 \textperiodcentered\ Question Set}
+\title{Unit 5: Torque and Rotational Dynamics: Question Set}
+\author{Paul Wang}
+\date{November 2026}
+\docpart{Unit 5 \textperiodcentered\ Question Set}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Exam-style practice on Unit 5 (topics 5.1--5.6), which is 10--15\% of the multiple-choice section. Section~1--3 hold 12 four-choice multiple-choice questions grouped by topic; most need a short calculation or a line of reasoning, as on the exam. The last page before the key is a full Mathematical Routines free-response question (10 points). All items are original and written for practice. Use the AP equation sheet and a calculator. Allow about 24 minutes for the multiple choice (the exam's pace is about 2 minutes per question) and 24 minutes for the free response. The answer key explains every item and names its topic; a scoring guide for the free response follows it.
+\end{abstract}
+
+\scoringline{MCQ: \blank\ / \qtotal \qquad FRQ: \blank\ / 10 \qquad Target: 8+ MCQ \qquad Pace: 2 min per MCQ}
+
+\section{Rotational kinematics and torque (5.1--5.3)}
+
+\begin{q}{4}{5.1 Angular kinematics}{$\omega = 6t^2 - 3$, $\alpha = 12t$, so $\alpha(2) = 24\ \mathrm{rad/s^2}$.}
+A turntable's angular position is $\theta(t) = 2t^3 - 3t$ (radians, seconds). What is its angular acceleration at $t = 2.0$ s?
+\chh{$10\ \mathrm{rad/s^2}$}{$12\ \mathrm{rad/s^2}$}{$21\ \mathrm{rad/s^2}$}{$24\ \mathrm{rad/s^2}$}
+\end{q}
+\begin{q}{2}{5.1 Revolutions}{$\Delta\theta = \bar\omega t = \tfrac12(30)(10) = 150$ rad $= 150/2\pi \approx 24$ rev.}
+A wheel spinning at 30 rad/s slows uniformly to rest in 10 s. How many revolutions does it make while stopping?
+\chh{$3.0$}{$24$}{$48$}{$150$}
+\end{q}
+\begin{q}{3}{5.2 Total acceleration}{$a_c = \omega^2 r = 10\ \mathrm{m/s^2}$ and $a_t = \alpha r = 0.80\ \mathrm{m/s^2}$ are perpendicular: $a = \sqrt{10^2 + 0.80^2} = 10.0\ \mathrm{m/s^2}$.}
+A point on the rim of a wheel of radius 0.40 m has $\omega = 5.0$ rad/s and $\alpha = 2.0\ \mathrm{rad/s^2}$ at some instant. What is the magnitude of its acceleration?
+\chh{$0.80\ \mathrm{m/s^2}$}{$2.0\ \mathrm{m/s^2}$}{$10\ \mathrm{m/s^2}$}{$11\ \mathrm{m/s^2}$}
+\end{q}
+\begin{q}{1}{5.3 Torque as a cross product}{$\vec\tau = \vec r\times\vec F = (2.0)(3.0)(\hat\imath\times\hat\jmath) = 6.0\,\hat k$ N$\cdot$m (counterclockwise seen from $+z$).}
+A force $\vec F = 3.0\,\hat\jmath$ N acts at $\vec r = 2.0\,\hat\imath$ m from a pivot at the origin. What is the torque about the origin?
+\chh{$+6.0\,\hat k$ N$\cdot$m}{$-6.0\,\hat k$ N$\cdot$m}{$+6.0\,\hat\imath$ N$\cdot$m}{$0$}
+\end{q}
+\begin{q}{2}{5.3 Torque on a door}{$\tau = rF\sin\theta = (0.80)(40)\sin 60^\circ = 27.7$ N$\cdot$m.}
+A 40 N force is applied to a door 0.80 m from the hinges, at $60^\circ$ to the plane of the door. What torque does it exert about the hinge line?
+\chh{$16$ N$\cdot$m}{$28$ N$\cdot$m}{$32$ N$\cdot$m}{$50$ N$\cdot$m}
+\end{q}
+
+\section{Rotational inertia (5.4)}
+
+\begin{q}{1}{5.4 Parallel-axis theorem}{The axis is $L/4$ from the center: $I = \tfrac1{12}ML^2 + M(L/4)^2 = \left(\tfrac{4}{48} + \tfrac{3}{48}\right)ML^2 = \tfrac{7}{48}ML^2$.}
+What is the rotational inertia of a uniform rod (mass $M$, length $L$) about a perpendicular axis a distance $L/4$ from one end?
+\chh{$\tfrac{7}{48}ML^2$}{$\tfrac13 ML^2$}{$\tfrac1{12}ML^2$}{$\tfrac1{16}ML^2$}
+\end{q}
+\begin{q}{4}{5.4 Rotational inertia by integration}{$I = \int_0^L x^2(kx)\,dx = \tfrac14 kL^4$ and $M = \int_0^L kx\,dx = \tfrac12 kL^2$, so $I = \tfrac12 ML^2$.}
+A rod of length $L$ lies along the $x$-axis from $x = 0$ to $x = L$ and has linear density $\lambda = kx$. Its total mass is $M$. What is its rotational inertia about the $y$-axis (through $x = 0$)?
+\chh{$\tfrac13 ML^2$}{$\tfrac14 ML^2$}{$\tfrac23 ML^2$}{$\tfrac12 ML^2$}
+\end{q}
+\begin{q}{3}{5.4 Comparing inertias}{$I_{hoop} = MR^2 > I_{disk} = \tfrac12 MR^2$; with equal torque, $\alpha = \tau/I$ is larger for the disk (twice the hoop's).}
+A hoop and a solid disk have the same mass and radius. The same torque is applied to each about its central axis, starting from rest. Which statement is true?
+\ch{The hoop has the greater angular acceleration.}{They have equal angular accelerations.}{The disk has the greater angular acceleration.}{The hoop has the smaller rotational inertia.}
+\end{q}
+
+\section{Equilibrium and dynamics (5.5--5.6)}
+
+\begin{q}{3}{5.5 Supported beam}{Torques about the right end: $N_L(4.0) = 20g(2.0) + 30g(3.0) = 130g$, so $N_L = 32.5g = 320$ N.}
+A uniform 4.0 m beam of mass 20 kg rests on supports at its two ends. A 30 kg child stands 1.0 m from the left end. What force does the left support exert? ($g = 9.8\ \mathrm{m/s^2}$)
+\chh{$170$ N}{$250$ N}{$320$ N}{$490$ N}
+\end{q}
+\begin{q}{2}{5.5 Meter stick}{Balance torques about the pivot: $(100)(30\ \mathrm{cm}) = (200)\,d$, so $d = 15$ cm on the other side: the 65 cm mark.}
+A uniform meter stick balances on a pivot at its 50 cm mark. A 100 g mass hangs at the 20 cm mark. Where must a 200 g mass hang to keep the stick balanced?
+\chh{At the 80 cm mark}{At the 65 cm mark}{At the 35 cm mark}{At the 70 cm mark}
+\end{q}
+\begin{q}{2}{5.6 Massive pulley}{Block: $mg - T = ma$. Pulley: $TR = \tfrac12 MR^2(a/R)$, so $T = \tfrac12 Ma$. Then $a = \dfrac{mg}{m + M/2} = \dfrac{19.6}{4.0} = 4.9\ \mathrm{m/s^2}$.}
+A 2.0 kg block hangs from a light string wrapped around a uniform solid-disk pulley of mass 4.0 kg and radius 0.10 m that turns on a frictionless fixed axle. What is the block's acceleration? ($g = 9.8\ \mathrm{m/s^2}$)
+\chh{$3.3\ \mathrm{m/s^2}$}{$4.9\ \mathrm{m/s^2}$}{$6.5\ \mathrm{m/s^2}$}{$9.8\ \mathrm{m/s^2}$}
+\end{q}
+\begin{q}{4}{5.6 Falling rod}{$\alpha = \tau/I = \dfrac{Mg(L/2)}{\tfrac13 ML^2} = \dfrac{3g}{2L}$, so the free end has $a = \alpha L = \tfrac32 g$, faster than free fall.}
+A uniform rod is pivoted at one end and held horizontal, then released. Just after release, what is the linear acceleration of its free end?
+\chh{$g$}{$\tfrac12 g$}{$\tfrac34 g$}{$\tfrac32 g$}
+\end{q}
+
+\section{Free response}
+
+\begin{frq}{Question 1 \textperiodcentered\ Mathematical Routines \textperiodcentered\ 10 points \textperiodcentered\ 24 minutes}
+Block 1 ($m_1 = 1.0$ kg) sits on a level, frictionless table. A light string attached to it runs over a pulley at the table's edge to block 2 ($m_2 = 2.0$ kg), which hangs below. The pulley is a uniform solid disk of mass $M = 2.0$ kg and radius $R = 0.10$ m on a frictionless axle, and the string does not slip. The system is released from rest. Use $g = 9.8\ \mathrm{m/s^2}$.
+
+\begin{enumerate}[label=(\alph*),leftmargin=2em,itemsep=4pt]
+\item Derive an expression for the magnitude $a$ of the blocks' acceleration in terms of $m_1$, $m_2$, $M$, and $g$. \pts{4}
+\item Calculate $a$ and the tensions $T_1$ (horizontal segment) and $T_2$ (vertical segment). \pts{3}
+\item Block 2 falls 1.0 m. Calculate the time this takes and the pulley's angular speed at that moment. \pts{3}
+\end{enumerate}
+\end{frq}
+
+\makekey
+
+\subsection*{Free-response scoring guide (10 points)}
+\small
+Award each point only when the answer does what the model does. Points are independent unless a part says otherwise; a correct method with an answer carried forward from an earlier error earns the later points.
+\begin{scoring}
+(a) (4) & 1 pt: block 1: $T_1 = m_1 a$. 1 pt: block 2: $m_2 g - T_2 = m_2 a$. 1 pt: pulley: $(T_2 - T_1)R = \tfrac12 MR^2\alpha$ with $\alpha = a/R$. 1 pt: $a = \dfrac{m_2 g}{m_1 + m_2 + M/2}$. & Using one tension for both sides of the pulley. \\
+(b) (3) & 1 pt: $a = \dfrac{2.0(9.8)}{4.0} = 4.9\ \mathrm{m/s^2}$. 1 pt: $T_1 = m_1a = 4.9$ N. 1 pt: $T_2 = m_2(g - a) = 9.8$ N (and $T_2 > T_1$). & Equal tensions, or $T_2 = m_2 g$. \\
+(c) (3) & 1 pt: $t = \sqrt{2d/a} = \sqrt{2(1.0)/4.9} = 0.64$ s. 1 pt: $v = at = 3.1$ m/s (or $v = \sqrt{2ad}$). 1 pt: $\omega = v/R = 31$ rad/s. & Using $g$ instead of $a$ for the fall. \\
+\end{scoring}
+
+\end{document}

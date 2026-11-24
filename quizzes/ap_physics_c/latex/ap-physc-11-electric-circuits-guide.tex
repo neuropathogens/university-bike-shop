@@ -1,0 +1,102 @@
+\documentclass[11pt]{article}
+\usepackage{ap-physc}
+\course{AP Physics C: Electricity and Magnetism}
+\headcourse{AP Physics C: E\&M}
+\headpart{Unit 11 \textperiodcentered\ Study Guide}
+\title{Unit 11: Electric Circuits}
+\author{Paul Wang}
+\date{November 2026}
+\docpart{Unit 11 \textperiodcentered\ Study Guide \textperiodcentered\ 15--25\% of MCQ}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Unit 11 covers direct-current circuits: current, resistivity, and Ohm's law (11.1--11.3); power and bulb brightness (11.4); series and parallel combinations, real batteries, and meters (11.5); Kirchhoff's loop and junction rules (11.6--11.7); and RC circuits, including the differential equation behind charging and discharging and the behavior just after a switch closes and long after (11.8). The free-response question is an experiment to find a battery's internal resistance. Each section ends with check questions; the key is on the last page.
+\end{abstract}
+
+\scoringline{Check questions: \blank\ / \qtotal \qquad Target: 4+ \qquad Weakest topic: \blank[8em]}
+
+\section{Current, resistance, and Ohm's law (11.1--11.3)}\label{sec:1}
+
+\[ I = \frac{dQ}{dt}, \qquad R = \frac{\rho L}{A}, \qquad \Delta V = IR\ \ \text{(ohmic)}, \qquad J = \frac{I}{A} = nqv_d = \frac{E}{\rho}. \]
+\begin{terms}
+Current & Rate of charge flow, in amperes (C/s). Conventional current runs from $+$ to $-$ outside the battery; electrons drift the other way. \\
+Drift velocity & Electrons drift slowly (mm/s), but the field that pushes them is set up along the wire almost instantly. \\
+Resistivity $\rho$ & A property of the material (and temperature); resistance $R$ also depends on shape. \\
+Ohmic & $I \propto \Delta V$ at fixed temperature; a straight $I$--$V$ graph through the origin. A light bulb filament is non-ohmic (its $R$ rises as it heats). \\
+Simple circuit (11.2) & A closed conducting loop with a source of emf. A break anywhere stops the current everywhere in that loop. \\
+\end{terms}
+\begin{trap}
+Stretching a wire to twice its length keeps its volume, so the area halves: $R = \rho L/A$ goes up by a factor of 4, not 2.
+\end{trap}
+
+\subsubsection{Check}\mbox{}
+
+\begin{q}{2}{11.3 Stretching a wire}{$L \to 2L$ and, with fixed volume, $A \to A/2$. $R = \rho L/A \to \rho(2L)/(A/2) = 4R$.}
+A wire is drawn out to twice its original length, its volume unchanged. By what factor does its resistance change?
+\chh{$2$}{$4$}{$1/2$}{$1$}
+\end{q}
+
+\section{Electric power (11.4)}\label{sec:2}
+
+\[ P = I\Delta V = I^2R = \frac{(\Delta V)^2}{R}. \]
+Pick the form that uses what is the \emph{same}: in series the current is shared, so $P = I^2R$ shows the bigger resistor dissipates more. In parallel the voltage is shared, so $P = V^2/R$ shows the smaller resistor dissipates more. The brightness of identical bulbs tracks the power each dissipates.
+\begin{example}
+A ``60 W, 120 V'' bulb has $R = 120^2/60 = 240\ \Omega$; a ``100 W'' bulb has $144\ \Omega$. In series across 120 V they share one current, so the 60 W bulb (larger $R$) glows brighter.
+\end{example}
+
+\subsubsection{Check}\mbox{}
+
+\begin{q}{4}{11.4 Bulbs in series}{Rated power at 120 V fixes $R = V^2/P$: 240 $\Omega$ and 144 $\Omega$. In series the current is the same, so $P = I^2R$ is larger in the 240 $\Omega$ (60 W) bulb.}
+A 60 W bulb and a 100 W bulb (both rated for 120 V) are connected in series across 120 V. Which glows brighter?
+\ch{The 100 W bulb}{They glow equally}{Neither lights, because the voltage is split}{The 60 W bulb}
+\end{q}
+
+\section{DC circuits and Kirchhoff's rules (11.5--11.7)}\label{sec:3}
+
+\begin{compare}{}{Series}{Parallel}
+Shared quantity & current & voltage \\
+Equivalent resistance & $R_1 + R_2 + \cdots$ & $\left(\dfrac{1}{R_1} + \dfrac{1}{R_2} + \cdots\right)^{-1}$ \\
+Adding a resistor & increases $R_{eq}$ & decreases $R_{eq}$ \\
+\end{compare}
+\textbf{Kirchhoff's loop rule (11.6):} around any closed loop, $\sum\Delta V = 0$ (energy conservation). Crossing a battery from $-$ to $+$ adds $\varepsilon$; crossing a resistor in the direction of the current subtracts $IR$.
+\textbf{Junction rule (11.7):} current into a junction equals current out (charge conservation).
+
+\textbf{Real batteries.} A battery with emf $\varepsilon$ and internal resistance $r$ has terminal voltage $\Delta V = \varepsilon - Ir$ while delivering current $I$. \textbf{Meters:} an ideal ammeter (zero resistance) goes in series; an ideal voltmeter (infinite resistance) goes in parallel.
+\begin{keyidea}[Method for multi-loop circuits]
+Label a current (with a guessed direction) in every branch. Write junction equations, then enough loop equations to have as many equations as unknowns. A negative answer just means the current flows opposite to your guess.
+\end{keyidea}
+
+\subsubsection{Check}\mbox{}
+
+\begin{q}{3}{11.6 Terminal voltage}{$\Delta V = \varepsilon - Ir = 12 - (2.0)(0.50) = 11$ V.}
+A battery with emf 12 V and internal resistance $0.50\ \Omega$ delivers 2.0 A to a circuit. What is the voltage across its terminals?
+\chh{$13$ V}{$12$ V}{$11$ V}{$1.0$ V}
+\end{q}
+\begin{q}{3}{11.5 Equivalent resistance}{Parallel pair: $6.0/2 = 3.0\ \Omega$. Plus 6.0 in series: $9.0\ \Omega$.}
+Three $6.0\ \Omega$ resistors: two are in parallel, and that pair is in series with the third. What is the equivalent resistance?
+\chh{$2.0\ \Omega$}{$4.0\ \Omega$}{$9.0\ \Omega$}{$18\ \Omega$}
+\end{q}
+
+\section{RC circuits (11.8)}\label{sec:4}
+
+A capacitor in a DC circuit charges or discharges exponentially with time constant $\tau = RC$.
+\[ \text{Charging: } q(t) = C\varepsilon\left(1 - e^{-t/RC}\right), \qquad I(t) = \frac{\varepsilon}{R}e^{-t/RC}; \]
+\[ \text{Discharging: } q(t) = Q_0e^{-t/RC}, \qquad I(t) = \frac{Q_0}{RC}e^{-t/RC}. \]
+These come from the loop rule: charging, $\varepsilon - IR - q/C = 0$ with $I = dq/dt$, a separable differential equation.
+\begin{compare}{Moment}{Uncharged capacitor acts like}{Current through its branch}
+Just after the switch closes & a wire ($\Delta V_C = 0$) & maximum \\
+Long after (steady state) & a break in the wire & zero; $\Delta V_C$ equals the voltage across its parallel branch \\
+\end{compare}
+After one $\tau$ a charging capacitor holds 63\% of its final charge and the current is 37\% of its initial value. The time to halve is $\tau\ln 2 = 0.69\tau$.
+
+\subsubsection{Check}\mbox{}
+
+\begin{q}{2}{11.8 Time constant}{$\tau = RC = (1.0\times10^4)(1.0\times10^{-4}) = 1.0$ s.}
+A $10\ \mathrm{k}\Omega$ resistor and a $100\ \mu\mathrm{F}$ capacitor are in series. What is the circuit's time constant?
+\chh{$0.10$ s}{$1.0$ s}{$10$ s}{$1000$ s}
+\end{q}
+
+\makekey
+\end{document}

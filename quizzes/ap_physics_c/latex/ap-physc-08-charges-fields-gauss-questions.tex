@@ -1,0 +1,102 @@
+\documentclass[11pt]{article}
+\usepackage{ap-physc}
+\course{AP Physics C: Electricity and Magnetism}
+\headcourse{AP Physics C: E\&M}
+\headpart{Unit 8 \textperiodcentered\ Question Set}
+\title{Unit 8: Electric Charges, Fields, and Gauss's Law: Question Set}
+\author{Paul Wang}
+\date{November 2026}
+\docpart{Unit 8 \textperiodcentered\ Question Set}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Exam-style practice on Unit 8 (topics 8.1--8.6), which is 15--25\% of the multiple-choice section. Section~1--3 hold 12 four-choice multiple-choice questions grouped by topic; most need a short calculation or a line of reasoning, as on the exam. The last page before the key is a full Mathematical Routines free-response question (10 points). All items are original and written for practice. Use the AP equation sheet and a calculator. Allow about 24 minutes for the multiple choice (the exam's pace is about 2 minutes per question) and 24 minutes for the free response. The answer key explains every item and names its topic; a scoring guide for the free response follows it.
+\end{abstract}
+
+\scoringline{MCQ: \blank\ / \qtotal \qquad FRQ: \blank\ / 10 \qquad Target: 8+ MCQ \qquad Pace: 2 min per MCQ}
+
+\section{Charge, force, and field (8.1--8.3)}
+
+\begin{q}{3}{8.1 Coulomb's law}{$F = k|q_1q_2|/r^2 = (9.0\times10^9)(6.0\times10^{-12})/0.090 = 0.60$ N (attractive).}
+A $+2.0\ \mu\mathrm{C}$ charge and a $-3.0\ \mu\mathrm{C}$ charge are 0.30 m apart. What is the magnitude of the force between them? ($k = 9.0\times10^9\ \mathrm{N\,m^2/C^2}$)
+\chh{$0.060$ N}{$0.18$ N}{$0.60$ N}{$6.0$ N}
+\end{q}
+\begin{q}{2}{8.1 Superposition}{Between the charges the two forces oppose. Set $\dfrac{kq}{x^2} = \dfrac{k(4q)}{(3.0 - x)^2}$: $3.0 - x = 2x$, so $x = 1.0$ m, closer to the smaller charge.}
+A charge $+q$ is at $x = 0$ and a charge $+4q$ is at $x = 3.0$ m. Where on the $x$-axis is the net force on a third charge zero?
+\chh{$x = 0.60$ m}{$x = 1.0$ m}{$x = 1.5$ m}{$x = 2.0$ m}
+\end{q}
+\begin{q}{1}{8.2 Charge sharing}{Total charge $+4.0\ \mu\mathrm{C}$ is conserved and, for identical conductors, shared equally: $+2.0\ \mu\mathrm{C}$ each.}
+Two identical metal spheres carry $+6.0\ \mu\mathrm{C}$ and $-2.0\ \mu\mathrm{C}$. They are touched together and separated. What is the charge on each?
+\chh{$+2.0\ \mu\mathrm{C}$ each}{$+4.0\ \mu\mathrm{C}$ each}{$+3.0\ \mu\mathrm{C}$ and $+1.0\ \mu\mathrm{C}$}{$+6.0\ \mu\mathrm{C}$ and $-2.0\ \mu\mathrm{C}$}
+\end{q}
+\begin{q}{4}{8.3 Superposition of fields}{Each charge gives $kq/a^2$; one points in $-x$, the other in $-y$. They are perpendicular: $\sqrt2\,kq/a^2$.}
+Equal charges $+q$ sit at $(a, 0)$ and $(0, a)$. What is the magnitude of the electric field at the origin?
+\chh{$2kq/a^2$}{$0$}{$kq/(2a^2)$}{$\sqrt2\,kq/a^2$}
+\end{q}
+\begin{q}{4}{8.3 Electron in a field}{$a = eE/m = (1.6\times10^{-19})(1000)/(9.1\times10^{-31}) = 1.8\times10^{14}\ \mathrm{m/s^2}$; gravity is negligible.}
+An electron is released in a uniform electric field of 1000 N/C. What is the magnitude of its acceleration? ($e = 1.6\times10^{-19}$ C, $m_e = 9.1\times10^{-31}$ kg)
+\chh{$1.6\times10^{-16}\ \mathrm{m/s^2}$}{$5.7\times10^{-15}\ \mathrm{m/s^2}$}{$9.6\times10^{10}\ \mathrm{m/s^2}$}{$1.8\times10^{14}\ \mathrm{m/s^2}$}
+\end{q}
+
+\section{Charge distributions (8.4)}
+
+\begin{q}{1}{8.4 Ring on its axis}{Set $dE/dx = 0$: $(x^2 + R^2) - 3x^2 = 0$, so $x = R/\sqrt2$.}
+For a uniformly charged ring of radius $R$, $E(x) = \dfrac{kQx}{(x^2 + R^2)^{3/2}}$ along its axis. At what distance $x$ from the center is the axial field strongest?
+\chh{$R/\sqrt2$}{$R$}{$0$}{$R/2$}
+\end{q}
+\begin{q}{2}{8.4 Field of a rod}{$E = \int_0^L \dfrac{k\lambda\,dx}{(L + d - x)^2} = k\lambda\left[\dfrac1d - \dfrac{1}{L + d}\right] = \dfrac{kQ}{d(L + d)}$ with $\lambda = Q/L$.}
+A thin rod of length $L$ with uniform charge $Q$ lies on the $x$-axis from $x = 0$ to $x = L$. What is the electric field at $x = L + d$?
+\ch{$\dfrac{kQ}{d^2}$}{$\dfrac{kQ}{d(L + d)}$}{$\dfrac{kQ}{(L + d)^2}$}{$\dfrac{kQ}{(d + L/2)^2}$}
+\end{q}
+\begin{q}{3}{8.4 Line of charge}{For a long line, $E = \lambda/(2\pi\varepsilon_0 r) \propto 1/r$.}
+A long straight wire carries uniform charge per length $\lambda$. At distance $r$ the field is $E$. What is the field at distance $2r$?
+\chh{$E/4$}{$E$}{$E/2$}{$E/\sqrt2$}
+\end{q}
+
+\section{Flux and Gauss's law (8.5--8.6)}
+
+\begin{q}{3}{8.5 Flux through a flat surface}{$\Phi = EA\cos\theta = (500)(0.060)\cos 30^\circ = 26\ \mathrm{N\,m^2/C}$.}
+A uniform field of 500 N/C passes through a flat $0.20\ \mathrm{m} \times 0.30\ \mathrm{m}$ rectangle. The field makes a $30^\circ$ angle with the rectangle's normal (area vector). What is the flux?
+\chh{$0$}{$15\ \mathrm{N\,m^2/C}$}{$26\ \mathrm{N\,m^2/C}$}{$30\ \mathrm{N\,m^2/C}$}
+\end{q}
+\begin{q}{2}{8.6 Gauss's law and symmetry}{The total flux through the cube is $q/\varepsilon_0$, and by symmetry each of the six faces gets an equal share.}
+A point charge $q$ is at the center of a cube. What is the electric flux through one face of the cube?
+\ch{$\dfrac{q}{\varepsilon_0}$}{$\dfrac{q}{6\varepsilon_0}$}{$\dfrac{q}{4\pi\varepsilon_0}$}{$0$}
+\end{q}
+\begin{q}{4}{8.6 Nonuniform charge density}{$Q_{enc} = \int_0^r \dfrac{\rho_0 r'}{R}4\pi r'^2\,dr' = \dfrac{\pi\rho_0 r^4}{R}$. Gauss: $E(4\pi r^2) = Q_{enc}/\varepsilon_0$, so $E = \dfrac{\rho_0 r^2}{4\varepsilon_0 R}$.}
+A solid insulating sphere of radius $R$ has charge density $\rho = \rho_0 r/R$. What is the electric field at a distance $r < R$ from the center?
+\ch{$\dfrac{\rho_0 r}{3\varepsilon_0}$}{$\dfrac{\rho_0 r^2}{3\varepsilon_0 R}$}{$\dfrac{\rho_0 R^2}{4\varepsilon_0 r}$}{$\dfrac{\rho_0 r^2}{4\varepsilon_0 R}$}
+\end{q}
+\begin{q}{1}{8.6 Charged sheet}{A large sheet gives $E = \sigma/(2\varepsilon_0)$, independent of distance: the field lines are parallel and do not spread.}
+A large, flat, uniformly charged sheet produces a field $E$ at 2.0 cm from its surface. What is the field 4.0 cm from the sheet (still close compared with its size)?
+\chh{$E$}{$E/2$}{$E/4$}{$2E$}
+\end{q}
+
+\section{Free response}
+
+\begin{frq}{Question 1 \textperiodcentered\ Mathematical Routines \textperiodcentered\ 10 points \textperiodcentered\ 24 minutes}
+A very long, solid, insulating cylinder of radius $R$ has positive charge spread uniformly through its volume with charge density $\rho$. Express answers in terms of $\rho$, $R$, $r$, and physical constants.
+
+\begin{enumerate}[label=(\alph*),leftmargin=2em,itemsep=4pt]
+\item Use Gauss's law to derive the magnitude of the electric field at a distance $r < R$ from the cylinder's axis. \pts{3}
+\item Derive the magnitude of the electric field at a distance $r > R$ from the axis. \pts{3}
+\item Let $\lambda$ be the charge per unit length of the cylinder. Write $\lambda$ in terms of $\rho$ and $R$, and show that your answer to (b) matches the field of a thin line of charge $\lambda$. \pts{2}
+\item At what distance from the axis is the field strongest, and what is its value there? Justify your answer from (a) and (b). \pts{2}
+\end{enumerate}
+\end{frq}
+
+\makekey
+
+\subsection*{Free-response scoring guide (10 points)}
+\small
+Award each point only when the answer does what the model does. Points are independent unless a part says otherwise; a correct method with an answer carried forward from an earlier error earns the later points.
+\begin{scoring}
+(a) (3) & 1 pt: Gaussian surface is a coaxial cylinder of radius $r$ and length $\ell$; no flux through the end caps. 1 pt: $Q_{enc} = \rho\pi r^2\ell$. 1 pt: $E(2\pi r\ell) = \rho\pi r^2\ell/\varepsilon_0 \Rightarrow E = \dfrac{\rho r}{2\varepsilon_0}$. & Using a sphere as the Gaussian surface. \\
+(b) (3) & 1 pt: same coaxial surface, now outside. 1 pt: $Q_{enc} = \rho\pi R^2\ell$. 1 pt: $E = \dfrac{\rho R^2}{2\varepsilon_0 r}$. & Enclosing $\rho\pi r^2\ell$ outside the cylinder, where there is no charge. \\
+(c) (2) & 1 pt: $\lambda = \rho\pi R^2$. 1 pt: substituting gives $E = \dfrac{\lambda}{2\pi\varepsilon_0 r}$, the line-charge field. & Stating the line-charge result without substituting. \\
+(d) (2) & 1 pt: $E$ grows linearly inside and falls as $1/r$ outside, so it peaks at $r = R$. 1 pt: $E_{max} = \dfrac{\rho R}{2\varepsilon_0}$ (both expressions agree at $r = R$). & Saying the field is largest on the axis. \\
+\end{scoring}
+
+\end{document}

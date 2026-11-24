@@ -1,0 +1,150 @@
+\documentclass[11pt]{article}
+\usepackage{ap-physc}
+\course{AP Physics C: Mechanics}
+\headcourse{AP Physics C: Mechanics}
+\headpart{Unit 2 \textperiodcentered\ Study Guide}
+\title{Unit 2: Force and Translational Dynamics}
+\author{Paul Wang}
+\date{November 2026}
+\docpart{Unit 2 \textperiodcentered\ Study Guide \textperiodcentered\ 20--25\% of MCQ}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Unit 2 is the largest unit of the Mechanics exam. It covers systems and center of mass, including calculus for continuous objects (2.1); free-body diagrams and Newton's three laws (2.2--2.5); universal gravitation (2.6); static and kinetic friction and springs (2.7--2.8); velocity-dependent drag and the differential equation it produces (2.9); and circular motion (2.10). Most exam problems reduce to the same method: draw the free-body diagram, write $\sum F = ma$ along each axis, and add any constraint. Each section ends with check questions; the key is on the last page.
+\end{abstract}
+
+\scoringline{Check questions: \blank\ / \qtotal \qquad Target: 5+ \qquad Weakest topic: \blank[8em]}
+
+\section{Systems and center of mass (2.1)}\label{sec:1}
+
+A \textbf{system} is whatever you choose to draw a boundary around. Forces from outside the boundary are \emph{external}; forces between parts of the system are \emph{internal} and cancel in pairs. The system's \textbf{center of mass} moves as if all the mass were there and all external forces acted there:
+\[ x_{cm} = \frac{\sum m_i x_i}{\sum m_i}, \qquad x_{cm} = \frac{1}{M}\int x\,dm, \qquad \sum \vec F_{ext} = M\vec a_{cm}. \]
+For a rod along $x$ with linear density $\lambda(x)$ (kg/m), $dm = \lambda\,dx$ and $M = \int \lambda\,dx$.
+
+\begin{example}
+A rod of length $L$ has $\lambda = bx$. Then $M = \int_0^L bx\,dx = \tfrac12 bL^2$ and $\int_0^L x\,(bx)\,dx = \tfrac13 bL^3$, so $x_{cm} = \tfrac23 L$: the center of mass shifts toward the denser end.
+\end{example}
+
+\begin{trap}
+The center of mass need not lie inside the object (a ring, a boomerang). Internal forces, such as an explosion, cannot change the motion of the center of mass.
+\end{trap}
+
+\subsubsection{Check}\mbox{}
+
+\begin{q}{2}{2.1 Continuous center of mass}{$x_{cm} = \int x\lambda\,dx \big/ \int \lambda\,dx = \tfrac13 bL^3 / \tfrac12 bL^2 = 2L/3$.}
+A thin rod of length $L$ lies along the $x$-axis from $x = 0$ to $x = L$. Its linear density is $\lambda = bx$. Where is its center of mass?
+\chh{$x = L/2$}{$x = 2L/3$}{$x = L/3$}{$x = 3L/4$}
+\end{q}
+
+\section{Forces, free-body diagrams, and Newton's laws (2.2--2.5)}\label{sec:2}
+
+\begin{terms}
+First law (2.4) & If the net force on an object is zero, its velocity is constant (possibly zero). Constant velocity needs \emph{no} net force. \\
+Second law (2.5) & $\sum \vec F = m\vec a$, applied along each axis separately. In calculus form, $\sum \vec F = \frac{d\vec p}{dt}$. \\
+Third law (2.3) & Forces come in pairs: if A pushes on B, B pushes on A with an equal and opposite force. The pair acts on \emph{different} objects, so the two forces never cancel in one free-body diagram. \\
+Free-body diagram (2.2) & One dot (the object), one arrow per force, each drawn from the dot and labeled with what exerts it. No components, no velocity or acceleration arrows. \\
+Normal force & Perpendicular to the surface; whatever size the motion requires. It equals $mg$ only on a level surface with no other vertical forces and $a_y = 0$. \\
+Tension & Same throughout an ideal (massless) string over an ideal (massless, frictionless) pulley. \\
+\end{terms}
+
+\begin{keyidea}[Method]
+(1) Choose the system and draw the FBD. (2) Choose axes, one along the acceleration if you know its direction. (3) Write $\sum F = ma$ for each axis. (4) Add constraints (a string links accelerations). (5) Solve, then check units and limiting cases.
+\end{keyidea}
+
+\begin{example}[Atwood machine]
+Masses $m_1 < m_2$ hang over an ideal pulley. Treating both as one system along the string: $a = \dfrac{(m_2 - m_1)g}{m_1 + m_2}$. Then from $m_1$ alone, $T - m_1 g = m_1 a$. Check: if $m_1 = m_2$, $a = 0$ and $T = mg$.
+\end{example}
+
+\textbf{Apparent weight.} A scale reads the normal force. In an elevator with acceleration $a$ (up positive), $N = m(g + a)$: heavier when accelerating up \emph{or} slowing while moving down.
+
+\subsubsection{Check}\mbox{}
+
+\begin{q}{3}{2.5 Apparent weight}{Constant velocity means $a = 0$, so $N = mg = 686 \approx 690$ N; the speed does not matter.}
+A 70 kg person stands on a scale in an elevator that is moving upward at a constant $3$ m/s. What does the scale read? ($g = 9.8\ \mathrm{m/s^2}$)
+\chh{$210$ N}{$480$ N}{$690$ N}{$900$ N}
+\end{q}
+
+\section{Gravitational force (2.6)}\label{sec:3}
+
+\[ F_g = \frac{G m_1 m_2}{r^2}, \qquad g(r) = \frac{GM}{r^2}\ \text{outside a spherical body}, \qquad G = 6.67\times10^{-11}\ \mathrm{N\,m^2/kg^2}. \]
+$r$ is measured from the \emph{center} of the body. Near Earth's surface $g = GM_E/R_E^2 \approx 9.8\ \mathrm{m/s^2}$. Gravitational mass and inertial mass are equal, so all objects fall with the same acceleration.
+
+\begin{trap}
+Astronauts in orbit are not weightless because gravity vanishes: at the station's altitude $g$ is still about 90\% of its surface value. They feel weightless because they and the station fall together (no normal force).
+\end{trap}
+
+\subsubsection{Check}\mbox{}
+
+\begin{q}{1}{2.6 Scaling g}{$g \propto M/R^2$: doubling $M$ doubles $g$, doubling $R$ divides it by 4. Net factor $2/4 = 1/2$.}
+Planet X has twice Earth's mass and twice Earth's radius. What is the gravitational field strength at its surface, in terms of Earth's $g$?
+\chh{$g/2$}{$g$}{$2g$}{$g/4$}
+\end{q}
+
+\section{Friction and spring forces (2.7--2.8)}\label{sec:4}
+
+\begin{terms}
+Kinetic friction & $f_k = \mu_k N$, opposite the relative sliding velocity. \\
+Static friction & $f_s \le \mu_s N$. It takes whatever value (up to the maximum) keeps the surfaces from slipping; $\mu_s N$ is only the \emph{limit}. \\
+Hooke's law & $F_s = -k\,\Delta x$: the spring pulls back toward its natural length. \\
+Springs in parallel & $k_{eq} = k_1 + k_2$ (stiffer). \\
+Springs in series & $\dfrac{1}{k_{eq}} = \dfrac{1}{k_1} + \dfrac{1}{k_2}$ (softer); two identical springs give $k/2$. \\
+\end{terms}
+
+\begin{keyidea}[Incline at angle $\theta$]
+Along the slope gravity contributes $mg\sin\theta$; perpendicular, $N = mg\cos\theta$ (if nothing else pushes into the surface). A block that slides at constant velocity has $\mu_k = \tan\theta$. A block on the verge of slipping has $\mu_s = \tan\theta$.
+\end{keyidea}
+
+\begin{trap}
+Do not write $f = \mu_s N$ for a block that is simply at rest. A 4 kg block on a level floor pushed with 15 N, with $\mu_s N = 20$ N, feels exactly 15 N of static friction.
+\end{trap}
+
+\subsubsection{Check}\mbox{}
+
+\begin{q}{4}{2.7 Static friction}{The block is in equilibrium, so friction exactly balances the downslope component of gravity. $\mu_s N$ is only the maximum available.}
+A block of mass $m$ rests without sliding on a ramp inclined at $\theta$. The coefficient of static friction is $\mu_s$. What is the magnitude of the friction force on the block?
+\chh{$\mu_s mg\cos\theta$}{$\mu_s mg$}{$mg\cos\theta$}{$mg\sin\theta$}
+\end{q}
+
+\section{Resistive forces (2.9)}\label{sec:5}
+
+A drag force proportional to speed, $\vec F_d = -b\vec v$, turns Newton's second law into a differential equation. For an object falling from rest ($+$ down):
+\[ m\frac{dv}{dt} = mg - bv \quad\Rightarrow\quad v(t) = \frac{mg}{b}\left(1 - e^{-t/\tau}\right), \qquad \tau = \frac{m}{b}. \]
+\begin{itemize}
+\item Terminal speed $v_T = mg/b$, found by setting $dv/dt = 0$; no differential equation needed.
+\item Initial acceleration is $g$ (no drag at $v = 0$); the acceleration decays as $a = g\,e^{-t/\tau}$.
+\item After one time constant, $v = (1 - e^{-1})v_T = 0.63\,v_T$; after $3\tau$, 95\%.
+\end{itemize}
+To solve: separate variables, $\int_0^v \frac{dv'}{g - (b/m)v'} = \int_0^t dt'$. For drag $\propto v^2$, terminal speed is $\sqrt{mg/c}$.
+
+\subsubsection{Check}\mbox{}
+
+\begin{q}{3}{2.9 Terminal speed}{At terminal speed $bv_T = mg$, so $v_T = mg/b$ is proportional to $m$.}
+Two balls of the same size fall through the same fluid with drag force $-bv$ (same $b$). Ball 2 has twice the mass of ball 1. How do their terminal speeds compare?
+\chh{$v_{T2} = v_{T1}$}{$v_{T2} = \sqrt2\,v_{T1}$}{$v_{T2} = 2v_{T1}$}{$v_{T2} = 4v_{T1}$}
+\end{q}
+
+\section{Circular motion (2.10)}\label{sec:6}
+
+An object moving in a circle of radius $r$ at speed $v$ accelerates toward the center:
+\[ a_c = \frac{v^2}{r} = \omega^2 r, \qquad \sum F_{\text{toward center}} = \frac{mv^2}{r}. \]
+``Centripetal force'' is not a new force; it is the net inward force provided by tension, gravity, normal force, or friction. If the speed is changing too, a tangential acceleration $a_t = dv/dt$ adds at right angles.
+
+\begin{compare}{Situation}{Inward equation}{Result}
+Flat curve, friction & $\mu_s mg = mv^2/r$ & $v_{max} = \sqrt{\mu_s g r}$ \\
+Banked curve, no friction & $N\sin\theta = mv^2/r$, $N\cos\theta = mg$ & $\tan\theta = v^2/(rg)$ \\
+Top of vertical loop & $N + mg = mv^2/r$ & $v_{min} = \sqrt{gr}$ (when $N = 0$) \\
+Bottom of vertical circle & $T - mg = mv^2/r$ & tension is largest here \\
+Conical pendulum & $T\sin\theta = mv^2/r$, $T\cos\theta = mg$ & $\tan\theta = v^2/(rg)$ \\
+\end{compare}
+
+\subsubsection{Check}\mbox{}
+
+\begin{q}{1}{2.10 Vertical loop}{At minimum speed the track pushes with zero force, so gravity alone supplies the centripetal force: $mg = mv^2/r$.}
+A roller-coaster car goes around the inside of a vertical loop of radius $r$. What is the minimum speed at the top for the car to stay on the track?
+\chh{$\sqrt{gr}$}{$\sqrt{2gr}$}{$gr$}{$0$}
+\end{q}
+
+\makekey
+\end{document}

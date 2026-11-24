@@ -1,0 +1,75 @@
+\documentclass[11pt]{article}
+\usepackage{ap-physc}
+\course{AP Physics C: Electricity and Magnetism}
+\headcourse{AP Physics C: E\&M}
+\headpart{Unit 9 \textperiodcentered\ Study Guide}
+\title{Unit 9: Electric Potential}
+\author{Paul Wang}
+\date{November 2026}
+\docpart{Unit 9 \textperiodcentered\ Study Guide \textperiodcentered\ 10--20\% of MCQ}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Unit 9 recasts electrostatics in terms of energy. It covers electric potential energy of pairs and systems of charges (9.1); electric potential, its superposition as a scalar, the integral link $\Delta V = -\int\vec E\cdot d\vec l$, the derivative link $E_x = -dV/dx$, and equipotentials (9.2); and conservation of energy for charged particles (9.3). Each section ends with check questions; the key is on the last page.
+\end{abstract}
+
+\scoringline{Check questions: \blank\ / \qtotal \qquad Target: 3+ \qquad Weakest topic: \blank[8em]}
+
+\section{Electric potential energy (9.1)}\label{sec:1}
+
+The electric force is conservative, so it has a potential energy:
+\[ U = k\frac{q_1q_2}{r}\ \ \text{(pair, zero at } r\to\infty), \qquad U_{system} = \sum_{\text{pairs}} k\frac{q_iq_j}{r_{ij}}, \qquad W_{field} = -\Delta U. \]
+$U$ is a scalar with a sign: positive for like charges (work was needed to push them together), negative for unlike charges (a bound pair). To assemble a set of charges from far apart, count each \emph{pair} once: three charges have three pairs, four have six.
+
+In a uniform field the potential energy changes linearly: moving a charge $q$ a distance $d$ along $\vec E$ gives $\Delta U = -qEd$.
+
+\subsubsection{Check}\mbox{}
+
+\begin{q}{2}{9.1 Assembling charges}{$W_{ext} = \Delta U = kq^2/r - 0$. Positive work is needed to push like charges together.}
+How much work must an external agent do to bring two charges, $+q$ and $+q$, from very far apart to a separation $r$ (starting and ending at rest)?
+\chh{$-kq^2/r$}{$kq^2/r$}{$kq^2/r^2$}{$2kq^2/r$}
+\end{q}
+
+\section{Electric potential (9.2)}\label{sec:2}
+
+Potential is potential energy per unit charge, a scalar property of a point in space:
+\[ V = \frac{U}{q}, \qquad V_{point} = \frac{kq}{r}, \qquad \Delta V = V_b - V_a = -\int_a^b\vec E\cdot d\vec l, \qquad E_x = -\frac{dV}{dx}. \]
+\begin{itemize}
+\item Potentials from several charges add as plain numbers (with signs), not vectors. Where $V = 0$ the field need not be zero, and vice versa.
+\item The field points ``downhill'' in potential, toward lower $V$. Its strength is how fast $V$ changes with distance: closely spaced equipotentials mean a strong field.
+\item Equipotential surfaces are perpendicular to field lines. Moving a charge along one takes no work.
+\item Uniform field: $|\Delta V| = Ed$ along the field. Ring on its axis: $V = \dfrac{kQ}{\sqrt{x^2 + R^2}}$. Continuous distributions: $V = \int\dfrac{k\,dq}{r}$, usually easier than integrating $\vec E$.
+\end{itemize}
+
+\subsubsection{Check}\mbox{}
+
+\begin{q}{4}{9.2 Potential vs. field}{All four corners are the same distance from the center, so the potentials ($\pm kq/r$) sum to zero. The fields do not cancel: both positive charges push toward the negative side, and both negative charges pull that way too.}
+Charges $+q$, $+q$, $-q$, $-q$ sit at the corners of a square, with the two positive charges on adjacent corners. At the center of the square, which is true?
+\chh{$V = 0$ and $E = 0$}{$V \ne 0$ and $E = 0$}{$V \ne 0$ and $E \ne 0$}{$V = 0$, but $E \ne 0$}
+\end{q}
+\begin{q}{1}{9.2 Field from potential}{$E_x = -dV/dx = -(6x - 2) = -10$ V/m at $x = 2$.}
+In a region, $V(x) = 3x^2 - 2x$ (volts, $x$ in meters). What is the $x$-component of the electric field at $x = 2.0$ m?
+\chh{$-10$ V/m}{$-8.0$ V/m}{$+8.0$ V/m}{$+10$ V/m}
+\end{q}
+
+\section{Conservation of electric energy (9.3)}\label{sec:3}
+
+With only electric forces doing work,
+\[ \tfrac12 mv_a^2 + qV_a = \tfrac12 mv_b^2 + qV_b, \qquad \Delta K = -q\Delta V. \]
+Positive charges speed up moving toward lower potential; negative charges (electrons) speed up moving toward \emph{higher} potential. A particle of charge $e$ crossing a potential difference of 1 V gains $1\ \mathrm{eV} = 1.6\times10^{-19}$ J.
+
+\begin{example}[Closest approach]
+An alpha particle fired head-on at a fixed nucleus slows as it climbs the potential hill. It stops where all its kinetic energy has become potential energy: $\tfrac12 mv_0^2 = kq_1q_2/r_{min}$.
+\end{example}
+
+\subsubsection{Check}\mbox{}
+
+\begin{q}{3}{9.3 Energy gain}{$\Delta K = q|\Delta V| = (1.6\times10^{-19})(100) = 1.6\times10^{-17}$ J, i.e.\ 100 eV.}
+A proton starts from rest and is accelerated through a potential difference of 100 V. How much kinetic energy does it gain?
+\chh{$6.3\times10^{20}$ J}{$100$ J}{$1.6\times10^{-17}$ J}{$1.6\times10^{-19}$ J}
+\end{q}
+
+\makekey
+\end{document}
