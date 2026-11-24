@@ -121,7 +121,7 @@ def name(d):
 
 def compile_one(out, n):
     if shutil.which("tectonic"):
-        cmd = ["tectonic", "-X", "compile", "--keep-intermediates", "--keep-logs", n + ".tex"]
+        cmd = ["tectonic", "-X", "compile", "-Z", "deterministic-mode", "--keep-intermediates", "--keep-logs", n + ".tex"]
     else:
         cmd = ["latexmk", "-xelatex", "-interaction=nonstopmode", "-halt-on-error", n + ".tex"]
     r = subprocess.run(cmd, cwd=out, capture_output=True, text=True)
@@ -175,15 +175,18 @@ def publish(L, DOCS, out):
     w = PdfWriter()
     top = f"{L.prefix}study-series"
     with zipfile.ZipFile(os.path.join(pub, L.prefix + "study-series.zip"), "w", zipfile.ZIP_DEFLATED) as z:
-        z.write(os.path.join(out, "ap-wl.sty"), f"{top}/latex/ap-wl.sty")
-        z.writestr(f"{top}/latex/README.txt", README.format(course=L.course, family=L.family))
+        def add(src, arc):  # fixed timestamps, so an unchanged series zips to the same bytes
+            z.writestr(zipfile.ZipInfo(arc, date_time=(2026, 11, 1, 0, 0, 0)), open(src, "rb").read(), zipfile.ZIP_DEFLATED)
+        add(os.path.join(out, "ap-wl.sty"), f"{top}/latex/ap-wl.sty")
+        z.writestr(zipfile.ZipInfo(f"{top}/latex/README.txt", date_time=(2026, 11, 1, 0, 0, 0)),
+                   README.format(course=L.course, family=L.family), zipfile.ZIP_DEFLATED)
         for d in DOCS:
             n = name(d)
             pdf = os.path.join(out, n + ".pdf")
             shutil.copy(pdf, os.path.join(pub, L.prefix + n + ".pdf"))
             w.append(pdf, outline_item=f"{d.short} {'Study Guide' if d.kind == 'guide' else 'Question Set'}: {d.sub}")
-            z.write(pdf, f"{top}/pdf/{n}.pdf")
-            z.write(os.path.join(out, n + ".tex"), f"{top}/latex/{n}.tex")
+            add(pdf, f"{top}/pdf/{n}.pdf")
+            add(os.path.join(out, n + ".tex"), f"{top}/latex/{n}.tex")
     w.add_metadata({"/Title": f"{L.course}: Complete Study Pack", "/Author": "Paul Wang"})
     with open(os.path.join(pub, L.prefix + "complete-pack.pdf"), "wb") as fh:
         w.write(fh)

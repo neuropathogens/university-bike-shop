@@ -55,6 +55,8 @@ class Doc:
     def q(self, tag, stem, right, wrongs, why, idea, steps=()):
         """tag: '<topic key> <rule>'; wrongs: three (choice, why it is wrong) pairs."""
         assert len(wrongs) == 3, stem
+        assert not any(x in s for s in (stem, right, *[w for w, _ in wrongs]) for x in ("\\blank\\.", "\\blank\\,")), \
+            f"use \\blank. not \\blank\\. in {stem[:60]!r}"
         assert len({right, *[w for w, _ in wrongs]}) == 4, stem
         stem, right, wrongs = lite(stem), lite(right), [(lite(w), n) for w, n in wrongs]
         self.blocks.append(("q", dict(tag=tag, stem=stem, right=right, wrongs=list(wrongs), why=why, idea=idea,

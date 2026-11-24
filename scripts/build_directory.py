@@ -137,6 +137,8 @@ TREE = page("/", "Home", "The shop, what it sells, and how to book an appointmen
             ] + quiz_folder("/study/ap/ap-english-literature/", "/study/#ap-english-literature"),
                    files=files("study/ap/ap-english-literature", "PDFs"),
                    desc="AP English Literature, Part 0 and Units 1–3", anchor="/study/#ap-english-literature"),
+            folder("/study/ap/ap-french/", quiz_folder("/study/ap/ap-french/", "/study/#ap-french"), files=files("study/ap/ap-french", "PDFs"),
+                   desc="AP French Language and Culture, Part 0 and Units 1–6", anchor="/study/#ap-french"),
             folder("/study/ap/ap-physics-c/", [
                 folder("/study/ap/ap-physics-c/mechanics/", files=files("study/ap/ap-physics-c/mechanics", "PDFs"),
                        desc="AP Physics C: Mechanics, Units 1–7", anchor="/study/#ap-physics-c-mechanics"),
