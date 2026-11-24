@@ -1,0 +1,665 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light">
+<script>try{document.documentElement.setAttribute("data-theme",localStorage.getItem("apah.theme")==="dark"?"dark":"light")}catch(e){document.documentElement.setAttribute("data-theme","light")}</script>
+<title>AP Microeconomics Unit 6 Practice Set</title>
+<meta name="description" content="AP Microeconomics Unit 6 (Market Failure and the Role of Government) practice set: 21 five-choice multiple-choice questions with worked explanations and a note on every wrong choice.">
+<link rel="icon" href="/favicon.ico" sizes="48x48" type="image/x-icon">
+<link rel="icon" href="/icon.svg" sizes="any" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-icon.png" sizes="180x180">
+<link rel="preload" href="/study/ap/ap-art-history/fonts/LM-regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/study/katex/katex.min.css">
+<style>
+@font-face{font-family:"Latin Modern";font-style:normal;font-weight:400;font-display:swap;src:url("/study/ap/ap-art-history/fonts/LM-regular.woff2") format("woff2")}
+@font-face{font-family:"Latin Modern";font-style:italic;font-weight:400;font-display:swap;src:url("/study/ap/ap-art-history/fonts/LM-italic.woff2") format("woff2")}
+@font-face{font-family:"Latin Modern";font-style:normal;font-weight:600 700;font-display:swap;src:url("/study/ap/ap-art-history/fonts/LM-bold.woff2") format("woff2")}
+@font-face{font-family:"Latin Modern";font-style:italic;font-weight:600 700;font-display:swap;src:url("/study/ap/ap-art-history/fonts/LM-bold-italic.woff2") format("woff2")}
+@font-face{font-family:"Latin Modern Mono";font-style:normal;font-weight:400 500;font-display:swap;src:url("/study/ap/ap-art-history/fonts/LM-mono.woff2") format("woff2")}
+@font-face{font-family:"Latin Modern Mono";font-style:normal;font-weight:600 700;font-display:swap;src:url("/study/ap/ap-art-history/fonts/LM-mono-bold.woff2") format("woff2")}
+
+:root{--bg:#fff;--fg:#000;--muted:#4a4a4a;--line:#c9c9c9;--plate:#f5f5f3;--hl:#fbe9a6;--link:#00008b;--ok:#1d5e20;--bad:#9b1c1c;
+  --serif:"Latin Modern","Computer Modern Serif","CMU Serif",Georgia,serif;--mono:"Latin Modern Mono","SFMono-Regular",Menlo,Consolas,monospace;
+  --gutter:clamp(16px,4vw,40px);color-scheme:light}
+:root[data-theme=dark]{--bg:#111110;--fg:#ecebe6;--muted:#a3a29c;--line:#34342f;--plate:#1b1b19;--hl:#4d4320;--link:#9db4ff;--ok:#8fd394;--bad:#ff9b9b;color-scheme:dark}
+*{box-sizing:border-box}
+html{background:var(--bg);scroll-padding-top:16px}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--serif);font-size:17px;line-height:1.5;font-kerning:normal;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+button,input,textarea{font:inherit;color:inherit}
+button{cursor:pointer}
+button:disabled{cursor:default}
+a{color:var(--link);text-underline-offset:3px;text-decoration-thickness:.5px}
+:focus-visible{outline:2px solid var(--link);outline-offset:2px}
+[hidden]{display:none!important}
+.sc{font-variant:small-caps;text-transform:lowercase;letter-spacing:.04em}
+.muted{color:var(--muted)}
+.katex{font-size:1.04em;text-rendering:auto}
+.katex-display{margin:.7em 0;overflow-x:auto;overflow-y:hidden;padding:2px 0}
+
+.runhead{display:flex;flex-wrap:wrap;justify-content:space-between;gap:4px 16px;max-width:1480px;margin:0 auto;padding:14px var(--gutter) 6px;font-size:14px;font-style:italic;color:var(--muted)}
+.runhead a{text-decoration:none}
+.runhead a:hover{text-decoration:underline}
+.runhead-actions{display:flex;flex-wrap:wrap;gap:4px 18px}
+.theme-btn{background:none;border:0;padding:0;font:inherit;font-style:italic;color:var(--link)}
+.theme-btn:hover{text-decoration:underline}
+.rule{max-width:1480px;margin:0 auto;padding-inline:var(--gutter)}
+.rule hr{margin:0;border:0;border-top:.5px solid var(--fg)}
+
+.wrap{max-width:860px;margin:0 auto;padding:0 var(--gutter) 80px}
+.title{text-align:center;padding:34px 0 22px}
+.title h1{margin:0;text-wrap:balance;font-size:clamp(32px,6vw,46px);line-height:1.1;font-weight:700}
+.title .sub{margin:8px 0 0;font-size:18px;font-variant:small-caps;letter-spacing:.03em}
+.title .meta{margin:4px 0 0;font-style:italic;color:var(--muted)}
+
+.tabs{display:flex;justify-content:center;gap:0;margin:0 0 26px;border-bottom:.5px solid var(--fg)}
+.tab{background:none;border:0;border-bottom:2.5px solid transparent;padding:8px 18px;margin-bottom:-1px;font-size:17px;color:var(--muted)}
+.tab[aria-selected=true]{color:var(--fg);border-bottom-color:var(--fg);font-weight:700}
+.tab:hover{color:var(--fg)}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:40px;padding:0 16px;border:1px solid var(--fg);background:var(--bg);font-family:var(--mono);font-size:14.5px;white-space:nowrap}
+.btn:hover:not(:disabled){background:var(--plate)}
+.btn:disabled{opacity:.35}
+.btn--solid{background:var(--fg);color:var(--bg)}
+.btn--solid:hover:not(:disabled){background:var(--fg);opacity:.85}
+.btn--lg{min-height:48px;font-size:15.5px;padding:0 22px}
+.kbd{display:inline-grid;place-items:center;min-width:22px;height:22px;padding:0 4px;border:1px solid currentColor;font-family:var(--mono);font-size:12px;opacity:.8}
+
+/* booktabs tables */
+.bt{border-collapse:collapse;margin:0 auto;font-variant-numeric:tabular-nums}
+.bt th,.bt td{padding:4px 12px;text-align:center;font-weight:400}
+.bt th[scope=row],.bt thead th:first-child{text-align:left}
+.bt thead tr{border-top:1px solid var(--fg);border-bottom:.5px solid var(--fg)}
+.bt tbody tr:last-child{border-bottom:1px solid var(--fg)}
+.bt-wrap{overflow-x:auto;margin:0 0 16px}
+
+/* setup */
+.setup{border-bottom:1.5px solid var(--fg);padding:4px 0 22px;display:grid;gap:18px}
+.setup h2,.results h2,.fr h2{margin:0;font-size:20px}
+.choice-row{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.choice{display:flex;flex-direction:column;align-items:flex-start;gap:2px;padding:12px 14px;border:1px solid var(--fg);background:var(--bg);text-align:left}
+.choice b{font-size:17px}
+.choice span{font-size:14.5px;font-style:italic;color:var(--muted)}
+.choice[aria-pressed=true]{background:var(--fg);color:var(--bg)}
+.choice[aria-pressed=true] span{color:var(--bg);opacity:.8}
+.checks{display:flex;flex-wrap:wrap;gap:8px 22px}
+.checks label{display:inline-flex;align-items:center;gap:8px;cursor:pointer}
+.checks input{width:17px;height:17px;margin:0;accent-color:var(--fg)}
+.setup-actions{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.note{margin:0;font-size:15px;color:var(--muted);font-style:italic}
+
+/* run */
+.bar{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:4px 16px;font-size:15px;color:var(--muted)}
+.track{height:3px;background:var(--line);margin:8px 0 14px}
+.track span{display:block;height:100%;background:var(--fg);transition:width .2s ease}
+.nav{display:grid;grid-template-columns:repeat(auto-fill,minmax(34px,1fr));gap:5px;margin:0 0 22px}
+.nav button{height:32px;padding:0;border:1px solid var(--line);background:var(--bg);font-family:var(--serif);font-size:14px;font-variant-numeric:tabular-nums}
+.nav button:hover{border-color:var(--fg)}
+.nav .is-answered{background:var(--plate);border-color:var(--fg)}
+.nav .is-right{background:var(--fg);color:var(--bg);border-color:var(--fg)}
+.nav .is-wrong{border:1.5px dashed var(--bad);color:var(--bad)}
+.nav .is-current{outline:2px solid var(--fg);outline-offset:1px}
+.q{border-top:1.5px solid var(--fg);padding-top:16px}
+.q-eyebrow{margin:0 0 6px;font-size:14px;color:var(--muted)}
+.q-prompt{margin:0 0 14px;font-size:20px;line-height:1.45;font-weight:400}
+.opts{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.opt{display:flex;align-items:center;gap:12px;width:100%;min-height:52px;padding:10px 14px;border:1px solid var(--fg);background:var(--bg);text-align:left;font-size:16.5px;line-height:1.4}
+.opt:hover:not(:disabled){background:var(--plate)}
+.opt .kbd{flex:none}
+.opt .mark{margin-left:auto;padding-left:6px;font-family:var(--mono);font-size:14px;white-space:nowrap}
+.opt.is-picked{border-width:2px;padding:9px 13px;background:var(--plate)}
+.opt.is-right{background:var(--fg);color:var(--bg);border-color:var(--fg)}
+.opt.is-wrong{border:1.5px dashed var(--bad);color:var(--bad);text-decoration:line-through;text-decoration-thickness:1px}
+.opt.is-wrong .mark,.opt.is-wrong .kbd{text-decoration:none}
+.opt.is-dim{opacity:.5}
+.fb{margin:14px 0 0;padding:12px 16px;border:.5px solid var(--fg);border-left:3px solid var(--ok)}
+.fb.is-wrong{border-left-color:var(--bad)}
+.fb p{margin:0}
+.fb .verdict{font-weight:700;margin-bottom:4px}
+.why p{margin:0 0 6px}
+.steps{margin:2px 0 8px;padding-left:22px}
+.steps li{margin:4px 0;padding-left:2px}
+.why .why-h{margin:10px 0 2px;font-size:14.5px;color:var(--muted)}
+.others{margin:0 0 4px;padding-left:20px}
+.others li{margin:5px 0}
+.others .tag{margin-left:6px;font-family:var(--mono);font-size:12.5px;color:var(--bad);white-space:nowrap}
+.links{margin-top:6px;font-size:15px}
+.step{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:10px;margin-top:20px}
+.step-right{display:flex;flex-wrap:wrap;gap:8px}
+.confirm{margin-top:14px;padding:12px 16px;border:1px solid var(--fg);display:flex;flex-wrap:wrap;align-items:center;gap:10px}
+.confirm p{margin:0;flex:1 1 220px}
+.keys{margin:18px 0 0;font-size:13.5px;color:var(--muted);text-align:center}
+.restart-line{margin:10px 0 0;font-size:14.5px;text-align:center}
+
+/* results */
+.results{padding-top:4px}
+.score{text-align:center;padding:10px 0 18px}
+.score-big{margin:0;font-size:clamp(48px,10vw,72px);font-weight:700;line-height:1;font-variant-numeric:tabular-nums}
+.score p{margin:6px 0 0}
+.res-actions{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin:0 0 22px}
+.res-filter{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:6px;border-bottom:1.5px solid var(--fg);padding-bottom:6px}
+.res-list{list-style:none;margin:0;padding:0}
+.res-list>li{border-bottom:.5px solid var(--line)}
+.res-list>li:last-child{border-bottom:1.5px solid var(--fg)}
+.res-list details{padding:10px 0}
+.res-list summary{display:grid;grid-template-columns:34px 22px minmax(0,1fr);gap:8px;cursor:pointer;list-style:none}
+.res-list summary::-webkit-details-marker{display:none}
+.res-n{font-weight:700;font-variant-numeric:tabular-nums}
+.res-ok{color:var(--ok);font-weight:700}
+.res-bad{color:var(--bad);font-weight:700}
+.res-body{padding:8px 0 4px 64px;font-size:15.5px}
+.res-body p{margin:0 0 4px}
+.res-body .bt-wrap{margin:4px 0 8px}
+.topics{margin:0 0 26px}
+.topics h2{margin:0 0 8px}
+.topics .bt{margin:0;width:100%}
+.topics .bt td:last-child,.topics .bt th:last-child{text-align:left}
+.topics .flag{color:var(--bad);font-style:italic}
+.composite{margin:0 0 26px;padding:12px 16px;border:.5px solid var(--fg);border-left:3px solid var(--fg)}
+.composite p{margin:0}
+.composite p+p{margin-top:4px}
+
+/* free response */
+.fr-intro{margin:0 0 6px;font-style:italic;color:var(--muted)}
+.fr{border-top:1.5px solid var(--fg);padding:18px 0 26px}
+.fr h2 small{font-weight:400;font-style:italic;color:var(--muted);font-size:15px;margin-left:6px}
+.fr-stem{margin:10px 0 6px;text-align:justify;hyphens:auto;-webkit-hyphens:auto}
+.part{margin:18px 0 0}
+.part-prompt{margin:0 0 8px}
+.part-prompt b{margin-right:4px}
+.part.essay textarea{min-height:420px}
+.part textarea{width:100%;min-height:150px;padding:12px 14px;border:1px solid var(--fg);border-radius:0;background:var(--bg);font-family:var(--serif);font-size:16.5px;line-height:1.55;resize:vertical}
+.part-meta{margin-top:4px;font-size:14px;color:var(--muted)}
+.sol{margin-top:12px;padding:12px 18px;border:.5px solid var(--fg)}
+.sol h3{margin:0 0 4px;font-size:15px}
+.sol p{margin:0 0 10px}
+.sol .crit{display:grid;grid-template-columns:28px minmax(0,1fr);gap:2px 8px;margin:0 0 10px;font-size:15.5px}
+.sol .crit dt{font-weight:700}
+.sol .crit dd{margin:0}
+.mark-row{display:flex;flex-wrap:wrap;align-items:center;gap:8px;font-size:15px}
+.seg{display:inline-flex;flex-wrap:wrap;max-width:100%;padding:1px 0 0 1px}
+.seg button{margin:-1px 0 0 -1px;min-width:44px;min-height:36px;padding:0 10px;border:1px solid var(--fg);background:var(--bg);font-family:var(--mono);font-size:14px}
+.seg button[aria-pressed=true]{position:relative;background:var(--fg);color:var(--bg)}
+.fr-actions{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:10px;margin-top:16px}
+.fr-score{font-size:16px}
+.fr-score b{font-variant-numeric:tabular-nums}
+.scale{margin-top:14px}
+.scale summary{cursor:pointer;font-size:15px;color:var(--muted);font-style:italic}
+.scale .bt{margin:8px 0 0}
+.scale .bt td:last-child,.scale .bt th:last-child{text-align:left}
+.foot{margin-top:40px;padding-top:12px;border-top:.5px solid var(--line);font-size:14px;color:var(--muted)}
+
+@media (max-width:640px){
+  .runhead-title{display:none}
+  .runhead-actions{width:100%;justify-content:space-between}
+  .title{padding:22px 0 16px}
+  .choice-row{grid-template-columns:1fr}
+  .q-prompt{font-size:18.5px}
+  .res-body{padding-left:0}
+  .keys{display:none}
+  .fr-stem{text-align:left}
+  .bt th,.bt td{padding:4px 7px}
+  .sol{padding:10px 12px}
+  .katex-display>.katex{font-size:.94em}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+@media print{.runhead,.rule,.tabs,.nav,.step,.keys,.restart-line,.res-actions{display:none!important}}
+/* generic quiz additions */
+.q-prompt p{margin:0}
+.q-prompt p+p{margin-top:8px}
+.q-ask{margin:10px 0 0!important;font-size:16px;font-style:italic;color:var(--muted)}
+.blank{display:inline-block;width:3.4em;height:1em;margin:0 .12em;border-bottom:1.5px solid currentColor;vertical-align:-.12em}
+.stim{position:relative;margin:0 0 16px;padding:12px 16px;border:.5px solid var(--fg);background:var(--plate);font-size:16.5px;line-height:1.55;max-height:60vh;overflow:auto}
+.stim-h{margin:0 0 6px!important;font-size:14px;color:var(--muted)}
+.stim p{margin:0 0 8px}
+.stim p:last-child{margin-bottom:0}
+u.ul{text-decoration-thickness:1px;text-underline-offset:3px}
+.qn{display:inline-block;min-width:1.4em;padding:0 .2em;margin:0 .15em;border:.5px solid var(--fg);font:600 11.5px/1.4 system-ui,-apple-system,sans-serif;text-align:center;vertical-align:.12em;font-variant-numeric:tabular-nums}
+.stim .qn[data-cur]{background:var(--fg);color:var(--bg)}
+.stim u[data-cur]{background:var(--hl);box-shadow:0 0 0 2px var(--hl)}
+.stim .ln{display:inline-block;min-width:1.3em;padding:0 .25em;margin-right:.25em;border:.5px solid var(--line);color:var(--muted);font:500 11px/1.4 system-ui,-apple-system,sans-serif;text-align:center;vertical-align:.12em;font-variant-numeric:tabular-nums}
+.stim .ln[data-cur]{background:var(--hl);color:var(--fg);border-color:var(--fg)}
+.stim-intro{font-style:italic;color:var(--muted);font-size:15px}
+.stim-sub{margin-top:12px!important}
+.stim-note{font-size:15px;color:var(--muted)}
+.tool{margin:0 0 10px;padding:6px 0 6px 12px;border-left:3px solid var(--muted);font-size:15px;color:var(--muted)}
+.fig .figcap{margin:0 0 6px;font-size:15px}
+.stim.free{max-height:none;overflow:visible}
+.bt th[colspan]{text-align:center}
+.fig-after{margin:12px 0 4px}
+.fig-after img{max-width:min(100%,420px);max-height:340px;width:auto;object-fit:contain}
+.stim .figcap{text-align:center;font-size:15px;margin:10px 0 4px}
+.stim .fig{margin:6px 0 10px}
+.stim .bt-wrap{margin:0 0 10px}
+.fig-img,.opt-img{max-width:100%;height:auto;background:#fff}
+.opt-img{display:block;max-width:140px}
+:root[data-theme=dark] .fig-img,:root[data-theme=dark] .opt-img{filter:invert(.92) hue-rotate(180deg)}
+.fig{margin:0 0 14px;text-align:center}
+.fig img{max-width:100%;height:auto;background:#fff}
+:root[data-theme=dark] .fig img{filter:invert(.92) hue-rotate(180deg)}
+.fig figcaption{font-size:14px;color:var(--muted);font-style:italic}
+.target{margin:4px 0 0;font-style:italic}
+.res-sum{display:block}
+.opt>span:nth-child(2){flex:1 1 auto;min-width:0;overflow-wrap:anywhere;-webkit-hyphens:auto;hyphens:auto}
+@media (max-width:640px){.opt .mark{white-space:normal;text-align:right;max-width:6.2em;line-height:1.25}}
+.sol>div{margin:0 0 10px}
+.crit-pts{margin:0 0 10px;font-size:15.5px}
+.crit-pts p{margin:0 0 4px}
+.crit-pts ul{margin:0 0 4px;padding-left:20px}
+</style>
+</head>
+<body>
+<div class="runhead"><span class="runhead-title">AP Microeconomics &middot; Unit 6: Market Failure and the Role of Government &middot; Practice Set</span><span class="runhead-actions"><a href="/study/#ap-microeconomics">&larr;&nbsp;Study Library</a><a href="/study/ap/ap-economics/micro/ap-micro-unit-6-practice.pdf">PDF version</a><button type="button" class="theme-btn" id="theme-btn">Dark mode</button></span></div>
+<div class="rule"><hr></div>
+
+<main class="wrap">
+  <header class="title">
+    <h1>Unit 6 <span style="white-space:nowrap">Practice Set</span></h1>
+    <p class="sub">Market Failure and the Role of Government</p>
+    <p class="meta">21 multiple-choice questions, five choices each (about 24 min at exam pace)</p>
+  </header>
+
+  <section id="mc"></section>
+  <section id="fr" role="tabpanel" aria-labelledby="tab-fr" hidden></section>
+
+  <p class="foot">From <a href="/study/ap/ap-economics/micro/ap-micro-unit-6-practice.pdf"><i>AP Microeconomics Unit 6 Practice Set</i></a> (PDF). Answers and reasons are the document&rsquo;s own key; the explanations add worked steps and say why each wrong choice is wrong. Topic links open the matching section of <a href="/study/ap/ap-economics/micro/ap-micro-unit-6-market-failure-and-role-of-government.pdf">the Unit 6 guide</a>. Your answers are saved only in this browser.</p>
+</main>
+
+<script id="data" type="application/json">{"meta":{"key":"study.ap-econ.micro-6.v1","setupNote":"Allow about 70 seconds per question, the exam&rsquo;s pace. Each question names the topic rule it tests.","topicPrefix":"","topicCol":"Topic","guideCol":"Guide section","byTopic":"By topic","topicNote":"Two or more misses on one topic: reread that section of the guide.","guide":"/study/ap/ap-economics/micro/ap-micro-unit-6-market-failure-and-role-of-government.pdf","guideName":"the <i>Unit 6 guide<\/i>"},"topics":{"6.1":{"name":"Socially Efficient and Inefficient Market Outcomes","page":1},"6.2":{"name":"Externalities","page":2},"6.3":{"name":"Public and Private Goods","page":3},"6.4":{"name":"The Effects of Government Intervention in Different Market Structures","page":4},"6.5":{"name":"Inequality","page":5}},"sections":{"6.1":"Socially Efficient and Inefficient Market Outcomes","6.2":"Externalities","6.3":"Public and Private Goods","6.4":"The Effects of Government Intervention in Different Market Structures","6.5":"Inequality"},"stims":{},"mc":[{"n":1,"prompt":"The socially optimal quantity of a good is the quantity at which","options":["marginal private benefit equals marginal private cost","total benefit is at its maximum","price equals average total cost","marginal social benefit equals marginal social cost","marginal social cost is at its minimum"],"answer":3,"sec":"6.1","topic":"6.1","tag":"Rule 6.1","ex":{"idea":"Society’s net benefit is greatest where the benefit of the last unit to everyone equals its cost to everyone.","steps":[],"others":{"0":"is the market outcome, which differs from the optimum when there are externalities.","1":"would mean producing units whose cost exceeds their benefit.","2":"is a firm’s break-even point, not the social optimum.","4":"has no special meaning for efficiency."}}},{"n":2,"prompt":"A market failure exists when","options":["firms earn economic losses","the market price rises","the market quantity differs from the socially optimal quantity","some consumers cannot afford the good","the government regulates the market"],"answer":2,"sec":"6.1","topic":"6.1","tag":"Rule 6.1","ex":{"idea":"Failure means the market does not reach <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>M<\/mi><mi>S<\/mi><mi>B<\/mi><mo>=<\/mo><mi>M<\/mi><mi>S<\/mi><mi>C<\/mi><\/mrow><annotation encoding=\"application/x-tex\">MSB = MSC<\/annotation><\/semantics><\/math><\/span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"><\/span><span class=\"mord mathnormal\" style=\"margin-right:0.05017em;\">MSB<\/span><span class=\"mspace\" style=\"margin-right:0.2778em;\"><\/span><span class=\"mrel\">=<\/span><span class=\"mspace\" style=\"margin-right:0.2778em;\"><\/span><\/span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"><\/span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">MSC<\/span><\/span><\/span><\/span>, leaving deadweight loss.","steps":[],"others":{"0":"is normal in markets and leads to exit, not failure.","1":"is just a price change.","3":"is a question of equity, not efficiency.","4":"is not a definition of failure."}}},{"n":3,"prompt":"If a market produces more than the socially optimal quantity, deadweight loss arises because","options":["consumers pay too little for each unit","producers earn too much profit","the extra units cost society more than they are worth to society","the extra units are worth more than they cost","the price is above marginal private cost"],"answer":2,"sec":"6.1","topic":"6.1","tag":"Rule 6.1","ex":{"idea":"Beyond the optimum <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>M<\/mi><mi>S<\/mi><mi>C<\/mi><mo>&gt;<\/mo><mi>M<\/mi><mi>S<\/mi><mi>B<\/mi><\/mrow><annotation encoding=\"application/x-tex\">MSC &gt; MSB<\/annotation><\/semantics><\/math><\/span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7224em;vertical-align:-0.0391em;\"><\/span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">MSC<\/span><span class=\"mspace\" style=\"margin-right:0.2778em;\"><\/span><span class=\"mrel\">&gt;<\/span><span class=\"mspace\" style=\"margin-right:0.2778em;\"><\/span><\/span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"><\/span><span class=\"mord mathnormal\" style=\"margin-right:0.05017em;\">MSB<\/span><\/span><\/span><\/span> for each additional unit.","steps":[],"others":{"0":"is not the source of the loss; the extra units themselves are wasteful.","1":"is about who gains, not efficiency.","3":"is backward: that would make them worth producing.","4":"is not the reason."}}},{"n":4,"prompt":"A chemical plant releases pollution that harms people living downstream. Without government intervention, the market for the plant’s product will","options":["produce less than the socially optimal quantity at too high a price","produce more than the socially optimal quantity at too low a price","produce the socially optimal quantity","produce more than the optimal quantity at too high a price","produce less than the optimal quantity at too low a price"],"answer":1,"sec":"6.2","topic":"6.2","tag":"Rule 6.2","ex":{"idea":"Sellers ignore the external cost, so supply (MPC) lies below MSC: overproduction and an underpriced good.","steps":[],"others":{"0":"describes a positive externality.","2":"ignores the external cost.","3":"gets the price wrong: the market price is too low.","4":"describes neither case."}}},{"n":5,"prompt":"To correct a negative externality, the efficient per-unit tax equals","options":["the marginal external cost at the market quantity","the market price of the good","the firm’s average total cost","the marginal external cost at the socially optimal quantity","the total external cost divided by market output"],"answer":3,"sec":"6.2","topic":"6.2","tag":"Rule 6.2","ex":{"idea":"A Pigouvian tax sized to the external cost at <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>Q<\/mi><mi>s<\/mi><\/msub><\/mrow><annotation encoding=\"application/x-tex\">Q_s<\/annotation><\/semantics><\/math><\/span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8778em;vertical-align:-0.1944em;\"><\/span><span class=\"mord\"><span class=\"mord mathnormal\">Q<\/span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.1514em;\"><span style=\"top:-2.55em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"><\/span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">s<\/span><\/span><\/span><\/span><span class=\"vlist-s\">​<\/span><\/span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span> shifts supply up to MSC at the optimum.","steps":[],"others":{"0":"uses the wrong quantity; the tax should reflect external cost at the optimum.","1":"is unrelated to the externality.","2":"is unrelated to the externality.","4":"uses an average; the tax should match the marginal external cost."}}},{"n":6,"prompt":"Flu vaccinations protect not only the people vaccinated but also those around them. Which policy would move the market toward the socially optimal quantity?","options":["A per-unit tax on flu vaccinations","A price floor above the equilibrium price","A quota limiting the number of vaccinations","A per-unit subsidy for flu vaccinations","No policy, since the market is efficient"],"answer":3,"sec":"6.2","topic":"6.2","tag":"Rule 6.2","ex":{"idea":"A positive externality means underproduction; a subsidy raises quantity toward the point where <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>M<\/mi><mi>S<\/mi><mi>B<\/mi><mo>=<\/mo><mi>M<\/mi><mi>S<\/mi><mi>C<\/mi><\/mrow><annotation encoding=\"application/x-tex\">MSB = MSC<\/annotation><\/semantics><\/math><\/span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"><\/span><span class=\"mord mathnormal\" style=\"margin-right:0.05017em;\">MSB<\/span><span class=\"mspace\" style=\"margin-right:0.2778em;\"><\/span><span class=\"mrel\">=<\/span><span class=\"mspace\" style=\"margin-right:0.2778em;\"><\/span><\/span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"><\/span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">MSC<\/span><\/span><\/span><\/span>.","steps":[],"others":{"0":"would reduce the quantity further.","1":"would reduce the quantity bought.","2":"would reduce the quantity further.","4":"ignores the benefit to others."}}},{"n":7,"prompt":"In a market with a negative externality, marginal private benefit is <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>P<\/mi><mo>=<\/mo><mn>14<\/mn><mo>−<\/mo><mi>Q<\/mi><\/mrow><annotation encoding=\"application/x-tex\">P = 14 - Q<\/annotation><\/semantics><\/math><\/span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"><\/span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">P<\/span><span class=\"mspace\" style=\"margin-right:0.2778em;\"><\/span><span class=\"mrel\">=<\/span><span class=\"mspace\" style=\"margin-right:0.2778em;\"><\/span><\/span><span class=\"base\"><span class=\"strut\" style=\"height:0.7278em;vertical-align:-0.0833em;\"><\/span><span class=\"mord\">14<\/span><span class=\"mspace\" style=\"margin-right:0.2222em;\"><\/span><span class=\"mbin\">−<\/span><span class=\"mspace\" style=\"margin-right:0.2222em;\"><\/span><\/span><span class=\"base\"><span class=\"strut\" style=\"height:0.8778em;vertical-align:-0.1944em;\"><\/span><span class=\"mord mathnormal\">Q<\/span><\/span><\/span><\/span>, marginal private cost is <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>P<\/mi><mo>=<\/mo><mn>2<\/mn><mo>+<\/mo><mi>Q<\/mi><\/mrow><annotation encoding=\"application/x-tex\">P = 2 + Q<\/annotation><\/semantics><\/math><\/span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"><\/span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">P<\/span><span class=\"mspace\" style=\"margin-right:0.2778em;\"><\/span><span class=\"mrel\">=<\/span><span class=\"mspace\" style=\"margin-right:0.2778em;\"><\/span><\/span><span class=\"base\"><span class=\"strut\" style=\"height:0.7278em;vertical-align:-0.0833em;\"><\/span><span class=\"mord\">2<\/span><span class=\"mspace\" style=\"margin-right:0.2222em;\"><\/span><span class=\"mbin\">+<\/span><span class=\"mspace\" style=\"margin-right:0.2222em;\"><\/span><\/span><span class=\"base\"><span class=\"strut\" style=\"height:0.8778em;vertical-align:-0.1944em;\"><\/span><span class=\"mord mathnormal\">Q<\/span><\/span><\/span><\/span>, and the marginal external cost is &#36;2 per unit. What are the market quantity and the socially optimal quantity?","options":["Market 6; optimal 5","Market 5; optimal 6","Market 6; optimal 4","Market 7; optimal 5","Market 5; optimal 5"],"answer":0,"sec":"6.2","topic":"6.2","tag":"Rule 6.2","ex":{"idea":"Market: <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>14<\/mn><mo>−<\/mo><mi>Q<\/mi><mo>=<\/mo><mn>2<\/mn><mo>+<\/mo><mi>Q<\/mi><mo>⇒<\/mo><mi>Q<\/mi><mo>=<\/mo><mn>6<\/mn><\/mrow><annotation encoding=\"application/x-tex\">14 - Q = 2 + Q \\Rightarrow Q = 6<\/annotation><\/semantics><\/math><\/span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7278em;vertical-align:-0.0833em;\"><\/span><span class=\"mord\">14<\/span><span class=\"mspace\" style=\"margin-right:0.2222em;\"><\/span><span class=\"mbin\">−<\/span><span class=\"mspace\" style=\"margin-right:0.2222em;\"><\/span><\/span><span class=\"base\"><span class=\"strut\" style=\"height:0.8778em;vertical-align:-0.1944em;\"><\/span><span class=\"mord mathnormal\">Q<\/span><span class=\"mspace\" style=\"margin-right:0.2778em;\"><\/span><span class=\"mrel\">=<\/span><span class=\"mspace\" style=\"margin-right:0.2778em;\"><\/span><\/span><span class=\"base\"><span class=\"strut\" style=\"height:0.7278em;vertical-align:-0.0833em;\"><\/span><span class=\"mord\">2<\/span><span class=\"mspace\" style=\"margin-right:0.2222em;\"><\/span><span class=\"mbin\">+<\/span><span class=\"mspace\" style=\"margin-right:0.2222em;\"><\/span><\/span><span class=\"base\"><span class=\"strut\" style=\"height:0.8778em;vertical-align:-0.1944em;\"><\/span><span class=\"mord mathnormal\">Q<\/span><span class=\"mspace\" style=\"margin-right:0.2778em;\"><\/span><span class=\"mrel\">⇒<\/span><span class=\"mspace\" style=\"margin-right:0.2778em;\"><\/span><\/span><span class=\"base\"><span class=\"strut\" style=\"height:0.8778em;vertical-align:-0.1944em;\"><\/span><span class=\"mord mathnormal\">Q<\/span><span class=\"mspace\" style=\"margin-right:0.2778em;\"><\/span><span class=\"mrel\">=<\/span><span class=\"mspace\" style=\"margin-right:0.2778em;\"><\/span><\/span><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em;\"><\/span><span class=\"mord\">6<\/span><\/span><\/span><\/span>. Social: MSC <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>=<\/mo><mn>4<\/mn><mo>+<\/mo><mi>Q<\/mi><\/mrow><annotation encoding=\"application/x-tex\">= 4 + Q<\/annotation><\/semantics><\/math><\/span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.3669em;\"><\/span><span class=\"mrel\">=<\/span><span class=\"mspace\" style=\"margin-right:0.2778em;\"><\/span><\/span><span class=\"base\"><span class=\"strut\" style=\"height:0.7278em;vertical-align:-0.0833em;\"><\/span><span class=\"mord\">4<\/span><span class=\"mspace\" style=\"margin-right:0.2222em;\"><\/span><span class=\"mbin\">+<\/span><span class=\"mspace\" style=\"margin-right:0.2222em;\"><\/span><\/span><span class=\"base\"><span class=\"strut\" style=\"height:0.8778em;vertical-align:-0.1944em;\"><\/span><span class=\"mord mathnormal\">Q<\/span><\/span><\/span><\/span>, so <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>14<\/mn><mo>−<\/mo><mi>Q<\/mi><mo>=<\/mo><mn>4<\/mn><mo>+<\/mo><mi>Q<\/mi><mo>⇒<\/mo><mi>Q<\/mi><mo>=<\/mo><mn>5<\/mn><\/mrow><annotation encoding=\"application/x-tex\">14 - Q = 4 + Q \\Rightarrow Q = 5<\/annotation><\/semantics><\/math><\/span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7278em;vertical-align:-0.0833em;\"><\/span><span class=\"mord\">14<\/span><span class=\"mspace\" style=\"margin-right:0.2222em;\"><\/span><span class=\"mbin\">−<\/span><span class=\"mspace\" style=\"margin-right:0.2222em;\"><\/span><\/span><span class=\"base\"><span class=\"strut\" style=\"height:0.8778em;vertical-align:-0.1944em;\"><\/span><span class=\"mord mathnormal\">Q<\/span><span class=\"mspace\" style=\"margin-right:0.2778em;\"><\/span><span class=\"mrel\">=<\/span><span class=\"mspace\" style=\"margin-right:0.2778em;\"><\/span><\/span><span class=\"base\"><span class=\"strut\" style=\"height:0.7278em;vertical-align:-0.0833em;\"><\/span><span class=\"mord\">4<\/span><span class=\"mspace\" style=\"margin-right:0.2222em;\"><\/span><span class=\"mbin\">+<\/span><span class=\"mspace\" style=\"margin-right:0.2222em;\"><\/span><\/span><span class=\"base\"><span class=\"strut\" style=\"height:0.8778em;vertical-align:-0.1944em;\"><\/span><span class=\"mord mathnormal\">Q<\/span><span class=\"mspace\" style=\"margin-right:0.2778em;\"><\/span><span class=\"mrel\">⇒<\/span><span class=\"mspace\" style=\"margin-right:0.2778em;\"><\/span><\/span><span class=\"base\"><span class=\"strut\" style=\"height:0.8778em;vertical-align:-0.1944em;\"><\/span><span class=\"mord mathnormal\">Q<\/span><span class=\"mspace\" style=\"margin-right:0.2778em;\"><\/span><span class=\"mrel\">=<\/span><span class=\"mspace\" style=\"margin-right:0.2778em;\"><\/span><\/span><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em;\"><\/span><span class=\"mord\">5<\/span><\/span><\/span><\/span>.","steps":["Market: <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>14<\/mn><mo>−<\/mo><mi>Q<\/mi><mo>=<\/mo><mn>2<\/mn><mo>+<\/mo><mi>Q<\/mi><\/mrow><annotation encoding=\"application/x-tex\">14 - Q = 2 + Q<\/annotation><\/semantics><\/math><\/span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7278em;vertical-align:-0.0833em;\"><\/span><span class=\"mord\">14<\/span><span class=\"mspace\" style=\"margin-right:0.2222em;\"><\/span><span class=\"mbin\">−<\/span><span class=\"mspace\" style=\"margin-right:0.2222em;\"><\/span><\/span><span class=\"base\"><span class=\"strut\" style=\"height:0.8778em;vertical-align:-0.1944em;\"><\/span><span class=\"mord mathnormal\">Q<\/span><span class=\"mspace\" style=\"margin-right:0.2778em;\"><\/span><span class=\"mrel\">=<\/span><span class=\"mspace\" style=\"margin-right:0.2778em;\"><\/span><\/span><span class=\"base\"><span class=\"strut\" style=\"height:0.7278em;vertical-align:-0.0833em;\"><\/span><span class=\"mord\">2<\/span><span class=\"mspace\" style=\"margin-right:0.2222em;\"><\/span><span class=\"mbin\">+<\/span><span class=\"mspace\" style=\"margin-right:0.2222em;\"><\/span><\/span><span class=\"base\"><span class=\"strut\" style=\"height:0.8778em;vertical-align:-0.1944em;\"><\/span><span class=\"mord mathnormal\">Q<\/span><\/span><\/span><\/span>, so <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>Q<\/mi><mo>=<\/mo><mn>6<\/mn><\/mrow><annotation encoding=\"application/x-tex\">Q = 6<\/annotation><\/semantics><\/math><\/span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8778em;vertical-align:-0.1944em;\"><\/span><span class=\"mord mathnormal\">Q<\/span><span class=\"mspace\" style=\"margin-right:0.2778em;\"><\/span><span class=\"mrel\">=<\/span><span class=\"mspace\" style=\"margin-right:0.2778em;\"><\/span><\/span><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em;\"><\/span><span class=\"mord\">6<\/span><\/span><\/span><\/span>.","Social: <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>M<\/mi><mi>S<\/mi><mi>C<\/mi><mo>=<\/mo><mn>4<\/mn><mo>+<\/mo><mi>Q<\/mi><\/mrow><annotation encoding=\"application/x-tex\">MSC = 4 + Q<\/annotation><\/semantics><\/math><\/span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"><\/span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">MSC<\/span><span class=\"mspace\" style=\"margin-right:0.2778em;\"><\/span><span class=\"mrel\">=<\/span><span class=\"mspace\" style=\"margin-right:0.2778em;\"><\/span><\/span><span class=\"base\"><span class=\"strut\" style=\"height:0.7278em;vertical-align:-0.0833em;\"><\/span><span class=\"mord\">4<\/span><span class=\"mspace\" style=\"margin-right:0.2222em;\"><\/span><span class=\"mbin\">+<\/span><span class=\"mspace\" style=\"margin-right:0.2222em;\"><\/span><\/span><span class=\"base\"><span class=\"strut\" style=\"height:0.8778em;vertical-align:-0.1944em;\"><\/span><span class=\"mord mathnormal\">Q<\/span><\/span><\/span><\/span>; <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>14<\/mn><mo>−<\/mo><mi>Q<\/mi><mo>=<\/mo><mn>4<\/mn><mo>+<\/mo><mi>Q<\/mi><\/mrow><annotation encoding=\"application/x-tex\">14 - Q = 4 + Q<\/annotation><\/semantics><\/math><\/span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7278em;vertical-align:-0.0833em;\"><\/span><span class=\"mord\">14<\/span><span class=\"mspace\" style=\"margin-right:0.2222em;\"><\/span><span class=\"mbin\">−<\/span><span class=\"mspace\" style=\"margin-right:0.2222em;\"><\/span><\/span><span class=\"base\"><span class=\"strut\" style=\"height:0.8778em;vertical-align:-0.1944em;\"><\/span><span class=\"mord mathnormal\">Q<\/span><span class=\"mspace\" style=\"margin-right:0.2778em;\"><\/span><span class=\"mrel\">=<\/span><span class=\"mspace\" style=\"margin-right:0.2778em;\"><\/span><\/span><span class=\"base\"><span class=\"strut\" style=\"height:0.7278em;vertical-align:-0.0833em;\"><\/span><span class=\"mord\">4<\/span><span class=\"mspace\" style=\"margin-right:0.2222em;\"><\/span><span class=\"mbin\">+<\/span><span class=\"mspace\" style=\"margin-right:0.2222em;\"><\/span><\/span><span class=\"base\"><span class=\"strut\" style=\"height:0.8778em;vertical-align:-0.1944em;\"><\/span><span class=\"mord mathnormal\">Q<\/span><\/span><\/span><\/span>, so <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>Q<\/mi><mo>=<\/mo><mn>5<\/mn><\/mrow><annotation encoding=\"application/x-tex\">Q = 5<\/annotation><\/semantics><\/math><\/span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8778em;vertical-align:-0.1944em;\"><\/span><span class=\"mord mathnormal\">Q<\/span><span class=\"mspace\" style=\"margin-right:0.2778em;\"><\/span><span class=\"mrel\">=<\/span><span class=\"mspace\" style=\"margin-right:0.2778em;\"><\/span><\/span><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em;\"><\/span><span class=\"mord\">5<\/span><\/span><\/span><\/span>."],"others":{"1":"swaps the two quantities.","2":"makes the optimum too low.","3":"makes the market quantity too high.","4":"ignores the external cost."}}},{"n":8,"prompt":"According to the Coase theorem, private parties can reach an efficient outcome without government intervention if","options":["the government taxes the externality","the number of affected people is very large","the externality is positive rather than negative","property rights are clearly defined and bargaining costs are low","the firm causing the externality is a monopoly"],"answer":3,"sec":"6.2","topic":"6.2","tag":"Rule 6.2","ex":{"idea":"With clear rights and low transaction costs, the parties bargain to the efficient quantity whoever holds the rights.","steps":[],"others":{"0":"is government intervention, which Coase says may not be needed.","1":"is backward: many parties make bargaining costly.","2":"is not the condition.","4":"is not the condition."}}},{"n":9,"prompt":"Which of the following is the best example of a public good?","options":["A slice of pizza","National defence","A subscription streaming service","Fish in the open ocean","A seat on a city bus"],"answer":1,"sec":"6.3","topic":"6.3","tag":"Rule 6.3","ex":{"idea":"Defence is non-rival and non-excludable. Streaming is excludable (a club good); ocean fish are rival (a common resource).","steps":[],"others":{"0":"is rival and excludable: a private good.","2":"is excludable: a club good.","3":"is rival: a common resource.","4":"is excludable and partly rival."}}},{"n":10,"prompt":"Private markets tend to underprovide public goods mainly because","options":["public goods are too expensive to produce","consumers do not value public goods","public goods are rival in consumption","governments forbid private firms from producing them","people can benefit without paying, so firms cannot collect enough revenue"],"answer":4,"sec":"6.3","topic":"6.3","tag":"Rule 6.3","ex":{"idea":"Non-excludability creates the free-rider problem.","steps":[],"others":{"0":"is not the reason.","1":"is false; people value them.","2":"is false; public goods are non-rival.","3":"is not the reason."}}},{"n":11,"prompt":"Fish in international waters are often overfished because they are","options":["rival and non-excludable","non-rival and non-excludable","rival and excludable","non-rival and excludable","a public good"],"answer":0,"sec":"6.3","topic":"6.3","tag":"Rule 6.3","ex":{"idea":"A common resource: each catch reduces what others can take, but no one can be kept out, so each user ignores the cost to others.","steps":[],"others":{"1":"describes a public good.","2":"describes a private good.","3":"describes a club good.","4":"is wrong: fish are rival."}}},{"n":12,"prompt":"A video-streaming service that charges a subscription fee is best classified as","options":["a private good: rival and excludable","a public good: non-rival and non-excludable","a common resource: rival and non-excludable","a common resource: non-rival and excludable","a club good: excludable but non-rival"],"answer":4,"sec":"6.3","topic":"6.3","tag":"Rule 6.3","ex":{"idea":"Non-subscribers can be excluded, but one viewer streaming does not reduce what another can watch.","steps":[],"others":{"0":"is wrong: one viewer does not use up the stream.","1":"is wrong: non-subscribers are excluded.","2":"is wrong on both counts.","3":"mislabels a club good."}}},{"n":13,"prompt":"Three residents value one more street light at &#36;30, &#36;25, and &#36;15. The light costs &#36;60. What is the marginal social benefit of the light?","options":["&#36;15","&#36;25","&#36;30","&#36;60","&#36;70"],"answer":4,"sec":"6.3","topic":"6.3","tag":"Rule 6.3","ex":{"idea":"For a non-rival good, add individual benefits: <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>30<\/mn><mo>+<\/mo><mn>25<\/mn><mo>+<\/mo><mn>15<\/mn><mo>=<\/mo><mtext>$<\/mtext><mn>70<\/mn><mo>&gt;<\/mo><mtext>$<\/mtext><mn>60<\/mn><\/mrow><annotation encoding=\"application/x-tex\">30 + 25 + 15 = \\text{\\textdollar}70 &gt; \\text{\\textdollar}60<\/annotation><\/semantics><\/math><\/span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7278em;vertical-align:-0.0833em;\"><\/span><span class=\"mord\">30<\/span><span class=\"mspace\" style=\"margin-right:0.2222em;\"><\/span><span class=\"mbin\">+<\/span><span class=\"mspace\" style=\"margin-right:0.2222em;\"><\/span><\/span><span class=\"base\"><span class=\"strut\" style=\"height:0.7278em;vertical-align:-0.0833em;\"><\/span><span class=\"mord\">25<\/span><span class=\"mspace\" style=\"margin-right:0.2222em;\"><\/span><span class=\"mbin\">+<\/span><span class=\"mspace\" style=\"margin-right:0.2222em;\"><\/span><\/span><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em;\"><\/span><span class=\"mord\">15<\/span><span class=\"mspace\" style=\"margin-right:0.2778em;\"><\/span><span class=\"mrel\">=<\/span><span class=\"mspace\" style=\"margin-right:0.2778em;\"><\/span><\/span><span class=\"base\"><span class=\"strut\" style=\"height:0.8056em;vertical-align:-0.0556em;\"><\/span><span class=\"mord text\"><span class=\"mord\">$<\/span><\/span><span class=\"mord\">70<\/span><span class=\"mspace\" style=\"margin-right:0.2778em;\"><\/span><span class=\"mrel\">&gt;<\/span><span class=\"mspace\" style=\"margin-right:0.2778em;\"><\/span><\/span><span class=\"base\"><span class=\"strut\" style=\"height:0.8056em;vertical-align:-0.0556em;\"><\/span><span class=\"mord text\"><span class=\"mord\">$<\/span><\/span><span class=\"mord\">60<\/span><\/span><\/span><\/span>, so it should be provided.","steps":["Everyone enjoys the same light, so add the values: <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>30<\/mn><mo>+<\/mo><mn>25<\/mn><mo>+<\/mo><mn>15<\/mn><mo>=<\/mo><mtext>$<\/mtext><mn>70<\/mn><\/mrow><annotation encoding=\"application/x-tex\">30 + 25 + 15 = \\text{\\textdollar}70<\/annotation><\/semantics><\/math><\/span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7278em;vertical-align:-0.0833em;\"><\/span><span class=\"mord\">30<\/span><span class=\"mspace\" style=\"margin-right:0.2222em;\"><\/span><span class=\"mbin\">+<\/span><span class=\"mspace\" style=\"margin-right:0.2222em;\"><\/span><\/span><span class=\"base\"><span class=\"strut\" style=\"height:0.7278em;vertical-align:-0.0833em;\"><\/span><span class=\"mord\">25<\/span><span class=\"mspace\" style=\"margin-right:0.2222em;\"><\/span><span class=\"mbin\">+<\/span><span class=\"mspace\" style=\"margin-right:0.2222em;\"><\/span><\/span><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em;\"><\/span><span class=\"mord\">15<\/span><span class=\"mspace\" style=\"margin-right:0.2778em;\"><\/span><span class=\"mrel\">=<\/span><span class=\"mspace\" style=\"margin-right:0.2778em;\"><\/span><\/span><span class=\"base\"><span class=\"strut\" style=\"height:0.8056em;vertical-align:-0.0556em;\"><\/span><span class=\"mord text\"><span class=\"mord\">$<\/span><\/span><span class=\"mord\">70<\/span><\/span><\/span><\/span>.","<span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mtext>$<\/mtext><mn>70<\/mn><mo>&gt;<\/mo><mtext>$<\/mtext><mn>60<\/mn><\/mrow><annotation encoding=\"application/x-tex\">\\text{\\textdollar}70 &gt; \\text{\\textdollar}60<\/annotation><\/semantics><\/math><\/span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8056em;vertical-align:-0.0556em;\"><\/span><span class=\"mord text\"><span class=\"mord\">$<\/span><\/span><span class=\"mord\">70<\/span><span class=\"mspace\" style=\"margin-right:0.2778em;\"><\/span><span class=\"mrel\">&gt;<\/span><span class=\"mspace\" style=\"margin-right:0.2778em;\"><\/span><\/span><span class=\"base\"><span class=\"strut\" style=\"height:0.8056em;vertical-align:-0.0556em;\"><\/span><span class=\"mord text\"><span class=\"mord\">$<\/span><\/span><span class=\"mord\">60<\/span><\/span><\/span><\/span>: the light is worth providing."],"others":{"0":"takes the lowest value.","1":"takes the middle value.","2":"takes the highest value.","3":"is the cost, not the benefit."}}},{"n":14,"prompt":"A regulator sets a price ceiling on an unregulated monopolist at the price where the monopolist’s marginal cost curve intersects market demand. Compared with the unregulated outcome, the monopolist will","options":["produce less output at a lower price","produce the same output at a lower price","create a shortage at the ceiling price","produce more output at a lower price","shut down immediately"],"answer":3,"sec":"6.4","topic":"6.4","tag":"Rule 6.4","ex":{"idea":"The ceiling becomes the firm’s MR up to demand, so it produces where <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>P<\/mi><mi>c<\/mi><\/msub><mo>=<\/mo><mi>M<\/mi><mi>C<\/mi><\/mrow><annotation encoding=\"application/x-tex\">P_c = MC<\/annotation><\/semantics><\/math><\/span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8333em;vertical-align:-0.15em;\"><\/span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">P<\/span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.1514em;\"><span style=\"top:-2.55em;margin-left:-0.1389em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"><\/span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">c<\/span><\/span><\/span><\/span><span class=\"vlist-s\">​<\/span><\/span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span><\/span><\/span><\/span><\/span><\/span><\/span><span class=\"mspace\" style=\"margin-right:0.2778em;\"><\/span><span class=\"mrel\">=<\/span><span class=\"mspace\" style=\"margin-right:0.2778em;\"><\/span><\/span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"><\/span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">MC<\/span><\/span><\/span><\/span>, the efficient output.","steps":[],"others":{"0":"is wrong: the ceiling raises output.","1":"is wrong: output rises.","2":"is wrong: at <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>P<\/mi><mo>=<\/mo><mi>M<\/mi><mi>C<\/mi><\/mrow><annotation encoding=\"application/x-tex\">P = MC<\/annotation><\/semantics><\/math><\/span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"><\/span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">P<\/span><span class=\"mspace\" style=\"margin-right:0.2778em;\"><\/span><span class=\"mrel\">=<\/span><span class=\"mspace\" style=\"margin-right:0.2778em;\"><\/span><\/span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"><\/span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">MC<\/span><\/span><\/span><\/span> the firm supplies what is demanded.","4":"is wrong: the firm still covers costs."}}},{"n":15,"prompt":"A per-unit subsidy is given to producers in a perfectly competitive market that has no externalities. The subsidy will","options":["increase output beyond the efficient level and create deadweight loss","move the market to the efficient level of output","reduce output and create deadweight loss","have no effect on output","increase both consumer surplus and total surplus with no deadweight loss"],"answer":0,"sec":"6.4","topic":"6.4","tag":"Rule 6.4","ex":{"idea":"Without an externality the market was already efficient; the subsidy causes overproduction.","steps":[],"others":{"1":"is wrong: the market was already efficient.","2":"is backward.","3":"is wrong: a subsidy raises output.","4":"is wrong: overproduction creates deadweight loss."}}},{"n":16,"prompt":"A city imposes a fixed annual licence fee on a profit-maximizing monopolist. Which is the most likely short-run effect?","options":["Output falls and price rises.","Output rises and price falls.","Output and price are unchanged; profit falls by the amount of the fee.","Output falls and price falls.","The monopolist produces the allocatively efficient quantity."],"answer":2,"sec":"6.4","topic":"6.4","tag":"Rule 6.4","ex":{"idea":"A lump-sum fee is a fixed cost, so it does not change MC or MR.","steps":[],"others":{"0":"treats a fixed fee like a per-unit tax.","1":"has no basis.","3":"has no basis.","4":"is wrong: nothing changes the monopoly output."}}},{"n":17,"prompt":"The main goal of antitrust policy is to","options":["promote competition by blocking collusion and mergers that would reduce it","guarantee every firm a normal profit","set prices in all industries","protect domestic firms from imports","provide public goods"],"answer":0,"sec":"6.4","topic":"6.4","tag":"Rule 6.4","ex":{"idea":"Antitrust law targets price fixing, monopolization, and anticompetitive mergers.","steps":[],"others":{"1":"is not a goal of antitrust law.","2":"describes price controls.","3":"describes trade protection.","4":"describes public provision."}}},{"n":18,"prompt":"Country X’s Lorenz curve lies farther from the line of perfect equality than Country Y’s. Which is true?","options":["Income is distributed more equally in X.","Income is distributed less equally in X, and X has a higher Gini coefficient.","X has a lower Gini coefficient.","X has a higher average income.","X has more people living in poverty."],"answer":1,"sec":"6.5","topic":"6.5","tag":"Rule 6.5","ex":{"idea":"A more bowed curve means a bigger area A and a higher Gini; it says nothing directly about average income or poverty.","steps":[],"others":{"0":"is backward.","2":"is backward.","3":"is not shown by a Lorenz curve.","4":"is not shown by a Lorenz curve."}}},{"n":19,"prompt":"On a Lorenz curve diagram, the area between the line of equality and the Lorenz curve is 0.2 and the area below the Lorenz curve is 0.3. The Gini coefficient is","options":["0.2","0.3","0.4","0.6","0.67"],"answer":2,"sec":"6.5","topic":"6.5","tag":"Rule 6.5","ex":{"idea":"<span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>G<\/mi><mo>=<\/mo><mi>A<\/mi><mi mathvariant=\"normal\">/<\/mi><mo stretchy=\"false\">(<\/mo><mi>A<\/mi><mo>+<\/mo><mi>B<\/mi><mo stretchy=\"false\">)<\/mo><mo>=<\/mo><mn>0.2<\/mn><mi mathvariant=\"normal\">/<\/mi><mn>0.5<\/mn><mo>=<\/mo><mn>0.4<\/mn><\/mrow><annotation encoding=\"application/x-tex\">G = A/(A + B) = 0.2/0.5 = 0.4<\/annotation><\/semantics><\/math><\/span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"><\/span><span class=\"mord mathnormal\">G<\/span><span class=\"mspace\" style=\"margin-right:0.2778em;\"><\/span><span class=\"mrel\">=<\/span><span class=\"mspace\" style=\"margin-right:0.2778em;\"><\/span><\/span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"><\/span><span class=\"mord mathnormal\">A<\/span><span class=\"mord\">/<\/span><span class=\"mopen\">(<\/span><span class=\"mord mathnormal\">A<\/span><span class=\"mspace\" style=\"margin-right:0.2222em;\"><\/span><span class=\"mbin\">+<\/span><span class=\"mspace\" style=\"margin-right:0.2222em;\"><\/span><\/span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"><\/span><span class=\"mord mathnormal\" style=\"margin-right:0.05017em;\">B<\/span><span class=\"mclose\">)<\/span><span class=\"mspace\" style=\"margin-right:0.2778em;\"><\/span><span class=\"mrel\">=<\/span><span class=\"mspace\" style=\"margin-right:0.2778em;\"><\/span><\/span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"><\/span><span class=\"mord\">0.2/0.5<\/span><span class=\"mspace\" style=\"margin-right:0.2778em;\"><\/span><span class=\"mrel\">=<\/span><span class=\"mspace\" style=\"margin-right:0.2778em;\"><\/span><\/span><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em;\"><\/span><span class=\"mord\">0.4<\/span><\/span><\/span><\/span>.","steps":["<span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>G<\/mi><mo>=<\/mo><mi>A<\/mi><mi mathvariant=\"normal\">/<\/mi><mo stretchy=\"false\">(<\/mo><mi>A<\/mi><mo>+<\/mo><mi>B<\/mi><mo stretchy=\"false\">)<\/mo><\/mrow><annotation encoding=\"application/x-tex\">G = A/(A + B)<\/annotation><\/semantics><\/math><\/span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"><\/span><span class=\"mord mathnormal\">G<\/span><span class=\"mspace\" style=\"margin-right:0.2778em;\"><\/span><span class=\"mrel\">=<\/span><span class=\"mspace\" style=\"margin-right:0.2778em;\"><\/span><\/span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"><\/span><span class=\"mord mathnormal\">A<\/span><span class=\"mord\">/<\/span><span class=\"mopen\">(<\/span><span class=\"mord mathnormal\">A<\/span><span class=\"mspace\" style=\"margin-right:0.2222em;\"><\/span><span class=\"mbin\">+<\/span><span class=\"mspace\" style=\"margin-right:0.2222em;\"><\/span><\/span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"><\/span><span class=\"mord mathnormal\" style=\"margin-right:0.05017em;\">B<\/span><span class=\"mclose\">)<\/span><\/span><\/span><\/span>.","<span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>0.2<\/mn><mi mathvariant=\"normal\">/<\/mi><mo stretchy=\"false\">(<\/mo><mn>0.2<\/mn><mo>+<\/mo><mn>0.3<\/mn><mo stretchy=\"false\">)<\/mo><mo>=<\/mo><mn>0.4<\/mn><\/mrow><annotation encoding=\"application/x-tex\">0.2/(0.2 + 0.3) = 0.4<\/annotation><\/semantics><\/math><\/span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"><\/span><span class=\"mord\">0.2/<\/span><span class=\"mopen\">(<\/span><span class=\"mord\">0.2<\/span><span class=\"mspace\" style=\"margin-right:0.2222em;\"><\/span><span class=\"mbin\">+<\/span><span class=\"mspace\" style=\"margin-right:0.2222em;\"><\/span><\/span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"><\/span><span class=\"mord\">0.3<\/span><span class=\"mclose\">)<\/span><span class=\"mspace\" style=\"margin-right:0.2778em;\"><\/span><span class=\"mrel\">=<\/span><span class=\"mspace\" style=\"margin-right:0.2778em;\"><\/span><\/span><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em;\"><\/span><span class=\"mord\">0.4<\/span><\/span><\/span><\/span>."],"others":{"0":"is area A alone.","1":"is area B alone.","3":"divides B by A + B.","4":"divides A by B."}}},{"n":20,"prompt":"Use the table below. The tax is<div class=\"bt-wrap\"><table class=\"bt\"><thead><tr><th scope=\"col\">Household income<\/th><th scope=\"col\">&#36;20,000<\/th><th scope=\"col\">&#36;50,000<\/th><th scope=\"col\">&#36;100,000<\/th><\/tr><\/thead><tbody><tr><th scope=\"row\">Tax paid<\/th><td>&#36;1,000<\/td><td>&#36;2,500<\/td><td>&#36;5,000<\/td><\/tr><\/tbody><\/table><\/div>","options":["progressive, because high-income households pay more dollars","regressive, because low-income households pay less","progressive, because the tax rate rises with income","regressive, because the tax rate falls with income","proportional, because every household pays 5% of its income"],"answer":4,"sec":"6.5","topic":"6.5","tag":"Rule 6.5","ex":{"idea":"Average rates are <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>1,000<\/mn><mi mathvariant=\"normal\">/<\/mi><mn>20,000<\/mn><mo>=<\/mo><mn>2,500<\/mn><mi mathvariant=\"normal\">/<\/mi><mn>50,000<\/mn><mo>=<\/mo><mn>5,000<\/mn><mi mathvariant=\"normal\">/<\/mi><mn>100,000<\/mn><mo>=<\/mo><mn>5<\/mn><mi mathvariant=\"normal\">%<\/mi><\/mrow><annotation encoding=\"application/x-tex\">1{,}000/20{,}000 = 2{,}500/50{,}000 = 5{,}000/100{,}000 = 5\\%<\/annotation><\/semantics><\/math><\/span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"><\/span><span class=\"mord\">1<\/span><span class=\"mord\"><span class=\"mpunct\">,<\/span><\/span><span class=\"mord\">000/20<\/span><span class=\"mord\"><span class=\"mpunct\">,<\/span><\/span><span class=\"mord\">000<\/span><span class=\"mspace\" style=\"margin-right:0.2778em;\"><\/span><span class=\"mrel\">=<\/span><span class=\"mspace\" style=\"margin-right:0.2778em;\"><\/span><\/span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"><\/span><span class=\"mord\">2<\/span><span class=\"mord\"><span class=\"mpunct\">,<\/span><\/span><span class=\"mord\">500/50<\/span><span class=\"mord\"><span class=\"mpunct\">,<\/span><\/span><span class=\"mord\">000<\/span><span class=\"mspace\" style=\"margin-right:0.2778em;\"><\/span><span class=\"mrel\">=<\/span><span class=\"mspace\" style=\"margin-right:0.2778em;\"><\/span><\/span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"><\/span><span class=\"mord\">5<\/span><span class=\"mord\"><span class=\"mpunct\">,<\/span><\/span><span class=\"mord\">000/100<\/span><span class=\"mord\"><span class=\"mpunct\">,<\/span><\/span><span class=\"mord\">000<\/span><span class=\"mspace\" style=\"margin-right:0.2778em;\"><\/span><span class=\"mrel\">=<\/span><span class=\"mspace\" style=\"margin-right:0.2778em;\"><\/span><\/span><span class=\"base\"><span class=\"strut\" style=\"height:0.8056em;vertical-align:-0.0556em;\"><\/span><span class=\"mord\">5%<\/span><\/span><\/span><\/span>: constant, so proportional.","steps":[],"others":{"0":"uses dollars paid, not the tax rate.","1":"uses dollars paid, not the tax rate.","2":"is wrong: the rate is constant.","3":"is wrong: the rate is constant."}}},{"n":21,"prompt":"A general sales tax on consumer goods is usually considered regressive because","options":["higher-income households pay more dollars in sales tax","lower-income households spend a larger share of their income on taxed goods","the tax rate rises as the price of the good rises","it is collected by the government","it applies only to luxury goods"],"answer":1,"sec":"6.5","topic":"6.5","tag":"Rule 6.5","ex":{"idea":"Tax paid as a share of income falls as income rises, which defines a regressive tax.","steps":[],"others":{"0":"is about dollars paid, not the share of income.","2":"is not the reason.","3":"is not the reason.","4":"is false: it applies broadly."}}}],"fr":[]}</script>
+<script>
+(function(){
+"use strict";
+var DATA = JSON.parse(document.getElementById("data").textContent);
+var META = DATA.meta, MC = DATA.mc, FR = DATA.fr || [], TOP = DATA.topics || {}, SEC = DATA.sections || {}, STIM = DATA.stims || {}, BY = {};
+MC.forEach(function(q){ BY[q.n] = q; });
+var KEY = META.key, FKEY = META.fkey || META.key + ".fr", HAS_FR = FR.length > 0;
+
+function load(k, d){ try{ var v = localStorage.getItem(k); return v ? JSON.parse(v) : d; }catch(e){ return d; } }
+function save(k, v){ try{ localStorage.setItem(k, JSON.stringify(v)); }catch(e){} }
+function esc(s){ return String(s).replace(/[&<>"]/g, function(c){ return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]; }); }
+function shuffle(a){ a = a.slice(); for (var i = a.length - 1; i > 0; i--){ var j = Math.floor(Math.random() * (i + 1)); var t = a[i]; a[i] = a[j]; a[j] = t; } return a; }
+function range(n){ var a = []; for (var i = 0; i < n; i++) a.push(i); return a; }
+
+var S = load(KEY, null);
+if (!S || !S.phase || !S.order || S.order.some(function(n){ return !BY[n]; })) S = { phase: "setup", mode: "practice", shuffleQ: false, shuffleC: false, order: [], copt: {}, ans: {}, pos: 0, full: null };
+var confirmFinish = false;
+var mcEl = document.getElementById("mc");
+
+function start(nums){
+  var list = nums || MC.map(function(q){ return q.n; });
+  S.order = S.shuffleQ ? shuffle(list) : list.slice();
+  S.copt = {};
+  S.order.forEach(function(n){
+    var q = BY[n], idx = range(q.options.length);
+    S.copt[n] = (S.shuffleC && !q.fixed) ? shuffle(idx) : idx;
+  });
+  S.ans = {}; S.pos = 0; S.phase = "run"; confirmFinish = false;
+  save(KEY, S); render(); focusTop();
+}
+function focusTop(){ var t = document.querySelector(".tabs") || document.querySelector(".title"); if (t && t.getBoundingClientRect().top < 0) t.scrollIntoView(); }
+
+function stats(){
+  var right = 0, done = 0;
+  S.order.forEach(function(n){ if (n in S.ans){ done++; if (S.ans[n] === BY[n].answer) right++; } });
+  return { right: right, done: done, total: S.order.length };
+}
+function topicShort(t){ return (META.topicPrefix || "") + t; }
+function topicLabel(t){ return topicShort(t) + ", " + TOP[t].name; }
+function guideLink(t, short){
+  var g = TOP[t], txt = short ? g.name : topicLabel(t);
+  var href = g.url ? g.url : (META.guide && g.page ? META.guide + "#page=" + g.page : "");
+  return href ? '<a href="' + href + '">' + txt + "</a>" : txt;
+}
+function topicLinks(ts){
+  ts = ts.filter(function(t){ return TOP[t]; });
+  if (!ts.length || !(META.guide || TOP[ts[0]].url)) return "";
+  return '<p class="links">Review ' + ts.map(function(t){ return guideLink(t); }).join(" &middot; ") + " in " + META.guideName + "</p>";
+}
+function explain(q, picked){
+  var e = q.ex, h = '<div class="why"><p>' + e.idea + "</p>";
+  if (e.steps.length) h += '<ol class="steps">' + e.steps.map(function(s){ return "<li>" + s + "</li>"; }).join("") + "</ol>";
+  var rest = range(q.options.length).filter(function(i){ return i !== q.answer; });
+  if (typeof picked === "number" && picked !== q.answer) rest = [picked].concat(rest.filter(function(i){ return i !== picked; }));
+  h += '<p class="why-h sc">Why not the others</p><ul class="others">' + rest.map(function(i){
+    return "<li>" + quoted(q, i) + (i === picked ? '<span class="tag">your answer</span>' : "") + " &mdash; " + e.others[i] + "</li>";
+  }).join("") + "</ul></div>";
+  return h;
+}
+function quoted(q, i){ return q.labels ? q.labels[i] : "&ldquo;" + q.options[i] + "&rdquo;"; }
+function table(q){ return q.table ? '<div class="bt-wrap">' + q.table + "</div>" : ""; }
+function stim(q){
+  var s = q.stim && STIM[q.stim]; if (!s) return "";
+  var html = s.html.split(' data-q="' + q.n + '"').join(' data-q="' + q.n + '" data-cur')
+    .replace(/data-qs="([^"]*)"/g, function(m, l){ return (" " + l + " ").indexOf(" " + q.n + " ") >= 0 ? m + " data-cur" : m; });
+  return '<div class="stim' + (s.cls ? " " + s.cls : "") + '">' + (s.title ? '<p class="stim-h sc">' + s.title + "</p>" : "") + html + "</div>";
+}
+function scrollStim(root){
+  root.querySelectorAll(".stim").forEach(function(box){ var c = box.querySelector("[data-cur]"); if (c && box.scrollHeight > box.clientHeight) box.scrollTop = Math.max(0, c.offsetTop - box.clientHeight / 3); });
+}
+function promptHtml(q){
+  return stim(q) + (q.fig || "") + '<div class="q-prompt"><p>' + q.prompt + "</p>" + (q.ask || META.ask ? '<p class="q-ask">' + (q.ask || META.ask) + "</p>" : "") + "</div>" + table(q);
+}
+
+function renderSetup(){
+  mcEl.innerHTML =
+    '<div class="setup">' +
+      '<h2>How do you want to take it?</h2>' +
+      '<div class="choice-row">' +
+        '<button type="button" class="choice" data-mode="practice" aria-pressed="' + (S.mode === "practice") + '"><b>Practice</b><span>See the answer and why after each question</span></button>' +
+        '<button type="button" class="choice" data-mode="exam" aria-pressed="' + (S.mode === "exam") + '"><b>Exam</b><span>Answer everything, then see your score</span></button>' +
+      '</div>' +
+      '<div class="checks">' +
+        '<label><input type="checkbox" id="opt-sq"' + (S.shuffleQ ? " checked" : "") + '> Shuffle questions</label>' +
+        '<label><input type="checkbox" id="opt-sc"' + (S.shuffleC ? " checked" : "") + '> Shuffle answer choices</label>' +
+      '</div>' +
+      '<div class="setup-actions"><button type="button" class="btn btn--solid btn--lg" id="go">Start' + (HAS_FR ? " multiple choice" : "") + '</button></div>' +
+      '<p class="note">' + META.setupNote + " Keyboard: 1&ndash;" + Math.max.apply(null, MC.map(function(q){ return q.options.length; })) + " to answer, &larr; &rarr; to move, Enter for next.</p>" +
+    '</div>';
+  mcEl.querySelectorAll(".choice").forEach(function(b){ b.onclick = function(){ S.mode = b.dataset.mode; render(); }; });
+  document.getElementById("opt-sq").onchange = function(e){ S.shuffleQ = e.target.checked; };
+  document.getElementById("opt-sc").onchange = function(e){ S.shuffleC = e.target.checked; };
+  document.getElementById("go").onclick = function(){ start(); };
+}
+
+function renderRun(){
+  var n = S.order[S.pos], q = BY[n], st = stats(), practice = S.mode === "practice";
+  var picked = (n in S.ans) ? S.ans[n] : null, locked = practice && picked !== null;
+  var nav = S.order.map(function(m, i){
+    var c = [];
+    if (m in S.ans){ if (practice) c.push(S.ans[m] === BY[m].answer ? "is-right" : "is-wrong"); else c.push("is-answered"); }
+    if (i === S.pos) c.push("is-current");
+    return '<button type="button" class="' + c.join(" ") + '" data-go="' + i + '" aria-label="Question ' + (i + 1) + '"' + (i === S.pos ? ' aria-current="step"' : "") + ">" + (i + 1) + "</button>";
+  }).join("");
+  var opts = S.copt[n].map(function(oi, k){
+    var cls = ["opt"], mark = "";
+    if (locked){
+      if (oi === q.answer){ cls.push("is-right"); mark = oi === picked ? "&check; your answer" : "&check; correct"; }
+      else if (oi === picked){ cls.push("is-wrong"); mark = "&cross; your answer"; }
+      else cls.push("is-dim");
+    } else if (oi === picked) cls.push("is-picked");
+    return '<li><button type="button" class="' + cls.join(" ") + '" data-opt="' + oi + '"' + (locked ? " disabled" : "") + '><span class="kbd">' + (k + 1) + "</span><span>" + q.options[oi] + '</span><span class="mark">' + mark + "</span></button></li>";
+  }).join("");
+  var fb = "";
+  if (locked){
+    var ok = picked === q.answer, ans = quoted(q, q.answer);
+    fb = '<div class="fb' + (ok ? "" : " is-wrong") + '"><p class="verdict" role="status">' + (ok ? "Correct." : "Not quite. The answer is " + ans + (/[.?!](&rdquo;)?$/.test(ans) ? "" : ".")) + "</p>" + explain(q, picked) + (q.after || "") + topicLinks([q.topic]) + "</div>";
+  }
+  var last = S.pos === S.order.length - 1, allDone = st.done === st.total;
+  var nextBtn = last
+    ? '<button type="button" class="btn btn--solid" id="finish">' + (practice ? "See results" : "Finish test") + "</button>"
+    : '<button type="button" class="btn btn--solid" id="next">Next &rarr;</button>';
+  var finishEarly = (!last && !practice) ? '<button type="button" class="btn" id="finish">Finish test</button>' : (!last && practice && allDone ? '<button type="button" class="btn" id="finish">See results</button>' : "");
+  var conf = "";
+  if (confirmFinish){
+    var left = st.total - st.done;
+    conf = '<div class="confirm"><p>' + left + " question" + (left === 1 ? " is" : "s are") + " unanswered and will be marked wrong. Finish anyway?</p>" +
+      '<button type="button" class="btn" id="conf-no">Keep going</button><button type="button" class="btn btn--solid" id="conf-yes">Finish</button></div>';
+  }
+  var eyebrow = "Question " + q.n + (SEC[q.sec] ? " &middot; " + SEC[q.sec] : "") + (q.tag ? " &middot; " + q.tag : (q.topic ? " &middot; " + topicShort(q.topic) : ""));
+  mcEl.innerHTML =
+    '<div class="bar"><span>Question ' + (S.pos + 1) + " of " + st.total + " &middot; " + (practice ? "Practice" : "Exam") + " mode</span><span>" +
+      (practice ? st.right + " correct of " + st.done + " answered" : st.done + " of " + st.total + " answered") + "</span></div>" +
+    '<div class="track"><span style="width:' + (st.done / st.total * 100) + '%"></span></div>' +
+    '<nav class="nav" aria-label="Questions">' + nav + "</nav>" +
+    '<article class="q">' +
+      '<p class="q-eyebrow sc">' + eyebrow + "</p>" +
+      promptHtml(q) +
+      '<ol class="opts">' + opts + "</ol>" + fb +
+      '<div class="step"><button type="button" class="btn" id="prev"' + (S.pos === 0 ? " disabled" : "") + '>&larr; Back</button><span class="step-right">' + finishEarly + nextBtn + "</span></div>" +
+      conf +
+    "</article>" +
+    '<p class="keys"><span class="kbd">1</span>&ndash;<span class="kbd">' + q.options.length + '</span> answer &nbsp; <span class="kbd">&larr;</span> <span class="kbd">&rarr;</span> move &nbsp; <span class="kbd">Enter</span> next</p>' +
+    '<p class="restart-line"><a href="#" id="restart">Start over</a> <span class="muted">&middot; progress is saved in this browser</span></p>';
+
+  scrollStim(mcEl);
+  mcEl.querySelectorAll("[data-go]").forEach(function(b){ b.onclick = function(){ go(+b.dataset.go); }; });
+  mcEl.querySelectorAll("[data-opt]").forEach(function(b){ b.onclick = function(){ pick(+b.dataset.opt); }; });
+  bind("prev", function(){ go(S.pos - 1); });
+  bind("next", function(){ go(S.pos + 1); });
+  bind("finish", finish);
+  bind("conf-no", function(){ confirmFinish = false; render(); });
+  bind("conf-yes", function(){ confirmFinish = false; showResults(); });
+  bind("restart", function(e){ e.preventDefault(); S.phase = "setup"; save(KEY, S); render(); });
+}
+function bind(id, fn){ var el = document.getElementById(id); if (el) el.onclick = fn; }
+
+function pick(oi){
+  var n = S.order[S.pos];
+  if (S.mode === "practice" && (n in S.ans)) return;
+  S.ans[n] = oi; save(KEY, S); render();
+  if (S.mode === "practice"){ var fb = mcEl.querySelector(".fb"); if (fb && fb.getBoundingClientRect().bottom > innerHeight) fb.scrollIntoView({ block: "nearest" }); }
+}
+function go(i){
+  if (i < 0 || i >= S.order.length) return;
+  S.pos = i; confirmFinish = false; save(KEY, S); render();
+  var q = mcEl.querySelector(".q"); if (q && q.getBoundingClientRect().top < 0) q.scrollIntoView();
+}
+function finish(){
+  var st = stats();
+  if (st.done < st.total && !confirmFinish){ confirmFinish = true; render(); var c = mcEl.querySelector(".confirm"); if (c) c.scrollIntoView({ block: "nearest" }); return; }
+  showResults();
+}
+function showResults(){
+  S.phase = "results";
+  if (S.order.length === MC.length) S.full = stats().right;
+  save(KEY, S); render(); if (HAS_FR) renderFR(); focusTop();
+}
+
+/* composite score (only when the document defines one) */
+function frTotal(){
+  var t = 0;
+  for (var i = 0; i < FR.length; i++){ var s = frScore(FR[i]); if (s === null) return null; t += s; }
+  return t;
+}
+function frMax(){ return FR.reduce(function(a, f){ return a + frItemMax(f); }, 0); }
+function frOnlyTotal(){  /* free-response-only quizzes: running total of the marked questions */
+  var done = 0, got = 0, of = 0;
+  FR.forEach(function(f){ var s = frScore(f); if (s !== null){ done++; got += s; of += frItemMax(f); } });
+  if (!done) return "";
+  var line = done === FR.length
+    ? "Total: <b>" + got + " / " + of + "</b> (" + Math.round(got / of * 100) + "%)"
+    : "Marked so far: <b>" + got + " / " + of + "</b> on " + done + " of " + FR.length + " questions &middot; " + frMax() + " points in all";
+  return '<div class="composite" role="status"><p>' + line + "</p></div>";
+}
+function compositeHtml(){
+  var C = META.composite;
+  if (HAS_FR && !MC.length) return frOnlyTotal();
+  if (!C || !HAS_FR) return "";
+  var mc = (typeof S.full === "number") ? S.full : null, fr = frTotal(), fm = frMax(), mm = MC.length;
+  if (mc === null && fr === null) return "";
+  var lines = [];
+  if (mc === null) lines.push("Free response: <b>" + fr + " / " + fm + "</b>. Take the full multiple-choice part to get your composite score.");
+  else if (fr === null) lines.push("Multiple choice: <b>" + mc + " / " + mm + "</b>. Write and mark every free-response question to get your composite score.");
+  else {
+    var c = Math.round(C.mcWeight * mc / mm + C.frWeight * fr / fm), band = "";
+    for (var i = 0; i < C.bands.length; i++){ if (c >= C.bands[i][0]){ band = C.bands[i][1]; break; } }
+    lines.push("Composite score: <b>" + c + " / " + (C.mcWeight + C.frWeight) + "</b> &nbsp;<span class=\"muted\">= " + C.mcWeight + " &times; " + mc + "/" + mm + " + " + C.frWeight + " &times; " + fr + "/" + fm + "</span>");
+    if (band) lines.push(band);
+  }
+  return '<div class="composite" role="status">' + lines.map(function(l){ return "<p>" + l + "</p>"; }).join("") + "</div>";
+}
+function targetHtml(st){
+  var T = META.target, B = META.bands, h = "";
+  if (st.total !== MC.length) return "";
+  if (T) h += '<p class="target">' + T.label + ": " + T.mc + " / " + MC.length + " &middot; " + (st.right >= T.mc ? "met" : (T.mc - st.right) + " short") + "</p>";
+  if (B) for (var i = 0; i < B.length; i++){ if (st.right >= B[i][0]){ h += '<p class="target">' + B[i][1] + "</p>"; break; } }
+  return h;
+}
+
+var resFilter = "all";
+function renderResults(){
+  var st = stats(), pct = Math.round(st.right / st.total * 100), fullRun = st.total === MC.length;
+  var missed = S.order.filter(function(n){ return S.ans[n] !== BY[n].answer; });
+  var rows = S.order.map(function(n, i){
+    var q = BY[n], a = S.ans[n], ok = a === q.answer;
+    if (resFilter === "missed" && ok) return "";
+    return '<li><details><summary><span class="res-n">' + (i + 1) + '.</span><span class="' + (ok ? "res-ok" : "res-bad") + '" aria-label="' + (ok ? "correct" : "wrong") + '">' + (ok ? "&check;" : "&cross;") + '</span><span class="res-sum">' + q.prompt + "</span></summary>" +
+      '<div class="res-body">' + stim(q) + (q.fig || "") + table(q) + '<p><span class="sc">Your answer:</span> ' + (a === undefined ? "<i>skipped</i>" : q.options[a]) + "</p>" +
+      (ok ? "" : '<p><span class="sc">Correct:</span> ' + q.options[q.answer] + "</p>") +
+      explain(q, a) + (q.after || "") + topicLinks([q.topic]) + "</div></details></li>";
+  }).join("");
+  var tally = {};
+  S.order.forEach(function(n){ var t = BY[n].topic; if (!t) return; tally[t] = tally[t] || { right: 0, total: 0 }; tally[t].total++; if (S.ans[n] === BY[n].answer) tally[t].right++; });
+  var trows = Object.keys(TOP).filter(function(t){ return tally[t]; }).map(function(t){
+    var x = tally[t], miss = x.total - x.right;
+    return "<tr><th scope=\"row\">" + topicShort(t) + "</th><td>" + x.right + " / " + x.total + "</td><td>" + guideLink(t, true) +
+      ((META.flag ? x.right < META.flag.below * x.total : miss >= 2) ? ' <span class="flag">&middot; ' + (META.flag ? META.flag.text : "reread this section") + "</span>" : "") + "</td></tr>";
+  }).join("");
+  mcEl.innerHTML =
+    '<div class="results">' +
+      '<div class="score"><p class="score-big">' + st.right + " / " + st.total + "</p><p>" + pct + "% correct" + (fullRun ? "" : " &middot; retry of missed questions") + "</p>" + targetHtml(st) + "</div>" +
+      '<div class="res-actions">' +
+        (missed.length ? '<button type="button" class="btn btn--solid" id="retry">Retry the ' + missed.length + " missed</button>" : "") +
+        '<button type="button" class="btn" id="again">Take the full test again</button>' +
+        (HAS_FR ? '<button type="button" class="btn" id="to-fr">Go to free response</button>' : "") +
+      "</div>" +
+      compositeHtml() +
+      (trows ? '<div class="topics"><h2>' + (META.byTopic || "By topic") + '</h2><table class="bt"><thead><tr><th scope="col">' + (META.topicCol || "Topic") + '</th><th scope="col">Correct</th><th scope="col">' + (META.guideCol || "Guide section") + "</th></tr></thead><tbody>" + trows + "</tbody></table>" +
+        (META.topicNote ? '<p class="note" style="margin-top:6px">' + META.topicNote + "</p>" : "") + "</div>" : "") +
+      '<div class="res-filter"><h2>Review</h2><span><label><input type="checkbox" id="only-missed"' + (resFilter === "missed" ? " checked" : "") + "> Show missed only</label></span></div>" +
+      '<ul class="res-list">' + (rows || '<li><p class="note" style="padding:12px 0">Nothing missed.</p></li>') + "</ul>" +
+    "</div>";
+  bind("retry", function(){ start(missed); });
+  bind("again", function(){ S.phase = "setup"; save(KEY, S); render(); });
+  bind("to-fr", function(){ setTab("fr"); });
+  document.getElementById("only-missed").onchange = function(e){ resFilter = e.target.checked ? "missed" : "all"; render(); };
+}
+
+function render(){
+  if (S.phase === "run" && S.order.length) renderRun();
+  else if (S.phase === "results" && S.order.length) renderResults();
+  else { S.phase = "setup"; renderSetup(); }
+}
+
+/* free response: "epi" parts (E/P/I -> 0-4 per question) or "points" parts (0..max each) */
+var frEl = document.getElementById("fr"), F = load(FKEY, null);
+if (!F || typeof F !== "object") F = {};
+F.drafts = F.drafts || {}; F.marks = F.marks || {}; F.open = F.open || {};
+var LABELS = { 4: "Complete", 3: "Substantial", 2: "Developing", 1: "Minimal", 0: "" };
+function frItemMax(f){ return f.mode === "points" ? f.parts.reduce(function(a, p){ return a + p.max; }, 0) : 4; }
+function frScore(f){
+  if (f.mode === "points"){
+    var t = 0;
+    for (var j = 0; j < f.parts.length; j++){ var v = F.marks[f.n + f.parts[j].label]; if (v === undefined || v === "") return null; t += +v; }
+    return t;
+  }
+  var e = 0, p = 0;
+  for (var i = 0; i < f.parts.length; i++){
+    var m = F.marks[f.n + f.parts[i].label];
+    if (!m) return null;
+    if (m === "E") e++; else if (m === "P") p++;
+  }
+  if (e === 3) return 4;
+  if (e === 2 && p === 1) return 3;
+  if ((e === 2 && p === 0) || (e === 1 && p >= 1) || p === 3) return 2;
+  if ((e === 1 && p === 0) || (e === 0 && p === 2)) return 1;
+  return 0;
+}
+function words(t){ var m = t.trim().match(/\S+/g); return m ? m.length : 0; }
+var SCALE = '<details class="scale"><summary>How part scores convert to 0&ndash;4</summary><table class="bt"><thead><tr><th scope="col">Score</th><th scope="col">Label</th><th scope="col">Part scores (three parts, each E, P, or I)</th></tr></thead><tbody>' +
+  "<tr><td>4</td><td>Complete</td><td>three parts E</td></tr>" +
+  "<tr><td>3</td><td>Substantial</td><td>two parts E and one part P</td></tr>" +
+  "<tr><td>2</td><td>Developing</td><td>two E and no P; or one E and one or two P; or three P</td></tr>" +
+  "<tr><td>1</td><td>Minimal</td><td>one E and no P; or no E and two P</td></tr>" +
+  "<tr><td>0</td><td></td><td>anything less</td></tr></tbody></table></details>";
+function frScoreHtml(f){
+  var s = frScore(f), mx = frItemMax(f);
+  if (s === null) return '<span class="muted">Mark every part to score this question.</span>';
+  return "Score: <b>" + s + " / " + mx + "</b>" + (f.mode !== "points" && LABELS[s] ? " &middot; " + LABELS[s] : "");
+}
+function markButtons(f, p, id, m){
+  var vals = f.mode === "points" ? range(p.max + 1).map(String) : ["E", "P", "I"];
+  return vals.map(function(x){ return '<button type="button" data-mark="' + id + '" data-f="' + f.n + '" data-v="' + x + '" aria-pressed="' + (m === x) + '">' + x + "</button>"; }).join("");
+}
+/* essay: one draft for the whole question; its parts are rubric rows marked against it */
+function essayBox(f){
+  var id = f.n + "essay", d = F.drafts[id] || "";
+  return '<div class="part essay"><label class="sc" for="fr-' + id + '">Your essay</label>' +
+    '<textarea id="fr-' + id + '" data-fr="' + id + '" spellcheck="true">' + esc(d) + "</textarea>" +
+    '<p class="part-meta" id="wc-' + id + '">' + words(d) + " words &middot; saved in this browser</p></div>";
+}
+function renderFR(){
+  if (!HAS_FR) return;
+  frEl.innerHTML = '<p class="fr-intro">' + META.frIntro + "</p>" +
+    FR.map(function(f){
+      var open = !!F.open[f.n];
+      var parts = f.parts.map(function(p){
+        var id = f.n + p.label, d = F.drafts[id] || "", m = (F.marks[id] === undefined ? "" : String(F.marks[id]));
+        var crit = f.mode === "points"
+          ? '<div class="crit-pts">' + p.rubric + "</div>"
+          : '<dl class="crit"><dt>E</dt><dd>if the response ' + p.e + "</dd><dt>P</dt><dd>if " + p.p + "</dd></dl>";
+        return '<div class="part"><p class="part-prompt"><b>(' + p.label + ")</b>" + p.prompt + "</p>" +
+          (f.essay ? "" :
+          '<label class="sc" for="fr-' + id + '">Your answer to (' + p.label + ")</label>" +
+          '<textarea id="fr-' + id + '" data-fr="' + id + '" spellcheck="true">' + esc(d) + "</textarea>" +
+          '<p class="part-meta" id="wc-' + id + '">' + words(d) + " words &middot; saved in this browser</p>") +
+          '<div class="sol"' + (open ? "" : " hidden") + ' data-sol="' + f.n + '"><h3>Model solution (' + p.label + ")</h3><div>" + p.solution + "</div>" + crit +
+            '<div class="mark-row"><span>Your mark for (' + p.label + ")" + (f.mode === "points" ? ", out of " + p.max : "") + ':</span><span class="seg" role="group" aria-label="Mark for part ' + p.label + '">' + markButtons(f, p, id, m) + "</span></div></div></div>";
+      }).join("");
+      return '<article class="fr"><h2>' + (META.frWord || "Question") + " " + f.n + "<small>" + f.head + "</small></h2>" +
+        (f.stim ? stim(f) : "") + '<div class="fr-stem">' + f.stem + "</div>" + (f.essay ? essayBox(f) : "") + parts +
+        '<div class="fr-actions"><span class="fr-score" id="score-' + f.n + '">' + (open ? frScoreHtml(f) : "") + "</span>" +
+          '<button type="button" class="btn" data-open="' + f.n + '" aria-expanded="' + open + '">' + (open ? "Hide model solution" : "Show model solution and scoring") + "</button></div>" +
+        (open ? (f.mode === "points" ? "" : SCALE) + topicLinks(f.guide || []) : "") +
+        "</article>";
+    }).join("") + '<div id="fr-composite">' + compositeHtml() + "</div>";
+  frEl.querySelectorAll("textarea").forEach(function(t){
+    t.oninput = function(){ F.drafts[t.dataset.fr] = t.value; save(FKEY, F); document.getElementById("wc-" + t.dataset.fr).innerHTML = words(t.value) + " words &middot; saved in this browser"; };
+  });
+  frEl.querySelectorAll("[data-open]").forEach(function(b){
+    b.onclick = function(){ var n = b.dataset.open; F.open[n] = !F.open[n]; save(FKEY, F); renderFR(); var a = document.getElementById("score-" + n); if (a) a.closest(".fr").querySelector(".part").scrollIntoView({ block: "nearest" }); };
+  });
+  frEl.querySelectorAll("[data-mark]").forEach(function(b){
+    b.onclick = function(){
+      var id = b.dataset.mark; F.marks[id] = F.marks[id] === b.dataset.v ? "" : b.dataset.v; save(FKEY, F);
+      b.parentNode.querySelectorAll("button").forEach(function(x){ x.setAttribute("aria-pressed", String(F.marks[id] === x.dataset.v)); });
+      var f = FR.filter(function(x){ return String(x.n) === b.dataset.f; })[0];
+      document.getElementById("score-" + f.n).innerHTML = frScoreHtml(f);
+      document.getElementById("fr-composite").innerHTML = compositeHtml();
+      if (S.phase === "results") render();
+    };
+  });
+}
+
+/* tabs (only when there is a free-response part) */
+function setTab(t){
+  if (!HAS_FR) return;
+  var mc = t === "mc";
+  document.getElementById("tab-mc").setAttribute("aria-selected", String(mc));
+  document.getElementById("tab-fr").setAttribute("aria-selected", String(!mc));
+  mcEl.hidden = !mc; frEl.hidden = mc;
+  try{ history.replaceState(null, "", mc ? location.pathname : "#free-response"); }catch(e){}
+  focusTop();
+}
+if (HAS_FR){
+  document.getElementById("tab-mc").onclick = function(){ setTab("mc"); };
+  document.getElementById("tab-fr").onclick = function(){ setTab("fr"); };
+}
+
+/* keyboard */
+document.addEventListener("keydown", function(e){
+  if (e.metaKey || e.ctrlKey || e.altKey) return;
+  var tag = (e.target.tagName || "").toLowerCase();
+  if (tag === "textarea" || tag === "input") return;
+  if (mcEl.hidden || S.phase !== "run") return;
+  var n = S.order[S.pos], q = BY[n];
+  if (/^[1-9]$/.test(e.key)){ var k = +e.key - 1; if (k < q.options.length){ e.preventDefault(); pick(S.copt[n][k]); } }
+  else if (e.key === "ArrowRight"){ e.preventDefault(); go(S.pos + 1); }
+  else if (e.key === "ArrowLeft"){ e.preventDefault(); go(S.pos - 1); }
+  else if (e.key === "Enter" && tag !== "button" && tag !== "a"){ e.preventDefault(); if (S.pos < S.order.length - 1) go(S.pos + 1); else finish(); }
+});
+
+/* theme */
+var root = document.documentElement, tb = document.getElementById("theme-btn");
+function syncTheme(){ var dark = root.getAttribute("data-theme") === "dark"; tb.textContent = dark ? "Light mode" : "Dark mode"; tb.setAttribute("aria-pressed", String(dark)); }
+tb.onclick = function(){ var dark = root.getAttribute("data-theme") !== "dark"; root.setAttribute("data-theme", dark ? "dark" : "light"); try{ localStorage.setItem("apah.theme", dark ? "dark" : "light"); }catch(e){} syncTheme(); };
+syncTheme();
+
+render(); renderFR();
+if (HAS_FR && location.hash === "#free-response") setTab("fr");
+if (HAS_FR && !MC.length){ var tabsEl = document.querySelector(".tabs"); if (tabsEl) tabsEl.hidden = true; mcEl.hidden = true; frEl.hidden = false; }
+})();
+</script>
+</body>
+</html>

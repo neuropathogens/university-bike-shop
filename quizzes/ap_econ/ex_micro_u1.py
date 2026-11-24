@@ -1,0 +1,141 @@
+# Explanations, AP Microeconomics Unit 1 Practice Set, in source order.
+EX = [
+    # 1 scarcity
+    dict(o=["describes affordability for some households; scarcity applies even to the rich.",
+            "is a policy choice; scarcity would exist without any rules.",
+            "describes allocative inefficiency, which is avoidable; scarcity is not.",
+            "confuses money with resources; printing money creates no new resources."]),
+    # 2 opportunity cost of studying (F)
+    dict(steps=["Alternatives: the shift ($4 \\times \\$15 = \\$60$) and babysitting (\\$70). Babysitting is the next-best choice.",
+                "Opportunity cost is the value of that single next-best alternative: \\$70."],
+         o={"A": "counts only money paid out; giving up \\$70 of babysitting is a cost.",
+            "B": "is the shift, which is her third choice, not her second.",
+            "D": "adds both alternatives, but she could have done only one of them.",
+            "E": "counts every alternative; only the single next-best one is forgone."}),
+    # 3 normative statement
+    dict(o=["predicts an effect that can be tested, so it is positive.",
+            "is a measurable fact.",
+            "is a claim about what happened, which evidence can check.",
+            "describes behavior that a survey could verify."]),
+    # 4 capital
+    dict(o=["is a financial asset, a claim on the firm, not a tool of production.",
+            "is a financial asset; money buys capital but is not itself a factor of production.",
+            "is an intermediate input used up in production, not a lasting tool.",
+            "is entrepreneurship, a separate factor."]),
+    # 5 market economy
+    dict(o=["describes a command economy.",
+            "describes a traditional economy.",
+            "is a political process; markets decide through spending.",
+            "overstates one firm's power; consumers' spending guides all firms."]),
+    # 6 command economy
+    dict(o=["describes a market economy.",
+            "describes a market economy, where prices are free to move.",
+            "describes a market economy; in a command economy the state owns most resources.",
+            "describes consumer sovereignty in a market economy."]),
+    # 7 property rights
+    dict(o=["is not something property rights do; they protect what people own and earn.",
+            "is unrelated; property rights support market prices.",
+            "is impossible: scarcity remains under any system.",
+            "is backward: secure rights let owners keep their profits."]),
+    # 8 PPC opportunity cost (F)
+    dict(steps=["Going from 2 cars (point C) to 3 cars (point D), wheat falls from 14 to 8 tons.",
+                "The third car costs $14 - 8 = 6$ tons of wheat."],
+         o={"A": "is the cost of the first car (20 to 18 tons).",
+            "B": "is the cost of the second car (18 to 14 tons).",
+            "D": "is the cost of the fourth car (8 to 0 tons).",
+            "E": "is the wheat produced at point C, not the amount given up."}),
+    # 9 bowed-out PPC
+    dict(o=["would need a constant opportunity cost, but it rises here.",
+            "would mean falling opportunity cost, the opposite of this schedule.",
+            "confuses the curve's shape with operating inside it.",
+            "confuses moving along the curve with growth; producing more cars does not add resources."]),
+    # 10 outward shift
+    dict(o=["moves the economy toward the curve, not the curve itself.",
+            "changes which point is chosen, not what can be produced.",
+            "changes which point is chosen, not what can be produced.",
+            "is a movement along the curve."]),
+    # 11 inside the PPC
+    dict(o=["describes a point on the curve.",
+            "is an outward shift of the curve.",
+            "describes a point outside the curve.",
+            "has no basis: points on a curve always involve a trade-off."]),
+    # 12 straight-line OC (F)
+    dict(steps=["Giving up all 30 tons of wheat buys 10 robots.",
+                "One robot costs $30/10 = 3$ tons of wheat."],
+         o={"A": "is the cost of a ton of wheat in robots, the reciprocal.",
+            "C": "is the maximum number of robots.",
+            "D": "subtracts the intercepts instead of dividing.",
+            "E": "is the maximum wheat output, not the cost of one robot."}),
+    # 13 comparative advantage in tables
+    dict(steps=["Ardo: a table costs $12/4 = 3$ shirts. Bexa: a table costs $6/3 = 2$ shirts.",
+                "Bexa's opportunity cost is lower, so Bexa has the comparative advantage in tables."],
+         o=["is absolute advantage; comparative advantage depends on opportunity cost.",
+            "gets the numbers backward: a table costs Ardo 3 shirts and Bexa only 2.",
+            "confuses absolute with comparative advantage; one country always has the lower opportunity cost.",
+            "is false: Ardo makes 4 tables per worker, Bexa only 3."]),
+    # 14 terms of trade (F)
+    dict(steps=["Bexa's cost of a table is 2 shirts; Ardo's is 3.",
+                "Any price strictly between 2 and 3 shirts benefits both: only 2.5 qualifies."],
+         o={"A": "is below Bexa's cost of 2 shirts, so Bexa would lose by selling tables.",
+            "B": "equals Bexa's own cost, so Bexa gains nothing.",
+            "D": "equals Ardo's own cost, so Ardo gains nothing.",
+            "E": "is above Ardo's cost of 3 shirts, so Ardo would rather make its own tables."}),
+    # 15 input form
+    dict(steps=["In hours, a necklace costs Cora $6/3 = 2$ bracelets and Dev $4/4 = 1$ bracelet.",
+                "Dev's opportunity cost is lower, so Dev has the comparative advantage in necklaces."],
+         o=["is about speed in bracelets, which is absolute advantage in the other good.",
+            "gets the numbers backward: a necklace costs Cora 2 bracelets and Dev 1.",
+            "confuses absolute with comparative advantage.",
+            "is impossible: the same person cannot have the comparative advantage in both goods."]),
+    # 16 gains from trade
+    dict(o=["confuses consumption with production; each still produces on its own curve.",
+            "is impossible: trade eases scarcity but cannot end it.",
+            "is false: comparative advantage alone is enough.",
+            "ignores that specialization is the source of the gains."]),
+    # 17 economic profit (F)
+    dict(steps=["Explicit costs: \\$120{,}000. Implicit costs: \\$60{,}000 salary $+$ \\$5{,}000 interest $=$ \\$65{,}000.",
+                "Economic profit $= 200{,}000 - 120{,}000 - 65{,}000 = \\$15{,}000$."],
+         o={"B": "leaves out the \\$5{,}000 of forgone interest.",
+            "C": "leaves out the \\$60{,}000 forgone salary.",
+            "D": "is accounting profit, which ignores implicit costs.",
+            "E": "subtracts only the forgone salary from revenue and ignores the explicit costs."}),
+    # 18 sunk cost
+    dict(o=["is the sunk-cost fallacy: the \\$50 is gone either way.",
+            "uses the past price; what matters is the benefit he expects from each choice now.",
+            "makes no sense: an invitation is not something to sell.",
+            "ignores that the hike, though free, gives him more benefit."]),
+    # 19 implicit cost
+    dict(o=["is an explicit (paid) cost.",
+            "is an explicit (paid) cost.",
+            "is an explicit (paid) cost.",
+            "is an explicit (paid) cost."]),
+    # 20 marginal analysis (F)
+    dict(steps=["Produce each unit whose MB exceeds its MC: unit 1 (40 > 10), unit 2 (32 > 14), unit 3 (24 > 18).",
+                "Unit 4 has MB 16 < MC 22, so stop at 3."],
+         o={"A": "stops while units 2 and 3 still add net benefit.",
+            "B": "stops while unit 3 still adds net benefit ($24 > 18$).",
+            "D": "includes unit 4, whose MC (22) exceeds its MB (16).",
+            "E": "includes units 4 and 5, which both lower net benefit."}),
+    # 21 utility maximization
+    dict(steps=["Rule: spend all \\$13 with $MU_X/P_X = MU_Y/P_Y$.",
+                "At 4 X and 5 Y: $12/2 = 6$ and $6/1 = 6$, and the cost is $4(2) + 5(1) = \\$13$."],
+         o=["costs only \\$9, leaving \\$4 unspent.",
+            "costs \\$12, leaving \\$1 that could buy a fifth Y worth 6 utils.",
+            "costs \\$12, and the ratios differ: $16/2 = 8$ for X but $5/1 = 5$ for Y.",
+            "spends \\$13, but the ratios differ: $8/2 = 4$ for X but $8/1 = 8$ for Y."]),
+    # 22 diminishing marginal utility
+    dict(o=["is wrong: total utility still rises while marginal utility is positive.",
+            "is too strong: marginal utility falls but usually stays positive.",
+            "is the law of demand.",
+            "is wrong: total utility peaks where marginal utility reaches zero."]),
+    # 23 equalizing MU per dollar
+    dict(o=["moves the wrong way: X gives more utility per dollar.",
+            "is impossible: she already spends all her income.",
+            "ignores that spending all income is not enough; the ratios must be equal.",
+            "wastes income that could add utility."]),
+    # 24 total utility peak
+    dict(o=["is where total utility rises fastest, not where it peaks.",
+            "is the condition for buying with a price, not for maximum total utility.",
+            "is the start of consumption, not the peak.",
+            "has no special meaning for the peak of total utility."]),
+]
