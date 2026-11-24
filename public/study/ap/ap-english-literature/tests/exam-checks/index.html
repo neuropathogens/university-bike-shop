@@ -556,7 +556,7 @@ function frScore(f){
   if ((e === 1 && p === 0) || (e === 0 && p === 2)) return 1;
   return 0;
 }
-function words(t){ var m = t.trim().match(/\S+/g); return m ? m.length : 0; }
+function words(t){ if (/[\u3040-\u30ff\u3400-\u9fff\uf900-\ufaff]/.test(t)) return t.replace(/\s/g, "").length + " characters"; var m = t.trim().match(/\S+/g); return (m ? m.length : 0) + " words"; }
 var SCALE = '<details class="scale"><summary>How part scores convert to 0&ndash;4</summary><table class="bt"><thead><tr><th scope="col">Score</th><th scope="col">Label</th><th scope="col">Part scores (three parts, each E, P, or I)</th></tr></thead><tbody>' +
   "<tr><td>4</td><td>Complete</td><td>three parts E</td></tr>" +
   "<tr><td>3</td><td>Substantial</td><td>two parts E and one part P</td></tr>" +
@@ -577,7 +577,7 @@ function essayBox(f){
   var id = f.n + "essay", d = F.drafts[id] || "";
   return '<div class="part essay"><label class="sc" for="fr-' + id + '">Your essay</label>' +
     '<textarea id="fr-' + id + '" data-fr="' + id + '" spellcheck="true">' + esc(d) + "</textarea>" +
-    '<p class="part-meta" id="wc-' + id + '">' + words(d) + " words &middot; saved in this browser</p></div>";
+    '<p class="part-meta" id="wc-' + id + '">' + words(d) + " &middot; saved in this browser</p></div>";
 }
 function renderFR(){
   if (!HAS_FR) return;
@@ -593,7 +593,7 @@ function renderFR(){
           (f.essay ? "" :
           '<label class="sc" for="fr-' + id + '">Your answer to (' + p.label + ")</label>" +
           '<textarea id="fr-' + id + '" data-fr="' + id + '" spellcheck="true">' + esc(d) + "</textarea>" +
-          '<p class="part-meta" id="wc-' + id + '">' + words(d) + " words &middot; saved in this browser</p>") +
+          '<p class="part-meta" id="wc-' + id + '">' + words(d) + " &middot; saved in this browser</p>") +
           '<div class="sol"' + (open ? "" : " hidden") + ' data-sol="' + f.n + '"><h3>Model solution (' + p.label + ")</h3><div>" + p.solution + "</div>" + crit +
             '<div class="mark-row"><span>Your mark for (' + p.label + ")" + (f.mode === "points" ? ", out of " + p.max : "") + ':</span><span class="seg" role="group" aria-label="Mark for part ' + p.label + '">' + markButtons(f, p, id, m) + "</span></div></div></div>";
       }).join("");
@@ -605,7 +605,7 @@ function renderFR(){
         "</article>";
     }).join("") + '<div id="fr-composite">' + compositeHtml() + "</div>";
   frEl.querySelectorAll("textarea").forEach(function(t){
-    t.oninput = function(){ F.drafts[t.dataset.fr] = t.value; save(FKEY, F); document.getElementById("wc-" + t.dataset.fr).innerHTML = words(t.value) + " words &middot; saved in this browser"; };
+    t.oninput = function(){ F.drafts[t.dataset.fr] = t.value; save(FKEY, F); document.getElementById("wc-" + t.dataset.fr).innerHTML = words(t.value) + " &middot; saved in this browser"; };
   });
   frEl.querySelectorAll("[data-open]").forEach(function(b){
     b.onclick = function(){ var n = b.dataset.open; F.open[n] = !F.open[n]; save(FKEY, F); renderFR(); var a = document.getElementById("score-" + n); if (a) a.closest(".fr").querySelector(".part").scrollIntoView({ block: "nearest" }); };

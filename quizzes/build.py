@@ -154,7 +154,7 @@ def build_quiz(z, tpl):
     pdf = z.get("pdf")
     rep = {
         "{{TITLE}}": html.escape(z["title"]), "{{DESC}}": html.escape(z["desc"], quote=True),
-        "{{KATEX_CSS}}": '<link rel="stylesheet" href="/study/katex/katex.min.css">' if math else "",
+        "{{KATEX_CSS}}": ('<link rel="stylesheet" href="/study/katex/katex.min.css">' if math else "") + z.get("head_extra", ""),
         "{{RUNHEAD}}": z["runhead"], "{{BACK_HREF}}": z["back"][0], "{{BACK_LABEL}}": z["back"][1],
         "{{PDF_LINK}}": f'<a href="{pdf}">PDF version</a>' if pdf else "",
         "{{H1}}": head["h1"], "{{SUB}}": head["sub"], "{{METALINE}}": head["metaline"], "{{FOOT}}": head["foot"],

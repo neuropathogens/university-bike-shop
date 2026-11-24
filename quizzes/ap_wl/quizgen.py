@@ -166,7 +166,13 @@ def build(L, DOCS, PAGES, d):
              foot=(f'From <a href="{pdf}"><i>{h(long_name)}{": Question Set" if d.kind == "questions" else ""}</i></a> (PDF). '
                    "Answers and rule tags are the document&rsquo;s own key; the explanations add the rule, how it applies, and why each wrong choice is wrong. "
                    "All passages, transcripts and prompts are original and written for practice. Your answers are saved only in this browser."))
+    if L.cjk:  # kana and kanji fall through the Latin fonts to a Japanese font (not a Chinese fallback)
+        z["head_extra"] = JA_FONTS
     return z
+
+
+JA_FONTS = ('<style>html:root{--serif:"Latin Modern","Computer Modern Serif","CMU Serif",Georgia,"Hiragino Mincho ProN",'
+            '"Yu Mincho","YuMincho","Noto Serif JP","Noto Serif CJK JP",serif}</style>')
 
 
 def task_name(kind):

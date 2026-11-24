@@ -125,6 +125,10 @@ Every wrong choice must have a note in `ex.others`; the builder refuses a quiz o
 - `ap_italian` — AP Italian Language and Culture (revised course, May 2027 exam), built on `ap_wl` exactly like
   `ap_spanish`: Part 0 and Units 1–6, question sets in Italian drawing on Italy, Switzerland and Italian communities abroad.
   Rebuild: `ap_italian/build_tex.py`, `build.py ap_italian`, `ap_italian/study_rows.py`, `link_study.py`.
+- `ap_japanese` — AP Japanese Language and Culture (revised course, May 2027 exam), built on `ap_wl` with
+  `cjk=True` (Harano Aji fonts in the PDFs; a Japanese font stack injected into the quiz pages). Same format as
+  `ap_chinese`: Story Narration and Email Response instead of the essay, questions in English, sources in Japanese.
+  Rebuild: `ap_japanese/build_tex.py`, `build.py ap_japanese`, `ap_japanese/study_rows.py`, `link_study.py`.
 - `ap_chinese` — AP Chinese Language and Culture (revised course, May 2027 exam): Part 0 and Units 1–6, each a study
   guide (`<slug>-checks`) and a question set (`playbook`, `unit-1`…`unit-6`). One Python content model
   (`content/pNN.py`, built on `model.py`) drives both the PDFs and the quizzes: `build_tex.py` renders the LaTeX
