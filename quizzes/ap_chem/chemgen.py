@@ -149,6 +149,9 @@ def breakable(s):
     """Split a long inline reaction into pieces at its + and arrow signs, so it can wrap on a phone."""
     def rep(m):
         b = m.group(1)
+        if len(b) >= 22 and "||" in b and " " not in b:  # cell notation: let it wrap at the salt bridge
+            left, right = b.split("||", 1)
+            return "$\\ce{" + left + "}$ $\\ce{||}$ $\\ce{" + right + "}$"
         if len(b) < 22 or not re.search(r" (->|<=>|\+) ", b):
             return m.group(0)
         parts = re.split(r" (->|<=>|\+) ", b)
