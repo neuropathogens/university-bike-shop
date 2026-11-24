@@ -118,6 +118,8 @@ TREE = page("/", "Home", "The shop, what it sells, and how to book an appointmen
                 folder("/study/ap/ap-economics/micro/", files=files("study/ap/ap-economics/micro", "PDFs"),
                        desc="AP Microeconomics, Units 1–6", anchor="/study/#ap-microeconomics"),
             ], files=files("study/ap/ap-economics", "LaTeX source"), desc="AP Economics", anchor="/study/#ap-macroeconomics"),
+            folder("/study/ap/ap-english-language/", quiz_folder("/study/ap/ap-english-language/", "/study/#ap-english-language"), files=files("study/ap/ap-english-language", "PDFs"),
+                   desc="AP English Language, Parts 0–4", anchor="/study/#ap-english-language"),
             folder("/study/ap/ap-english-literature/", [
                 page("/study/ap/ap-english-literature/xyz-essay/", "The XYZ Essay",
                      "AP English Literature essay guide: thesis, quote units, scoring guide, Gatsby planning kit.", "unlisted"),

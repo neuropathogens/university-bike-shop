@@ -37,7 +37,7 @@ python3 -I quizzes/build.py --all                # every family
 | `stims` | `{id: {title, html}}` shared passages/data, referenced by `q["stim"]` |
 | `target` | optional `{label, mc}` score target shown on the results |
 | `flag` | optional `{below, text}`: topics scored under `below` percent get `text` in the tally |
-| `composite`, `frIntro`, `fr`, `frWord` | optional free response and composite score (see `lib/template.html`); `frWord` replaces "Question" in FR headings. With `mc` empty the page shows only the free response, with a running points total |
+| `composite`, `frIntro`, `fr`, `frWord` | optional free response and composite score (see `lib/template.html`); `frWord` replaces "Question" in FR headings. With `mc` empty the page shows only the free response, with a running points total. An FR item with `essay: True` gets one draft box for the whole question, and its `parts` become rubric rows marked against that draft |
 | `manifest` | `False` keeps the quiz out of `manifest.json` (when several quizzes share one PDF) |
 | `mc` | list of `{n, prompt, options, answer (index), ex: {idea, steps, others: {index: note}}, sec?, topic?, tag?, stim?, fig?, table?, fixed?, labels?, after?}` |
 
@@ -58,6 +58,12 @@ Every wrong choice must have a note in `ex.others`; the builder refuses a quiz o
   `assign_positions`/`defcheck` reproduce each PDF's choices and letters exactly. Practice-set explanations:
   `ex_setNN.py`; self-check explanations are generated from the lexicon (each wrong choice is named as
   another word's definition).
+- `ap_lang` — AP English Language Parts 0–4: each part's guide checks (`method-checks`, `part-N-checks`) and each
+  question set (`part-N`: two reading passages, one writing draft, and a full essay). Parsed from the series' LaTeX
+  (`source/`, from `ap-lang-study-series.zip`); every passage is a shared stim with paragraph (¶) and sentence
+  markers highlighted for the questions that cite them. The essay is `essay: True`, scored on the three rubric rows
+  from the set's scoring guide. Rule tags name a guide section (2.4 = Part 2, Section 4), linked across parts via
+  `source/pages.json` (section pages from the .aux files). Explanations: `ex_<file>.py`.
 - `ap_psych` — AP Psychology: each unit's Question Set (MC, shared data displays, and the 7-point EBQ, or the
   AAQ for Research Methods, self-scored in points) and each guide's section checks. Parsed from the
   series' LaTeX (`source/`, from `ap-psych-study-series.zip`); choices are in source order, as in the PDFs.
