@@ -12,11 +12,10 @@ import os
 import sys
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
-sys.path.insert(0, ROOT)
 sys.path.insert(0, os.path.dirname(ROOT))
 from lib.latex import to_html  # noqa: E402
-from content import DOCS  # noqa: E402
-from model import topic_key  # noqa: E402
+from ap_chinese.content import DOCS  # noqa: E402
+from ap_chinese.model import topic_key  # noqa: E402
 
 BASE = "/study/ap/ap-chinese/"
 BLANK = '<span class="blank" role="img" aria-label="blank"></span>'

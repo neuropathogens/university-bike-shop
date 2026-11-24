@@ -1,4 +1,4 @@
-from model import Doc
+from ap_chinese.model import Doc
 
 STEM = "06-global-contexts"
 

@@ -5,9 +5,9 @@ UNITS = ["p00", "p01", "p02", "p03", "p04", "p05", "p06"]
 DOCS = []
 for _m in UNITS:
     try:
-        _mod = importlib.import_module(f"content.{_m}")
+        _mod = importlib.import_module(f"ap_chinese.content.{_m}")
     except ModuleNotFoundError as e:
-        if e.name != f"content.{_m}":
+        if e.name != f"ap_chinese.content.{_m}":
             raise
         continue
     DOCS += [_mod.GUIDE, _mod.QSET]
