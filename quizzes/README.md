@@ -122,6 +122,9 @@ Every wrong choice must have a note in `ex.others`; the builder refuses a quiz o
 - `ap_german` — AP German Language and Culture (revised course, May 2027 exam), built on `ap_wl` exactly like
   `ap_spanish`: Part 0 and Units 1–6, question sets in German drawing on Germany, Austria, Switzerland and beyond.
   Rebuild: `ap_german/build_tex.py`, `build.py ap_german`, `ap_german/study_rows.py`, `link_study.py`.
+- `ap_italian` — AP Italian Language and Culture (revised course, May 2027 exam), built on `ap_wl` exactly like
+  `ap_spanish`: Part 0 and Units 1–6, question sets in Italian drawing on Italy, Switzerland and Italian communities abroad.
+  Rebuild: `ap_italian/build_tex.py`, `build.py ap_italian`, `ap_italian/study_rows.py`, `link_study.py`.
 - `ap_chinese` — AP Chinese Language and Culture (revised course, May 2027 exam): Part 0 and Units 1–6, each a study
   guide (`<slug>-checks`) and a question set (`playbook`, `unit-1`…`unit-6`). One Python content model
   (`content/pNN.py`, built on `model.py`) drives both the PDFs and the quizzes: `build_tex.py` renders the LaTeX
