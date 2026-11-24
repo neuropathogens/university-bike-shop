@@ -104,6 +104,18 @@ Every wrong choice must have a note in `ex.others`; the builder refuses a quiz o
   `source/pages.json` gives each guide section's PDF page. `\pp` paragraphs and `\pl` verse lines become one shared stim per
   passage; every paragraph and line is numbered, and the ones a stem cites ("paragraph 3", "lines 5 and 9") are
   highlighted with their question. Explanations: `ex_<file>.py`.
+- `ap_wl` — shared engine for the AP world language series (generalized from `ap_chinese`): `model.py` (the `Doc`
+  content model), `lang.py` (per-language settings), `texbuild.py` (writes the LaTeX, compiles with tectonic or
+  `latexmk -xelatex`, records guide pages, publishes the PDFs, the complete pack and the source zip), `quizgen.py`
+  (the quiz pages; free-response `sources` show in stimulus boxes), `study_rows.py` (the /study section) and
+  `tex/ap-wl.sty` (fonts by file name, so no system fonts are needed; option `japanese` adds Harano Aji). Not a family
+  itself (no `quiz.py`).
+- `ap_spanish` — AP Spanish Language and Culture (revised course, May 2027 exam): Part 0 and Units 1–6, each a study
+  guide (`<slug>-checks`) and a question set (`playbook`, `unit-1`…`unit-6`), built on `ap_wl`. Content in
+  `content/pNN.py`; question sets are in Spanish, as on the exam. Free response: the Argumentative Essay (10 points,
+  three sources), the Project Presentation (11) and the Project Q&A (9), with the CED's rubric rows. Rebuild:
+  `python3 -I quizzes/ap_spanish/build_tex.py` (needs tectonic and pypdf), `build.py ap_spanish`, then
+  `python3 -I quizzes/ap_spanish/study_rows.py` and `link_study.py`.
 - `ap_chinese` — AP Chinese Language and Culture (revised course, May 2027 exam): Part 0 and Units 1–6, each a study
   guide (`<slug>-checks`) and a question set (`playbook`, `unit-1`…`unit-6`). One Python content model
   (`content/pNN.py`, built on `model.py`) drives both the PDFs and the quizzes: `build_tex.py` renders the LaTeX
