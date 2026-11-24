@@ -396,7 +396,7 @@ Q.q("6 Relativos", r"\blank\ más me sorprendió fue la cantidad de jóvenes en 
     ["what surprised me → lo que."])
 
 Q.sec("Cohesive devices")
-Q.q("7 Cohesión", r"La ciudad construyó más ciclovías; \blank\, el tráfico disminuyó un 10\%.",
+Q.q("7 Cohesión", r"La ciudad construyó más ciclovías; \blank, el tráfico disminuyó un 10\%.",
     "como resultado", [("en cambio", "En cambio introduces a contrast, but the second clause is a result."),
                        ("a pesar de eso", "This concedes an obstacle; the result is positive and expected."),
                        ("por ejemplo", "The second clause is not an example of the first.")],

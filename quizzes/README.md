@@ -116,6 +116,9 @@ Every wrong choice must have a note in `ex.others`; the builder refuses a quiz o
   three sources), the Project Presentation (11) and the Project Q&A (9), with the CED's rubric rows. Rebuild:
   `python3 -I quizzes/ap_spanish/build_tex.py` (needs tectonic and pypdf), `build.py ap_spanish`, then
   `python3 -I quizzes/ap_spanish/study_rows.py` and `link_study.py`.
+- `ap_french` — AP French Language and Culture (revised course, May 2027 exam), built on `ap_wl` exactly like
+  `ap_spanish`: Part 0 and Units 1–6, question sets in French drawing on the whole French-speaking world.
+  Rebuild: `ap_french/build_tex.py`, `build.py ap_french`, `ap_french/study_rows.py`, `link_study.py`.
 - `ap_chinese` — AP Chinese Language and Culture (revised course, May 2027 exam): Part 0 and Units 1–6, each a study
   guide (`<slug>-checks`) and a question set (`playbook`, `unit-1`…`unit-6`). One Python content model
   (`content/pNN.py`, built on `model.py`) drives both the PDFs and the quizzes: `build_tex.py` renders the LaTeX
