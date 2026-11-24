@@ -146,6 +146,8 @@ TREE = page("/", "Home", "The shop, what it sells, and how to book an appointmen
             ], files=files("study/ap/ap-physics-c", "LaTeX source"), desc="AP Physics C", anchor="/study/#ap-physics-c-mechanics"),
             folder("/study/ap/ap-psychology/", quiz_folder("/study/ap/ap-psychology/", "/study/#ap-psychology"), files=files("study/ap/ap-psychology", "PDFs"),
                    desc="AP Psychology, Part 0 and Units 1–5", anchor="/study/#ap-psychology"),
+            folder("/study/ap/ap-spanish/", quiz_folder("/study/ap/ap-spanish/", "/study/#ap-spanish"), files=files("study/ap/ap-spanish", "PDFs"),
+                   desc="AP Spanish Language and Culture, Part 0 and Units 1–6", anchor="/study/#ap-spanish"),
             folder("/study/ap/ap-statistics/", [
                 folder("/study/ap/ap-statistics/unit-6/", files=files("study/ap/ap-statistics/unit-6", "PDFs"),
                        desc="Unit 6, Sampling Distributions", anchor="/study/#ap-statistics"),
