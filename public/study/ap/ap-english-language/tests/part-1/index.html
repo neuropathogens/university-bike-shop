@@ -1,0 +1,669 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light">
+<script>try{document.documentElement.setAttribute("data-theme",localStorage.getItem("apah.theme")==="dark"?"dark":"light")}catch(e){document.documentElement.setAttribute("data-theme","light")}</script>
+<title>AP English Language Part 1 Question Set: The Rhetorical Situation</title>
+<meta name="description" content="AP English Language Part 1, The Rhetorical Situation: 26 exam-style multiple-choice questions on three passages with in-depth explanations, plus a full rhetorical analysis essay with a six-point scoring guide.">
+<link rel="icon" href="/favicon.ico" sizes="48x48" type="image/x-icon">
+<link rel="icon" href="/icon.svg" sizes="any" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-icon.png" sizes="180x180">
+<link rel="preload" href="/study/ap/ap-art-history/fonts/LM-regular.woff2" as="font" type="font/woff2" crossorigin>
+
+<style>
+@font-face{font-family:"Latin Modern";font-style:normal;font-weight:400;font-display:swap;src:url("/study/ap/ap-art-history/fonts/LM-regular.woff2") format("woff2")}
+@font-face{font-family:"Latin Modern";font-style:italic;font-weight:400;font-display:swap;src:url("/study/ap/ap-art-history/fonts/LM-italic.woff2") format("woff2")}
+@font-face{font-family:"Latin Modern";font-style:normal;font-weight:600 700;font-display:swap;src:url("/study/ap/ap-art-history/fonts/LM-bold.woff2") format("woff2")}
+@font-face{font-family:"Latin Modern";font-style:italic;font-weight:600 700;font-display:swap;src:url("/study/ap/ap-art-history/fonts/LM-bold-italic.woff2") format("woff2")}
+@font-face{font-family:"Latin Modern Mono";font-style:normal;font-weight:400 500;font-display:swap;src:url("/study/ap/ap-art-history/fonts/LM-mono.woff2") format("woff2")}
+@font-face{font-family:"Latin Modern Mono";font-style:normal;font-weight:600 700;font-display:swap;src:url("/study/ap/ap-art-history/fonts/LM-mono-bold.woff2") format("woff2")}
+
+:root{--bg:#fff;--fg:#000;--muted:#4a4a4a;--line:#c9c9c9;--plate:#f5f5f3;--hl:#fbe9a6;--link:#00008b;--ok:#1d5e20;--bad:#9b1c1c;
+  --serif:"Latin Modern","Computer Modern Serif","CMU Serif",Georgia,serif;--mono:"Latin Modern Mono","SFMono-Regular",Menlo,Consolas,monospace;
+  --gutter:clamp(16px,4vw,40px);color-scheme:light}
+:root[data-theme=dark]{--bg:#111110;--fg:#ecebe6;--muted:#a3a29c;--line:#34342f;--plate:#1b1b19;--hl:#4d4320;--link:#9db4ff;--ok:#8fd394;--bad:#ff9b9b;color-scheme:dark}
+*{box-sizing:border-box}
+html{background:var(--bg);scroll-padding-top:16px}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--serif);font-size:17px;line-height:1.5;font-kerning:normal;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+button,input,textarea{font:inherit;color:inherit}
+button{cursor:pointer}
+button:disabled{cursor:default}
+a{color:var(--link);text-underline-offset:3px;text-decoration-thickness:.5px}
+:focus-visible{outline:2px solid var(--link);outline-offset:2px}
+[hidden]{display:none!important}
+.sc{font-variant:small-caps;text-transform:lowercase;letter-spacing:.04em}
+.muted{color:var(--muted)}
+.katex{font-size:1.04em;text-rendering:auto}
+.katex-display{margin:.7em 0;overflow-x:auto;overflow-y:hidden;padding:2px 0}
+
+.runhead{display:flex;flex-wrap:wrap;justify-content:space-between;gap:4px 16px;max-width:1480px;margin:0 auto;padding:14px var(--gutter) 6px;font-size:14px;font-style:italic;color:var(--muted)}
+.runhead a{text-decoration:none}
+.runhead a:hover{text-decoration:underline}
+.runhead-actions{display:flex;flex-wrap:wrap;gap:4px 18px}
+.theme-btn{background:none;border:0;padding:0;font:inherit;font-style:italic;color:var(--link)}
+.theme-btn:hover{text-decoration:underline}
+.rule{max-width:1480px;margin:0 auto;padding-inline:var(--gutter)}
+.rule hr{margin:0;border:0;border-top:.5px solid var(--fg)}
+
+.wrap{max-width:860px;margin:0 auto;padding:0 var(--gutter) 80px}
+.title{text-align:center;padding:34px 0 22px}
+.title h1{margin:0;text-wrap:balance;font-size:clamp(32px,6vw,46px);line-height:1.1;font-weight:700}
+.title .sub{margin:8px 0 0;font-size:18px;font-variant:small-caps;letter-spacing:.03em}
+.title .meta{margin:4px 0 0;font-style:italic;color:var(--muted)}
+
+.tabs{display:flex;justify-content:center;gap:0;margin:0 0 26px;border-bottom:.5px solid var(--fg)}
+.tab{background:none;border:0;border-bottom:2.5px solid transparent;padding:8px 18px;margin-bottom:-1px;font-size:17px;color:var(--muted)}
+.tab[aria-selected=true]{color:var(--fg);border-bottom-color:var(--fg);font-weight:700}
+.tab:hover{color:var(--fg)}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:40px;padding:0 16px;border:1px solid var(--fg);background:var(--bg);font-family:var(--mono);font-size:14.5px;white-space:nowrap}
+.btn:hover:not(:disabled){background:var(--plate)}
+.btn:disabled{opacity:.35}
+.btn--solid{background:var(--fg);color:var(--bg)}
+.btn--solid:hover:not(:disabled){background:var(--fg);opacity:.85}
+.btn--lg{min-height:48px;font-size:15.5px;padding:0 22px}
+.kbd{display:inline-grid;place-items:center;min-width:22px;height:22px;padding:0 4px;border:1px solid currentColor;font-family:var(--mono);font-size:12px;opacity:.8}
+
+/* booktabs tables */
+.bt{border-collapse:collapse;margin:0 auto;font-variant-numeric:tabular-nums}
+.bt th,.bt td{padding:4px 12px;text-align:center;font-weight:400}
+.bt th[scope=row],.bt thead th:first-child{text-align:left}
+.bt thead tr{border-top:1px solid var(--fg);border-bottom:.5px solid var(--fg)}
+.bt tbody tr:last-child{border-bottom:1px solid var(--fg)}
+.bt-wrap{overflow-x:auto;margin:0 0 16px}
+
+/* setup */
+.setup{border-bottom:1.5px solid var(--fg);padding:4px 0 22px;display:grid;gap:18px}
+.setup h2,.results h2,.fr h2{margin:0;font-size:20px}
+.choice-row{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.choice{display:flex;flex-direction:column;align-items:flex-start;gap:2px;padding:12px 14px;border:1px solid var(--fg);background:var(--bg);text-align:left}
+.choice b{font-size:17px}
+.choice span{font-size:14.5px;font-style:italic;color:var(--muted)}
+.choice[aria-pressed=true]{background:var(--fg);color:var(--bg)}
+.choice[aria-pressed=true] span{color:var(--bg);opacity:.8}
+.checks{display:flex;flex-wrap:wrap;gap:8px 22px}
+.checks label{display:inline-flex;align-items:center;gap:8px;cursor:pointer}
+.checks input{width:17px;height:17px;margin:0;accent-color:var(--fg)}
+.setup-actions{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.note{margin:0;font-size:15px;color:var(--muted);font-style:italic}
+
+/* run */
+.bar{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:4px 16px;font-size:15px;color:var(--muted)}
+.track{height:3px;background:var(--line);margin:8px 0 14px}
+.track span{display:block;height:100%;background:var(--fg);transition:width .2s ease}
+.nav{display:grid;grid-template-columns:repeat(auto-fill,minmax(34px,1fr));gap:5px;margin:0 0 22px}
+.nav button{height:32px;padding:0;border:1px solid var(--line);background:var(--bg);font-family:var(--serif);font-size:14px;font-variant-numeric:tabular-nums}
+.nav button:hover{border-color:var(--fg)}
+.nav .is-answered{background:var(--plate);border-color:var(--fg)}
+.nav .is-right{background:var(--fg);color:var(--bg);border-color:var(--fg)}
+.nav .is-wrong{border:1.5px dashed var(--bad);color:var(--bad)}
+.nav .is-current{outline:2px solid var(--fg);outline-offset:1px}
+.q{border-top:1.5px solid var(--fg);padding-top:16px}
+.q-eyebrow{margin:0 0 6px;font-size:14px;color:var(--muted)}
+.q-prompt{margin:0 0 14px;font-size:20px;line-height:1.45;font-weight:400}
+.opts{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.opt{display:flex;align-items:center;gap:12px;width:100%;min-height:52px;padding:10px 14px;border:1px solid var(--fg);background:var(--bg);text-align:left;font-size:16.5px;line-height:1.4}
+.opt:hover:not(:disabled){background:var(--plate)}
+.opt .kbd{flex:none}
+.opt .mark{margin-left:auto;padding-left:6px;font-family:var(--mono);font-size:14px;white-space:nowrap}
+.opt.is-picked{border-width:2px;padding:9px 13px;background:var(--plate)}
+.opt.is-right{background:var(--fg);color:var(--bg);border-color:var(--fg)}
+.opt.is-wrong{border:1.5px dashed var(--bad);color:var(--bad);text-decoration:line-through;text-decoration-thickness:1px}
+.opt.is-wrong .mark,.opt.is-wrong .kbd{text-decoration:none}
+.opt.is-dim{opacity:.5}
+.fb{margin:14px 0 0;padding:12px 16px;border:.5px solid var(--fg);border-left:3px solid var(--ok)}
+.fb.is-wrong{border-left-color:var(--bad)}
+.fb p{margin:0}
+.fb .verdict{font-weight:700;margin-bottom:4px}
+.why p{margin:0 0 6px}
+.steps{margin:2px 0 8px;padding-left:22px}
+.steps li{margin:4px 0;padding-left:2px}
+.why .why-h{margin:10px 0 2px;font-size:14.5px;color:var(--muted)}
+.others{margin:0 0 4px;padding-left:20px}
+.others li{margin:5px 0}
+.others .tag{margin-left:6px;font-family:var(--mono);font-size:12.5px;color:var(--bad);white-space:nowrap}
+.links{margin-top:6px;font-size:15px}
+.step{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:10px;margin-top:20px}
+.step-right{display:flex;flex-wrap:wrap;gap:8px}
+.confirm{margin-top:14px;padding:12px 16px;border:1px solid var(--fg);display:flex;flex-wrap:wrap;align-items:center;gap:10px}
+.confirm p{margin:0;flex:1 1 220px}
+.keys{margin:18px 0 0;font-size:13.5px;color:var(--muted);text-align:center}
+.restart-line{margin:10px 0 0;font-size:14.5px;text-align:center}
+
+/* results */
+.results{padding-top:4px}
+.score{text-align:center;padding:10px 0 18px}
+.score-big{margin:0;font-size:clamp(48px,10vw,72px);font-weight:700;line-height:1;font-variant-numeric:tabular-nums}
+.score p{margin:6px 0 0}
+.res-actions{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin:0 0 22px}
+.res-filter{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:6px;border-bottom:1.5px solid var(--fg);padding-bottom:6px}
+.res-list{list-style:none;margin:0;padding:0}
+.res-list>li{border-bottom:.5px solid var(--line)}
+.res-list>li:last-child{border-bottom:1.5px solid var(--fg)}
+.res-list details{padding:10px 0}
+.res-list summary{display:grid;grid-template-columns:34px 22px minmax(0,1fr);gap:8px;cursor:pointer;list-style:none}
+.res-list summary::-webkit-details-marker{display:none}
+.res-n{font-weight:700;font-variant-numeric:tabular-nums}
+.res-ok{color:var(--ok);font-weight:700}
+.res-bad{color:var(--bad);font-weight:700}
+.res-body{padding:8px 0 4px 64px;font-size:15.5px}
+.res-body p{margin:0 0 4px}
+.res-body .bt-wrap{margin:4px 0 8px}
+.topics{margin:0 0 26px}
+.topics h2{margin:0 0 8px}
+.topics .bt{margin:0;width:100%}
+.topics .bt td:last-child,.topics .bt th:last-child{text-align:left}
+.topics .flag{color:var(--bad);font-style:italic}
+.composite{margin:0 0 26px;padding:12px 16px;border:.5px solid var(--fg);border-left:3px solid var(--fg)}
+.composite p{margin:0}
+.composite p+p{margin-top:4px}
+
+/* free response */
+.fr-intro{margin:0 0 6px;font-style:italic;color:var(--muted)}
+.fr{border-top:1.5px solid var(--fg);padding:18px 0 26px}
+.fr h2 small{font-weight:400;font-style:italic;color:var(--muted);font-size:15px;margin-left:6px}
+.fr-stem{margin:10px 0 6px;text-align:justify;hyphens:auto;-webkit-hyphens:auto}
+.part{margin:18px 0 0}
+.part-prompt{margin:0 0 8px}
+.part-prompt b{margin-right:4px}
+.part.essay textarea{min-height:420px}
+.part textarea{width:100%;min-height:150px;padding:12px 14px;border:1px solid var(--fg);border-radius:0;background:var(--bg);font-family:var(--serif);font-size:16.5px;line-height:1.55;resize:vertical}
+.part-meta{margin-top:4px;font-size:14px;color:var(--muted)}
+.sol{margin-top:12px;padding:12px 18px;border:.5px solid var(--fg)}
+.sol h3{margin:0 0 4px;font-size:15px}
+.sol p{margin:0 0 10px}
+.sol .crit{display:grid;grid-template-columns:28px minmax(0,1fr);gap:2px 8px;margin:0 0 10px;font-size:15.5px}
+.sol .crit dt{font-weight:700}
+.sol .crit dd{margin:0}
+.mark-row{display:flex;flex-wrap:wrap;align-items:center;gap:8px;font-size:15px}
+.seg{display:inline-flex;flex-wrap:wrap;max-width:100%;padding:1px 0 0 1px}
+.seg button{margin:-1px 0 0 -1px;min-width:44px;min-height:36px;padding:0 10px;border:1px solid var(--fg);background:var(--bg);font-family:var(--mono);font-size:14px}
+.seg button[aria-pressed=true]{position:relative;background:var(--fg);color:var(--bg)}
+.fr-actions{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:10px;margin-top:16px}
+.fr-score{font-size:16px}
+.fr-score b{font-variant-numeric:tabular-nums}
+.scale{margin-top:14px}
+.scale summary{cursor:pointer;font-size:15px;color:var(--muted);font-style:italic}
+.scale .bt{margin:8px 0 0}
+.scale .bt td:last-child,.scale .bt th:last-child{text-align:left}
+.foot{margin-top:40px;padding-top:12px;border-top:.5px solid var(--line);font-size:14px;color:var(--muted)}
+
+@media (max-width:640px){
+  .runhead-title{display:none}
+  .runhead-actions{width:100%;justify-content:space-between}
+  .title{padding:22px 0 16px}
+  .choice-row{grid-template-columns:1fr}
+  .q-prompt{font-size:18.5px}
+  .res-body{padding-left:0}
+  .keys{display:none}
+  .fr-stem{text-align:left}
+  .bt th,.bt td{padding:4px 7px}
+  .sol{padding:10px 12px}
+  .katex-display>.katex{font-size:.94em}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+@media print{.runhead,.rule,.tabs,.nav,.step,.keys,.restart-line,.res-actions{display:none!important}}
+/* generic quiz additions */
+.q-prompt p{margin:0}
+.q-prompt p+p{margin-top:8px}
+.q-ask{margin:10px 0 0!important;font-size:16px;font-style:italic;color:var(--muted)}
+.blank{display:inline-block;width:3.4em;height:1em;margin:0 .12em;border-bottom:1.5px solid currentColor;vertical-align:-.12em}
+.stim{position:relative;margin:0 0 16px;padding:12px 16px;border:.5px solid var(--fg);background:var(--plate);font-size:16.5px;line-height:1.55;max-height:60vh;overflow:auto}
+.stim-h{margin:0 0 6px!important;font-size:14px;color:var(--muted)}
+.stim p{margin:0 0 8px}
+.stim p:last-child{margin-bottom:0}
+u.ul{text-decoration-thickness:1px;text-underline-offset:3px}
+.qn{display:inline-block;min-width:1.4em;padding:0 .2em;margin:0 .15em;border:.5px solid var(--fg);font:600 11.5px/1.4 system-ui,-apple-system,sans-serif;text-align:center;vertical-align:.12em;font-variant-numeric:tabular-nums}
+.stim .qn[data-cur]{background:var(--fg);color:var(--bg)}
+.stim u[data-cur]{background:var(--hl);box-shadow:0 0 0 2px var(--hl)}
+.stim .ln{display:inline-block;min-width:1.3em;padding:0 .25em;margin-right:.25em;border:.5px solid var(--line);color:var(--muted);font:500 11px/1.4 system-ui,-apple-system,sans-serif;text-align:center;vertical-align:.12em;font-variant-numeric:tabular-nums}
+.stim .ln[data-cur]{background:var(--hl);color:var(--fg);border-color:var(--fg)}
+.stim-intro{font-style:italic;color:var(--muted);font-size:15px}
+.stim-sub{margin-top:12px!important}
+.stim-note{font-size:15px;color:var(--muted)}
+.tool{margin:0 0 10px;padding:6px 0 6px 12px;border-left:3px solid var(--muted);font-size:15px;color:var(--muted)}
+.fig .figcap{margin:0 0 6px;font-size:15px}
+.stim.free{max-height:none;overflow:visible}
+.bt th[colspan]{text-align:center}
+.fig-after{margin:12px 0 4px}
+.fig-after img{max-width:min(100%,420px);max-height:340px;width:auto;object-fit:contain}
+.stim .figcap{text-align:center;font-size:15px;margin:10px 0 4px}
+.stim .fig{margin:6px 0 10px}
+.stim .bt-wrap{margin:0 0 10px}
+.fig-img,.opt-img{max-width:100%;height:auto;background:#fff}
+.opt-img{display:block;max-width:140px}
+:root[data-theme=dark] .fig-img,:root[data-theme=dark] .opt-img{filter:invert(.92) hue-rotate(180deg)}
+.fig{margin:0 0 14px;text-align:center}
+.fig img{max-width:100%;height:auto;background:#fff}
+:root[data-theme=dark] .fig img{filter:invert(.92) hue-rotate(180deg)}
+.fig figcaption{font-size:14px;color:var(--muted);font-style:italic}
+.target{margin:4px 0 0;font-style:italic}
+.res-sum{display:block}
+.opt>span:nth-child(2){flex:1 1 auto;min-width:0;overflow-wrap:anywhere;-webkit-hyphens:auto;hyphens:auto}
+@media (max-width:640px){.opt .mark{white-space:normal;text-align:right;max-width:6.2em;line-height:1.25}}
+.sol>div{margin:0 0 10px}
+.crit-pts{margin:0 0 10px;font-size:15.5px}
+.crit-pts p{margin:0 0 4px}
+.crit-pts ul{margin:0 0 4px;padding-left:20px}
+</style>
+</head>
+<body>
+<div class="runhead"><span class="runhead-title">AP English Language &middot; Part 1: The Rhetorical Situation &middot; Question Set</span><span class="runhead-actions"><a href="/study/#ap-english-language">&larr;&nbsp;Study Library</a><a href="/study/ap/ap-english-language/ap-lang-01-rhetorical-situation-questions.pdf">PDF version</a><button type="button" class="theme-btn" id="theme-btn">Dark mode</button></span></div>
+<div class="rule"><hr></div>
+
+<main class="wrap">
+  <header class="title">
+    <h1>Part 1 <span style="white-space:nowrap">Question Set</span></h1>
+    <p class="sub">The Rhetorical Situation</p>
+    <p class="meta">26 multiple-choice on 3 passages (about 35 min) &middot; 1 rhetorical analysis essay (40 min)</p>
+  </header>
+  <div class="tabs" role="tablist">
+    <button type="button" class="tab" role="tab" id="tab-mc" aria-controls="mc" aria-selected="true">Multiple choice</button>
+    <button type="button" class="tab" role="tab" id="tab-fr" aria-controls="fr" aria-selected="false">Free response</button>
+  </div>
+
+  <section id="mc" role="tabpanel" aria-labelledby="tab-mc"></section>
+  <section id="fr" role="tabpanel" aria-labelledby="tab-fr" hidden></section>
+
+  <p class="foot">From <a href="/study/ap/ap-english-language/ap-lang-01-rhetorical-situation-questions.pdf"><i>Part 1: The Rhetorical Situation: Question Set</i></a> (PDF). Answers and rule tags are the document&rsquo;s own key; the explanations expand on it and say why each wrong choice is wrong. Topic links open the matching section of the guide. All passages are fictional, written for practice. Your answers are saved only in this browser.</p>
+</main>
+
+<script id="data" type="application/json">{"meta":{"key":"study.ap-lang.part-1.v1","setupNote":"Allow about 35 minutes for the multiple choice, about 80 seconds per question. The passage stays above each question; the paragraph or sentence a question cites is highlighted.","topicPrefix":"","topicCol":"Topic","guideCol":"Guide section","byTopic":"By topic","topicNote":"Two or more misses on one topic: reread that section of the guide.","guide":"/study/ap/ap-english-language/ap-lang-01-rhetorical-situation-guide.pdf","guideName":"the <i>Part 1 guide<\/i>","target":{"label":"Target","mc":20},"frIntro":"Allow 40 minutes. Write the whole essay in the box, then open the scoring guide and score it row by row: thesis (0&ndash;1), evidence and commentary (0&ndash;4), sophistication (0&ndash;1).","frWord":"Question"},"topics":{"1.1":{"name":"Exigence and context","page":1},"1.2":{"name":"Audience","page":2},"1.3":{"name":"Purpose and persona","page":3},"1.5":{"name":"Fitting choices to the situation","page":4},"2.1":{"name":"Claims and the thesis <span class=\"muted\">(Part 2)<\/span>","page":1,"url":"/study/ap/ap-english-language/ap-lang-02-claims-evidence-guide.pdf#page=1"},"2.2":{"name":"Evidence: types and functions <span class=\"muted\">(Part 2)<\/span>","page":2,"url":"/study/ap/ap-english-language/ap-lang-02-claims-evidence-guide.pdf#page=2"},"2.4":{"name":"Qualification, concession, and rebuttal <span class=\"muted\">(Part 2)<\/span>","page":4,"url":"/study/ap/ap-english-language/ap-lang-02-claims-evidence-guide.pdf#page=4"},"3.2":{"name":"Methods of development <span class=\"muted\">(Part 3)<\/span>","page":2,"url":"/study/ap/ap-english-language/ap-lang-03-reasoning-organization-guide.pdf#page=2"},"3.3":{"name":"Structure: the shape of the whole <span class=\"muted\">(Part 3)<\/span>","page":2,"url":"/study/ap/ap-english-language/ap-lang-03-reasoning-organization-guide.pdf#page=2"},"3.4":{"name":"Transitions and signposting <span class=\"muted\">(Part 3)<\/span>","page":3,"url":"/study/ap/ap-english-language/ap-lang-03-reasoning-organization-guide.pdf#page=3"},"4.1":{"name":"Diction <span class=\"muted\">(Part 4)<\/span>","page":1,"url":"/study/ap/ap-english-language/ap-lang-04-style-guide.pdf#page=1"},"4.2":{"name":"Syntax <span class=\"muted\">(Part 4)<\/span>","page":2,"url":"/study/ap/ap-english-language/ap-lang-04-style-guide.pdf#page=2"},"4.3":{"name":"Comparisons and figurative language <span class=\"muted\">(Part 4)<\/span>","page":3,"url":"/study/ap/ap-english-language/ap-lang-04-style-guide.pdf#page=3"},"4.4":{"name":"Tone, shifts, and irony <span class=\"muted\">(Part 4)<\/span>","page":4,"url":"/study/ap/ap-english-language/ap-lang-04-style-guide.pdf#page=4"}},"sections":{"1":"Passage 1: The bookmobile (reading)","2":"Passage 2: The Ledge (reading)","3":"Passage 3: Saturday library hours (writing)"},"stims":{"s1":{"title":"Passage 1","html":"<p class=\"stim-intro\">The following passage is from remarks delivered in 2019 by Margaret Odell, a retired elementary school teacher, at a public meeting of a rural county’s Board of Supervisors. The board was considering a budget that would eliminate the county library’s bookmobile.<\/p><p><span class=\"ln\" data-qs=\"1\">&para;1<\/span>  Good evening. My name is Margaret Odell, and for thirty-one years I taught fourth grade at Pine Hollow Elementary, which means that a good number of you on this board once sat in a small chair in my classroom and told me, with a straight face, that you had finished your reading. I forgave you then, and I am prepared to forgive you now, provided you vote correctly tonight.<\/p><p><span class=\"ln\" data-qs=\"3\">&para;2<\/span>  I am here about the bookmobile. I have read the budget memo, all eleven pages of it, and I want to say first that I understand it. The county has lost two employers in three years. The road fund is short. Every line in that memo was written by someone trying to make an impossible sum come out even, and I do not envy you the arithmetic.<\/p><p><span class=\"ln\" data-qs=\"4 7\">&para;3<\/span>  But I would ask you to consider what the bookmobile line actually buys. It does not buy a truck. It buys Tuesday afternoons at the Fenwick crossroads, where eleven children wait by the feed store because their nearest library is forty minutes away and their parents work until six. It buys the large-print mysteries that Mr. Albert Dunn, who is ninety-one and no longer drives, reads at a rate of three a week. It buys the only place in the eastern half of this county where a person can print a job application without asking a favor.<\/p><p><span class=\"ln\" data-qs=\"5\">&para;4<\/span>  The memo calls the bookmobile a “low-utilization service.” I suppose that is true if you measure it by the number of people who use it. Measure it instead by the number of people who have nothing else, and it is the most utilized thing this county owns.<\/p><p><span class=\"ln\" data-qs=\"6\">&para;5<\/span>  You will hear that the families out east can drive to the main branch. Some can. The ones who most need it cannot, and a cut that falls only on the people least able to absorb it is not a saving. It is a transfer of the burden from this table to theirs.<\/p><p><span class=\"ln\" data-qs=\"8\">&para;6<\/span>  So I am asking you to keep the bookmobile for one more year, and I am offering something in return. The Friends of the Library will raise the cost of its fuel for that year ourselves. We have already begun. I sold my first pie this afternoon, to your county clerk, at a price I will not repeat in public.<\/p>"},"s2":{"title":"Passage 2","html":"<p class=\"stim-intro\">The following passage is from a letter published in 2023 in the newsletter of a fishermen’s cooperative in a small coastal town. The writer, a marine biologist who grew up in the town, is responding to members’ anger over a proposed two-year closure of the cod fishery on the Ledge, a fishing ground offshore.<\/p><p><span class=\"ln\" data-qs=\"10\">&para;1<\/span>  I know what some of you said at the co-op meeting, because my uncle called me afterward to repeat it, word for word, with what I can only describe as enthusiasm. I will not argue with the parts about my character. I will argue with the rest.<\/p><p><span class=\"ln\" data-qs=\"12\">&para;2<\/span>  I was born four streets from the harbor. My grandfather fished the Ledge for forty years, and the first thing I ever counted was cod on the deck of his boat. I mention this not to claim I am one of you—you would correct me, and you would be right—but so you know that when I say the closure is necessary, I am not saying it from a distance.<\/p><p><span class=\"ln\" data-qs=\"13 14\">&para;3<\/span>  Here is what the surveys show. In 1990 a two-hour tow on the Ledge brought up, on average, 310 pounds of cod. Last spring the same tow brought up 41. The fish we are catching are also younger: most have not yet spawned even once. A fishery can survive hard years. It cannot survive taking the fish before they replace themselves, because then every hard year is followed by a harder one.<\/p><p><span class=\"ln\" data-qs=\"15 16\">&para;4<\/span>  You have heard this before. You heard it in 1994, when the scientists were right, and in 2008, when, I will admit, we were wrong about how quickly the haddock would come back. I am not asking you to trust scientists because we are always right. I am asking you to look at your own logbooks. They tell the same story as ours, only in your handwriting.<\/p><p><span class=\"ln\" data-qs=\"17\">&para;5<\/span>  A closure is not a punishment. It is a loan from the present to the future, and like any loan, it is hardest to make when money is short. That is why the proposal includes payments to boats that stay in port, and why I have asked the state to put a fishermen’s representative on the board that decides when the Ledge reopens. You should not have to take our word for when it is ready. You should be there to see it.<\/p>"},"s3":{"title":"Passage 3","html":"<p class=\"stim-intro\">The following is a draft of a letter that a student is writing to her school’s principal. It may need revision.<\/p><p><span class=\"ln\" >&para;1<\/span>  <span class=\"ln\" >1<\/span>  Every Saturday morning, a line forms outside the Westbrook Public Library before it opens. <span class=\"ln\" >2<\/span>  Many of the people in that line are students from our school. <span class=\"ln\" >3<\/span>  They come for quiet, for Wi-Fi, and for tables big enough to spread out a chemistry lab report. <span class=\"ln\" data-qs=\"19\">4<\/span>  Since the public library cut its weekend hours in January, however, it has been open only from ten to noon, and students are now turned away once every seat is taken.<\/p><p><span class=\"ln\" >&para;2<\/span>  <span class=\"ln\" data-qs=\"23\">5<\/span>  I am writing to propose that our school open its library from 9 a.m. to 1 p.m. on Saturdays. <span class=\"ln\" >6<\/span>  Our library already has forty-two seats, twenty computers, and a printer that students can use for free. <span class=\"ln\" data-qs=\"20\">7<\/span>  For most of the weekend, all of it sits behind a locked door.<\/p><p><span class=\"ln\" data-qs=\"24\">&para;3<\/span>  <span class=\"ln\" >8<\/span>  The main cost would be staffing. <span class=\"ln\" >9<\/span>  The library would need one adult supervisor for four hours each week. <span class=\"ln\" >10<\/span>  Parent volunteers from the PTA have already offered to share these shifts, and the student council has voted to help shelve books and check out laptops. <span class=\"ln\" data-qs=\"21\">11<\/span>  The custodial staff already works on Saturdays to prepare the building for weekend sports events.<\/p><p><span class=\"ln\" >&para;4<\/span>  <span class=\"ln\" >12<\/span>  Some teachers have worried that students will use the space to socialize rather than to study. <span class=\"ln\" data-qs=\"22\">13<\/span>  That is a fair concern. <span class=\"ln\" data-qs=\"22\">14<\/span>  A trial run would answer it: if attendance or behavior is poor after eight weeks, the program could simply end.<\/p><p><span class=\"ln\" >&para;5<\/span>  <span class=\"ln\" >15<\/span>  Students at our school want to do their work. <span class=\"ln\" data-qs=\"25\">16<\/span>  We are asking for a place to do it.<\/p>"},"s4":{"title":"Question 2 passage","html":"<p class=\"stim-intro\">Dorothy Kaye, remarks at a public meeting, Alder Creek, California, 1977.<\/p><p><span class=\"ln\" >&para;1<\/span>  Thank you for coming out on a Tuesday, and thank you to whoever brought the lemonade. I noticed it was made with very little water. That is the kind of civic spirit I am here to talk about.<\/p><p><span class=\"ln\" >&para;2<\/span>  Our reservoir is at nineteen percent. I want you to hold that number in your head the way you would hold the balance of your checking account in the last week of the month. Nineteen percent is not empty. It is also not a number anyone in this room would be comfortable seeing on a bank statement with the rent due.<\/p><p><span class=\"ln\" >&para;3<\/span>  The council could order rationing tonight. There are cities up the valley that have done exactly that, with meters and fines and inspectors walking the alleys at dawn to look for wet sidewalks. I do not want to send an inspector to your house. I suspect you do not want to meet him. And I do not believe this city needs one.<\/p><p><span class=\"ln\" >&para;4<\/span>  I believe this because I have seen what this town does when the creek runs low. In 1924, when the wells failed, families on the east side carried water to the west side in milk cans until the rains came. My mother was one of the girls carrying those cans. She told me that nobody ordered them to do it. It simply did not occur to anyone that a neighbor’s thirst was someone else’s problem.<\/p><p><span class=\"ln\" >&para;5<\/span>  What I am asking of you is smaller than that. Turn off the tap while you brush your teeth. Let the lawn go gold; it will come back, and gold is a perfectly respectable color for California in August. Run the dishwasher when it is full and not before. Keep a bucket in the shower. None of this is heroic. All of it, done in ten thousand houses, is the difference between a hard summer and a dangerous one.<\/p><p><span class=\"ln\" >&para;6<\/span>  Every Sunday I will print the reservoir level in this paper, along with our use, street by street. Not to shame anyone. To let you see what you are doing. When a street cuts its use by a quarter, I will say so, by name.<\/p><p><span class=\"ln\" >&para;7<\/span>  The rain will come back. It always has. The question is only what kind of town we will have been while we waited for it.<\/p>"}},"mc":[{"n":1,"prompt":"<p>In paragraph 1, Odell’s reference to board members as her former students primarily serves to<\/p>","options":["suggest that the board members cannot be trusted to read the budget memo","establish her expertise in public finance","create a familiar, good-humored relationship with an audience she knows personally","signal that her remarks will not concern the budget"],"answer":2,"sec":"1","topic":"1.5","tag":"1.5 Accommodating audience","stim":"s1","ex":{"idea":"Odell speaks to people she taught as children. The joke about their unfinished reading uses that history to set a warm, teasing tone, and its last clause (&ldquo;provided you vote correctly tonight&rdquo;) slips her request in with a smile.","steps":["Her audience is a board she knows personally, and some members are former students.","Humor and familiarity make it harder for them to treat her as an adversary."],"others":{"0":"the &ldquo;lie&rdquo; about reading is affectionate teasing from decades ago, and she forgives it; it is not a charge of dishonesty.","1":"her credential here is as a teacher; nothing in paragraph 1 concerns finance.","3":"&ldquo;vote correctly tonight&rdquo; points straight at the budget vote."}}},{"n":2,"prompt":"<p>The exigence for Odell’s remarks is<\/p>","options":["Odell’s retirement after thirty-one years of teaching","the board’s consideration of a budget that would eliminate the bookmobile","a decline in reading among the county’s children","the county’s loss of two employers in three years"],"answer":1,"sec":"1","topic":"1.1","tag":"1.1 Exigence","stim":"s1","ex":{"idea":"Exigence is the specific event that prompts a text. Odell speaks because the board is about to vote on a budget that eliminates the bookmobile.","steps":["The headnote says the board &ldquo;was considering a budget that would eliminate&rdquo; the bookmobile.","That pending decision is why she speaks tonight."],"others":{"3":"lost employers are context: they explain why the budget is tight, but they are not what prompted her speech.","0":"her retirement is part of her background, not the occasion.","2":"she never mentions declining reading; she defends a service."}}},{"n":3,"prompt":"<p>In paragraph 2, Odell’s statement that she understands the budget memo mainly serves to<\/p>","options":["agree that the bookmobile should be eliminated","acknowledge the board’s difficult position so that her request appears fair-minded","criticize the staff who wrote the memo","demonstrate her training in accounting"],"answer":1,"sec":"1","topic":"1.3","tag":"1.3 Ethos","stim":"s1","ex":{"idea":"By saying she understands the memo and does not envy their arithmetic, Odell grants the board's real constraints. That fairness makes her request look reasonable rather than naive.","steps":["She lists the problems: lost employers, a short road fund.","Then she credits the memo's authors with good faith before asking for an exception."],"others":{"0":"she understands the memo but argues against cutting the bookmobile.","3":"reading a memo carefully is not accounting expertise, and she claims none.","2":"she praises them as people &ldquo;trying to make an impossible sum come out even.&rdquo;"}}},{"n":4,"prompt":"<p>The repetition of “It buys” in paragraph 3 primarily serves to<\/p>","options":["redefine a budget line as specific services to specific residents","list the mechanical features of the bookmobile","shift the passage to a hostile tone","emphasize how expensive the bookmobile is to operate"],"answer":0,"sec":"1","topic":"4.2","tag":"4.2 Syntax","stim":"s1","ex":{"idea":"The anaphora &ldquo;It buys&rdquo; replaces an abstract line item with three concrete scenes: the children at Fenwick, Mr. Dunn's mysteries, the job applications.","steps":["&ldquo;It does not buy a truck&rdquo; rejects the board's framing.","Each &ldquo;It buys&rdquo; sentence names a real person or place the cut would affect."],"others":{"3":"the paragraph never mentions cost; it emphasizes value.","1":"&ldquo;It does not buy a truck&rdquo; explicitly sets the vehicle aside.","2":"the tone stays warm and concrete; nothing is hostile."}}},{"n":5,"prompt":"<p>In paragraph 4, Odell responds to the memo’s description of the bookmobile as a “low-utilization service” by<\/p>","options":["granting its literal accuracy while proposing a different measure of the service’s value","proposing a new formula for calculating the county budget","rejecting the memo’s figures as inaccurate","mocking the author of the memo"],"answer":0,"sec":"1","topic":"2.4","tag":"2.4 Counterargument","stim":"s1","ex":{"idea":"&ldquo;I suppose that is true&rdquo; concedes the memo's measure, then &ldquo;Measure it instead&rdquo; replaces raw usage with need.","steps":["Concession: by headcount, use is low.","Reframe: by the number of people with no alternative, it is the county's most used asset."],"others":{"2":"she accepts the figures; she disputes what they measure.","3":"the tone is wry, but she makes an argument, not an insult.","1":"she proposes a different way to value the service, not a budget formula."}}},{"n":6,"prompt":"<p>The claim in paragraph 5 that the cut “is a transfer of the burden from this table to theirs” suggests that eliminating the bookmobile would<\/p>","options":["require board members to pay for the service personally","move the bookmobile’s services to the main branch","save the county money over the long term","shift costs onto vulnerable residents rather than eliminate them"],"answer":3,"sec":"1","topic":"2.1","tag":"2.1 Claims","stim":"s1","ex":{"idea":"Odell argues that the cut does not remove the cost; it moves it from the county's budget (&ldquo;this table&rdquo;) to the families least able to bear it (&ldquo;theirs&rdquo;).","steps":["&ldquo;Not a saving&rdquo; rejects the board's premise.","&ldquo;A transfer of the burden&rdquo; names what really happens."],"others":{"2":"she says explicitly that it &ldquo;is not a saving.&rdquo;","1":"she says those who need it most cannot reach the main branch.","0":"&ldquo;this table&rdquo; stands for the county's budget, not members' own pockets."}}},{"n":7,"prompt":"<p>The details about the children at the Fenwick crossroads and Mr. Albert Dunn (paragraph 3) function mainly to<\/p>","options":["suggest that the bookmobile primarily serves elderly residents","prove that the bookmobile’s usage numbers are higher than the memo claims","give concrete, human examples of what the cut would take away","provide expert testimony about rural libraries"],"answer":2,"sec":"1","topic":"2.2","tag":"2.2 Evidence","stim":"s1","ex":{"idea":"Specific people and places (eleven children by the feed store, a ninety-one-year-old reader) make the cut's cost visible to a board thinking in line items.","steps":["The memo speaks of &ldquo;utilization&rdquo;; Odell answers with faces.","These examples make the abstract loss concrete."],"others":{"1":"she concedes usage is low; the examples show need, not high numbers.","3":"the examples are her own observations, not experts' findings.","0":"the examples include children and job seekers as well as Mr. Dunn."}}},{"n":8,"prompt":"<p>In paragraph 6, Odell’s offer and her remark about the pie mainly serve to<\/p>","options":["suggest that the county clerk acted improperly","make her request easier to grant while ending on the good humor of her opening","show that private fundraising can permanently replace county funding","change the subject from the bookmobile to fundraising"],"answer":1,"sec":"1","topic":"1.5","tag":"1.5 Accommodating audience","stim":"s1","ex":{"idea":"Offering to raise the fuel money shares the burden she has asked the board to carry, and the joke about the clerk returns to the humor of her opening.","steps":["A concrete offer answers the board's budget worry.","The pie anecdote ends the speech warmly, framing it with paragraph 1."],"others":{"2":"she offers to cover fuel for one year only.","0":"the clerk bought a pie; the joke is about the price, not any impropriety.","3":"the fundraising is in support of the bookmobile, so the subject is unchanged."}}},{"n":9,"prompt":"<p>Odell’s tone throughout the passage is best described as<\/p>","options":["detached and clinical","bitter and accusatory","pleading and desperate","affectionate but firm"],"answer":3,"sec":"1","topic":"4.4","tag":"4.4 Tone","stim":"s1","ex":{"idea":"Odell is warm and funny throughout, yet never retreats from a clear demand: keep the bookmobile.","steps":["Affection: jokes about former students, forgiveness, the pie.","Firmness: &ldquo;vote correctly,&rdquo; &ldquo;not a saving,&rdquo; a specific request."],"others":{"1":"she credits the memo's authors and never accuses anyone.","0":"she is personal and concrete, not clinical.","2":"she makes a confident proposal and an offer; she does not beg."}}},{"n":10,"prompt":"<p>In paragraph 1, the writer’s comment that her uncle repeated the meeting’s remarks “with what I can only describe as enthusiasm” primarily serves to<\/p>","options":["dismiss the members’ concerns as trivial","reveal a family conflict that becomes the letter’s subject","acknowledge the members’ anger with humor that defuses hostility","establish her scientific authority"],"answer":2,"sec":"2","topic":"1.2","tag":"1.2 Audience","stim":"s2","ex":{"idea":"The writer admits she knows what was said about her, and the dry phrase &ldquo;with what I can only describe as enthusiasm&rdquo; lets the readers see she can take it. That defuses hostility before she argues.","steps":["She addresses an angry audience directly.","Self-deprecating humor shows she is not above them."],"others":{"1":"the uncle is a passing detail; the letter is about the closure.","0":"she says she will argue with &ldquo;the rest,&rdquo; treating their objections as worth answering.","3":"paragraph 1 says nothing about her science."}}},{"n":11,"prompt":"<p>Paragraph 2 primarily serves to<\/p>","options":["establish the writer’s connection to the town without overstating it","claim that she is a working fisherman","describe her grandfather’s fishing methods","argue that the writer’s family history proves the closure is necessary"],"answer":0,"sec":"2","topic":"1.3","tag":"1.3 Ethos","stim":"s2","ex":{"idea":"Paragraph 2 roots her in the town (born four streets from the harbor, grandfather on the Ledge) but she explicitly declines to claim she is &ldquo;one of you.&rdquo;","steps":["Personal history answers the charge that she speaks &ldquo;from a distance.&rdquo;","Refusing to overclaim keeps her credible with insiders."],"others":{"3":"she says the history shows she is not distant, not that it proves the science.","2":"his fishing is mentioned, not described.","1":"she explicitly says she is not claiming to be one of them."}}},{"n":12,"prompt":"<p>The phrase “you would correct me, and you would be right” (paragraph 2) suggests that the writer<\/p>","options":["believes the members cannot be persuaded by an outsider","wants to mock the members’ pride","respects the members’ sense of who counts as one of them","doubts the accuracy of her own conclusions"],"answer":2,"sec":"2","topic":"1.5","tag":"1.5 Accommodating audience","stim":"s2","ex":{"idea":"By predicting the fishermen would correct her, and saying they would be right, she honors their idea of who belongs.","steps":["She anticipates their reaction.","Agreeing with it shows respect rather than presumption."],"others":{"0":"she goes on to persuade them; the line shows respect, not despair.","3":"the line concerns identity, not her data.","1":"she defers to their view; there is no mockery."}}},{"n":13,"prompt":"<p>The figures in paragraph 3 function primarily to<\/p>","options":["suggest that fishing technology has improved since 1990","show that earlier scientific predictions failed","prove that haddock recover quickly after a closure","provide concrete evidence of the decline that makes the closure necessary"],"answer":3,"sec":"2","topic":"2.2","tag":"2.2 Evidence","stim":"s2","ex":{"idea":"310 pounds per tow in 1990 versus 41 last spring, plus younger fish, documents a collapse severe enough to justify a closure.","steps":["The figures show an 87% drop.","The age data explains why the decline will compound."],"others":{"1":"the figures are current survey results, not a record of past predictions.","0":"a lower catch with the same tow suggests fewer fish, not better gear.","2":"haddock appear only in paragraph 4, and the writer admits that forecast was wrong."}}},{"n":14,"prompt":"<p>The sentences “A fishery can survive hard years. It cannot survive taking the fish before they replace themselves” (paragraph 3) primarily<\/p>","options":["suggest that the fishery has already collapsed","distinguish ordinary hardship from the specific cause of lasting decline","shift the letter from evidence to personal anecdote","introduce a counterargument the writer then rejects"],"answer":1,"sec":"2","topic":"3.2","tag":"3.2 Methods of development","stim":"s2","ex":{"idea":"The paired sentences separate what a fishery can survive (bad years) from what it cannot (catching fish before they spawn), isolating the cause of lasting decline.","steps":["&ldquo;Can survive&rdquo; / &ldquo;cannot survive&rdquo; sets up a contrast.","The &ldquo;because&rdquo; clause traces the cause and effect: every hard year is followed by a harder one."],"others":{"3":"both sentences state the writer's own position.","2":"they interpret the evidence just given; there is no anecdote.","0":"she says it cannot survive the practice, not that it is already gone."}}},{"n":15,"prompt":"<p>The writer’s admission in paragraph 4 that scientists “were wrong” in 2008 most likely<\/p>","options":["undermines her argument for the closure","accuses the members of ignoring science","strengthens her credibility with readers who remember the error","changes the subject from cod to haddock"],"answer":2,"sec":"2","topic":"2.4","tag":"2.4 Concession","stim":"s2","ex":{"idea":"Fishermen remember 2008. Admitting the error before they raise it shows honesty and makes her current warning more believable.","steps":["She separates herself from a claim of infallibility.","Then she points them to evidence they trust: their own logbooks."],"others":{"0":"she pairs the admission with 1994, when scientists were right, and with their logbooks; the argument stands.","3":"haddock is mentioned only as part of the admission.","1":"she asks them to look at their records; she accuses no one."}}},{"n":16,"prompt":"<p>The statement that the logbooks “tell the same story as ours, only in your handwriting” (paragraph 4) suggests that<\/p>","options":["the members’ own records confirm what the surveys show","the members’ logbooks are less reliable than scientific surveys","the scientists copied their data from the logbooks","the members have kept inaccurate records"],"answer":0,"sec":"2","topic":"2.2","tag":"2.2 Evidence","stim":"s2","ex":{"idea":"&ldquo;The same story &hellip; only in your handwriting&rdquo; means the members' logbooks show the same decline as the surveys, so the conclusion does not rest on trusting scientists.","steps":["She shifts the source of proof to the audience.","Distrust of scientists no longer defeats the evidence."],"others":{"1":"she treats the logbooks as equally good evidence.","2":"&ldquo;Same story&rdquo; means agreement, not copying.","3":"the point is that their records are accurate and agree."}}},{"n":17,"prompt":"<p>The comparison of the closure to “a loan from the present to the future” (paragraph 5) primarily serves to<\/p>","options":["advise members to borrow money during the closure","reframe the closure as a temporary sacrifice that will be repaid","emphasize that the closure’s costs outweigh its benefits","show that the state will pay for every lost catch"],"answer":1,"sec":"2","topic":"4.3","tag":"4.3 Comparisons","stim":"s2","ex":{"idea":"Calling the closure a loan presents it as a temporary sacrifice that will be repaid, answering the feeling that it is a punishment.","steps":["&ldquo;Not a punishment. It is a loan&rdquo; replaces one frame with another.","&ldquo;Hardest to make when money is short&rdquo; concedes the cost and leads to the payments."],"others":{"0":"the loan is a metaphor, not financial advice.","2":"she argues the opposite: the sacrifice now protects the future.","3":"the proposal includes payments, but nothing says every lost catch is covered."}}},{"n":18,"prompt":"<p>The final two sentences of the letter mainly serve to<\/p>","options":["offer the members a role in deciding the outcome, addressing their distrust","suggest that the scientists cannot be trusted","concede that the closure may become permanent","warn the members that they will be punished if they resist"],"answer":0,"sec":"2","topic":"1.5","tag":"1.5 Accommodating audience","stim":"s2","ex":{"idea":"A fishermen's seat on the reopening board answers the deepest objection, distrust, by letting the members see the evidence for themselves.","steps":["&ldquo;You should not have to take our word&rdquo; concedes their distrust.","&ldquo;You should be there to see it&rdquo; offers a remedy."],"others":{"2":"she speaks of when the Ledge reopens.","1":"she argues they need not rely on trust alone, not that scientists are untrustworthy.","3":"the sentences offer participation, not threats."}}},{"n":19,"prompt":"<p>The writer wants to add a sentence after sentence 4 to emphasize how the reduced hours affect students. Which choice best accomplishes this goal?<\/p>","options":["Many people enjoy reading on the weekend.","Last month, a junior told me she waited forty minutes in the cold, was turned away, and finished her essay on her phone in the parking lot.","Public libraries across the country face budget pressures.","The Westbrook Public Library was built in 1962 and renovated in 2005."],"answer":1,"sec":"3","topic":"2.2","tag":"2.2 Evidence","stim":"s3","ex":{"idea":"The goal is to show the effect on students. A specific student turned away in the cold shows it directly.","steps":["Sentence 4 says students are turned away.","The anecdote shows what that costs one of them."],"others":{"3":"the library's history does not show any effect on students.","2":"a national trend does not show how these hours affect these students.","0":"general and off-topic; it does not concern the cut hours."}}},{"n":20,"prompt":"<p>In sentence 7 (reproduced below), the writer wants to emphasize the contrast between the library’s resources and their lack of use on weekends.<\/p><p><i>For most of the weekend, all of it sits behind a locked door.<\/i><\/p><p>Which version of sentence 7 best accomplishes this goal?<\/p>","options":["(as it is now)","The library is closed on weekends.","On weekends, the library is not open for students to use.","Some weekend days, the library may be closed."],"answer":0,"sec":"3","topic":"4.1","tag":"4.1 Diction","stim":"s3","ex":{"idea":"&ldquo;All of it sits behind a locked door&rdquo; points back to the seats, computers, and printer and pictures them going unused, which is exactly the contrast the writer wants.","steps":["&ldquo;All of it&rdquo; links to sentence 6's list of resources.","&ldquo;Behind a locked door&rdquo; is a concrete image of waste."],"others":{"1":"flat and general; it drops the link to the resources and the image.","2":"wordy and abstract; no contrast with the resources.","3":"hedged and inaccurate; it weakens the point."}}},{"n":21,"prompt":"<p>The writer is considering deleting sentence 11. Should the writer keep or delete this sentence?<\/p>","options":["Delete it, because custodial staff have no connection to the library.","Delete it, because it introduces a new topic, weekend sports.","Keep it, because it gives the main reason students need the library.","Keep it, because it shows the building would already be open, which answers a likely concern about cost."],"answer":3,"sec":"3","topic":"2.2","tag":"2.2 Evidence","stim":"s3","ex":{"idea":"A principal will ask what Saturday hours cost. Sentence 11 shows the building is already open and staffed, which shrinks the cost.","steps":["Paragraph 3's topic is cost and staffing.","Sentence 11 removes a likely objection about opening the building."],"others":{"0":"custodians opening the building bear directly on the cost of Saturday hours.","1":"sports are mentioned only to explain why custodians are already there.","2":"the main reason students need the library is in paragraph 1, not here."}}},{"n":22,"prompt":"<p>Which transition, if placed at the beginning of sentence 14 (adjusting capitalization as needed), best connects it to sentence 13?<\/p>","options":["As a result,","For instance,","Similarly,","Fortunately,"],"answer":3,"sec":"3","topic":"3.4","tag":"3.4 Transitions","stim":"s3","ex":{"idea":"Sentence 13 grants a concern; sentence 14 offers a welcome way to resolve it. &ldquo;Fortunately&rdquo; signals that relationship.","steps":["Concern, then answer to the concern.","A word that signals good news after a problem fits."],"others":{"1":"the trial run is not an example of the concern.","0":"the trial run is not caused by the concern being fair.","2":"the two sentences are not parallel cases."}}},{"n":23,"prompt":"<p>The writer wants sentence 5 to state her proposal in a way that anticipates the principal’s likely concern about cost. Which version of sentence 5 best accomplishes this goal?<\/p>","options":["(as it is now)","I am writing to propose that our school open its library from 9 a.m. to 1 p.m. on Saturdays, because I think it would be nice.","I am writing to propose that our school open its library from 9 a.m. to 1 p.m. on Saturdays, a change that would put resources we already have to use.","I am writing to propose that our school open its library from 9 a.m. to 1 p.m. on Saturdays, even though many teachers oppose the idea."],"answer":2,"sec":"3","topic":"1.5","tag":"1.5 Accommodating audience","stim":"s3","ex":{"idea":"The goal is to anticipate a concern about cost. Saying the plan uses resources the school already has answers it in the proposal itself.","steps":["Cost is a principal's first question.","&ldquo;Resources we already have&rdquo; previews the low-cost argument."],"others":{"0":"the original states the proposal but does nothing about cost.","1":"a weak, personal reason that ignores cost.","3":"raises a different objection, about behavior, and undercuts the writer."}}},{"n":24,"prompt":"<p>The writer wants to add evidence to paragraph 3 that the staffing plan is realistic. Which choice best accomplishes this goal?<\/p>","options":["Twelve parents have already signed up for shifts through March, enough to cover every Saturday.","Many schools in other states have libraries.","The PTA held a successful bake sale last fall.","Students say the library’s chairs are comfortable."],"answer":0,"sec":"3","topic":"2.2","tag":"2.2 Evidence","stim":"s3","ex":{"idea":"Specific, verifiable commitments (twelve parents, every Saturday through March) prove the staffing plan is realistic.","steps":["The claim is about staffing.","Only this choice gives concrete staffing evidence."],"others":{"2":"a bake sale shows the PTA is active, not that it will staff the library.","1":"irrelevant to this school's staffing.","3":"comfortable chairs do not address staffing."}}},{"n":25,"prompt":"<p>The writer wants to end the letter by reminding the principal how little risk the proposal carries. Which choice, used to replace sentence 16, best accomplishes this goal?<\/p>","options":["(as it is now)","The public library should restore its weekend hours.","Libraries have existed since ancient times.","Give us eight Saturdays, and if we do not use them well, you can lock the door again."],"answer":3,"sec":"3","topic":"3.3","tag":"3.3 Structure","stim":"s3","ex":{"idea":"The goal is to stress low risk. Offering a reversible trial (&ldquo;you can lock the door again&rdquo;) does exactly that, and it echoes the locked door of sentence 7.","steps":["The trial was raised in sentence 14.","Ending on it reminds the principal the decision is easy to undo."],"others":{"0":"a strong line, but it says nothing about risk.","1":"shifts responsibility to another institution, off the request.","2":"irrelevant to risk or the proposal."}}},{"n":26,"prompt":"<p>The writer wants to add the following sentence to the letter.<\/p><p><i>That would cost about ninety dollars a week if the school paid a staff member instead.<\/i><\/p><p>Where would the sentence best be placed?<\/p>","options":["After sentence 6","After sentence 9","After sentence 12","After sentence 15"],"answer":1,"sec":"3","topic":"3.3","tag":"3.3 Structure","stim":"s3","ex":{"idea":"The new sentence prices &ldquo;one adult supervisor for four hours,&rdquo; so it belongs right after sentence 9, before sentence 10 shows volunteers will cover it.","steps":["&ldquo;That would cost&rdquo; needs an antecedent: the supervisor in sentence 9.","Sentence 10 then answers the cost with volunteers."],"others":{"0":"sentence 6 lists resources; no cost has been mentioned yet.","2":"sentence 12 is about behavior concerns, not staffing.","3":"the conclusion is the wrong place for a cost detail."}}}],"fr":[{"n":2,"mode":"points","essay":true,"kind":"Rhetorical Analysis","mins":40,"stim":"s4","head":"Rhetorical Analysis &middot; 6 points &middot; 40 minutes","guide":[],"stem":"<p><b>Directions.<\/b> The following speech was delivered in 1977 by Dorothy Kaye, the water commissioner of Alder Creek, a small city in California, at a public meeting during the second year of a severe drought. (Kaye and Alder Creek are fictional.) Read the passage carefully.<\/p><p><b>Prompt.<\/b> Write an essay that analyzes the rhetorical choices Kaye makes to persuade residents to reduce their water use voluntarily.<\/p><p>In your response you should do the following:<\/p><ul><li>Respond to the prompt with a thesis that analyzes the writer’s rhetorical choices.<\/li><li>Select and use evidence to support your line of reasoning.<\/li><li>Explain how the evidence supports your line of reasoning.<\/li><li>Demonstrate an understanding of the rhetorical situation.<\/li><li>Use appropriate grammar and punctuation in communicating your argument.<\/li><\/ul>","parts":[{"label":"A","max":1,"prompt":" <b>Thesis<\/b> (1 point). Does the essay make a defensible thesis that responds to the prompt?","solution":"<p><b>Earns credit:<\/b> A defensible thesis that analyzes Kaye’s choices in relation to her purpose, e.g. “Kaye persuades residents to conserve by translating the crisis into the familiar terms of a household budget, holding up the town’s own history of generosity as the standard to meet, and keeping her requests so small and specific that refusing them would feel unneighborly.”<\/p>","rubric":"<p><b>Common miss:<\/b> “Kaye uses ethos, pathos, and logos to persuade the town”; restating the prompt; summarizing the speech.<\/p>"},{"label":"B","max":4,"prompt":" <b>Evidence and commentary<\/b> (4 points). Does specific evidence support every claim, with commentary that consistently explains how?","solution":"<p><b>Earns credit:<\/b> Specific quotations support every claim, and commentary consistently explains how each choice works on this audience: the checking-account comparison (paragraph 2) makes an abstract percentage personal and urgent without panic; the contrast with inspectors “at dawn” (paragraph 3) makes voluntary conservation the attractive alternative; the 1924 milk cans and her mother’s story (paragraph 4) define conservation as the town’s character, so cooperating means being true to themselves; the list of small imperatives and “none of this is heroic” (paragraph 5) make compliance feel easy; public street-by-street reporting (paragraph 6) adds friendly accountability. 4 points: all claims supported and consistently explained. 3: explanations for only some. 2: some evidence, little line of reasoning. 1: summary.<\/p>","rubric":"<p><b>Common miss:<\/b> Listing devices with a quotation each and no explanation of effect; paraphrasing the speech paragraph by paragraph; claiming she “threatens” residents (she explicitly rejects inspectors).<\/p>"},{"label":"C","max":1,"prompt":" <b>Sophistication<\/b> (1 point). Does the essay show sophistication of thought or a complex understanding of the rhetorical situation?","solution":"<p><b>Earns credit:<\/b> Explains a tension Kaye manages, e.g. she holds the threat of rationing in reserve while insisting she does not want to use it, so the warning works as an incentive rather than a command; or shows how the final sentence reframes conservation as a question of the town’s identity, turning a utility request into civic memory; or writes with a consistently vivid, controlled style.<\/p>","rubric":"<p><b>Common miss:<\/b> One clever sentence in the conclusion; a broad claim about all droughts or all politicians with no link to the passage.<\/p>"}]}]}</script>
+<script>
+(function(){
+"use strict";
+var DATA = JSON.parse(document.getElementById("data").textContent);
+var META = DATA.meta, MC = DATA.mc, FR = DATA.fr || [], TOP = DATA.topics || {}, SEC = DATA.sections || {}, STIM = DATA.stims || {}, BY = {};
+MC.forEach(function(q){ BY[q.n] = q; });
+var KEY = META.key, FKEY = META.fkey || META.key + ".fr", HAS_FR = FR.length > 0;
+
+function load(k, d){ try{ var v = localStorage.getItem(k); return v ? JSON.parse(v) : d; }catch(e){ return d; } }
+function save(k, v){ try{ localStorage.setItem(k, JSON.stringify(v)); }catch(e){} }
+function esc(s){ return String(s).replace(/[&<>"]/g, function(c){ return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]; }); }
+function shuffle(a){ a = a.slice(); for (var i = a.length - 1; i > 0; i--){ var j = Math.floor(Math.random() * (i + 1)); var t = a[i]; a[i] = a[j]; a[j] = t; } return a; }
+function range(n){ var a = []; for (var i = 0; i < n; i++) a.push(i); return a; }
+
+var S = load(KEY, null);
+if (!S || !S.phase || !S.order || S.order.some(function(n){ return !BY[n]; })) S = { phase: "setup", mode: "practice", shuffleQ: false, shuffleC: false, order: [], copt: {}, ans: {}, pos: 0, full: null };
+var confirmFinish = false;
+var mcEl = document.getElementById("mc");
+
+function start(nums){
+  var list = nums || MC.map(function(q){ return q.n; });
+  S.order = S.shuffleQ ? shuffle(list) : list.slice();
+  S.copt = {};
+  S.order.forEach(function(n){
+    var q = BY[n], idx = range(q.options.length);
+    S.copt[n] = (S.shuffleC && !q.fixed) ? shuffle(idx) : idx;
+  });
+  S.ans = {}; S.pos = 0; S.phase = "run"; confirmFinish = false;
+  save(KEY, S); render(); focusTop();
+}
+function focusTop(){ var t = document.querySelector(".tabs") || document.querySelector(".title"); if (t && t.getBoundingClientRect().top < 0) t.scrollIntoView(); }
+
+function stats(){
+  var right = 0, done = 0;
+  S.order.forEach(function(n){ if (n in S.ans){ done++; if (S.ans[n] === BY[n].answer) right++; } });
+  return { right: right, done: done, total: S.order.length };
+}
+function topicShort(t){ return (META.topicPrefix || "") + t; }
+function topicLabel(t){ return topicShort(t) + ", " + TOP[t].name; }
+function guideLink(t, short){
+  var g = TOP[t], txt = short ? g.name : topicLabel(t);
+  var href = g.url ? g.url : (META.guide && g.page ? META.guide + "#page=" + g.page : "");
+  return href ? '<a href="' + href + '">' + txt + "</a>" : txt;
+}
+function topicLinks(ts){
+  ts = ts.filter(function(t){ return TOP[t]; });
+  if (!ts.length || !(META.guide || TOP[ts[0]].url)) return "";
+  return '<p class="links">Review ' + ts.map(function(t){ return guideLink(t); }).join(" &middot; ") + " in " + META.guideName + "</p>";
+}
+function explain(q, picked){
+  var e = q.ex, h = '<div class="why"><p>' + e.idea + "</p>";
+  if (e.steps.length) h += '<ol class="steps">' + e.steps.map(function(s){ return "<li>" + s + "</li>"; }).join("") + "</ol>";
+  var rest = range(q.options.length).filter(function(i){ return i !== q.answer; });
+  if (typeof picked === "number" && picked !== q.answer) rest = [picked].concat(rest.filter(function(i){ return i !== picked; }));
+  h += '<p class="why-h sc">Why not the others</p><ul class="others">' + rest.map(function(i){
+    return "<li>" + quoted(q, i) + (i === picked ? '<span class="tag">your answer</span>' : "") + " &mdash; " + e.others[i] + "</li>";
+  }).join("") + "</ul></div>";
+  return h;
+}
+function quoted(q, i){ return q.labels ? q.labels[i] : "&ldquo;" + q.options[i] + "&rdquo;"; }
+function table(q){ return q.table ? '<div class="bt-wrap">' + q.table + "</div>" : ""; }
+function stim(q){
+  var s = q.stim && STIM[q.stim]; if (!s) return "";
+  var html = s.html.split(' data-q="' + q.n + '"').join(' data-q="' + q.n + '" data-cur')
+    .replace(/data-qs="([^"]*)"/g, function(m, l){ return (" " + l + " ").indexOf(" " + q.n + " ") >= 0 ? m + " data-cur" : m; });
+  return '<div class="stim' + (s.cls ? " " + s.cls : "") + '">' + (s.title ? '<p class="stim-h sc">' + s.title + "</p>" : "") + html + "</div>";
+}
+function scrollStim(root){
+  root.querySelectorAll(".stim").forEach(function(box){ var c = box.querySelector("[data-cur]"); if (c && box.scrollHeight > box.clientHeight) box.scrollTop = Math.max(0, c.offsetTop - box.clientHeight / 3); });
+}
+function promptHtml(q){
+  return stim(q) + (q.fig || "") + '<div class="q-prompt"><p>' + q.prompt + "</p>" + (q.ask || META.ask ? '<p class="q-ask">' + (q.ask || META.ask) + "</p>" : "") + "</div>" + table(q);
+}
+
+function renderSetup(){
+  mcEl.innerHTML =
+    '<div class="setup">' +
+      '<h2>How do you want to take it?</h2>' +
+      '<div class="choice-row">' +
+        '<button type="button" class="choice" data-mode="practice" aria-pressed="' + (S.mode === "practice") + '"><b>Practice</b><span>See the answer and why after each question</span></button>' +
+        '<button type="button" class="choice" data-mode="exam" aria-pressed="' + (S.mode === "exam") + '"><b>Exam</b><span>Answer everything, then see your score</span></button>' +
+      '</div>' +
+      '<div class="checks">' +
+        '<label><input type="checkbox" id="opt-sq"' + (S.shuffleQ ? " checked" : "") + '> Shuffle questions</label>' +
+        '<label><input type="checkbox" id="opt-sc"' + (S.shuffleC ? " checked" : "") + '> Shuffle answer choices</label>' +
+      '</div>' +
+      '<div class="setup-actions"><button type="button" class="btn btn--solid btn--lg" id="go">Start' + (HAS_FR ? " multiple choice" : "") + '</button></div>' +
+      '<p class="note">' + META.setupNote + " Keyboard: 1&ndash;" + Math.max.apply(null, MC.map(function(q){ return q.options.length; })) + " to answer, &larr; &rarr; to move, Enter for next.</p>" +
+    '</div>';
+  mcEl.querySelectorAll(".choice").forEach(function(b){ b.onclick = function(){ S.mode = b.dataset.mode; render(); }; });
+  document.getElementById("opt-sq").onchange = function(e){ S.shuffleQ = e.target.checked; };
+  document.getElementById("opt-sc").onchange = function(e){ S.shuffleC = e.target.checked; };
+  document.getElementById("go").onclick = function(){ start(); };
+}
+
+function renderRun(){
+  var n = S.order[S.pos], q = BY[n], st = stats(), practice = S.mode === "practice";
+  var picked = (n in S.ans) ? S.ans[n] : null, locked = practice && picked !== null;
+  var nav = S.order.map(function(m, i){
+    var c = [];
+    if (m in S.ans){ if (practice) c.push(S.ans[m] === BY[m].answer ? "is-right" : "is-wrong"); else c.push("is-answered"); }
+    if (i === S.pos) c.push("is-current");
+    return '<button type="button" class="' + c.join(" ") + '" data-go="' + i + '" aria-label="Question ' + (i + 1) + '"' + (i === S.pos ? ' aria-current="step"' : "") + ">" + (i + 1) + "</button>";
+  }).join("");
+  var opts = S.copt[n].map(function(oi, k){
+    var cls = ["opt"], mark = "";
+    if (locked){
+      if (oi === q.answer){ cls.push("is-right"); mark = oi === picked ? "&check; your answer" : "&check; correct"; }
+      else if (oi === picked){ cls.push("is-wrong"); mark = "&cross; your answer"; }
+      else cls.push("is-dim");
+    } else if (oi === picked) cls.push("is-picked");
+    return '<li><button type="button" class="' + cls.join(" ") + '" data-opt="' + oi + '"' + (locked ? " disabled" : "") + '><span class="kbd">' + (k + 1) + "</span><span>" + q.options[oi] + '</span><span class="mark">' + mark + "</span></button></li>";
+  }).join("");
+  var fb = "";
+  if (locked){
+    var ok = picked === q.answer, ans = quoted(q, q.answer);
+    fb = '<div class="fb' + (ok ? "" : " is-wrong") + '"><p class="verdict" role="status">' + (ok ? "Correct." : "Not quite. The answer is " + ans + (/[.?!](&rdquo;)?$/.test(ans) ? "" : ".")) + "</p>" + explain(q, picked) + (q.after || "") + topicLinks([q.topic]) + "</div>";
+  }
+  var last = S.pos === S.order.length - 1, allDone = st.done === st.total;
+  var nextBtn = last
+    ? '<button type="button" class="btn btn--solid" id="finish">' + (practice ? "See results" : "Finish test") + "</button>"
+    : '<button type="button" class="btn btn--solid" id="next">Next &rarr;</button>';
+  var finishEarly = (!last && !practice) ? '<button type="button" class="btn" id="finish">Finish test</button>' : (!last && practice && allDone ? '<button type="button" class="btn" id="finish">See results</button>' : "");
+  var conf = "";
+  if (confirmFinish){
+    var left = st.total - st.done;
+    conf = '<div class="confirm"><p>' + left + " question" + (left === 1 ? " is" : "s are") + " unanswered and will be marked wrong. Finish anyway?</p>" +
+      '<button type="button" class="btn" id="conf-no">Keep going</button><button type="button" class="btn btn--solid" id="conf-yes">Finish</button></div>';
+  }
+  var eyebrow = "Question " + q.n + (SEC[q.sec] ? " &middot; " + SEC[q.sec] : "") + (q.tag ? " &middot; " + q.tag : (q.topic ? " &middot; " + topicShort(q.topic) : ""));
+  mcEl.innerHTML =
+    '<div class="bar"><span>Question ' + (S.pos + 1) + " of " + st.total + " &middot; " + (practice ? "Practice" : "Exam") + " mode</span><span>" +
+      (practice ? st.right + " correct of " + st.done + " answered" : st.done + " of " + st.total + " answered") + "</span></div>" +
+    '<div class="track"><span style="width:' + (st.done / st.total * 100) + '%"></span></div>' +
+    '<nav class="nav" aria-label="Questions">' + nav + "</nav>" +
+    '<article class="q">' +
+      '<p class="q-eyebrow sc">' + eyebrow + "</p>" +
+      promptHtml(q) +
+      '<ol class="opts">' + opts + "</ol>" + fb +
+      '<div class="step"><button type="button" class="btn" id="prev"' + (S.pos === 0 ? " disabled" : "") + '>&larr; Back</button><span class="step-right">' + finishEarly + nextBtn + "</span></div>" +
+      conf +
+    "</article>" +
+    '<p class="keys"><span class="kbd">1</span>&ndash;<span class="kbd">' + q.options.length + '</span> answer &nbsp; <span class="kbd">&larr;</span> <span class="kbd">&rarr;</span> move &nbsp; <span class="kbd">Enter</span> next</p>' +
+    '<p class="restart-line"><a href="#" id="restart">Start over</a> <span class="muted">&middot; progress is saved in this browser</span></p>';
+
+  scrollStim(mcEl);
+  mcEl.querySelectorAll("[data-go]").forEach(function(b){ b.onclick = function(){ go(+b.dataset.go); }; });
+  mcEl.querySelectorAll("[data-opt]").forEach(function(b){ b.onclick = function(){ pick(+b.dataset.opt); }; });
+  bind("prev", function(){ go(S.pos - 1); });
+  bind("next", function(){ go(S.pos + 1); });
+  bind("finish", finish);
+  bind("conf-no", function(){ confirmFinish = false; render(); });
+  bind("conf-yes", function(){ confirmFinish = false; showResults(); });
+  bind("restart", function(e){ e.preventDefault(); S.phase = "setup"; save(KEY, S); render(); });
+}
+function bind(id, fn){ var el = document.getElementById(id); if (el) el.onclick = fn; }
+
+function pick(oi){
+  var n = S.order[S.pos];
+  if (S.mode === "practice" && (n in S.ans)) return;
+  S.ans[n] = oi; save(KEY, S); render();
+  if (S.mode === "practice"){ var fb = mcEl.querySelector(".fb"); if (fb && fb.getBoundingClientRect().bottom > innerHeight) fb.scrollIntoView({ block: "nearest" }); }
+}
+function go(i){
+  if (i < 0 || i >= S.order.length) return;
+  S.pos = i; confirmFinish = false; save(KEY, S); render();
+  var q = mcEl.querySelector(".q"); if (q && q.getBoundingClientRect().top < 0) q.scrollIntoView();
+}
+function finish(){
+  var st = stats();
+  if (st.done < st.total && !confirmFinish){ confirmFinish = true; render(); var c = mcEl.querySelector(".confirm"); if (c) c.scrollIntoView({ block: "nearest" }); return; }
+  showResults();
+}
+function showResults(){
+  S.phase = "results";
+  if (S.order.length === MC.length) S.full = stats().right;
+  save(KEY, S); render(); if (HAS_FR) renderFR(); focusTop();
+}
+
+/* composite score (only when the document defines one) */
+function frTotal(){
+  var t = 0;
+  for (var i = 0; i < FR.length; i++){ var s = frScore(FR[i]); if (s === null) return null; t += s; }
+  return t;
+}
+function frMax(){ return FR.reduce(function(a, f){ return a + frItemMax(f); }, 0); }
+function frOnlyTotal(){  /* free-response-only quizzes: running total of the marked questions */
+  var done = 0, got = 0, of = 0;
+  FR.forEach(function(f){ var s = frScore(f); if (s !== null){ done++; got += s; of += frItemMax(f); } });
+  if (!done) return "";
+  var line = done === FR.length
+    ? "Total: <b>" + got + " / " + of + "</b> (" + Math.round(got / of * 100) + "%)"
+    : "Marked so far: <b>" + got + " / " + of + "</b> on " + done + " of " + FR.length + " questions &middot; " + frMax() + " points in all";
+  return '<div class="composite" role="status"><p>' + line + "</p></div>";
+}
+function compositeHtml(){
+  var C = META.composite;
+  if (HAS_FR && !MC.length) return frOnlyTotal();
+  if (!C || !HAS_FR) return "";
+  var mc = (typeof S.full === "number") ? S.full : null, fr = frTotal(), fm = frMax(), mm = MC.length;
+  if (mc === null && fr === null) return "";
+  var lines = [];
+  if (mc === null) lines.push("Free response: <b>" + fr + " / " + fm + "</b>. Take the full multiple-choice part to get your composite score.");
+  else if (fr === null) lines.push("Multiple choice: <b>" + mc + " / " + mm + "</b>. Write and mark every free-response question to get your composite score.");
+  else {
+    var c = Math.round(C.mcWeight * mc / mm + C.frWeight * fr / fm), band = "";
+    for (var i = 0; i < C.bands.length; i++){ if (c >= C.bands[i][0]){ band = C.bands[i][1]; break; } }
+    lines.push("Composite score: <b>" + c + " / " + (C.mcWeight + C.frWeight) + "</b> &nbsp;<span class=\"muted\">= " + C.mcWeight + " &times; " + mc + "/" + mm + " + " + C.frWeight + " &times; " + fr + "/" + fm + "</span>");
+    if (band) lines.push(band);
+  }
+  return '<div class="composite" role="status">' + lines.map(function(l){ return "<p>" + l + "</p>"; }).join("") + "</div>";
+}
+function targetHtml(st){
+  var T = META.target, B = META.bands, h = "";
+  if (st.total !== MC.length) return "";
+  if (T) h += '<p class="target">' + T.label + ": " + T.mc + " / " + MC.length + " &middot; " + (st.right >= T.mc ? "met" : (T.mc - st.right) + " short") + "</p>";
+  if (B) for (var i = 0; i < B.length; i++){ if (st.right >= B[i][0]){ h += '<p class="target">' + B[i][1] + "</p>"; break; } }
+  return h;
+}
+
+var resFilter = "all";
+function renderResults(){
+  var st = stats(), pct = Math.round(st.right / st.total * 100), fullRun = st.total === MC.length;
+  var missed = S.order.filter(function(n){ return S.ans[n] !== BY[n].answer; });
+  var rows = S.order.map(function(n, i){
+    var q = BY[n], a = S.ans[n], ok = a === q.answer;
+    if (resFilter === "missed" && ok) return "";
+    return '<li><details><summary><span class="res-n">' + (i + 1) + '.</span><span class="' + (ok ? "res-ok" : "res-bad") + '" aria-label="' + (ok ? "correct" : "wrong") + '">' + (ok ? "&check;" : "&cross;") + '</span><span class="res-sum">' + q.prompt + "</span></summary>" +
+      '<div class="res-body">' + stim(q) + (q.fig || "") + table(q) + '<p><span class="sc">Your answer:</span> ' + (a === undefined ? "<i>skipped</i>" : q.options[a]) + "</p>" +
+      (ok ? "" : '<p><span class="sc">Correct:</span> ' + q.options[q.answer] + "</p>") +
+      explain(q, a) + (q.after || "") + topicLinks([q.topic]) + "</div></details></li>";
+  }).join("");
+  var tally = {};
+  S.order.forEach(function(n){ var t = BY[n].topic; if (!t) return; tally[t] = tally[t] || { right: 0, total: 0 }; tally[t].total++; if (S.ans[n] === BY[n].answer) tally[t].right++; });
+  var trows = Object.keys(TOP).filter(function(t){ return tally[t]; }).map(function(t){
+    var x = tally[t], miss = x.total - x.right;
+    return "<tr><th scope=\"row\">" + topicShort(t) + "</th><td>" + x.right + " / " + x.total + "</td><td>" + guideLink(t, true) +
+      ((META.flag ? x.right < META.flag.below * x.total : miss >= 2) ? ' <span class="flag">&middot; ' + (META.flag ? META.flag.text : "reread this section") + "</span>" : "") + "</td></tr>";
+  }).join("");
+  mcEl.innerHTML =
+    '<div class="results">' +
+      '<div class="score"><p class="score-big">' + st.right + " / " + st.total + "</p><p>" + pct + "% correct" + (fullRun ? "" : " &middot; retry of missed questions") + "</p>" + targetHtml(st) + "</div>" +
+      '<div class="res-actions">' +
+        (missed.length ? '<button type="button" class="btn btn--solid" id="retry">Retry the ' + missed.length + " missed</button>" : "") +
+        '<button type="button" class="btn" id="again">Take the full test again</button>' +
+        (HAS_FR ? '<button type="button" class="btn" id="to-fr">Go to free response</button>' : "") +
+      "</div>" +
+      compositeHtml() +
+      (trows ? '<div class="topics"><h2>' + (META.byTopic || "By topic") + '</h2><table class="bt"><thead><tr><th scope="col">' + (META.topicCol || "Topic") + '</th><th scope="col">Correct</th><th scope="col">' + (META.guideCol || "Guide section") + "</th></tr></thead><tbody>" + trows + "</tbody></table>" +
+        (META.topicNote ? '<p class="note" style="margin-top:6px">' + META.topicNote + "</p>" : "") + "</div>" : "") +
+      '<div class="res-filter"><h2>Review</h2><span><label><input type="checkbox" id="only-missed"' + (resFilter === "missed" ? " checked" : "") + "> Show missed only</label></span></div>" +
+      '<ul class="res-list">' + (rows || '<li><p class="note" style="padding:12px 0">Nothing missed.</p></li>') + "</ul>" +
+    "</div>";
+  bind("retry", function(){ start(missed); });
+  bind("again", function(){ S.phase = "setup"; save(KEY, S); render(); });
+  bind("to-fr", function(){ setTab("fr"); });
+  document.getElementById("only-missed").onchange = function(e){ resFilter = e.target.checked ? "missed" : "all"; render(); };
+}
+
+function render(){
+  if (S.phase === "run" && S.order.length) renderRun();
+  else if (S.phase === "results" && S.order.length) renderResults();
+  else { S.phase = "setup"; renderSetup(); }
+}
+
+/* free response: "epi" parts (E/P/I -> 0-4 per question) or "points" parts (0..max each) */
+var frEl = document.getElementById("fr"), F = load(FKEY, null);
+if (!F || typeof F !== "object") F = {};
+F.drafts = F.drafts || {}; F.marks = F.marks || {}; F.open = F.open || {};
+var LABELS = { 4: "Complete", 3: "Substantial", 2: "Developing", 1: "Minimal", 0: "" };
+function frItemMax(f){ return f.mode === "points" ? f.parts.reduce(function(a, p){ return a + p.max; }, 0) : 4; }
+function frScore(f){
+  if (f.mode === "points"){
+    var t = 0;
+    for (var j = 0; j < f.parts.length; j++){ var v = F.marks[f.n + f.parts[j].label]; if (v === undefined || v === "") return null; t += +v; }
+    return t;
+  }
+  var e = 0, p = 0;
+  for (var i = 0; i < f.parts.length; i++){
+    var m = F.marks[f.n + f.parts[i].label];
+    if (!m) return null;
+    if (m === "E") e++; else if (m === "P") p++;
+  }
+  if (e === 3) return 4;
+  if (e === 2 && p === 1) return 3;
+  if ((e === 2 && p === 0) || (e === 1 && p >= 1) || p === 3) return 2;
+  if ((e === 1 && p === 0) || (e === 0 && p === 2)) return 1;
+  return 0;
+}
+function words(t){ var m = t.trim().match(/\S+/g); return m ? m.length : 0; }
+var SCALE = '<details class="scale"><summary>How part scores convert to 0&ndash;4</summary><table class="bt"><thead><tr><th scope="col">Score</th><th scope="col">Label</th><th scope="col">Part scores (three parts, each E, P, or I)</th></tr></thead><tbody>' +
+  "<tr><td>4</td><td>Complete</td><td>three parts E</td></tr>" +
+  "<tr><td>3</td><td>Substantial</td><td>two parts E and one part P</td></tr>" +
+  "<tr><td>2</td><td>Developing</td><td>two E and no P; or one E and one or two P; or three P</td></tr>" +
+  "<tr><td>1</td><td>Minimal</td><td>one E and no P; or no E and two P</td></tr>" +
+  "<tr><td>0</td><td></td><td>anything less</td></tr></tbody></table></details>";
+function frScoreHtml(f){
+  var s = frScore(f), mx = frItemMax(f);
+  if (s === null) return '<span class="muted">Mark every part to score this question.</span>';
+  return "Score: <b>" + s + " / " + mx + "</b>" + (f.mode !== "points" && LABELS[s] ? " &middot; " + LABELS[s] : "");
+}
+function markButtons(f, p, id, m){
+  var vals = f.mode === "points" ? range(p.max + 1).map(String) : ["E", "P", "I"];
+  return vals.map(function(x){ return '<button type="button" data-mark="' + id + '" data-f="' + f.n + '" data-v="' + x + '" aria-pressed="' + (m === x) + '">' + x + "</button>"; }).join("");
+}
+/* essay: one draft for the whole question; its parts are rubric rows marked against it */
+function essayBox(f){
+  var id = f.n + "essay", d = F.drafts[id] || "";
+  return '<div class="part essay"><label class="sc" for="fr-' + id + '">Your essay</label>' +
+    '<textarea id="fr-' + id + '" data-fr="' + id + '" spellcheck="true">' + esc(d) + "</textarea>" +
+    '<p class="part-meta" id="wc-' + id + '">' + words(d) + " words &middot; saved in this browser</p></div>";
+}
+function renderFR(){
+  if (!HAS_FR) return;
+  frEl.innerHTML = '<p class="fr-intro">' + META.frIntro + "</p>" +
+    FR.map(function(f){
+      var open = !!F.open[f.n];
+      var parts = f.parts.map(function(p){
+        var id = f.n + p.label, d = F.drafts[id] || "", m = (F.marks[id] === undefined ? "" : String(F.marks[id]));
+        var crit = f.mode === "points"
+          ? '<div class="crit-pts">' + p.rubric + "</div>"
+          : '<dl class="crit"><dt>E</dt><dd>if the response ' + p.e + "</dd><dt>P</dt><dd>if " + p.p + "</dd></dl>";
+        return '<div class="part"><p class="part-prompt"><b>(' + p.label + ")</b>" + p.prompt + "</p>" +
+          (f.essay ? "" :
+          '<label class="sc" for="fr-' + id + '">Your answer to (' + p.label + ")</label>" +
+          '<textarea id="fr-' + id + '" data-fr="' + id + '" spellcheck="true">' + esc(d) + "</textarea>" +
+          '<p class="part-meta" id="wc-' + id + '">' + words(d) + " words &middot; saved in this browser</p>") +
+          '<div class="sol"' + (open ? "" : " hidden") + ' data-sol="' + f.n + '"><h3>Model solution (' + p.label + ")</h3><div>" + p.solution + "</div>" + crit +
+            '<div class="mark-row"><span>Your mark for (' + p.label + ")" + (f.mode === "points" ? ", out of " + p.max : "") + ':</span><span class="seg" role="group" aria-label="Mark for part ' + p.label + '">' + markButtons(f, p, id, m) + "</span></div></div></div>";
+      }).join("");
+      return '<article class="fr"><h2>' + (META.frWord || "Question") + " " + f.n + "<small>" + f.head + "</small></h2>" +
+        (f.stim ? stim(f) : "") + '<div class="fr-stem">' + f.stem + "</div>" + (f.essay ? essayBox(f) : "") + parts +
+        '<div class="fr-actions"><span class="fr-score" id="score-' + f.n + '">' + (open ? frScoreHtml(f) : "") + "</span>" +
+          '<button type="button" class="btn" data-open="' + f.n + '" aria-expanded="' + open + '">' + (open ? "Hide model solution" : "Show model solution and scoring") + "</button></div>" +
+        (open ? (f.mode === "points" ? "" : SCALE) + topicLinks(f.guide || []) : "") +
+        "</article>";
+    }).join("") + '<div id="fr-composite">' + compositeHtml() + "</div>";
+  frEl.querySelectorAll("textarea").forEach(function(t){
+    t.oninput = function(){ F.drafts[t.dataset.fr] = t.value; save(FKEY, F); document.getElementById("wc-" + t.dataset.fr).innerHTML = words(t.value) + " words &middot; saved in this browser"; };
+  });
+  frEl.querySelectorAll("[data-open]").forEach(function(b){
+    b.onclick = function(){ var n = b.dataset.open; F.open[n] = !F.open[n]; save(FKEY, F); renderFR(); var a = document.getElementById("score-" + n); if (a) a.closest(".fr").querySelector(".part").scrollIntoView({ block: "nearest" }); };
+  });
+  frEl.querySelectorAll("[data-mark]").forEach(function(b){
+    b.onclick = function(){
+      var id = b.dataset.mark; F.marks[id] = F.marks[id] === b.dataset.v ? "" : b.dataset.v; save(FKEY, F);
+      b.parentNode.querySelectorAll("button").forEach(function(x){ x.setAttribute("aria-pressed", String(F.marks[id] === x.dataset.v)); });
+      var f = FR.filter(function(x){ return String(x.n) === b.dataset.f; })[0];
+      document.getElementById("score-" + f.n).innerHTML = frScoreHtml(f);
+      document.getElementById("fr-composite").innerHTML = compositeHtml();
+      if (S.phase === "results") render();
+    };
+  });
+}
+
+/* tabs (only when there is a free-response part) */
+function setTab(t){
+  if (!HAS_FR) return;
+  var mc = t === "mc";
+  document.getElementById("tab-mc").setAttribute("aria-selected", String(mc));
+  document.getElementById("tab-fr").setAttribute("aria-selected", String(!mc));
+  mcEl.hidden = !mc; frEl.hidden = mc;
+  try{ history.replaceState(null, "", mc ? location.pathname : "#free-response"); }catch(e){}
+  focusTop();
+}
+if (HAS_FR){
+  document.getElementById("tab-mc").onclick = function(){ setTab("mc"); };
+  document.getElementById("tab-fr").onclick = function(){ setTab("fr"); };
+}
+
+/* keyboard */
+document.addEventListener("keydown", function(e){
+  if (e.metaKey || e.ctrlKey || e.altKey) return;
+  var tag = (e.target.tagName || "").toLowerCase();
+  if (tag === "textarea" || tag === "input") return;
+  if (mcEl.hidden || S.phase !== "run") return;
+  var n = S.order[S.pos], q = BY[n];
+  if (/^[1-9]$/.test(e.key)){ var k = +e.key - 1; if (k < q.options.length){ e.preventDefault(); pick(S.copt[n][k]); } }
+  else if (e.key === "ArrowRight"){ e.preventDefault(); go(S.pos + 1); }
+  else if (e.key === "ArrowLeft"){ e.preventDefault(); go(S.pos - 1); }
+  else if (e.key === "Enter" && tag !== "button" && tag !== "a"){ e.preventDefault(); if (S.pos < S.order.length - 1) go(S.pos + 1); else finish(); }
+});
+
+/* theme */
+var root = document.documentElement, tb = document.getElementById("theme-btn");
+function syncTheme(){ var dark = root.getAttribute("data-theme") === "dark"; tb.textContent = dark ? "Light mode" : "Dark mode"; tb.setAttribute("aria-pressed", String(dark)); }
+tb.onclick = function(){ var dark = root.getAttribute("data-theme") !== "dark"; root.setAttribute("data-theme", dark ? "dark" : "light"); try{ localStorage.setItem("apah.theme", dark ? "dark" : "light"); }catch(e){} syncTheme(); };
+syncTheme();
+
+render(); renderFR();
+if (HAS_FR && location.hash === "#free-response") setTab("fr");
+if (HAS_FR && !MC.length){ var tabsEl = document.querySelector(".tabs"); if (tabsEl) tabsEl.hidden = true; mcEl.hidden = true; frEl.hidden = false; }
+})();
+</script>
+</body>
+</html>

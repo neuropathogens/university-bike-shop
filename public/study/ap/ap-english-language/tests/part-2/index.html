@@ -1,0 +1,669 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light">
+<script>try{document.documentElement.setAttribute("data-theme",localStorage.getItem("apah.theme")==="dark"?"dark":"light")}catch(e){document.documentElement.setAttribute("data-theme","light")}</script>
+<title>AP English Language Part 2 Question Set: Claims and Evidence</title>
+<meta name="description" content="AP English Language Part 2, Claims and Evidence: 25 exam-style multiple-choice questions on three passages with in-depth explanations, plus a full argument essay with a six-point scoring guide.">
+<link rel="icon" href="/favicon.ico" sizes="48x48" type="image/x-icon">
+<link rel="icon" href="/icon.svg" sizes="any" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-icon.png" sizes="180x180">
+<link rel="preload" href="/study/ap/ap-art-history/fonts/LM-regular.woff2" as="font" type="font/woff2" crossorigin>
+
+<style>
+@font-face{font-family:"Latin Modern";font-style:normal;font-weight:400;font-display:swap;src:url("/study/ap/ap-art-history/fonts/LM-regular.woff2") format("woff2")}
+@font-face{font-family:"Latin Modern";font-style:italic;font-weight:400;font-display:swap;src:url("/study/ap/ap-art-history/fonts/LM-italic.woff2") format("woff2")}
+@font-face{font-family:"Latin Modern";font-style:normal;font-weight:600 700;font-display:swap;src:url("/study/ap/ap-art-history/fonts/LM-bold.woff2") format("woff2")}
+@font-face{font-family:"Latin Modern";font-style:italic;font-weight:600 700;font-display:swap;src:url("/study/ap/ap-art-history/fonts/LM-bold-italic.woff2") format("woff2")}
+@font-face{font-family:"Latin Modern Mono";font-style:normal;font-weight:400 500;font-display:swap;src:url("/study/ap/ap-art-history/fonts/LM-mono.woff2") format("woff2")}
+@font-face{font-family:"Latin Modern Mono";font-style:normal;font-weight:600 700;font-display:swap;src:url("/study/ap/ap-art-history/fonts/LM-mono-bold.woff2") format("woff2")}
+
+:root{--bg:#fff;--fg:#000;--muted:#4a4a4a;--line:#c9c9c9;--plate:#f5f5f3;--hl:#fbe9a6;--link:#00008b;--ok:#1d5e20;--bad:#9b1c1c;
+  --serif:"Latin Modern","Computer Modern Serif","CMU Serif",Georgia,serif;--mono:"Latin Modern Mono","SFMono-Regular",Menlo,Consolas,monospace;
+  --gutter:clamp(16px,4vw,40px);color-scheme:light}
+:root[data-theme=dark]{--bg:#111110;--fg:#ecebe6;--muted:#a3a29c;--line:#34342f;--plate:#1b1b19;--hl:#4d4320;--link:#9db4ff;--ok:#8fd394;--bad:#ff9b9b;color-scheme:dark}
+*{box-sizing:border-box}
+html{background:var(--bg);scroll-padding-top:16px}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--serif);font-size:17px;line-height:1.5;font-kerning:normal;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+button,input,textarea{font:inherit;color:inherit}
+button{cursor:pointer}
+button:disabled{cursor:default}
+a{color:var(--link);text-underline-offset:3px;text-decoration-thickness:.5px}
+:focus-visible{outline:2px solid var(--link);outline-offset:2px}
+[hidden]{display:none!important}
+.sc{font-variant:small-caps;text-transform:lowercase;letter-spacing:.04em}
+.muted{color:var(--muted)}
+.katex{font-size:1.04em;text-rendering:auto}
+.katex-display{margin:.7em 0;overflow-x:auto;overflow-y:hidden;padding:2px 0}
+
+.runhead{display:flex;flex-wrap:wrap;justify-content:space-between;gap:4px 16px;max-width:1480px;margin:0 auto;padding:14px var(--gutter) 6px;font-size:14px;font-style:italic;color:var(--muted)}
+.runhead a{text-decoration:none}
+.runhead a:hover{text-decoration:underline}
+.runhead-actions{display:flex;flex-wrap:wrap;gap:4px 18px}
+.theme-btn{background:none;border:0;padding:0;font:inherit;font-style:italic;color:var(--link)}
+.theme-btn:hover{text-decoration:underline}
+.rule{max-width:1480px;margin:0 auto;padding-inline:var(--gutter)}
+.rule hr{margin:0;border:0;border-top:.5px solid var(--fg)}
+
+.wrap{max-width:860px;margin:0 auto;padding:0 var(--gutter) 80px}
+.title{text-align:center;padding:34px 0 22px}
+.title h1{margin:0;text-wrap:balance;font-size:clamp(32px,6vw,46px);line-height:1.1;font-weight:700}
+.title .sub{margin:8px 0 0;font-size:18px;font-variant:small-caps;letter-spacing:.03em}
+.title .meta{margin:4px 0 0;font-style:italic;color:var(--muted)}
+
+.tabs{display:flex;justify-content:center;gap:0;margin:0 0 26px;border-bottom:.5px solid var(--fg)}
+.tab{background:none;border:0;border-bottom:2.5px solid transparent;padding:8px 18px;margin-bottom:-1px;font-size:17px;color:var(--muted)}
+.tab[aria-selected=true]{color:var(--fg);border-bottom-color:var(--fg);font-weight:700}
+.tab:hover{color:var(--fg)}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:40px;padding:0 16px;border:1px solid var(--fg);background:var(--bg);font-family:var(--mono);font-size:14.5px;white-space:nowrap}
+.btn:hover:not(:disabled){background:var(--plate)}
+.btn:disabled{opacity:.35}
+.btn--solid{background:var(--fg);color:var(--bg)}
+.btn--solid:hover:not(:disabled){background:var(--fg);opacity:.85}
+.btn--lg{min-height:48px;font-size:15.5px;padding:0 22px}
+.kbd{display:inline-grid;place-items:center;min-width:22px;height:22px;padding:0 4px;border:1px solid currentColor;font-family:var(--mono);font-size:12px;opacity:.8}
+
+/* booktabs tables */
+.bt{border-collapse:collapse;margin:0 auto;font-variant-numeric:tabular-nums}
+.bt th,.bt td{padding:4px 12px;text-align:center;font-weight:400}
+.bt th[scope=row],.bt thead th:first-child{text-align:left}
+.bt thead tr{border-top:1px solid var(--fg);border-bottom:.5px solid var(--fg)}
+.bt tbody tr:last-child{border-bottom:1px solid var(--fg)}
+.bt-wrap{overflow-x:auto;margin:0 0 16px}
+
+/* setup */
+.setup{border-bottom:1.5px solid var(--fg);padding:4px 0 22px;display:grid;gap:18px}
+.setup h2,.results h2,.fr h2{margin:0;font-size:20px}
+.choice-row{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.choice{display:flex;flex-direction:column;align-items:flex-start;gap:2px;padding:12px 14px;border:1px solid var(--fg);background:var(--bg);text-align:left}
+.choice b{font-size:17px}
+.choice span{font-size:14.5px;font-style:italic;color:var(--muted)}
+.choice[aria-pressed=true]{background:var(--fg);color:var(--bg)}
+.choice[aria-pressed=true] span{color:var(--bg);opacity:.8}
+.checks{display:flex;flex-wrap:wrap;gap:8px 22px}
+.checks label{display:inline-flex;align-items:center;gap:8px;cursor:pointer}
+.checks input{width:17px;height:17px;margin:0;accent-color:var(--fg)}
+.setup-actions{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.note{margin:0;font-size:15px;color:var(--muted);font-style:italic}
+
+/* run */
+.bar{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:4px 16px;font-size:15px;color:var(--muted)}
+.track{height:3px;background:var(--line);margin:8px 0 14px}
+.track span{display:block;height:100%;background:var(--fg);transition:width .2s ease}
+.nav{display:grid;grid-template-columns:repeat(auto-fill,minmax(34px,1fr));gap:5px;margin:0 0 22px}
+.nav button{height:32px;padding:0;border:1px solid var(--line);background:var(--bg);font-family:var(--serif);font-size:14px;font-variant-numeric:tabular-nums}
+.nav button:hover{border-color:var(--fg)}
+.nav .is-answered{background:var(--plate);border-color:var(--fg)}
+.nav .is-right{background:var(--fg);color:var(--bg);border-color:var(--fg)}
+.nav .is-wrong{border:1.5px dashed var(--bad);color:var(--bad)}
+.nav .is-current{outline:2px solid var(--fg);outline-offset:1px}
+.q{border-top:1.5px solid var(--fg);padding-top:16px}
+.q-eyebrow{margin:0 0 6px;font-size:14px;color:var(--muted)}
+.q-prompt{margin:0 0 14px;font-size:20px;line-height:1.45;font-weight:400}
+.opts{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.opt{display:flex;align-items:center;gap:12px;width:100%;min-height:52px;padding:10px 14px;border:1px solid var(--fg);background:var(--bg);text-align:left;font-size:16.5px;line-height:1.4}
+.opt:hover:not(:disabled){background:var(--plate)}
+.opt .kbd{flex:none}
+.opt .mark{margin-left:auto;padding-left:6px;font-family:var(--mono);font-size:14px;white-space:nowrap}
+.opt.is-picked{border-width:2px;padding:9px 13px;background:var(--plate)}
+.opt.is-right{background:var(--fg);color:var(--bg);border-color:var(--fg)}
+.opt.is-wrong{border:1.5px dashed var(--bad);color:var(--bad);text-decoration:line-through;text-decoration-thickness:1px}
+.opt.is-wrong .mark,.opt.is-wrong .kbd{text-decoration:none}
+.opt.is-dim{opacity:.5}
+.fb{margin:14px 0 0;padding:12px 16px;border:.5px solid var(--fg);border-left:3px solid var(--ok)}
+.fb.is-wrong{border-left-color:var(--bad)}
+.fb p{margin:0}
+.fb .verdict{font-weight:700;margin-bottom:4px}
+.why p{margin:0 0 6px}
+.steps{margin:2px 0 8px;padding-left:22px}
+.steps li{margin:4px 0;padding-left:2px}
+.why .why-h{margin:10px 0 2px;font-size:14.5px;color:var(--muted)}
+.others{margin:0 0 4px;padding-left:20px}
+.others li{margin:5px 0}
+.others .tag{margin-left:6px;font-family:var(--mono);font-size:12.5px;color:var(--bad);white-space:nowrap}
+.links{margin-top:6px;font-size:15px}
+.step{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:10px;margin-top:20px}
+.step-right{display:flex;flex-wrap:wrap;gap:8px}
+.confirm{margin-top:14px;padding:12px 16px;border:1px solid var(--fg);display:flex;flex-wrap:wrap;align-items:center;gap:10px}
+.confirm p{margin:0;flex:1 1 220px}
+.keys{margin:18px 0 0;font-size:13.5px;color:var(--muted);text-align:center}
+.restart-line{margin:10px 0 0;font-size:14.5px;text-align:center}
+
+/* results */
+.results{padding-top:4px}
+.score{text-align:center;padding:10px 0 18px}
+.score-big{margin:0;font-size:clamp(48px,10vw,72px);font-weight:700;line-height:1;font-variant-numeric:tabular-nums}
+.score p{margin:6px 0 0}
+.res-actions{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin:0 0 22px}
+.res-filter{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:6px;border-bottom:1.5px solid var(--fg);padding-bottom:6px}
+.res-list{list-style:none;margin:0;padding:0}
+.res-list>li{border-bottom:.5px solid var(--line)}
+.res-list>li:last-child{border-bottom:1.5px solid var(--fg)}
+.res-list details{padding:10px 0}
+.res-list summary{display:grid;grid-template-columns:34px 22px minmax(0,1fr);gap:8px;cursor:pointer;list-style:none}
+.res-list summary::-webkit-details-marker{display:none}
+.res-n{font-weight:700;font-variant-numeric:tabular-nums}
+.res-ok{color:var(--ok);font-weight:700}
+.res-bad{color:var(--bad);font-weight:700}
+.res-body{padding:8px 0 4px 64px;font-size:15.5px}
+.res-body p{margin:0 0 4px}
+.res-body .bt-wrap{margin:4px 0 8px}
+.topics{margin:0 0 26px}
+.topics h2{margin:0 0 8px}
+.topics .bt{margin:0;width:100%}
+.topics .bt td:last-child,.topics .bt th:last-child{text-align:left}
+.topics .flag{color:var(--bad);font-style:italic}
+.composite{margin:0 0 26px;padding:12px 16px;border:.5px solid var(--fg);border-left:3px solid var(--fg)}
+.composite p{margin:0}
+.composite p+p{margin-top:4px}
+
+/* free response */
+.fr-intro{margin:0 0 6px;font-style:italic;color:var(--muted)}
+.fr{border-top:1.5px solid var(--fg);padding:18px 0 26px}
+.fr h2 small{font-weight:400;font-style:italic;color:var(--muted);font-size:15px;margin-left:6px}
+.fr-stem{margin:10px 0 6px;text-align:justify;hyphens:auto;-webkit-hyphens:auto}
+.part{margin:18px 0 0}
+.part-prompt{margin:0 0 8px}
+.part-prompt b{margin-right:4px}
+.part.essay textarea{min-height:420px}
+.part textarea{width:100%;min-height:150px;padding:12px 14px;border:1px solid var(--fg);border-radius:0;background:var(--bg);font-family:var(--serif);font-size:16.5px;line-height:1.55;resize:vertical}
+.part-meta{margin-top:4px;font-size:14px;color:var(--muted)}
+.sol{margin-top:12px;padding:12px 18px;border:.5px solid var(--fg)}
+.sol h3{margin:0 0 4px;font-size:15px}
+.sol p{margin:0 0 10px}
+.sol .crit{display:grid;grid-template-columns:28px minmax(0,1fr);gap:2px 8px;margin:0 0 10px;font-size:15.5px}
+.sol .crit dt{font-weight:700}
+.sol .crit dd{margin:0}
+.mark-row{display:flex;flex-wrap:wrap;align-items:center;gap:8px;font-size:15px}
+.seg{display:inline-flex;flex-wrap:wrap;max-width:100%;padding:1px 0 0 1px}
+.seg button{margin:-1px 0 0 -1px;min-width:44px;min-height:36px;padding:0 10px;border:1px solid var(--fg);background:var(--bg);font-family:var(--mono);font-size:14px}
+.seg button[aria-pressed=true]{position:relative;background:var(--fg);color:var(--bg)}
+.fr-actions{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:10px;margin-top:16px}
+.fr-score{font-size:16px}
+.fr-score b{font-variant-numeric:tabular-nums}
+.scale{margin-top:14px}
+.scale summary{cursor:pointer;font-size:15px;color:var(--muted);font-style:italic}
+.scale .bt{margin:8px 0 0}
+.scale .bt td:last-child,.scale .bt th:last-child{text-align:left}
+.foot{margin-top:40px;padding-top:12px;border-top:.5px solid var(--line);font-size:14px;color:var(--muted)}
+
+@media (max-width:640px){
+  .runhead-title{display:none}
+  .runhead-actions{width:100%;justify-content:space-between}
+  .title{padding:22px 0 16px}
+  .choice-row{grid-template-columns:1fr}
+  .q-prompt{font-size:18.5px}
+  .res-body{padding-left:0}
+  .keys{display:none}
+  .fr-stem{text-align:left}
+  .bt th,.bt td{padding:4px 7px}
+  .sol{padding:10px 12px}
+  .katex-display>.katex{font-size:.94em}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+@media print{.runhead,.rule,.tabs,.nav,.step,.keys,.restart-line,.res-actions{display:none!important}}
+/* generic quiz additions */
+.q-prompt p{margin:0}
+.q-prompt p+p{margin-top:8px}
+.q-ask{margin:10px 0 0!important;font-size:16px;font-style:italic;color:var(--muted)}
+.blank{display:inline-block;width:3.4em;height:1em;margin:0 .12em;border-bottom:1.5px solid currentColor;vertical-align:-.12em}
+.stim{position:relative;margin:0 0 16px;padding:12px 16px;border:.5px solid var(--fg);background:var(--plate);font-size:16.5px;line-height:1.55;max-height:60vh;overflow:auto}
+.stim-h{margin:0 0 6px!important;font-size:14px;color:var(--muted)}
+.stim p{margin:0 0 8px}
+.stim p:last-child{margin-bottom:0}
+u.ul{text-decoration-thickness:1px;text-underline-offset:3px}
+.qn{display:inline-block;min-width:1.4em;padding:0 .2em;margin:0 .15em;border:.5px solid var(--fg);font:600 11.5px/1.4 system-ui,-apple-system,sans-serif;text-align:center;vertical-align:.12em;font-variant-numeric:tabular-nums}
+.stim .qn[data-cur]{background:var(--fg);color:var(--bg)}
+.stim u[data-cur]{background:var(--hl);box-shadow:0 0 0 2px var(--hl)}
+.stim .ln{display:inline-block;min-width:1.3em;padding:0 .25em;margin-right:.25em;border:.5px solid var(--line);color:var(--muted);font:500 11px/1.4 system-ui,-apple-system,sans-serif;text-align:center;vertical-align:.12em;font-variant-numeric:tabular-nums}
+.stim .ln[data-cur]{background:var(--hl);color:var(--fg);border-color:var(--fg)}
+.stim-intro{font-style:italic;color:var(--muted);font-size:15px}
+.stim-sub{margin-top:12px!important}
+.stim-note{font-size:15px;color:var(--muted)}
+.tool{margin:0 0 10px;padding:6px 0 6px 12px;border-left:3px solid var(--muted);font-size:15px;color:var(--muted)}
+.fig .figcap{margin:0 0 6px;font-size:15px}
+.stim.free{max-height:none;overflow:visible}
+.bt th[colspan]{text-align:center}
+.fig-after{margin:12px 0 4px}
+.fig-after img{max-width:min(100%,420px);max-height:340px;width:auto;object-fit:contain}
+.stim .figcap{text-align:center;font-size:15px;margin:10px 0 4px}
+.stim .fig{margin:6px 0 10px}
+.stim .bt-wrap{margin:0 0 10px}
+.fig-img,.opt-img{max-width:100%;height:auto;background:#fff}
+.opt-img{display:block;max-width:140px}
+:root[data-theme=dark] .fig-img,:root[data-theme=dark] .opt-img{filter:invert(.92) hue-rotate(180deg)}
+.fig{margin:0 0 14px;text-align:center}
+.fig img{max-width:100%;height:auto;background:#fff}
+:root[data-theme=dark] .fig img{filter:invert(.92) hue-rotate(180deg)}
+.fig figcaption{font-size:14px;color:var(--muted);font-style:italic}
+.target{margin:4px 0 0;font-style:italic}
+.res-sum{display:block}
+.opt>span:nth-child(2){flex:1 1 auto;min-width:0;overflow-wrap:anywhere;-webkit-hyphens:auto;hyphens:auto}
+@media (max-width:640px){.opt .mark{white-space:normal;text-align:right;max-width:6.2em;line-height:1.25}}
+.sol>div{margin:0 0 10px}
+.crit-pts{margin:0 0 10px;font-size:15.5px}
+.crit-pts p{margin:0 0 4px}
+.crit-pts ul{margin:0 0 4px;padding-left:20px}
+</style>
+</head>
+<body>
+<div class="runhead"><span class="runhead-title">AP English Language &middot; Part 2: Claims and Evidence &middot; Question Set</span><span class="runhead-actions"><a href="/study/#ap-english-language">&larr;&nbsp;Study Library</a><a href="/study/ap/ap-english-language/ap-lang-02-claims-evidence-questions.pdf">PDF version</a><button type="button" class="theme-btn" id="theme-btn">Dark mode</button></span></div>
+<div class="rule"><hr></div>
+
+<main class="wrap">
+  <header class="title">
+    <h1>Part 2 <span style="white-space:nowrap">Question Set</span></h1>
+    <p class="sub">Claims and Evidence</p>
+    <p class="meta">25 multiple-choice on 3 passages (about 35 min) &middot; 1 argument essay (40 min)</p>
+  </header>
+  <div class="tabs" role="tablist">
+    <button type="button" class="tab" role="tab" id="tab-mc" aria-controls="mc" aria-selected="true">Multiple choice</button>
+    <button type="button" class="tab" role="tab" id="tab-fr" aria-controls="fr" aria-selected="false">Free response</button>
+  </div>
+
+  <section id="mc" role="tabpanel" aria-labelledby="tab-mc"></section>
+  <section id="fr" role="tabpanel" aria-labelledby="tab-fr" hidden></section>
+
+  <p class="foot">From <a href="/study/ap/ap-english-language/ap-lang-02-claims-evidence-questions.pdf"><i>Part 2: Claims and Evidence: Question Set</i></a> (PDF). Answers and rule tags are the document&rsquo;s own key; the explanations expand on it and say why each wrong choice is wrong. Topic links open the matching section of the guide. All passages are fictional, written for practice. Your answers are saved only in this browser.</p>
+</main>
+
+<script id="data" type="application/json">{"meta":{"key":"study.ap-lang.part-2.v1","setupNote":"Allow about 35 minutes for the multiple choice, about 80 seconds per question. The passage stays above each question; the paragraph or sentence a question cites is highlighted.","topicPrefix":"","topicCol":"Topic","guideCol":"Guide section","byTopic":"By topic","topicNote":"Two or more misses on one topic: reread that section of the guide.","guide":"/study/ap/ap-english-language/ap-lang-02-claims-evidence-guide.pdf","guideName":"the <i>Part 2 guide<\/i>","target":{"label":"Target","mc":19},"frIntro":"Allow 40 minutes. Write the whole essay in the box, then open the scoring guide and score it row by row: thesis (0&ndash;1), evidence and commentary (0&ndash;4), sophistication (0&ndash;1).","frWord":"Question"},"topics":{"2.1":{"name":"Claims and the thesis","page":1},"2.2":{"name":"Evidence: types and functions","page":2},"2.3":{"name":"Commentary","page":3},"2.4":{"name":"Qualification, concession, and rebuttal","page":4},"2.5":{"name":"Claims and evidence in writing questions","page":5},"3.3":{"name":"Structure: the shape of the whole <span class=\"muted\">(Part 3)<\/span>","page":2,"url":"/study/ap/ap-english-language/ap-lang-03-reasoning-organization-guide.pdf#page=2"},"4.2":{"name":"Syntax <span class=\"muted\">(Part 4)<\/span>","page":2,"url":"/study/ap/ap-english-language/ap-lang-04-style-guide.pdf#page=2"},"4.3":{"name":"Comparisons and figurative language <span class=\"muted\">(Part 4)<\/span>","page":3,"url":"/study/ap/ap-english-language/ap-lang-04-style-guide.pdf#page=3"}},"sections":{"1":"Passage 1: Desire paths (reading)","2":"Passage 2: Parking minimums (reading)","3":"Passage 3: Personal finance (writing)"},"stims":{"s1":{"title":"Passage 1","html":"<p class=\"stim-intro\">The following passage is from an essay published in 2024 in a magazine about cities and design.<\/p><p><span class=\"ln\" data-qs=\"1\">&para;1<\/span>  Every campus has one: a strip of bare dirt cutting diagonally across a lawn that the architects intended to be crossed only along its edges. Groundskeepers call it a “desire path,” and they usually treat it as vandalism. They put up a little fence. They plant a hedge. They post a sign that says, with touching optimism, PLEASE USE SIDEWALK.<\/p><p><span class=\"ln\" >&para;2<\/span>  I want to suggest that the dirt is not the problem. The dirt is data.<\/p><p><span class=\"ln\" data-qs=\"3\">&para;3<\/span>  A desire path is the most honest survey a planner will ever receive. No one fills it out to please the researcher; no one exaggerates. It records, one footstep at a time, where people actually need to go, as opposed to where someone at a drafting table imagined they would. When thousands of people independently choose the same line, they are not being careless. They are voting.<\/p><p><span class=\"ln\" data-qs=\"4 5\">&para;4<\/span>  Some designers have learned to count those votes. When Halvorsen College built its new science quad in 2009, its planners did something unusual: they planted grass everywhere and laid no paths at all for the first year. By spring, students had worn a web of trails across the lawn. The college paved exactly those trails. Fifteen years later, the quad has needed almost no fencing and almost no reseeding, and its maintenance budget is a third of that of the older quad next door.<\/p><p><span class=\"ln\" data-qs=\"7\">&para;5<\/span>  Of course, not every desire path deserves pavement. Some cross wetlands that took decades to recover from the first few hundred shortcuts; some lead people across traffic where they should not go. A path that is popular is not thereby safe. But the right response to a dangerous desire path is to ask what need it reveals—a bus stop too far from the crosswalk, a gate locked at the wrong hour—and to meet that need somewhere safer. The fence answers the symptom. The question answers the cause.<\/p><p><span class=\"ln\" data-qs=\"8\">&para;6<\/span>  The lesson reaches well beyond lawns. Institutions of every kind design for the people they imagine and then scold the people who actually show up. A tax form that half its users fill out wrong is not evidence of a careless public; a medication schedule that patients routinely abandon is not evidence of irresponsible patients. Before we build another fence, we might look at where the grass has worn thin, and ask what it has been trying to tell us.<\/p>"},"s2":{"title":"Passage 2","html":"<p class=\"stim-intro\">The following passage is from an opinion piece written in 2025 by a member of a city council for the city’s newspaper.<\/p><p><span class=\"ln\" data-qs=\"10\">&para;1<\/span>  Somewhere in this city’s zoning code, on page 214, is a rule that has shaped our streets more than any architect: every new restaurant must provide one parking space for every 100 square feet of dining room. A coffee shop the size of a living room needs four. A family restaurant needs twenty-five, which is more land for cars than for customers.<\/p><p><span class=\"ln\" data-qs=\"11\">&para;2<\/span>  Nobody voted for that outcome directly. The rule was copied, in 1961, from a suburban county two states away, and it has been copied forward in every revision since. It was a guess, and it hardened into law.<\/p><p><span class=\"ln\" data-qs=\"12 13\">&para;3<\/span>  Its costs are easy to see if you know where to look. A surface parking space here costs about &#36;9,000 to build; a garage space, closer to &#36;35,000. Those costs do not disappear. They are folded into rents, into menu prices, and into the price of every apartment that must come with a space whether or not its tenant owns a car. Meanwhile, a count this summer by the planning office found that our downtown lots were, at their busiest hour, 58 percent full.<\/p><p><span class=\"ln\" data-qs=\"14 15\">&para;4<\/span>  Opponents of reform worry that without minimums, drivers will circle the block for hours and spill into residential streets. That is a reasonable fear, and in a few neighborhoods it may come true for a while. But the remedy for a parking shortage on one block is to manage that block, with meters or permits, not to require every business in the city to build for a crowd that never arrives.<\/p><p><span class=\"ln\" data-qs=\"16\">&para;5<\/span>  Ending minimums does not ban parking. A grocer who believes her customers need forty spaces may still build forty. The change simply lets her decide, as she already decides how many registers to install, instead of letting a guess from 1961 decide for her.<\/p>"},"s3":{"title":"Passage 3","html":"<p class=\"stim-intro\">The following is a draft of an argument essay a student is writing for a school publication. It may need revision.<\/p><p><span class=\"ln\" >&para;1<\/span>  <span class=\"ln\" >1<\/span>  Most students at our school can solve a quadratic equation. <span class=\"ln\" >2<\/span>  Far fewer could explain what the interest rate on a credit card actually costs them. <span class=\"ln\" >3<\/span>  My cousin, for example, opened her first card at eighteen and spent two years paying off a laptop that ended up costing her nearly twice its price. <span class=\"ln\" data-qs=\"24\">4<\/span>  Our school should require a one-semester personal finance course for graduation.<\/p><p><span class=\"ln\" data-qs=\"18\">&para;2<\/span>  <span class=\"ln\" >5<\/span>  Financial mistakes made at eighteen can follow a person for years. <span class=\"ln\" >6<\/span>  A low credit score can raise the cost of a car loan, keep a renter from getting an apartment, and even show up in some employers’ background checks. <span class=\"ln\" >7<\/span>  Credit cards first became common in the 1950s. <span class=\"ln\" >8<\/span>  Young adults are among the least likely to understand these consequences, often because no one was ever required to teach them.<\/p><p><span class=\"ln\" >&para;3<\/span>  <span class=\"ln\" data-qs=\"19\">9<\/span>  A required course would fix this problem completely. <span class=\"ln\" data-qs=\"20\">10<\/span>  Researchers have found that graduates in states that added such requirements were more likely to pay their bills on time. <span class=\"ln\" data-qs=\"21\">11<\/span>  The course would not need to be expensive.<\/p><p><span class=\"ln\" >&para;4<\/span>  <span class=\"ln\" >12<\/span>  Some argue that families, not schools, should teach money management. <span class=\"ln\" data-qs=\"22\">13<\/span>  In an ideal world, they would. <span class=\"ln\" >14<\/span>  But many parents never learned these skills themselves, and a family that is struggling financially may have little time to teach them. <span class=\"ln\" data-qs=\"23\">15<\/span>  A school course gives every student the same starting point.<\/p><p><span class=\"ln\" >&para;5<\/span>  <span class=\"ln\" data-qs=\"25\">16<\/span>  We already require students to learn the chemistry of baking soda. <span class=\"ln\" data-qs=\"25\">17<\/span>  We can require them to learn the arithmetic of a credit card bill.<\/p>"},"s4":{"title":"Sources","html":""}},"mc":[{"n":1,"prompt":"<p>In paragraph 1, the description of how groundskeepers respond to desire paths primarily serves to<\/p>","options":["praise groundskeepers for protecting the lawn","explain how desire paths are formed","provide evidence that desire paths damage campuses","present, with gentle irony, the conventional view the writer goes on to challenge"],"answer":3,"sec":"1","topic":"2.4","tag":"2.4 Counterargument","stim":"s1","ex":{"idea":"The fence, the hedge, and a sign posted &ldquo;with touching optimism&rdquo; describe the usual response with a smile. That is the view the writer then overturns: &ldquo;the dirt is not the problem.&rdquo;","steps":["&ldquo;Treat it as vandalism&rdquo; states the conventional view.","&ldquo;Touching optimism&rdquo; signals the writer's ironic distance from it."],"others":{"2":"the paragraph describes how groundskeepers react, not evidence of damage, and the writer goes on to defend the paths.","0":"the irony in &ldquo;touching optimism&rdquo; is gentle mockery, not praise.","1":"formation is implied; the focus is the response to them."}}},{"n":2,"prompt":"<p>Paragraph 2 functions primarily as<\/p>","options":["an anecdote that illustrates a later claim","a transition to a new subject","a compact statement of the writer’s central claim","a concession to the groundskeepers’ view"],"answer":2,"sec":"1","topic":"2.1","tag":"2.1 Claims","stim":"s1","ex":{"idea":"&ldquo;The dirt is not the problem. The dirt is data.&rdquo; is the essay's thesis in five words. Everything after argues that the paths are evidence.","steps":["A one-sentence paragraph after a scene-setting opening signals a key claim.","Paragraphs 3&ndash;6 develop exactly this idea."],"others":{"3":"it rejects the groundskeepers' view; it concedes nothing.","0":"there is no story in paragraph 2.","1":"the subject (desire paths) continues."}}},{"n":3,"prompt":"<p>In paragraph 3, the writer’s comparisons of a desire path to a “survey” and to “voting” primarily serve to<\/p>","options":["criticize students for ignoring campus rules","show that desire paths are a recent phenomenon","suggest that planners should conduct more surveys","recast the walkers’ behavior as meaningful collective evidence rather than carelessness"],"answer":3,"sec":"1","topic":"4.3","tag":"4.3 Comparisons","stim":"s1","ex":{"idea":"Calling the path an &ldquo;honest survey&rdquo; and the walkers &ldquo;voting&rdquo; turns what looked like carelessness into meaningful collective evidence.","steps":["Surveys and votes are ways an institution learns what people want.","The comparisons make the dirt something planners should read, not fence off."],"others":{"2":"the point is that the path is already a better survey than any they could conduct.","0":"the writer explicitly says walkers &ldquo;are not being careless.&rdquo;","1":"nothing concerns when desire paths began."}}},{"n":4,"prompt":"<p>The example of Halvorsen College (paragraph 4) functions mainly as<\/p>","options":["evidence that following desire paths can produce practical benefits","a counterexample that complicates the writer’s claim","expert testimony from the college’s planners","a personal anecdote about the writer’s education"],"answer":0,"sec":"1","topic":"2.2","tag":"2.2 Evidence","stim":"s1","ex":{"idea":"Halvorsen College tested the writer's approach and got measurable benefits: little fencing, little reseeding, and a budget a third of the older quad's.","steps":["The paragraph opens &ldquo;Some designers have learned to count those votes.&rdquo;","The results support the claim that the dirt is useful data."],"others":{"3":"the writer is not part of the example.","1":"the example supports the writer's claim.","2":"no expert is quoted; the planners' actions and results are reported."}}},{"n":5,"prompt":"<p>Which detail from paragraph 4 most directly supports the idea that designing around desire paths saves resources?<\/p>","options":["“its maintenance budget is a third of that of the older quad next door”","“students had worn a web of trails across the lawn”","“When Halvorsen College built its new science quad in 2009”","“its planners did something unusual”"],"answer":0,"sec":"1","topic":"2.2","tag":"2.2 Evidence","stim":"s1","ex":{"idea":"The question asks which detail shows that the approach <i>saves resources<\/i>. Only the budget comparison measures resources.","steps":["&ldquo;A third of&rdquo; the older quad's budget is a direct cost comparison.","The other choices describe the process, not its savings."],"others":{"3":"says the approach was unusual, not that it saved anything.","1":"describes how the trails formed, not their cost.","2":"a date and setting, not a result."}}},{"n":6,"prompt":"<p>Paragraph 5 primarily serves to<\/p>","options":["argue that all fences should be removed","abandon the argument that planners should follow desire paths","qualify the writer’s claim by acknowledging its limits, then redirect attention to the need a path reveals","introduce statistics about wetland recovery"],"answer":2,"sec":"1","topic":"2.4","tag":"2.4 Qualification","stim":"s1","ex":{"idea":"&ldquo;Of course, not every desire path deserves pavement&rdquo; limits the claim (wetlands, traffic). The writer then redirects: even a dangerous path reveals a need worth meeting.","steps":["Concession: popular is not the same as safe.","Refinement: answer the cause, not the symptom."],"others":{"1":"the &ldquo;But&rdquo; that follows keeps and sharpens the argument.","3":"wetlands are mentioned without any statistics.","0":"the paragraph allows that some paths should be blocked."}}},{"n":7,"prompt":"<p>The sentences “The fence answers the symptom. The question answers the cause.” (paragraph 5) use parallel structure mainly to<\/p>","options":["summarize the Halvorsen College example","contrast two responses and show why the writer’s is more effective","introduce a new counterargument","suggest that fences and questions are equally useful"],"answer":1,"sec":"1","topic":"4.2","tag":"4.2 Syntax","stim":"s1","ex":{"idea":"The matched sentences (&ldquo;The fence answers &hellip; The question answers &hellip;&rdquo;) set symptom against cause, so the writer's approach, asking, comes out deeper.","steps":["Identical structure invites comparison.","&ldquo;Symptom&rdquo; versus &ldquo;cause&rdquo; ranks them."],"others":{"3":"the contrast ranks them; it does not equate them.","2":"they conclude the paragraph's own reasoning.","0":"they come from paragraph 5's discussion of dangerous paths, not the Halvorsen example."}}},{"n":8,"prompt":"<p>The examples of the tax form and the medication schedule in paragraph 6 primarily serve to<\/p>","options":["shift the essay’s focus from design to medicine","provide statistical support for the Halvorsen example","concede that some users are careless","extend the writer’s principle to other institutions, broadening its significance"],"answer":3,"sec":"1","topic":"3.3","tag":"3.3 Structure","stim":"s1","ex":{"idea":"Tax forms and medication schedules apply the lesson (design for real behavior, don't scold it) beyond lawns, broadening the essay's significance.","steps":["&ldquo;The lesson reaches well beyond lawns&rdquo; announces the move.","Each example mirrors the desire path: a design that users &ldquo;fail&rdquo; reveals a design problem."],"others":{"1":"&ldquo;half its users&rdquo; is illustrative; the examples extend the idea rather than prove the Halvorsen case.","0":"the focus stays on design; medicine is one example among several.","2":"the writer argues the opposite: the users are not careless."}}},{"n":9,"prompt":"<p>The writer’s argument relies most heavily on which assumption?<\/p>","options":["Paved paths are always cheaper to maintain than grass.","When many people independently choose the same behavior, it reveals a genuine need that design should accommodate.","Groundskeepers are generally careless at their jobs.","All shortcuts are safe if enough people take them."],"answer":1,"sec":"1","topic":"2.1","tag":"2.1 Claims","stim":"s1","ex":{"idea":"The argument assumes that widespread, voluntary behavior reveals a genuine need. That is why the dirt counts as &ldquo;data&rdquo; and the walkers as &ldquo;voting.&rdquo;","steps":["Without this assumption, a worn path could simply be laziness.","Every later example (forms, medications) rests on the same assumption."],"others":{"2":"the writer criticizes a habit of response, not groundskeepers' competence.","3":"paragraph 5 explicitly denies this.","0":"the Halvorsen numbers concern one case; the argument does not depend on paving being cheaper."}}},{"n":10,"prompt":"<p>The examples of the coffee shop and the family restaurant in paragraph 1 primarily serve to<\/p>","options":["illustrate the rule’s effects with concrete and somewhat absurd consequences","establish the writer’s expertise as a restaurant owner","show that the rule applies only to large businesses","prove that most restaurants in the city are losing money"],"answer":0,"sec":"2","topic":"2.2","tag":"2.2 Evidence","stim":"s2","ex":{"idea":"Four spaces for a living-room coffee shop and more land for cars than for customers make the rule's consequences concrete, and a little absurd.","steps":["The rule is stated abstractly (one space per 100 square feet).","The examples show what it means in practice."],"others":{"3":"the examples are about parking requirements, not restaurant finances.","2":"a small coffee shop is covered too, which is the point.","1":"the writer is a council member; nothing suggests owning a restaurant."}}},{"n":11,"prompt":"<p>The statement “It was a guess, and it hardened into law” (paragraph 2) suggests that the parking rule<\/p>","options":["originated without local justification and persisted through repetition","was approved by a vote of city residents","was carefully studied before it was adopted","has been revised to reflect current conditions"],"answer":0,"sec":"2","topic":"2.1","tag":"2.1 Claims","stim":"s2","ex":{"idea":"The rule was copied from a distant suburb in 1961 and carried forward unexamined: a guess that hardened into law.","steps":["&ldquo;Copied&rdquo; twice stresses that no one studied local needs.","&ldquo;Hardened&rdquo; suggests it became fixed by habit."],"others":{"2":"&ldquo;It was a guess&rdquo; says the opposite.","1":"&ldquo;Nobody voted for that outcome directly.&rdquo;","3":"it was &ldquo;copied forward in every revision,&rdquo; not updated."}}},{"n":12,"prompt":"<p>The construction costs in paragraph 3 are offered mainly to support the claim that<\/p>","options":["garages are safer than surface lots","required parking raises costs that are passed on to residents and customers","downtown lots are rarely used","the city should build more parking garages"],"answer":1,"sec":"2","topic":"2.2","tag":"2.2 Evidence","stim":"s2","ex":{"idea":"The construction costs are &ldquo;folded into&rdquo; rents, menu prices, and apartment prices. Required spaces make things more expensive for everyone.","steps":["&#36;9,000 and &#36;35,000 per space are large costs.","&ldquo;Those costs do not disappear&rdquo; shows who pays."],"others":{"0":"safety is never discussed.","3":"the writer argues against requiring more parking.","2":"that is the 58 percent finding, a separate piece of evidence."}}},{"n":13,"prompt":"<p>The planning office’s finding that downtown lots were “at their busiest hour, 58 percent full” (paragraph 3) functions primarily to<\/p>","options":["suggest that existing parking already exceeds demand, undercutting the need for minimums","show that parking construction is too expensive","prove that residents prefer walking to driving","concede that some neighborhoods lack parking"],"answer":0,"sec":"2","topic":"2.2","tag":"2.2 Evidence","stim":"s2","ex":{"idea":"If lots are only 58 percent full at their busiest hour, supply exceeds demand, which undercuts the case for requiring more.","steps":["&ldquo;Meanwhile&rdquo; pairs high cost with low use.","Costly spaces that sit empty are the core of the argument."],"others":{"1":"the cost figures do that; this statistic is about use.","2":"empty spaces do not reveal how people prefer to travel.","3":"the concession comes in paragraph 4, not here."}}},{"n":14,"prompt":"<p>In paragraph 4, the writer responds to opponents of reform by<\/p>","options":["attacking their motives for opposing reform","dismissing their concerns as unfounded","granting that their fear is reasonable before proposing a more targeted solution","agreeing that minimums should remain in residential areas"],"answer":2,"sec":"2","topic":"2.4","tag":"2.4 Concession","stim":"s2","ex":{"idea":"&ldquo;That is a reasonable fear&rdquo; concedes; &ldquo;But the remedy&hellip;&rdquo; answers with a targeted solution (meters or permits on the affected block).","steps":["Concede, then refute.","The rebuttal narrows the problem to specific blocks."],"others":{"1":"he calls the fear reasonable.","3":"he proposes managing streets, not keeping minimums.","0":"he never questions motives."}}},{"n":15,"prompt":"<p>The phrase “in a few neighborhoods it may come true for a while” (paragraph 4) qualifies the writer’s concession by<\/p>","options":["suggesting the problem will grow worse over time","admitting that the reform will fail","limiting both how widely and how long the problem may occur","blaming residents for the shortage"],"answer":2,"sec":"2","topic":"2.4","tag":"2.4 Qualification","stim":"s2","ex":{"idea":"&ldquo;In a few neighborhoods&rdquo; limits where; &ldquo;for a while&rdquo; limits how long. The concession is real but bounded.","steps":["Two qualifiers, one of place and one of time.","They keep the concession from swallowing the argument."],"others":{"0":"&ldquo;for a while&rdquo; implies it will pass.","1":"he admits a local, temporary problem, not failure.","3":"no one is blamed."}}},{"n":16,"prompt":"<p>In paragraph 5, the comparison between deciding on parking spaces and deciding “how many registers to install” primarily serves to<\/p>","options":["suggest that grocers have too few registers","criticize grocers for poor planning","show that parking is more expensive than registers","present parking as an ordinary business decision owners can make for themselves"],"answer":3,"sec":"2","topic":"4.3","tag":"4.3 Comparisons","stim":"s2","ex":{"idea":"Owners already decide how many registers to install. Comparing parking to that makes it look like a normal business judgment, not something the law must dictate.","steps":["The comparison is to a familiar, uncontroversial decision.","It supports &ldquo;lets her decide.&rdquo;"],"others":{"0":"registers are a comparison point, not a complaint.","2":"no costs are compared.","1":"the writer trusts grocers' judgment."}}},{"n":17,"prompt":"<p>Which finding, if true, would most weaken the writer’s argument?<\/p>","options":["A garage space costs more than a surface space.","When the count was repeated in December, downtown lots were over 95 percent full every evening.","Some grocers prefer to build more parking than the law requires.","The suburban county that wrote the original rule has since repealed it."],"answer":1,"sec":"2","topic":"2.2","tag":"2.2 Evidence","stim":"s2","ex":{"idea":"The argument depends on parking exceeding demand (the 58 percent finding). Lots over 95 percent full every evening would undercut that premise.","steps":["Find the premise the argument rests on: lots are underused.","Evidence against that premise weakens the argument most."],"others":{"3":"repeal by the original county would, if anything, strengthen the case.","0":"the writer already says so; it supports the cost argument.","2":"the writer says grocers may still build parking, so this is consistent with the argument."}}},{"n":18,"prompt":"<p>Which sentence in paragraph 2 should be deleted because it does not support the paragraph’s claim?<\/p>","options":["Sentence 5","Sentence 6","Sentence 7","Sentence 8"],"answer":2,"sec":"3","topic":"2.5","tag":"2.5 Writing: evidence","stim":"s3","ex":{"idea":"Paragraph 2 claims that early financial mistakes have lasting consequences. When credit cards became common is irrelevant to that claim.","steps":["Sentences 5, 6, and 8 all concern consequences and understanding.","Sentence 7 is an off-topic historical fact."],"others":{"0":"it states the paragraph's claim.","1":"it gives specific consequences that support the claim.","3":"it links the consequences to the need for teaching, the essay's thesis."}}},{"n":19,"prompt":"<p>The writer wants to revise sentence 9 (reproduced below) to make the claim more defensible.<\/p><p><i>A required course would fix this problem completely.<\/i><\/p><p>Which version of sentence 9 best accomplishes this goal?<\/p>","options":["A required course would fix this problem completely and permanently.","A required course would not prevent every mistake, but it would give students the tools to avoid the most common and costly ones.","Nobody can say whether a required course would help.","A required course might or might not help."],"answer":1,"sec":"3","topic":"2.4","tag":"2.4 Qualification","stim":"s3","ex":{"idea":"&ldquo;Fix this problem completely&rdquo; is an overstatement. The revision concedes limits while keeping the claim that the course helps.","steps":["Qualify: not every mistake.","Keep the claim: the most common and costly ones."],"others":{"0":"makes the overstatement worse.","3":"so hedged that it abandons the argument.","2":"gives up the claim entirely."}}},{"n":20,"prompt":"<p>The writer wants to strengthen the evidence in sentence 10. Which addition would best accomplish this goal?<\/p>","options":["A sentence noting that some students dislike math","A quotation from a celebrity about saving money","A sentence explaining that the researchers were enthusiastic about their work","The name of the study, when it was published, and how large the improvement was"],"answer":3,"sec":"3","topic":"2.5","tag":"2.5 Writing: evidence","stim":"s3","ex":{"idea":"Vague evidence (&ldquo;researchers have found&rdquo;) becomes credible when readers can see who, when, and how large the effect was.","steps":["Specific sourcing lets readers check the claim.","Effect size shows the finding matters."],"others":{"2":"enthusiasm is not evidence.","0":"irrelevant to the finding.","1":"celebrity is not expertise; it does not strengthen research evidence."}}},{"n":21,"prompt":"<p>The writer wants to add a sentence after sentence 11 to support the claim it makes. Which choice best accomplishes this goal?<\/p>","options":["Many students would enjoy learning about money.","The district’s two business teachers already teach an elective on this material and could add sections without new hires.","Some private schools charge high tuition.","Textbooks have become more expensive in recent years."],"answer":1,"sec":"3","topic":"2.5","tag":"2.5 Writing: evidence","stim":"s3","ex":{"idea":"The claim is that the course need not be expensive. Teachers and an elective that already exist show it can be offered without new hires.","steps":["Cost is mainly staffing.","Existing staff and material answer it."],"others":{"0":"enjoyment is not cost.","2":"tuition at other schools is irrelevant.","3":"suggests costs are rising, which works against the claim."}}},{"n":22,"prompt":"<p>The writer is considering deleting sentence 13. Should the writer keep or delete this sentence?<\/p>","options":["Delete it, because it abandons the writer’s position.","Delete it, because it repeats sentence 12.","Keep it, because it concedes the appeal of the opposing view, which makes the rebuttal that follows more credible.","Keep it, because it provides statistical evidence."],"answer":2,"sec":"3","topic":"2.4","tag":"2.4 Concession","stim":"s3","ex":{"idea":"&ldquo;In an ideal world, they would&rdquo; grants what is right in the opposing view. That fairness makes the &ldquo;But&rdquo; in sentence 14 more persuasive.","steps":["Concede (sentence 13), then rebut (sentence 14).","Without the concession, the rebuttal seems dismissive."],"others":{"0":"the writer still argues for the course in the next sentence.","1":"sentence 12 states the view; sentence 13 grants it, a different move.","3":"there are no statistics in sentence 13."}}},{"n":23,"prompt":"<p>The writer wants to add a sentence after sentence 15 that explains why a “same starting point” matters to her argument. Which choice best accomplishes this goal?<\/p>","options":["Without it, knowing how money works stays a privilege of the families who already have it.","The course could be taught in the spring semester.","Starting points are important in races as well.","Some students already know a great deal about money."],"answer":0,"sec":"3","topic":"2.3","tag":"2.3 Commentary","stim":"s3","ex":{"idea":"The added sentence is commentary: it explains why equal access matters. Without school instruction, financial knowledge depends on family wealth.","steps":["Sentence 15 states the benefit.","The new sentence explains its significance for the argument."],"others":{"2":"a loose analogy that adds nothing to the argument.","3":"undercuts the need rather than explaining it.","1":"scheduling is irrelevant to why an equal start matters."}}},{"n":24,"prompt":"<p>The writer wants to revise sentence 4 so that it previews the essay’s main reasons. Which version best accomplishes this goal?<\/p>","options":["(as it is now)","Our school should require a personal finance course, which is something to think about.","Personal finance is a topic that affects everyone.","Our school should require a one-semester personal finance course, because early financial mistakes are costly and not every family can teach students to avoid them."],"answer":3,"sec":"3","topic":"2.1","tag":"2.1 Thesis","stim":"s3","ex":{"idea":"A thesis that previews reasons gives the reader the essay's map: lasting costs (paragraph 2) and unequal family teaching (paragraph 4).","steps":["Position plus two reasons.","Each reason matches a body paragraph."],"others":{"0":"takes a position but previews no reasons.","1":"weakens the claim and adds nothing.","2":"a topic, not a position."}}},{"n":25,"prompt":"<p>The writer is considering replacing sentences 16 and 17 with “In conclusion, a personal finance course is a good idea.” Should the writer make this change?<\/p>","options":["Yes, because a conclusion should restate the thesis directly.","No, because the original’s parallel contrast between a required science fact and an untaught life skill makes the case memorably, while the replacement only restates.","Yes, because sentences 16 and 17 introduce an unrelated topic.","No, because the replacement contradicts the thesis."],"answer":1,"sec":"3","topic":"4.2","tag":"4.2 Syntax","stim":"s3","ex":{"idea":"&ldquo;We already require &hellip; We can require &hellip;&rdquo; is a memorable parallel contrast that exposes an inconsistency. The replacement only restates the thesis blandly.","steps":["Parallelism links baking soda chemistry and credit card arithmetic.","The contrast is itself an argument: we teach the less useful thing."],"others":{"0":"restating flatly is weaker than ending with an argument that sticks.","2":"they tie directly to the thesis about required courses.","3":"the replacement agrees with the thesis; its problem is that it adds nothing."}}}],"fr":[{"n":3,"mode":"points","essay":true,"kind":"Argument","mins":40,"stim":"s4","head":"Argument &middot; 6 points &middot; 40 minutes","guide":[],"stem":"<p><b>Directions.<\/b> In a commencement address delivered in 2021, the novelist R.&thinsp;A. Benning (a fictional writer) told graduates: “Comfort is the enemy of every skill worth having.”<\/p><p><b>Prompt.<\/b> Write an essay that argues your position on the extent to which Benning’s claim is valid.<\/p><p>In your response you should do the following:<\/p><ul><li>Respond to the prompt with a thesis that presents a defensible position.<\/li><li>Provide evidence to support your line of reasoning.<\/li><li>Explain how the evidence supports your line of reasoning.<\/li><li>Use appropriate grammar and punctuation in communicating your argument.<\/li><\/ul>","parts":[{"label":"A","max":1,"prompt":" <b>Thesis<\/b> (1 point). Does the essay make a defensible thesis that responds to the prompt?","solution":"<p><b>Earns credit:<\/b> A defensible position on the claim, e.g. “Benning is right that skill grows only at the edge of discomfort, but she is wrong to call comfort the enemy: the security to fail safely is what lets people keep returning to that edge.”<\/p>","rubric":"<p><b>Common miss:<\/b> “Comfort can be good or bad”; restating the quotation; a thesis that only defines comfort.<\/p>"},{"label":"B","max":4,"prompt":" <b>Evidence and commentary<\/b> (4 points). Does specific evidence support every claim, with commentary that consistently explains how?","solution":"<p><b>Earns credit:<\/b> Two or three specific, developed examples, each tied to a claim in a clear line of reasoning, e.g. deliberate practice in music or sport (improvement comes from drilling what one cannot yet do, not repeating what feels easy); an athlete or scientist whose breakthrough followed repeated failure; a personal example (learning a language by speaking it badly in public). Commentary explains <i>why<\/i> each case supports the claim: the mechanism by which discomfort produces growth, or why some comfort (a coach’s trust, a safety net) makes risk possible. 4 points: every claim supported and consistently explained. 3: explanation for only some. 2: evidence with little line of reasoning. 1: general or hypothetical evidence, summarized.<\/p>","rubric":"<p><b>Common miss:<\/b> Lists of famous names with no detail; extended hypotheticals (“imagine a person who…”); examples narrated without explaining how they prove the point.<\/p>"},{"label":"C","max":1,"prompt":" <b>Sophistication<\/b> (1 point). Does the essay show sophistication of thought or a complex understanding of the rhetorical situation?","solution":"<p><b>Earns credit:<\/b> Explores the tension in the prompt: who can afford discomfort (financial security, privilege), the difference between productive struggle and harm, or how comfort, as rest and safety, enables the next risk; or situates the claim in a broader context (training science, education policy); or sustains a vivid, controlled style.<\/p>","rubric":"<p><b>Common miss:<\/b> A last-sentence twist that the body never developed; sweeping generalizations about “society today.”<\/p>"}]}]}</script>
+<script>
+(function(){
+"use strict";
+var DATA = JSON.parse(document.getElementById("data").textContent);
+var META = DATA.meta, MC = DATA.mc, FR = DATA.fr || [], TOP = DATA.topics || {}, SEC = DATA.sections || {}, STIM = DATA.stims || {}, BY = {};
+MC.forEach(function(q){ BY[q.n] = q; });
+var KEY = META.key, FKEY = META.fkey || META.key + ".fr", HAS_FR = FR.length > 0;
+
+function load(k, d){ try{ var v = localStorage.getItem(k); return v ? JSON.parse(v) : d; }catch(e){ return d; } }
+function save(k, v){ try{ localStorage.setItem(k, JSON.stringify(v)); }catch(e){} }
+function esc(s){ return String(s).replace(/[&<>"]/g, function(c){ return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]; }); }
+function shuffle(a){ a = a.slice(); for (var i = a.length - 1; i > 0; i--){ var j = Math.floor(Math.random() * (i + 1)); var t = a[i]; a[i] = a[j]; a[j] = t; } return a; }
+function range(n){ var a = []; for (var i = 0; i < n; i++) a.push(i); return a; }
+
+var S = load(KEY, null);
+if (!S || !S.phase || !S.order || S.order.some(function(n){ return !BY[n]; })) S = { phase: "setup", mode: "practice", shuffleQ: false, shuffleC: false, order: [], copt: {}, ans: {}, pos: 0, full: null };
+var confirmFinish = false;
+var mcEl = document.getElementById("mc");
+
+function start(nums){
+  var list = nums || MC.map(function(q){ return q.n; });
+  S.order = S.shuffleQ ? shuffle(list) : list.slice();
+  S.copt = {};
+  S.order.forEach(function(n){
+    var q = BY[n], idx = range(q.options.length);
+    S.copt[n] = (S.shuffleC && !q.fixed) ? shuffle(idx) : idx;
+  });
+  S.ans = {}; S.pos = 0; S.phase = "run"; confirmFinish = false;
+  save(KEY, S); render(); focusTop();
+}
+function focusTop(){ var t = document.querySelector(".tabs") || document.querySelector(".title"); if (t && t.getBoundingClientRect().top < 0) t.scrollIntoView(); }
+
+function stats(){
+  var right = 0, done = 0;
+  S.order.forEach(function(n){ if (n in S.ans){ done++; if (S.ans[n] === BY[n].answer) right++; } });
+  return { right: right, done: done, total: S.order.length };
+}
+function topicShort(t){ return (META.topicPrefix || "") + t; }
+function topicLabel(t){ return topicShort(t) + ", " + TOP[t].name; }
+function guideLink(t, short){
+  var g = TOP[t], txt = short ? g.name : topicLabel(t);
+  var href = g.url ? g.url : (META.guide && g.page ? META.guide + "#page=" + g.page : "");
+  return href ? '<a href="' + href + '">' + txt + "</a>" : txt;
+}
+function topicLinks(ts){
+  ts = ts.filter(function(t){ return TOP[t]; });
+  if (!ts.length || !(META.guide || TOP[ts[0]].url)) return "";
+  return '<p class="links">Review ' + ts.map(function(t){ return guideLink(t); }).join(" &middot; ") + " in " + META.guideName + "</p>";
+}
+function explain(q, picked){
+  var e = q.ex, h = '<div class="why"><p>' + e.idea + "</p>";
+  if (e.steps.length) h += '<ol class="steps">' + e.steps.map(function(s){ return "<li>" + s + "</li>"; }).join("") + "</ol>";
+  var rest = range(q.options.length).filter(function(i){ return i !== q.answer; });
+  if (typeof picked === "number" && picked !== q.answer) rest = [picked].concat(rest.filter(function(i){ return i !== picked; }));
+  h += '<p class="why-h sc">Why not the others</p><ul class="others">' + rest.map(function(i){
+    return "<li>" + quoted(q, i) + (i === picked ? '<span class="tag">your answer</span>' : "") + " &mdash; " + e.others[i] + "</li>";
+  }).join("") + "</ul></div>";
+  return h;
+}
+function quoted(q, i){ return q.labels ? q.labels[i] : "&ldquo;" + q.options[i] + "&rdquo;"; }
+function table(q){ return q.table ? '<div class="bt-wrap">' + q.table + "</div>" : ""; }
+function stim(q){
+  var s = q.stim && STIM[q.stim]; if (!s) return "";
+  var html = s.html.split(' data-q="' + q.n + '"').join(' data-q="' + q.n + '" data-cur')
+    .replace(/data-qs="([^"]*)"/g, function(m, l){ return (" " + l + " ").indexOf(" " + q.n + " ") >= 0 ? m + " data-cur" : m; });
+  return '<div class="stim' + (s.cls ? " " + s.cls : "") + '">' + (s.title ? '<p class="stim-h sc">' + s.title + "</p>" : "") + html + "</div>";
+}
+function scrollStim(root){
+  root.querySelectorAll(".stim").forEach(function(box){ var c = box.querySelector("[data-cur]"); if (c && box.scrollHeight > box.clientHeight) box.scrollTop = Math.max(0, c.offsetTop - box.clientHeight / 3); });
+}
+function promptHtml(q){
+  return stim(q) + (q.fig || "") + '<div class="q-prompt"><p>' + q.prompt + "</p>" + (q.ask || META.ask ? '<p class="q-ask">' + (q.ask || META.ask) + "</p>" : "") + "</div>" + table(q);
+}
+
+function renderSetup(){
+  mcEl.innerHTML =
+    '<div class="setup">' +
+      '<h2>How do you want to take it?</h2>' +
+      '<div class="choice-row">' +
+        '<button type="button" class="choice" data-mode="practice" aria-pressed="' + (S.mode === "practice") + '"><b>Practice</b><span>See the answer and why after each question</span></button>' +
+        '<button type="button" class="choice" data-mode="exam" aria-pressed="' + (S.mode === "exam") + '"><b>Exam</b><span>Answer everything, then see your score</span></button>' +
+      '</div>' +
+      '<div class="checks">' +
+        '<label><input type="checkbox" id="opt-sq"' + (S.shuffleQ ? " checked" : "") + '> Shuffle questions</label>' +
+        '<label><input type="checkbox" id="opt-sc"' + (S.shuffleC ? " checked" : "") + '> Shuffle answer choices</label>' +
+      '</div>' +
+      '<div class="setup-actions"><button type="button" class="btn btn--solid btn--lg" id="go">Start' + (HAS_FR ? " multiple choice" : "") + '</button></div>' +
+      '<p class="note">' + META.setupNote + " Keyboard: 1&ndash;" + Math.max.apply(null, MC.map(function(q){ return q.options.length; })) + " to answer, &larr; &rarr; to move, Enter for next.</p>" +
+    '</div>';
+  mcEl.querySelectorAll(".choice").forEach(function(b){ b.onclick = function(){ S.mode = b.dataset.mode; render(); }; });
+  document.getElementById("opt-sq").onchange = function(e){ S.shuffleQ = e.target.checked; };
+  document.getElementById("opt-sc").onchange = function(e){ S.shuffleC = e.target.checked; };
+  document.getElementById("go").onclick = function(){ start(); };
+}
+
+function renderRun(){
+  var n = S.order[S.pos], q = BY[n], st = stats(), practice = S.mode === "practice";
+  var picked = (n in S.ans) ? S.ans[n] : null, locked = practice && picked !== null;
+  var nav = S.order.map(function(m, i){
+    var c = [];
+    if (m in S.ans){ if (practice) c.push(S.ans[m] === BY[m].answer ? "is-right" : "is-wrong"); else c.push("is-answered"); }
+    if (i === S.pos) c.push("is-current");
+    return '<button type="button" class="' + c.join(" ") + '" data-go="' + i + '" aria-label="Question ' + (i + 1) + '"' + (i === S.pos ? ' aria-current="step"' : "") + ">" + (i + 1) + "</button>";
+  }).join("");
+  var opts = S.copt[n].map(function(oi, k){
+    var cls = ["opt"], mark = "";
+    if (locked){
+      if (oi === q.answer){ cls.push("is-right"); mark = oi === picked ? "&check; your answer" : "&check; correct"; }
+      else if (oi === picked){ cls.push("is-wrong"); mark = "&cross; your answer"; }
+      else cls.push("is-dim");
+    } else if (oi === picked) cls.push("is-picked");
+    return '<li><button type="button" class="' + cls.join(" ") + '" data-opt="' + oi + '"' + (locked ? " disabled" : "") + '><span class="kbd">' + (k + 1) + "</span><span>" + q.options[oi] + '</span><span class="mark">' + mark + "</span></button></li>";
+  }).join("");
+  var fb = "";
+  if (locked){
+    var ok = picked === q.answer, ans = quoted(q, q.answer);
+    fb = '<div class="fb' + (ok ? "" : " is-wrong") + '"><p class="verdict" role="status">' + (ok ? "Correct." : "Not quite. The answer is " + ans + (/[.?!](&rdquo;)?$/.test(ans) ? "" : ".")) + "</p>" + explain(q, picked) + (q.after || "") + topicLinks([q.topic]) + "</div>";
+  }
+  var last = S.pos === S.order.length - 1, allDone = st.done === st.total;
+  var nextBtn = last
+    ? '<button type="button" class="btn btn--solid" id="finish">' + (practice ? "See results" : "Finish test") + "</button>"
+    : '<button type="button" class="btn btn--solid" id="next">Next &rarr;</button>';
+  var finishEarly = (!last && !practice) ? '<button type="button" class="btn" id="finish">Finish test</button>' : (!last && practice && allDone ? '<button type="button" class="btn" id="finish">See results</button>' : "");
+  var conf = "";
+  if (confirmFinish){
+    var left = st.total - st.done;
+    conf = '<div class="confirm"><p>' + left + " question" + (left === 1 ? " is" : "s are") + " unanswered and will be marked wrong. Finish anyway?</p>" +
+      '<button type="button" class="btn" id="conf-no">Keep going</button><button type="button" class="btn btn--solid" id="conf-yes">Finish</button></div>';
+  }
+  var eyebrow = "Question " + q.n + (SEC[q.sec] ? " &middot; " + SEC[q.sec] : "") + (q.tag ? " &middot; " + q.tag : (q.topic ? " &middot; " + topicShort(q.topic) : ""));
+  mcEl.innerHTML =
+    '<div class="bar"><span>Question ' + (S.pos + 1) + " of " + st.total + " &middot; " + (practice ? "Practice" : "Exam") + " mode</span><span>" +
+      (practice ? st.right + " correct of " + st.done + " answered" : st.done + " of " + st.total + " answered") + "</span></div>" +
+    '<div class="track"><span style="width:' + (st.done / st.total * 100) + '%"></span></div>' +
+    '<nav class="nav" aria-label="Questions">' + nav + "</nav>" +
+    '<article class="q">' +
+      '<p class="q-eyebrow sc">' + eyebrow + "</p>" +
+      promptHtml(q) +
+      '<ol class="opts">' + opts + "</ol>" + fb +
+      '<div class="step"><button type="button" class="btn" id="prev"' + (S.pos === 0 ? " disabled" : "") + '>&larr; Back</button><span class="step-right">' + finishEarly + nextBtn + "</span></div>" +
+      conf +
+    "</article>" +
+    '<p class="keys"><span class="kbd">1</span>&ndash;<span class="kbd">' + q.options.length + '</span> answer &nbsp; <span class="kbd">&larr;</span> <span class="kbd">&rarr;</span> move &nbsp; <span class="kbd">Enter</span> next</p>' +
+    '<p class="restart-line"><a href="#" id="restart">Start over</a> <span class="muted">&middot; progress is saved in this browser</span></p>';
+
+  scrollStim(mcEl);
+  mcEl.querySelectorAll("[data-go]").forEach(function(b){ b.onclick = function(){ go(+b.dataset.go); }; });
+  mcEl.querySelectorAll("[data-opt]").forEach(function(b){ b.onclick = function(){ pick(+b.dataset.opt); }; });
+  bind("prev", function(){ go(S.pos - 1); });
+  bind("next", function(){ go(S.pos + 1); });
+  bind("finish", finish);
+  bind("conf-no", function(){ confirmFinish = false; render(); });
+  bind("conf-yes", function(){ confirmFinish = false; showResults(); });
+  bind("restart", function(e){ e.preventDefault(); S.phase = "setup"; save(KEY, S); render(); });
+}
+function bind(id, fn){ var el = document.getElementById(id); if (el) el.onclick = fn; }
+
+function pick(oi){
+  var n = S.order[S.pos];
+  if (S.mode === "practice" && (n in S.ans)) return;
+  S.ans[n] = oi; save(KEY, S); render();
+  if (S.mode === "practice"){ var fb = mcEl.querySelector(".fb"); if (fb && fb.getBoundingClientRect().bottom > innerHeight) fb.scrollIntoView({ block: "nearest" }); }
+}
+function go(i){
+  if (i < 0 || i >= S.order.length) return;
+  S.pos = i; confirmFinish = false; save(KEY, S); render();
+  var q = mcEl.querySelector(".q"); if (q && q.getBoundingClientRect().top < 0) q.scrollIntoView();
+}
+function finish(){
+  var st = stats();
+  if (st.done < st.total && !confirmFinish){ confirmFinish = true; render(); var c = mcEl.querySelector(".confirm"); if (c) c.scrollIntoView({ block: "nearest" }); return; }
+  showResults();
+}
+function showResults(){
+  S.phase = "results";
+  if (S.order.length === MC.length) S.full = stats().right;
+  save(KEY, S); render(); if (HAS_FR) renderFR(); focusTop();
+}
+
+/* composite score (only when the document defines one) */
+function frTotal(){
+  var t = 0;
+  for (var i = 0; i < FR.length; i++){ var s = frScore(FR[i]); if (s === null) return null; t += s; }
+  return t;
+}
+function frMax(){ return FR.reduce(function(a, f){ return a + frItemMax(f); }, 0); }
+function frOnlyTotal(){  /* free-response-only quizzes: running total of the marked questions */
+  var done = 0, got = 0, of = 0;
+  FR.forEach(function(f){ var s = frScore(f); if (s !== null){ done++; got += s; of += frItemMax(f); } });
+  if (!done) return "";
+  var line = done === FR.length
+    ? "Total: <b>" + got + " / " + of + "</b> (" + Math.round(got / of * 100) + "%)"
+    : "Marked so far: <b>" + got + " / " + of + "</b> on " + done + " of " + FR.length + " questions &middot; " + frMax() + " points in all";
+  return '<div class="composite" role="status"><p>' + line + "</p></div>";
+}
+function compositeHtml(){
+  var C = META.composite;
+  if (HAS_FR && !MC.length) return frOnlyTotal();
+  if (!C || !HAS_FR) return "";
+  var mc = (typeof S.full === "number") ? S.full : null, fr = frTotal(), fm = frMax(), mm = MC.length;
+  if (mc === null && fr === null) return "";
+  var lines = [];
+  if (mc === null) lines.push("Free response: <b>" + fr + " / " + fm + "</b>. Take the full multiple-choice part to get your composite score.");
+  else if (fr === null) lines.push("Multiple choice: <b>" + mc + " / " + mm + "</b>. Write and mark every free-response question to get your composite score.");
+  else {
+    var c = Math.round(C.mcWeight * mc / mm + C.frWeight * fr / fm), band = "";
+    for (var i = 0; i < C.bands.length; i++){ if (c >= C.bands[i][0]){ band = C.bands[i][1]; break; } }
+    lines.push("Composite score: <b>" + c + " / " + (C.mcWeight + C.frWeight) + "</b> &nbsp;<span class=\"muted\">= " + C.mcWeight + " &times; " + mc + "/" + mm + " + " + C.frWeight + " &times; " + fr + "/" + fm + "</span>");
+    if (band) lines.push(band);
+  }
+  return '<div class="composite" role="status">' + lines.map(function(l){ return "<p>" + l + "</p>"; }).join("") + "</div>";
+}
+function targetHtml(st){
+  var T = META.target, B = META.bands, h = "";
+  if (st.total !== MC.length) return "";
+  if (T) h += '<p class="target">' + T.label + ": " + T.mc + " / " + MC.length + " &middot; " + (st.right >= T.mc ? "met" : (T.mc - st.right) + " short") + "</p>";
+  if (B) for (var i = 0; i < B.length; i++){ if (st.right >= B[i][0]){ h += '<p class="target">' + B[i][1] + "</p>"; break; } }
+  return h;
+}
+
+var resFilter = "all";
+function renderResults(){
+  var st = stats(), pct = Math.round(st.right / st.total * 100), fullRun = st.total === MC.length;
+  var missed = S.order.filter(function(n){ return S.ans[n] !== BY[n].answer; });
+  var rows = S.order.map(function(n, i){
+    var q = BY[n], a = S.ans[n], ok = a === q.answer;
+    if (resFilter === "missed" && ok) return "";
+    return '<li><details><summary><span class="res-n">' + (i + 1) + '.</span><span class="' + (ok ? "res-ok" : "res-bad") + '" aria-label="' + (ok ? "correct" : "wrong") + '">' + (ok ? "&check;" : "&cross;") + '</span><span class="res-sum">' + q.prompt + "</span></summary>" +
+      '<div class="res-body">' + stim(q) + (q.fig || "") + table(q) + '<p><span class="sc">Your answer:</span> ' + (a === undefined ? "<i>skipped</i>" : q.options[a]) + "</p>" +
+      (ok ? "" : '<p><span class="sc">Correct:</span> ' + q.options[q.answer] + "</p>") +
+      explain(q, a) + (q.after || "") + topicLinks([q.topic]) + "</div></details></li>";
+  }).join("");
+  var tally = {};
+  S.order.forEach(function(n){ var t = BY[n].topic; if (!t) return; tally[t] = tally[t] || { right: 0, total: 0 }; tally[t].total++; if (S.ans[n] === BY[n].answer) tally[t].right++; });
+  var trows = Object.keys(TOP).filter(function(t){ return tally[t]; }).map(function(t){
+    var x = tally[t], miss = x.total - x.right;
+    return "<tr><th scope=\"row\">" + topicShort(t) + "</th><td>" + x.right + " / " + x.total + "</td><td>" + guideLink(t, true) +
+      ((META.flag ? x.right < META.flag.below * x.total : miss >= 2) ? ' <span class="flag">&middot; ' + (META.flag ? META.flag.text : "reread this section") + "</span>" : "") + "</td></tr>";
+  }).join("");
+  mcEl.innerHTML =
+    '<div class="results">' +
+      '<div class="score"><p class="score-big">' + st.right + " / " + st.total + "</p><p>" + pct + "% correct" + (fullRun ? "" : " &middot; retry of missed questions") + "</p>" + targetHtml(st) + "</div>" +
+      '<div class="res-actions">' +
+        (missed.length ? '<button type="button" class="btn btn--solid" id="retry">Retry the ' + missed.length + " missed</button>" : "") +
+        '<button type="button" class="btn" id="again">Take the full test again</button>' +
+        (HAS_FR ? '<button type="button" class="btn" id="to-fr">Go to free response</button>' : "") +
+      "</div>" +
+      compositeHtml() +
+      (trows ? '<div class="topics"><h2>' + (META.byTopic || "By topic") + '</h2><table class="bt"><thead><tr><th scope="col">' + (META.topicCol || "Topic") + '</th><th scope="col">Correct</th><th scope="col">' + (META.guideCol || "Guide section") + "</th></tr></thead><tbody>" + trows + "</tbody></table>" +
+        (META.topicNote ? '<p class="note" style="margin-top:6px">' + META.topicNote + "</p>" : "") + "</div>" : "") +
+      '<div class="res-filter"><h2>Review</h2><span><label><input type="checkbox" id="only-missed"' + (resFilter === "missed" ? " checked" : "") + "> Show missed only</label></span></div>" +
+      '<ul class="res-list">' + (rows || '<li><p class="note" style="padding:12px 0">Nothing missed.</p></li>') + "</ul>" +
+    "</div>";
+  bind("retry", function(){ start(missed); });
+  bind("again", function(){ S.phase = "setup"; save(KEY, S); render(); });
+  bind("to-fr", function(){ setTab("fr"); });
+  document.getElementById("only-missed").onchange = function(e){ resFilter = e.target.checked ? "missed" : "all"; render(); };
+}
+
+function render(){
+  if (S.phase === "run" && S.order.length) renderRun();
+  else if (S.phase === "results" && S.order.length) renderResults();
+  else { S.phase = "setup"; renderSetup(); }
+}
+
+/* free response: "epi" parts (E/P/I -> 0-4 per question) or "points" parts (0..max each) */
+var frEl = document.getElementById("fr"), F = load(FKEY, null);
+if (!F || typeof F !== "object") F = {};
+F.drafts = F.drafts || {}; F.marks = F.marks || {}; F.open = F.open || {};
+var LABELS = { 4: "Complete", 3: "Substantial", 2: "Developing", 1: "Minimal", 0: "" };
+function frItemMax(f){ return f.mode === "points" ? f.parts.reduce(function(a, p){ return a + p.max; }, 0) : 4; }
+function frScore(f){
+  if (f.mode === "points"){
+    var t = 0;
+    for (var j = 0; j < f.parts.length; j++){ var v = F.marks[f.n + f.parts[j].label]; if (v === undefined || v === "") return null; t += +v; }
+    return t;
+  }
+  var e = 0, p = 0;
+  for (var i = 0; i < f.parts.length; i++){
+    var m = F.marks[f.n + f.parts[i].label];
+    if (!m) return null;
+    if (m === "E") e++; else if (m === "P") p++;
+  }
+  if (e === 3) return 4;
+  if (e === 2 && p === 1) return 3;
+  if ((e === 2 && p === 0) || (e === 1 && p >= 1) || p === 3) return 2;
+  if ((e === 1 && p === 0) || (e === 0 && p === 2)) return 1;
+  return 0;
+}
+function words(t){ var m = t.trim().match(/\S+/g); return m ? m.length : 0; }
+var SCALE = '<details class="scale"><summary>How part scores convert to 0&ndash;4</summary><table class="bt"><thead><tr><th scope="col">Score</th><th scope="col">Label</th><th scope="col">Part scores (three parts, each E, P, or I)</th></tr></thead><tbody>' +
+  "<tr><td>4</td><td>Complete</td><td>three parts E</td></tr>" +
+  "<tr><td>3</td><td>Substantial</td><td>two parts E and one part P</td></tr>" +
+  "<tr><td>2</td><td>Developing</td><td>two E and no P; or one E and one or two P; or three P</td></tr>" +
+  "<tr><td>1</td><td>Minimal</td><td>one E and no P; or no E and two P</td></tr>" +
+  "<tr><td>0</td><td></td><td>anything less</td></tr></tbody></table></details>";
+function frScoreHtml(f){
+  var s = frScore(f), mx = frItemMax(f);
+  if (s === null) return '<span class="muted">Mark every part to score this question.</span>';
+  return "Score: <b>" + s + " / " + mx + "</b>" + (f.mode !== "points" && LABELS[s] ? " &middot; " + LABELS[s] : "");
+}
+function markButtons(f, p, id, m){
+  var vals = f.mode === "points" ? range(p.max + 1).map(String) : ["E", "P", "I"];
+  return vals.map(function(x){ return '<button type="button" data-mark="' + id + '" data-f="' + f.n + '" data-v="' + x + '" aria-pressed="' + (m === x) + '">' + x + "</button>"; }).join("");
+}
+/* essay: one draft for the whole question; its parts are rubric rows marked against it */
+function essayBox(f){
+  var id = f.n + "essay", d = F.drafts[id] || "";
+  return '<div class="part essay"><label class="sc" for="fr-' + id + '">Your essay</label>' +
+    '<textarea id="fr-' + id + '" data-fr="' + id + '" spellcheck="true">' + esc(d) + "</textarea>" +
+    '<p class="part-meta" id="wc-' + id + '">' + words(d) + " words &middot; saved in this browser</p></div>";
+}
+function renderFR(){
+  if (!HAS_FR) return;
+  frEl.innerHTML = '<p class="fr-intro">' + META.frIntro + "</p>" +
+    FR.map(function(f){
+      var open = !!F.open[f.n];
+      var parts = f.parts.map(function(p){
+        var id = f.n + p.label, d = F.drafts[id] || "", m = (F.marks[id] === undefined ? "" : String(F.marks[id]));
+        var crit = f.mode === "points"
+          ? '<div class="crit-pts">' + p.rubric + "</div>"
+          : '<dl class="crit"><dt>E</dt><dd>if the response ' + p.e + "</dd><dt>P</dt><dd>if " + p.p + "</dd></dl>";
+        return '<div class="part"><p class="part-prompt"><b>(' + p.label + ")</b>" + p.prompt + "</p>" +
+          (f.essay ? "" :
+          '<label class="sc" for="fr-' + id + '">Your answer to (' + p.label + ")</label>" +
+          '<textarea id="fr-' + id + '" data-fr="' + id + '" spellcheck="true">' + esc(d) + "</textarea>" +
+          '<p class="part-meta" id="wc-' + id + '">' + words(d) + " words &middot; saved in this browser</p>") +
+          '<div class="sol"' + (open ? "" : " hidden") + ' data-sol="' + f.n + '"><h3>Model solution (' + p.label + ")</h3><div>" + p.solution + "</div>" + crit +
+            '<div class="mark-row"><span>Your mark for (' + p.label + ")" + (f.mode === "points" ? ", out of " + p.max : "") + ':</span><span class="seg" role="group" aria-label="Mark for part ' + p.label + '">' + markButtons(f, p, id, m) + "</span></div></div></div>";
+      }).join("");
+      return '<article class="fr"><h2>' + (META.frWord || "Question") + " " + f.n + "<small>" + f.head + "</small></h2>" +
+        (f.stim ? stim(f) : "") + '<div class="fr-stem">' + f.stem + "</div>" + (f.essay ? essayBox(f) : "") + parts +
+        '<div class="fr-actions"><span class="fr-score" id="score-' + f.n + '">' + (open ? frScoreHtml(f) : "") + "</span>" +
+          '<button type="button" class="btn" data-open="' + f.n + '" aria-expanded="' + open + '">' + (open ? "Hide model solution" : "Show model solution and scoring") + "</button></div>" +
+        (open ? (f.mode === "points" ? "" : SCALE) + topicLinks(f.guide || []) : "") +
+        "</article>";
+    }).join("") + '<div id="fr-composite">' + compositeHtml() + "</div>";
+  frEl.querySelectorAll("textarea").forEach(function(t){
+    t.oninput = function(){ F.drafts[t.dataset.fr] = t.value; save(FKEY, F); document.getElementById("wc-" + t.dataset.fr).innerHTML = words(t.value) + " words &middot; saved in this browser"; };
+  });
+  frEl.querySelectorAll("[data-open]").forEach(function(b){
+    b.onclick = function(){ var n = b.dataset.open; F.open[n] = !F.open[n]; save(FKEY, F); renderFR(); var a = document.getElementById("score-" + n); if (a) a.closest(".fr").querySelector(".part").scrollIntoView({ block: "nearest" }); };
+  });
+  frEl.querySelectorAll("[data-mark]").forEach(function(b){
+    b.onclick = function(){
+      var id = b.dataset.mark; F.marks[id] = F.marks[id] === b.dataset.v ? "" : b.dataset.v; save(FKEY, F);
+      b.parentNode.querySelectorAll("button").forEach(function(x){ x.setAttribute("aria-pressed", String(F.marks[id] === x.dataset.v)); });
+      var f = FR.filter(function(x){ return String(x.n) === b.dataset.f; })[0];
+      document.getElementById("score-" + f.n).innerHTML = frScoreHtml(f);
+      document.getElementById("fr-composite").innerHTML = compositeHtml();
+      if (S.phase === "results") render();
+    };
+  });
+}
+
+/* tabs (only when there is a free-response part) */
+function setTab(t){
+  if (!HAS_FR) return;
+  var mc = t === "mc";
+  document.getElementById("tab-mc").setAttribute("aria-selected", String(mc));
+  document.getElementById("tab-fr").setAttribute("aria-selected", String(!mc));
+  mcEl.hidden = !mc; frEl.hidden = mc;
+  try{ history.replaceState(null, "", mc ? location.pathname : "#free-response"); }catch(e){}
+  focusTop();
+}
+if (HAS_FR){
+  document.getElementById("tab-mc").onclick = function(){ setTab("mc"); };
+  document.getElementById("tab-fr").onclick = function(){ setTab("fr"); };
+}
+
+/* keyboard */
+document.addEventListener("keydown", function(e){
+  if (e.metaKey || e.ctrlKey || e.altKey) return;
+  var tag = (e.target.tagName || "").toLowerCase();
+  if (tag === "textarea" || tag === "input") return;
+  if (mcEl.hidden || S.phase !== "run") return;
+  var n = S.order[S.pos], q = BY[n];
+  if (/^[1-9]$/.test(e.key)){ var k = +e.key - 1; if (k < q.options.length){ e.preventDefault(); pick(S.copt[n][k]); } }
+  else if (e.key === "ArrowRight"){ e.preventDefault(); go(S.pos + 1); }
+  else if (e.key === "ArrowLeft"){ e.preventDefault(); go(S.pos - 1); }
+  else if (e.key === "Enter" && tag !== "button" && tag !== "a"){ e.preventDefault(); if (S.pos < S.order.length - 1) go(S.pos + 1); else finish(); }
+});
+
+/* theme */
+var root = document.documentElement, tb = document.getElementById("theme-btn");
+function syncTheme(){ var dark = root.getAttribute("data-theme") === "dark"; tb.textContent = dark ? "Light mode" : "Dark mode"; tb.setAttribute("aria-pressed", String(dark)); }
+tb.onclick = function(){ var dark = root.getAttribute("data-theme") !== "dark"; root.setAttribute("data-theme", dark ? "dark" : "light"); try{ localStorage.setItem("apah.theme", dark ? "dark" : "light"); }catch(e){} syncTheme(); };
+syncTheme();
+
+render(); renderFR();
+if (HAS_FR && location.hash === "#free-response") setTab("fr");
+if (HAS_FR && !MC.length){ var tabsEl = document.querySelector(".tabs"); if (tabsEl) tabsEl.hidden = true; mcEl.hidden = true; frEl.hidden = false; }
+})();
+</script>
+</body>
+</html>
