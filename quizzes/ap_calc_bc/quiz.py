@@ -27,10 +27,18 @@ def _table(q):
     return t.html() if isinstance(t, Table) else ""
 
 
+def web_options(opts):
+    """Web only: when any choice is a long display-style formula, set the question's display-style choices
+    at \\footnotesize so they fit a 360 px phone (u09 Q14 would otherwise overflow). The PDFs are unaffected."""
+    if not any("\\displaystyle" in o and len(o) > 75 for o in opts):
+        return opts
+    return [o.replace("$\\displaystyle", "$\\footnotesize\\displaystyle", 1) for o in opts]
+
+
 def mc_item(q, sec_key):
     prompt = to_html(q["prompt"])
     d = dict(n=q["n"], sec=sec_key, topic=q["topic"], tag=q["rule"], prompt=prompt,
-             options=[to_html(o) for o in q["options"]], answer=LET.index(q["answer"]),
+             options=[to_html(o) for o in web_options(q["options"])], answer=LET.index(q["answer"]),
              ex=dict(idea=to_html(q["idea"]), steps=[to_html(s) for s in q["steps"]],
                      others={LET.index(k): to_html(v) for k, v in q["others"].items()}))
     if q.get("fig"):
