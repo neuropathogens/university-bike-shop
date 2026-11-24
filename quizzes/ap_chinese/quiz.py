@@ -69,10 +69,10 @@ def fr_item(f, n):
         stem += "<p><b>The four pictures</b> (described in words for this practice set):</p><ol>" + \
                 "".join(f"<li>{h(p)}</li>" for p in f["panels"]) + "</ol>"
     stem += "".join(f"<p>{h(p)}</p>" for p in f.get("prompt", []))
-    rubric = ('<table class="bt"><thead><tr><th scope="col">Row</th><th scope="col">Full credit</th>'
+    rubric = ('<div class="bt-wrap"><table class="bt"><thead><tr><th scope="col">Row</th><th scope="col">Full credit</th>'
               '<th scope="col">Common reasons for losing points</th></tr></thead><tbody>' +
               "".join(f'<tr><th scope="row">{h(name)} ({pts})</th><td>{h(e)}</td><td>{h(m)}</td></tr>' for name, pts, e, m in f["rows"]) +
-              f"</tbody></table><p>Add the rows: out of {total}. Give yourself a row's top score only if your response does what the descriptor says.</p>")
+              f"</tbody></table></div><p>Add the rows: out of {total}. Give yourself a row's top score only if your response does what the descriptor says.</p>")
     sol = "".join(f"<p>{h(p)}</p>" for p in f["model"])
     if f.get("tips"):
         sol += "<p><i>Why it scores:</i> " + h(" ".join(f["tips"])) + "</p>"
