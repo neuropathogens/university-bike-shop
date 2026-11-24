@@ -87,6 +87,15 @@ Every wrong choice must have a note in `ex.others`; the builder refuses a quiz o
   prompts are repaired without revealing the answer.
 - `apah_works` — APAH 250 every-work practice, 500 items in 10 content-area quizzes (`works-1`..`10`), extracted
   from the PDF; the work's photo is shown after answering. Wrong-choice notes: `notes_<k>.py`.
+- `ap_chinese` — AP Chinese Language and Culture (revised course, May 2027 exam): Part 0 and Units 1–6, each a study
+  guide (`<slug>-checks`) and a question set (`playbook`, `unit-1`…`unit-6`). One Python content model
+  (`content/pNN.py`, built on `model.py`) drives both the PDFs and the quizzes: `build_tex.py` renders the LaTeX
+  (`tex/ap-chinese.sty`: the AP Psychology style plus automatic Noto CJK switching), compiles with XeLaTeX, writes
+  `pages.json` (guide section pages, for topic links) and publishes the PDFs, the complete pack and the source zip to
+  `public/study/ap/ap-chinese/`. Answer positions are assigned at build (balanced, never three in a row). Listening
+  sets are transcripts; each question set has one points-scored free-response task (email, story, presentation or
+  Q&A) with its official rubric rows and a model response. Run `python3 -I quizzes/ap_chinese/build_tex.py` before
+  `build.py ap_chinese` when content changes.
 - `college_math` — Differential Equations I–III, Linear Algebra, Multivariable Calculus and Real Analysis I–III
   (`/study/math/<subject>/tests/<slug>/`), transcribed from the PDFs: one module per volume (`de1.py` … `ra3.py`)
   with `Q()` items and `FRQ()` free-response items. Real Analysis II and III are proof problem sets (free

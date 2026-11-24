@@ -1,0 +1,205 @@
+% ap-chinese.sty -- shared style for the AP Chinese study series (house style of ap-psych.sty)
+% Compile with XeLaTeX (latexmk -xelatex).
+%
+% Question syntax:
+%   \begin{q}{<correct position 1-4>}{<rule tag>}{<why>}
+%     Stem text.
+%     \ch{choice 1}{choice 2}{choice 3}{choice 4}
+%   \end{q}
+% Letters (A-D) and the answer key are generated from the first argument,
+% so questions can be reordered or added without hand-editing the key.
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{ap-chinese}[2026/11/23 AP Chinese study series]
+
+\RequirePackage[letterpaper,margin=1in,headheight=15pt]{geometry}
+\RequirePackage{fontspec}
+\setmainfont{TeX Gyre Pagella}
+\setsansfont{Inter}
+\setmonofont{DejaVu Sans Mono}[Scale=0.85]
+% ---------- Chinese: switch to Noto CJK automatically (ucharclasses; xeCJK is not required) ----------
+\newfontfamily\ap@cjkserif{Noto Serif CJK SC}[BoldFont={Noto Serif CJK SC Bold},Scale=0.94]
+\newfontfamily\ap@cjksans{Noto Sans CJK SC}[BoldFont={Noto Sans CJK SC Bold},Scale=0.94]
+% One XeTeX inter-character class for all Chinese ranges. Font switches, not groups, so a run of
+% Chinese may end after an environment closes.
+\begingroup\ap@cjkserif\xdef\ap@cjkserifname{\f@family}\ap@cjksans\xdef\ap@cjksansname{\f@family}\endgroup
+\newcommand\ap@cjkin{\ifx\f@family\sfdefault\ap@cjksans\else\ifx\f@family\ap@cjksansname\else\ap@cjkserif\fi\fi}
+\newcommand\ap@cjkout{\ifx\f@family\ap@cjksansname\sffamily\else\ifx\f@family\ap@cjkserifname\rmfamily\fi\fi}
+\newXeTeXintercharclass\ap@cjkclass
+\def\ap@setrange#1#2{\count@=#1\relax\loop\XeTeXcharclass\count@=\ap@cjkclass\ifnum\count@<#2\advance\count@ 1\repeat}
+\ap@setrange{"3000}{"303F}\ap@setrange{"3400}{"4DBF}\ap@setrange{"4E00}{"9FFF}\ap@setrange{"FF00}{"FFEF}
+\XeTeXinterchartokenstate=1
+\XeTeXinterchartoks 0 \ap@cjkclass={\ap@cjkin}
+\XeTeXinterchartoks 4095 \ap@cjkclass={\ap@cjkin}
+\XeTeXinterchartoks \ap@cjkclass 0={\ap@cjkout}
+\XeTeXinterchartoks \ap@cjkclass 4095={\ap@cjkout}
+\XeTeXlinebreaklocale "zh"
+\XeTeXlinebreakskip = 0pt plus 1pt
+\RequirePackage{xcolor}
+\definecolor{navy}{HTML}{051C2C}
+\definecolor{cobalt}{HTML}{2251FF}
+\definecolor{cyan}{HTML}{00A9F4}
+\definecolor{rulegray}{HTML}{C9CED3}
+\definecolor{tint}{HTML}{F3F6FF}
+\definecolor{warm}{HTML}{FFF6EC}
+\RequirePackage{microtype}
+\RequirePackage{titlesec}
+\RequirePackage{fancyhdr}
+\RequirePackage{enumitem}
+\RequirePackage{booktabs}
+\RequirePackage{array}
+\RequirePackage{xltabular}
+\RequirePackage{needspace}
+\RequirePackage{multicol}
+\RequirePackage{amsmath}
+\RequirePackage[most]{tcolorbox}
+\RequirePackage[hidelinks]{hyperref}
+
+\setlength{\parindent}{0pt}
+\setlength{\emergencystretch}{3em}
+\setlength{\parskip}{4pt plus 1pt}
+\renewcommand{\arraystretch}{1.18}
+\setlist{itemsep=1pt,topsep=3pt,parsep=0pt}
+
+% ---------- title block ----------
+\newcommand\@course{AP Chinese Language and Culture}
+\newcommand\course[1]{\renewcommand\@course{#1}}
+\newcommand\@docpart{}
+\newcommand\docpart[1]{\renewcommand\@docpart{#1}}
+\renewcommand\maketitle{%
+  \thispagestyle{plain}%
+  \begin{center}
+    {\sffamily\footnotesize\bfseries\color{cobalt}\addfontfeatures{LetterSpace=8}\MakeUppercase{\@docpart}\par}
+    \vspace{6pt}
+    {\LARGE\bfseries\color{navy}\@title\par}
+    \vspace{8pt}
+    {\small \@author\quad\textperiodcentered\quad \@course\quad\textperiodcentered\quad \@date\par}
+    \vspace{6pt}
+    {\color{navy}\rule{\linewidth}{0.9pt}}
+  \end{center}
+  \vspace{-4pt}}
+
+\renewenvironment{abstract}%
+  {\begin{quote}\small\noindent{\sffamily\bfseries\color{navy}Abstract.}\ }%
+  {\end{quote}}
+
+\newcommand\scoringline[1]{%
+  \begin{center}\small\sffamily
+  \fcolorbox{navy}{white}{\parbox{0.94\linewidth}{\centering\vspace{2pt}#1\vspace{2pt}}}
+  \end{center}}
+\newcommand\blank[1][3.2em]{\underline{\hspace{#1}}}
+
+% ---------- headings ----------
+\titleformat{\section}{\sffamily\large\bfseries\color{navy}}{\thesection}{0.6em}{}
+\titleformat{\subsection}{\sffamily\normalsize\bfseries\color{navy}}{\thesubsection}{0.6em}{}
+\titleformat{\subsubsection}[runin]{\sffamily\small\bfseries\color{cobalt}}{}{0em}{}[.]
+\titlespacing*{\section}{0pt}{14pt}{6pt}
+\titlespacing*{\subsection}{0pt}{10pt}{4pt}
+\titlespacing*{\subsubsection}{0pt}{6pt}{0.6em}
+
+% keep headings with what follows them
+\let\ap@oldsection\section
+\renewcommand\section{\needspace{8\baselineskip}\ap@oldsection}
+\let\ap@oldsubsection\subsection
+\renewcommand\subsection{\needspace{7\baselineskip}\ap@oldsubsection}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\sffamily\scriptsize\color{navy}\@course\ \textperiodcentered\ \@docpart}
+\fancyhead[R]{\sffamily\scriptsize\color{navy}\@title}
+\fancyfoot[C]{\sffamily\scriptsize\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\headrule}{\color{rulegray}\hrule height\headrulewidth}
+\fancypagestyle{plain}{\fancyhf{}\fancyfoot[C]{\sffamily\scriptsize\thepage}\renewcommand{\headrulewidth}{0pt}}
+
+% ---------- guide boxes ----------
+\newtcolorbox{keyidea}[1][Key idea]{enhanced,breakable,colback=tint,colframe=navy,
+  boxrule=0.5pt,arc=0pt,left=6pt,right=6pt,top=4pt,bottom=4pt,
+  fonttitle=\sffamily\small\bfseries,coltitle=white,colbacktitle=navy,title={#1}}
+\newtcolorbox{trap}[1][Exam trap]{enhanced,breakable,colback=warm,colframe=cobalt,
+  boxrule=0pt,leftrule=2.5pt,arc=0pt,left=6pt,right=6pt,top=3pt,bottom=3pt,
+  before upper={{\sffamily\small\bfseries\color{cobalt}#1.}\ }}
+\newtcolorbox{study}[1]{enhanced,breakable,colback=white,colframe=rulegray,
+  boxrule=0.5pt,arc=0pt,left=6pt,right=6pt,top=3pt,bottom=3pt,
+  before upper={{\sffamily\small\bfseries\color{navy}Study: #1.}\ }}
+\newtcolorbox{stimulus}[1][]{enhanced,breakable,colback=tint,colframe=rulegray,
+  boxrule=0.4pt,arc=0pt,left=7pt,right=7pt,top=5pt,bottom=5pt,fontupper=\small,#1}
+
+% Two-column term table:  \begin{terms} Term & meaning \\ ... \end{terms}
+\newenvironment{terms}%
+  {\par\smallskip\noindent\small\xltabular{\linewidth}{@{}>{\bfseries\raggedright\arraybackslash}p{1.6in}>{\raggedright\arraybackslash}X@{}}\toprule}%
+  {\bottomrule\endxltabular\par\smallskip}
+% Three-column compare table: \begin{compare}{A}{B}{C} ... \end{compare}
+\newenvironment{compare}[3]%
+  {\par\smallskip\noindent\small\xltabular{\linewidth}{@{}>{\bfseries\raggedright\arraybackslash}p{1.3in}>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X@{}}\toprule
+   \textsf{#1} & \textsf{\textbf{#2}} & \textsf{\textbf{#3}}\\\midrule\endhead}%
+  {\bottomrule\endxltabular\par\smallskip}
+
+% Vocabulary table: \begin{vocab} 汉字 & pinyin & English \\ ... \end{vocab}
+\newenvironment{vocab}%
+  {\par\smallskip\noindent\small\xltabular{\linewidth}{@{}>{\raggedright\arraybackslash}p{1.15in}>{\itshape\raggedright\arraybackslash}p{1.45in}>{\raggedright\arraybackslash}X@{}}\toprule
+   \textsf{\textbf{Chinese}} & \textsf{\textbf{\upshape Pinyin}} & \textsf{\textbf{English}}\\\midrule\endhead}%
+  {\bottomrule\endxltabular\par\smallskip}
+% Titled source box for reading/listening sets: \begin{source}{Title} ... \end{source}
+\newtcolorbox{source}[1]{enhanced,breakable,colback=tint,colframe=rulegray,
+  boxrule=0.4pt,arc=0pt,left=7pt,right=7pt,top=5pt,bottom=5pt,fontupper=\small,
+  before upper={{\sffamily\footnotesize\bfseries\color{navy}#1}\par\smallskip}}
+
+% ---------- questions ----------
+\newcounter{qnum}
+\gdef\ap@keystrip{}
+\gdef\ap@keyrows{}
+\newcommand\qletter[1]{\ifcase#1\or A\or B\or C\or D\fi}
+\newcommand\ruletag[1]{{\sffamily\footnotesize #1}}
+\newcommand\ap@keyitem[2]{\mbox{\textbf{#1}.\,#2}\hspace{1em}\allowbreak}
+
+\NewDocumentEnvironment{q}{m m +m}{%
+  \stepcounter{qnum}%
+  \xdef\ap@keystrip{\unexpanded\expandafter{\ap@keystrip}\noexpand\ap@keyitem{\arabic{qnum}}{\qletter{#1}}}%
+  \xdef\ap@keyrows{\unexpanded\expandafter{\ap@keyrows}\arabic{qnum} & \noexpand\textbf{\qletter{#1}} & \unexpanded{#3} & \noexpand\ruletag{\unexpanded{#2}}\noexpand\\}%
+  \par\needspace{6\baselineskip}\vspace{3pt}%
+  \begin{list}{}{\leftmargin=4.3em\labelwidth=4.0em\labelsep=0.3em\itemsep=0pt\topsep=2pt\parsep=2pt}%
+  \item[{\makebox[2.3em][l]{\rule[-1.5pt]{2em}{0.5pt}}\makebox[1.7em][r]{\textbf{\arabic{qnum}.}}}]%
+}{%
+  \end{list}\par\vspace{2pt}%
+}
+\newcommand\ch[4]{%
+  \par\nopagebreak
+  \begin{enumerate}[label=(\Alph*),leftmargin=2.1em,itemsep=0.5pt,topsep=2pt]
+  \item #1 \item #2 \item #3 \item #4
+  \end{enumerate}}
+
+% two-column choices for short options: A B / C D
+\newcommand\chh[4]{%
+  \par\nopagebreak\vspace{1pt}%
+  \noindent\makebox[0.48\linewidth][l]{(A) #1}\makebox[0.48\linewidth][l]{(B) #2}\par
+  \noindent\makebox[0.48\linewidth][l]{(C) #3}\makebox[0.48\linewidth][l]{(D) #4}\par}
+
+% ---------- free response ----------
+\newtcolorbox{frq}[1]{enhanced,breakable,colback=white,colframe=navy,boxrule=0.6pt,arc=0pt,
+  left=8pt,right=8pt,top=6pt,bottom=6pt,
+  fonttitle=\sffamily\small\bfseries,coltitle=white,colbacktitle=navy,title={#1}}
+\newcommand\writelines[1]{\par\foreach@lines{#1}}
+\def\foreach@lines#1{\count@=#1\relax\loop\ifnum\count@>0
+  \vspace{0.9em}\noindent\color{rulegray}\rule{\linewidth}{0.4pt}\color{black}\par\advance\count@ by -1\repeat}
+
+% ---------- answer key ----------
+\providecommand\ap@total{\textbf{??}}
+\newcommand\qtotal{\ap@total}
+\newcommand\makekey{%
+  \immediate\write\@auxout{\gdef\string\ap@total{\arabic{qnum}}}%
+  \clearpage
+  \section*{Answer Key}
+  \begin{tcolorbox}[enhanced,colback=tint,colframe=navy,boxrule=0.5pt,arc=0pt,
+    left=6pt,right=6pt,top=4pt,bottom=4pt,
+    fonttitle=\sffamily\small\bfseries,coltitle=white,colbacktitle=navy,title=Answers only]
+    \raggedright\small\ap@keystrip
+  \end{tcolorbox}
+  \vspace{4pt}
+  {\small
+  \begin{xltabular}{\linewidth}{@{}>{\raggedleft\arraybackslash}p{1.6em}>{\centering\arraybackslash}p{2.4em}>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}p{1.35in}@{}}
+  \toprule
+  \textsf{\textbf{\#}} & \textsf{\textbf{Ans.}} & \textsf{\textbf{Why}} & \textsf{\textbf{Rule}}\\
+  \midrule\endhead
+  \ap@keyrows
+  \bottomrule
+  \end{xltabular}}}
