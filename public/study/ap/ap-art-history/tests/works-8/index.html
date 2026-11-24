@@ -168,6 +168,7 @@ a{color:var(--link);text-underline-offset:3px;text-decoration-thickness:.5px}
 .part{margin:18px 0 0}
 .part-prompt{margin:0 0 8px}
 .part-prompt b{margin-right:4px}
+.part.essay textarea{min-height:420px}
 .part textarea{width:100%;min-height:150px;padding:12px 14px;border:1px solid var(--fg);border-radius:0;background:var(--bg);font-family:var(--serif);font-size:16.5px;line-height:1.55;resize:vertical}
 .part-meta{margin-top:4px;font-size:14px;color:var(--muted)}
 .sol{margin-top:12px;padding:12px 18px;border:.5px solid var(--fg)}
@@ -571,6 +572,13 @@ function markButtons(f, p, id, m){
   var vals = f.mode === "points" ? range(p.max + 1).map(String) : ["E", "P", "I"];
   return vals.map(function(x){ return '<button type="button" data-mark="' + id + '" data-f="' + f.n + '" data-v="' + x + '" aria-pressed="' + (m === x) + '">' + x + "</button>"; }).join("");
 }
+/* essay: one draft for the whole question; its parts are rubric rows marked against it */
+function essayBox(f){
+  var id = f.n + "essay", d = F.drafts[id] || "";
+  return '<div class="part essay"><label class="sc" for="fr-' + id + '">Your essay</label>' +
+    '<textarea id="fr-' + id + '" data-fr="' + id + '" spellcheck="true">' + esc(d) + "</textarea>" +
+    '<p class="part-meta" id="wc-' + id + '">' + words(d) + " words &middot; saved in this browser</p></div>";
+}
 function renderFR(){
   if (!HAS_FR) return;
   frEl.innerHTML = '<p class="fr-intro">' + META.frIntro + "</p>" +
@@ -582,14 +590,15 @@ function renderFR(){
           ? '<div class="crit-pts">' + p.rubric + "</div>"
           : '<dl class="crit"><dt>E</dt><dd>if the response ' + p.e + "</dd><dt>P</dt><dd>if " + p.p + "</dd></dl>";
         return '<div class="part"><p class="part-prompt"><b>(' + p.label + ")</b>" + p.prompt + "</p>" +
+          (f.essay ? "" :
           '<label class="sc" for="fr-' + id + '">Your answer to (' + p.label + ")</label>" +
           '<textarea id="fr-' + id + '" data-fr="' + id + '" spellcheck="true">' + esc(d) + "</textarea>" +
-          '<p class="part-meta" id="wc-' + id + '">' + words(d) + " words &middot; saved in this browser</p>" +
+          '<p class="part-meta" id="wc-' + id + '">' + words(d) + " words &middot; saved in this browser</p>") +
           '<div class="sol"' + (open ? "" : " hidden") + ' data-sol="' + f.n + '"><h3>Model solution (' + p.label + ")</h3><div>" + p.solution + "</div>" + crit +
             '<div class="mark-row"><span>Your mark for (' + p.label + ")" + (f.mode === "points" ? ", out of " + p.max : "") + ':</span><span class="seg" role="group" aria-label="Mark for part ' + p.label + '">' + markButtons(f, p, id, m) + "</span></div></div></div>";
       }).join("");
       return '<article class="fr"><h2>' + (META.frWord || "Question") + " " + f.n + "<small>" + f.head + "</small></h2>" +
-        (f.stim ? stim(f) : "") + '<div class="fr-stem">' + f.stem + "</div>" + parts +
+        (f.stim ? stim(f) : "") + '<div class="fr-stem">' + f.stem + "</div>" + (f.essay ? essayBox(f) : "") + parts +
         '<div class="fr-actions"><span class="fr-score" id="score-' + f.n + '">' + (open ? frScoreHtml(f) : "") + "</span>" +
           '<button type="button" class="btn" data-open="' + f.n + '" aria-expanded="' + open + '">' + (open ? "Hide model solution" : "Show model solution and scoring") + "</button></div>" +
         (open ? (f.mode === "points" ? "" : SCALE) + topicLinks(f.guide || []) : "") +
