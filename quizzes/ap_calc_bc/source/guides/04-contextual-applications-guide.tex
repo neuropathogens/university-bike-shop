@@ -1,0 +1,100 @@
+\documentclass{apcalc}
+\title{Unit 4: Contextual Applications of Differentiation}
+\author{Paul Wang}
+\date{November 2026}
+\volume{Study Guide 4 of 10 (topics 4.1--4.7)}
+\shorttitle{Unit 4 --- Study Guide}
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Unit 4 turns derivatives into statements about the world: rates with units, velocity and acceleration, related rates, tangent-line approximations, and L'H\^opital's rule for indeterminate limits. It carries 5--10\% of the multiple-choice section, but its interpretation sentences (``the rate is increasing at 3 gallons per hour per hour at $t=5$'') appear on nearly every contextual free-response question. This guide states the unit in nine rules (R4.1--R4.9) across four sections. The \emph{Unit 4 Practice Set} uses the same section numbers.
+\end{abstract}
+\keywords{rate of change in context, units, position, velocity, acceleration, speed, related rates, local linearity, linearization, L'H\^opital's rule, indeterminate forms.}
+
+\section*{Router}
+\begin{router}
+``interpret $f'(5)=-3$'' & value, units, and the input in context & R4.1 \\
+position $s(t)$, ``speeding up?'' & $v=s'$, $a=v'$; speeding up when $v$ and $a$ share a sign & R4.2 \\
+two changing quantities linked by an equation & differentiate the equation with respect to $t$, then substitute & R4.4 \\
+``approximate $f(2.1)$'' & tangent line at the nearby known point & R4.6 \\
+``is the approximation an over- or underestimate?'' & sign of $f''$ between the points & R4.7 \\
+$\lim \frac{f}{g}$ giving $\frac00$ or $\frac{\infty}{\infty}$ & L'H\^opital: $\lim\frac{f'}{g'}$ & R4.9 \\
+$0\cdot\infty$, $\infty-\infty$, $1^\infty$, $0^0$, $\infty^0$ & rewrite as a quotient (or take $\ln$) first & R4.8 \\
+\end{router}
+
+\section{Derivatives in context (4.1--4.3)}
+
+\begin{rulebox}{R4.1}{Meaning and units}
+$f'(a)$ is the instantaneous rate of change of $f$ at $a$; its units are (units of $f$) per (unit of input). A complete interpretation names the quantity, the value with units, and the time: ``$V'(5)=-3$: at $t=5$ minutes the volume of water is decreasing at 3 liters per minute.'' The units of $f''$ are units of $f$ per input unit squared.
+\end{rulebox}
+
+\begin{rulebox}{R4.2}{Straight-line motion}
+Position $x(t)$; velocity $v=x'$; acceleration $a=v'=x''$; speed $=|v|$. The particle moves right when $v>0$, left when $v<0$, and is at rest when $v=0$. It changes direction where $v$ changes sign. \textbf{Speed increases} when $v$ and $a$ have the same sign and decreases when they have opposite signs.
+\end{rulebox}
+
+\begin{example}{speeding up or slowing down?}
+$x(t)=t^3-6t^2+9t$. $v=3t^2-12t+9=3(t-1)(t-3)$, $a=6t-12$. At $t=2$: $v=-3<0$, $a=0$; at $t=2.5$: $v<0$, $a=3>0$, so the particle is slowing down. On $(1,2)$, $v<0$ and $a<0$: speeding up. \answer{speeding up on $(1,2)$ and $(3,\infty)$.}
+\end{example}
+
+\begin{rulebox}{R4.3}{Rates in other contexts}
+Any rate is a derivative: rate of inflow $R(t)$ in gallons per hour, marginal cost $C'(q)$ in dollars per unit, rate of change of temperature in degrees per minute. ``The rate of change of the rate'' is a second derivative and says whether the rate is increasing or decreasing.
+\end{rulebox}
+
+\section{Related rates (4.4--4.5)}
+
+\begin{rulebox}{R4.4}{Procedure}
+(1) Draw and label, using variables for every quantity that changes. (2) Write an equation relating them (geometry, similar triangles, Pythagoras). (3) Differentiate both sides with respect to $t$ (chain rule on every variable). (4) Only then substitute the values at the instant in question, and solve. Substituting a changing quantity before differentiating is the classic error.
+\end{rulebox}
+
+\begin{rulebox}{R4.5}{Useful relations}
+Sphere $V=\frac43\pi r^3$, $S=4\pi r^2$; cone $V=\frac13\pi r^2h$ (use similar triangles to remove $r$ or $h$); cylinder $V=\pi r^2h$; right triangle $x^2+y^2=z^2$; angle of elevation $\tan\theta=\frac{\text{opp}}{\text{adj}}$.
+\end{rulebox}
+
+\begin{example}{a draining cone}
+A cone (vertex down) has height 12 cm and radius 4 cm; water drains at $2$ cm$^3$/s. How fast is the level falling when $h=6$? Similar triangles: $r=\frac h3$, so $V=\frac13\pi\frac{h^2}{9}h=\frac{\pi h^3}{27}$. Then $\frac{dV}{dt}=\frac{\pi h^2}{9}\frac{dh}{dt}$: $-2=\frac{36\pi}{9}\frac{dh}{dt}$, $\frac{dh}{dt}=-\frac{1}{2\pi}$. \answer{falling at $\frac{1}{2\pi}\approx0.159$ cm/s.}
+\end{example}
+
+\section{Local linearity and approximation (4.6)}
+
+\begin{rulebox}{R4.6}{Linearization}
+Near $x=a$, $f(x)\approx L(x)=f(a)+f'(a)(x-a)$, the tangent line. Use the known point closest to the target. Same idea in a table: $f(2.1)\approx f(2)+f'(2)(0.1)$.
+\end{rulebox}
+
+\begin{rulebox}{R4.7}{Over- or underestimate}
+If $f''>0$ (concave up) between $a$ and $x$, the tangent line lies below the curve: $L(x)$ is an \textbf{underestimate}. If $f''<0$ (concave down), $L(x)$ is an \textbf{overestimate}. Justify with the sign of $f''$ on the interval, not at one point.
+\end{rulebox}
+
+\begin{example}{approximating a root}
+$\sqrt{26}$: $f(x)=\sqrt x$, $a=25$, $f'(25)=\frac1{10}$, so $\sqrt{26}\approx5+\frac{1}{10}=5.1$. $f''(x)=-\frac14x^{-3/2}<0$, so 5.1 is an overestimate (true value $5.0990\ldots$). \answer{5.1, an overestimate.}
+\end{example}
+
+\section{L'H\^opital's rule (4.7)}
+
+\begin{rulebox}{R4.8}{Indeterminate forms}
+$\frac00$ and $\frac{\infty}{\infty}$ are the forms L'H\^opital handles directly. Rewrite the others first: $0\cdot\infty$ as $\frac{0}{1/\infty}$; $\infty-\infty$ by combining fractions; $1^\infty$, $0^0$, $\infty^0$ by taking $\ln$, finding the limit of the log, then exponentiating. Forms like $\frac{1}{0}$ or $\frac{0}{\infty}$ are \emph{not} indeterminate.
+\end{rulebox}
+
+\begin{rulebox}{R4.9}{L'H\^opital's rule}
+If $\lim f=\lim g=0$ (or both $\pm\infty$) and $\lim\frac{f'}{g'}$ exists, then $\lim\frac{f}{g}=\lim\frac{f'}{g'}$. Differentiate top and bottom separately (\emph{not} the quotient rule), and you may repeat while the form stays indeterminate.
+\end{rulebox}
+
+\begin{example}{L'H\^opital twice; a $1^\infty$ form}
+$\displaystyle\lim_{x\to0}\frac{e^x-1-x}{x^2}\overset{0/0}{=}\lim\frac{e^x-1}{2x}\overset{0/0}{=}\lim\frac{e^x}{2}=\frac12.$\par
+$\displaystyle\lim_{x\to\infty}\left(1+\frac3x\right)^x$: $\ln y=x\ln(1+\frac3x)=\frac{\ln(1+3/x)}{1/x}\to\frac{3}{1}$, so the limit is $e^3$.
+\end{example}
+
+\begin{frqtip}
+On free response, show that the form is indeterminate before using the rule: write ``$\lim_{x\to2}(\ldots)=0$ and $\lim_{x\to2}(\ldots)=0$, so by L'H\^opital's rule \dots''. A typical item gives a table of $f$, $f'$ at a point and asks for a limit, or uses the limit to find a constant.
+\end{frqtip}
+
+\section{Common errors}
+\begin{itemize}
+\item Interpretations without units or without the time (R4.1).
+\item ``Speed is increasing because $a>0$'' without checking the sign of $v$ (R4.2).
+\item Substituting a changing value before differentiating in related rates (R4.4).
+\item Calling a linear approximation an overestimate because $f'>0$; it is $f''$ that decides (R4.7).
+\item Using the quotient rule inside L'H\^opital, or applying it to a form that is not indeterminate (R4.8--R4.9).
+\end{itemize}
+
+\end{document}

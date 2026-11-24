@@ -1,0 +1,160 @@
+\documentclass{apcalc}
+\title{Unit 10 Practice Set: Infinite Sequences and Series}
+\author{Paul Wang}
+\date{November 2026}
+\volume{Practice Set 10 of 10 (topics 10.1–10.15)}
+\shorttitle{Unit 10 --- Practice Set}
+\begin{document}
+\maketitle
+\begin{abstract}
+Eighteen exam-style multiple-choice questions on Unit 10, grouped by the sections of the Unit 10 Study Guide, and one nine-point free-response question on a power series: interval of convergence, term-by-term differentiation, and the alternating series error bound. All items are no-calculator. Write each answer in the blank beside the number; the key on the last pages gives an answers-only strip, a reason and rule for every item, and the free-response scoring guide.
+\end{abstract}
+\scoringline{18 MC \quad\blank\ / 9 FR}{Exam pace: about 2 minutes per multiple-choice item (36 min) and 15 minutes for the free response.}
+\section*{1\quad Sequences, series, and geometric series}
+\begin{setrule}R10.1–R10.2. A series converges when its partial sums do. Geometric: converges iff $|r|<1$, sum $\frac{\text{first term}}{1-r}$.\end{setrule}
+\begin{q}{1}
+$\displaystyle\sum_{n=1}^{\infty}2\left(-\frac13\right)^n=$
+\chfour{$-\dfrac12$}{$\dfrac12$}{$1$}{$\dfrac32$}
+\end{q}
+\begin{q}{2}
+Let $a_n=\dfrac{n}{2n+1}$. Which statement is true?
+\chone{Both $\{a_n\}$ and $\sum a_n$ converge.}{$\{a_n\}$ converges to $\frac12$, and $\sum a_n$ diverges.}{$\{a_n\}$ converges to 0, and $\sum a_n$ converges.}{Both $\{a_n\}$ and $\sum a_n$ diverge.}
+\end{q}
+\section*{2\quad The $n$th term test, integral test, and $p$-series}
+\begin{setrule}R10.3–R10.5. $\lim a_n\neq0$ means divergence. Integral test needs positive, continuous, decreasing. $\sum n^{-p}$ converges iff $p>1$.\end{setrule}
+\begin{q}{3}
+Which series diverges by the $n$th term test?
+\chfour{$\displaystyle\sum\frac1n$}{$\displaystyle\sum\frac{(-1)^n}{n}$}{$\displaystyle\sum\frac{1}{n^2}$}{$\displaystyle\sum\frac{n}{n+1}$}
+\end{q}
+\begin{q}{4}
+Which series converges?
+\chfour{$\displaystyle\sum\frac{1}{\sqrt n}$}{$\displaystyle\sum n^{-3/2}$}{$\displaystyle\sum\frac{1}{n^{0.99}}$}{$\displaystyle\sum\frac{1}{n}$}
+\end{q}
+\begin{q}{5}
+Which statement about $\displaystyle\sum_{n=2}^{\infty}\frac{1}{n\ln n}$ is true?
+\chtwo{It converges by the $p$-series test.}{It converges because $\frac{1}{n\ln n}\to0$.}{It diverges by the integral test.}{It converges by comparison with $\sum\frac{1}{n^2}$.}
+\end{q}
+\section*{3\quad Comparison tests}
+\begin{setrule}R10.6. Compare positive terms with a $p$-series or geometric series, directly or by a limit.\end{setrule}
+\begin{q}{6}
+Which statement correctly determines the behavior of $\displaystyle\sum_{n=1}^\infty\frac{1}{2^n+3}$?
+\chone{It converges, since $0<\frac{1}{2^n+3}<\frac{1}{2^n}$ and $\sum\frac1{2^n}$ converges.}{It diverges by comparison with $\sum\frac1n$.}{It converges by the $n$th term test.}{It diverges, since $\frac{1}{2^n+3}>\frac{1}{2^{n+2}}$.}
+\end{q}
+\begin{q}{7}
+To determine whether $\displaystyle\sum\frac{2n+1}{n^3+5}$ converges, which series is the best choice for a limit comparison?
+\chfour{$\displaystyle\sum\frac1n$}{$\displaystyle\sum n$}{$\displaystyle\sum\frac{1}{n^3}$}{$\displaystyle\sum\frac{1}{n^2}$}
+\end{q}
+\section*{4\quad Alternating series, the ratio test, and absolute convergence}
+\begin{setrule}R10.7–R10.9. AST: $b_n$ decreasing to 0. Ratio test: $L<1$ converges, $L>1$ diverges, $L=1$ no conclusion.\end{setrule}
+\begin{q}{8}
+The series $\displaystyle\sum_{n=1}^\infty\frac{(-1)^n}{\sqrt n}$
+\chtwo{converges conditionally}{converges absolutely}{diverges by the $n$th term test}{diverges by the $p$-series test}
+\end{q}
+\begin{q}{9}
+For $\displaystyle\sum_{n=1}^\infty\frac{n^2}{3^n}$, the ratio test gives $L=\lim\left|\frac{a_{n+1}}{a_n}\right|$ equal to
+\chfour{$0$}{$\dfrac13$}{$1$}{$3$}
+\end{q}
+\begin{q}{10}
+Which of the series converge conditionally? $$\text{I. }\sum\frac{(-1)^n}{n^2}\qquad\text{II. }\sum\frac{(-1)^n}{n}\qquad\text{III. }\sum\frac{(-1)^nn}{n+1}$$
+\chfour{I only}{I and II only}{II only}{II and III only}
+\end{q}
+\section*{5\quad Error bounds}
+\begin{setrule}R10.10–R10.11. Alternating: error $\le$ first omitted term. Lagrange: $\frac{M}{(n+1)!}|x-a|^{n+1}$.\end{setrule}
+\begin{q}{11}
+$S=\displaystyle\sum_{n=1}^\infty\frac{(-1)^{n+1}}{n^3}$ is approximated by the partial sum $S_4$. The alternating series error bound guarantees $|S-S_4|$ is at most
+\chfour{$\dfrac{1}{216}$}{$\dfrac{1}{125}$}{$\dfrac{1}{64}$}{$\dfrac14$}
+\end{q}
+\begin{q}{12}
+$P_2(x)=1+x+\frac{x^2}{2}$ approximates $e^{0.5}$. Using the maximum of $|f'''|$ on $[0,0.5]$ for $f(x)=e^x$, the Lagrange error bound for $|e^{0.5}-P_2(0.5)|$ is
+\chtwo{$\dfrac{e^{0.5}(0.5)^3}{3!}$}{$\dfrac{(0.5)^3}{3!}$}{$\dfrac{e^{0.5}(0.5)^2}{2!}$}{$\dfrac{e^{0.5}(0.5)^3}{2!}$}
+\end{q}
+\section*{6\quad Taylor polynomials}
+\begin{setrule}R10.12. Coefficient of $(x-a)^k$ is $\frac{f^{(k)}(a)}{k!}$.\end{setrule}
+\begin{q}{13}
+The third-degree Taylor polynomial for $f$ about $x=2$ has $(x-2)^3$ coefficient 5. What is $f'''(2)$?
+\chfour{$\dfrac56$}{$5$}{$15$}{$30$}
+\end{q}
+\begin{q}{14}
+The third-degree Maclaurin polynomial for $f(x)=\ln(1+2x)$ is
+\chtwo{$2x-4x^2+8x^3$}{$x-\dfrac{x^2}{2}+\dfrac{x^3}{3}$}{$2x-2x^2+\dfrac{8x^3}{3}$}{$2x-x^2+\dfrac{2x^3}{3}$}
+\end{q}
+\section*{7\quad Radius and interval of convergence}
+\begin{setrule}R10.13. Ratio test for the radius, then test each endpoint.\end{setrule}
+\begin{q}{15}
+The radius of convergence of $\displaystyle\sum_{n=1}^\infty\frac{n(x-1)^n}{4^n}$ is
+\chfour{$\dfrac14$}{$1$}{$4$}{$\infty$}
+\end{q}
+\begin{q}{16}
+The interval of convergence of $\displaystyle\sum_{n=1}^\infty\frac{(x+1)^n}{\sqrt n}$ is
+\chfour{$(-2,0]$}{$[-2,0)$}{$[-2,0]$}{$(-2,0)$}
+\end{q}
+\section*{8\quad Taylor and Maclaurin series}
+\begin{setrule}R10.14–R10.15. Know $e^x$, $\sin x$, $\cos x$, $\frac{1}{1-x}$, $\ln(1+x)$, $\arctan x$; substitute, multiply, differentiate, integrate.\end{setrule}
+\begin{q}{17}
+In the Maclaurin series for $xe^{-x^2}$, the coefficient of $x^5$ is
+\chfour{$-\dfrac12$}{$\dfrac{1}{120}$}{$\dfrac{1}{24}$}{$\dfrac12$}
+\end{q}
+\begin{q}{18}
+$\displaystyle\lim_{x\to0}\frac{x-\sin x}{x^3}=$
+\chfour{$-\dfrac16$}{$0$}{$\dfrac16$}{$1$}
+\end{q}
+\clearpage\section*{Free response}
+Show all work. Justify every conclusion with calculus, and give decimal answers correct to three places.
+\begin{frq}{Question 1 --- A power series about $x=1$ (9 points, no calculator)}
+The function $f$ is defined by $f(x)=\displaystyle\sum_{n=1}^{\infty}\frac{(-1)^{n+1}(x-1)^n}{n\,2^n}$ for all $x$ in its interval of convergence.
+\partlabel{a}Find the interval of convergence of the series. Show the work that leads to your answer.\workspace{1.6in}
+\partlabel{b}Write the first three nonzero terms and the general term of the Taylor series for $f'(x)$ about $x=1$.\workspace{1.6in}
+\partlabel{c}Use the first two nonzero terms of the series for $f$ to approximate $f(2)$. Show that this approximation differs from $f(2)$ by less than $\frac{1}{20}$.\workspace{1.6in}
+\end{frq}
+\clearpage\section*{Answer key}
+\keystrip{\keyitem{1}{A}\keyitem{2}{B}\keyitem{3}{D}\keyitem{4}{B}\keyitem{5}{C}\keyitem{6}{A}\keyitem{7}{D}\keyitem{8}{A}\keyitem{9}{B}\keyitem{10}{C}\keyitem{11}{B}\keyitem{12}{A}\keyitem{13}{D}\keyitem{14}{C}\keyitem{15}{C}\keyitem{16}{B}\keyitem{17}{D}\keyitem{18}{C}}
+\vspace{4pt}
+\begin{keytable}
+\keysection{1. Sequences, series, and geometric series}
+1 & A & First term $-\frac23$, ratio $-\frac13$: $\frac{-2/3}{4/3}=-\frac12$. & R10.2\\
+2 & B & $a_n\to\frac12\neq0$, so the series diverges by the $n$th term test. & R10.1\\
+\keysection{2. The $n$th term test, integral test, and $p$-series}
+3 & D & $\frac{n}{n+1}\to1\neq0$. & R10.3\\
+4 & B & $p=\frac32>1$. & R10.5\\
+5 & C & $\int_2^\infty\frac{dx}{x\ln x}=\lim[\ln(\ln x)]=\infty$. & R10.4\\
+\keysection{3. Comparison tests}
+6 & A & Direct comparison with a convergent geometric series. & R10.6\\
+7 & D & Dominant terms: $\frac{2n}{n^3}=\frac{2}{n^2}$; the limit of the ratio is 2. & R10.6\\
+\keysection{4. Alternating series, the ratio test, and absolute convergence}
+8 & A & AST gives convergence; $\sum\frac{1}{\sqrt n}$ diverges. & R10.9\\
+9 & B & $\frac{(n+1)^2}{n^2}\cdot\frac13\to\frac13$, so the series converges. & R10.8\\
+10 & C & I converges absolutely; II conditionally; III diverges. & R10.9\\
+\keysection{5. Error bounds}
+11 & B & First omitted term: $\frac{1}{5^3}$. & R10.10\\
+12 & A & $M=\max_{[0,0.5]}e^z=e^{0.5}$; bound $\frac{M}{3!}(0.5)^3$. & R10.11\\
+\keysection{6. Taylor polynomials}
+13 & D & $\frac{f'''(2)}{3!}=5$. & R10.12\\
+14 & C & Substitute $2x$ into $u-\frac{u^2}{2}+\frac{u^3}{3}$. & R10.14\\
+\keysection{7. Radius and interval of convergence}
+15 & C & $\frac{n+1}{n}\cdot\frac{|x-1|}{4}\to\frac{|x-1|}{4}<1$. & R10.13\\
+16 & B & Radius 1 about $-1$; $x=-2$: AST converges; $x=0$: $p=\frac12$ diverges. & R10.13\\
+\keysection{8. Taylor and Maclaurin series}
+17 & D & $x(1-x^2+\frac{x^4}{2!}-\cdots)$: the $x^5$ term is $\frac{x^5}{2}$. & R10.15\\
+18 & C & $x-\sin x=\frac{x^3}{6}-\frac{x^5}{120}+\cdots$. & R10.15\\
+\end{keytable}
+\section*{Free-response scoring guide}
+\subsection*{Question 1: A power series about $x=1$ (9 points)}
+\textbf{(a)} $\left|\frac{a_{n+1}}{a_n}\right|=\frac{n}{n+1}\cdot\frac{|x-1|}{2}\to\frac{|x-1|}{2}$; $<1$ gives $-1<x<3$. At $x=3$: $\sum\frac{(-1)^{n+1}}{n}$, terms decrease to 0 in absolute value, so it converges by the alternating series test. At $x=-1$: $\sum\frac{(-1)^{n+1}(-1)^n}{n}=-\sum\frac1n$, a multiple of the harmonic series: diverges. Interval: $-1<x\le3$.
+\begin{itemize}[leftmargin=1.6em,itemsep=0pt]
+\item 1 point: sets up the ratio $\left|\frac{a_{n+1}}{a_n}\right|$
+\item 1 point: limit $\frac{|x-1|}{2}$ and the open interval $-1<x<3$
+\item 1 point: endpoint $x=3$: converges by the AST (with reason)
+\item 1 point: endpoint $x=-1$: diverges (harmonic); interval $(-1,3]$
+\end{itemize}
+\textbf{(b)} Differentiate term by term: $f'(x)=\frac12-\frac{x-1}{4}+\frac{(x-1)^2}{8}-\cdots+\frac{(-1)^{n+1}(x-1)^{n-1}}{2^n}+\cdots$.
+\begin{itemize}[leftmargin=1.6em,itemsep=0pt]
+\item 1 point: first three terms $\frac12-\frac{x-1}{4}+\frac{(x-1)^2}{8}$
+\item 1 point: general term $\frac{(-1)^{n+1}(x-1)^{n-1}}{2^n}$
+\end{itemize}
+\textbf{(c)} $f(2)=\sum\frac{(-1)^{n+1}}{n\,2^n}=\frac12-\frac18+\frac1{24}-\cdots\approx\frac38$. The terms alternate in sign and $\frac{1}{n2^n}$ decreases to 0, so by the alternating series error bound $\left|f(2)-\frac38\right|\le\frac{1}{24}<\frac{1}{20}$.
+\begin{itemize}[leftmargin=1.6em,itemsep=0pt]
+\item 1 point: approximation $\frac12-\frac18=\frac38$
+\item 1 point: the series for $f(2)$ alternates with terms decreasing to 0 (AST conditions)
+\item 1 point: error bound $\frac{1}{24}<\frac1{20}$
+\end{itemize}
+\end{document}

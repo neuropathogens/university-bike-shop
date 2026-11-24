@@ -1,0 +1,145 @@
+\documentclass{apcalc}
+\title{Unit 5 Practice Set: Analytical Applications of Differentiation}
+\author{Paul Wang}
+\date{November 2026}
+\volume{Practice Set 5 of 10 (topics 5.1–5.12)}
+\shorttitle{Unit 5 --- Practice Set}
+\begin{document}
+\maketitle
+\begin{abstract}
+Fifteen exam-style multiple-choice questions on Unit 5, grouped by the sections of the Unit 5 Study Guide, and one nine-point free-response question that analyzes a function from its derivative. Items marked [calculator] allow a graphing calculator; the rest are no-calculator. Write each answer in the blank beside the number; the key on the last pages gives an answers-only strip, a reason and rule for every item, and the free-response scoring guide.
+\end{abstract}
+\scoringline{15 MC \quad\blank\ / 9 FR}{Exam pace: about 2 minutes per multiple-choice item (30 min) and 15 minutes for the free response.}
+\section*{1\quad Mean Value and Extreme Value Theorems}
+\begin{setrule}R5.1–R5.2. MVT: continuous on $[a,b]$, differentiable on $(a,b)$ gives $f'(c)=\frac{f(b)-f(a)}{b-a}$. EVT needs a closed interval.\end{setrule}
+\begin{q}{1}
+For $f(x)=x^3$ on $[0,3]$, the value of $c$ guaranteed by the Mean Value Theorem is
+\chfour{$0$}{$\dfrac32$}{$\sqrt3$}{$3$}
+\end{q}
+\begin{q}{2}
+Which function satisfies the hypotheses of the Mean Value Theorem on $[-1,1]$?
+\chfour{$x^3-x$}{$|x|$}{$x^{2/3}$}{$\dfrac1x$}
+\end{q}
+\begin{q}{3}
+Which function is guaranteed by the Extreme Value Theorem to have an absolute maximum on the given interval?
+\chtwo{$\dfrac1x$ on $(0,1]$}{$\tan x$ on $\left[0,\frac\pi2\right)$}{$x^2$ on $(-1,2)$}{$\cos x$ on $[0,5]$}
+\end{q}
+\section*{2\quad Increasing, decreasing, and extrema}
+\begin{setrule}R5.3–R5.6. Critical points: $f'=0$ or undefined. Extremum where $f'$ changes sign. Absolute extrema: critical points and endpoints.\end{setrule}
+\begin{q}{4}
+The critical points of $f(x)=x^{2/3}(x-5)$ are
+\chfour{$x=2$ only}{$x=0$ and $x=2$}{$x=0$ and $x=5$}{$x=5$ only}
+\end{q}
+\begin{q}{5}
+If $f'(x)=(x-2)^2(x+1)(x-4)$, at which values of $x$ does $f$ have a relative minimum?
+\chfour{$x=-1$ only}{$x=2$ and $x=4$}{$x=4$ only}{$x=-1$ and $x=4$}
+\end{q}
+\begin{q}{6}
+What is the absolute maximum value of $f(x)=x^3-12x$ on $[-3,5]$?
+\chfour{$-16$}{$9$}{$16$}{$65$}
+\end{q}
+\begin{q}{7}
+On which interval is $f(x)=xe^{-x}$ increasing?
+\chfour{$(-\infty,1)$}{$(1,\infty)$}{$(0,\infty)$}{$(-\infty,0)$}
+\end{q}
+\section*{3\quad Concavity and the second derivative test}
+\begin{setrule}R5.7–R5.8. Inflection where $f''$ changes sign. $f'(c)=0$, $f''(c)<0$: max; $f''(c)>0$: min.\end{setrule}
+\begin{q}{8}
+At which values of $x$ does $f(x)=x^4-4x^3$ have a point of inflection?
+\chfour{$x=0$ only}{$x=2$ only}{$x=3$ only}{$x=0$ and $x=2$}
+\end{q}
+\begin{q}{9}
+$f$ is twice differentiable with $f'(2)=0$ and $f''(2)=-5$. At $x=2$, $f$ has
+\chtwo{a relative minimum}{a relative maximum}{a point of inflection}{none of these; the test is inconclusive}
+\end{q}
+\begin{q}{10}
+If $f'(x)=x^3-3x$, on which interval is the graph of $f$ concave down?
+\chfour{$(-\sqrt3,\sqrt3)$}{$(-1,1)$}{$(1,\infty)$}{$(-\infty,-1)$}
+\end{q}
+\section*{4\quad Connecting $f$, $f'$ and $f''$}
+\begin{setrule}R5.9. On a graph of $f'$: above the axis, $f$ increases; rising, $f$ is concave up; crossing from $+$ to $-$, $f$ has a maximum.\end{setrule}
+\begin{q}{11}
+The graph of $f'$, the derivative of $f$, is shown for $0\le x\le7$. At what value of $x$ does $f$ have a relative maximum?
+\begin{center}\includegraphics[width=0.45\linewidth]{figs/u5-q11.pdf}\end{center}
+\chfour{$1$}{$2$}{$5$}{$7$}
+\end{q}
+\begin{q}{12}
+For the same graph of $f'$, on which intervals is the graph of $f$ concave up?
+\begin{center}\includegraphics[width=0.45\linewidth]{figs/u5-q11.pdf}\end{center}
+\chfour{$(0,2)$ and $(6,7)$}{$(1,5)$}{$(2,4)$}{$(0,1)$ and $(5,7)$}
+\end{q}
+\section*{5\quad Optimization}
+\begin{setrule}R5.10. One variable, critical points, then justify the absolute extremum.\end{setrule}
+\begin{q}{13}
+An open-top box with a square base must hold 32 ft³. Which dimensions minimize the surface area (base side × base side × height)?
+\chtwo{$2\times2\times8$}{$3\times3\times\frac{32}{9}$}{$\sqrt[3]{32}$ on every side}{$4\times4\times2$}
+\end{q}
+\begin{q}{14}
+The derivative of $f$ is $f'(x)=e^{\sin x}-1.5$ for $0\le x\le6$. At what value of $x$ does $f$ have a relative maximum?\calcmark
+\chfour{$0.417$}{$1.571$}{$2.724$}{$3.142$}
+\end{q}
+\section*{6\quad Behaviors of implicit relations}
+\begin{setrule}R5.11. Signs of $\frac{dy}{dx}$ and $\frac{d^2y}{dx^2}$ at a point describe an implicit curve there.\end{setrule}
+\begin{q}{15}
+Consider the curve $xy^2=4$ with $y>0$. At the point $(1,2)$, the curve is
+\chtwo{increasing and concave up}{decreasing and concave up}{increasing and concave down}{decreasing and concave down}
+\end{q}
+\clearpage\section*{Free response}
+Show all work. Justify every conclusion with calculus, and give decimal answers correct to three places.
+\begin{frq}{Question 1 --- Analyzing a function from its derivative (9 points, no calculator)}
+A function $f$ is differentiable on $[-3,4]$ with $f'(x)=\dfrac{x^2-x-2}{2}$. It is known that $f(0)=4$, $f(3)=\frac{13}{4}$ and $f(4)=\frac{20}{3}$.
+\partlabel{a}Find the $x$-coordinates of all relative extrema of $f$ on $(-3,4)$ and classify each. Justify your answers.\workspace{1.6in}
+\partlabel{b}On what open interval is the graph of $f$ concave up? Justify your answer.\workspace{1.6in}
+\partlabel{c}Must there be a value $c$, $0<c<4$, with $f'(c)=\frac23$? Justify your answer.\workspace{1.6in}
+\partlabel{d}Write an equation for the line tangent to the graph of $f$ at $x=3$, and use it to approximate $f(3.2)$. Is the approximation an overestimate or an underestimate? Give a reason.\workspace{1.6in}
+\end{frq}
+\clearpage\section*{Answer key}
+\keystrip{\keyitem{1}{C}\keyitem{2}{A}\keyitem{3}{D}\keyitem{4}{B}\keyitem{5}{C}\keyitem{6}{D}\keyitem{7}{A}\keyitem{8}{D}\keyitem{9}{B}\keyitem{10}{B}\keyitem{11}{C}\keyitem{12}{A}\keyitem{13}{D}\keyitem{14}{C}\keyitem{15}{B}}
+\vspace{4pt}
+\begin{keytable}
+\keysection{1. Mean Value and Extreme Value Theorems}
+1 & C & $3c^2=\frac{27-0}{3}=9$, so $c=\sqrt3$. & R5.1\\
+2 & A & A polynomial is continuous and differentiable everywhere. & R5.1\\
+3 & D & Continuous on a closed interval. & R5.2\\
+\keysection{2. Increasing, decreasing, and extrema}
+4 & B & $f'=\frac{5(x-2)}{3x^{1/3}}$: zero at 2, undefined at 0. & R5.3\\
+5 & C & $f'$ changes from $-$ to $+$ only at 4; no sign change at 2. & R5.5\\
+6 & D & Candidates: $f(-3)=9$, $f(-2)=16$, $f(2)=-16$, $f(5)=65$. & R5.6\\
+7 & A & $f'=e^{-x}(1-x)>0$ for $x<1$. & R5.4\\
+\keysection{3. Concavity and the second derivative test}
+8 & D & $f''=12x(x-2)$ changes sign at 0 and at 2. & R5.7\\
+9 & B & Second derivative test: $f'=0$ and $f''<0$ give a maximum. & R5.8\\
+10 & B & $f''=3x^2-3<0$ on $(-1,1)$. & R5.7\\
+\keysection{4. Connecting $f$, $f'$ and $f''$}
+11 & C & $f'$ changes from positive to negative at $x=5$. & R5.9\\
+12 & A & $f'$ is increasing on $(0,2)$ and $(6,7)$. & R5.9\\
+\keysection{5. Optimization}
+13 & D & $S=x^2+\frac{128}{x}$; $S'=0$ at $x=4$, so $h=2$. & R5.10\\
+14 & C & $f'=0$ where $\sin x=\ln1.5$; $f'$ changes $+$ to $-$ at $x\approx2.724$. & R5.5, \emph{calc}\\
+\keysection{6. Behaviors of implicit relations}
+15 & B & $\frac{dy}{dx}=-\frac{y}{2x}=-1<0$; $\frac{d^2y}{dx^2}=\frac32>0$. & R5.11\\
+\end{keytable}
+\section*{Free-response scoring guide}
+\subsection*{Question 1: Analyzing a function from its derivative (9 points)}
+\textbf{(a)} $f'(x)=\frac{(x-2)(x+1)}{2}=0$ at $x=-1$ and $x=2$. $f'$ changes from positive to negative at $x=-1$: relative maximum. $f'$ changes from negative to positive at $x=2$: relative minimum.
+\begin{itemize}[leftmargin=1.6em,itemsep=0pt]
+\item 1 point: relative maximum at $x=-1$ with justification ($f'$ changes from positive to negative)
+\item 1 point: relative minimum at $x=2$ with justification ($f'$ changes from negative to positive)
+\end{itemize}
+\textbf{(b)} $f''(x)=\frac{2x-1}{2}=x-\frac12$, positive for $x>\frac12$. Concave up on $(\frac12,4)$.
+\begin{itemize}[leftmargin=1.6em,itemsep=0pt]
+\item 1 point: $f''(x)=x-\frac12$
+\item 1 point: concave up on $(\frac12,4)$ because $f''>0$ there
+\end{itemize}
+\textbf{(c)} $\frac{f(4)-f(0)}{4-0}=\frac{20/3-4}{4}=\frac23$. $f$ is differentiable on $[-3,4]$, so it is continuous on $[0,4]$ and differentiable on $(0,4)$. By the MVT there is a $c$ in $(0,4)$ with $f'(c)=\frac23$.
+\begin{itemize}[leftmargin=1.6em,itemsep=0pt]
+\item 1 point: average rate of change $\frac{f(4)-f(0)}{4}=\frac23$
+\item 1 point: yes, by the MVT, citing that $f$ is differentiable (hence continuous)
+\end{itemize}
+\textbf{(d)} $f'(3)=\frac{9-3-2}{2}=2$, so $y=\frac{13}{4}+2(x-3)$. $f(3.2)\approx\frac{13}{4}+2(0.2)=3.65$. $f''(x)=x-\frac12>0$ on $[3,3.2]$, so the graph is concave up and lies above its tangent line: an underestimate.
+\begin{itemize}[leftmargin=1.6em,itemsep=0pt]
+\item 1 point: tangent line $y=\frac{13}{4}+2(x-3)$
+\item 1 point: approximation $f(3.2)\approx3.65$
+\item 1 point: underestimate, because $f''>0$ (concave up) on $[3,3.2]$
+\end{itemize}
+\end{document}

@@ -1,0 +1,122 @@
+\documentclass{apcalc}
+\title{Unit 7 Practice Set: Differential Equations}
+\author{Paul Wang}
+\date{November 2026}
+\volume{Practice Set 7 of 10 (topics 7.1–7.9)}
+\shorttitle{Unit 7 --- Practice Set}
+\begin{document}
+\maketitle
+\begin{abstract}
+Twelve exam-style multiple-choice questions on Unit 7, grouped by the sections of the Unit 7 Study Guide, and one nine-point free-response question on a separable differential equation. Items marked [calculator] allow a graphing calculator; the rest are no-calculator. Write each answer in the blank beside the number; the key on the last pages gives an answers-only strip, a reason and rule for every item, and the free-response scoring guide.
+\end{abstract}
+\scoringline{12 MC \quad\blank\ / 9 FR}{Exam pace: about 2 minutes per multiple-choice item (24 min) and 15 minutes for the free response.}
+\section*{1\quad Modeling and verifying solutions}
+\begin{setrule}R7.1–R7.2. “Proportional to $X$” means $\frac{dy}{dt}=kX$. Verify by substituting the function and its derivatives.\end{setrule}
+\begin{q}{1}
+A rumor spreads through a school of 500 students. The rate at which the number $y$ who have heard it increases is proportional to the product of the number who have heard it and the number who have not. Which equation models this?
+\chtwo{$\dfrac{dy}{dt}=ky(500-y)$}{$\dfrac{dy}{dt}=k(500-y)$}{$\dfrac{dy}{dt}=ky$}{$\dfrac{dy}{dt}=k\dfrac{y}{500-y}$}
+\end{q}
+\begin{q}{2}
+Which function is a solution of $y''+4y=0$?
+\chfour{$e^{2x}$}{$x^2-2$}{$\sin(2x)$}{$\cos(4x)$}
+\end{q}
+\section*{2\quad Slope fields}
+\begin{setrule}R7.3. Slopes constant along verticals: depends on $x$ only; along horizontals: $y$ only. Check signs and zero slopes.\end{setrule}
+\begin{q}{3}
+The slope field shown is for which differential equation?
+\begin{center}\includegraphics[width=0.36\linewidth]{figs/u7-q3.pdf}\end{center}
+\chfour{$\dfrac{dy}{dx}=x+y$}{$\dfrac{dy}{dx}=x-y$}{$\dfrac{dy}{dx}=y-x$}{$\dfrac{dy}{dx}=xy$}
+\end{q}
+\begin{q}{4}
+Let $y=f(x)$ be the solution of $\dfrac{dy}{dx}=(y-1)(y-4)$ with $f(0)=2$. As $x$ increases, $f(x)$
+\chtwo{increases and approaches 4}{decreases without bound}{remains constant at 2}{decreases and approaches 1}
+\end{q}
+\section*{3\quad Euler's method}
+\begin{setrule}R7.4. $y_{\text{new}}=y+\Delta x\cdot\frac{dy}{dx}$ at the current point; concave up solutions are underestimated.\end{setrule}
+\begin{q}{5}
+Let $y=f(x)$ solve $\dfrac{dy}{dx}=2x-y$ with $f(1)=3$. Euler's method with two steps of size $0.5$ gives which approximation of $f(2)$?
+\chfour{$2$}{$2.5$}{$2.75$}{$3.25$}
+\end{q}
+\begin{q}{6}
+Let $y=f(x)$ solve $\dfrac{dy}{dx}=y^2$ with $f(0)=1$. Euler's method with one step of size $0.1$ approximates $f(0.1)$ as
+\chtwo{$1.1$, an underestimate}{$1.1$, an overestimate}{$1.01$, an underestimate}{$1.2$, an overestimate}
+\end{q}
+\section*{4\quad Separation of variables}
+\begin{setrule}R7.5–R7.6. Separate, integrate both sides, use the initial condition at once, then solve for $y$.\end{setrule}
+\begin{q}{7}
+The general solution of $\dfrac{dy}{dx}=xy$ is
+\chfour{$y=e^{x^2/2}+C$}{$y=Ce^{x^2}$}{$y=\dfrac{x^2}{2}+C$}{$y=Ce^{x^2/2}$}
+\end{q}
+\begin{q}{8}
+The solution of $\dfrac{dy}{dx}=2xy^2$ with $y(0)=1$ is
+\chfour{$y=\dfrac{1}{1+x^2}$}{$y=e^{x^2}$}{$y=\dfrac{1}{1-x^2}$}{$y=1-x^2$}
+\end{q}
+\begin{q}{9}
+The particular solution $y=\dfrac{1}{1-x^2}$ through $(0,1)$ is defined on which interval?
+\chfour{all real numbers}{$-1<x<1$}{$x\neq\pm1$}{$x>1$}
+\end{q}
+\section*{5\quad Exponential and logistic models}
+\begin{setrule}R7.7–R7.8. $y=y_0e^{kt}$. Logistic $\frac{dP}{dt}=kP(1-\frac PL)$: limit $L$, fastest growth at $\frac L2$.\end{setrule}
+\begin{q}{10}
+A population grows at a rate proportional to its size. It is 200 at $t=0$ and doubles every 5 years. What is it at $t=15$?
+\chfour{$800$}{$1200$}{$1600$}{$3200$}
+\end{q}
+\begin{q}{11}
+Coffee at 90°C cools in a 20°C room according to $\dfrac{dT}{dt}=-0.1(T-20)$, $t$ in minutes. What is its temperature at $t=10$?\calcmark
+\chfour{$20.00$}{$25.75$}{$33.11$}{$45.75$}
+\end{q}
+\begin{q}{12}
+A population satisfies $\dfrac{dP}{dt}=0.3P-0.0006P^2$ with $P(0)=100$. Which statement is true?
+\chone{$\lim_{t\to\infty}P(t)=250$, and $P$ grows fastest when $P=500$}{$\lim_{t\to\infty}P(t)=500$, and $P$ grows fastest when $P=250$}{$\lim_{t\to\infty}P(t)=500$, and $P$ grows fastest when $P=500$}{$\lim_{t\to\infty}P(t)=500$, and $P$ grows fastest at $t=0$}
+\end{q}
+\clearpage\section*{Free response}
+Show all work. Justify every conclusion with calculus, and give decimal answers correct to three places.
+\begin{frq}{Question 1 --- A separable differential equation (9 points, no calculator)}
+Consider the differential equation $\dfrac{dy}{dx}=x(y-1)$. Let $y=f(x)$ be the particular solution with $f(2)=3$.
+\partlabel{a}Write an equation for the line tangent to the graph of $f$ at $x=2$, and use it to approximate $f(2.1)$.\workspace{1.6in}
+\partlabel{b}Find $\dfrac{d^2y}{dx^2}$ in terms of $x$ and $y$. Is the approximation in part (a) an overestimate or an underestimate? Justify your answer.\workspace{1.6in}
+\partlabel{c}Find $y=f(x)$, the particular solution with $f(2)=3$.\workspace{1.6in}
+\end{frq}
+\clearpage\section*{Answer key}
+\keystrip{\keyitem{1}{A}\keyitem{2}{C}\keyitem{3}{B}\keyitem{4}{D}\keyitem{5}{C}\keyitem{6}{A}\keyitem{7}{D}\keyitem{8}{C}\keyitem{9}{B}\keyitem{10}{C}\keyitem{11}{D}\keyitem{12}{B}}
+\vspace{4pt}
+\begin{keytable}
+\keysection{1. Modeling and verifying solutions}
+1 & A & Proportional to the product: $k\cdot y\cdot(500-y)$. & R7.1\\
+2 & C & $y''=-4\sin2x$, so $y''+4y=0$. & R7.2\\
+\keysection{2. Slope fields}
+3 & B & Zero slopes along $y=x$; at $(2,0)$ the slope is positive. & R7.3\\
+4 & D & For $1<y<4$, $\frac{dy}{dx}<0$; the solution falls toward the equilibrium $y=1$. & R7.3\\
+\keysection{3. Euler's method}
+5 & C & $3+0.5(-1)=2.5$; then $2.5+0.5(3-2.5)=2.75$. & R7.4\\
+6 & A & $1+0.1(1)=1.1$; $y''=2yy'=2y^3>0$, so Euler underestimates. & R7.4\\
+\keysection{4. Separation of variables}
+7 & D & $\int\frac{dy}y=\int x\,dx$: $\ln|y|=\frac{x^2}{2}+C$. & R7.5\\
+8 & C & $-\frac1y=x^2+C$, $C=-1$, so $y=\frac{1}{1-x^2}$. & R7.6\\
+9 & B & The largest interval containing $x=0$ where $1-x^2\neq0$. & R7.6\\
+\keysection{5. Exponential and logistic models}
+10 & C & Three doublings: $200\cdot2^3$. & R7.7\\
+11 & D & $T=20+70e^{-0.1t}$; $T(10)=20+70e^{-1}$. & R7.7, \emph{calc}\\
+12 & B & $0.3P(1-\frac{P}{500})$: $L=500$, fastest at $\frac L2=250$. & R7.8\\
+\end{keytable}
+\section*{Free-response scoring guide}
+\subsection*{Question 1: A separable differential equation (9 points)}
+\textbf{(a)} At $(2,3)$: $\frac{dy}{dx}=2(3-1)=4$. Tangent: $y=3+4(x-2)$, so $f(2.1)\approx3.4$.
+\begin{itemize}[leftmargin=1.6em,itemsep=0pt]
+\item 1 point: tangent line $y=3+4(x-2)$
+\item 1 point: approximation $f(2.1)\approx3.4$
+\end{itemize}
+\textbf{(b)} $\frac{d^2y}{dx^2}=(y-1)+x\frac{dy}{dx}=(y-1)+x^2(y-1)=(y-1)(1+x^2)$. At $(2,3)$ this is $2\cdot5=10>0$, and it stays positive near $x=2$ (where $y>1$), so the graph of $f$ is concave up there and lies above its tangent line: an underestimate.
+\begin{itemize}[leftmargin=1.6em,itemsep=0pt]
+\item 1 point: $\frac{d^2y}{dx^2}=(y-1)+x\frac{dy}{dx}$
+\item 1 point: $=(y-1)(1+x^2)$, equal to 10 at $(2,3)$
+\item 1 point: underestimate, because the graph is concave up near $x=2$
+\end{itemize}
+\textbf{(c)} $\frac{dy}{y-1}=x\,dx$, so $\ln|y-1|=\frac{x^2}{2}+C$. At $(2,3)$: $\ln2=2+C$, so $C=\ln2-2$. $y-1>0$ near the initial point, so $y-1=e^{x^2/2+\ln2-2}=2e^{x^2/2-2}$ and $y=1+2e^{x^2/2-2}$.
+\begin{itemize}[leftmargin=1.6em,itemsep=0pt]
+\item 1 point: separates variables
+\item 1 point: antiderivatives $\ln|y-1|$ and $\frac{x^2}{2}$
+\item 1 point: uses the initial condition: $\ln2=2+C$
+\item 1 point: solves for $y$: $y=1+2e^{x^2/2-2}$
+\end{itemize}
+\end{document}

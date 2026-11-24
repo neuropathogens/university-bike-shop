@@ -1,0 +1,125 @@
+\documentclass{apcalc}
+\title{Unit 8 Practice Set: Applications of Integration}
+\author{Paul Wang}
+\date{November 2026}
+\volume{Practice Set 8 of 10 (topics 8.1–8.13)}
+\shorttitle{Unit 8 --- Practice Set}
+\begin{document}
+\maketitle
+\begin{abstract}
+Twelve exam-style multiple-choice questions on Unit 8, grouped by the sections of the Unit 8 Study Guide, and one nine-point calculator-active free-response question on the area and volumes of a region between two curves. Items marked [calculator] allow a graphing calculator; the rest are no-calculator. Write each answer in the blank beside the number; the key on the last pages gives an answers-only strip, a reason and rule for every item, and the free-response scoring guide.
+\end{abstract}
+\scoringline{12 MC \quad\blank\ / 9 FR}{Exam pace: about 2 minutes per multiple-choice item (24 min) and 15 minutes for the free response.}
+\section*{1\quad Average value}
+\begin{setrule}R8.1. $f_{\text{avg}}=\frac{1}{b-a}\int_a^bf$; not the average rate of change.\end{setrule}
+\begin{q}{1}
+What is the average value of $f(x)=x^2$ on $[0,6]$?
+\chfour{$6$}{$12$}{$18$}{$72$}
+\end{q}
+\section*{2\quad Motion and accumulation in context}
+\begin{setrule}R8.2–R8.3. Displacement $\int v$; distance $\int|v|$; amount $=A_0+\int(\text{in}-\text{out})$.\end{setrule}
+\begin{q}{2}
+A particle moves with velocity $v(t)=t^2-4t+3$. What is the total distance it travels for $0\le t\le3$?
+\chfour{$0$}{$\dfrac43$}{$2$}{$\dfrac83$}
+\end{q}
+\begin{q}{3}
+A particle is at $x=5$ when $t=0$ and has velocity $v(t)=3t^2-2$. Where is it at $t=2$?
+\chfour{$4$}{$9$}{$10$}{$15$}
+\end{q}
+\begin{q}{4}
+Water enters a tank at $E(t)=8+4\sin t$ gallons per hour and leaves at $L(t)=2t$ gallons per hour, $0\le t\le6$. The tank holds 20 gallons at $t=0$. At what time is the amount of water in the tank greatest?\calcmark
+\chfour{$1.571$}{$3.430$}{$4.000$}{$6.000$}
+\end{q}
+\section*{3\quad Area between curves}
+\begin{setrule}R8.4–R8.6. $\int(\text{top}-\text{bottom})\,dx$ or $\int(\text{right}-\text{left})\,dy$; split where curves cross.\end{setrule}
+\begin{q}{5}
+What is the area of the region between $y=x$ and $y=x^2-2x$?
+\chfour{$-\dfrac92$}{$\dfrac43$}{$\dfrac92$}{$\dfrac{27}{2}$}
+\end{q}
+\begin{q}{6}
+The region is bounded by $x=y^2$ and $x=y+2$. Which integral gives its area?
+\chtwo{$\displaystyle\int_{-1}^{2}(y+2-y^2)\,dy$}{$\displaystyle\int_{-1}^{2}(y^2-y-2)\,dy$}{$\displaystyle\int_{1}^{4}\left(\sqrt x-(x-2)\right)dx$}{$\displaystyle\int_{0}^{4}(y+2-y^2)\,dy$}
+\end{q}
+\section*{4\quad Volumes}
+\begin{setrule}R8.7–R8.10. Cross sections $\int A(x)\,dx$; discs $\pi\int R^2$; washers $\pi\int(R^2-r^2)$; radii from the axis.\end{setrule}
+\begin{q}{7}
+The base of a solid is the region under $y=\sqrt x$ for $0\le x\le4$. Cross sections perpendicular to the $x$-axis are squares. What is the volume?
+\chfour{$\pi$}{$\dfrac{16}{3}$}{$8$}{$8\pi$}
+\end{q}
+\begin{q}{8}
+The region under $y=e^x$ for $0\le x\le1$ is revolved about the $x$-axis. The volume is
+\chfour{$\dfrac{e^2-1}{2}$}{$\pi(e-1)$}{$\dfrac{\pi(e^2-1)}{2}$}{$\pi(e^2-1)$}
+\end{q}
+\begin{q}{9}
+The region between $y=x$ and $y=x^2$ is revolved about the $x$-axis. The volume is
+\chfour{$-\dfrac{2\pi}{15}$}{$\dfrac{\pi}{30}$}{$\dfrac{2}{15}$}{$\dfrac{2\pi}{15}$}
+\end{q}
+\begin{q}{10}
+The region bounded by $y=x^2$ and $y=4$ is revolved about the line $y=4$. Which integral gives the volume?
+\chtwo{$\displaystyle\pi\int_{-2}^{2}(4-x^2)^2\,dx$}{$\displaystyle\pi\int_{-2}^{2}(16-x^4)\,dx$}{$\displaystyle\pi\int_{-2}^{2}(4-x^2)\,dx$}{$\displaystyle\pi\int_{-2}^{2}x^4\,dx$}
+\end{q}
+\section*{5\quad Arc length}
+\begin{setrule}R8.11. $L=\int_a^b\sqrt{1+(f')^2}\,dx$.\end{setrule}
+\begin{q}{11}
+The length of the curve $y=\ln(\cos x)$ from $x=0$ to $x=\frac\pi4$ is
+\chfour{$\ln\sqrt2$}{$\sqrt2-1$}{$\dfrac{\pi}{4}$}{$\ln(1+\sqrt2)$}
+\end{q}
+\begin{q}{12}
+What is the length of the curve $y=x^3$ from $x=0$ to $x=1$?\calcmark
+\chfour{$1.380$}{$1.414$}{$1.548$}{$2.800$}
+\end{q}
+\clearpage\section*{Free response}
+Calculator required. Show the integral you evaluate, and give decimal answers correct to three places.
+\begin{frq}{Question 1 --- Area and volume (9 points, calculator required)}
+Let $R$ be the region enclosed by the graphs of $f(x)=3-x^2$ and $g(x)=e^x-1$. The graphs intersect at $x=a$ and $x=b$, where $a<0<b$.
+\partlabel{a}Find the area of $R$.\workspace{1.6in}
+\partlabel{b}Find the volume of the solid generated when $R$ is revolved about the horizontal line $y=-2$.\workspace{1.6in}
+\partlabel{c}$R$ is the base of a solid whose cross sections perpendicular to the $x$-axis are squares. Find the volume of the solid.\workspace{1.6in}
+\partlabel{d}The vertical line $x=k$ divides $R$ into two regions of equal area. Write, but do not solve, an equation involving one or more integrals whose solution gives $k$.\workspace{1.6in}
+\end{frq}
+\clearpage\section*{Answer key}
+\keystrip{\keyitem{1}{B}\keyitem{2}{D}\keyitem{3}{B}\keyitem{4}{B}\keyitem{5}{C}\keyitem{6}{A}\keyitem{7}{C}\keyitem{8}{C}\keyitem{9}{D}\keyitem{10}{A}\keyitem{11}{D}\keyitem{12}{C}}
+\vspace{4pt}
+\begin{keytable}
+\keysection{1. Average value}
+1 & B & $\frac16\int_0^6x^2\,dx=\frac{72}{6}$. & R8.1\\
+\keysection{2. Motion and accumulation in context}
+2 & D & $\int_0^1v=\frac43$ and $\int_1^3|v|=\frac43$. & R8.2\\
+3 & B & $5+\int_0^2(3t^2-2)\,dt=5+4$. & R8.2\\
+4 & B & $E-L$ changes from $+$ to $-$ at $t\approx3.430$; that amount beats both endpoints. & R8.3, \emph{calc}\\
+\keysection{3. Area between curves}
+5 & C & They meet at $x=0,3$; $\int_0^3(3x-x^2)\,dx=\frac92$. & R8.4\\
+6 & A & In $y$: right $x=y+2$ minus left $x=y^2$, from $y=-1$ to $2$. & R8.5\\
+\keysection{4. Volumes}
+7 & C & $\int_0^4(\sqrt x)^2\,dx=8$. & R8.7\\
+8 & C & $\pi\int_0^1e^{2x}\,dx=\frac\pi2(e^2-1)$. & R8.8\\
+9 & D & $\pi\int_0^1(x^2-x^4)\,dx=\frac{2\pi}{15}$. & R8.9\\
+10 & A & The region touches the axis $y=4$; disc radius $4-x^2$. & R8.10\\
+\keysection{5. Arc length}
+11 & D & $\sqrt{1+\tan^2x}=\sec x$; $\int_0^{\pi/4}\sec x\,dx=\ln(\sqrt2+1)$. & R8.11\\
+12 & C & $\int_0^1\sqrt{1+9x^4}\,dx\approx1.548$. & R8.11, \emph{calc}\\
+\end{keytable}
+\section*{Free-response scoring guide}
+\subsection*{Question 1: Area and volume (9 points)}
+\textbf{(a)} The intersections (calculator): $a\approx-1.96464$, $b\approx1.05801$. $\int_a^b\big(3-x^2-e^x+1\big)\,dx\approx6.428$.
+\begin{itemize}[leftmargin=1.6em,itemsep=0pt]
+\item 1 point: integrand $f(x)-g(x)$ with limits $a\approx-1.965$ and $b\approx1.058$
+\item 1 point: area $\approx6.428$
+\end{itemize}
+\textbf{(b)} Outer radius $f(x)+2$, inner radius $g(x)+2$ (both curves are above $y=-2$ on $[a,b]$). $V=\pi\int_a^b\left[(5-x^2)^2-(e^x+1)^2\right]dx\approx125.091$.
+\begin{itemize}[leftmargin=1.6em,itemsep=0pt]
+\item 1 point: constant $\pi$ and limits $a$, $b$
+\item 1 point: integrand $(f(x)+2)^2-(g(x)+2)^2$
+\item 1 point: volume $\approx125.091$
+\end{itemize}
+\textbf{(c)} $V=\int_a^b\big(f(x)-g(x)\big)^2dx\approx16.353$.
+\begin{itemize}[leftmargin=1.6em,itemsep=0pt]
+\item 1 point: integrand $(f(x)-g(x))^2$ with limits
+\item 1 point: volume $\approx16.353$
+\end{itemize}
+\textbf{(d)} $\int_a^k\big(f(x)-g(x)\big)\,dx=\frac12\int_a^b\big(f(x)-g(x)\big)\,dx$, or equivalently $\int_a^k(f-g)\,dx=\int_k^b(f-g)\,dx$.
+\begin{itemize}[leftmargin=1.6em,itemsep=0pt]
+\item 1 point: one integral with limits $a$ and $k$ (or $k$ and $b$) and integrand $f-g$
+\item 1 point: set equal to half the area (or to the other piece)
+\end{itemize}
+\end{document}

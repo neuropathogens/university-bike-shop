@@ -120,3 +120,10 @@ Every wrong choice must have a note in `ex.others`; the builder refuses a quiz o
   `tests/unit-N/` and `tests/unit-N-checks/` from the same objects, so letters and keys always match the PDFs.
   `study_rows.py` rewrites the two Physics C sections of `/study`; `checks.py` recomputes every numeric answer.
   Edit a unit, then: `texgen.py` → `checks.py` → `study_rows.py` → `build.py ap_physics_c` → `link_study.py`.
+- `ap_calc_bc` — AP Calculus BC (`/study/ap/ap-calculus-bc/tests/unit-1`..`unit-10`, `practice-exam`). Unlike the other
+  families this one is the source of its PDFs too: `sets/uNN.py` and `sets/exam.py` hold every item (TeX in `$..$`, an
+  explanation for each wrong choice, SymPy asserts for every computed answer), and `build_pdfs.py` writes the practice
+  sets and exam as LaTeX (`source/apcalc.cls`), compiles them with the hand-written guides in `source/guides/`, records
+  each guide section's page in `pages.json` (used for the topic links), and rebuilds the complete pack and source zip.
+  Figures are TikZ registered with `model.fig()`, compiled once to `source/figs/*.pdf` and `tests/fig/*.svg`. Run
+  `python3 -I quizzes/ap_calc_bc/build_pdfs.py` before `build.py ap_calc_bc` after editing items.

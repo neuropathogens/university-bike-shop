@@ -1,0 +1,138 @@
+\documentclass{apcalc}
+\title{AP Calculus BC: Exam Guide and Formula Sheet}
+\author{Paul Wang}
+\date{November 2026}
+\volume{Part 0 of the series (read first)}
+\shorttitle{Part 0 --- Exam Guide}
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This part explains how the series is organized, describes the AP Calculus BC exam in the format used from May 2027, lists the calculator skills and the justification sentences that the scoring guides reward, and collects every formula in the course on two pages, each tagged with the rule number in the unit guides that states and explains it. Read it first, keep the formula sheet beside you while working the practice sets, and reread the justification section the week before the exam.
+\end{abstract}
+\keywords{exam format, unit weighting, calculator skills, justification, formula sheet, study plan.}
+
+\section{How the series is organized}
+The series has twelve parts: this guide; ten unit study guides that follow the College Board's ten units and state the course as numbered rules (R1.1 through R10.15), each with a worked example; ten unit practice sets in the same section order, each with a nine-point free-response question; and a full practice exam. Every practice item is tagged with the rule it tests, and every answer key has an answers-only strip and a table with the reason and rule for each item. Each practice set and the exam also have an interactive quiz page with worked solutions and an explanation for every wrong choice.
+
+A good cycle for each unit: read the guide (about 30 minutes), work the practice set cold and timed, mark it with the key, then reread the rule boxes for every miss and redo those items a day later.
+
+\section{The exam (May 2027 format)}
+The exam lasts 3 hours 10 minutes in two sections of equal weight. Multiple choice is taken in the Bluebook app; free-response answers are handwritten in a paper booklet.
+\begin{center}\small
+\begin{tabular}{@{}llll@{}}\toprule
+Section & Questions & Time & Calculator\\\midrule
+I, Part A (multiple choice) & 29 & 62 min & not permitted\\
+I, Part B (multiple choice) & 13 & 38 min & graphing calculator required\\
+II, Part A (free response) & 2 & 30 min & graphing calculator required\\
+II, Part B (free response) & 4 & 60 min & not permitted\\\bottomrule
+\end{tabular}
+\end{center}
+Section I (42 four-choice questions) and Section II (six questions, 9 points each, 54 points) each count for 50\% of the score. There is no penalty for wrong answers, so answer every question. The pace is about 2.1 minutes per Part A question and 2.9 per Part B question; 15 minutes per free-response question.
+
+\subsection*{Unit weighting (multiple-choice section)}
+\begin{center}\small
+\begin{tabular}{@{}rlr@{}}\toprule
+Unit & Title & Weight\\\midrule
+1 & Limits and Continuity & 5--10\%\\
+2 & Differentiation: Definition and Fundamental Properties & 5--10\%\\
+3 & Differentiation: Composite, Implicit, and Inverse Functions & 5--10\%\\
+4 & Contextual Applications of Differentiation & 5--10\%\\
+5 & Analytical Applications of Differentiation & 10--15\%\\
+6 & Integration and Accumulation of Change & 15--20\%\\
+7 & Differential Equations & 5--10\%\\
+8 & Applications of Integration & 5--10\%\\
+9 & Parametric Equations, Polar Coordinates, and Vector-Valued Functions & 10--15\%\\
+10 & Infinite Sequences and Series & 15--20\%\\\bottomrule
+\end{tabular}
+\end{center}
+The free-response section usually has one question each on rates and accumulation from a table or function (calculator), particle motion or a parametric or polar curve, an area and volume region, a graph of $f'$ or an accumulation function, a differential equation, and a Taylor series.
+
+\section{The calculator}
+The exam expects four built-in capabilities: graph a function in any window, find zeros (intersections) numerically, compute a derivative at a point numerically, and compute a definite integral numerically. Anything else must be supported with written work.
+\begin{itemize}
+\item Give decimal answers correct to three places after the decimal point (truncate or round). Store intermediate values instead of retyping rounded numbers.
+\item Write the setup, not calculator syntax: ``$\int_0^4\sqrt{1+t^3}\,dt=10.318$'', not \texttt{fnInt(}\dots\texttt{)}.
+\item Work in radians.
+\end{itemize}
+
+\section{Justifications that earn the point}
+The scoring guides award a justification point only for a reason stated in terms of the right function and its sign or behavior. Templates:
+\begin{reftable}
+Relative max of $f$ & ``$f'$ changes from positive to negative at $x=c$.'' (R5.5)\\
+Relative min of $f$ & ``$f'$ changes from negative to positive at $x=c$.'' (R5.5)\\
+Absolute extremum & candidates table: endpoints and critical points with their values. (R5.6)\\
+Inflection point & ``$f''$ changes sign at $x=c$'' or ``$f'$ changes from increasing to decreasing at $x=c$.'' (R5.7)\\
+Increasing / concave up & ``$f'(x)>0$ on \dots'' / ``$f''(x)>0$ on \dots'' (or ``$f'$ is increasing''). (R5.4, R5.7)\\
+Speed increasing & ``$v(t)$ and $a(t)$ have the same sign.'' (R4.2)\\
+Over/underestimate & ``$f''>0$ on the interval, so the tangent line lies below the graph: underestimate.'' (R4.7)\\
+IVT & ``$f$ is continuous on $[a,b]$ and $f(a)<k<f(b)$, so there is a $c$ in $(a,b)$ with $f(c)=k$.'' (R1.15)\\
+MVT & ``$f$ is differentiable on $[a,b]$ (so continuous), so there is a $c$ in $(a,b)$ with $f'(c)=\frac{f(b)-f(a)}{b-a}$.'' (R5.1)\\
+L'H\^opital & ``$\lim f=0$ and $\lim g=0$, so by L'H\^opital's rule \dots'' (R4.9)\\
+Series tests & name the test and verify its conditions (AST: decreasing to 0; comparison: positive terms and the inequality). (R10.6--R10.7)\\
+Error bound & ``By the alternating series error bound, the error is less than the first omitted term.'' / Lagrange with $M$ named. (R10.10--R10.11)\\
+\end{reftable}
+Avoid ``it'', ``the graph'' or ``the function'' without naming which function; ``the graph goes up'' earns nothing. Interpretations in context need the value, units, and time (R4.1).
+
+\section{Formula sheet}
+\subsection*{Limits and derivatives}
+\begin{reftable}
+Special limits & $\lim_{x\to0}\frac{\sin x}{x}=1$, \ $\lim_{x\to0}\frac{1-\cos x}{x}=0$ (R1.6)\\
+Definition & $f'(a)=\lim_{h\to0}\frac{f(a+h)-f(a)}{h}$ (R2.2)\\
+Basic rules & $(x^n)'=nx^{n-1}$, $(e^x)'=e^x$, $(\ln x)'=\frac1x$, $(a^x)'=a^x\ln a$ (R2.7--R2.8)\\
+Trig & $\sin\to\cos$, $\cos\to-\sin$, $\tan\to\sec^2$, $\sec\to\sec\tan$, $\cot\to-\csc^2$, $\csc\to-\csc\cot$ (R2.8, R2.12)\\
+Product, quotient & $(uv)'=u'v+uv'$; $\left(\frac uv\right)'=\frac{u'v-uv'}{v^2}$ (R2.10--R2.11)\\
+Chain & $\frac{d}{dx}f(g(x))=f'(g(x))g'(x)$ (R3.1)\\
+Inverse function & $(f^{-1})'(b)=\frac{1}{f'(a)}$, $f(a)=b$ (R3.5)\\
+Inverse trig & $\arcsin'=\frac{1}{\sqrt{1-x^2}}$, $\arccos'=-\frac{1}{\sqrt{1-x^2}}$, $\arctan'=\frac{1}{1+x^2}$ (R3.6)\\
+Linearization & $f(x)\approx f(a)+f'(a)(x-a)$ (R4.6)\\
+\end{reftable}
+
+\subsection*{Integrals}
+\begin{reftable}
+FTC & $\frac{d}{dx}\int_a^{u(x)}f(t)\,dt=f(u)u'$; \ $\int_a^bf=F(b)-F(a)$ (R6.4, R6.7)\\
+Antiderivatives & $\int x^n=\frac{x^{n+1}}{n+1}$, $\int\frac1x=\ln|x|$, $\int\sec^2x=\tan x$, $\int\frac{dx}{1+x^2}=\arctan x$, $\int\frac{dx}{\sqrt{1-x^2}}=\arcsin x$ (R6.8)\\
+Parts & $\int u\,dv=uv-\int v\,du$ (R6.11)\\
+Trapezoid & $\sum\frac{f(x_{k-1})+f(x_k)}{2}\Delta x_k$ (R6.2)\\
+Average value & $\frac{1}{b-a}\int_a^bf$ (R8.1)\\
+Area & $\int(\text{top}-\text{bottom})\,dx$ (R8.4)\\
+Volume & $\int A(x)\,dx$; $\pi\int R^2$; $\pi\int(R^2-r^2)$ (R8.7--R8.9)\\
+Arc length & $\int\sqrt{1+f'(x)^2}\,dx$; $\int\sqrt{x'(t)^2+y'(t)^2}\,dt$ (R8.11, R9.3)\\
+Improper & $\int_1^\infty x^{-p}$ converges iff $p>1$; $\int_0^1x^{-p}$ iff $p<1$ (R6.13)\\
+\end{reftable}
+
+\subsection*{Differential equations, parametric, polar}
+\begin{reftable}
+Euler & $y_{\text{new}}=y+\Delta x\cdot\frac{dy}{dx}$ (R7.4)\\
+Exponential & $\frac{dy}{dt}=ky\Rightarrow y=y_0e^{kt}$ (R7.7)\\
+Logistic & $\frac{dP}{dt}=kP(1-\frac PL)$: $P\to L$, fastest at $\frac L2$ (R7.8)\\
+Parametric slope & $\frac{dy}{dx}=\frac{y'(t)}{x'(t)}$; $\frac{d^2y}{dx^2}=\frac{d}{dt}(\frac{dy}{dx})/x'(t)$ (R9.1--R9.2)\\
+Speed & $\sqrt{x'(t)^2+y'(t)^2}$ (R9.4)\\
+Polar & $x=r\cos\theta$, $y=r\sin\theta$; area $\frac12\int r^2\,d\theta$ (R9.6, R9.9)\\
+\end{reftable}
+
+\subsection*{Series}
+\begin{reftable}
+Geometric & $\sum_{n=0}^\infty ar^n=\frac{a}{1-r}$, $|r|<1$ (R10.2)\\
+Tests & $n$th term, integral, $p$-series, comparison, limit comparison, AST, ratio (R10.3--R10.8)\\
+Taylor & $\sum\frac{f^{(n)}(a)}{n!}(x-a)^n$ (R10.12)\\
+Error bounds & AST: first omitted term; Lagrange: $\frac{M}{(n+1)!}|x-a|^{n+1}$ (R10.10--R10.11)\\
+Known series & $e^x$, $\sin x$, $\cos x$ (all $x$); $\frac{1}{1-x}$ ($|x|<1$); $\ln(1+x)$ ($-1<x\le1$); $\arctan x$ ($|x|\le1$) (R10.14)\\
+\end{reftable}
+
+\section{An eight-week plan}
+\begin{center}\small
+\begin{tabular}{@{}rl@{}}\toprule
+Week & Work\\\midrule
+1 & Units 1--3: guides, practice sets, misses redone\\
+2 & Units 4--5\\
+3 & Unit 6 (allow extra time: two sittings for the practice set)\\
+4 & Units 7--8\\
+5 & Unit 9\\
+6 & Unit 10 (two sittings)\\
+7 & Full practice exam under timed conditions; score it with the key\\
+8 & Reread the rule boxes behind every miss on the exam; redo those units' free-response questions; reread Section 4 of this guide\\\bottomrule
+\end{tabular}
+\end{center}
+
+\end{document}
