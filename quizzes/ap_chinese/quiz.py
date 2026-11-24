@@ -12,11 +12,10 @@ import os
 import sys
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
-sys.path.insert(0, ROOT)
 sys.path.insert(0, os.path.dirname(ROOT))
 from lib.latex import to_html  # noqa: E402
-from content import DOCS  # noqa: E402
-from model import topic_key  # noqa: E402
+from ap_chinese.content import DOCS  # noqa: E402
+from ap_chinese.model import topic_key  # noqa: E402
 
 BASE = "/study/ap/ap-chinese/"
 BLANK = '<span class="blank" role="img" aria-label="blank"></span>'
@@ -70,10 +69,10 @@ def fr_item(f, n):
         stem += "<p><b>The four pictures</b> (described in words for this practice set):</p><ol>" + \
                 "".join(f"<li>{h(p)}</li>" for p in f["panels"]) + "</ol>"
     stem += "".join(f"<p>{h(p)}</p>" for p in f.get("prompt", []))
-    rubric = ('<table class="bt"><thead><tr><th scope="col">Row</th><th scope="col">Full credit</th>'
+    rubric = ('<div class="bt-wrap"><table class="bt"><thead><tr><th scope="col">Row</th><th scope="col">Full credit</th>'
               '<th scope="col">Common reasons for losing points</th></tr></thead><tbody>' +
               "".join(f'<tr><th scope="row">{h(name)} ({pts})</th><td>{h(e)}</td><td>{h(m)}</td></tr>' for name, pts, e, m in f["rows"]) +
-              f"</tbody></table><p>Add the rows: out of {total}. Give yourself a row's top score only if your response does what the descriptor says.</p>")
+              f"</tbody></table></div><p>Add the rows: out of {total}. Give yourself a row's top score only if your response does what the descriptor says.</p>")
     sol = "".join(f"<p>{h(p)}</p>" for p in f["model"])
     if f.get("tips"):
         sol += "<p><i>Why it scores:</i> " + h(" ".join(f["tips"])) + "</p>"

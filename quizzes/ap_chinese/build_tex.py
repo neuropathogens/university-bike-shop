@@ -16,10 +16,9 @@ import sys
 import zipfile
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-sys.path.insert(0, HERE)
 sys.path.insert(0, os.path.dirname(HERE))
-from content import DOCS  # noqa: E402
-from model import width  # noqa: E402
+from ap_chinese.content import DOCS  # noqa: E402
+from ap_chinese.model import width  # noqa: E402
 
 REPO = os.path.dirname(os.path.dirname(HERE))
 OUT = os.path.join(HERE, "tex", "out")
