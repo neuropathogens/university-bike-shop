@@ -112,6 +112,8 @@ TREE = page("/", "Home", "The shop, what it sells, and how to book an appointmen
                        desc="Unit 5, Kinetics", anchor="/study/#ap-chemistry"),
                 *quiz_folder("/study/ap/ap-chemistry/", "/study/#ap-chemistry"),
             ], desc="AP Chemistry", anchor="/study/#ap-chemistry"),
+            folder("/study/ap/ap-chinese/", quiz_folder("/study/ap/ap-chinese/", "/study/#ap-chinese"), files=files("study/ap/ap-chinese", "PDFs"),
+                   desc="AP Chinese Language and Culture, Part 0 and Units 1–6", anchor="/study/#ap-chinese"),
             folder("/study/ap/ap-economics/", [
                 folder("/study/ap/ap-economics/macro/", files=files("study/ap/ap-economics/macro", "PDFs"),
                        desc="AP Macroeconomics, Units 1–6", anchor="/study/#ap-macroeconomics"),
