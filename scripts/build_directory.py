@@ -108,10 +108,15 @@ TREE = page("/", "Home", "The shop, what it sells, and how to book an appointmen
                  files=files("study/ap/ap-art-history", "PDFs", anchor="/study/#ap-art-history"),
                  note="Each work has a deep link, #w1 to #w250 (e.g. #w12)."),
             folder("/study/ap/ap-chemistry/", [
-                folder("/study/ap/ap-chemistry/unit-5/", files=files("study/ap/ap-chemistry/unit-5", "PDFs"),
-                       desc="Unit 5, Kinetics", anchor="/study/#ap-chemistry"),
+                *[folder(f"/study/ap/ap-chemistry/unit-{n}/", files=files(f"study/ap/ap-chemistry/unit-{n}", "PDFs"),
+                         desc=f"Unit {n}, {name}", anchor="/study/#ap-chemistry")
+                  for n, name in enumerate(["Atomic Structure and Properties", "Compound Structure and Properties",
+                                            "Properties of Substances and Mixtures", "Chemical Reactions", "Kinetics",
+                                            "Thermochemistry", "Equilibrium", "Acids and Bases",
+                                            "Thermodynamics and Electrochemistry"], 1)],
                 *quiz_folder("/study/ap/ap-chemistry/", "/study/#ap-chemistry"),
-            ], desc="AP Chemistry", anchor="/study/#ap-chemistry"),
+            ], files=files("study/ap/ap-chemistry", "All guides and LaTeX source"), desc="AP Chemistry, Units 1–9",
+               anchor="/study/#ap-chemistry"),
             folder("/study/ap/ap-economics/", [
                 folder("/study/ap/ap-economics/macro/", files=files("study/ap/ap-economics/macro", "PDFs"),
                        desc="AP Macroeconomics, Units 1–6", anchor="/study/#ap-macroeconomics"),

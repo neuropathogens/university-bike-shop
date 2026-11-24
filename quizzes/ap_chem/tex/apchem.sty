@@ -1,0 +1,88 @@
+% apchem.sty -- shared layout for the AP Chemistry content guides and practice sets.
+% pdfLaTeX, Latin Modern, 11pt article, 1in margins: the look of the Unit 5 documents.
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{apchem}[2026/11/23 AP Chemistry study series]
+
+\RequirePackage[T1]{fontenc}
+\RequirePackage[utf8]{inputenc}
+\RequirePackage{lmodern}
+\RequirePackage{textcomp}
+\RequirePackage[margin=1in]{geometry}
+\RequirePackage{amsmath,amssymb}
+\RequirePackage[version=4]{mhchem}
+\RequirePackage{booktabs,longtable,array,tabularx}
+\RequirePackage{enumitem}
+\RequirePackage{needspace}
+\RequirePackage{tikz}
+\RequirePackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\usetikzlibrary{arrows.meta,decorations.pathreplacing,calc}
+\RequirePackage[hidelinks,pdfusetitle]{hyperref}
+\RequirePackage{bookmark}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 1pt}
+\raggedbottom
+\setlist{topsep=4pt,itemsep=2pt,parsep=0pt}
+\setlist[itemize]{label=--,leftmargin=2.2em}
+\setlist[enumerate]{leftmargin=2.2em}
+
+% ---------------------------------------------------------------- title block
+\newcommand{\@docsub}{}
+\newcommand{\@docstatus}{Study draft}
+\newcommand{\docsubtitle}[1]{\renewcommand{\@docsub}{#1}}
+\newcommand{\docstatus}[1]{\renewcommand{\@docstatus}{#1}}
+\newcommand{\doctitle}[1]{\title{#1}\author{Paul Wang}}
+\newcommand{\titleblock}{%
+  \begin{center}
+    \vspace*{2.2em}
+    {\LARGE\bfseries\@title\par}
+    \vspace{1.1em}
+    {\large\@docsub\par}
+    \vspace{1.4em}
+    {\large Paul Wang\par}
+    {AP Chemistry\par}
+    \vspace{1.1em}
+    {\large November 23, 2026 \,$\cdot$\, \@docstatus\par}
+  \end{center}
+  \vspace{0.6em}}
+\renewenvironment{abstract}{%
+  \begin{center}\small\bfseries Abstract\end{center}\vspace{-0.6em}
+  \begin{list}{}{\leftmargin=3.2em\rightmargin=3.2em\topsep=0pt}\small\item\relax}
+  {\end{list}\vspace{0.4em}}
+\newcommand{\leadline}[2]{\par\textbf{#1:} #2\par}
+
+% ---------------------------------------------------------------- guide helpers
+\newcommand{\worked}[1]{\par\textbf{Worked example #1.}\ }
+\newcommand{\errorsh}{\par\needspace{3\baselineskip}\textbf{Common errors.}}
+\newcommand{\frph}{\par\needspace{3\baselineskip}\textbf{Free-response phrasing.}\ }
+\newcommand{\mustknow}{\par\needspace{3\baselineskip}\textbf{Must know.}}
+\newcommand{\unit}[1]{\,\mathrm{#1}}
+\newcommand{\dH}{\Delta H}
+
+% ---------------------------------------------------------------- practice sets
+% A multiple-choice item never breaks across pages: it is set in a minipage.
+\newlength{\qlab}\setlength{\qlab}{0.95in}
+\newcommand{\qlabel}[1]{\makebox[\qlab][r]{\rule[-1pt]{0.62in}{0.4pt}\hspace{0.7em}\textbf{#1.}\hspace{0.5em}}}
+\newenvironment{qbox}[1]{%
+  \par\addvspace{11pt}\noindent\begin{minipage}{\linewidth}%
+  \begin{list}{}{\setlength{\leftmargin}{\qlab}\setlength{\labelwidth}{\qlab}\setlength{\labelsep}{0pt}%
+  \setlength{\itemindent}{0pt}\setlength{\topsep}{0pt}\setlength{\parsep}{4pt}}\item[\qlabel{#1}]}
+  {\end{list}\end{minipage}\par}
+\newenvironment{frbox}[1]{%
+  \par\addvspace{11pt}%
+  \begin{list}{}{\setlength{\leftmargin}{\qlab}\setlength{\labelwidth}{\qlab}\setlength{\labelsep}{0pt}%
+  \setlength{\itemindent}{0pt}\setlength{\topsep}{0pt}\setlength{\parsep}{5pt}}\item[\qlabel{#1}]}
+  {\end{list}\par}
+% Choices: two columns when every choice is short, one column otherwise.
+\newcommand{\chtwo}[4]{\par\vspace{2pt}{\setlength{\tabcolsep}{0pt}%
+  \begin{tabular}{@{\hspace{1.4em}}p{0.47\linewidth}p{0.47\linewidth}@{}}
+  \hangindent=2.2em\hangafter=1 (A) #1 & \hangindent=2.2em\hangafter=1 (B) #2\\[2pt]
+  \hangindent=2.2em\hangafter=1 (C) #3 & \hangindent=2.2em\hangafter=1 (D) #4\end{tabular}}\par}
+\newcommand{\chone}[4]{\par\vspace{-2pt}\begin{enumerate}[label=(\Alph*),leftmargin=3.6em,labelsep=0.5em,topsep=0pt,itemsep=1pt]
+  \item #1 \item #2 \item #3 \item #4\end{enumerate}}
+% Right-aligned point value at the end of a free-response part.
+\newcommand{\pts}[1]{{\unskip\nobreak\hfil\penalty50\hskip1em\null\nobreak\hfil\mbox{\itshape(#1)}%
+  \parfillskip=0pt\finalhyphendemerits=0\par}}
+\newcommand{\stimintro}[1]{\par\addvspace{12pt}\needspace{16\baselineskip}\noindent\textit{#1}\ }
+\newcommand{\ctab}[1]{\par\vspace{2pt}{\centering#1\par}\vspace{2pt}}

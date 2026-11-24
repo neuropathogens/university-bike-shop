@@ -49,3 +49,4 @@ next-env.d.ts
 
 # python
 __pycache__/
+quizzes/ap_chem/tex/build/

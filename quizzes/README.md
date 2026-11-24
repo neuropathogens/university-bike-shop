@@ -62,11 +62,16 @@ Every wrong choice must have a note in `ex.others`; the builder refuses a quiz o
   AAQ for Research Methods, self-scored in points) and each guide's section checks. Parsed from the
   series' LaTeX (`source/`, from `ap-psych-study-series.zip`); choices are in source order, as in the PDFs.
   Explanations: `ex_<file>.py`. `STIM_COUNTS` says how many items follow each data display.
-- `ap_chem` — AP Chemistry Unit 5 Practice Sets A and B (`tests/5a`, `tests/5b`): transcribed from the PDFs
-  into TeX with mhchem (`\ce{}`); `checks.py` asserts every computed answer and every computed distractor.
-  Long reaction equations are shown as display math so they never overflow a phone. The two energy-profile
-  figures are crops of the PDF pages (`public/study/ap/ap-chemistry/tests/fig/`), rendered with
-  `sips --resampleWidth 1800` from single pages split out with pypdf.
+- `ap_chem` — AP Chemistry Practice Sets A and B for all nine units (`tests/1a` … `tests/9b`). Unit 5 (`tests/5a`, `/5b`)
+  was transcribed from its PDFs into TeX with mhchem (`\ce{}`); `checks.py` asserts every computed answer and
+  distractor, and its two energy-profile figures are PDF crops in `tests/fig/`. Units 1–4 and 6–9 have one source for
+  both the PDFs and the quizzes: `u<N>.py` holds each set's questions (`M()`/`F()` items with the key's one-line reason,
+  the quiz explanation and a note for every wrong choice; `FR()`/`P()` free response), with numeric asserts at the top
+  of each module. `chemgen.py` balances the answer letters (7–8 per letter, no letter three times running), writes the
+  practice-set LaTeX, and makes the quiz dicts. The content guides are hand-written LaTeX in `tex/` (shared style
+  `tex/apchem.sty`). Build with `python3 -I quizzes/ap_chem/build_pdfs.py` (compiles every guide and set, copies the
+  PDFs to `public/study/ap/ap-chemistry/unit-N/`, records each guide topic's page in `guide_pages.json`, and makes the
+  combined-guides PDF and source zip), then `python3 -I quizzes/build.py ap_chem`.
 - `ap_stats` — AP Statistics Unit 6 Practice Sets B and C (`tests/6b`, `tests/6c`), moved here from their
   original one-off builder: `q_6x.py` (transcribed set), `ex_6x.py` (explanations), `checks_6x.py` (numeric
   asserts). E/P/I free response and the 50/50 composite score with each set's bands. `fkey` keeps the

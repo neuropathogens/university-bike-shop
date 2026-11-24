@@ -1,0 +1,143 @@
+\documentclass[11pt]{article}
+\usepackage{apchem}
+\doctitle{Unit 9 Content Guide}
+\docsubtitle{A Comprehensive Review of Thermodynamics and Electrochemistry, Topics 9.1--9.11}
+\docstatus{Study draft}
+\begin{document}
+\titleblock
+\begin{abstract}
+This guide covers all of Unit 9, Thermodynamics and Electrochemistry, in twelve sections: one for each of Topics 9.1--9.11 in course order (the Fall 2024 course framework, which added Topic 9.6, free energy of dissolution), plus a final section on lab skills and free-response technique. Each section gives the definitions, equations and particle-level reasoning the topic needs, at least one worked example, the phrasing that earns free-response points and the mistakes that cost them. The worked examples use their own reactions and numbers, so none of them give away an item in \emph{Unit 9 Practice Set A} or \emph{Unit 9 Practice Set B}. Plan on about 80 minutes for a full read with a calculator out.
+\end{abstract}
+\leadline{Usage}{first pass, read Sections 1--12 in order and redo every worked example. Then take \emph{Unit 9 Practice Set A} cold; reread the section behind every miss, and take \emph{Unit 9 Practice Set B} two or three days later. The last page is a one-page summary for the night before the unit test. Unit 9 is 7--9\% of the AP multiple-choice section; a galvanic-cell question appears in nearly every free-response section.}
+
+\section{Introduction to entropy (Topic 9.1)}\label{t:9.1}
+Entropy, $S$, measures how widely energy and matter are dispersed: the number of ways (microstates) a system can be arranged. Entropy increases when
+\begin{itemize}
+\item a solid melts, a liquid vaporizes, or a solid sublimes;
+\item a reaction makes more moles of gas;
+\item a solid dissolves (usually), or gases mix;
+\item temperature rises (more energy, more accessible states);
+\item molecules get larger or more complex (more ways to move).
+\end{itemize}
+\worked{1.1} Predict the sign of $\Delta S$ for $\ce{2KClO3(s) -> 2KCl(s) + 3O2(g)}$: positive, because 3 mol of gas form from solids.
+
+\section{Absolute entropy and entropy change (Topic 9.2)}\label{t:9.2}
+Unlike enthalpy, absolute entropies can be measured (a perfect crystal at 0 K has $S = 0$), so $S^\circ$ of an element in its standard state is \emph{not} zero.
+\[ \Delta S^\circ_{\text{rxn}} = \sum nS^\circ(\text{products}) - \sum nS^\circ(\text{reactants}) \qquad (\mathrm{J\,K^{-1}}) \]
+\worked{2.1} $\ce{C2H4(g) + H2(g) -> C2H6(g)}$ with $S^\circ$: $\ce{C2H4}$ 219.3, $\ce{H2}$ 130.7, $\ce{C2H6}$ 229.6 J/(mol$\cdot$K). $\Delta S^\circ = 229.6 - 350.0 = -120.4$ J/K: two moles of gas become one.
+
+\section{Gibbs free energy and thermodynamic favorability (Topic 9.3)}\label{t:9.3}
+\[ \Delta G^\circ = \Delta H^\circ - T\Delta S^\circ, \qquad \Delta G^\circ = \sum n\Delta G_f^\circ(\text{products}) - \sum n\Delta G_f^\circ(\text{reactants}) \]
+Convert $\Delta S$ to kJ/K before combining with $\Delta H$ in kJ. A process is \emph{thermodynamically favorable} when $\Delta G < 0$.
+\begin{center}
+\begin{tabular}{ccl}\toprule
+$\Delta H$ & $\Delta S$ & Favorable \\ \midrule
+$-$ & $+$ & at all temperatures \\
+$+$ & $-$ & never \\
+$-$ & $-$ & at low $T$ (below $T = \Delta H/\Delta S$) \\
+$+$ & $+$ & at high $T$ (above $T = \Delta H/\Delta S$) \\ \bottomrule
+\end{tabular}
+\end{center}
+\worked{3.1} $\ce{2H2O(l) -> 2H2(g) + O2(g)}$: $\Delta H^\circ = +571.6$ kJ, $\Delta S^\circ = +326.6$ J/K. At 298 K, $\Delta G^\circ = 571.6 - 298(0.3266) = +474.3$ kJ: not favorable. It would become favorable only above $571\,600/326.6 = 1750$ K (assuming constant $\Delta H$, $\Delta S$).
+
+\frph ``The reaction is favorable because $\Delta G < 0$: $\Delta H$ is negative and $\Delta S$ is positive, so $\Delta H - T\Delta S$ is negative at all temperatures.'' Do not write ``spontaneous'' to mean ``fast.''
+
+\section{Thermodynamic and kinetic control (Topic 9.4)}\label{t:9.4}
+$\Delta G$ says whether a process \emph{can} happen; the activation energy says how fast it will. A thermodynamically favorable reaction with a large $E_a$ may be imperceptibly slow: it is under \emph{kinetic control}. Examples: diamond $\rightarrow$ graphite; a gas stove's methane--air mixture before ignition; sugar in air. A catalyst speeds a reaction but never changes $\Delta G^\circ$ or $K$.
+
+\section{Free energy and equilibrium (Topic 9.5)}\label{t:9.5}
+\[ \Delta G^\circ = -RT\ln K, \qquad K = e^{-\Delta G^\circ/RT}, \qquad R = 8.314\unit{J\,mol^{-1}\,K^{-1}} \]
+\begin{itemize}
+\item $\Delta G^\circ < 0 \Leftrightarrow K > 1$ (products favored); $\Delta G^\circ > 0 \Leftrightarrow K < 1$; $\Delta G^\circ = 0 \Leftrightarrow K = 1$.
+\item Under nonstandard conditions, $\Delta G = \Delta G^\circ + RT\ln Q$; at equilibrium $\Delta G = 0$ and $Q = K$.
+\end{itemize}
+\worked{5.1} $K_{sp}$ of AgCl is $1.8\times10^{-10}$ at 298 K: $\Delta G^\circ = -(8.314)(298)\ln(1.8\times10^{-10}) = +55.6$ kJ, so dissolving AgCl under standard conditions (1 M ions) is not favorable.
+
+\section{Free energy of dissolution (Topic 9.6)}\label{t:9.6}
+Dissolving involves separating solute particles (endothermic), separating solvent molecules (endothermic) and forming solute--solvent attractions (exothermic). $\Delta H_{\text{soln}}$ can have either sign. $\Delta S_{\text{soln}}$ is usually positive (the solute disperses), though strongly ordered hydration shells around small, highly charged ions can make it negative.
+\[ \Delta G_{\text{soln}} = \Delta H_{\text{soln}} - T\Delta S_{\text{soln}} \]
+\worked{6.1} KCl: $\Delta H_{\text{soln}} = +17.2$ kJ/mol, $\Delta S_{\text{soln}} = +75.4$ J/(mol$\cdot$K). At 298 K, $\Delta G = 17.2 - 22.5 = -5.3$ kJ/mol: favorable, entropy-driven, and the solution cools as KCl dissolves.
+
+\section{Coupled reactions (Topic 9.7)}\label{t:9.7}
+An unfavorable reaction can be driven by coupling it to a favorable one that shares an intermediate. The free energies add:
+\[ \Delta G^\circ_{\text{overall}} = \Delta G^\circ_1 + \Delta G^\circ_2. \]
+Examples: smelting ($\ce{Fe2O3}$ reduction coupled with oxidation of carbon to $\ce{CO2}$); ATP hydrolysis driving biosynthesis; and electrolysis, where the external power supply provides the free energy.
+
+\worked{7.1} $\ce{ZnO(s) -> Zn(s) + 1/2O2(g)}$, $\Delta G^\circ = +318$ kJ, coupled with $\ce{C(s) + 1/2O2(g) -> CO(g)}$, $\Delta G^\circ = -137$ kJ: overall $+181$ kJ, still unfavorable at 298 K. (At high temperature, $T\Delta S$ for CO formation grows and the coupled reaction becomes favorable, which is why zinc is smelted hot.)
+
+\section{Galvanic (voltaic) and electrolytic cells (Topic 9.8)}\label{t:9.8}
+\begin{center}
+\begin{tikzpicture}[font=\footnotesize]
+\draw (0,0) rectangle (2.2,2); \draw (4.2,0) rectangle (6.4,2);
+\fill[black!15] (0.05,0.05) rectangle (2.15,1.5); \fill[black!15] (4.25,0.05) rectangle (6.35,1.5);
+\fill[black!70] (0.9,0.4) rectangle (1.3,2.5); \fill[black!45] (5.1,0.4) rectangle (5.5,2.5);
+\draw[thick] (1.1,2.5) -- (1.1,3.1) -- (5.3,3.1) -- (5.3,2.5);
+\draw[-{Latex[length=2mm]}] (2.4,3.3) -- (4.0,3.3) node[midway,above]{e$^-$};
+\draw[line width=5pt,black!35] (1.7,1.2) -- (1.7,2.3) -- (4.7,2.3) -- (4.7,1.2);
+\node at (3.2,2.6) {salt bridge};
+\node at (1.1,-0.35) {anode (Zn): oxidation};
+\node at (5.3,-0.35) {cathode (Cu): reduction};
+\node at (1.1,0.2) {$\ce{Zn^2+}$}; \node at (5.3,0.2) {$\ce{Cu^2+}$};
+\end{tikzpicture}
+
+{\small\itshape A galvanic cell. Anions in the salt bridge drift to the anode, cations to the cathode.}
+\end{center}
+\begin{itemize}
+\item \emph{Anode}: oxidation; electrons leave through the wire; the metal often dissolves. \emph{Cathode}: reduction; metal often deposits.
+\item The salt bridge keeps each half-cell neutral; electrons never pass through the solution.
+\item \emph{Galvanic}: $\Delta G < 0$, $E > 0$, produces electrical energy. \emph{Electrolytic}: an external source forces a reaction with $\Delta G > 0$; it is still oxidation at the anode and reduction at the cathode.
+\end{itemize}
+
+\section{Cell potential and free energy (Topic 9.9)}\label{t:9.9}
+\[ E^\circ_{\text{cell}} = E^\circ_{\text{cathode}} - E^\circ_{\text{anode}}, \qquad \Delta G^\circ = -nFE^\circ, \qquad F = 96\,485\unit{C\,mol^{-1}} \]
+\begin{itemize}
+\item Reduction potentials are intensive: \emph{never} multiply them by coefficients, even when you multiply a half-reaction.
+\item The species with the higher (more positive) reduction potential is reduced. Strong oxidizing agents sit at the top of a table (high $E^\circ$); strong reducing agents are the metals at the bottom.
+\item $n$ is the number of moles of electrons transferred in the balanced equation.
+\end{itemize}
+\worked{9.1} $\ce{Mg(s) + Sn^2+ -> Mg^2+ + Sn(s)}$ with $E^\circ$(Sn) $-0.14$ V and $E^\circ$(Mg) $-2.37$ V: $E^\circ = -0.14 - (-2.37) = 2.23$ V; $\Delta G^\circ = -(2)(96\,485)(2.23) = -430$ kJ.
+
+\section{Cell potential under nonstandard conditions (Topic 9.10)}\label{t:9.10}
+\[ E = E^\circ - \frac{RT}{nF}\ln Q \;=\; E^\circ - \frac{0.0592}{n}\log Q \text{ at 25 \textdegree C.} \]
+\begin{itemize}
+\item Q < 1 (more reactants): $E > E^\circ$. Q > 1 (more products): $E < E^\circ$.
+\item As a cell runs, Q rises toward K and E falls toward 0. A ``dead'' battery is at equilibrium.
+\item \emph{Concentration cell}: identical electrodes, different concentrations; $E^\circ = 0$ but $E > 0$ until the concentrations equalize. The dilute side is the anode.
+\end{itemize}
+\worked{10.1} Zn--Cu cell ($E^\circ = 1.10$ V) with $[\ce{Zn^2+}] = 0.010$ M, $[\ce{Cu^2+}] = 1.0$ M: $Q = 0.010$; $E = 1.10 - 0.0296\log(0.010) = 1.10 + 0.059 = 1.16$ V.
+
+\section{Electrolysis and Faraday's law (Topic 9.11)}\label{t:9.11}
+\[ q = It \quad (\mathrm{C} = \mathrm{A} \times \mathrm{s}), \qquad \text{mol } e^- = \frac{q}{F}, \qquad \text{mol product} = \frac{\text{mol } e^-}{\text{electrons per formula}} \]
+\worked{11.1} Chromium plating from $\ce{Cr^3+}$: 3.00 A for 45.0 min gives $q = 8100$ C, 0.0839 mol e$^-$, 0.0280 mol Cr, 1.45 g.
+
+\worked{11.2} Time to make 5.00 g of $\ce{Cl2}$ (0.0705 mol, 2 e$^-$ each) at 12.0 A: $q = 0.141 \times 96\,485 = 13\,600$ C; $t = 1130$ s (18.9 min).
+
+\section{Lab skills and free-response technique}\label{t:lab}
+\begin{itemize}
+\item Building a galvanic cell: clean electrodes, a salt bridge of an unreactive salt ($\ce{KNO3}$), and a voltmeter with its leads on the right terminals (a negative reading means the leads are reversed).
+\item Measuring $E$ at several concentrations tests the Nernst equation; plotting $E$ against $\log Q$ gives a line of slope $-0.0592/n$.
+\item In electrolysis labs, weigh the cathode before and after; incomplete drying makes the deposit look heavier.
+\item Free response: label anode and cathode, give electron-flow direction, write half-reactions, and show the setup of $\Delta G^\circ = -nFE^\circ$ with units. For ``favorable at which temperatures,'' show the sign analysis and the crossover $T = \Delta H/\Delta S$.
+\end{itemize}
+
+\clearpage
+\section*{Summary: Unit 9 on one page}
+Use this page the night before. For any row you cannot explain from memory, reread its section and redo its worked example.
+
+\begin{longtable}{@{}p{0.11\linewidth}p{0.40\linewidth}p{0.43\linewidth}@{}}\toprule
+\S{} / Topic & Must know & Key equations and tests \\ \midrule
+1 / 9.1 & Dispersal: phase, moles of gas, $T$, complexity & predict sign of $\Delta S$ \\[3pt]
+2 / 9.2 & $S^\circ > 0$ for every substance & products $-$ reactants \\[3pt]
+3 / 9.3 & Four sign cases; crossover $T$ & $\Delta G = \Delta H - T\Delta S$ \\[3pt]
+4 / 9.4 & Favorable can still be slow & catalysts don't change $\Delta G$ \\[3pt]
+5 / 9.5 & Sign of $\Delta G^\circ$ vs.\ size of K & $\Delta G^\circ = -RT\ln K$ \\[3pt]
+6 / 9.6 & Separation vs.\ attraction; entropy of dispersal & $\Delta G_{\text{soln}}$ \\[3pt]
+7 / 9.7 & Shared intermediate; free energies add & $\Delta G_1 + \Delta G_2 < 0$ \\[3pt]
+8 / 9.8 & Anode oxidation, cathode reduction; salt bridge & galvanic vs.\ electrolytic \\[3pt]
+9 / 9.9 & Higher $E^\circ$ is reduced; never scale $E^\circ$ & $E^\circ = E_c - E_a$; $\Delta G^\circ = -nFE^\circ$ \\[3pt]
+10 / 9.10 & $E$ vs.\ $E^\circ$ from Q; dead battery $E = 0$ & $E = E^\circ - (0.0592/n)\log Q$ \\[3pt]
+11 / 9.11 & Charge to moles to grams & $q = It$; mol e$^- = q/F$ \\ \bottomrule
+\end{longtable}
+
+\textbf{Three linked quantities.} \quad $\Delta G^\circ < 0 \;\Leftrightarrow\; K > 1 \;\Leftrightarrow\; E^\circ > 0$.
+\end{document}
