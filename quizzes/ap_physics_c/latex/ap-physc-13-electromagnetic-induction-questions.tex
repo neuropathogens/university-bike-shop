@@ -1,0 +1,104 @@
+\documentclass[11pt]{article}
+\usepackage{ap-physc}
+\course{AP Physics C: Electricity and Magnetism}
+\headcourse{AP Physics C: E\&M}
+\headpart{Unit 13 \textperiodcentered\ Question Set}
+\title{Unit 13: Electromagnetic Induction: Question Set}
+\author{Paul Wang}
+\date{November 2026}
+\docpart{Unit 13 \textperiodcentered\ Question Set}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Exam-style practice on Unit 13 (topics 13.1--13.6), which is 10--20\% of the multiple-choice section. Section~1--3 hold 13 four-choice multiple-choice questions grouped by topic; most need a short calculation or a line of reasoning, as on the exam. The last page before the key is a full Qualitative/Quantitative Translation free-response question (8 points). All items are original and written for practice. Use the AP equation sheet and a calculator. Allow about 26 minutes for the multiple choice (the exam's pace is about 2 minutes per question) and 24 minutes for the free response. The answer key explains every item and names its topic; a scoring guide for the free response follows it.
+\end{abstract}
+
+\scoringline{MCQ: \blank\ / \qtotal \qquad FRQ: \blank\ / 8 \qquad Target: 9+ MCQ \qquad Pace: 2 min per MCQ}
+
+\section{Faraday's and Lenz's laws (13.1--13.2)}
+
+\begin{q}{2}{13.2 Faraday's law}{$\varepsilon = NA\,\dfrac{dB}{dt} = (20)(\pi)(0.10)^2(0.30) = 0.19$ V, the same at every instant.}
+A 20-turn circular coil of radius 0.10 m lies perpendicular to a uniform field $B(t) = 0.20 + 0.30t$ (tesla, seconds). What emf is induced in the coil at $t = 1.0$ s?
+\chh{$0.0094$ V}{$0.19$ V}{$0.31$ V}{$1.9$ V}
+\end{q}
+\begin{q}{4}{13.2 Lenz's law near a wire}{To the right of an upward current, $\vec B$ points into the page. Moving away, the loop's inward flux decreases. The induced current tries to keep it, making an into-page field inside the loop: clockwise.}
+A long straight wire carries a steady current upward (toward the top of the page). A rectangular loop to its right, in the plane of the page, moves away from the wire to the right. What is the direction of the induced current in the loop?
+\ch{Counterclockwise}{No current; the wire's current is steady}{Clockwise on the near side and counterclockwise on the far side}{Clockwise}
+\end{q}
+\begin{q}{3}{13.2 Generator}{$\varepsilon_{max} = NBA\omega = (100)(0.50)(0.020)(60) = 60$ V.}
+A 100-turn coil of area $0.020\ \mathrm{m^2}$ spins at 60 rad/s in a 0.50 T field. What is the peak emf?
+\chh{$0.60$ V}{$9.5$ V}{$60$ V}{$120$ V}
+\end{q}
+\begin{q}{1}{13.2 Induced electric field}{$\oint\vec E\cdot d\vec l = E(2\pi r) = \dfrac{d}{dt}(B\pi r^2)$, so $E = \dfrac{r}{2}\dfrac{dB}{dt}$.}
+The uniform field inside a long solenoid of radius $R$ is increasing at the rate $dB/dt$. What is the magnitude of the induced electric field at a distance $r < R$ from the axis?
+\ch{$\dfrac{r}{2}\dfrac{dB}{dt}$}{$r\dfrac{dB}{dt}$}{$\dfrac{R^2}{2r}\dfrac{dB}{dt}$}{$0$}
+\end{q}
+\begin{q}{2}{13.2 Motional emf}{$\varepsilon = BLv = (0.50)(0.40)(5.0) = 1.0$ V.}
+A 0.40 m metal rod slides at 5.0 m/s across rails, perpendicular to a 0.50 T field. What emf is induced?
+\chh{$0.20$ V}{$1.0$ V}{$2.0$ V}{$2.5$ V}
+\end{q}
+
+\section{Induced currents and forces (13.3)}
+
+\begin{q}{3}{13.3 Force on the rod}{$I = \varepsilon/R = 0.50$ A, and the field pushes back on the rod with $ILB = (0.50)(0.40)(0.50) = 0.10$ N, which the applied force must balance.}
+The rails in the previous question are joined by a $2.0\ \Omega$ resistor (the rod and rails have negligible resistance). What force must be applied to keep the rod moving at a constant 5.0 m/s?
+\chh{$0.50$ N}{$0.25$ N}{$0.10$ N}{$0$}
+\end{q}
+\begin{q}{4}{13.3 Terminal speed}{At terminal speed the magnetic force balances gravity: $\dfrac{B^2L^2v}{R} = mg$.}
+A horizontal rod of mass $m$ and length $L$ slides down frictionless vertical rails joined at the top by a resistor $R$, in a horizontal field $B$ perpendicular to the rails' plane. What is its terminal speed?
+\ch{$\dfrac{mg}{BL}$}{$\dfrac{mgR}{BL}$}{$\sqrt{\dfrac{mgR}{B^2L^2}}$}{$\dfrac{mgR}{B^2L^2}$}
+\end{q}
+\begin{q}{1}{13.3 Magnetic braking}{As the magnet falls, the flux through each ring of copper changes; the induced (eddy) currents make fields that repel the approaching pole and attract the departing one, both opposing the fall.}
+A strong magnet is dropped down a vertical copper pipe and falls much more slowly than a dropped stone. Why?
+\ch{Its moving field induces currents in the copper whose fields oppose its motion.}{The copper is attracted to the magnet like iron.}{Air trapped in the pipe slows the magnet.}{The copper shields the magnet from Earth's gravity.}
+\end{q}
+
+\section{Inductance and LR, LC circuits (13.4--13.6)}
+
+\begin{q}{3}{13.4 Solenoid inductance}{$L = \mu_0N^2A/\ell = (4\pi\times10^{-7})(2.5\times10^5)(4.0\times10^{-4})/0.25 = 5.0\times10^{-4}$ H.}
+A solenoid has 500 turns, length 0.25 m, and cross-sectional area $4.0\times10^{-4}\ \mathrm{m^2}$. What is its self-inductance? ($\mu_0 = 4\pi\times10^{-7}$ T$\cdot$m/A)
+\chh{$1.0\times10^{-6}$ H}{$3.1\times10^{-5}$ H}{$5.0\times10^{-4}$ H}{$2.0\times10^{-3}$ H}
+\end{q}
+\begin{q}{2}{13.4 Self-induced emf}{$|\varepsilon| = L|dI/dt| = (0.20)(50) = 10$ V. A falling current induces an emf that pushes the same way, to oppose the decrease.}
+The current in a 0.20 H inductor is decreasing at 50 A/s. What is the induced emf?
+\ch{10 V, opposing the current}{10 V, in the direction that tends to keep the current flowing}{250 V, in the direction that tends to keep the current flowing}{4.0 mV, opposing the current}
+\end{q}
+\begin{q}{3}{13.5 LR circuit}{$\tau = L/R = 0.20$ s and $I_{final} = 3.0$ A. At $t = \tau$, $I = 3.0(1 - e^{-1}) = 1.9$ A.}
+A 12 V battery, a $4.0\ \Omega$ resistor, and a 0.80 H inductor are connected in series at $t = 0$. What is the current at $t = 0.20$ s?
+\chh{$0$}{$1.1$ A}{$1.9$ A}{$3.0$ A}
+\end{q}
+\begin{q}{4}{13.5 Just after closing}{The current starts at zero, so there is no drop across the resistor; the whole emf appears across the inductor, which opposes the sudden change.}
+In the LR circuit of the previous question, what is the voltage across the inductor immediately after the switch closes?
+\chh{$0$}{$6.0$ V}{$9.6$ V}{$12$ V}
+\end{q}
+\begin{q}{1}{13.6 LC oscillation}{Energy: $\dfrac{Q_0^2}{2C} = \tfrac12 LI_{max}^2$, so $I_{max} = Q_0/\sqrt{LC} = \omega Q_0$.}
+A capacitor $C$ with charge $Q_0$ is connected across an inductor $L$ at $t = 0$. What is the maximum current in the circuit?
+\ch{$\dfrac{Q_0}{\sqrt{LC}}$}{$Q_0\sqrt{LC}$}{$\dfrac{Q_0}{LC}$}{$\dfrac{Q_0}{2\sqrt{LC}}$}
+\end{q}
+
+\section{Free response}
+
+\begin{frq}{Question 1 \textperiodcentered\ Qualitative/Quantitative Translation \textperiodcentered\ 8 points \textperiodcentered\ 24 minutes}
+A square loop of wire with side length $s$ and resistance $R$ is pulled at constant speed $v$ to the right. It starts in a region with no magnetic field, moves completely into a region of uniform field $B$ directed into the page, travels through it, and then leaves on the far side. The field region is wider than the loop.
+
+\begin{enumerate}[label=(\alph*),leftmargin=2em,itemsep=4pt]
+\item Without equations, describe the current in the loop (whether there is one and its direction) while it is entering the field, while it is entirely inside, and while it is leaving. Explain using the change in flux. \pts{3}
+\item Derive expressions for the current in the loop and the force needed to pull it at constant speed while it is entering the field. \pts{3}
+\item The loop is now pulled at speed $2v$. Using your results, determine how the energy dissipated in the loop during entry changes, and explain why this agrees with your description in (a). \pts{2}
+\end{enumerate}
+\end{frq}
+
+\makekey
+
+\subsection*{Free-response scoring guide (8 points)}
+\small
+Award each point only when the answer does what the model does. Points are independent unless a part says otherwise; a correct method with an answer carried forward from an earlier error earns the later points.
+\begin{scoring}
+(a) (3) & 1 pt: entering: inward flux increases, so a counterclockwise current makes an outward field to oppose it. 1 pt: entirely inside: the flux is constant, so there is no current. 1 pt: leaving: inward flux decreases, so a clockwise current makes an inward field to oppose the decrease. & Saying the current is largest while the loop is fully inside, where $B$ is strongest. \\
+(b) (3) & 1 pt: $\varepsilon = Bsv$ (only the leading edge cuts the field). 1 pt: $I = Bsv/R$. 1 pt: $F = IsB = \dfrac{B^2s^2v}{R}$, to the right (balancing the magnetic drag on the leading edge). & Including force on the top and bottom edges; those forces cancel. \\
+(c) (2) & 1 pt: energy $= F\cdot s = \dfrac{B^2s^3v}{R}$, which doubles at $2v$ (the force doubles over the same distance). 1 pt: faster entry changes the flux faster, so the induced emf and current are larger, as the reasoning in (a) implies; the time is halved but the power quadruples. & Saying the energy is unchanged because the flux change $Bs^2$ is the same. \\
+\end{scoring}
+
+\end{document}

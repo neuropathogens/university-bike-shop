@@ -1,0 +1,106 @@
+\documentclass[11pt]{article}
+\usepackage{ap-physc}
+\course{AP Physics C: Mechanics}
+\headcourse{AP Physics C: Mechanics}
+\headpart{Unit 6 \textperiodcentered\ Question Set}
+\title{Unit 6: Energy and Momentum of Rotating Systems: Question Set}
+\author{Paul Wang}
+\date{November 2026}
+\docpart{Unit 6 \textperiodcentered\ Question Set}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Exam-style practice on Unit 6 (topics 6.1--6.6), which is 10--15\% of the multiple-choice section. Section~1--3 hold 13 four-choice multiple-choice questions grouped by topic; most need a short calculation or a line of reasoning, as on the exam. The last page before the key is a full Translation Between Representations free-response question (12 points). All items are original and written for practice. Use the AP equation sheet and a calculator. Allow about 26 minutes for the multiple choice (the exam's pace is about 2 minutes per question) and 24 minutes for the free response. The answer key explains every item and names its topic; a scoring guide for the free response follows it.
+\end{abstract}
+
+\scoringline{MCQ: \blank\ / \qtotal \qquad FRQ: \blank\ / 12 \qquad Target: 9+ MCQ \qquad Pace: 2 min per MCQ}
+
+\section{Rotational energy and angular momentum (6.1--6.3)}
+
+\begin{q}{3}{6.1 Work and rotational energy}{$W = \Delta K = \tfrac12 I\omega^2 = \tfrac12(0.50)(400) = 100$ J.}
+How much work is needed to spin a flywheel with $I = 0.50\ \mathrm{kg\,m^2}$ from rest up to 20 rad/s?
+\chh{$5.0$ J}{$10$ J}{$100$ J}{$200$ J}
+\end{q}
+\begin{q}{2}{6.2 Rotational power}{$\omega = 300(2\pi/60) = 31.4$ rad/s, so $P = \tau\omega = 12 \times 31.4 = 377$ W.}
+A motor delivers a constant torque of 12 N$\cdot$m to a shaft turning at 300 rpm. What power does it deliver?
+\chh{$3600$ W}{$380$ W}{$60$ W}{$31$ W}
+\end{q}
+\begin{q}{2}{6.2 Work by a variable torque}{$W = \int_0^2 3\theta^2\,d\theta = 8.0$ J $= \tfrac12 I\omega^2$, so $\omega = \sqrt{16} = 4.0$ rad/s.}
+A torque $\tau = 3\theta^2$ (N$\cdot$m, with $\theta$ in radians) acts on a wheel with $I = 1.0\ \mathrm{kg\,m^2}$ that starts at rest. What is its angular speed after it turns through 2.0 rad?
+\chh{$2.8$ rad/s}{$4.0$ rad/s}{$8.0$ rad/s}{$16$ rad/s}
+\end{q}
+\begin{q}{4}{6.3 Angular momentum as a cross product}{$\vec L = \vec r\times\vec p = (xp_y - yp_x)\hat k = (0 - 4.0 \times 2.0)\hat k = -8.0\,\hat k$.}
+A particle at $\vec r = (3.0\,\hat\imath + 4.0\,\hat\jmath)$ m has momentum $\vec p = 2.0\,\hat\imath$ kg$\cdot$m/s. What is its angular momentum about the origin?
+\chh{$+8.0\,\hat k\ \mathrm{kg\,m^2/s}$}{$+6.0\,\hat k\ \mathrm{kg\,m^2/s}$}{$10\,\hat k\ \mathrm{kg\,m^2/s}$}{$-8.0\,\hat k\ \mathrm{kg\,m^2/s}$}
+\end{q}
+\begin{q}{3}{6.3 Angular impulse}{Angular impulse $\tau\Delta t = 15\ \mathrm{kg\,m^2/s} = \Delta L = I\omega$, so $\omega = 15/2.5 = 6.0$ rad/s.}
+A constant torque of 5.0 N$\cdot$m acts for 3.0 s on a wheel ($I = 2.5\ \mathrm{kg\,m^2}$) that starts at rest. What is its final angular speed?
+\chh{$38$ rad/s}{$15$ rad/s}{$6.0$ rad/s}{$2.0$ rad/s}
+\end{q}
+
+\section{Conservation of angular momentum (6.4)}
+
+\begin{q}{1}{6.4 Rotational collision}{No external torque about the axle: $I\omega_0 = 2I\omega_f$, so $\omega_f = \omega_0/2$. Half the kinetic energy becomes thermal energy.}
+A disk spins freely at $\omega_0$ on a frictionless axle. An identical disk, not rotating, is dropped onto it, and friction soon makes them turn together. What is the final angular speed?
+\chh{$\omega_0/2$}{$\omega_0$}{$\omega_0/4$}{$\omega_0/\sqrt2$}
+\end{q}
+\begin{q}{4}{6.4 Bullet and rod}{Angular momentum about the pivot is conserved (the pivot exerts no torque about itself): $mvL = \left(\tfrac13 ML^2 + mL^2\right)\omega = 2mL^2\omega$.}
+A rod of mass $M = 3m$ and length $L$ lies on a frictionless table, pivoted at one end. A bullet of mass $m$ moving at speed $v$ perpendicular to the rod hits the free end and embeds. What is the angular speed just after impact?
+\ch{$\dfrac{v}{L}$}{$\dfrac{v}{4L}$}{$\dfrac{3v}{4L}$}{$\dfrac{v}{2L}$}
+\end{q}
+\begin{q}{3}{6.4 Skater}{$I_1\omega_1 = I_2\omega_2$: $\omega_2 = (4.0/1.6)(2.0) = 5.0$ rev/s. Units of $\omega$ cancel, so rev/s is fine here.}
+A skater spins at 2.0 rev/s with her arms out ($I = 4.0\ \mathrm{kg\,m^2}$). She pulls her arms in, reducing $I$ to $1.6\ \mathrm{kg\,m^2}$. What is her new rate of spin?
+\chh{$0.80$ rev/s}{$3.2$ rev/s}{$5.0$ rev/s}{$13$ rev/s}
+\end{q}
+
+\section{Rolling and orbits (6.5--6.6)}
+
+\begin{q}{1}{6.5 Rolling race}{$a = g\sin\theta/(1 + \beta)$ with $\beta = \tfrac25, \tfrac12, 1$. Less energy tied up in rotation means more speed.}
+A solid sphere, a solid cylinder, and a thin hoop are released from rest at the top of the same incline and roll without slipping. In what order do they reach the bottom?
+\ch{Sphere, cylinder, hoop}{Hoop, cylinder, sphere}{All arrive together}{It depends on their masses and radii}
+\end{q}
+\begin{q}{2}{6.5 Rolling speed}{$Mgh = \tfrac12 Mv^2(1 + \tfrac12)$, so $v = \sqrt{4gh/3} = \sqrt{19.6} = 4.4$ m/s.}
+A solid cylinder rolls without slipping from rest down a ramp, dropping a height of 1.5 m. What is its speed at the bottom? ($g = 9.8\ \mathrm{m/s^2}$)
+\chh{$3.8$ m/s}{$4.4$ m/s}{$4.6$ m/s}{$5.4$ m/s}
+\end{q}
+\begin{q}{4}{6.5 Friction in rolling}{The contact point is momentarily at rest, so the friction is static and does no work. It points up the slope, providing the torque about the center that makes $\alpha = a/R$ grow as the ball speeds up.}
+A ball rolls down an incline without slipping. Which statement about the friction force on it is true?
+\ch{It is kinetic friction, it points up the incline, and it removes mechanical energy.}{It is static friction, it points down the incline, and it speeds the ball up.}{There is no friction, because the ball does not slide.}{It is static friction, it points up the incline, and it does no work on the ball.}
+\end{q}
+\begin{q}{3}{6.6 Kepler's third law}{$T^2 \propto r^3$, so $T \propto r^{3/2} = 4^{3/2} = 8$.}
+A satellite in a circular orbit of radius $r$ has period $T$. What is the period of a satellite in a circular orbit of radius $4r$ around the same planet?
+\chh{$2T$}{$4T$}{$8T$}{$16T$}
+\end{q}
+\begin{q}{1}{6.6 Orbital energy}{$K = \tfrac12 mv^2 = \dfrac{GMm}{2r}$ (from $v^2 = GM/r$) and $U = -\dfrac{GMm}{r}$, so $E = -\dfrac{GMm}{2r}$.}
+A satellite of mass $m$ moves in a circular orbit of radius $r$ around a planet of mass $M$. What is its total mechanical energy?
+\ch{$-\dfrac{GMm}{2r}$}{$-\dfrac{GMm}{r}$}{$+\dfrac{GMm}{2r}$}{$0$}
+\end{q}
+
+\section{Free response}
+
+\begin{frq}{Question 1 \textperiodcentered\ Translation Between Representations \textperiodcentered\ 12 points \textperiodcentered\ 24 minutes}
+A uniform solid cylinder of mass $M$ and radius $R$ is released from rest on a ramp inclined at angle $\theta$. It rolls down without slipping.
+
+\begin{enumerate}[label=(\alph*),leftmargin=2em,itemsep=4pt]
+\item Draw a diagram of the cylinder on the ramp showing every force acting on it, each drawn as an arrow starting at the point where that force acts. \pts{2}
+\item Derive expressions for the magnitude of the cylinder's acceleration and the friction force on it, in terms of $M$, $g$, and $\theta$. \pts{4}
+\item On one set of axes, sketch graphs of the cylinder's translational kinetic energy and its rotational kinetic energy as functions of the distance $d$ it has traveled along the ramp. Label each graph. \pts{3}
+\item The ramp is replaced with an identical one that is frictionless, and the cylinder is released from rest without spinning. How would each graph from part (c) change, and how would the total kinetic energy at a given $d$ compare? Justify your answers. \pts{3}
+\end{enumerate}
+\end{frq}
+
+\makekey
+
+\subsection*{Free-response scoring guide (12 points)}
+\small
+Award each point only when the answer does what the model does. Points are independent unless a part says otherwise; a correct method with an answer carried forward from an earlier error earns the later points.
+\begin{scoring}
+(a) (2) & 1 pt: weight $Mg$ at the center, straight down; normal force at the contact point, perpendicular to the ramp. 1 pt: static friction at the contact point, pointing up the ramp; no other forces. & Drawing all forces at the center, which hides the torque from friction. \\
+(b) (4) & 1 pt: $Mg\sin\theta - f = Ma$. 1 pt: $fR = \tfrac12 MR^2\alpha$. 1 pt: uses $a = \alpha R$ to get $a = \tfrac23 g\sin\theta$. 1 pt: $f = \tfrac13 Mg\sin\theta$. & Using $f = \mu_s N$; the friction takes whatever value rolling requires. \\
+(c) (3) & 1 pt: both graphs are straight lines through the origin (energy gained is proportional to $d$). 1 pt: the translational line is steeper. 1 pt: the rotational line has half its slope, since $K_{rot} = \tfrac12\cdot\tfrac12 MR^2(v/R)^2 = \tfrac14 Mv^2 = \tfrac12 K_{trans}$. & Curved graphs, from confusing distance with time ($K \propto t^2$ at constant acceleration). \\
+(d) (3) & 1 pt: rotational kinetic energy stays zero for all $d$, because gravity and the normal force exert no torque about the center. 1 pt: total kinetic energy at each $d$ is unchanged, $Mgd\sin\theta$, because energy is conserved in both cases (static friction did no work). 1 pt: so the translational graph is steeper, equal to the old total, slope $Mg\sin\theta$ instead of $\tfrac23 Mg\sin\theta$. & Saying the total kinetic energy is larger without friction. \\
+\end{scoring}
+
+\end{document}

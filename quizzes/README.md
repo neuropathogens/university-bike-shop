@@ -91,3 +91,11 @@ Every wrong choice must have a note in `ex.others`; the builder refuses a quiz o
   (`/study/math/<subject>/tests/<slug>/`), transcribed from the PDFs: one module per volume (`de1.py` … `ra3.py`)
   with `Q()` items and `FRQ()` free-response items. Real Analysis II and III are proof problem sets (free
   response only, scored 5/10/15 with a proof rubric; III shows each section's "Tool -> use" box).
+- `ap_physics_c` — AP Physics C: Mechanics (Units 1–7) and E&M (Units 8–13). Unlike the other families, the content
+  lives here and the PDFs are generated from it: one module per unit (`u01.py` … `u13.py`, schema in `model.py`)
+  holds the guide's sections and checks, the question set and its free-response question. `texgen.py` writes
+  `latex/*.tex` (style `latex/ap-physc.sty`), compiles them with XeLaTeX, copies the PDFs, packs and source zip
+  to `public/study/ap/ap-physics-c/`, and records guide section pages in `pages.json`; `quiz.py` builds
+  `tests/unit-N/` and `tests/unit-N-checks/` from the same objects, so letters and keys always match the PDFs.
+  `study_rows.py` rewrites the two Physics C sections of `/study`; `checks.py` recomputes every numeric answer.
+  Edit a unit, then: `texgen.py` → `checks.py` → `study_rows.py` → `build.py ap_physics_c` → `link_study.py`.

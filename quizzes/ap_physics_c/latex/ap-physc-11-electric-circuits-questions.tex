@@ -1,0 +1,112 @@
+\documentclass[11pt]{article}
+\usepackage{ap-physc}
+\course{AP Physics C: Electricity and Magnetism}
+\headcourse{AP Physics C: E\&M}
+\headpart{Unit 11 \textperiodcentered\ Question Set}
+\title{Unit 11: Electric Circuits: Question Set}
+\author{Paul Wang}
+\date{November 2026}
+\docpart{Unit 11 \textperiodcentered\ Question Set}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Exam-style practice on Unit 11 (topics 11.1--11.8), which is 15--25\% of the multiple-choice section. Section~1--3 hold 13 four-choice multiple-choice questions grouped by topic; most need a short calculation or a line of reasoning, as on the exam. The last page before the key is a full Experimental Design and Analysis free-response question (10 points). All items are original and written for practice. Use the AP equation sheet and a calculator. Allow about 26 minutes for the multiple choice (the exam's pace is about 2 minutes per question) and 24 minutes for the free response. The answer key explains every item and names its topic; a scoring guide for the free response follows it.
+\end{abstract}
+
+\scoringline{MCQ: \blank\ / \qtotal \qquad FRQ: \blank\ / 10 \qquad Target: 9+ MCQ \qquad Pace: 2 min per MCQ}
+
+\section{Current, resistance, and power (11.1--11.4)}
+
+\begin{q}{3}{11.1 Current as a derivative}{$I = dq/dt = 6t + 2 = 14$ A at $t = 2$.}
+The charge that has passed a point in a wire is $q(t) = 3t^2 + 2t$ (coulombs, seconds). What is the current at $t = 2.0$ s?
+\chh{$6.0$ A}{$8.0$ A}{$14$ A}{$16$ A}
+\end{q}
+\begin{q}{4}{11.3 Resistance from resistivity}{$A = \pi r^2 = \pi(0.25\times10^{-3})^2 = 1.96\times10^{-7}\ \mathrm{m^2}$, so $R = \rho L/A = 11\ \Omega$.}
+A nichrome wire ($\rho = 1.1\times10^{-6}\ \Omega\cdot\mathrm{m}$) is 2.0 m long with a diameter of 0.50 mm. What is its resistance?
+\chh{$2.8\ \Omega$}{$45\ \Omega$}{$8.8\ \Omega$}{$11\ \Omega$}
+\end{q}
+\begin{q}{2}{11.4 Power}{$R = V^2/P = 14400/1500 = 9.6\ \Omega$.}
+A space heater is rated at 1500 W when connected to 120 V. What is its resistance while operating?
+\chh{$0.080\ \Omega$}{$9.6\ \Omega$}{$12.5\ \Omega$}{$1.8\times10^{5}\ \Omega$}
+\end{q}
+\begin{q}{1}{11.4 Bulb brightness}{All the current passes through A, then splits equally between B and C. A carries twice the current, so it dissipates four times the power of B or C.}
+Three identical bulbs are connected to an ideal battery: bulb A is in series with a parallel pair, B and C. Which bulb is brightest?
+\chh{A}{B}{C}{All are equally bright}
+\end{q}
+
+\section{DC circuits and Kirchhoff's rules (11.5--11.7)}
+
+\begin{q}{2}{11.5 Current in a branch}{Parallel pair: $2.0\ \Omega$; total $8.0\ \Omega$; battery current 1.5 A. The pair has $1.5 \times 2.0 = 3.0$ V across it, so $I_3 = 3.0/3.0 = 1.0$ A.}
+A $6.0\ \Omega$ resistor is in series with a parallel combination of $6.0\ \Omega$ and $3.0\ \Omega$, across an ideal 12 V battery. What is the current in the $3.0\ \Omega$ resistor?
+\chh{$0.50$ A}{$1.0$ A}{$1.5$ A}{$4.0$ A}
+\end{q}
+\begin{q}{1}{11.6 Loop rule}{Around the loop: $12 - 4.0 - I(4.0) = 0$, so $I = 2.0$ A, driven by the larger battery.}
+A single loop contains a 12 V battery and a 4.0 V battery connected so that they oppose each other (positive terminals facing), plus resistors totaling $4.0\ \Omega$. What is the current?
+\chh{$2.0$ A}{$4.0$ A}{$1.0$ A}{$3.0$ A}
+\end{q}
+\begin{q}{3}{11.7 Two-battery circuit}{Let $V$ be the top node's potential relative to the bottom. Junction rule: $\dfrac{10 - V}{2.0} + \dfrac{6.0 - V}{2.0} = \dfrac{V}{4.0}$, so $V = 6.4$ V and the middle current is $6.4/4.0 = 1.6$ A.}
+Two nodes, top and bottom, are joined by three branches. Left: a 10 V battery (positive terminal toward the top node) in series with $2.0\ \Omega$. Middle: a $4.0\ \Omega$ resistor. Right: a 6.0 V battery (positive terminal toward the top node) in series with $2.0\ \Omega$. What is the current in the $4.0\ \Omega$ resistor?
+\chh{$4.0$ A}{$2.0$ A}{$1.6$ A}{$1.0$ A}
+\end{q}
+\begin{q}{3}{11.6 Internal resistance}{$I = \varepsilon/(R + r) = 3.0$ A, so $\Delta V = \varepsilon - Ir = 9.0 - 3.0 = 6.0$ V (also $IR$).}
+A battery with emf 9.0 V and internal resistance $1.0\ \Omega$ is connected to a $2.0\ \Omega$ resistor. What is the terminal voltage?
+\chh{$3.0$ V}{$4.5$ V}{$6.0$ V}{$9.0$ V}
+\end{q}
+\begin{q}{4}{11.5 Meters}{A voltmeter compares the potentials at two points, so it attaches across the resistor. Its huge resistance means almost no current is diverted.}
+How should an ideal voltmeter be connected to measure the voltage across a resistor, and why does it not disturb the circuit?
+\ch{In series; its very small resistance causes almost no voltage drop}{In parallel; its very small resistance carries the current around the resistor}{In series; its very large resistance keeps the current steady}{In parallel; its very large resistance draws almost no current}
+\end{q}
+
+\section{RC circuits (11.8)}
+
+\begin{q}{2}{11.8 RC charging}{$\tau = RC = 0.10$ s. $I = (\varepsilon/R)e^{-t/\tau} = (6.0\ \mathrm{mA})e^{-1} = 2.2$ mA.}
+A 12 V battery charges a $50\ \mu\mathrm{F}$ capacitor through a $2.0\ \mathrm{k}\Omega$ resistor, starting from zero charge. What is the current at $t = 0.10$ s?
+\chh{$0$ mA}{$2.2$ mA}{$3.8$ mA}{$6.0$ mA}
+\end{q}
+\begin{q}{2}{11.8 Steady state}{In steady state no current enters the capacitor, so $I = 12/6.0 = 2.0$ A through both resistors. The capacitor has the same 4.0 V as the $2.0\ \Omega$ resistor: $Q = CV = 40\ \mu\mathrm{C}$.}
+A 12 V battery is in series with a $4.0\ \Omega$ resistor and a $2.0\ \Omega$ resistor. A $10\ \mu\mathrm{F}$ capacitor is connected in parallel with the $2.0\ \Omega$ resistor. Long after the circuit is connected, what is the charge on the capacitor?
+\chh{$0$}{$40\ \mu\mathrm{C}$}{$80\ \mu\mathrm{C}$}{$120\ \mu\mathrm{C}$}
+\end{q}
+\begin{q}{3}{11.8 Just after closing}{An uncharged capacitor has no voltage across it, so it acts like a wire and shorts out the $2.0\ \Omega$ resistor. $I = 12/4.0 = 3.0$ A.}
+In the circuit of the previous question, the capacitor is uncharged when the switch closes. What is the current from the battery immediately afterward?
+\chh{$0$}{$2.0$ A}{$3.0$ A}{$6.0$ A}
+\end{q}
+\begin{q}{4}{11.8 Discharging}{$Q_0e^{-t/\tau} = Q_0/2 \Rightarrow t = \tau\ln 2 \approx 0.69\tau$.}
+A capacitor discharges through a resistor with time constant $\tau$. How long does it take for its charge to fall to half its initial value?
+\chh{$\tau/2$}{$\tau$}{$2\tau$}{$\tau\ln 2$}
+\end{q}
+
+\section{Free response}
+
+\begin{frq}{Question 1 \textperiodcentered\ Experimental Design and Analysis \textperiodcentered\ 10 points \textperiodcentered\ 24 minutes}
+Students want to find the emf $\varepsilon$ and the internal resistance $r$ of a battery. They have the battery, a variable resistor, an ammeter, a voltmeter, a switch, and wires. They measure the terminal voltage $\Delta V$ for several currents $I$:
+
+\medskip
+\begin{tabular}{@{}lccccc@{}}\toprule
+$I$ (A) & 0.20 & 0.40 & 0.60 & 0.80 & 1.00 \\ \midrule
+$\Delta V$ (V) & 5.81 & 5.58 & 5.42 & 5.19 & 5.01 \\ \bottomrule
+\end{tabular}
+
+\begin{enumerate}[label=(\alph*),leftmargin=2em,itemsep=4pt]
+\item Describe how to connect the equipment, and how the measurements are taken, so that the data in the table can be collected. \pts{3}
+\item Write an equation relating $\Delta V$ and $I$, and state what graph gives a straight line from which $\varepsilon$ and $r$ can be read. \pts{2}
+\item Using a best-fit line for the data, determine $r$ and $\varepsilon$. \pts{3}
+\item A student says the ammeter's small but nonzero resistance makes the measured value of $r$ too large. Do you agree? Explain, based on your circuit in (a). \pts{2}
+\end{enumerate}
+\end{frq}
+
+\makekey
+
+\subsection*{Free-response scoring guide (10 points)}
+\small
+Award each point only when the answer does what the model does. Points are independent unless a part says otherwise; a correct method with an answer carried forward from an earlier error earns the later points.
+\begin{scoring}
+(a) (3) & 1 pt: battery, switch, ammeter, and variable resistor in one series loop. 1 pt: voltmeter connected directly across the battery terminals (in parallel). 1 pt: adjust the variable resistor to change $I$, recording the ammeter and voltmeter readings each time (switch open between readings so the battery does not heat). & Putting the voltmeter in series, or the ammeter in parallel. \\
+(b) (2) & 1 pt: $\Delta V = \varepsilon - Ir$. 1 pt: graph $\Delta V$ versus $I$: slope $= -r$, vertical intercept $= \varepsilon$. & Graphing $\Delta V$ versus $1/I$. \\
+(c) (3) & 1 pt: a straight best-fit line through the data (by plot or calculator fit). 1 pt: slope $\approx -1.0$ V/A, so $r \approx 1.0\ \Omega$ (accept 0.9--1.1). 1 pt: intercept $\approx 6.0$ V, so $\varepsilon \approx 6.0$ V. & Using $r = \Delta V/I$ from one row, which gives the external resistance. \\
+(d) (2) & 1 pt: disagree, for the circuit in (a). 1 pt: the voltmeter is across the battery's terminals and the ammeter reads the battery's own current, so the ammeter's resistance is only part of the external load; it changes which currents occur, not the relation $\Delta V = \varepsilon - Ir$. (If the voltmeter were instead across the variable resistor alone, the ammeter's voltage drop would be counted as internal, and the student would be right.) & Agreeing without referring to where the voltmeter is connected. \\
+\end{scoring}
+
+\end{document}

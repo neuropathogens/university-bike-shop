@@ -1,0 +1,147 @@
+\documentclass[11pt]{article}
+\usepackage{ap-physc}
+\course{AP Physics C: Mechanics}
+\headcourse{AP Physics C: Mechanics}
+\headpart{Unit 1 \textperiodcentered\ Study Guide}
+\title{Unit 1: Kinematics}
+\author{Paul Wang}
+\date{November 2026}
+\docpart{Unit 1 \textperiodcentered\ Study Guide \textperiodcentered\ 10--15\% of MCQ}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Unit 1 describes motion: position, velocity, and acceleration in one and two dimensions, and how they look to observers in different reference frames. Physics C expects calculus throughout: velocity and acceleration are derivatives, displacement and velocity change are integrals, and the constant-acceleration equations are a special case you must recognize. This guide covers vectors and displacement (1.1), calculus-based kinematics including velocity-dependent acceleration (1.2), motion graphs (1.3), relative motion (1.4), and two-dimensional motion and projectiles (1.5). Each section ends with check questions; the key is on the last page.
+\end{abstract}
+
+\scoringline{Check questions: \blank\ / \qtotal \qquad Target: 6+ \qquad Weakest topic: \blank[8em]}
+
+\section{Vectors, position, and displacement (1.1)}\label{sec:1}
+
+Kinematics describes motion without asking what causes it. Every quantity is either a \textbf{scalar} (size only) or a \textbf{vector} (size and direction). In one dimension the direction is just a sign, so choose a positive direction and keep it for the whole problem.
+
+\begin{terms}
+Position $x$ & Location relative to a chosen origin. Changing the origin changes $x$ but never $\Delta x$. \\
+Displacement $\Delta x = x_f - x_i$ & Vector: depends only on the start and end points. \\
+Distance & Scalar: total path length. Distance $\ge |\Delta x|$, equal only if the object never reverses. \\
+Speed vs.\ velocity & Speed is $|\vec v|$; average speed $=$ distance$/\Delta t$, average velocity $= \Delta x/\Delta t$. \\
+Components & $A_x = A\cos\theta$, $A_y = A\sin\theta$ with $\theta$ from the $+x$ axis; $A = \sqrt{A_x^2 + A_y^2}$. \\
+\end{terms}
+
+\begin{trap}
+Average speed is not the magnitude of average velocity. A runner who finishes one lap of a 400 m track in 80 s has average speed 5 m/s and average velocity zero.
+\end{trap}
+
+\subsubsection{Check}\mbox{}
+
+\begin{q}{2}{1.1 Displacement vs. distance}{Average speed uses distance (70 m); average velocity uses displacement (10 m west).}
+A student walks 30 m east, then 40 m west, in a total of 50 s. What are her average speed and the magnitude of her average velocity?
+\chh{$1.4$ m/s and $1.4$ m/s}{$1.4$ m/s and $0.20$ m/s}{$0.20$ m/s and $1.4$ m/s}{$1.0$ m/s and $0.20$ m/s}
+\end{q}
+
+\section{Velocity and acceleration with calculus (1.2)}\label{sec:2}
+
+Velocity is the rate of change of position, and acceleration is the rate of change of velocity:
+\[ v = \frac{dx}{dt}, \qquad a = \frac{dv}{dt} = \frac{d^2x}{dt^2}, \qquad x(t) = x_0 + \int_0^t v\,dt', \qquad v(t) = v_0 + \int_0^t a\,dt'. \]
+Differentiate to go \emph{down} the chain ($x \to v \to a$); integrate, and add the initial value, to go \emph{up}.
+
+\begin{keyidea}[Constant acceleration only]
+\vspace{-6pt}
+\[ v = v_0 + at, \qquad x = x_0 + v_0 t + \tfrac12 a t^2, \qquad v^2 = v_0^2 + 2a(x - x_0). \]
+These come from integrating a constant $a$. If $a$ changes with time, position, or velocity, they are wrong; integrate instead.
+\end{keyidea}
+
+\textbf{When $a$ depends on $v$ or $x$.} Separate variables. If $a = f(v)$, write $\frac{dv}{dt} = f(v)$, so $\int \frac{dv}{f(v)} = \int dt$. If you want $v$ as a function of $x$, use the chain rule $a = \frac{dv}{dt} = v\frac{dv}{dx}$.
+
+\begin{example}
+A boat cuts its engine at speed $v_0$ and the water slows it with $a = -kv$. Then $\frac{dv}{v} = -k\,dt$, so $v = v_0 e^{-kt}$: the boat never quite stops. Its position is $x = \frac{v_0}{k}\left(1 - e^{-kt}\right)$, which approaches $v_0/k$. The boat coasts a \emph{finite} distance $v_0/k$ in infinite time.
+\end{example}
+
+\begin{trap}
+``Momentarily at rest'' means $v = 0$, not $a = 0$. At the top of a vertical throw $v = 0$ while $a = -g$.
+\end{trap}
+
+\subsubsection{Check}\mbox{}
+
+\begin{q}{4}{1.2 Derivatives}{Differentiate twice: $v = 2 - 2t$, $a = -2$ m/s$^2$ at every instant.}
+A particle's position is $x(t) = 5 + 2t - t^2$ (meters, seconds). What is its acceleration at $t = 3$ s?
+\chh{$-4\ \mathrm{m/s^2}$}{$2\ \mathrm{m/s^2}$}{$-6\ \mathrm{m/s^2}$}{$-2\ \mathrm{m/s^2}$}
+\end{q}
+\begin{q}{3}{1.2 Integrating a(t)}{Integrate $a(t)$: $v = \int_0^3 4t\,dt = 2t^2\big|_0^3 = 18$ m/s.}
+An object starts from rest with acceleration $a(t) = 4t$ (SI units). How fast is it moving at $t = 3$ s?
+\chh{$6$ m/s}{$12$ m/s}{$18$ m/s}{$36$ m/s}
+\end{q}
+
+\section{Representing motion with graphs (1.3)}\label{sec:3}
+
+Graphs are the calculus of kinematics drawn as pictures.
+
+\begin{compare}{Graph}{Slope gives}{Area under curve gives}
+$x$ vs.\ $t$ & velocity $v$ & (not used) \\
+$v$ vs.\ $t$ & acceleration $a$ & displacement $\Delta x$ (area below the axis counts negative) \\
+$a$ vs.\ $t$ & (jerk, not tested) & change in velocity $\Delta v$ \\
+\end{compare}
+
+\begin{itemize}
+\item Concavity of $x(t)$ is the sign of $a$: curving up means $a > 0$.
+\item The object turns around where $v$ crosses zero, i.e.\ where the $x$--$t$ graph has a horizontal tangent.
+\item Speed increases when $v$ and $a$ have the same sign and decreases when they have opposite signs.
+\end{itemize}
+
+\begin{trap}
+Distance from a $v$--$t$ graph adds the \emph{magnitudes} of all areas; displacement adds signed areas. Split the graph at every zero crossing.
+\end{trap}
+
+\subsubsection{Check}\mbox{}
+
+\begin{q}{3}{1.3 Area under a-t}{The area under an $a$--$t$ graph is $\Delta v$: $2 \times 3 = 6$ m/s, added to the initial 4 m/s.}
+A cart moving at $4$ m/s has a constant acceleration of $2\ \mathrm{m/s^2}$ for $3$ s, shown as a horizontal line on an $a$--$t$ graph. What is its speed at the end?
+\chh{$6$ m/s}{$9$ m/s}{$10$ m/s}{$13$ m/s}
+\end{q}
+\begin{q}{1}{1.3 Speeding up vs. slowing down}{Velocity and acceleration have opposite signs, so the speed is decreasing.}
+At some instant a particle has $v = -3$ m/s and $a = +2\ \mathrm{m/s^2}$. At that instant the particle is
+\chh{slowing down}{speeding up}{moving in the $+x$ direction}{at rest}
+\end{q}
+
+\section{Reference frames and relative motion (1.4)}\label{sec:4}
+
+Velocities measured by different observers differ by the velocity of one observer relative to the other:
+\[ \vec v_{A/C} = \vec v_{A/B} + \vec v_{B/C}. \]
+Read the subscripts as ``A relative to B''. The inner letters cancel like a chain. Acceleration is the same in every frame that moves at constant velocity, so Newton's laws hold in all such (inertial) frames.
+
+\begin{example}[River crossing]
+A boat moves at $2.0$ m/s relative to the water; the river flows at $0.80$ m/s. To land directly across, the boat must aim upstream so the water's velocity is cancelled: the ground speed across is $\sqrt{2.0^2 - 0.80^2} = 1.83$ m/s. To cross in the \emph{least time}, aim straight across instead: the crossing speed is the full $2.0$ m/s, and the boat lands downstream.
+\end{example}
+
+\subsubsection{Check}\mbox{}
+
+\begin{q}{1}{1.4 Relative velocity}{$\vec v_{P/G} = \vec v_{P/T} + \vec v_{T/G} = (-2) + (+30) = +28$ m/s, east.}
+A train moves east at $30$ m/s. A passenger walks toward the back of the train at $2$ m/s relative to the train. What is the passenger's velocity relative to the ground?
+\chh{$28$ m/s east}{$32$ m/s east}{$2$ m/s west}{$28$ m/s west}
+\end{q}
+
+\section{Motion in two dimensions and projectiles (1.5)}\label{sec:5}
+
+In two dimensions, treat $x$ and $y$ separately; they share only the time $t$. With $\vec r(t) = x(t)\,\hat\imath + y(t)\,\hat\jmath$, the velocity and acceleration are $\vec v = \frac{d\vec r}{dt}$ and $\vec a = \frac{d\vec v}{dt}$, component by component.
+
+\begin{keyidea}[Projectile (no air resistance, $+y$ up)]
+$a_x = 0$, $a_y = -g$. With launch speed $v_0$ at angle $\theta$:
+$v_x = v_0\cos\theta$ (constant), $v_y = v_0\sin\theta - gt$,
+$x = v_0\cos\theta\, t$, $y = v_0\sin\theta\, t - \tfrac12 g t^2$.
+Peak height $H = \dfrac{(v_0\sin\theta)^2}{2g}$; level-ground range $R = \dfrac{v_0^2 \sin 2\theta}{g}$ (maximum at $45^\circ$).
+\end{keyidea}
+
+\begin{trap}
+At the top of the path the velocity is horizontal, not zero, and the acceleration is still $g$ downward. Two objects released from the same height at the same time, one dropped and one launched horizontally, land together: horizontal motion does not affect vertical motion.
+\end{trap}
+
+\subsubsection{Check}\mbox{}
+
+\begin{q}{2}{1.5 Horizontal launch}{Fall time from $y$ alone: $t = \sqrt{2h/g} = 0.50$ s; then $x = v_x t = 1.5$ m.}
+A ball rolls off a $1.25$ m high table at $3.0$ m/s. Ignoring air resistance ($g = 10\ \mathrm{m/s^2}$), how far from the table's edge does it land?
+\chh{$3.0$ m}{$1.5$ m}{$1.25$ m}{$0.75$ m}
+\end{q}
+
+\makekey
+\end{document}

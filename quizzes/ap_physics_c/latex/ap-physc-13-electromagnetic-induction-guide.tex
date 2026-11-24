@@ -1,0 +1,107 @@
+\documentclass[11pt]{article}
+\usepackage{ap-physc}
+\course{AP Physics C: Electricity and Magnetism}
+\headcourse{AP Physics C: E\&M}
+\headpart{Unit 13 \textperiodcentered\ Study Guide}
+\title{Unit 13: Electromagnetic Induction}
+\author{Paul Wang}
+\date{November 2026}
+\docpart{Unit 13 \textperiodcentered\ Study Guide \textperiodcentered\ 10--20\% of MCQ}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Unit 13 closes the course with changing magnetic flux. It covers magnetic flux and Faraday's and Lenz's laws, including motional emf, generators, and induced electric fields (13.1--13.2); forces on induced currents and magnetic braking (13.3); self-inductance and magnetic energy (13.4); LR circuits (13.5); and LC oscillations (13.6). Each section ends with check questions; the key is on the last page.
+\end{abstract}
+
+\scoringline{Check questions: \blank\ / \qtotal \qquad Target: 5+ \qquad Weakest topic: \blank[8em]}
+
+\section{Magnetic flux, Faraday's law, and Lenz's law (13.1--13.2)}\label{sec:1}
+
+\[ \Phi_B = \int\vec B\cdot d\vec A\ \ (= BA\cos\theta \text{ for uniform } B), \qquad \varepsilon = -N\frac{d\Phi_B}{dt}, \qquad \oint\vec E\cdot d\vec l = -\frac{d\Phi_B}{dt}. \]
+An emf is induced whenever the flux through a loop changes: by changing $B$, the area, or the angle. \textbf{Lenz's law} sets the direction: the induced current makes a field that opposes the \emph{change} in flux (not the flux itself).
+\begin{terms}
+Motional emf & A rod of length $L$ moving at $v$ perpendicular to $B$: $\varepsilon = BLv$. The magnetic force on its charges drives them along the rod. \\
+Generator & A coil of $N$ turns and area $A$ spinning at $\omega$: $\varepsilon = NBA\omega\sin\omega t$, peak $NBA\omega$. \\
+Induced electric field & A changing $B$ creates a circulating $\vec E$ even with no wire present. Inside a solenoid of radius $R$, $E = \dfrac{r}{2}\dfrac{dB}{dt}$ for $r < R$. \\
+\end{terms}
+\begin{keyidea}[Lenz's law in three steps]
+(1) Which way does the external field point through the loop, and is its flux increasing or decreasing? (2) The induced field points opposite if increasing, the same way if decreasing. (3) Right-hand rule: curl your fingers with the current so your thumb points along the induced field.
+\end{keyidea}
+
+\subsubsection{Check}\mbox{}
+
+\begin{q}{1}{13.1 Magnetic flux}{$\Phi = BA\cos\theta = (0.40)(0.050)\cos 60^\circ = 0.010$ Wb.}
+A loop of area $0.050\ \mathrm{m^2}$ sits in a uniform 0.40 T field that makes a $60^\circ$ angle with the loop's normal. What is the flux through it?
+\chh{$0.010$ Wb}{$0.017$ Wb}{$0.020$ Wb}{$8.0$ Wb}
+\end{q}
+\begin{q}{4}{13.2 Lenz's law}{The magnet's field points away from its north pole, through the loop, and grows as the magnet approaches. The loop opposes the increase by making its own field pointing back toward the magnet: seen from the magnet, that is counterclockwise (the loop's near face becomes a north pole and repels).}
+The north pole of a bar magnet is pushed toward a loop of wire. Seen from the magnet's side, which way does the induced current circulate?
+\ch{Clockwise}{There is no current, because the magnet does not touch the loop}{It alternates direction}{Counterclockwise}
+\end{q}
+
+\section{Induced currents and magnetic forces (13.3)}\label{sec:2}
+
+An induced current in a magnetic field feels a force, and Lenz's law guarantees that force opposes the motion that caused it: magnetic braking.
+
+\begin{example}[Rod on rails]
+A rod of length $L$ slides at $v$ on frictionless rails joined by a resistor $R$, in a field $B$ perpendicular to the plane. Then $\varepsilon = BLv$, $I = BLv/R$, and the field pushes back on the rod with $F = ILB = \dfrac{B^2L^2v}{R}$. Keeping $v$ constant requires a pulling force of that size, and its power $Fv = \dfrac{B^2L^2v^2}{R} = I^2R$ appears as heat in the resistor. Left alone, the rod slows exponentially: $m\,\dfrac{dv}{dt} = -\dfrac{B^2L^2}{R}v$.
+\end{example}
+A magnet falling through a copper tube or a loop falling out of a field is slowed the same way, and reaches a terminal speed where the magnetic force balances gravity.
+
+\subsubsection{Check}\mbox{}
+
+\begin{q}{2}{13.2 Motional emf}{$\varepsilon = BLv = (0.20)(0.50)(4.0) = 0.40$ V.}
+A 0.50 m rod moves at 4.0 m/s perpendicular to a 0.20 T field. What emf is induced between its ends?
+\chh{$0.10$ V}{$0.40$ V}{$0.80$ V}{$2.0$ V}
+\end{q}
+
+\section{Inductance (13.4)}\label{sec:3}
+
+A coil opposes changes in its own current. Its self-inductance $L$ links flux to current:
+\[ L = \frac{N\Phi_B}{I}, \qquad \varepsilon_L = -L\frac{dI}{dt}, \qquad U_L = \tfrac12 LI^2, \qquad u_B = \frac{B^2}{2\mu_0}. \]
+For a long solenoid of $N$ turns, length $\ell$, and area $A$: $L = \mu_0 N^2A/\ell$. The unit is the henry, $1\ \mathrm{H} = 1\ \mathrm{V\,s/A}$.
+\begin{trap}
+An inductor resists \emph{changes} in current, not current itself. It has no voltage across it when its current is steady (an ideal inductor is then just a wire).
+\end{trap}
+
+\subsubsection{Check}\mbox{}
+
+\begin{q}{3}{13.4 Energy in an inductor}{$U = \tfrac12 LI^2 = \tfrac12(2.0)(9.0) = 9.0$ J.}
+A 2.0 H inductor carries a steady 3.0 A. How much energy is stored in its magnetic field?
+\chh{$3.0$ J}{$6.0$ J}{$9.0$ J}{$18$ J}
+\end{q}
+
+\section{LR circuits (13.5)}\label{sec:4}
+
+In a series circuit of a battery $\varepsilon$, resistor $R$, and inductor $L$, the loop rule gives $\varepsilon - IR - L\,\dfrac{dI}{dt} = 0$, so
+\[ I(t) = \frac{\varepsilon}{R}\left(1 - e^{-t/\tau}\right), \qquad \tau = \frac{L}{R}; \qquad \text{when the battery is removed: } I = I_0e^{-t/\tau}. \]
+\begin{compare}{Moment}{Inductor acts like}{Current}
+Just after the switch closes & an open circuit (its current cannot jump) & zero; $\Delta V_L = \varepsilon$ \\
+Long after & a plain wire & $\varepsilon/R$; $\Delta V_L = 0$ \\
+\end{compare}
+These are the opposite of a capacitor's: a capacitor starts as a wire and ends as a break.
+
+\subsubsection{Check}\mbox{}
+
+\begin{q}{1}{13.5 LR time constant}{$\tau = L/R = 0.50/10 = 0.050$ s.}
+A 0.50 H inductor is in series with a $10\ \Omega$ resistor and a battery. What is the circuit's time constant?
+\chh{$0.050$ s}{$0.50$ s}{$5.0$ s}{$20$ s}
+\end{q}
+
+\section{LC circuits (13.6)}\label{sec:5}
+
+A charged capacitor connected across an inductor (no resistance) oscillates: energy passes back and forth between the capacitor's electric field and the inductor's magnetic field.
+\[ \frac{d^2q}{dt^2} = -\frac{1}{LC}q, \qquad \omega = \frac{1}{\sqrt{LC}}, \qquad q = Q_0\cos\omega t, \qquad I_{max} = \omega Q_0, \qquad \frac{Q_0^2}{2C} = \tfrac12 LI_{max}^2. \]
+This is the mass--spring oscillator again, with $q \leftrightarrow x$, $L \leftrightarrow m$, and $1/C \leftrightarrow k$. When the capacitor's charge is zero, the current is maximum, and vice versa.
+
+\subsubsection{Check}\mbox{}
+
+\begin{q}{3}{13.6 LC frequency}{$\omega = 1/\sqrt{LC} = 1/\sqrt{1.0\times10^{-6}} = 1000$ rad/s.}
+An LC circuit has $L = 0.10$ H and $C = 10\ \mu\mathrm{F}$. What is its angular frequency of oscillation?
+\chh{$1.0\times10^{-3}$ rad/s}{$160$ rad/s}{$1000$ rad/s}{$1.0\times10^{6}$ rad/s}
+\end{q}
+
+\makekey
+\end{document}

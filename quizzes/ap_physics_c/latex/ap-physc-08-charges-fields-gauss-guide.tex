@@ -1,0 +1,118 @@
+\documentclass[11pt]{article}
+\usepackage{ap-physc}
+\course{AP Physics C: Electricity and Magnetism}
+\headcourse{AP Physics C: E\&M}
+\headpart{Unit 8 \textperiodcentered\ Study Guide}
+\title{Unit 8: Electric Charges, Fields, and Gauss's Law}
+\author{Paul Wang}
+\date{November 2026}
+\docpart{Unit 8 \textperiodcentered\ Study Guide \textperiodcentered\ 15--25\% of MCQ}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Unit 8 opens the E\&M course. It covers charge, charging processes, and Coulomb's law with superposition (8.1--8.2); the electric field of point charges (8.3); fields of continuous distributions by integration (8.4); electric flux (8.5); and Gauss's law for spherical, cylindrical, and planar symmetry, including nonuniform charge densities (8.6). The E\&M exam has the same format as Mechanics: multiple choice for half the score and four free-response questions for the other half. Each section ends with check questions; the key is on the last page.
+\end{abstract}
+
+\scoringline{Check questions: \blank\ / \qtotal \qquad Target: 5+ \qquad Weakest topic: \blank[8em]}
+
+\section{Electric charge and Coulomb's law (8.1--8.2)}\label{sec:1}
+
+\begin{terms}
+Charge & Comes in whole multiples of $e = 1.60\times10^{-19}$ C. Electrons carry $-e$, protons $+e$. Like charges repel, unlike attract. \\
+Conservation & The net charge of an isolated system never changes; charging moves electrons, it does not create charge. \\
+Conductors and insulators & In a conductor, some electrons move freely; in an insulator, charges stay put but molecules can polarize. \\
+Charging by conduction & Touch a charged object: charge is shared. Two identical conducting spheres that touch end with equal charges, each half the total. \\
+Charging by induction & Bring a charged rod near (no contact), ground the far side, remove the ground, then remove the rod. The object ends with charge \emph{opposite} to the rod's. \\
+Polarization & A neutral object is attracted to a charged one: its near side gets the opposite charge, which is closer and so pulled harder. \\
+\end{terms}
+\[ F = k\frac{|q_1q_2|}{r^2}, \qquad k = \frac{1}{4\pi\varepsilon_0} = 8.99\times10^9\ \mathrm{N\,m^2/C^2}, \qquad \vec F_{net} = \sum\vec F_i\ \ \text{(superposition)}. \]
+\begin{trap}
+Add Coulomb forces as \emph{vectors}. Find each force's magnitude from $k|q_1q_2|/r^2$, give it a direction from the signs, then add components.
+\end{trap}
+
+\subsubsection{Check}\mbox{}
+
+\begin{q}{2}{8.1 Coulomb's law scaling}{$F \propto q_1q_2/r^2$: the charges give $\times4$, the distance $\div 4$. Net factor 1.}
+Two point charges attract with force $F$. Both charges are doubled and the distance between them is also doubled. What is the new force?
+\chh{$2F$}{$F$}{$4F$}{$F/2$}
+\end{q}
+\begin{q}{4}{8.2 Charging by induction}{The rod repels electrons in the sphere, which escape to ground. With the ground cut before the rod leaves, the sphere is left short of electrons: positive.}
+A negatively charged rod is held near a neutral metal sphere. With the rod still in place, the sphere is touched by a grounded wire; then the wire is removed, then the rod. What is the sphere's final charge?
+\ch{Negative}{Neutral}{It depends on how long the wire touches it}{Positive}
+\end{q}
+
+\section{Electric fields (8.3)}\label{sec:2}
+
+\[ \vec E = \frac{\vec F}{q_0}, \qquad \vec E_{point} = k\frac{q}{r^2}\hat r, \qquad \vec F = q\vec E. \]
+The field points away from positive charges and toward negative ones. A positive charge accelerates along $\vec E$, a negative one opposite it. Field lines start on positive charges, end on negative ones, never cross, and are denser where the field is stronger. Fields from several charges add as vectors.
+
+\begin{example}[Dipole midpoint]
+Charges $+q$ and $-q$ are a distance $d$ apart. At the midpoint both fields point toward $-q$, each $kq/(d/2)^2$, so $E = 8kq/d^2$, directed toward the negative charge.
+\end{example}
+
+\subsubsection{Check}\mbox{}
+
+\begin{q}{1}{8.3 Dipole field}{Both fields point toward $-q$ (the $+x$ direction): $2 \times kq/(d/2)^2 = 8kq/d^2$.}
+A charge $+q$ is at $x = 0$ and a charge $-q$ at $x = d$. What is the electric field at $x = d/2$?
+\chh{$8kq/d^2$, in the $+x$ direction}{$0$}{$4kq/d^2$, in the $+x$ direction}{$8kq/d^2$, in the $-x$ direction}
+\end{q}
+
+\section{Electric fields of charge distributions (8.4)}\label{sec:3}
+
+For a continuous distribution, break it into point charges $dq$ and integrate, component by component:
+\[ \vec E = \int k\frac{dq}{r^2}\hat r, \qquad dq = \lambda\,dl,\ \sigma\,dA,\ \text{or}\ \rho\,dV. \]
+Use symmetry first: components that cancel in pairs can be dropped before integrating.
+\begin{compare}{Distribution}{Field}{Where}
+Ring, charge $Q$, radius $R$ & $\dfrac{kQx}{(x^2 + R^2)^{3/2}}$, along the axis & on the axis, distance $x$ from center (zero at the center) \\
+Rod, charge $Q$, length $L$ & $\dfrac{kQ}{d(L + d)}$, along the rod & on the rod's axis, distance $d$ beyond one end \\
+Infinite line, $\lambda$ & $\dfrac{\lambda}{2\pi\varepsilon_0 r}$, radially & distance $r$ (finite rod: close to it) \\
+Infinite sheet, $\sigma$ & $\dfrac{\sigma}{2\varepsilon_0}$, perpendicular & any distance (large plate: close to it) \\
+\end{compare}
+Check limits: far from a ring or rod ($x \gg R$, $d \gg L$), each looks like a point charge, $kQ/x^2$.
+
+\subsubsection{Check}\mbox{}
+
+\begin{q}{3}{8.4 Ring of charge}{Every bit of charge has a partner directly opposite whose field at the center cancels it. Also, $kQx/(x^2 + R^2)^{3/2} = 0$ at $x = 0$.}
+A uniformly charged ring has total charge $Q$ and radius $R$. What is the electric field at its center?
+\chh{$kQ/R^2$, along the axis}{$kQ/R^2$, toward the ring}{Zero}{$2kQ/R^2$, along the axis}
+\end{q}
+
+\section{Electric flux (8.5)}\label{sec:4}
+
+\[ \Phi_E = \int\vec E\cdot d\vec A, \qquad \text{uniform field, flat area: } \Phi_E = EA\cos\theta, \]
+where $\theta$ is the angle between $\vec E$ and the area vector $\vec A$, which is \emph{perpendicular} to the surface (outward for a closed surface). Flux counts field lines through a surface: maximum when the surface faces the field, zero when the field skims along it.
+\begin{trap}
+If a problem gives the angle between the field and the \emph{surface}, the angle to the area vector is its complement: use $\sin$, not $\cos$.
+\end{trap}
+
+\subsubsection{Check}\mbox{}
+
+\begin{q}{3}{8.5 Flux through a closed surface}{Every field line from the outside charge that enters the cube also leaves it, so inward and outward flux cancel. Gauss's law: $Q_{enc} = 0$.}
+A point charge sits outside a closed cubical surface. What is the net electric flux through the cube?
+\ch{$q/\varepsilon_0$}{$q/(6\varepsilon_0)$}{Zero}{It depends on the distance from the charge to the cube.}
+\end{q}
+
+\section{Gauss's law (8.6)}\label{sec:5}
+
+\[ \oint\vec E\cdot d\vec A = \frac{Q_{enc}}{\varepsilon_0}. \]
+Gauss's law is always true, but it gives $E$ only when symmetry lets you pull $E$ out of the integral. Pick a Gaussian surface on which $E$ is constant and perpendicular (or parallel) to the surface:
+\begin{compare}{Symmetry}{Gaussian surface}{Result}
+Spherical & concentric sphere, radius $r$ & $E(4\pi r^2) = Q_{enc}/\varepsilon_0$ \\
+Cylindrical (long line or cylinder) & coaxial cylinder, radius $r$, length $\ell$ & $E(2\pi r\ell) = Q_{enc}/\varepsilon_0$ \\
+Planar (large sheet) & pillbox through the sheet, end area $A$ & $E(2A) = \sigma A/\varepsilon_0$ \\
+\end{compare}
+\begin{example}[Uniformly charged solid sphere, radius $R$, charge $Q$]
+Outside: $E = kQ/r^2$. Inside: $Q_{enc} = Q r^3/R^3$, so $E = \dfrac{kQr}{R^3}$, growing linearly from zero at the center to $kQ/R^2$ at the surface. For a nonuniform density $\rho(r)$, find $Q_{enc} = \int_0^r \rho(r')\,4\pi r'^2\,dr'$ first.
+\end{example}
+
+\subsubsection{Check}\mbox{}
+
+\begin{q}{1}{8.6 Inside a charged sphere}{Inside a uniform sphere $E = kQr/R^3 \propto r$, so halving $r$ halves $E$.}
+A solid insulating sphere of radius $R$ has charge spread uniformly through its volume. The field at its surface is $E_0$. What is the field at $r = R/2$?
+\chh{$E_0/2$}{$E_0/4$}{$4E_0$}{$0$}
+\end{q}
+
+\makekey
+\end{document}

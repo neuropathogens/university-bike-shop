@@ -1,0 +1,104 @@
+\documentclass[11pt]{article}
+\usepackage{ap-physc}
+\course{AP Physics C: Mechanics}
+\headcourse{AP Physics C: Mechanics}
+\headpart{Unit 5 \textperiodcentered\ Study Guide}
+\title{Unit 5: Torque and Rotational Dynamics}
+\author{Paul Wang}
+\date{November 2026}
+\docpart{Unit 5 \textperiodcentered\ Study Guide \textperiodcentered\ 10--15\% of MCQ}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Unit 5 extends Newton's laws to rigid bodies that rotate about a fixed axis. It covers angular kinematics and the link between angular and linear quantities (5.1--5.2), torque as a cross product (5.3), rotational inertia by summation, integration, and the parallel-axis theorem (5.4), static equilibrium (5.5), and $\sum\tau = I\alpha$, including systems that combine blocks and massive pulleys (5.6). Each section ends with check questions; the key is on the last page.
+\end{abstract}
+
+\scoringline{Check questions: \blank\ / \qtotal \qquad Target: 4+ \qquad Weakest topic: \blank[8em]}
+
+\section{Rotational kinematics and the link to linear motion (5.1--5.2)}\label{sec:1}
+
+A rigid body rotating about a fixed axis is described by one angle $\theta$ (in radians):
+\[ \omega = \frac{d\theta}{dt}, \qquad \alpha = \frac{d\omega}{dt}, \qquad \text{constant } \alpha:\ \ \omega = \omega_0 + \alpha t,\ \ \theta = \theta_0 + \omega_0 t + \tfrac12\alpha t^2,\ \ \omega^2 = \omega_0^2 + 2\alpha\Delta\theta. \]
+Every point at distance $r$ from the axis shares $\omega$ and $\alpha$, but its linear quantities scale with $r$:
+\[ s = r\theta, \qquad v = r\omega, \qquad a_t = r\alpha, \qquad a_c = \frac{v^2}{r} = \omega^2 r, \qquad a = \sqrt{a_t^2 + a_c^2}. \]
+\begin{trap}
+These relations need radians. Convert: 1 rev $= 2\pi$ rad, and rpm $\times\,2\pi/60$ gives rad/s. A point on a wheel spinning at constant $\omega$ still accelerates (centripetally) even though $\alpha = 0$.
+\end{trap}
+
+\subsubsection{Check}\mbox{}
+
+\begin{q}{3}{5.1 Constant angular acceleration}{$\theta = \tfrac12\alpha t^2 = \tfrac12(2.0)(25) = 25$ rad.}
+A wheel starts from rest with a constant angular acceleration of $2.0\ \mathrm{rad/s^2}$. Through what angle does it turn in the first 5.0 s?
+\chh{$4.0$ rad}{$10$ rad}{$25$ rad}{$50$ rad}
+\end{q}
+
+\section{Torque (5.3)}\label{sec:2}
+
+Torque measures how effectively a force turns an object about an axis:
+\[ \vec\tau = \vec r\times\vec F, \qquad \tau = rF\sin\theta = r_\perp F = rF_\perp, \]
+where $\vec r$ runs from the axis to the point where the force acts and $\theta$ is the angle between $\vec r$ and $\vec F$. The \textbf{lever arm} $r_\perp$ is the perpendicular distance from the axis to the force's line of action. A force through the axis gives no torque. Use the right-hand rule for direction: $\hat\imath\times\hat\jmath = \hat k$; counterclockwise in the $xy$-plane is $+\hat k$. The weight of an extended object acts at its center of mass.
+
+\subsubsection{Check}\mbox{}
+
+\begin{q}{1}{5.3 Torque}{$\tau = rF\sin\theta = (0.30)(20)\sin 30^\circ = 3.0$ N$\cdot$m.}
+A mechanic pulls with 20 N on a wrench 0.30 m from the bolt. The force makes a $30^\circ$ angle with the wrench handle. What torque does she exert?
+\chh{$3.0$ N$\cdot$m}{$5.2$ N$\cdot$m}{$6.0$ N$\cdot$m}{$67$ N$\cdot$m}
+\end{q}
+
+\section{Rotational inertia (5.4)}\label{sec:3}
+
+Rotational inertia plays the role of mass for rotation; it depends on how mass is distributed relative to the axis:
+\[ I = \sum m_i r_i^2, \qquad I = \int r^2\,dm, \qquad I = I_{cm} + Md^2 \ \ \text{(parallel-axis theorem)}. \]
+\begin{compare}{Object (mass $M$)}{Axis}{$I$}
+Thin rod, length $L$ & through center, perpendicular & $\tfrac{1}{12}ML^2$ \\
+Thin rod, length $L$ & through one end, perpendicular & $\tfrac13 ML^2$ \\
+Hoop or thin ring, radius $R$ & central axis & $MR^2$ \\
+Solid disk or cylinder & central axis & $\tfrac12 MR^2$ \\
+Solid sphere & through center & $\tfrac25 MR^2$ \\
+Thin spherical shell & through center & $\tfrac23 MR^2$ \\
+\end{compare}
+\begin{example}[Integral]
+For a uniform rod about one end, $dm = (M/L)\,dx$ and $I = \int_0^L x^2 \frac{M}{L}\,dx = \tfrac13 ML^2$. The parallel-axis theorem agrees: $\tfrac1{12}ML^2 + M(L/2)^2 = \tfrac13 ML^2$.
+\end{example}
+\begin{trap}
+The parallel-axis theorem starts from the axis through the \emph{center of mass}, never from another off-center axis.
+\end{trap}
+
+\subsubsection{Check}\mbox{}
+
+\begin{q}{2}{5.4 Parallel-axis theorem}{$I = I_{cm} + Md^2$ with $d = L/2$: $\tfrac1{12}ML^2 + \tfrac14 ML^2 = \tfrac13 ML^2$.}
+A uniform rod has $I_{cm} = \tfrac1{12}ML^2$ about its center. What is its rotational inertia about a parallel axis through one end?
+\chh{$\tfrac14 ML^2$}{$\tfrac13 ML^2$}{$\tfrac{13}{12}ML^2$}{$\tfrac16 ML^2$}
+\end{q}
+
+\section{Rotational equilibrium and Newton's second law for rotation (5.5--5.6)}\label{sec:4}
+
+\begin{keyidea}[Static equilibrium (5.5)]
+$\sum\vec F = 0$ and $\sum\tau = 0$ about \emph{any} axis. Choose the axis through an unknown force to remove it from the torque equation.
+\end{keyidea}
+\[ \sum\tau = I\alpha \quad \text{(fixed axis, 5.6)}. \]
+A rotating object with net torque obeys this exactly as a block obeys $\sum F = ma$. In problems that combine both, write $\sum F = ma$ for each block, $\sum\tau = I\alpha$ for each pulley or wheel, and link them with $a = \alpha R$ for a string that does not slip.
+
+\begin{example}[Massive pulley]
+A block of mass $m$ hangs from a string wrapped around a solid disk pulley ($M$, $R$) on a fixed axle. Block: $mg - T = ma$. Pulley: $TR = \tfrac12 MR^2(a/R)$, so $T = \tfrac12 Ma$. Together, $a = \dfrac{mg}{m + M/2}$: the pulley acts like extra inertia $I/R^2$.
+\end{example}
+
+\begin{trap}
+With a massive pulley the tension is different on the two sides; the difference in tensions is what makes the pulley spin up.
+\end{trap}
+
+\subsubsection{Check}\mbox{}
+
+\begin{q}{4}{5.5 Balance}{Torques balance: $30g(2.0) = 40g\,d$, so $d = 1.5$ m. The heavier child sits closer.}
+A 30 kg child sits 2.0 m from the pivot of a seesaw. Where must a 40 kg child sit, on the other side, to balance? (Ignore the board's mass, or assume it is centered on the pivot.)
+\chh{$2.0$ m from the pivot}{$2.7$ m from the pivot}{$1.0$ m from the pivot}{$1.5$ m from the pivot}
+\end{q}
+\begin{q}{4}{5.6 Rotational second law}{$\alpha = \tau/I = 4.0/0.50 = 8.0\ \mathrm{rad/s^2}$.}
+A constant torque of 4.0 N$\cdot$m acts on a wheel with rotational inertia $0.50\ \mathrm{kg\,m^2}$. What is its angular acceleration?
+\chh{$0.13\ \mathrm{rad/s^2}$}{$2.0\ \mathrm{rad/s^2}$}{$4.5\ \mathrm{rad/s^2}$}{$8.0\ \mathrm{rad/s^2}$}
+\end{q}
+
+\makekey
+\end{document}

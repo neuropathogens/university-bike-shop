@@ -1,0 +1,108 @@
+\documentclass[11pt]{article}
+\usepackage{ap-physc}
+\course{AP Physics C: Mechanics}
+\headcourse{AP Physics C: Mechanics}
+\headpart{Unit 7 \textperiodcentered\ Question Set}
+\title{Unit 7: Oscillations: Question Set}
+\author{Paul Wang}
+\date{November 2026}
+\docpart{Unit 7 \textperiodcentered\ Question Set}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Exam-style practice on Unit 7 (topics 7.1--7.5), which is 10--15\% of the multiple-choice section. Section~1--3 hold 12 four-choice multiple-choice questions grouped by topic; most need a short calculation or a line of reasoning, as on the exam. The last page before the key is a full Experimental Design and Analysis free-response question (10 points). All items are original and written for practice. Use the AP equation sheet and a calculator. Allow about 24 minutes for the multiple choice (the exam's pace is about 2 minutes per question) and 24 minutes for the free response. The answer key explains every item and names its topic; a scoring guide for the free response follows it.
+\end{abstract}
+
+\scoringline{MCQ: \blank\ / \qtotal \qquad FRQ: \blank\ / 10 \qquad Target: 8+ MCQ \qquad Pace: 2 min per MCQ}
+
+\section{SHM and its period (7.1--7.2)}
+
+\begin{q}{3}{7.1 Equation of motion}{Comparing with $\ddot x = -\omega^2 x$: $\omega = 3.0$ rad/s, so $T = 2\pi/3.0 = 2.1$ s.}
+An object's motion obeys $\dfrac{d^2x}{dt^2} = -9.0\,x$ (SI units). What is its period?
+\chh{$0.33$ s}{$0.70$ s}{$2.1$ s}{$19$ s}
+\end{q}
+\begin{q}{2}{7.1 Small oscillations in a potential well}{Match $U = \tfrac12 kx^2$: $k = 8.0$ N/m. Then $T = 2\pi\sqrt{m/k} = 2\pi\sqrt{0.50/8.0} = 1.6$ s.}
+Near its equilibrium point, a 0.50 kg particle's potential energy is $U(x) = 4.0x^2$ (J, with $x$ in m). What is the period of small oscillations?
+\chh{$0.64$ s}{$1.6$ s}{$2.2$ s}{$4.0$ s}
+\end{q}
+\begin{q}{2}{7.2 Frequency}{$\omega = \sqrt{k/m} = 20$ rad/s, and $f = \omega/2\pi = 3.2$ Hz.}
+A 0.40 kg block oscillates on a spring with $k = 160$ N/m. What is its frequency?
+\chh{$0.31$ Hz}{$3.2$ Hz}{$20$ Hz}{$400$ Hz}
+\end{q}
+\begin{q}{3}{7.2 Vertical spring}{At equilibrium $k\Delta x = mg$, so $k/m = g/\Delta x$ and $T = 2\pi\sqrt{\Delta x/g} = 2\pi\sqrt{0.098/9.8} = 0.63$ s.}
+A block hung from a spring stretches it 9.8 cm at equilibrium. The block is then pulled down slightly and released. What is the period of its oscillation? ($g = 9.8\ \mathrm{m/s^2}$)
+\chh{$0.10$ s}{$0.20$ s}{$0.63$ s}{$6.3$ s}
+\end{q}
+\begin{q}{4}{7.2 Two springs}{Displace the block by $x$: the left spring stretches and pulls back with $k_1x$, the right one compresses and pushes back with $k_2x$. Net force $-(k_1 + k_2)x$.}
+A block on a frictionless table is attached between two walls by two springs, $k_1$ on its left and $k_2$ on its right. Both springs are at natural length when the block is at rest. What is the period of oscillation?
+\chh{$2\pi\sqrt{m(k_1 + k_2)/(k_1k_2)}$}{$2\pi\sqrt{m/|k_1 - k_2|}$}{$2\pi\sqrt{2m/(k_1 + k_2)}$}{$2\pi\sqrt{m/(k_1 + k_2)}$}
+\end{q}
+
+\section{Analyzing SHM (7.3--7.4)}
+
+\begin{q}{3}{7.3 Maximum acceleration}{$a_{max} = A\omega^2 = (0.20)(25) = 5.0\ \mathrm{m/s^2}$; the phase does not change the maximum.}
+A particle moves as $x(t) = 0.20\cos(5.0t + \pi/2)$, in meters and seconds. What is the magnitude of its maximum acceleration?
+\chh{$0.20\ \mathrm{m/s^2}$}{$1.0\ \mathrm{m/s^2}$}{$5.0\ \mathrm{m/s^2}$}{$25\ \mathrm{m/s^2}$}
+\end{q}
+\begin{q}{1}{7.3 Phase}{$x = A\cos(\omega t)$; at $\omega t = \pi/2$, $x = 0$ and $v = -A\omega\sin(\pi/2) = -A\omega$.}
+A block on a spring is pulled to $x = +A$ and released from rest at $t = 0$. At $t = T/4$, the block is
+\ch{at $x = 0$, moving in the $-x$ direction at maximum speed}{at $x = 0$, momentarily at rest}{at $x = -A$, momentarily at rest}{at $x = 0$, moving in the $+x$ direction at maximum speed}
+\end{q}
+\begin{q}{4}{7.3 Acceleration at equilibrium}{$a = -\omega^2 x$, and $x = 0$ at equilibrium. The net force is zero there; the mass coasts through at maximum speed.}
+For a mass on a spring in SHM, what is the acceleration as it passes through the equilibrium position?
+\ch{Maximum, toward the center}{Equal to $g$}{Maximum, in the direction of motion}{Zero}
+\end{q}
+\begin{q}{2}{7.4 Speed from energy}{$v = \omega\sqrt{A^2 - x^2}$ with $\omega = 20$ rad/s: $v = 20\sqrt{0.010 - 0.0036} = 20(0.080) = 1.6$ m/s.}
+A 0.50 kg block on a spring ($k = 200$ N/m) oscillates with amplitude 0.10 m. What is its speed when $x = 0.060$ m?
+\chh{$2.0$ m/s}{$1.6$ m/s}{$1.2$ m/s}{$0.80$ m/s}
+\end{q}
+\begin{q}{1}{7.4 Changing amplitude}{$E = \tfrac12 kA^2 \propto A^2$; $T = 2\pi\sqrt{m/k}$ does not involve $A$; $v_{max} = A\omega$ doubles.}
+The amplitude of a mass--spring oscillator is doubled. Which statement is true?
+\ch{The total energy quadruples and the period is unchanged.}{The total energy doubles and the period doubles.}{The total energy quadruples and the period doubles.}{The maximum speed quadruples and the period is unchanged.}
+\end{q}
+
+\section{Pendulums (7.5)}
+
+\begin{q}{2}{7.5 Simple pendulum}{$L = g\left(\dfrac{T}{2\pi}\right)^2 = 9.8\left(\dfrac{2.0}{2\pi}\right)^2 = 0.99$ m.}
+What length of simple pendulum has a period of 2.0 s? ($g = 9.8\ \mathrm{m/s^2}$)
+\chh{$0.50$ m}{$0.99$ m}{$2.0$ m}{$3.1$ m}
+\end{q}
+\begin{q}{3}{7.5 Physical pendulum}{$T = 2\pi\sqrt{I/(mgd)} = 2\pi\sqrt{2L/(3g)} = 2\pi\sqrt{0.0680} = 1.6$ s.}
+A uniform meter stick (1.00 m) swings with small amplitude about a pivot at one end. What is its period? ($g = 9.8\ \mathrm{m/s^2}$)
+\chh{$1.2$ s}{$1.4$ s}{$1.6$ s}{$2.0$ s}
+\end{q}
+
+\section{Free response}
+
+\begin{frq}{Question 1 \textperiodcentered\ Experimental Design and Analysis \textperiodcentered\ 10 points \textperiodcentered\ 24 minutes}
+Students want to find the spring constant $k$ of a spring by timing oscillations. They hang the spring from a rod, attach a mass $m$, set it oscillating vertically, and determine the period $T$. They repeat this for several masses.
+
+\medskip
+\begin{tabular}{@{}lccccc@{}}\toprule
+$m$ (kg) & 0.10 & 0.20 & 0.30 & 0.40 & 0.50 \\ \midrule
+$T$ (s) & 0.49 & 0.66 & 0.79 & 0.91 & 1.02 \\ \bottomrule
+\end{tabular}
+
+\begin{enumerate}[label=(\alph*),leftmargin=2em,itemsep=4pt]
+\item Describe how the students should measure each period to reduce uncertainty. Explain why your method reduces uncertainty. \pts{3}
+\item Indicate what the students should graph to get a straight line whose slope can be used to find $k$. Express $k$ in terms of the slope. \pts{2}
+\item Calculate the quantities to be graphed, determine the slope of the best-fit line, and use it to calculate $k$. \pts{3}
+\item The best-fit line does not pass through the origin; its $T^2$-intercept is about $0.036\ \mathrm{s^2}$. Suggest a physical reason for this, and explain how it affects (or does not affect) the value of $k$ found from the slope. \pts{2}
+\end{enumerate}
+\end{frq}
+
+\makekey
+
+\subsection*{Free-response scoring guide (10 points)}
+\small
+Award each point only when the answer does what the model does. Points are independent unless a part says otherwise; a correct method with an answer carried forward from an earlier error earns the later points.
+\begin{scoring}
+(a) (3) & 1 pt: time many oscillations (e.g.\ 10 or 20) with a stopwatch and divide by the number. 1 pt: repeat each timing several times and average, or start timing as the mass passes equilibrium. 1 pt: reaction-time error is fixed per measurement, so spreading it over many cycles makes it a small fraction of the total; the mass moves fastest at equilibrium, so the instant is sharper. & ``Time one oscillation carefully''; no explanation of why. \\
+(b) (2) & 1 pt: $T^2 = \dfrac{4\pi^2}{k}m$, so graph $T^2$ versus $m$. 1 pt: $k = 4\pi^2/\text{slope}$. & Graphing $T$ versus $m$, which is not linear. \\
+(c) (3) & 1 pt: $T^2 = 0.240,\ 0.436,\ 0.624,\ 0.828,\ 1.04$ s$^2$. 1 pt: slope $\approx 2.0$ s$^2$/kg from a best-fit line (accept 1.9--2.1). 1 pt: $k = 4\pi^2/2.0 \approx 20$ N/m. & Using one data pair, e.g.\ $k = 4\pi^2(0.50)/1.02^2$. \\
+(d) (2) & 1 pt: the spring itself has mass, so part of it oscillates too; the effective mass is $m + m_{eff}$ (here $m_{eff} = 0.036 \times k/4\pi^2 \approx 0.018$ kg), shifting every $T^2$ up by the same amount. 1 pt: the shift changes the intercept but not the slope, so $k$ from the slope is unaffected. & Blaming air resistance, which would not add a constant to $T^2$. \\
+\end{scoring}
+
+\end{document}

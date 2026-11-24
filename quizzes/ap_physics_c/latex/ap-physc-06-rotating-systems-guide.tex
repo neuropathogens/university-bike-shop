@@ -1,0 +1,108 @@
+\documentclass[11pt]{article}
+\usepackage{ap-physc}
+\course{AP Physics C: Mechanics}
+\headcourse{AP Physics C: Mechanics}
+\headpart{Unit 6 \textperiodcentered\ Study Guide}
+\title{Unit 6: Energy and Momentum of Rotating Systems}
+\author{Paul Wang}
+\date{November 2026}
+\docpart{Unit 6 \textperiodcentered\ Study Guide \textperiodcentered\ 10--15\% of MCQ}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Unit 6 brings energy and momentum to rotation. It covers rotational kinetic energy, work by a torque, and rotational power (6.1--6.2); angular momentum of rigid bodies and particles, with angular impulse (6.3); conservation of angular momentum in spins and rotational collisions (6.4); rolling with and without slipping (6.5); and circular and elliptical satellite orbits (6.6). Each section ends with check questions; the key is on the last page.
+\end{abstract}
+
+\scoringline{Check questions: \blank\ / \qtotal \qquad Target: 5+ \qquad Weakest topic: \blank[8em]}
+
+\section{Rotational kinetic energy, work, and power (6.1--6.2)}\label{sec:1}
+
+\[ K_{rot} = \tfrac12 I\omega^2, \qquad W = \int_{\theta_1}^{\theta_2}\tau\,d\theta, \qquad W_{net} = \Delta K_{rot}, \qquad P = \tau\omega. \]
+These mirror the linear formulas with $m \to I$, $v \to \omega$, $F \to \tau$, $x \to \theta$. A torque does work only while the object turns; a torque that holds something still does none.
+\begin{trap}
+Convert rpm to rad/s before using $P = \tau\omega$: $300$ rpm $= 300 \times 2\pi/60 = 31.4$ rad/s.
+\end{trap}
+
+\subsubsection{Check}\mbox{}
+
+\begin{q}{2}{6.1 Rotational kinetic energy}{$I = \tfrac12 MR^2 = 0.25\ \mathrm{kg\,m^2}$, so $K = \tfrac12 I\omega^2 = \tfrac12(0.25)(16) = 2.0$ J.}
+A uniform solid disk of mass 2.0 kg and radius 0.50 m spins at 4.0 rad/s about its central axis. What is its kinetic energy?
+\chh{$1.0$ J}{$2.0$ J}{$4.0$ J}{$8.0$ J}
+\end{q}
+
+\section{Angular momentum and angular impulse (6.3)}\label{sec:2}
+
+\[ L = I\omega \ \ \text{(rigid body, fixed axis)}, \qquad \vec L = \vec r\times\vec p \ \ \text{(particle)}, \qquad \sum\vec\tau = \frac{d\vec L}{dt}, \qquad \int\tau\,dt = \Delta L. \]
+A particle moving in a straight line has angular momentum about any point not on its line: $L = mvr_\perp$, where $r_\perp$ is the perpendicular distance from the point to the line of motion. That is why a bullet can spin up a rod it hits.
+
+\begin{trap}
+The particle's angular momentum depends on the reference point. Choose the pivot (or the rotation axis) and keep it for every object in the problem.
+\end{trap}
+
+\subsubsection{Check}\mbox{}
+
+\begin{q}{4}{6.3 Angular momentum of a particle}{$L = mvr_\perp$ with $r_\perp = 4.0$ m: $L = (2.0)(3.0)(4.0) = 24\ \mathrm{kg\,m^2/s}$, the same at every point on the line.}
+A 2.0 kg puck slides at 3.0 m/s along the line $y = 4.0$ m, parallel to the $x$-axis. What is the magnitude of its angular momentum about the origin?
+\chh{$0$}{$6.0\ \mathrm{kg\,m^2/s}$}{$12\ \mathrm{kg\,m^2/s}$}{$24\ \mathrm{kg\,m^2/s}$}
+\end{q}
+
+\section{Conservation of angular momentum (6.4)}\label{sec:3}
+
+If the net external torque on a system about an axis is zero, its angular momentum about that axis is constant:
+\[ I_1\omega_1 = I_2\omega_2. \]
+\begin{itemize}
+\item A spinning skater who pulls in her arms lowers $I$, so $\omega$ rises. Her kinetic energy $\tfrac12 I\omega^2 = L^2/(2I)$ \emph{increases}; the extra comes from the work her muscles do.
+\item Rotational ``collisions'' (a disk dropped onto a spinning disk, a person jumping onto a merry-go-round, a bullet embedding in a rod) conserve $L$ but lose kinetic energy, like perfectly inelastic collisions.
+\item A pivot can exert a force (so linear momentum is \emph{not} conserved when a bullet hits a pivoted rod) but no torque about the pivot, so $L$ about the pivot is conserved.
+\end{itemize}
+
+\subsubsection{Check}\mbox{}
+
+\begin{q}{1}{6.4 Skater}{$L$ is conserved, so $\omega$ doubles. $K = L^2/(2I)$, so halving $I$ doubles $K$; her arms do positive work pulling inward.}
+A spinning skater pulls in her arms, halving her rotational inertia. What happens to her rotational kinetic energy?
+\chh{It doubles.}{It stays the same.}{It halves.}{It quadruples.}
+\end{q}
+
+\section{Rolling (6.5)}\label{sec:4}
+
+For rolling \textbf{without slipping}, the contact point is momentarily at rest, so
+\[ v_{cm} = \omega R, \qquad a_{cm} = \alpha R, \qquad K = \tfrac12 Mv_{cm}^2 + \tfrac12 I_{cm}\omega^2 = \tfrac12 Mv_{cm}^2\left(1 + \frac{I_{cm}}{MR^2}\right). \]
+Writing $I_{cm} = \beta MR^2$ ($\beta = 1$ hoop, $\tfrac12$ disk, $\tfrac25$ sphere), an object released from rest that rolls down a height $h$ reaches
+\[ v = \sqrt{\frac{2gh}{1 + \beta}}, \qquad a = \frac{g\sin\theta}{1 + \beta}. \]
+Smaller $\beta$ wins the race: sphere, then disk, then hoop, whatever the mass or radius.
+
+\begin{keyidea}[Friction in rolling]
+Static friction at the contact point supplies the torque that spins the object, but it does no work because the contact point does not slide. Mechanical energy is conserved. If the object slides while it rolls, kinetic friction acts and does dissipate energy, and $v \ne \omega R$ until slipping stops.
+\end{keyidea}
+
+\subsubsection{Check}\mbox{}
+
+\begin{q}{3}{6.5 Energy split in rolling}{$K_{rot}/K = \beta/(1 + \beta) = \tfrac{2/5}{7/5} = \tfrac27$.}
+A solid sphere rolls without slipping across a floor. What fraction of its kinetic energy is rotational?
+\chh{$2/5$}{$1/2$}{$2/7$}{$5/7$}
+\end{q}
+
+\section{Orbits of satellites (6.6)}\label{sec:5}
+
+\begin{compare}{Quantity}{Circular orbit, radius $r$}{Comment}
+Speed & $v = \sqrt{GM/r}$ & from $GMm/r^2 = mv^2/r$ \\
+Period & $T^2 = \dfrac{4\pi^2}{GM}r^3$ & Kepler's third law \\
+Energy & $K = \dfrac{GMm}{2r}$, $U = -\dfrac{GMm}{r}$, $E = -\dfrac{GMm}{2r}$ & $E = -K$; lower orbit $\Rightarrow$ faster but more negative $E$ \\
+\end{compare}
+In an elliptical orbit gravity is a central force, so it exerts no torque about the planet's center: $L = mvr_\perp$ is constant. At the closest and farthest points the velocity is perpendicular to $\vec r$, so $v_pr_p = v_ar_a$ (Kepler's second law). Mechanical energy is also conserved: $\tfrac12 mv^2 - GMm/r$ is the same everywhere on the orbit.
+
+\subsubsection{Check}\mbox{}
+
+\begin{q}{3}{6.6 Circular orbit speed}{$v = \sqrt{GM/r}$, so $r \times 4$ gives $v \times 1/\sqrt4 = 1/2$.}
+Satellite B orbits a planet at four times the orbital radius of satellite A. How does B's orbital speed compare with A's?
+\chh{one fourth as fast}{twice as fast}{half as fast}{the same}
+\end{q}
+\begin{q}{1}{6.6 Elliptical orbit}{Angular momentum about the Sun is conserved and $\vec v \perp \vec r$ at both points: $vr_p = v_a(3r_p)$, so $v_a = v/3$.}
+A comet's farthest distance from the Sun is three times its closest distance. Its speed at closest approach is $v$. What is its speed at the farthest point?
+\chh{$v/3$}{$v/9$}{$v/\sqrt3$}{$3v$}
+\end{q}
+
+\makekey
+\end{document}
