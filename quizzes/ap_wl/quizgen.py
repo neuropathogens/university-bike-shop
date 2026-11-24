@@ -137,15 +137,15 @@ def build(L, DOCS, PAGES, d):
         nr = len(stims) - nl
         if stims:
             meta = (f"{len(mc)} multiple-choice in {len(stims)} sets ({nl} listening as transcripts, {nr} reading) "
-                    f"&middot; 1 {fr[0]['kind'].lower()}")
+                    f"&middot; 1 {task_name(fr[0]['kind'])}")
             setup = ("Listening sets are printed as transcripts: read each once at normal speed, then answer without rereading. "
                      "Allow about 1 minute per listening item and 80 seconds per reading item.")
         else:
-            meta = f"{len(mc)} language-control items &middot; 1 {fr[0]['kind'].lower()}"
+            meta = f"{len(mc)} language-control items &middot; 1 {task_name(fr[0]['kind'])}"
             setup = "About 40 seconds per item. Every item drills a structure that the free-response language control row rewards."
         z = dict(title=f"{L.short} {d.short} Question Set", h1=f'{d.short} <span style="white-space:nowrap">Question Set</span>',
                  sub=h(d.sub), metaline=meta, setupNote=setup,
-                 desc=f"{L.short} {long_name} question set: {len(mc)} multiple-choice questions with in-depth explanations, plus a {fr[0]['kind'].lower()} task with a scoring guide and model response.",
+                 desc=f"{L.short} {long_name} question set: {len(mc)} multiple-choice questions with in-depth explanations, plus a {task_name(fr[0]['kind'])} task with a scoring guide and model response.",
                  fr=fr, frWord="Question",
                  frIntro=f"Allow about {fr[0]['mins']} minutes. Write (or, for speaking tasks, say aloud and jot keywords), then open the scoring guide and give yourself the points your response earns.")
         if unit != "00":
@@ -167,6 +167,11 @@ def build(L, DOCS, PAGES, d):
                    "Answers and rule tags are the document&rsquo;s own key; the explanations add the rule, how it applies, and why each wrong choice is wrong. "
                    "All passages, transcripts and prompts are original and written for practice. Your answers are saved only in this browser."))
     return z
+
+
+def task_name(kind):
+    """'Project Q&A' -> 'project Q&A' (keep the acronym), 'Argumentative Essay' -> 'argumentative essay'."""
+    return kind.lower().replace("q&a", "Q&A")
 
 
 def build_all(L, DOCS, pages_path):
