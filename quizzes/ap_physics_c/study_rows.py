@@ -50,7 +50,7 @@ def section(course):
         qn, qs = info(disk + u.stem + "-questions.pdf")
         sub = f"Topics {t(u.topics)}; {t(u.weight)}" + (" of the multiple-choice section" if i == 0 else "")
         rows.append(f'<tr><td class="num">{u.n}</td><td class="t"><a href="{web}{u.stem}-guide.pdf">Unit {u.n} Study Guide: {t(u.title)}</a><span class="sub">{sub}</span></td><td class="meta">{gn} pp</td><td class="meta">{gs}</td></tr>')
-        rows.append(f'<tr><td class="num"></td><td class="t"><a href="{web}{u.stem}-questions.pdf">Unit {u.n} Question Set</a><span class="sub">Multiple choice plus a {u.frq.kind.lower()} question on {u.frq_topic}; answer key with explanations</span></td><td class="meta">{qn} pp</td><td class="meta">{qs}</td></tr>')
+        rows.append(f'<tr><td class="num"></td><td class="t"><a href="{web}{u.stem}-questions.pdf">Unit {u.n} Question Set</a><span class="sub">Multiple choice plus {'an' if u.frq.kind[0] in 'AEIOUaeiou' else 'a'} {u.frq.kind.lower()} question on {u.frq_topic}; answer key with explanations</span></td><td class="meta">{qn} pp</td><td class="meta">{qs}</td></tr>')
     return (f'  <section class="subj" id="{SID[course]}">\n    <h3>{TITLE[course]}</h3>\n    <p class="blurb">{BLURB[course]}</p>\n'
             f'    <p class="all"><a class="btn" href="{web}{pack}">Complete pack, one PDF <span class="muted">· {pn} pp · {ps}</span></a>'
             f'<a class="btn" href="/study/ap/ap-physics-c/ap-physc-study-series.zip">All PDFs + LaTeX source, Mechanics + E&amp;M (.zip) <span class="muted">· {zs}</span></a></p>\n'
