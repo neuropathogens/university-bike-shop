@@ -143,8 +143,8 @@
   {\bottomrule\endxltabular\par\smallskip}
 
 % Vocabulary table: \begin{vocab} term & usage or reading (italic) & English \\ ... \end{vocab}
-% Column heads: \vocabheads{Espa\~nol}{Usage}{English} in the preamble.
-\newcommand\ap@vA{Term}\newcommand\ap@vB{Usage}\newcommand\ap@vC{English}
+% Column heads: \vocabheads{Espa\~nol}{English}{Notes} in the preamble (term, meaning, note).
+\newcommand\ap@vA{Term}\newcommand\ap@vB{English}\newcommand\ap@vC{Notes}
 \newcommand\vocabheads[3]{\renewcommand\ap@vA{#1}\renewcommand\ap@vB{#2}\renewcommand\ap@vC{#3}}
 \newenvironment{vocab}%
   {\par\smallskip\noindent\small\xltabular{\linewidth}{@{}>{\raggedright\arraybackslash}p{1.15in}>{\itshape\raggedright\arraybackslash}p{1.45in}>{\raggedright\arraybackslash}X@{}}\toprule
