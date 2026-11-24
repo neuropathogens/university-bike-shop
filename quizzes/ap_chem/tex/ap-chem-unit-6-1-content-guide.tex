@@ -1,0 +1,158 @@
+\documentclass[11pt]{article}
+\usepackage{apchem}
+\doctitle{Unit 6 Content Guide}
+\docsubtitle{A Comprehensive Review of Thermochemistry, Topics 6.1--6.9}
+\docstatus{Study draft}
+\begin{document}
+\titleblock
+\begin{abstract}
+This guide covers all of Unit 6, Thermochemistry, in ten sections: one for each of Topics 6.1--6.9 in course order, plus a final section on lab skills and free-response technique. Each section gives the definitions, equations and particle-level reasoning the topic needs, at least one worked example, the phrasing that earns free-response points and the mistakes that cost them. The worked examples use their own numbers, so none of them give away an item in \emph{Unit 6 Practice Set A} or \emph{Unit 6 Practice Set B}; the answer keys of both sets point back to the section numbers here. Plan on about 70 minutes for a full read with a calculator out.
+\end{abstract}
+\leadline{Usage}{first pass, read Sections 1--10 in order and redo every worked example. Then take \emph{Unit 6 Practice Set A} cold; reread the section behind every miss, and take \emph{Unit 6 Practice Set B} two or three days later. The last page is a one-page summary for the night before the unit test. Unit 6 is 7--9\% of the AP multiple-choice section; calorimetry and Hess's law appear in free response almost every year.}
+
+\section{Endothermic and exothermic processes (Topic 6.1)}\label{t:6.1}
+The \emph{system} is the chemicals under study; the \emph{surroundings} are everything else (the water in a calorimeter, the flask, the air). Energy is conserved: whatever the system gains, the surroundings lose.
+\begin{center}
+\begin{tabular}{lll}\toprule
+& Exothermic & Endothermic \\ \midrule
+Energy flow & system $\rightarrow$ surroundings & surroundings $\rightarrow$ system \\
+Sign of $q_{\text{sys}}$ and $\Delta H$ & negative & positive \\
+Temperature of surroundings & rises & falls \\
+Examples & combustion, freezing, condensation, neutralization & melting, boiling, $\ce{NH4NO3}$ dissolving, photosynthesis \\ \bottomrule
+\end{tabular}
+\end{center}
+A thermometer in a reaction mixture measures the \emph{surroundings} (the solvent). A temperature drop means the process absorbed energy.
+
+\worked{1.1} Calcium chloride dissolving in water makes the solution hot. The dissolving is exothermic: $q_{\text{sys}} < 0$, $q_{\text{water}} > 0$, $\Delta H_{\text{soln}} < 0$.
+
+\errorsh
+\begin{itemize}
+\item Saying ``cold flows in.'' Only energy flows, from hot to cold.
+\item Reading the sign of $\Delta T$ of the water as the sign of $\Delta H$. They are opposite.
+\end{itemize}
+
+\section{Energy diagrams (Topic 6.2)}\label{t:6.2}
+An energy diagram plots potential energy against reaction progress. $\Delta H$ is the vertical distance from reactants to products; the hump is the activation energy (Unit 5).
+\begin{center}
+\begin{tikzpicture}[x=1cm,y=0.032cm]
+\draw[-{Latex[length=2mm]}] (0,0) -- (0,150) node[above,font=\small]{Potential energy};
+\draw[-{Latex[length=2mm]}] (0,0) -- (6.4,0) node[below left,font=\small]{Reaction progress};
+\draw[thick] (0.3,90) -- (1.4,90) .. controls (2.3,90) and (2.4,140) .. (3.0,140) .. controls (3.6,140) and (3.8,30) .. (4.8,30) -- (6.0,30);
+\node[font=\footnotesize,above] at (0.85,90) {reactants};
+\node[font=\footnotesize,above] at (5.4,30) {products};
+\draw[{Latex[length=1.6mm]}-{Latex[length=1.6mm]}] (5.8,90) -- (5.8,30) node[midway,right,font=\footnotesize]{$\Delta H < 0$};
+\draw[dashed] (1.4,90) -- (5.8,90);
+\end{tikzpicture}
+
+{\small\itshape An exothermic reaction: products lie below reactants.}
+\end{center}
+At the particle level, bond breaking requires energy and bond formation releases it. If the bonds formed are stronger overall than the bonds broken, the products sit lower and the reaction is exothermic.
+
+\worked{2.1} Reactants at 0, transition state at 85, products at 35 kJ/mol: $\Delta H = +35$ kJ/mol (endothermic); $E_a = 85$ kJ/mol; reverse $E_a = 50$ kJ/mol.
+
+\section{Heat transfer and thermal equilibrium (Topic 6.3)}\label{t:6.3}
+When two objects at different temperatures touch, faster particles of the hotter object collide with slower particles of the colder object and transfer kinetic energy, until the temperatures (average kinetic energies) are equal: \emph{thermal equilibrium}.
+\[ q_{\text{lost by hot}} = -q_{\text{gained by cold}} \qquad m_1c_1(T_f - T_1) + m_2c_2(T_f - T_2) = 0 \]
+\worked{3.1} 40.0 g of water at 90.0 \textdegree C is mixed with 60.0 g at 15.0 \textdegree C. $40.0(90.0 - T) = 60.0(T - 15.0)$, so $3600 - 40T = 60T - 900$ and $T = 45.0$ \textdegree C. (The final temperature is closer to the larger mass's starting temperature.)
+
+\frph ``Energy is transferred from the warmer to the cooler substance through collisions until both reach the same temperature; the energy lost by one equals the energy gained by the other.''
+
+\section{Heat capacity and calorimetry (Topic 6.4)}\label{t:6.4}
+\[ q = mc\Delta T, \qquad \Delta T = T_{\text{final}} - T_{\text{initial}} \]
+\begin{itemize}
+\item \emph{Specific heat} $c$: energy to raise 1 g by 1 \textdegree C (water 4.18 J/(g$\cdot$\textdegree C), high because of hydrogen bonding; metals much lower). \emph{Heat capacity} $C = mc$ for a whole object, in J/\textdegree C.
+\item \emph{Coffee-cup calorimetry} (constant pressure): the solution is the surroundings. $q_{\text{rxn}} = -q_{\text{soln}}$, and $\Delta H_{\text{rxn}} = q_{\text{rxn}}/n$, with $n$ the moles of the reactant the question names.
+\item \emph{Metal in water}: $m_{\text{metal}}c_{\text{metal}}\Delta T_{\text{metal}} = -m_{\text{water}}c_{\text{water}}\Delta T_{\text{water}}$.
+\end{itemize}
+\worked{4.1} 75.0 mL of 0.800 M HCl and 75.0 mL of 0.800 M NaOH, both at 20.5 \textdegree C, are mixed; the temperature reaches 25.9 \textdegree C. $q_{\text{soln}} = (150.)(4.18)(5.4) = 3390$ J. Moles of water $= 0.0600$. $\Delta H = -3.39/0.0600 = -56.4$ kJ/mol.
+
+\worked{4.2} A 32.5 g metal at 98.0 \textdegree C is dropped into 60.0 g of water at 21.0 \textdegree C; the final temperature is 25.0 \textdegree C. $q_{\text{water}} = 60.0(4.18)(4.0) = 1003$ J, so $c_{\text{metal}} = 1003/(32.5 \times 73.0) = 0.423$ J/(g$\cdot$\textdegree C).
+
+\errorsh
+\begin{itemize}
+\item Using only the mass of one of two mixed solutions.
+\item Forgetting the sign: $\Delta H$ is negative when the solution warms.
+\item Dividing by the wrong number of moles (use the limiting reactant, or the species named per mole).
+\item Heat lost to the surroundings makes the measured $|\Delta T|$, and so $|\Delta H|$, too small.
+\end{itemize}
+
+\section{Energy of phase changes (Topic 6.5)}\label{t:6.5}
+\begin{center}
+\begin{tikzpicture}[x=0.85cm,y=0.028cm]
+\draw[-{Latex[length=2mm]}] (0,-30) -- (0,150) node[above,font=\small]{Temperature (\textdegree C)};
+\draw[-{Latex[length=2mm]}] (0,-30) -- (11,-30) node[below left,font=\small]{Energy added};
+\draw[thick] (0.2,-20) -- (1,0) -- (2.2,0) -- (4,100) -- (9.2,100) -- (10.2,130);
+\node[font=\footnotesize,above] at (1.6,0) {melting};
+\node[font=\footnotesize,above] at (6.6,100) {boiling};
+\node[font=\footnotesize,left] at (0,0) {0}; \node[font=\footnotesize,left] at (0,100) {100};
+\end{tikzpicture}
+
+{\small\itshape Heating curve of water. Sloped parts: one phase warms ($q = mc\Delta T$). Flat parts: phase change ($q = n\,\Delta H$).}
+\end{center}
+\begin{itemize}
+\item During a phase change the temperature, and so the average kinetic energy, is constant; the energy goes into potential energy (overcoming attractions).
+\item Water: $\Delta H_{\text{fus}} = 6.01$ kJ/mol, $\Delta H_{\text{vap}} = 40.7$ kJ/mol. Vaporization is much larger because the molecules must be separated completely.
+\item The reverse processes (freezing, condensation) release the same amounts.
+\end{itemize}
+\worked{5.1} Heat to turn 27.0 g of ice at 0 \textdegree C into water at 20.0 \textdegree C: melt $1.50 \times 6.01 = 9.0$ kJ; warm $27.0(4.18)(20.0) = 2.26$ kJ; total 11.3 kJ.
+
+\section{Introduction to enthalpy of reaction (Topic 6.6)}\label{t:6.6}
+A thermochemical equation gives $\Delta H$ for the moles shown. $\Delta H$ is extensive:
+\begin{itemize}
+\item multiply the equation by $x$ $\Rightarrow$ multiply $\Delta H$ by $x$;
+\item reverse the equation $\Rightarrow$ change the sign of $\Delta H$;
+\item heat for a sample $= (\text{moles of the species}) \times \Delta H/(\text{its coefficient})$.
+\end{itemize}
+\worked{6.1} $\ce{2C8H18(l) + 25O2(g) -> 16CO2(g) + 18H2O(l)}$, $\Delta H = -10\,940$ kJ. Burning 57.1 g of octane (0.500 mol) releases $0.500 \times 10\,940/2 = 2735$ kJ.
+
+\section{Bond enthalpies (Topic 6.7)}\label{t:6.7}
+\[ \Delta H \approx \sum(\text{bond enthalpies of bonds broken}) - \sum(\text{bond enthalpies of bonds formed}) \]
+\begin{itemize}
+\item Draw Lewis structures to count every bond, including multiple bonds (C=O is not two C--O bonds).
+\item Bond enthalpies are averages for gas-phase molecules, so the result is an estimate.
+\end{itemize}
+\worked{7.1} $\ce{CH4 + Cl2 -> CH3Cl + HCl}$ with C--H 413, Cl--Cl 243, C--Cl 328, H--Cl 431. Only one C--H and the Cl--Cl break; one C--Cl and one H--Cl form. $\Delta H \approx (413 + 243) - (328 + 431) = -103$ kJ.
+
+\section{Enthalpy of formation (Topic 6.8)}\label{t:6.8}
+$\Delta H_f^\circ$ is the enthalpy change to form \emph{one mole} of a compound from its elements in their \emph{standard states} (graphite, $\ce{O2(g)}$, $\ce{H2(g)}$, $\ce{Br2(l)}$, \dots). For an element in its standard state, $\Delta H_f^\circ = 0$.
+\[ \Delta H^\circ_{\text{rxn}} = \sum n\,\Delta H_f^\circ(\text{products}) - \sum n\,\Delta H_f^\circ(\text{reactants}) \]
+\worked{8.1} $\ce{Fe2O3(s) + 3CO(g) -> 2Fe(s) + 3CO2(g)}$ with $\Delta H_f^\circ$: $\ce{Fe2O3}$ $-824.2$, CO $-110.5$, $\ce{CO2}$ $-393.5$ kJ/mol. $\Delta H^\circ = 3(-393.5) - [-824.2 + 3(-110.5)] = -1180.5 + 1155.7 = -24.8$ kJ.
+
+\section{Hess's law (Topic 6.9)}\label{t:6.9}
+Because enthalpy is a state function, $\Delta H$ for a reaction equals the sum of $\Delta H$ for any series of steps that adds up to it.
+\begin{enumerate}
+\item Look at the target equation. For each substance that appears in only one given equation, decide whether that equation must be reversed (to put the substance on the correct side) and by what factor it must be multiplied.
+\item Apply the same changes to each $\Delta H$.
+\item Add the equations, cancel, and check that the sum is the target.
+\end{enumerate}
+\worked{9.1} Target $\ce{2C(s) + H2(g) -> C2H2(g)}$. Given (1) $\ce{C + O2 -> CO2}$, $-393.5$; (2) $\ce{H2 + 1/2O2 -> H2O(l)}$, $-285.8$; (3) $\ce{C2H2 + 5/2O2 -> 2CO2 + H2O(l)}$, $-1299.6$. Use $2\times$(1) $+$ (2) $-$ (3): $-787.0 - 285.8 + 1299.6 = +226.8$ kJ.
+
+\frph Show which equations you reversed and multiplied, with the new $\Delta H$ beside each, then add.
+
+\section{Lab skills and free-response technique}\label{t:lab}
+\begin{itemize}
+\item Use a lid and a nested cup to limit heat loss; record the maximum (or minimum) temperature; start with both solutions at the same temperature.
+\item Error direction: heat lost $\Rightarrow$ $|\Delta T|$ too small $\Rightarrow$ $|\Delta H|$ too small. Calorimeter absorbing heat has the same effect. Using too little solution mass in $q = mc\Delta T$ also makes $|q|$ too small.
+\item Report $\Delta H$ per mole \emph{of the substance the question names}, with a sign and units.
+\end{itemize}
+
+\clearpage
+\section*{Summary: Unit 6 on one page}
+Use this page the night before. For any row you cannot explain from memory, reread its section and redo its worked example.
+
+\begin{longtable}{@{}p{0.11\linewidth}p{0.40\linewidth}p{0.43\linewidth}@{}}\toprule
+\S{} / Topic & Must know & Key equations and tests \\ \midrule
+1 / 6.1 & System vs.\ surroundings; signs & exo: $q_{\text{sys}} < 0$, surroundings warm \\[3pt]
+2 / 6.2 & Diagram: $\Delta H$ = products $-$ reactants & breaking absorbs, forming releases \\[3pt]
+3 / 6.3 & Collisions transfer energy to equilibrium & $q_{\text{hot}} = -q_{\text{cold}}$ \\[3pt]
+4 / 6.4 & Specific heat; coffee-cup calorimetry & $q = mc\Delta T$; $\Delta H = -q_{\text{soln}}/n$ \\[3pt]
+5 / 6.5 & Heating curve plateaus; PE vs.\ KE & $q = n\Delta H_{\text{fus}}$, $n\Delta H_{\text{vap}}$ \\[3pt]
+6 / 6.6 & $\Delta H$ is extensive; reverse $\Rightarrow$ sign change & heat $= n\,\Delta H/\text{coef}$ \\[3pt]
+7 / 6.7 & Average bond enthalpies; estimate & broken $-$ formed \\[3pt]
+8 / 6.8 & One mole from standard-state elements; elements 0 & products $-$ reactants \\[3pt]
+9 / 6.9 & State function; arrange, scale, add & track each $\Delta H$ \\[3pt]
+10 / lab & Heat loss lowers $|\Delta H|$ & per mole of named species \\ \bottomrule
+\end{longtable}
+
+\textbf{Water data.} $c(\text{liquid}) = 4.18$, $c(\text{ice}) = 2.09$, $c(\text{steam}) = 2.01$ J/(g$\cdot$\textdegree C); $\Delta H_{\text{fus}} = 6.01$ kJ/mol; $\Delta H_{\text{vap}} = 40.7$ kJ/mol.
+\end{document}

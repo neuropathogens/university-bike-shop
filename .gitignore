@@ -52,3 +52,6 @@ __pycache__/
 
 # AP Calculus BC LaTeX build output
 /quizzes/ap_calc_bc/source/build/
+
+# AP Chemistry LaTeX build output
+/quizzes/ap_chem/tex/build/

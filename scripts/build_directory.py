@@ -110,10 +110,15 @@ TREE = page("/", "Home", "The shop, what it sells, and how to book an appointmen
             folder("/study/ap/ap-calculus-bc/", quiz_folder("/study/ap/ap-calculus-bc/", "/study/#ap-calculus-bc"), files=files("study/ap/ap-calculus-bc", "PDFs"),
                    desc="AP Calculus BC, Part 0, Units 1–10 and a full practice exam", anchor="/study/#ap-calculus-bc"),
             folder("/study/ap/ap-chemistry/", [
-                folder("/study/ap/ap-chemistry/unit-5/", files=files("study/ap/ap-chemistry/unit-5", "PDFs"),
-                       desc="Unit 5, Kinetics", anchor="/study/#ap-chemistry"),
+                *[folder(f"/study/ap/ap-chemistry/unit-{n}/", files=files(f"study/ap/ap-chemistry/unit-{n}", "PDFs"),
+                         desc=f"Unit {n}, {name}", anchor="/study/#ap-chemistry")
+                  for n, name in enumerate(["Atomic Structure and Properties", "Compound Structure and Properties",
+                                            "Properties of Substances and Mixtures", "Chemical Reactions", "Kinetics",
+                                            "Thermochemistry", "Equilibrium", "Acids and Bases",
+                                            "Thermodynamics and Electrochemistry"], 1)],
                 *quiz_folder("/study/ap/ap-chemistry/", "/study/#ap-chemistry"),
-            ], desc="AP Chemistry", anchor="/study/#ap-chemistry"),
+            ], files=files("study/ap/ap-chemistry", "All guides and LaTeX source"), desc="AP Chemistry, Units 1–9",
+               anchor="/study/#ap-chemistry"),
             folder("/study/ap/ap-chinese/", quiz_folder("/study/ap/ap-chinese/", "/study/#ap-chinese"), files=files("study/ap/ap-chinese", "PDFs"),
                    desc="AP Chinese Language and Culture, Part 0 and Units 1–6", anchor="/study/#ap-chinese"),
             folder("/study/ap/ap-economics/", [

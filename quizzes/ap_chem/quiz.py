@@ -728,3 +728,20 @@ def quiz(letter, mc, stims, fr, bands_note):
 
 
 QUIZZES = [quiz("A", A_MC, A_STIMS, A_FR, ", then take Set B"), quiz("B", B_MC, B_STIMS, B_FR, "")]
+
+
+# ===================================================================================== Units 1-4 and 6-9
+# Generated from uN.py by chemgen (the same source as the PDFs, built by build_pdfs.py, which also records the
+# guide page of every topic in guide_pages.json).
+import importlib  # noqa: E402
+
+import chemgen  # noqa: E402
+
+_PAGES = chemgen.guide_pages()
+for _n in (1, 2, 3, 4, 6, 7, 8, 9):
+    if str(_n) not in _PAGES:
+        continue
+    _U, _sets = chemgen.load_unit(importlib.import_module(f"u{_n}"))
+    for _letter in "AB":
+        _secs, _mcs, _stims, _frs = _sets[_letter]
+        QUIZZES.append(chemgen.quiz_dict(_U, _letter, _mcs, _secs, _stims, _frs, _PAGES[str(_n)]))

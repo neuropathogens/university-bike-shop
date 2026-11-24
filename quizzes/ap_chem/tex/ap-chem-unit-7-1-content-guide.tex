@@ -1,0 +1,176 @@
+\documentclass[11pt]{article}
+\usepackage{apchem}
+\doctitle{Unit 7 Content Guide}
+\docsubtitle{A Comprehensive Review of Equilibrium, Topics 7.1--7.12}
+\docstatus{Study draft}
+\begin{document}
+\titleblock
+\begin{abstract}
+This guide covers all of Unit 7, Equilibrium, in thirteen sections: one for each of Topics 7.1--7.12 in course order (the Fall 2024 course framework, in which pH and solubility moved to Unit 8 and the free energy of dissolution to Unit 9), plus a final section on lab skills and free-response technique. Each section gives the definitions, equations and particle-level reasoning the topic needs, at least one worked example, the phrasing that earns free-response points and the mistakes that cost them. The worked examples use their own numbers, so none of them give away an item in \emph{Unit 7 Practice Set A} or \emph{Unit 7 Practice Set B}. Plan on about 80 minutes for a full read with a calculator out.
+\end{abstract}
+\leadline{Usage}{first pass, read Sections 1--13 in order and redo every worked example. Then take \emph{Unit 7 Practice Set A} cold; reread the section behind every miss, and take \emph{Unit 7 Practice Set B} two or three days later. The last page is a one-page summary for the night before the unit test. Unit 7 is 7--9\% of the AP multiple-choice section, and its ideas (Q vs.\ K, ICE tables) carry all of Unit 8.}
+
+\section{Introduction to equilibrium (Topic 7.1)}\label{t:7.1}
+In a closed system, a reversible reaction reaches \emph{dynamic equilibrium} when the forward and reverse rates are equal. Both reactions continue, but there is no net change, so concentrations (and colors, pressures) stay constant. They are generally \emph{not} equal to each other.
+\begin{itemize}
+\item On a concentration--time graph, the curves level off; on a rate--time graph, the forward rate falls and the reverse rate rises until they meet.
+\item Equilibrium can be approached from either side: starting with reactants only or products only gives the same K at the same temperature.
+\end{itemize}
+\worked{1.1} A flask of colorless $\ce{N2O4}$ turns light brown and then stays the same shade. The shade stops changing when $\ce{N2O4}$ decomposes as fast as $\ce{NO2}$ recombines.
+
+\section{Direction of reversible reactions (Topic 7.2)}\label{t:7.2}
+Compare the reaction quotient Q with K:
+\begin{center}
+\begin{tabular}{lll}\toprule
+Condition & Meaning & Net reaction \\ \midrule
+$Q < K$ & too few products & forward (toward products) \\
+$Q = K$ & at equilibrium & none \\
+$Q > K$ & too many products & reverse (toward reactants) \\ \bottomrule
+\end{tabular}
+\end{center}
+\worked{2.1} For $\ce{PCl5 <=> PCl3 + Cl2}$, $K = 0.042$. A mixture with $[\ce{PCl5}] = 0.50$, $[\ce{PCl3}] = 0.10$, $[\ce{Cl2}] = 0.10$ has $Q = 0.010/0.50 = 0.020 < K$, so more $\ce{PCl5}$ decomposes.
+
+\section{Reaction quotient and equilibrium constant (Topic 7.3)}\label{t:7.3}
+For $a\ce{A} + b\ce{B} \rightleftharpoons c\ce{C} + d\ce{D}$:
+\[ Q_c = \frac{[\ce{C}]^c[\ce{D}]^d}{[\ce{A}]^a[\ce{B}]^b}, \qquad K_c = Q_c \text{ at equilibrium}, \qquad K_p \text{ uses partial pressures.} \]
+\begin{itemize}
+\item Include gases and aqueous species. Leave out pure solids and pure liquids (including solvent water).
+\item K has no units in the AP convention. It depends only on temperature.
+\end{itemize}
+\worked{3.1} $\ce{3Fe(s) + 4H2O(g) <=> Fe3O4(s) + 4H2(g)}$: $K_c = [\ce{H2}]^4/[\ce{H2O}]^4$.
+
+\section{Calculating the equilibrium constant (Topic 7.4)}\label{t:7.4}
+If equilibrium concentrations are given, substitute them. If only some are given, use an \emph{ICE table} (Initial, Change, Equilibrium), with changes in the ratio of the coefficients.
+
+\worked{4.1} $\ce{2NO(g) + Br2(g) <=> 2NOBr(g)}$: initially 0.40 M NO, 0.30 M $\ce{Br2}$, no NOBr. At equilibrium $[\ce{NOBr}] = 0.20$ M.
+\begin{center}
+\begin{tabular}{lccc}\toprule
+& NO & $\ce{Br2}$ & NOBr \\ \midrule
+I & 0.40 & 0.30 & 0 \\
+C & $-0.20$ & $-0.10$ & $+0.20$ \\
+E & 0.20 & 0.20 & 0.20 \\ \bottomrule
+\end{tabular}
+\end{center}
+$K = (0.20)^2/[(0.20)^2(0.20)] = 5.0$.
+
+\section{Magnitude of the equilibrium constant (Topic 7.5)}\label{t:7.5}
+\begin{itemize}
+\item $K \gg 1$: products dominate at equilibrium (the reaction goes nearly to completion).
+\item $K \ll 1$: reactants dominate; very little product forms.
+\item $K \approx 1$: significant amounts of both.
+\end{itemize}
+K says nothing about \emph{how fast} equilibrium is reached; that is kinetics.
+
+\section{Properties of the equilibrium constant (Topic 7.6)}\label{t:7.6}
+\begin{center}
+\begin{tabular}{ll}\toprule
+Change to the equation & New K \\ \midrule
+Reverse & $1/K$ \\
+Multiply coefficients by $n$ & $K^n$ (halve: $\sqrt{K}$) \\
+Add equations & $K_1 \times K_2$ \\ \bottomrule
+\end{tabular}
+\end{center}
+\worked{6.1} $\ce{N2 + 3H2 <=> 2NH3}$, $K = 0.50$. For $\ce{NH3 <=> 1/2N2 + 3/2H2}$: reverse and halve, $K' = (1/0.50)^{1/2} = 1.4$.
+
+\section{Calculating equilibrium concentrations (Topic 7.7)}\label{t:7.7}
+\begin{enumerate}
+\item Set up the ICE table with $x$.
+\item Substitute into the K expression.
+\item Solve: take a square root if both sides are perfect squares; if K is small compared with the starting concentration, assume $[\ce{A}]_0 - x \approx [\ce{A}]_0$ and check that $x$ is under about 5\% of $[\ce{A}]_0$.
+\end{enumerate}
+\worked{7.1} $\ce{2HI <=> H2 + I2}$, $K = 0.016$; start 0.50 M HI. $x^2/(0.50 - 2x)^2 = 0.016$, so $x/(0.50 - 2x) = 0.126$, $x = 0.126(0.50) - 0.253x$, $1.253x = 0.0632$, $x = 0.050$ M. $[\ce{H2}] = [\ce{I2}] = 0.050$ M, $[\ce{HI}] = 0.40$ M.
+
+\worked{7.2} $\ce{N2O4 <=> 2NO2}$, $K = 4.0\times10^{-7}$ at low temperature, $[\ce{N2O4}]_0 = 0.040$ M. $4x^2/0.040 = 4.0\times10^{-7}$ gives $x^2 = 4.0\times10^{-9}$, $x = 6.3\times10^{-5}$ M (0.16\% of 0.040: the approximation holds); $[\ce{NO2}] = 1.3\times10^{-4}$ M.
+
+\section{Representations of equilibrium (Topic 7.8)}\label{t:7.8}
+\begin{itemize}
+\item \emph{Particle diagrams}: count particles; in a fixed volume, counts are proportional to concentrations. If $\Delta n$ of the reaction is zero the volume cancels out.
+\item \emph{Concentration--time graphs}: slopes are in the ratio of coefficients; flat lines mean equilibrium; a sudden vertical jump means something was added or removed.
+\item \emph{Rate--time graphs}: forward and reverse rates converge.
+\end{itemize}
+\worked{8.1} A box for $\ce{X2 <=> 2X}$ shows 3 $\ce{X2}$ and 6 X particles (1 L, 1 mol each): $K = 6^2/3 = 12$. If the box were 2 L, $K = 3^2/1.5 = 6.0$; here volume matters because $\Delta n \ne 0$.
+
+\section{Introduction to Le Châtelier's principle (Topic 7.9)}\label{t:7.9}
+When an equilibrium is disturbed, the system shifts in the direction that partly counteracts the change.
+\begin{center}
+\begin{tabular}{p{0.32\linewidth}p{0.3\linewidth}p{0.26\linewidth}}\toprule
+Stress & Shift & K? \\ \midrule
+Add reactant / remove product & toward products & unchanged \\
+Add product / remove reactant & toward reactants & unchanged \\
+Decrease volume (gases) & toward fewer moles of gas & unchanged \\
+Add inert gas, constant $V$ & none & unchanged \\
+Add pure solid or liquid & none & unchanged \\
+Raise $T$, endothermic & toward products & increases \\
+Raise $T$, exothermic & toward reactants & decreases \\
+Add catalyst & none (equilibrium reached faster) & unchanged \\ \bottomrule
+\end{tabular}
+\end{center}
+Observable evidence: color changes ($\ce{NO2}$ brown, $\ce{FeSCN^2+}$ red, $\ce{CoCl4^2-}$ blue vs.\ $\ce{Co(H2O)6^2+}$ pink), pressure changes, precipitates forming or dissolving.
+
+\worked{9.1} $\ce{Co(H2O)6^2+ + 4Cl- <=> CoCl4^2- + 6H2O}$ is pink $\rightleftharpoons$ blue. The solution turns blue when heated, so the forward reaction is endothermic.
+
+\section{Reaction quotient and Le Châtelier's principle (Topic 7.10)}\label{t:7.10}
+Every shift (except a temperature change) works by changing Q while K stays fixed. Explain with Q:
+\begin{itemize}
+\item adding a reactant lowers Q below K $\Rightarrow$ forward;
+\item halving the volume multiplies each gas concentration by 2, so Q changes by $2^{\Delta n}$; if $\Delta n_{\text{gas}} > 0$, Q rises above K $\Rightarrow$ reverse;
+\item diluting a solution works the same way, with dissolved particles.
+\end{itemize}
+A temperature change instead changes K itself.
+
+\worked{10.1} $\ce{PCl5(g) <=> PCl3(g) + Cl2(g)}$ at equilibrium; the volume is doubled. Each concentration halves, so $Q = (\tfrac12)(\tfrac12)/(\tfrac12) = \tfrac12 K$; $Q < K$, net forward (toward more moles of gas).
+
+\frph ``Adding X increases [X], so Q becomes less than K; the reaction proceeds in the forward direction until Q = K again.'' For temperature: ``the reaction is endothermic, so raising T increases K.''
+
+\section{Introduction to solubility equilibria (Topic 7.11)}\label{t:7.11}
+For a slightly soluble salt $\ce{M_aX_b(s) <=> aM^{m+} + bX^{x-}}$, $K_{sp} = [\ce{M}]^a[\ce{X}]^b$.
+\begin{center}
+\begin{tabular}{lll}\toprule
+Ion ratio & Example & $K_{sp}$ in terms of $s$ \\ \midrule
+1 : 1 & AgBr, $\ce{BaSO4}$ & $s^2$ \\
+1 : 2 or 2 : 1 & $\ce{PbCl2}$, $\ce{Ag2CO3}$ & $4s^3$ \\
+1 : 3 & $\ce{Fe(OH)3}$ & $27s^4$ \\
+3 : 2 & $\ce{Ca3(PO4)2}$ & $108s^5$ \\ \bottomrule
+\end{tabular}
+\end{center}
+\begin{itemize}
+\item Compare solubilities through $K_{sp}$ only for salts with the same ion ratio; otherwise compute $s$.
+\item Precipitation: after mixing (dilute first!), compute Q. $Q > K_{sp}$: precipitate forms; $Q < K_{sp}$: unsaturated, no precipitate.
+\end{itemize}
+\worked{11.1} $\ce{Ag2CO3}$, $K_{sp} = 8.5\times10^{-12}$: $4s^3 = 8.5\times10^{-12}$, $s = 1.3\times10^{-4}$ M; $[\ce{Ag+}] = 2.6\times10^{-4}$ M.
+
+\worked{11.2} 50.0 mL of $1.0\times10^{-3}$ M $\ce{Pb(NO3)2}$ plus 50.0 mL of $2.0\times10^{-2}$ M NaCl: after mixing $[\ce{Pb^2+}] = 5.0\times10^{-4}$, $[\ce{Cl-}] = 1.0\times10^{-2}$; $Q = 5.0\times10^{-8} < 1.7\times10^{-5}$: no precipitate.
+
+\section{Common-ion effect (Topic 7.12)}\label{t:7.12}
+A salt is less soluble in a solution that already contains one of its ions, because the added ion raises Q and shifts the dissolution equilibrium toward the solid. Calculate with the common ion's concentration in the expression (usually $[\text{common ion}] + s \approx [\text{common ion}]$).
+
+\worked{12.1} $\ce{BaSO4}$, $K_{sp} = 1.1\times10^{-10}$. In water $s = 1.0\times10^{-5}$ M. In 0.050 M $\ce{Na2SO4}$: $s = 1.1\times10^{-10}/0.050 = 2.2\times10^{-9}$ M.
+
+\section{Lab skills and free-response technique}\label{t:lab}
+\begin{itemize}
+\item Spectrophotometric determination of K (for example $\ce{FeSCN^2+}$): use Beer's law to find the equilibrium concentration of the colored species, then an ICE table for the rest.
+\item Le Châtelier labs: describe what you observe (color, precipitate) \emph{and} name the species whose concentration changed.
+\item Solubility labs: the solution must be saturated (excess solid present) for $K_{sp}$ calculations.
+\item In free response, write the K expression first, show the ICE table, state any approximation and check it.
+\end{itemize}
+
+\clearpage
+\section*{Summary: Unit 7 on one page}
+Use this page the night before. For any row you cannot explain from memory, reread its section and redo its worked example.
+
+\begin{longtable}{@{}p{0.11\linewidth}p{0.40\linewidth}p{0.43\linewidth}@{}}\toprule
+\S{} / Topic & Must know & Key equations and tests \\ \midrule
+1 / 7.1 & Dynamic; equal rates; constant, not equal, concentrations & graphs level off \\[3pt]
+2 / 7.2 & Q vs.\ K gives the direction & $Q<K$ forward; $Q>K$ reverse \\[3pt]
+3 / 7.3 & Write K; omit solids and liquids & products over reactants, powers \\[3pt]
+4 / 7.4 & ICE tables & changes in coefficient ratio \\[3pt]
+5 / 7.5 & Size of K vs.\ position & K says nothing about rate \\[3pt]
+6 / 7.6 & Reverse, scale, add & $1/K$, $K^n$, $K_1K_2$ \\[3pt]
+7 / 7.7 & Square roots; small-$x$ approximation & check $x < 5\%$ \\[3pt]
+8 / 7.8 & Particle diagrams, graphs & counts as concentrations \\[3pt]
+9 / 7.9 & Le Châtelier stresses & only $T$ changes K \\[3pt]
+10 / 7.10 & Explain shifts with Q & volume: $Q \times 2^{\Delta n}$ when halved \\[3pt]
+11 / 7.11 & $K_{sp}$; molar solubility; Q vs.\ $K_{sp}$ & $s^2$, $4s^3$, $27s^4$ \\[3pt]
+12 / 7.12 & Common ion lowers solubility & $s = K_{sp}/[\text{common}]^n$ \\ \bottomrule
+\end{longtable}
+\end{document}
