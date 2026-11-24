@@ -87,6 +87,12 @@ Every wrong choice must have a note in `ex.others`; the builder refuses a quiz o
   prompts are repaired without revealing the answer.
 - `apah_works` — APAH 250 every-work practice, 500 items in 10 content-area quizzes (`works-1`..`10`), extracted
   from the PDF; the work's photo is shown after answering. Wrong-choice notes: `notes_<k>.py`.
+- `ap_lit` — AP English Literature: the Part 0 guide (exam, rubric, essays), each unit's study guide (section checks)
+  and each unit's Question Set (multiple choice on public-domain passages plus a full 6-point essay: Q2, Q1 or Q3, scored
+  with the series' rubric and model response). Parsed from the series' LaTeX (`source/`, from `ap-lit-study-series.zip`);
+  `source/pages.json` gives each guide section's PDF page. `\pp` paragraphs and `\pl` verse lines become one shared stim per
+  passage; every paragraph and line is numbered, and the ones a stem cites ("paragraph 3", "lines 5 and 9") are
+  highlighted with their question. Explanations: `ex_<file>.py`.
 - `college_math` — Differential Equations I–III, Linear Algebra, Multivariable Calculus and Real Analysis I–III
   (`/study/math/<subject>/tests/<slug>/`), transcribed from the PDFs: one module per volume (`de1.py` … `ra3.py`)
   with `Q()` items and `FRQ()` free-response items. Real Analysis II and III are proof problem sets (free

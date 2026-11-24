@@ -121,7 +121,9 @@ TREE = page("/", "Home", "The shop, what it sells, and how to book an appointmen
             folder("/study/ap/ap-english-literature/", [
                 page("/study/ap/ap-english-literature/xyz-essay/", "The XYZ Essay",
                      "AP English Literature essay guide: thesis, quote units, scoring guide, Gatsby planning kit.", "unlisted"),
-            ], desc="AP English Literature", anchor="/study/#ap-english-literature"),
+            ] + quiz_folder("/study/ap/ap-english-literature/", "/study/#ap-english-literature"),
+                   files=files("study/ap/ap-english-literature", "PDFs"),
+                   desc="AP English Literature, Part 0 and Units 1–3", anchor="/study/#ap-english-literature"),
             folder("/study/ap/ap-psychology/", quiz_folder("/study/ap/ap-psychology/", "/study/#ap-psychology"), files=files("study/ap/ap-psychology", "PDFs"),
                    desc="AP Psychology, Part 0 and Units 1–5", anchor="/study/#ap-psychology"),
             folder("/study/ap/ap-statistics/", [
