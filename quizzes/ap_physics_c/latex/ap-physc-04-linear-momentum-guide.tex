@@ -1,0 +1,89 @@
+\documentclass[11pt]{article}
+\usepackage{ap-physc}
+\course{AP Physics C: Mechanics}
+\headcourse{AP Physics C: Mechanics}
+\headpart{Unit 4 \textperiodcentered\ Study Guide}
+\title{Unit 4: Linear Momentum}
+\author{Paul Wang}
+\date{November 2026}
+\docpart{Unit 4 \textperiodcentered\ Study Guide \textperiodcentered\ 10--20\% of MCQ}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Unit 4 is about momentum, a conserved vector quantity. It covers momentum and impulse, including impulse as the integral of force over time and $F = dp/dt$ for changing mass (4.1--4.2); conservation of momentum and the motion of the center of mass (4.3); and elastic, inelastic, and perfectly inelastic collisions in one and two dimensions (4.4). The free-response question is an experimental design and analysis question on a cart collision. Each guide section ends with check questions; the key is on the last page.
+\end{abstract}
+
+\scoringline{Check questions: \blank\ / \qtotal \qquad Target: 3+ \qquad Weakest topic: \blank[8em]}
+
+\section{Momentum and impulse (4.1--4.2)}\label{sec:1}
+
+\[ \vec p = m\vec v, \qquad \sum\vec F = \frac{d\vec p}{dt}, \qquad \vec J = \int_{t_1}^{t_2}\vec F\,dt = \Delta\vec p. \]
+\begin{terms}
+Momentum & A vector; add components, not magnitudes. \\
+Impulse & Area under the $F$--$t$ graph. Same impulse, longer contact time $\Rightarrow$ smaller average force (air bags, bending your knees, a catcher's mitt). \\
+Average force & $\bar F = \Delta p/\Delta t$. \\
+Rebound & A ball that bounces back has $|\Delta p| = m(v_1 + v_2)$, larger than if it stopped. \\
+Variable mass & $F = \frac{dp}{dt} = v\frac{dm}{dt}$ when mass is added at constant speed: sand dropping onto a conveyor belt moving at $v$ needs an extra force $v\,dm/dt$. \\
+\end{terms}
+
+\begin{trap}
+Momentum change has a direction. A 0.20 kg ball hitting a wall at 10 m/s and rebounding at 8.0 m/s has $|\Delta p| = 0.20(10 + 8.0) = 3.6$ N$\cdot$s, not $0.40$ N$\cdot$s.
+\end{trap}
+
+\subsubsection{Check}\mbox{}
+
+\begin{q}{2}{4.2 Impulse from a graph}{Impulse is the area under the $F$--$t$ graph: $\tfrac12(0.010)(400) = 2.0$ N$\cdot$s.}
+The force on a ball during a kick rises linearly from 0 to 400 N and falls linearly back to 0, a symmetric triangle lasting 0.010 s in total. What impulse does the ball receive?
+\chh{$1.0$ N$\cdot$s}{$2.0$ N$\cdot$s}{$4.0$ N$\cdot$s}{$40{,}000$ N$\cdot$s}
+\end{q}
+\begin{q}{4}{4.2 Rebound}{The velocity reverses: $\Delta p = m(v_f - v_i) = 0.20(-8.0 - 10) = -3.6$ kg$\cdot$m/s.}
+A 0.20 kg ball hits a wall at 10 m/s and bounces straight back at 8.0 m/s. What is the magnitude of its change in momentum?
+\chh{$0.40$ kg$\cdot$m/s}{$1.6$ kg$\cdot$m/s}{$2.0$ kg$\cdot$m/s}{$3.6$ kg$\cdot$m/s}
+\end{q}
+
+\section{Conservation of linear momentum (4.3)}\label{sec:2}
+
+If the net external force on a system is zero, its total momentum is constant:
+\[ \sum_i m_i\vec v_i = \text{constant} \quad\Longleftrightarrow\quad \vec v_{cm} = \text{constant}. \]
+Internal forces (collisions, explosions, a person pushing off a boat) move momentum around inside the system but cannot change the total. During a short collision, momentum is \emph{approximately} conserved even with gravity or friction acting, because their impulse over the brief contact is negligible.
+
+\begin{example}[Explosion from rest]
+A 3.0 kg object at rest splits into a 1.0 kg piece moving at 6.0 m/s east and a 2.0 kg piece. Since $\vec p_{total} = 0$, the 2.0 kg piece moves at $6.0/2.0 = 3.0$ m/s west. The center of mass stays put.
+\end{example}
+
+\subsubsection{Check}\mbox{}
+
+\begin{q}{1}{4.3 Explosion}{Total momentum stays zero: $(1.0)(6.0) + (2.0)v = 0$, so $v = -3.0$ m/s (west).}
+A 3.0 kg object at rest explodes into two pieces. A 1.0 kg piece moves off at 6.0 m/s east. What is the velocity of the other piece?
+\chh{$3.0$ m/s west}{$6.0$ m/s west}{$3.0$ m/s east}{$2.0$ m/s west}
+\end{q}
+
+\section{Elastic and inelastic collisions (4.4)}\label{sec:3}
+
+Momentum is conserved in every collision of an isolated system. Kinetic energy is conserved only in \textbf{elastic} collisions.
+
+\begin{compare}{Type}{What is conserved}{Signature}
+Elastic & $\vec p$ and $K$ & objects bounce; in 1D the relative speed reverses: $v_{2f} - v_{1f} = -(v_{2i} - v_{1i})$ \\
+Inelastic & $\vec p$ only & some $K$ becomes thermal energy, sound, deformation \\
+Perfectly inelastic & $\vec p$ only, maximum $K$ lost & objects stick: $v_f = \dfrac{m_1v_1 + m_2v_2}{m_1 + m_2}$ \\
+\end{compare}
+
+\textbf{1D elastic collision, target at rest.} $v_{1f} = \dfrac{m_1 - m_2}{m_1 + m_2}v_{1i}$, $v_{2f} = \dfrac{2m_1}{m_1 + m_2}v_{1i}$. Equal masses exchange velocities. A light object bounces off a heavy one with nearly its original speed.
+
+\textbf{Two dimensions.} Conserve $p_x$ and $p_y$ separately. In an elastic glancing collision between equal masses with one at rest, the two leave at $90^\circ$ to each other.
+
+\begin{example}[Ballistic pendulum]
+Split it into two stages. Collision: momentum only, $mv = (m + M)V$. Swing: energy only, $\tfrac12(m + M)V^2 = (m + M)gh$. Using energy through the collision is the classic error.
+\end{example}
+
+\subsubsection{Check}\mbox{}
+
+\begin{q}{3}{4.4 Kinetic energy lost}{Momentum gives $v_f = v/2$. Then $K_f = \tfrac12(2m)(v/2)^2 = \tfrac14 mv^2$, half of $K_i = \tfrac12 mv^2$.}
+A cart moving at speed $v$ collides with an identical cart at rest, and they stick together. What fraction of the original kinetic energy is lost?
+\chh{$0$}{$1/4$}{$1/2$}{$3/4$}
+\end{q}
+
+\makekey
+\end{document}

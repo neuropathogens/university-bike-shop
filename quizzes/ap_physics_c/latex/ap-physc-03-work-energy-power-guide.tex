@@ -1,0 +1,104 @@
+\documentclass[11pt]{article}
+\usepackage{ap-physc}
+\course{AP Physics C: Mechanics}
+\headcourse{AP Physics C: Mechanics}
+\headpart{Unit 3 \textperiodcentered\ Study Guide}
+\title{Unit 3: Work, Energy, and Power}
+\author{Paul Wang}
+\date{November 2026}
+\docpart{Unit 3 \textperiodcentered\ Study Guide \textperiodcentered\ 15--25\% of MCQ}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Unit 3 replaces force-by-force analysis with energy bookkeeping. It covers kinetic energy and work, including work by variable forces as an integral and the work--energy theorem (3.1--3.2); potential energy, $F = -dU/dx$, gravitational and spring potential energy, and potential-energy diagrams with equilibrium and turning points (3.3); conservation of energy with friction (3.4); and power (3.5). Each section ends with check questions; the key is on the last page.
+\end{abstract}
+
+\scoringline{Check questions: \blank\ / \qtotal \qquad Target: 4+ \qquad Weakest topic: \blank[8em]}
+
+\section{Kinetic energy and work (3.1--3.2)}\label{sec:1}
+
+\[ K = \tfrac12 mv^2, \qquad W = \int_{x_1}^{x_2} F_x\,dx \;\; (1\text{D}), \qquad W = \int \vec F\cdot d\vec r, \qquad W_{net} = \Delta K. \]
+\begin{terms}
+Work by a constant force & $W = \vec F\cdot\Delta\vec r = Fd\cos\theta$. Positive if the force has a component along the motion, negative if against it, zero if perpendicular (normal force on a level road, the string tension in uniform circular motion). \\
+Work from a graph & Area under the $F$--$x$ curve (area below the axis is negative work). \\
+Work by a spring & Stretching from $x_1$ to $x_2$, the spring does $W_s = -\left(\tfrac12 kx_2^2 - \tfrac12 kx_1^2\right)$. \\
+Work--energy theorem & The \emph{net} work by all forces equals the change in kinetic energy. \\
+Dot product & $\vec A\cdot\vec B = A_xB_x + A_yB_y + A_zB_z = AB\cos\theta$. \\
+\end{terms}
+
+\begin{trap}
+$W = Fd$ assumes a constant force along the motion. For $F(x) = 5x^2$, the work from $x = 1$ to $3$ m is $\int_1^3 5x^2\,dx = 43$ J, not $F(3)\times 2 = 90$ J.
+\end{trap}
+
+\subsubsection{Check}\mbox{}
+
+\begin{q}{2}{3.2 Work from F(x)}{$W = \int_0^2 3x^2\,dx = x^3\big|_0^2 = 8.0$ J.}
+A force $F(x) = 3x^2$ (newtons, $x$ in meters) acts along $x$ on an object that moves from $x = 0$ to $x = 2.0$ m. How much work does the force do?
+\chh{$2.7$ J}{$8.0$ J}{$12$ J}{$24$ J}
+\end{q}
+
+\section{Potential energy and energy diagrams (3.3)}\label{sec:2}
+
+For a conservative force (work independent of path), define potential energy by
+\[ \Delta U = -\int_{x_1}^{x_2} F_x\,dx, \qquad F_x = -\frac{dU}{dx}. \]
+\begin{compare}{Force}{Potential energy}{Zero chosen at}
+Uniform gravity $-mg\,\hat\jmath$ & $U = mgy$ & any convenient height \\
+Spring $-kx$ & $U = \tfrac12 kx^2$ & natural length \\
+Universal gravity $-\dfrac{GMm}{r^2}\hat r$ & $U = -\dfrac{GMm}{r}$ & $r \to \infty$ (so $U < 0$ for bound objects) \\
+\end{compare}
+
+\textbf{Reading a $U(x)$ graph.} The force is minus the slope, so it points ``downhill''. Equilibrium is where the slope is zero: a minimum is \emph{stable} (a nudge produces a restoring force), a maximum \emph{unstable}. With total energy $E$, the object can only be where $U(x) \le E$; turning points are where $U = E$, and $K = E - U$ everywhere else.
+
+\begin{trap}
+Near Earth's surface $\Delta U = mg\Delta h$ is an approximation. Far away use $-GMm/r$: lifting a mass from $R_E$ to $2R_E$ takes $\tfrac12 mgR_E$, not $mgR_E$.
+\end{trap}
+
+\subsubsection{Check}\mbox{}
+
+\begin{q}{1}{3.3 Force from potential energy}{$F = -dU/dx = -(8x - 3x^2)$; at $x = 1$, $F = -5.0$ N (toward $-x$).}
+A particle's potential energy is $U(x) = 4x^2 - x^3$ (joules, meters). What is the force on it at $x = 1.0$ m?
+\chh{$-5.0$ N}{$-3.0$ N}{$+3.0$ N}{$+5.0$ N}
+\end{q}
+\begin{q}{3}{3.3 Stable equilibrium}{Equilibrium needs $F = -dU/dx = 0$; stability needs the force to push back toward that point, which happens at a minimum ($d^2U/dx^2 > 0$).}
+On a graph of $U(x)$, where is a particle in stable equilibrium?
+\chh{At a local maximum of $U$}{Where $U = 0$}{At a local minimum of $U$}{Where $U$ is steepest}
+\end{q}
+
+\section{Conservation of energy (3.4)}\label{sec:3}
+
+For a system, the energy changes only by work done by external forces and by non-conservative internal forces:
+\[ \Delta K + \Delta U = W_{ext} + W_{nc}, \qquad \text{isolated, conservative: } K_1 + U_1 = K_2 + U_2. \]
+Kinetic friction converts mechanical energy to thermal energy: $\Delta E_{th} = f_k d$ (with $d$ the sliding distance), so $K_1 + U_1 = K_2 + U_2 + f_k d$.
+
+\begin{keyidea}[Energy or forces?]
+Use energy when the question links speeds and positions and does not ask about time or direction. Use forces (Newton's second law) when it asks about acceleration, tension, normal force, or time. Many FRQs need both: energy for the speed at the bottom of a loop, then $\sum F = mv^2/r$ for the normal force there.
+\end{keyidea}
+
+\begin{example}[Escape speed]
+To just escape from a planet's surface, $K + U = 0$: $\tfrac12 mv_e^2 - \dfrac{GMm}{R} = 0$, so $v_e = \sqrt{2GM/R}$, which is $\sqrt2$ times the speed of a circular orbit at the surface.
+\end{example}
+
+\subsubsection{Check}\mbox{}
+
+\begin{q}{2}{3.4 Conservation of energy}{$mgh = \tfrac12 mv^2$, so $v = \sqrt{2gh} = \sqrt{9.0} = 3.0$ m/s. Tension does no work (it is perpendicular to the motion).}
+A pendulum bob is released from rest $0.45$ m above its lowest point. Ignoring air resistance, how fast is it moving at the bottom? ($g = 10\ \mathrm{m/s^2}$)
+\chh{$2.1$ m/s}{$3.0$ m/s}{$4.5$ m/s}{$9.0$ m/s}
+\end{q}
+
+\section{Power (3.5)}\label{sec:4}
+
+Power is the rate of energy transfer:
+\[ P = \frac{dW}{dt} = \frac{dE}{dt}, \qquad P = \vec F\cdot\vec v, \qquad \bar P = \frac{\Delta E}{\Delta t}. \]
+A motor that moves a load at constant speed against a resisting force $F$ delivers $P = Fv$. If a constant force accelerates an object from rest, $v$ grows with time, so the power grows too, and the instantaneous power at the end is twice the average.
+
+\subsubsection{Check}\mbox{}
+
+\begin{q}{3}{3.5 Power at constant speed}{At constant speed the driving force equals the resistance, 500 N, so $P = Fv = 500 \times 20 = 10{,}000$ W.}
+A car drives at a steady $20$ m/s on a level road. Air resistance and rolling friction together exert $500$ N. What power must the engine deliver to the wheels?
+\chh{$25$ W}{$20$ kW}{$10$ kW}{$5.0$ kW}
+\end{q}
+
+\makekey
+\end{document}

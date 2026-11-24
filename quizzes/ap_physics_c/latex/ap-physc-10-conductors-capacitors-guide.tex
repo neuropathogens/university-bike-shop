@@ -1,0 +1,105 @@
+\documentclass[11pt]{article}
+\usepackage{ap-physc}
+\course{AP Physics C: Electricity and Magnetism}
+\headcourse{AP Physics C: E\&M}
+\headpart{Unit 10 \textperiodcentered\ Study Guide}
+\title{Unit 10: Conductors and Capacitors}
+\author{Paul Wang}
+\date{November 2026}
+\docpart{Unit 10 \textperiodcentered\ Study Guide \textperiodcentered\ 10--15\% of MCQ}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Unit 10 applies fields and potential to conductors and to the devices built from them. It covers conductors in electrostatic equilibrium and shielding (10.1); how charge redistributes between connected conductors (10.2); capacitance of parallel-plate, spherical, and cylindrical capacitors, energy storage, and series and parallel combinations (10.3); and dielectrics (10.4). The recurring question is whether the charge or the voltage is held fixed. Each section ends with check questions; the key is on the last page.
+\end{abstract}
+
+\scoringline{Check questions: \blank\ / \qtotal \qquad Target: 5+ \qquad Weakest topic: \blank[8em]}
+
+\section{Electrostatics with conductors (10.1)}\label{sec:1}
+
+In electrostatic equilibrium (no charges moving), a conductor obeys four rules:
+\begin{enumerate}[label=(\arabic*)]
+\item $\vec E = 0$ everywhere inside the material (otherwise free electrons would move).
+\item Any net charge lives on the surface. A cavity with no charge inside it has no charge on its wall and no field.
+\item Just outside, $\vec E$ is perpendicular to the surface with $E = \sigma/\varepsilon_0$.
+\item The whole conductor is one equipotential, including its interior.
+\end{enumerate}
+\begin{example}[Shell around a charge]
+A neutral conducting shell surrounds a point charge $+q$. A Gaussian surface inside the metal has $E = 0$, so $Q_{enc} = 0$: the inner surface holds $-q$. The shell is neutral, so the outer surface holds $+q$, and outside the field is $kq/r^2$ as if the shell were not there.
+\end{example}
+\begin{trap}
+$E = \sigma/\varepsilon_0$ next to a conductor, but $\sigma/(2\varepsilon_0)$ next to an isolated sheet of charge. The conductor's field is all on one side.
+\end{trap}
+
+\subsubsection{Check}\mbox{}
+
+\begin{q}{2}{10.1 Inside a conductor}{In equilibrium the field inside a conductor is zero, and the charge sits on the outer surface.}
+A solid metal sphere carries net charge $+Q$ and is in electrostatic equilibrium. What is the electric field at a point inside the metal, halfway from the center to the surface?
+\chh{$kQ/(R/2)^2$}{Zero}{$kQ/(2R^2)$}{$kQ/R^2$}
+\end{q}
+
+\section{Redistribution of charge between conductors (10.2)}\label{sec:2}
+
+Conductors joined by a wire become one equipotential. Charge flows until the potentials match. For two distant spheres of radii $R_1$ and $R_2$:
+\[ \frac{kq_1}{R_1} = \frac{kq_2}{R_2} \ \Rightarrow\ \frac{q_1}{q_2} = \frac{R_1}{R_2}, \qquad \frac{\sigma_1}{\sigma_2} = \frac{R_2}{R_1}. \]
+The larger sphere takes more charge, but the smaller one has the larger surface charge density and stronger surface field. That is why charge crowds onto sharp points and why lightning rods are pointed. \textbf{Grounding} connects a conductor to Earth, a huge reservoir at $V = 0$, so charge flows until the conductor's potential is zero.
+
+\subsubsection{Check}\mbox{}
+
+\begin{q}{4}{10.2 Spheres joined by a wire}{Equal potentials: $kq_1/R = kq_2/(2R)$, so $q_1/q_2 = 1/2$.}
+A metal sphere of radius $R$ and a distant metal sphere of radius $2R$ are joined by a thin wire. What is the ratio of the charge on the small sphere to the charge on the large sphere?
+\chh{$1:1$}{$1:4$}{$2:1$}{$1:2$}
+\end{q}
+
+\section{Capacitors (10.3)}\label{sec:3}
+
+\[ C = \frac{Q}{\Delta V}, \qquad U_C = \tfrac12 C(\Delta V)^2 = \frac{Q^2}{2C} = \tfrac12 Q\Delta V, \qquad u_E = \tfrac12\varepsilon_0E^2. \]
+To find $C$ for any shape: put $\pm Q$ on the conductors, find $E$ (Gauss's law), integrate to get $\Delta V$, and divide.
+\begin{compare}{Capacitor}{$C$}{Notes}
+Parallel plates, area $A$, gap $d$ & $\varepsilon_0A/d$ & uniform $E = \sigma/\varepsilon_0$ between plates \\
+Spherical, radii $a < b$ & $4\pi\varepsilon_0\dfrac{ab}{b - a}$ & isolated sphere: $b \to \infty$, $C = 4\pi\varepsilon_0 a$ \\
+Cylindrical, radii $a < b$, length $L$ & $\dfrac{2\pi\varepsilon_0 L}{\ln(b/a)}$ & coaxial cable \\
+\end{compare}
+\textbf{Combinations.} Parallel: $C_{eq} = C_1 + C_2$ (same $\Delta V$, charges add). Series: $\dfrac{1}{C_{eq}} = \dfrac{1}{C_1} + \dfrac{1}{C_2}$ (same $Q$, voltages add).
+\begin{keyidea}[Connected or isolated?]
+Connected to a battery, $\Delta V$ is fixed: changing $C$ changes $Q$. Disconnected (isolated), $Q$ is fixed: changing $C$ changes $\Delta V$. Decide which before you calculate anything.
+\end{keyidea}
+
+\subsubsection{Check}\mbox{}
+
+\begin{q}{1}{10.3 Parallel-plate capacitance}{$C = \varepsilon_0A/d \propto 1/d$.}
+The gap between the plates of a parallel-plate capacitor is doubled. What happens to its capacitance?
+\chh{It halves.}{It doubles.}{It quarters.}{It is unchanged.}
+\end{q}
+\begin{q}{3}{10.3 Series capacitors}{$\dfrac{1}{C} = \dfrac12 + \dfrac13 = \dfrac56$, so $C = 1.2\ \mu\mathrm{F}$, smaller than either.}
+Capacitors of $2.0\ \mu\mathrm{F}$ and $3.0\ \mu\mathrm{F}$ are connected in series. What is the equivalent capacitance?
+\chh{$5.0\ \mu\mathrm{F}$}{$2.5\ \mu\mathrm{F}$}{$1.2\ \mu\mathrm{F}$}{$0.83\ \mu\mathrm{F}$}
+\end{q}
+\begin{q}{3}{10.3 Energy stored}{$U = \tfrac12 CV^2 = \tfrac12(10\times10^{-6})(144) = 7.2\times10^{-4}$ J.}
+A $10\ \mu\mathrm{F}$ capacitor is charged to 12 V. How much energy does it store?
+\chh{$6.0\times10^{-5}$ J}{$1.2\times10^{-4}$ J}{$7.2\times10^{-4}$ J}{$1.4\times10^{-3}$ J}
+\end{q}
+
+\section{Dielectrics (10.4)}\label{sec:4}
+
+An insulating material (dielectric constant $\kappa > 1$) between the plates polarizes. Its bound surface charges partly cancel the plates' field, so for the same free charge the voltage is lower:
+\[ C = \kappa C_0, \qquad E = \frac{E_0}{\kappa}\ \ (\text{same free charge}). \]
+\begin{compare}{Dielectric inserted}{Battery connected ($V$ fixed)}{Isolated ($Q$ fixed)}
+$C$ & $\times\kappa$ & $\times\kappa$ \\
+$Q$ & $\times\kappa$ & unchanged \\
+$V$ & unchanged & $\div\kappa$ \\
+$U$ & $\times\kappa$ ($\tfrac12 CV^2$) & $\div\kappa$ ($Q^2/2C$); the slab is pulled in \\
+\end{compare}
+A slab filling half the \emph{area} acts as two capacitors in parallel; a slab filling half the \emph{gap} acts as two in series.
+
+\subsubsection{Check}\mbox{}
+
+\begin{q}{1}{10.4 Isolated capacitor}{Isolated: $Q$ is fixed. $C$ rises to $\kappa C_0$, so $V = Q/C$ falls by $\kappa$.}
+A charged parallel-plate capacitor is disconnected from its battery. A slab with dielectric constant $\kappa$ then fills the gap. What happens to the voltage across it?
+\chh{It decreases by a factor of $\kappa$.}{It increases by a factor of $\kappa$.}{It is unchanged.}{It decreases by a factor of $\kappa^2$.}
+\end{q}
+
+\makekey
+\end{document}

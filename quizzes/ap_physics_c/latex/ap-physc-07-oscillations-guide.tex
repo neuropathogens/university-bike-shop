@@ -1,0 +1,105 @@
+\documentclass[11pt]{article}
+\usepackage{ap-physc}
+\course{AP Physics C: Mechanics}
+\headcourse{AP Physics C: Mechanics}
+\headpart{Unit 7 \textperiodcentered\ Study Guide}
+\title{Unit 7: Oscillations}
+\author{Paul Wang}
+\date{November 2026}
+\docpart{Unit 7 \textperiodcentered\ Study Guide \textperiodcentered\ 10--15\% of MCQ}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Unit 7 studies simple harmonic motion: what makes motion harmonic (7.1), the period and frequency of mass--spring systems (7.2), the functions and graphs of position, velocity, and acceleration (7.3), energy in an oscillator (7.4), and simple and physical pendulums (7.5). The calculus is central: SHM is any motion whose equation reduces to $\ddot x = -\omega^2 x$. The free-response question is an experiment on a spring's period. Each section ends with check questions; the key is on the last page.
+\end{abstract}
+
+\scoringline{Check questions: \blank\ / \qtotal \qquad Target: 5+ \qquad Weakest topic: \blank[8em]}
+
+\section{Defining simple harmonic motion (7.1)}\label{sec:1}
+
+Simple harmonic motion (SHM) happens whenever the net force (or torque) is proportional to the displacement from equilibrium and points back toward it:
+\[ F = -kx \quad\Rightarrow\quad \frac{d^2x}{dt^2} = -\frac{k}{m}x = -\omega^2 x, \qquad x(t) = A\cos(\omega t + \phi). \]
+To show a system is in SHM, get its equation of motion into the form $\ddot x = -(\text{positive constant})\,x$; the constant is $\omega^2$. Near the bottom of \emph{any} smooth potential-energy well, $U \approx \tfrac12 U''(x_0)(x - x_0)^2$, so small oscillations are SHM with effective $k = U''(x_0)$.
+
+\begin{terms}
+Amplitude $A$ & Maximum displacement; set by the initial conditions, not by the system. \\
+Angular frequency $\omega$ & rad/s; $\omega = 2\pi f = 2\pi/T$. \\
+Phase constant $\phi$ & Sets where the motion starts: released from rest at $x = +A$ gives $\phi = 0$. \\
+\end{terms}
+
+\subsubsection{Check}\mbox{}
+
+\begin{q}{2}{7.1 Condition for SHM}{SHM needs a restoring force proportional to $x$: $F = -kx$ with $k > 0$.}
+Which net force, acting on a mass on a frictionless surface, produces simple harmonic motion? ($x$ is the displacement from $x = 0$.)
+\chh{$F = 4x$}{$F = -4x$}{$F = -4x^2$}{$F = -4$}
+\end{q}
+
+\section{Frequency and period (7.2)}\label{sec:2}
+
+\[ \text{Mass on a spring: } \omega = \sqrt{\frac{k}{m}}, \qquad T = 2\pi\sqrt{\frac{m}{k}}, \qquad f = \frac{1}{T}. \]
+\begin{itemize}
+\item The period does not depend on amplitude (for an ideal spring), so a larger push gives a faster, not longer, oscillation.
+\item A vertical spring has the same period as a horizontal one. Gravity only shifts the equilibrium, by $\Delta x = mg/k$; this also gives $T = 2\pi\sqrt{\Delta x/g}$.
+\item Springs that share the load side by side add ($k_1 + k_2$). A mass between two springs attached to opposite walls also feels $k_1 + k_2$.
+\end{itemize}
+
+\subsubsection{Check}\mbox{}
+
+\begin{q}{4}{7.2 Scaling the period}{$T = 2\pi\sqrt{m/k} \propto \sqrt m$, so $\sqrt4 = 2$.}
+A block on a spring has period $T$. The block is replaced by one with four times the mass. What is the new period?
+\chh{$4T$}{$T/2$}{$T$}{$2T$}
+\end{q}
+
+\section{Representing and analyzing SHM (7.3)}\label{sec:3}
+
+Differentiate $x = A\cos(\omega t + \phi)$:
+\[ v = -A\omega\sin(\omega t + \phi), \qquad a = -A\omega^2\cos(\omega t + \phi) = -\omega^2 x, \qquad v_{max} = A\omega, \qquad a_{max} = A\omega^2. \]
+\begin{compare}{Position}{Speed}{Acceleration}
+$x = \pm A$ (turning points) & zero & maximum, pointing toward equilibrium \\
+$x = 0$ (equilibrium) & maximum & zero \\
+\end{compare}
+On graphs, $v(t)$ is a quarter cycle ahead of $x(t)$, and $a(t)$ is the mirror image of $x(t)$. Velocity is the slope of the $x$--$t$ graph.
+
+\subsubsection{Check}\mbox{}
+
+\begin{q}{3}{7.3 Maximum speed}{$v_{max} = A\omega = (0.050)(10) = 0.50$ m/s.}
+A block's position is $x(t) = 0.050\cos(10t)$, in meters and seconds. What is its maximum speed?
+\chh{$0.050$ m/s}{$0.080$ m/s}{$0.50$ m/s}{$5.0$ m/s}
+\end{q}
+
+\section{Energy of simple harmonic oscillators (7.4)}\label{sec:4}
+
+\[ E = \tfrac12 kA^2 = \tfrac12 mv^2 + \tfrac12 kx^2, \qquad v(x) = \pm\omega\sqrt{A^2 - x^2}. \]
+Energy sloshes between kinetic and potential twice each cycle; the total is fixed by the amplitude. At $x = A/2$, $U = \tfrac14 E$ and $K = \tfrac34 E$. Doubling the amplitude quadruples the energy and doubles $v_{max}$ and $a_{max}$, but leaves the period unchanged.
+
+\subsubsection{Check}\mbox{}
+
+\begin{q}{1}{7.4 Energy split}{$U = \tfrac12 k(A/2)^2 = \tfrac14\left(\tfrac12 kA^2\right)$, so $U = E/4$ and $K = 3E/4$.}
+A block oscillates on a spring with amplitude $A$. What fraction of the total energy is kinetic when the block is at $x = A/2$?
+\chh{$3/4$}{$1/2$}{$1/4$}{$\sqrt3/2$}
+\end{q}
+
+\section{Simple and physical pendulums (7.5)}\label{sec:5}
+
+For small angles ($\sin\theta \approx \theta$, good to about $15^\circ$), a pendulum's restoring torque is proportional to its angle, giving SHM:
+\[ \text{Simple: } T = 2\pi\sqrt{\frac{L}{g}}, \qquad \text{Physical: } T = 2\pi\sqrt{\frac{I}{mgd}}, \]
+where $I$ is the rotational inertia about the pivot and $d$ the distance from the pivot to the center of mass. A simple pendulum is the special case $I = mL^2$, $d = L$. The period is independent of the mass and (for small angles) of the amplitude.
+\begin{example}
+A uniform rod of length $L$ swinging from one end: $I = \tfrac13 mL^2$, $d = L/2$, so $T = 2\pi\sqrt{\dfrac{2L}{3g}}$, shorter than a simple pendulum of the same length.
+\end{example}
+
+\subsubsection{Check}\mbox{}
+
+\begin{q}{3}{7.5 Pendulum on the Moon}{$T = 2\pi\sqrt{L/g} \propto 1/\sqrt g$; dividing $g$ by 6 multiplies $T$ by $\sqrt6 \approx 2.4$.}
+A pendulum clock is taken to the Moon, where $g$ is one sixth of Earth's. By what factor does its period change?
+\chh{It becomes 6 times longer.}{It becomes $\sqrt6$ times shorter.}{It becomes $\sqrt6$ times longer.}{It does not change.}
+\end{q}
+\begin{q}{1}{7.5 Physical pendulum}{$T = 2\pi\sqrt{I/(mgd)}$ with $I = \tfrac13 mL^2$ and $d = L/2$: $\dfrac{I}{mgd} = \dfrac{2L}{3g}$.}
+A uniform rod of length $L$ swings with small amplitude about a pivot at one end. What is its period?
+\chh{$2\pi\sqrt{2L/(3g)}$}{$2\pi\sqrt{L/g}$}{$2\pi\sqrt{L/(2g)}$}{$2\pi\sqrt{L/(3g)}$}
+\end{q}
+
+\makekey
+\end{document}
