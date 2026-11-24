@@ -113,6 +113,12 @@ Every wrong choice must have a note in `ex.others`; the builder refuses a quiz o
   sets are transcripts; each question set has one points-scored free-response task (email, story, presentation or
   Q&A) with its official rubric rows and a model response. Run `python3 -I quizzes/ap_chinese/build_tex.py` before
   `build.py ap_chinese` when content changes.
+- `ap_econ` — AP Macroeconomics and Microeconomics unit practice sets (`/study/ap/ap-economics/tests/macro-N`,
+  `micro-N`). Items are the series' own question data (`source/data/`, from `ap-econ-source.zip`); the series' own
+  balancer (`source/gen.py`, `assign`) places the answers, and the build asserts the letters against each PDF's
+  printed key (`keys.json`). The key's reason is the explanation's idea; `ex_<course>_u<N>.py` adds steps and a
+  note for every wrong choice. `pages.json` gives each topic's page in the unit guide. The unit guides themselves
+  have no questions and have no quiz.
 - `college_math` — Differential Equations I–III, Linear Algebra, Multivariable Calculus and Real Analysis I–III
   (`/study/math/<subject>/tests/<slug>/`), transcribed from the PDFs: one module per volume (`de1.py` … `ra3.py`)
   with `Q()` items and `FRQ()` free-response items. Real Analysis II and III are proof problem sets (free

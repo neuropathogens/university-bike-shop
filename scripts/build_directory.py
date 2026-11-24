@@ -126,7 +126,9 @@ TREE = page("/", "Home", "The shop, what it sells, and how to book an appointmen
                        desc="AP Macroeconomics, Units 1–6", anchor="/study/#ap-macroeconomics"),
                 folder("/study/ap/ap-economics/micro/", files=files("study/ap/ap-economics/micro", "PDFs"),
                        desc="AP Microeconomics, Units 1–6", anchor="/study/#ap-microeconomics"),
-            ], files=files("study/ap/ap-economics", "LaTeX source"), desc="AP Economics", anchor="/study/#ap-macroeconomics"),
+                *quiz_folder("/study/ap/ap-economics/", "/study/#ap-macroeconomics"),
+            ], files=files("study/ap/ap-economics", "LaTeX source"), desc="AP Economics, unit guides and practice sets",
+               anchor="/study/#ap-macroeconomics"),
             folder("/study/ap/ap-english-language/", quiz_folder("/study/ap/ap-english-language/", "/study/#ap-english-language"), files=files("study/ap/ap-english-language", "PDFs"),
                    desc="AP English Language, Parts 0–4", anchor="/study/#ap-english-language"),
             folder("/study/ap/ap-english-literature/", [

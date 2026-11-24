@@ -1,0 +1,183 @@
+# Explanations, AP Microeconomics Unit 2 Practice Set, in source order.
+EX = [
+    # 1 substitutes: coffee and tea
+    dict(o=["is the effect for complements, not substitutes.",
+            "treats the change as a movement along tea's demand curve, but tea's own price did not cause it.",
+            "puts the change on the wrong side of the market: coffee's price is a demand shifter for tea.",
+            "ignores that the price of a related good shifts demand."]),
+    # 2 movement along demand
+    dict(o=["shifts demand (income is a demand shifter).",
+            "shifts demand for pizza (a complement's price is a shifter).",
+            "shifts demand (expectations are a shifter).",
+            "shifts demand (the price of a substitute is a shifter)."]),
+    # 3 inferior good
+    dict(o=["is a good whose demand rises with income.",
+            "is a normal good whose demand rises strongly with income.",
+            "is not a category of good.",
+            "is about the response to price, not income."]),
+    # 4 lower production cost
+    dict(o=["gets the price wrong: more supply lowers the price.",
+            "is the effect of a fall in supply.",
+            "gets the quantity wrong: more supply raises quantity.",
+            "ignores that lower costs shift supply."]),
+    # 5 shift corn supply left
+    dict(o=["shifts demand, not supply.",
+            "is a movement along supply, not a shift.",
+            "lowers costs, shifting supply right.",
+            "raises productivity, shifting supply right."]),
+    # 6 per-unit tax on sellers
+    dict(o=["gets the direction wrong: the tax raises sellers' costs.",
+            "puts the tax on the wrong curve; it is levied on sellers.",
+            "changes the curve's slope; a per-unit tax shifts it in parallel.",
+            "changes the curve's slope; a per-unit tax shifts it in parallel."]),
+    # 7 midpoint elasticity (F)
+    dict(steps=["$\\%\\Delta Q = (90 - 110)/100 = -20\\%$ (average quantity 100).",
+                "$\\%\\Delta P = (12 - 8)/10 = 40\\%$ (average price 10).",
+                "$|E_d| = 20/40 = 0.5$."],
+         o={"A": "is too small; the midpoint changes are 20\\% and 40\\%, a ratio of 0.5.",
+            "C": "would need equal percentage changes, but quantity changes 20\\% and price 40\\%.",
+            "D": "inverts the ratio ($40/20$).",
+            "E": "uses the \\$4 price change instead of a percentage change."}),
+    # 8 total revenue test
+    dict(o=["would make revenue fall when price rises.",
+            "would leave revenue unchanged.",
+            "would make quantity fall to zero at any higher price.",
+            "is unnecessary: the direction of total revenue answers the question."]),
+    # 9 TR on a linear demand curve
+    dict(o=["is backward: unit elasticity is where TR peaks.",
+            "holds only at the ends of the curve, where price or quantity is zero.",
+            "has no link to elasticity; costs are a separate question.",
+            "is false there: at the peak, a small price change leaves TR unchanged."]),
+    # 10 most elastic demand
+    dict(o=["is a necessity with no substitutes: highly inelastic.",
+            "is inelastic in the short run, when buyers cannot adjust.",
+            "is a cheap necessity with few substitutes: inelastic.",
+            "is a necessity with few short-run substitutes: inelastic."]),
+    # 11 long-run supply elasticity
+    dict(o=["is about demand elasticity, not supply.",
+            "is about demand, not supply.",
+            "is false; input prices can rise or fall.",
+            "is wrong: diminishing returns apply in the short run, but the long-run reason is adjusting all inputs and entry."]),
+    # 12 fixed seats
+    dict(o=["would be a horizontal supply curve.",
+            "would mean quantity changes in proportion to price.",
+            "would mean quantity responds strongly to price.",
+            "describes demand, not supply."]),
+    # 13 elasticity of supply (F)
+    dict(steps=["$E_s = \\%\\Delta Q_s / \\%\\Delta P = 25/10$.",
+                "$E_s = 2.5 > 1$: elastic."],
+         o={"A": "divides 25 by 100 instead of by 10.",
+            "B": "inverts the ratio ($10/25$).",
+            "C": "would need equal percentage changes.",
+            "E": "uses the 25\\% change without dividing by the price change; perfectly elastic supply is horizontal."}),
+    # 14 cross-price elasticity
+    dict(steps=["$E_{XY} = \\%\\Delta Q_{\\text{ink}} / \\%\\Delta P_{\\text{printers}} = -5/10 = -0.5$.",
+                "Negative: a higher printer price lowers ink demand, so they are complements."],
+         o=["gets the sign wrong: ink demand fell when printer prices rose.",
+            "has the right number but the wrong relationship: a negative value means complements.",
+            "inverts the ratio ($10/5$).",
+            "inverts the ratio and gets the sign wrong."]),
+    # 15 income elasticity 1.8
+    dict(o=["would have an income elasticity between 0 and 1.",
+            "would have a negative income elasticity.",
+            "is not a category of good.",
+            "is about price, not income."]),
+    # 16 income elasticity -0.3
+    dict(o=["gets the sign wrong: negative income elasticity means an inferior good.",
+            "would need an income elasticity above 1.",
+            "ignores the sign; only an elasticity of exactly 0 means no change.",
+            "confuses income elasticity with price elasticity."]),
+    # 17 equilibrium from equations (F)
+    dict(steps=["Set $100 - 5P = 15P - 20$: $120 = 20P$, so $P = 6$.",
+                "$Q = 100 - 5(6) = 70$; check $Q_s = 15(6) - 20 = 70$."],
+         o={"A": "is not equilibrium: at \\$4, $Q_d = 80$ but $Q_s = 40$.",
+            "B": "is not equilibrium: at \\$5, $Q_d = 75$ but $Q_s = 55$.",
+            "D": "is not equilibrium: at \\$7, $Q_d = 65$ but $Q_s = 85$.",
+            "E": "is not equilibrium: at \\$8, $Q_d = 60$ but $Q_s = 100$."}),
+    # 18 consumer surplus (F)
+    dict(steps=["Demand hits zero at $P = 20$ (the choke price).",
+                "$CS = \\tfrac12 \\times 70 \\times (20 - 6) = \\$490$."],
+         o={"A": "halves the triangle twice.",
+            "B": "uses the price, \\$6, as the height ($70 \\times 6$).",
+            "D": "uses a height of \\$10 ($70 \\times 10$).",
+            "E": "forgets the $\\tfrac12$ for a triangle ($70 \\times 14$)."}),
+    # 19 efficiency of competitive equilibrium
+    dict(o=["is wrong: both surpluses are positive at equilibrium.",
+            "is wrong: both surpluses are positive at equilibrium.",
+            "is wrong: extra units would cost more than they are worth ($MC > MB$).",
+            "is wrong: there is no deadweight loss at the competitive equilibrium."]),
+    # 20 price above equilibrium (F)
+    dict(steps=["At \\$5: $Q_d = 50$, $Q_s = 70$.",
+                "$Q_s > Q_d$: a surplus of $70 - 50 = 20$."],
+         o={"A": "is the shortage at \\$3, below equilibrium.",
+            "B": "gets the direction wrong: above equilibrium there is a surplus.",
+            "C": "halves the gap between 70 and 50.",
+            "E": "compares the wrong numbers; the gap at \\$5 is $70 - 50$."}),
+    # 21 price below equilibrium
+    dict(o=["describes a price above equilibrium.",
+            "pairs the shortage with the wrong price movement.",
+            "gets both parts wrong.",
+            "holds only at equilibrium."]),
+    # 22 demand up, supply down
+    dict(o=["is the opposite: both shifts raise the price.",
+            "is possible, but it depends on which shift is larger.",
+            "is possible, but it depends on which shift is larger.",
+            "claims a certain quantity rise, but the quantity change is indeterminate."]),
+    # 23 demand up, supply up
+    dict(o=["swaps the certain and the uncertain effects.",
+            "claims a certain price rise, which depends on the sizes of the shifts.",
+            "claims a certain price fall, and the quantity rise is certain.",
+            "gets the quantity wrong: both increases raise quantity."]),
+    # 24 binding rent ceiling
+    dict(o=["describes a price floor, not a ceiling.",
+            "is wrong: a ceiling below equilibrium binds.",
+            "gets the quantity wrong: landlords offer fewer apartments.",
+            "is wrong: a ceiling below equilibrium creates a shortage."]),
+    # 25 tax incidence, inelastic demand
+    dict(o=["holds when demand is perfectly elastic.",
+            "would need equal elasticities.",
+            "is not a party to the burden; it collects the revenue.",
+            "is wrong: who bears a tax depends on elasticities, not on who sends the payment."]),
+    # 26 deadweight loss (F)
+    dict(steps=["Without the tax: $10 - Q = Q$, so $Q = 5$.",
+                "With the tax: $10 - Q = Q + 2$, so $Q = 4$.",
+                "DWL $= \\tfrac12 \\times 2 \\times (5 - 4) = \\$1$."],
+         o={"B": "forgets the $\\tfrac12$ for a triangle.",
+            "C": "is what sellers keep per unit after the tax.",
+            "D": "is the tax revenue, not the deadweight loss.",
+            "E": "is unrelated to the lost units; only one unit is lost."}),
+    # 27 tax revenue (F)
+    dict(steps=["Quantity with the tax: $Q = 4$.",
+                "Revenue $= \\$2 \\times 4 = \\$8$."],
+         o={"A": "is the tax per unit, not the total.",
+            "B": "is the quantity, or the price sellers keep.",
+            "C": "is the price buyers pay.",
+            "E": "uses the pre-tax quantity (5)."}),
+    # 28 binding minimum wage
+    dict(o=["describes a price ceiling.",
+            "is wrong: a floor above equilibrium binds.",
+            "is backward: firms hire fewer workers at a higher wage.",
+            "is backward: the lost jobs create deadweight loss."]),
+    # 29 free trade, lower world price
+    dict(o=["gain from the lower price.",
+            "is wrong: the country's total surplus rises.",
+            "gain a new market.",
+            "ignores that domestic producers lose, even though total surplus rises."]),
+    # 30 tariff on cars
+    dict(o=["is backward: a tariff raises the price.",
+            "is inconsistent: a higher price reduces imports.",
+            "is backward: domestic producers expand and consumers lose.",
+            "ignores the deadweight loss from the tariff."]),
+    # 31 imports with a tariff (F)
+    dict(steps=["At \\$3: $Q_d = 70$, $Q_s = 30$, imports $= 40$.",
+                "With the \\$1 tariff the price is \\$4: $Q_d = 60$, $Q_s = 40$, imports $= 20$."],
+         o={"A": "subtracts too much; at \\$4 the gap is $60 - 40 = 20$.",
+            "C": "is domestic supply at \\$3, not imports.",
+            "D": "is imports before the tariff.",
+            "E": "is quantity demanded at \\$4, not imports."}),
+    # 32 quota vs tariff
+    dict(o=["is wrong: the quota creates the same deadweight loss.",
+            "is wrong: by assumption the domestic price is the same.",
+            "is wrong: both reduce imports by the same amount.",
+            "is wrong: consumer surplus is the same at the same price."]),
+]
