@@ -156,6 +156,9 @@ TREE = page("/", "Home", "The shop, what it sells, and how to book an appointmen
                    desc="AP Psychology, Part 0 and Units 1–5", anchor="/study/#ap-psychology"),
             folder("/study/ap/ap-spanish/", quiz_folder("/study/ap/ap-spanish/", "/study/#ap-spanish"), files=files("study/ap/ap-spanish", "PDFs"),
                    desc="AP Spanish Language and Culture, Part 0 and Units 1–6", anchor="/study/#ap-spanish"),
+            folder("/study/ap/ap-spanish-literature/", quiz_folder("/study/ap/ap-spanish-literature/", "/study/#ap-spanish-literature"),
+                   files=files("study/ap/ap-spanish-literature", "PDFs"),
+                   desc="AP Spanish Literature and Culture, Part 0 and Units 1–8", anchor="/study/#ap-spanish-literature"),
             folder("/study/ap/ap-statistics/", [
                 folder("/study/ap/ap-statistics/unit-6/", files=files("study/ap/ap-statistics/unit-6", "PDFs"),
                        desc="Unit 6, Sampling Distributions", anchor="/study/#ap-statistics"),

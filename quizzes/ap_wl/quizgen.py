@@ -14,13 +14,18 @@ from ap_wl.model import topic_key
 
 BLANK = '<span class="blank" role="img" aria-label="blank"></span>'
 MACROS = {"textperiodcentered": "·", "blank": BLANK, "small": "", "footnotesize": "", "medskip": "", "smallskip": ""}
-SLUG = {"00": "playbook", **{f"0{i}": f"unit-{i}" for i in range(1, 7)}}
+SLUG = {"00": "playbook", **{f"0{i}": f"unit-{i}" for i in range(1, 10)}}
 # Question-set skill tallies link to Part 0, section 3 (interpretive skills)
 SKILLS = {"1.A": "1.A Recognize explicit meaning: details, data", "1.B": "1.B Interpret: main idea, purpose, tone, word meaning",
           "1.C": "1.C Synthesize and infer"}
 
 
-EXAMNO = {"Project Presentation": 1, "Project Q&A": 2, "Argumentative Essay": 3, "Story Narration": 3, "Email Response": 4}
+EXAMNO = {"Project Presentation": 1, "Project Q&A": 2, "Argumentative Essay": 3, "Story Narration": 3, "Email Response": 4,
+          # AP Spanish Literature and Culture
+          "Text Explanation": 1, "Text and Art Comparison": 2, "Analysis of a Single Text": 3, "Text Comparison": 4,
+          # AP Latin
+          "Short Answer": 1, "Translation": 2, "Short Essay": 3, "Project Prose Passage Short Essay": 4,
+          "Project Poetry Passage Short Essay": 5}
 
 
 def h(s):
@@ -74,7 +79,7 @@ def fr_item(L, f, n):
     if f.get("tips"):
         sol += "<p><i>Why it scores:</i> " + h(" ".join(f["tips"])) + "</p>"
     label = {"Story Narration": "story", "Email Response": "email", "Project Presentation": "presentation",
-             "Project Q&A": "Q1–Q4", "Argumentative Essay": "essay"}[f["kind"]]
+             "Project Q&A": "Q1–Q4", "Argumentative Essay": "essay"}.get(f["kind"], f.get("label", "response"))
     n = EXAMNO.get(f["kind"], n)  # show the task's question number on the exam
     return dict(n=n, mode="points", kind=f["kind"], mins=f["mins"],
                 head=f"{f['kind'].replace('&', '&amp;')} &middot; {total} points &middot; about {f['mins']} minutes",
@@ -124,22 +129,23 @@ def build(L, DOCS, PAGES, d):
     if d.kind == "questions" and unit != "00":
         p0 = G["00-exam-playbook"]
         for k in sorted({q["topic"] for q in mc}):
-            topics[k] = (SKILLS[k], PAGES[p0.stem]["3"], pdf_url(L, p0) + f"#page={PAGES[p0.stem]['3']}")
+            topics[k] = ((L.skills or SKILLS)[k], PAGES[p0.stem]["3"], pdf_url(L, p0) + f"#page={PAGES[p0.stem]['3']}")
         guide_link, guide_name = pdf_url(L, p0), "<i>Part 0</i>, section 3"
     else:
         titles = sec_titles(guide)
         for k in sorted({q["topic"] for q in mc}, key=int):
-            topics[k] = (titles[int(k)], PAGES[guide.stem][k])
+            topics[k] = (h(titles[int(k)]), PAGES[guide.stem][k])
         guide_link, guide_name = pdf_url(L, guide), f"the <i>{guide.short} guide</i>"
     long_name = f"{d.short}: {d.sub}"
     if d.kind == "questions":
         nl = sum(1 for s in stims.values() if "Listening" in s["title"])
         nr = len(stims) - nl
         if stims:
-            meta = (f"{len(mc)} multiple-choice in {len(stims)} sets ({nl} listening as transcripts, {nr} reading) "
+            sets = f"({nl} listening as transcripts, {nr} reading) " if nl else ""
+            meta = (f"{len(mc)} multiple-choice in {len(stims)} sets {sets}"
                     f"&middot; 1 {task_name(fr[0]['kind'])}")
-            setup = ("Listening sets are printed as transcripts: read each once at normal speed, then answer without rereading. "
-                     "Allow about 1 minute per listening item and 80 seconds per reading item.")
+            setup = L.setup or ("Listening sets are printed as transcripts: read each once at normal speed, then answer without rereading. "
+                                "Allow about 1 minute per listening item and 80 seconds per reading item.")
         else:
             meta = f"{len(mc)} language-control items &middot; 1 {task_name(fr[0]['kind'])}"
             setup = "About 40 seconds per item. Every item drills a structure that the free-response language control row rewards."

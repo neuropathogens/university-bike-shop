@@ -2,7 +2,7 @@
 
 
 class Lang:
-    def __init__(self, family, short, course, slug, ask, vocabheads, cjk=False):
+    def __init__(self, family, short, course, slug, ask, vocabheads, cjk=False, skills=None, setup=None):
         self.family = family          # python package, e.g. "ap_spanish"
         self.short = short            # "AP Spanish", used in quiz titles
         self.course = course          # "AP Spanish Language and Culture"
@@ -12,3 +12,5 @@ class Lang:
         self.ask = ask                # default instruction under a free-response task
         self.vocabheads = vocabheads  # "{Español}{Uso}{English}": vocab table column heads
         self.cjk = cjk                # Japanese: CJK font switching in the PDFs
+        self.skills = skills          # question-set skill names {"1.A": ...}; default: the world-language skills
+        self.setup = setup            # question-set timing note; default: listening transcripts + reading
