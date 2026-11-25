@@ -129,6 +129,11 @@ Every wrong choice must have a note in `ex.others`; the builder refuses a quiz o
   `cjk=True` (Harano Aji fonts in the PDFs; a Japanese font stack injected into the quiz pages). Same format as
   `ap_chinese`: Story Narration and Email Response instead of the essay, questions in English, sources in Japanese.
   Rebuild: `ap_japanese/build_tex.py`, `build.py ap_japanese`, `ap_japanese/study_rows.py`, `link_study.py`.
+- `ap_spanish_lit` — AP Spanish Literature and Culture (CED effective fall 2023): Part 0 and the eight period units,
+  built on `ap_wl` with its own skill names (`lang.py` SKILLS) and the four free-response types (Text Explanation,
+  Text and Art Comparison, Analysis of a Single Text, Text Comparison). Question sets in Spanish; public-domain works
+  quoted, copyrighted works summarized. Rebuild: `ap_spanish_lit/build_tex.py`, `build.py ap_spanish_lit`,
+  `ap_spanish_lit/study_rows.py`, `link_study.py`.
 - `ap_chinese` — AP Chinese Language and Culture (revised course, May 2027 exam): Part 0 and Units 1–6, each a study
   guide (`<slug>-checks`) and a question set (`playbook`, `unit-1`…`unit-6`). One Python content model
   (`content/pNN.py`, built on `model.py`) drives both the PDFs and the quizzes: `build_tex.py` renders the LaTeX

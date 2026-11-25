@@ -131,7 +131,7 @@ def build(d):
     else:
         titles = sec_titles(guide)
         for k in sorted({q["topic"] for q in mc}, key=int):
-            topics[k] = (titles[int(k)], PAGES[guide.stem][k])
+            topics[k] = (h(titles[int(k)]), PAGES[guide.stem][k])
         guide_link, guide_name = pdf_url(guide), f"the <i>{guide.short} guide</i>"
     long_name = f"{d.short}: {d.sub}"
     if d.kind == "questions":
