@@ -166,6 +166,16 @@ Every wrong choice must have a note in `ex.others`; the builder refuses a quiz o
   `tests/unit-N/` and `tests/unit-N-checks/` from the same objects, so letters and keys always match the PDFs.
   `study_rows.py` rewrites the two Physics C sections of `/study`; `checks.py` recomputes every numeric answer.
   Edit a unit, then: `texgen.py` → `checks.py` → `study_rows.py` → `build.py ap_physics_c` → `link_study.py`.
+- `ap_sci` — shared engine for the AP science series added after Physics C, generalized from `ap_physics_c`: `model.py`
+  (`Q`, `Sec`, `Set` for stimulus-based question sets, `Unit`, `FRQ`, `Part`), `figs.py` (data graphs drawn twice from one
+  description: pgfplots in the PDFs, inline SVG in the quizzes, so the two cannot drift), `course.py` (`Course`: names,
+  paths, exam pace), `texgen.py` (tectonic, deterministic; packs and the LaTeX zip with pypdf), `quizgen.py` (question
+  set + guide-checks quiz per unit), `study_rows.py` and `tex/ap-sci.sty` (the Physics C house style).
+- `ap_physics_1` — AP Physics 1: Algebra-Based (CED effective fall 2024), Units 1–8 on `ap_sci`: one module per unit
+  (`u01.py` … `u08.py`), each the guide's sections and checks, a question set (some sets built on a shared graph or
+  described setup) and one free-response question (each of the four types twice). `checks.py` recomputes every
+  numeric answer and distractor. Rebuild: `ap_physics_1/build_tex.py` → `checks.py` → `ap_physics_1/study_rows.py` →
+  `build.py ap_physics_1` → `link_study.py`.
 - `ap_calc_bc` — AP Calculus BC (`/study/ap/ap-calculus-bc/tests/unit-1`..`unit-10`, `practice-exam`). Unlike the other
   families this one is the source of its PDFs too: `sets/uNN.py` and `sets/exam.py` hold every item (TeX in `$..$`, an
   explanation for each wrong choice, SymPy asserts for every computed answer), and `build_pdfs.py` writes the practice
