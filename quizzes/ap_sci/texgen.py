@@ -33,7 +33,8 @@ def q_env(q):
     ch = "\\chh" if short else "\\ch"
     choices = "".join("{" + c + "}" for c in q.choices)
     fig = figs.tex(q.fig) if q.fig else ""
-    return f"\\begin{{q}}{{{q.pos}}}{{{q.tag}}}{{{q.why}}}\n{q.stem}\n{fig}{ch}{choices}\n\\end{{q}}\n"
+    tag = re.sub(r"(?<!\\)%", r"\\%", q.tag)  # tags are plain text; a bare % would comment out the line
+    return f"\\begin{{q}}{{{q.pos}}}{{{tag}}}{{{q.why}}}\n{q.stem}\n{fig}{ch}{choices}\n\\end{{q}}\n"
 
 
 def head(C, u, title, docpart):
@@ -63,12 +64,14 @@ def stim_tex(s):
     title = f"{{\\sffamily\\bfseries\\color{{navy}}{s.stim_title}}}\\par\\smallskip\n" if s.stim_title else ""
     fig = figs.tex(s.fig) if s.fig else ""
     body = (s.stim or "").strip()
+    assert s.fig or "[[fig]]" not in body, "stimulus has [[fig]] but no fig"
     if "[[fig]]" in body:
         body, fig = body.replace("[[fig]]", fig), ""
     return f"\\begin{{stimulus}}\n{title}{body}\n{fig}\\end{{stimulus}}\n"
 
 
 def frq_stem_tex(f):
+    assert f.fig or "[[fig]]" not in f.stem, "FRQ stem has [[fig]] but no fig"
     fig = figs.tex(f.fig) if f.fig else ""
     stem = f.stem.strip()
     return stem.replace("[[fig]]", fig) if "[[fig]]" in stem else stem + ("\n\n" + fig if fig else "")
