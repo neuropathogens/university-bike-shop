@@ -176,6 +176,10 @@ Every wrong choice must have a note in `ex.others`; the builder refuses a quiz o
   described setup) and one free-response question (each of the four types twice). `checks.py` recomputes every
   numeric answer and distractor. Rebuild: `ap_physics_1/build_tex.py` → `checks.py` → `ap_physics_1/study_rows.py` →
   `build.py ap_physics_1` → `link_study.py`.
+- `ap_physics_2` — AP Physics 2: Algebra-Based (CED effective fall 2024), Units 9–15 on `ap_sci`, in the same layout as
+  `ap_physics_1` (`u09.py` … `u15.py`, `checks.py`). Circuits are described in words; graphs (P–V cycle, wave snapshot,
+  photoelectric data with a fit line) come from `figs.py`. Rebuild: `ap_physics_2/build_tex.py` → `checks.py` →
+  `ap_physics_2/study_rows.py` → `build.py ap_physics_2` → `link_study.py`.
 - `ap_calc_bc` — AP Calculus BC (`/study/ap/ap-calculus-bc/tests/unit-1`..`unit-10`, `practice-exam`). Unlike the other
   families this one is the source of its PDFs too: `sets/uNN.py` and `sets/exam.py` hold every item (TeX in `$..$`, an
   explanation for each wrong choice, SymPy asserts for every computed answer), and `build_pdfs.py` writes the practice

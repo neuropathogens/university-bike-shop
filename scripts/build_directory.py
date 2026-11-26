@@ -149,6 +149,8 @@ TREE = page("/", "Home", "The shop, what it sells, and how to book an appointmen
                    desc="AP Latin (Pliny and Vergil), Part 0 and Units 1–6", anchor="/study/#ap-latin"),
             folder("/study/ap/ap-physics-1/", quiz_folder("/study/ap/ap-physics-1/", "/study/#ap-physics-1"), files=files("study/ap/ap-physics-1", "PDFs"),
                    desc="AP Physics 1: Algebra-Based, Units 1–8", anchor="/study/#ap-physics-1"),
+            folder("/study/ap/ap-physics-2/", quiz_folder("/study/ap/ap-physics-2/", "/study/#ap-physics-2"), files=files("study/ap/ap-physics-2", "PDFs"),
+                   desc="AP Physics 2: Algebra-Based, Units 9–15", anchor="/study/#ap-physics-2"),
             folder("/study/ap/ap-physics-c/", [
                 folder("/study/ap/ap-physics-c/mechanics/", files=files("study/ap/ap-physics-c/mechanics", "PDFs"),
                        desc="AP Physics C: Mechanics, Units 1–7", anchor="/study/#ap-physics-c-mechanics"),
