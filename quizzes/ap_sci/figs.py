@@ -83,7 +83,7 @@ def tex(g):
     y0, y1, _ = g.y
     xt, yt = ticks(*g.x, g.xticks), ticks(*g.y, g.yticks)
     opts = [f"width={g.width}in", f"height={g.height}in", "axis lines=left", "grid=major", "grid style={rulegray,line width=0.3pt}",
-            f"ymin={y0}", f"ymax={y1}", f"ytick={{{','.join(f'{v:g}' for v in yt)}}}",
+            f"ymin={y0}", f"ymax={y1}", f"ytick={{{','.join(f'{v:g}' for v in yt)}}}" if yt else "ytick=\\empty",
             "tick label style={font=\\sffamily\\scriptsize}", "label style={font=\\sffamily\\footnotesize}",
             "scaled ticks=false",
             f"yticklabel style={{/pgf/number format/.cd,fixed,fixed zerofill,precision={decimals(g.y[2])}}}",
@@ -98,7 +98,7 @@ def tex(g):
                  "x tick label style={font=\\sffamily\\scriptsize,align=center}", "major x tick style={draw=none}", "xmajorgrids=false",
                  "enlarge x limits=false"]
     else:
-        opts += [f"xmin={x0}", f"xmax={x1}", f"xtick={{{','.join(f'{v:g}' for v in xt)}}}"]
+        opts += [f"xmin={x0}", f"xmax={x1}", f"xtick={{{','.join(f'{v:g}' for v in xt)}}}" if xt else "xtick=\\empty"]
     out = ["\\begin{tikzpicture}\\begin{axis}[" + ",\n  ".join(opts) + "]"]
     if y0 < 0 < y1 and g.kind != "bar":
         out.append(f"\\draw[black!75,line width=0.6pt] (axis cs:{x0},0) -- (axis cs:{x1},0);")
@@ -145,7 +145,8 @@ SUP = str.maketrans("0123456789-+", "⁰¹²³⁴⁵⁶⁷⁸⁹⁻⁺")
 SUB = str.maketrans("0123456789", "₀₁₂₃₄₅₆₇₈₉")
 GREEK = {"Delta": "Δ", "mu": "μ", "theta": "θ", "lambda": "λ", "rho": "ρ", "omega": "ω", "alpha": "α", "tau": "τ",
          "pi": "π", "circ": "°", "Omega": "Ω", "times": "×", "cdot": "·", "phi": "φ", "Phi": "Φ", "epsilon": "ε",
-         "varepsilon": "ε", "sigma": "σ", "beta": "β", "gamma": "γ", "eta": "η", "%": "%", "textdegree": "°"}
+         "varepsilon": "ε", "sigma": "σ", "beta": "β", "gamma": "γ", "eta": "η", "%": "%", "textdegree": "°",
+         "pm": "±", "bar": "", "approx": "≈", "ge": "≥", "le": "≤"}
 
 
 def plain(s):

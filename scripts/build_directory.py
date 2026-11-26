@@ -107,6 +107,8 @@ TREE = page("/", "Home", "The shop, what it sells, and how to book an appointmen
                  quiz_folder("/study/ap/ap-art-history/", "/study/#ap-art-history"),
                  files=files("study/ap/ap-art-history", "PDFs", anchor="/study/#ap-art-history"),
                  note="Each work has a deep link, #w1 to #w250 (e.g. #w12)."),
+            folder("/study/ap/ap-biology/", quiz_folder("/study/ap/ap-biology/", "/study/#ap-biology"), files=files("study/ap/ap-biology", "PDFs"),
+                   desc="AP Biology, Units 1–8", anchor="/study/#ap-biology"),
             folder("/study/ap/ap-calculus-bc/", quiz_folder("/study/ap/ap-calculus-bc/", "/study/#ap-calculus-bc"), files=files("study/ap/ap-calculus-bc", "PDFs"),
                    desc="AP Calculus BC, Part 0, Units 1–10 and a full practice exam", anchor="/study/#ap-calculus-bc"),
             folder("/study/ap/ap-chemistry/", [

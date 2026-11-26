@@ -180,6 +180,10 @@ Every wrong choice must have a note in `ex.others`; the builder refuses a quiz o
   `ap_physics_1` (`u09.py` … `u15.py`, `checks.py`). Circuits are described in words; graphs (P–V cycle, wave snapshot,
   photoelectric data with a fit line) come from `figs.py`. Rebuild: `ap_physics_2/build_tex.py` → `checks.py` →
   `ap_physics_2/study_rows.py` → `build.py ap_physics_2` → `link_study.py`.
+- `ap_biology` — AP Biology (CED effective fall 2025), Units 1–8 on `ap_sci`. Each question set ends with one of the six
+  free-response types, scored part by part as the CED specifies (Q1/Q2 9 points: A 1, B 3 or 4, C 3 or 2, D 2; Q3–Q6 4
+  points, one per part). The graphing questions carry a model graph (`Part(fig=...)`, shown with the quiz solution and
+  after the PDF scoring guide). `checks.py` recomputes water potentials, chi-square, Hardy–Weinberg and other numbers.
 - `ap_calc_bc` — AP Calculus BC (`/study/ap/ap-calculus-bc/tests/unit-1`..`unit-10`, `practice-exam`). Unlike the other
   families this one is the source of its PDFs too: `sets/uNN.py` and `sets/exam.py` hold every item (TeX in `$..$`, an
   explanation for each wrong choice, SymPy asserts for every computed answer), and `build_pdfs.py` writes the practice

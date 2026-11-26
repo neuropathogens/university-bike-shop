@@ -49,6 +49,7 @@ class Part:
     prompt: str
     solution: str
     miss: str
+    fig: object = None   # figs.Graph: a model answer graph (quiz: shown with the solution; PDF: after the scoring guide)
 
 
 @dataclass
