@@ -134,6 +134,11 @@ Every wrong choice must have a note in `ex.others`; the builder refuses a quiz o
   Text and Art Comparison, Analysis of a Single Text, Text Comparison). Question sets in Spanish; public-domain works
   quoted, copyrighted works summarized. Rebuild: `ap_spanish_lit/build_tex.py`, `build.py ap_spanish_lit`,
   `ap_spanish_lit/study_rows.py`, `link_study.py`.
+- `ap_latin` — AP Latin (revised CED effective fall 2025: Pliny's Letters and Vergil's Aeneid, no Caesar): Part 0 and
+  Units 1–6 on `ap_wl`, with Latin skill names and the five free-response types (Short Answer, Translation in 15
+  segments, Short Essay, Project Prose / Poetry Passage Short Essay). Questions in English; Latin quoted without
+  macrons from The Latin Library. Rebuild: `ap_latin/build_tex.py`, `build.py ap_latin`, `ap_latin/study_rows.py`,
+  `link_study.py`.
 - `ap_chinese` — AP Chinese Language and Culture (revised course, May 2027 exam): Part 0 and Units 1–6, each a study
   guide (`<slug>-checks`) and a question set (`playbook`, `unit-1`…`unit-6`). One Python content model
   (`content/pNN.py`, built on `model.py`) drives both the PDFs and the quizzes: `build_tex.py` renders the LaTeX

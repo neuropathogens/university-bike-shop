@@ -145,6 +145,8 @@ TREE = page("/", "Home", "The shop, what it sells, and how to book an appointmen
                    desc="AP Italian Language and Culture, Part 0 and Units 1–6", anchor="/study/#ap-italian"),
             folder("/study/ap/ap-japanese/", quiz_folder("/study/ap/ap-japanese/", "/study/#ap-japanese"), files=files("study/ap/ap-japanese", "PDFs"),
                    desc="AP Japanese Language and Culture, Part 0 and Units 1–6", anchor="/study/#ap-japanese"),
+            folder("/study/ap/ap-latin/", quiz_folder("/study/ap/ap-latin/", "/study/#ap-latin"), files=files("study/ap/ap-latin", "PDFs"),
+                   desc="AP Latin (Pliny and Vergil), Part 0 and Units 1–6", anchor="/study/#ap-latin"),
             folder("/study/ap/ap-physics-c/", [
                 folder("/study/ap/ap-physics-c/mechanics/", files=files("study/ap/ap-physics-c/mechanics", "PDFs"),
                        desc="AP Physics C: Mechanics, Units 1–7", anchor="/study/#ap-physics-c-mechanics"),
