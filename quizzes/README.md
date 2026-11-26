@@ -184,6 +184,11 @@ Every wrong choice must have a note in `ex.others`; the builder refuses a quiz o
   free-response types, scored part by part as the CED specifies (Q1/Q2 9 points: A 1, B 3 or 4, C 3 or 2, D 2; Q3–Q6 4
   points, one per part). The graphing questions carry a model graph (`Part(fig=...)`, shown with the quiz solution and
   after the PDF scoring guide). `checks.py` recomputes water potentials, chi-square, Hardy–Weinberg and other numbers.
+- `ap_env_sci` — AP Environmental Science (new CED effective fall 2026), Units 1–9 on `ap_sci`. Each question set ends
+  with one of the three 10-point free-response types (design an investigation; analyze and interpret quantitative data;
+  analyze an environmental problem doing calculations), three of each, scored one point per subpart and two per
+  calculation (setup + answer), as in the CED's samples. Money amounts are written in text mode (`\$90`), since the
+  quiz converter rejects `\$` inside math.
 - `ap_calc_bc` — AP Calculus BC (`/study/ap/ap-calculus-bc/tests/unit-1`..`unit-10`, `practice-exam`). Unlike the other
   families this one is the source of its PDFs too: `sets/uNN.py` and `sets/exam.py` hold every item (TeX in `$..$`, an
   explanation for each wrong choice, SymPy asserts for every computed answer), and `build_pdfs.py` writes the practice

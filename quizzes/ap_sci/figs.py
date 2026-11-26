@@ -86,15 +86,15 @@ def tex(g):
             f"ymin={y0}", f"ymax={y1}", f"ytick={{{','.join(f'{v:g}' for v in yt)}}}" if yt else "ytick=\\empty",
             "tick label style={font=\\sffamily\\scriptsize}", "label style={font=\\sffamily\\footnotesize}",
             "scaled ticks=false",
-            f"yticklabel style={{/pgf/number format/.cd,fixed,fixed zerofill,precision={decimals(g.y[2])}}}",
-            f"xticklabel style={{/pgf/number format/.cd,fixed,fixed zerofill,precision={decimals(g.x[2])}}}",
+            f"yticklabel style={{/pgf/number format/fixed,/pgf/number format/fixed zerofill,/pgf/number format/1000 sep={{}},/pgf/number format/precision={decimals(g.y[2])}}}",
+            f"xticklabel style={{/pgf/number format/fixed,/pgf/number format/fixed zerofill,/pgf/number format/1000 sep={{}},/pgf/number format/precision={decimals(g.x[2])}}}",
             f"xlabel={{{g.xlabel}}}", f"ylabel={{{g.ylabel}}}", "every axis plot/.append style={line width=0.8pt}",
             "legend style={font=\\sffamily\\scriptsize,draw=rulegray,fill=white,fill opacity=0.9,text opacity=1}",
             "legend cell align=left", "legend pos=north west" if g.legend_pos == "nw" else "legend pos=north east"]
     if g.kind == "bar":
         n = len(g.cats)
         opts += ["ybar", f"bar width={min(14, 90 / (n * len(g.series))):.1f}pt", f"xmin=-0.6", f"xmax={n - 0.4}",
-                 f"xtick={{{','.join(str(i) for i in range(n))}}}", f"xticklabels={{{','.join('{' + c + '}' for c in g.cats)}}}",
+                 f"xtick={{{','.join(str(i) for i in range(n))}}}", f"xticklabels={{{','.join('{' + c.replace(' / ', '\\\\') + '}' for c in g.cats)}}}",
                  "x tick label style={font=\\sffamily\\scriptsize,align=center}", "major x tick style={draw=none}", "xmajorgrids=false",
                  "enlarge x limits=false"]
     else:
