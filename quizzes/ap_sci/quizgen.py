@@ -12,7 +12,39 @@ from ap_sci import figs
 from ap_sci.model import place
 
 
+MAX_CHUNK = 28   # widest unbreakable run of inline math (in characters) that still fits a 320 px screen
+
+
+def _chunk_width(m):
+    """KaTeX breaks inline math only after top-level relations and binary operators; measure the widest run between them."""
+    out, depth, cur, i = [], 0, "", 0
+    while i < len(m):
+        ch = m[i]
+        depth += {"{": 1, "}": -1}.get(ch, 0)
+        cur += ch
+        if depth == 0:
+            for op in ("=", "+", "-", "\\times", "\\approx", "<", ">", "\\cdot"):
+                if m.startswith(op, i) and (op != "-" or cur.strip() != "-"):
+                    cur += m[i + 1:i + len(op)]
+                    i += len(op) - 1
+                    out.append(cur)
+                    cur = ""
+                    break
+        i += 1
+    out.append(cur)
+
+    def vis(s):
+        s = re.sub(r"\\(times|cdot)", "x", s)
+        s = re.sub(r"\\(sqrt|dfrac|tfrac|frac|mathrm|text|left|right|mathcal|vec|,|;|!)", "", s)
+        s = re.sub(r"\\[A-Za-z]+", "x", s.replace("\\ ", " "))
+        return len(re.sub(r"[{}^_\s]", "", s))
+    return max(vis(c) for c in out)
+
+
 def h(s):
+    for m in re.finditer(r"(?<!\\)\$(.+?)(?<!\\)\$", s):
+        if _chunk_width(m.group(1)) > MAX_CHUNK:
+            raise SystemExit(f"inline math too wide for a phone screen; split it: ${m.group(1)}$")
     return to_html(s)
 
 

@@ -45,6 +45,7 @@ class Graph:
     yticks: list = None
     curves: list = field(default_factory=list)   # [(name, f, style)] smooth functions drawn as lines
     legend_pos: str = "ne"   # "ne" or "nw"
+    notes: list = field(default_factory=list)   # [(x, y, text, where)] point labels; where: above/below/left/right/...
 
     def __post_init__(self):
         if self.legend is None:
@@ -131,6 +132,8 @@ def tex(g):
         out.append(f"\\addplot[{COLORS_TEX[k % 4]},{DASH_TEX[k % 4]},smooth,restrict y to domain={y0}:{y1}] coordinates {{{pts}}};")
         if g.legend:
             out.append(f"\\addlegendentry{{{name}}}")
+    for x, y, text, where in g.notes:
+        out.append(f"\\node[{where},font=\\sffamily\\footnotesize\\bfseries,inner sep=2pt] at (axis cs:{x},{y}) {{{text}}};")
     out.append("\\end{axis}\\end{tikzpicture}")
     body = "\n".join(out)
     cap = f"\\figcap{{{g.caption}}}" if g.caption else ""
@@ -148,15 +151,28 @@ GREEK = {"Delta": "Δ", "mu": "μ", "theta": "θ", "lambda": "λ", "rho": "ρ", 
 def plain(s):
     """LaTeX label -> plain Unicode for SVG text."""
     t = s.replace("\\,", "\u2009").replace("\\ ", " ").replace("~", "\u00a0").replace("--", "–")
-    t = re.sub(r"\\(?:mathrm|text|textrm|mathit|emph|textit)\{([^{}]*)\}", r"\1", t)
+    prev = None
+    while prev != t:  # innermost groups first, so nested braces resolve
+        prev = t
+        t = re.sub(r"\^\{([^{}]*)\}", lambda m: m.group(1).translate(SUP), t)
+        t = re.sub(r"_\{([^{}]*)\}", lambda m: m.group(1).translate(SUB) if m.group(1).isdigit() else "\x01" + m.group(1) + "\x02", t)
+        t = re.sub(r"\\(?:mathrm|text|textrm|mathit|emph|textit|mathbf|textbf)\{([^{}]*)\}", r"\1", t)
     t = re.sub(r"\\([A-Za-z]+|%)", lambda m: GREEK.get(m.group(1), m.group(1)), t)
-    t = re.sub(r"\^\{([^{}]*)\}", lambda m: m.group(1).translate(SUP), t)
     t = re.sub(r"\^(\S)", lambda m: m.group(1).translate(SUP), t)
-    t = re.sub(r"_\{([^{}]*)\}", lambda m: m.group(1).translate(SUB) if m.group(1).isdigit() else m.group(1), t)
     t = re.sub(r"_(\d)", lambda m: m.group(1).translate(SUB), t)
-    t = re.sub(r"_([A-Za-z])", r"\1", t)
+    t = re.sub(r"_([A-Za-z])", "\x01\\1\x02", t)
     t = t.replace("$", "").replace("{", "").replace("}", "")
     return re.sub(r"\s+", " ", t).strip()
+
+
+def label(s):
+    """LaTeX label -> escaped SVG text, letter subscripts as <tspan>s."""
+    t = html.escape(plain(s))
+    return t.replace("\x01", '<tspan baseline-shift="sub" font-size="78%">').replace("\x02", "</tspan>")
+
+
+def alt(s):
+    return plain(s).replace("\x01", "").replace("\x02", "")
 
 
 def marker(i, x, y, color):
@@ -179,7 +195,7 @@ def svg(g):
         x0, x1 = -0.6, n - 0.4
     X = lambda v: L + (v - x0) / (x1 - x0) * (W - L - R)
     Y = lambda v: H - B - (v - y0) / (y1 - y0) * (H - T - B)
-    o = [f'<svg viewBox="0 0 {W} {H}" width="{W}" height="{H}" role="img" aria-label="{html.escape(plain(g.caption) or "Graph of " + plain(g.ylabel) + " versus " + plain(g.xlabel))}" '
+    o = [f'<svg viewBox="0 0 {W} {H}" width="{W}" height="{H}" role="img" aria-label="{html.escape(alt(g.caption) or "Graph of " + alt(g.ylabel) + " versus " + alt(g.xlabel))}" '
          f'style="max-width:100%;height:auto;font:13px system-ui,-apple-system,sans-serif" fill="currentColor">']
     o.append('<g stroke="currentColor" stroke-opacity=".16" stroke-width="1">')
     for v in ticks(*g.y, g.yticks):
@@ -195,14 +211,14 @@ def svg(g):
         o.append(f'<text x="{L - 6}" y="{Y(v) + 4.5:.1f}" text-anchor="end">{num(v, decimals(g.y[2]))}</text>')
     if g.kind == "bar":
         for k, c in enumerate(g.cats):
-            lines = plain(c).split(" / ") if " / " in c else [plain(c)]
+            lines = alt(c).split(" / ") if " / " in c else [alt(c)]
             for j, ln in enumerate(lines):
                 o.append(f'<text x="{X(k):.1f}" y="{H - B + 17 + 14 * j}" text-anchor="middle">{html.escape(ln)}</text>')
     else:
         for v in ticks(*g.x, g.xticks):
             o.append(f'<text x="{X(v):.1f}" y="{H - B + 17}" text-anchor="middle">{num(v, decimals(g.x[2]))}</text>')
-    o.append(f'<text x="{(L + W - R) / 2:.1f}" y="{H - 8}" text-anchor="middle" font-weight="600">{html.escape(plain(g.xlabel))}</text>')
-    o.append(f'<text transform="translate(15 {(T + H - B) / 2:.1f}) rotate(-90)" text-anchor="middle" font-weight="600">{html.escape(plain(g.ylabel))}</text>')
+    o.append(f'<text x="{(L + W - R) / 2:.1f}" y="{H - 8}" text-anchor="middle" font-weight="600">{label(g.xlabel)}</text>')
+    o.append(f'<text transform="translate(15 {(T + H - B) / 2:.1f}) rotate(-90)" text-anchor="middle" font-weight="600">{label(g.ylabel)}</text>')
     legend = []
     ns = len(g.series)
     for i, s in enumerate(g.series):
@@ -249,13 +265,18 @@ def svg(g):
         dash = f' stroke-dasharray="{DASH_SVG[k % 4]}"' if DASH_SVG[k % 4] else ""
         o.append(f'<path d="{d}" fill="none" stroke="{c}" stroke-width="2"{dash}/>')
         legend.append((name, f'<line x1="-10" x2="10" y1="0" y2="0" stroke="{c}" stroke-width="2"{dash}/>'))
+    OFF = {"above": (0, -9, "middle"), "below": (0, 18, "middle"), "left": (-8, 5, "end"), "right": (8, 5, "start"),
+           "above left": (-6, -7, "end"), "above right": (6, -7, "start"), "below left": (-6, 16, "end"), "below right": (6, 16, "start")}
+    for x, y, text, where in g.notes:
+        dx, dy, anc = OFF[where]
+        o.append(f'<text x="{X(x) + dx:.1f}" y="{Y(y) + dy:.1f}" text-anchor="{anc}" font-weight="700">{label(text)}</text>')
     if g.legend and legend:
-        wmax = max(len(plain(n)) for n, _ in legend) * 7.2 + 34
+        wmax = max(len(alt(n)) for n, _ in legend) * 7.2 + 34
         lx = L + 10 if g.legend_pos == "nw" else W - R - wmax - 6
         o.append(f'<rect x="{lx:.1f}" y="{T + 4}" width="{wmax:.1f}" height="{len(legend) * 19 + 8}" fill="var(--bg,#fff)" fill-opacity=".92" stroke="currentColor" stroke-opacity=".3"/>')
         for j, (name, sym) in enumerate(legend):
             yy = T + 4 + 14 + j * 19
-            o.append(f'<g transform="translate({lx + 16:.1f} {yy - 4})">{sym}</g><text x="{lx + 32:.1f}" y="{yy + 1}">{html.escape(plain(name))}</text>')
+            o.append(f'<g transform="translate({lx + 16:.1f} {yy - 4})">{sym}</g><text x="{lx + 32:.1f}" y="{yy + 1}">{label(name)}</text>')
     o.append("</svg>")
-    cap = f'<figcaption>{html.escape(plain(g.caption))}</figcaption>' if g.caption else ""
+    cap = f'<figcaption>{label(g.caption)}</figcaption>' if g.caption else ""
     return f'<figure class="fig sci-fig">{"".join(o)}{cap}</figure>'
