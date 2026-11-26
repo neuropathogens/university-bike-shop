@@ -54,7 +54,7 @@ def guide_tex(C, u):
     for k, s in enumerate(u.sections, 1):
         out.append(f"\\section{{{s.title}}}\\label{{sec:{k}}}\n\n{s.body.strip()}\n\n")
         if s.checks:
-            out.append("\\needspace{9\\baselineskip}\\subsubsection{Check}\\mbox{}\n\n" + "".join(q_env(q) for q in s.checks) + "\n")
+            out.append("\\needspace{14\\baselineskip}\\subsubsection{Check}\\mbox{}\n\n" + "".join(q_env(q) for q in s.checks) + "\n")
     out.append("\\makekey\n\\end{document}\n")
     return "".join(out)
 
@@ -109,7 +109,11 @@ def questions_tex(C, u):
                "\\begin{scoring}\n")
     for p in f.parts:
         out.append(f"{label(p)} ({p.pts}) & {p.solution.strip()} & {p.miss.strip()} \\\\\n")
-    out.append("\\end{scoring}\n\n\\end{document}\n")
+    out.append("\\end{scoring}\n\n")
+    for p in f.parts:
+        if p.fig:
+            out.append(f"\\needspace{{14\\baselineskip}}\\subsection*{{Model graph for part {label(p)}}}\n{figs.tex(p.fig)}\n")
+    out.append("\\end{document}\n")
     assert sum(p.pts for p in f.parts) == f.pts, (u.n, "FRQ part points do not add up")
     return "".join(out)
 

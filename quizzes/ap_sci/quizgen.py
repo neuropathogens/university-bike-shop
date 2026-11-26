@@ -136,7 +136,7 @@ def build(C, u, kind, pages):
              guide=guide, guideName=f"the <i>Unit {u.n} guide</i>")
     if kind == "questions":
         f = u.frq
-        parts = [dict(label=p.label, max=p.pts, prompt=h(p.prompt), solution="<p>" + h(p.solution) + "</p>",
+        parts = [dict(label=p.label, max=p.pts, prompt=h(p.prompt), solution="<p>" + h(p.solution) + "</p>" + (figs.svg(p.fig) if p.fig else ""),
                       rubric=f"<p><b>Common miss:</b> {h(p.miss)}</p><p>Worth {p.pts} point{'s' if p.pts > 1 else ''}. "
                              "Give yourself the points only where your answer does what the model does.</p>") for p in f.parts]
         url = base + f"tests/unit-{u.n}/"
