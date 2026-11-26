@@ -79,7 +79,11 @@ def fr_item(L, f, n):
     if f.get("tips"):
         sol += "<p><i>Why it scores:</i> " + h(" ".join(f["tips"])) + "</p>"
     label = {"Story Narration": "story", "Email Response": "email", "Project Presentation": "presentation",
-             "Project Q&A": "Q1–Q4", "Argumentative Essay": "essay"}.get(f["kind"], f.get("label", "response"))
+             "Project Q&A": "Q1–Q4", "Argumentative Essay": "essay",
+             "Text Explanation": "short answer", "Text and Art Comparison": "short answer",
+             "Analysis of a Single Text": "essay", "Text Comparison": "essay",
+             "Short Answer": "answers", "Translation": "translation", "Short Essay": "essay",
+             "Project Prose Passage Short Essay": "essay", "Project Poetry Passage Short Essay": "essay"}.get(f["kind"], f.get("label", "response"))
     n = EXAMNO.get(f["kind"], n)  # show the task's question number on the exam
     return dict(n=n, mode="points", kind=f["kind"], mins=f["mins"],
                 head=f"{f['kind'].replace('&', '&amp;')} &middot; {total} points &middot; about {f['mins']} minutes",
